@@ -562,6 +562,7 @@ bool CWallet::AddToWallet(const CWalletTx& wtxIn, bool fFromLoadWallet)
             if (!wtx.WriteToDisk())
                 return false;
 
+<<<<<<< HEAD
         // since AddToWallet is called directly for self-originating transactions, check for consumption of own coins
         WalletUpdateSpent(wtx);
 
@@ -572,6 +573,14 @@ bool CWallet::AddToWallet(const CWalletTx& wtxIn, bool fFromLoadWallet)
         std::string strCmd = GetArg("-walletnotify", "");
 
         if ( !strCmd.empty())
+=======
+        hooks->AddToWallet(wtx);
+
+        // If default receiving address gets used, replace it with a new one
+        CScript scriptDefaultKey;
+        scriptDefaultKey.SetBitcoinAddress(vchDefaultKey);
+        BOOST_FOREACH(const CTxOut& txout, wtx.vout)
+>>>>>>> hooks
         {
             boost::replace_all(strCmd, "%s", wtxIn.GetHash().GetHex());
             boost::thread t(runCommand, strCmd); // thread runs free
@@ -737,11 +746,24 @@ void CWalletTx::GetAmounts(list<pair<CTxDestination, int64_t> >& listReceived,
     // Sent/received.
     BOOST_FOREACH(const CTxOut& txout, vout)
     {
+<<<<<<< HEAD
         bool fIsMine;
         // Only need to handle txouts if AT LEAST one of these is true:
         //   1) they debit from us (sent)
         //   2) the output is to us (received)
         if (nDebit > 0)
+=======
+        string address;
+        uint160 hash160;
+        vector<unsigned char> vchPubKey;
+        if (ExtractHash160(txout.scriptPubKey, hash160))
+            address = Hash160ToAddress(hash160);
+        else if (ExtractPubKey(txout.scriptPubKey, NULL, vchPubKey))
+            address = PubKeyToAddress(vchPubKey);
+        else if (hooks->ExtractAddress(txout.scriptPubKey, address))
+            ;
+        else
+>>>>>>> hooks
         {
             // Don't report 'change' txouts
             if (pwallet->IsChange(txout))

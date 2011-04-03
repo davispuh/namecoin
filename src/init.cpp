@@ -705,6 +705,7 @@ bool AppInit2(boost::thread_group& threadGroup)
         SetReachable(NET_TOR);
     }
 
+<<<<<<< HEAD
     // see Step 2: parameter interactions for more information about these
     fNoListen = !GetBoolArg("-listen", true);
     fDiscover = GetBoolArg("-discover", true);
@@ -731,6 +732,17 @@ bool AppInit2(boost::thread_group& threadGroup)
         if (!fBound)
             return InitError(_("Failed to listen on any port. Use -listen=0 if you want this."));
     }
+=======
+    hooks = InitHook();
+
+    //
+    // Load data files
+    //
+    if (fDaemon)
+        fprintf(stdout, "bitcoin server starting\n");
+    strErrors = "";
+    int64 nStart;
+>>>>>>> hooks
 
     if (mapArgs.count("-externalip")) {
         BOOST_FOREACH(string strAddr, mapMultiArgs["-externalip"]) {

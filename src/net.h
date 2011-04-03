@@ -25,9 +25,32 @@
 #include <arpa/inet.h>
 #endif
 
+<<<<<<< HEAD
 #include <boost/foreach.hpp>
 #include <boost/signals2/signal.hpp>
 #include <openssl/rand.h>
+=======
+class CMessageHeader;
+class CAddress;
+class CInv;
+class CRequestTracker;
+class CNode;
+class CBlockIndex;
+extern int nBestHeight;
+extern int nConnectTimeout;
+
+
+extern unsigned short GetDefaultPort();
+
+inline unsigned int ReceiveBufferSize() { return 1000*GetArg("-maxreceivebuffer", 10*1000); }
+inline unsigned int SendBufferSize() { return 1000*GetArg("-maxsendbuffer", 10*1000); }
+static const unsigned int PUBLISH_HOPS = 5;
+enum
+{
+    NODE_NETWORK = (1 << 0),
+};
+
+>>>>>>> hooks
 
 class CAddrMan;
 class CBlockIndex;

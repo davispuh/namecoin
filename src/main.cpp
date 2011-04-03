@@ -40,6 +40,7 @@ CCriticalSection cs_main;
 CTxMemPool mempool;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
+<<<<<<< HEAD
 CChain chainActive;
 CChain chainMostWork;
 int64_t nTimeBestReceived = 0;
@@ -85,12 +86,49 @@ struct CBlockIndexWorkComparator
         // ... then by earliest time received, ...
         if (pa->nSequenceId < pb->nSequenceId) return false;
         if (pa->nSequenceId > pb->nSequenceId) return true;
+=======
+uint256 hashGenesisBlock("0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f");
+CBigNum bnProofOfWorkLimit(~uint256(0) >> 32);
+const int nTotalBlocksEstimate = 134444; // Conservative estimate of total nr of blocks on main chain
+const int nInitialBlockThreshold = 120; // Regard blocks up until N-threshold as "initial download"
+CBlockIndex* pindexGenesisBlock = NULL;
+int nBestHeight = -1;
+CBigNum bnBestChainWork = 0;
+CBigNum bnBestInvalidWork = 0;
+uint256 hashBestChain = 0;
+CBlockIndex* pindexBest = NULL;
+int64 nTimeBestReceived = 0;
+
+map<uint256, CBlock*> mapOrphanBlocks;
+multimap<uint256, CBlock*> mapOrphanBlocksByPrev;
+
+map<uint256, CDataStream*> mapOrphanTransactions;
+multimap<uint256, CDataStream*> mapOrphanTransactionsByPrev;
+
+
+double dHashesPerSec;
+int64 nHPSTimerStart;
+
+// Settings
+int fGenerateBitcoins = false;
+int64 nTransactionFee = 0;
+int fLimitProcessors = false;
+int nLimitProcessors = 1;
+int fMinimizeToTray = true;
+int fMinimizeOnClose = true;
+#if USE_UPNP
+int fUseUPnP = true;
+#else
+int fUseUPnP = false;
+#endif
+>>>>>>> hooks
 
         // Use pointer address as tie breaker (should only happen with blocks
         // loaded from disk, as those all have id 0).
         if (pa < pb) return false;
         if (pa > pb) return true;
 
+<<<<<<< HEAD
         // Identical blocks.
         return false;
     }
@@ -98,6 +136,9 @@ struct CBlockIndexWorkComparator
 
 CBlockIndex *pindexBestInvalid;
 set<CBlockIndex*, CBlockIndexWorkComparator> setBlockIndexValid; // may contain all CBlockIndex*'s that have validness >=BLOCK_VALID_TRANSACTIONS, and must contain those who aren't failed
+=======
+CHooks* hooks;
+>>>>>>> hooks
 
 CCriticalSection cs_LastBlockFile;
 CBlockFileInfo infoLastBlockFile;
@@ -505,6 +546,7 @@ bool AreInputsStandard(const CTransaction& tx, CCoinsViewCache& mapInputs)
     if (tx.IsCoinBase())
         return true; // Coinbases don't use vin normally
 
+<<<<<<< HEAD
     for (unsigned int i = 0; i < tx.vin.size(); i++)
     {
         const CTxOut& prev = mapInputs.GetOutputFor(tx.vin[i]);
@@ -555,6 +597,9 @@ bool AreInputsStandard(const CTransaction& tx, CCoinsViewCache& mapInputs)
 }
 
 unsigned int GetLegacySigOpCount(const CTransaction& tx)
+=======
+int CMerkleTx::SetMerkleBranch(const CBlock* pblock)
+>>>>>>> hooks
 {
     unsigned int nSigOps = 0;
     BOOST_FOREACH(const CTxIn& txin, tx.vin)
@@ -690,7 +735,7 @@ bool CheckTransaction(const CTransaction& tx, CValidationState &state)
                                  REJECT_INVALID, "bad-txns-prevout-null");
     }
 
-    return true;
+    return hooks->CheckTransaction(*this);
 }
 
 int64_t GetMinFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree, enum GetMinFee_mode mode)
@@ -1384,6 +1429,20 @@ void UpdateTime(CBlockHeader& block, const CBlockIndex* pindexPrev)
 
 
 
+<<<<<<< HEAD
+=======
+bool CTransaction::DisconnectInputs(CTxDB& txdb, CBlockIndex* pindex)
+{
+    if (!hooks->DisconnectInputs(txdb, *this, pindex))
+        return false;
+
+    // Relinquish previous transactions' spent pointers
+    if (!IsCoinBase())
+    {
+        BOOST_FOREACH(const CTxIn& txin, vin)
+        {
+            COutPoint prevout = txin.prevout;
+>>>>>>> hooks
 
 
 
@@ -1423,6 +1482,7 @@ bool CheckInputs(const CTransaction& tx, CValidationState &state, CCoinsViewCach
 {
     if (!tx.IsCoinBase())
     {
+<<<<<<< HEAD
         if (pvChecks)
             pvChecks->reserve(tx.vin.size());
 
@@ -1438,6 +1498,13 @@ bool CheckInputs(const CTransaction& tx, CValidationState &state, CCoinsViewCach
         int64_t nValueIn = 0;
         int64_t nFees = 0;
         for (unsigned int i = 0; i < tx.vin.size(); i++)
+=======
+        vector<CTransaction> vTxPrev;
+        vector<CTxIndex> vTxindex;
+
+        int64 nValueIn = 0;
+        for (int i = 0; i < vin.size(); i++)
+>>>>>>> hooks
         {
             const COutPoint &prevout = tx.vin[i].prevout;
             const CCoins &coins = inputs.GetCoins(prevout.hash);
@@ -1456,11 +1523,34 @@ bool CheckInputs(const CTransaction& tx, CValidationState &state, CCoinsViewCach
                 return state.DoS(100, error("CheckInputs() : txin values out of range"),
                                  REJECT_INVALID, "bad-txns-inputvalues-outofrange");
 
+<<<<<<< HEAD
         }
 
         if (nValueIn < tx.GetValueOut())
             return state.DoS(100, error("CheckInputs() : %s value in < value out", tx.GetHash().ToString()),
                              REJECT_INVALID, "bad-txns-in-belowout");
+=======
+            // Write back
+            if (fBlock)
+            {
+                if (!txdb.UpdateTxIndex(prevout.hash, txindex))
+                    return error("ConnectInputs() : UpdateTxIndex failed");
+            }
+            else if (fMiner)
+            {
+                mapTestPool[prevout.hash] = txindex;
+            }
+
+            vTxPrev.push_back(txPrev);
+            vTxindex.push_back(txindex);
+        }
+
+        if (!hooks->ConnectInputs(txdb, *this, vTxPrev, vTxindex, pindexBlock, posThisTx, fBlock, fMiner))
+            return false;
+
+        if (nValueIn < GetValueOut())
+            return error("ConnectInputs() : %s value in < value out", GetHash().ToString().substr(0,10).c_str());
+>>>>>>> hooks
 
         // Tally transaction fees
         int64_t nTxFee = nValueIn - tx.GetValueOut();
@@ -1623,9 +1713,34 @@ bool FindUndoPos(CValidationState &state, int nFile, CDiskBlockPos &pos, unsigne
 
 static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
+<<<<<<< HEAD
 void ThreadScriptCheck() {
     RenameThread("bitcoin-scriptch");
     scriptcheckqueue.Thread();
+=======
+
+bool CBlock::DisconnectBlock(CTxDB& txdb, CBlockIndex* pindex)
+{
+    if (!hooks->DisconnectBlock(*this, txdb, pindex))
+        return false;
+
+    // Disconnect in reverse order
+    for (int i = vtx.size()-1; i >= 0; i--)
+        if (!vtx[i].DisconnectInputs(txdb, pindex))
+            return false;
+
+    // Update block index on disk without changing it in memory.
+    // The memory index structure will be changed after the db commits.
+    if (pindex->pprev)
+    {
+        CDiskBlockIndex blockindexPrev(pindex->pprev);
+        blockindexPrev.hashNext = 0;
+        if (!txdb.WriteBlockIndex(blockindexPrev))
+            return error("DisconnectBlock() : WriteBlockIndex failed");
+    }
+
+    return true;
+>>>>>>> hooks
 }
 
 bool ConnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex, CCoinsViewCache& view, bool fJustCheck)
@@ -1675,8 +1790,13 @@ bool ConnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex, C
     int64_t nBIP16SwitchTime = 1333238400;
     bool fStrictPayToScriptHash = (pindex->nTime >= nBIP16SwitchTime);
 
+<<<<<<< HEAD
     unsigned int flags = SCRIPT_VERIFY_NOCACHE |
                          (fStrictPayToScriptHash ? SCRIPT_VERIFY_P2SH : SCRIPT_VERIFY_NONE);
+=======
+    return hooks->ConnectBlock(*this, txdb, pindex);
+}
+>>>>>>> hooks
 
     CBlockUndo blockundo;
 
@@ -2246,6 +2366,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CDiskBlockPos* dbp)
         return state.Invalid(error("AcceptBlock() : block already in mapBlockIndex"), 0, "duplicate");
 
     // Get prev block index
+<<<<<<< HEAD
     CBlockIndex* pindexPrev = NULL;
     int nHeight = 0;
     if (hash != Params().HashGenesisBlock()) {
@@ -2301,6 +2422,30 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CDiskBlockPos* dbp)
             }
         }
     }
+=======
+    map<uint256, CBlockIndex*>::iterator mi = mapBlockIndex.find(hashPrevBlock);
+    if (mi == mapBlockIndex.end())
+        return error("AcceptBlock() : prev block not found");
+    CBlockIndex* pindexPrev = (*mi).second;
+    int nHeight = pindexPrev->nHeight+1;
+
+    // Check proof of work
+    if (nBits != GetNextWorkRequired(pindexPrev))
+        return error("AcceptBlock() : incorrect proof of work");
+
+    // Check timestamp against prev
+    if (GetBlockTime() <= pindexPrev->GetMedianTimePast())
+        return error("AcceptBlock() : block's timestamp is too early");
+
+    // Check that all transactions are finalized
+    BOOST_FOREACH(const CTransaction& tx, vtx)
+        if (!tx.IsFinal(nHeight, GetBlockTime()))
+            return error("AcceptBlock() : contains a non-final transaction");
+
+    // Check that the block chain matches the known block chain up to a checkpoint
+    if (!hooks->Lockin(nHeight, hash))
+        return error("AcceptBlock() : rejected by checkpoint lockin at %d", nHeight);
+>>>>>>> hooks
 
     // Write block to history file
     try {
@@ -2723,11 +2868,23 @@ bool static LoadBlockIndexDB()
             pindexBestInvalid = pindex;
     }
 
+<<<<<<< HEAD
     // Load block file info
     pblocktree->ReadLastBlockFile(nLastBlockFile);
     LogPrintf("LoadBlockIndexDB(): last block file = %i\n", nLastBlockFile);
     if (pblocktree->ReadBlockFileInfo(nLastBlockFile, infoLastBlockFile))
         LogPrintf("LoadBlockIndexDB(): last block file info: %s\n", infoLastBlockFile.ToString());
+=======
+    hooks->MessageStart(pchMessageStart);
+
+    //
+    // Load block index
+    //
+    CTxDB txdb("cr");
+    if (!txdb.LoadBlockIndex())
+        return false;
+    txdb.Close();
+>>>>>>> hooks
 
     // Check whether we need to continue reindexing
     bool fReindexing = false;
@@ -2840,10 +2997,23 @@ bool LoadBlockIndex()
 }
 
 
+<<<<<<< HEAD
 bool InitBlockIndex() {
     // Check whether we're already initialized
     if (chainActive.Genesis() != NULL)
         return true;
+=======
+        if (!hooks->GenesisBlock(block))
+        {
+            //// debug print
+            printf("%s\n", block.GetHash().ToString().c_str());
+            printf("%s\n", hashGenesisBlock.ToString().c_str());
+            printf("%s\n", block.hashMerkleRoot.ToString().c_str());
+            assert(block.hashMerkleRoot == uint256("0x4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b"));
+            block.print();
+            assert(block.GetHash() == hashGenesisBlock);
+        }
+>>>>>>> hooks
 
     // Use the provided setting for -txindex in the new database
     fTxIndex = GetBoolArg("-txindex", false);

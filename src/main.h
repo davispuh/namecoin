@@ -32,6 +32,13 @@
 class CBlockIndex;
 class CBloomFilter;
 class CInv;
+<<<<<<< HEAD
+=======
+class CRequestTracker;
+class CNode;
+class CBlockIndex;
+class CHooks;
+>>>>>>> hooks
 
 /** The maximum allowed size for a serialized block, in bytes (network rule) */
 static const unsigned int MAX_BLOCK_SIZE = 1000000;
@@ -80,6 +87,7 @@ extern CScript COINBASE_FLAGS;
 extern CCriticalSection cs_main;
 extern CTxMemPool mempool;
 extern std::map<uint256, CBlockIndex*> mapBlockIndex;
+<<<<<<< HEAD
 extern uint64_t nLastBlockTx;
 extern uint64_t nLastBlockSize;
 extern const std::string strMessageMagic;
@@ -141,6 +149,46 @@ void UnloadBlockIndex();
 /** Verify consistency of the block and coin databases */
 bool VerifyDB(int nCheckLevel, int nCheckDepth);
 /** Print the loaded block tree */
+=======
+extern uint256 hashGenesisBlock;
+extern CBigNum bnProofOfWorkLimit;
+extern CBlockIndex* pindexGenesisBlock;
+extern int nBestHeight;
+extern CBigNum bnBestChainWork;
+extern CBigNum bnBestInvalidWork;
+extern uint256 hashBestChain;
+extern CBlockIndex* pindexBest;
+extern unsigned int nTransactionsUpdated;
+extern double dHashesPerSec;
+extern int64 nHPSTimerStart;
+extern int64 nTimeBestReceived;
+extern CCriticalSection cs_setpwalletRegistered;
+extern std::set<CWallet*> setpwalletRegistered;
+
+// Settings
+extern int fGenerateBitcoins;
+extern int64 nTransactionFee;
+extern int fLimitProcessors;
+extern int nLimitProcessors;
+extern int fMinimizeToTray;
+extern int fMinimizeOnClose;
+extern int fUseUPnP;
+
+
+
+
+
+class CReserveKey;
+class CTxDB;
+class CTxIndex;
+
+void RegisterWallet(CWallet* pwalletIn);
+void UnregisterWallet(CWallet* pwalletIn);
+bool CheckDiskSpace(uint64 nAdditionalBytes=0);
+FILE* OpenBlockFile(unsigned int nFile, unsigned int nBlockPos, const char* pszMode="rb");
+FILE* AppendBlockFile(unsigned int& nFileRet);
+bool LoadBlockIndex(bool fAllowNew=true);
+>>>>>>> hooks
 void PrintBlockTree();
 /** Process protocol messages received from a given node */
 bool ProcessMessages(CNode* pfrom);
@@ -411,6 +459,25 @@ public:
         std::swap(nFlags, check.nFlags);
         std::swap(nHashType, check.nHashType);
     }
+<<<<<<< HEAD
+=======
+
+
+    bool ReadFromDisk(CTxDB& txdb, COutPoint prevout, CTxIndex& txindexRet);
+    bool ReadFromDisk(CTxDB& txdb, COutPoint prevout);
+    bool ReadFromDisk(COutPoint prevout);
+    bool DisconnectInputs(CTxDB& txdb, CBlockIndex* pindex);
+    bool ConnectInputs(CTxDB& txdb, std::map<uint256, CTxIndex>& mapTestPool, CDiskTxPos posThisTx,
+                       CBlockIndex* pindexBlock, int64& nFees, bool fBlock, bool fMiner, int64 nMinFee=0);
+    bool ClientConnectInputs();
+    bool CheckTransaction() const;
+    bool AcceptToMemoryPool(CTxDB& txdb, bool fCheckInputs=true, bool* pfMissingInputs=NULL);
+    bool AcceptToMemoryPool(bool fCheckInputs=true, bool* pfMissingInputs=NULL);
+protected:
+    bool AddToMemoryPoolUnchecked();
+public:
+    bool RemoveFromMemoryPool();
+>>>>>>> hooks
 };
 
 /** A transaction with a merkle branch linking it to the block chain. */
@@ -1095,6 +1162,7 @@ public:
     )
 };
 
+<<<<<<< HEAD
 
 class CWalletInterface {
 protected:
@@ -1108,5 +1176,12 @@ protected:
     friend void ::UnregisterWallet(CWalletInterface*);
     friend void ::UnregisterAllWallets();
 };
+=======
+extern std::map<uint256, CTransaction> mapTransactions;
+extern std::map<uint160, std::vector<unsigned char> > mapPubKeys;
+extern CCriticalSection cs_mapPubKeys;
+extern CHooks* hooks;
+
+>>>>>>> hooks
 
 #endif

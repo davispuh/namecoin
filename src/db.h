@@ -262,6 +262,17 @@ protected:
     }
 
 public:
+<<<<<<< HEAD
+=======
+    DbTxn* GetTxn()
+    {
+        if (!vTxn.empty())
+            return vTxn.back();
+        else
+            return NULL;
+    }
+
+>>>>>>> hooks
     bool TxnBegin()
     {
         if (!pdb || activeTxn)

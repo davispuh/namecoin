@@ -31,8 +31,11 @@ static const CBigNum bnFalse(0);
 static const CBigNum bnTrue(1);
 static const size_t nMaxNumSize = 4;
 
+<<<<<<< HEAD
 bool CheckSig(vector<unsigned char> vchSig, const vector<unsigned char> &vchPubKey, const CScript &scriptCode, const CTransaction& txTo, unsigned int nIn, int nHashType, int flags);
 
+=======
+>>>>>>> hooks
 CBigNum CastToBigNum(const valtype& vch)
 {
     if (vch.size() > nMaxNumSize)
@@ -1413,6 +1416,7 @@ int ScriptSigArgsExpected(txnouttype t, const std::vector<std::vector<unsigned c
 
 bool IsStandard(const CScript& scriptPubKey, txnouttype& whichType)
 {
+<<<<<<< HEAD
     vector<valtype> vSolutions;
     if (!Solver(scriptPubKey, whichType, vSolutions))
         return false;
@@ -1429,6 +1433,12 @@ bool IsStandard(const CScript& scriptPubKey, txnouttype& whichType)
     }
 
     return whichType != TX_NONSTANDARD;
+=======
+    if (hooks->IsStandard(scriptPubKey))
+        return true;
+    vector<pair<opcodetype, valtype> > vSolution;
+    return Solver(scriptPubKey, vSolution);
+>>>>>>> hooks
 }
 
 

@@ -1193,6 +1193,10 @@ void MapPort(bool)
 
 
 
+<<<<<<< HEAD
+=======
+extern const char *strDNSSeed[];
+>>>>>>> hooks
 
 void ThreadDNSAddressSeed()
 {
@@ -1201,6 +1205,7 @@ void ThreadDNSAddressSeed()
 
     LogPrintf("Loading addresses from DNS seeds (could take a while)\n");
 
+<<<<<<< HEAD
     BOOST_FOREACH(const CDNSSeedData &seed, vSeeds) {
         if (HaveNameProxy()) {
             AddOneShot(seed.host);
@@ -1208,6 +1213,11 @@ void ThreadDNSAddressSeed()
             vector<CNetAddr> vIPs;
             vector<CAddress> vAdd;
             if (LookupHost(seed.host.c_str(), vIPs))
+=======
+        for (int seed_idx = 0; strDNSSeed[seed_idx] ; seed_idx++) {
+            vector<CAddress> vaddr;
+            if (Lookup(strDNSSeed[seed_idx], vaddr, NODE_NETWORK, -1, true))
+>>>>>>> hooks
             {
                 BOOST_FOREACH(CNetAddr& ip, vIPs)
                 {
@@ -1227,6 +1237,7 @@ void ThreadDNSAddressSeed()
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -1242,6 +1253,9 @@ void DumpAddresses()
 
     CAddrDB adb;
     adb.Write(addrman);
+=======
+extern unsigned int pnSeed[];
+>>>>>>> hooks
 
     LogPrint("net", "Flushed %d addresses to peers.dat  %"PRId64"ms\n",
            addrman.size(), GetTimeMillis() - nStart);
@@ -1292,10 +1306,48 @@ void ThreadOpenConnections()
     {
         ProcessOneShot();
 
+<<<<<<< HEAD
         MilliSleep(500);
 
         CSemaphoreGrant grant(*semOutbound);
         boost::this_thread::interruption_point();
+=======
+        CRITICAL_BLOCK(cs_mapAddresses)
+        {
+            // Add seed nodes if IRC isn't working
+            static bool fSeedUsed;
+            int nSeeds = 0;
+
+            bool fTOR = (fUseProxy && addrProxy.port == htons(9050));
+            if (mapAddresses.empty() && (GetTime() - nStart > 60 || fTOR) && !fTestNet)
+            {
+                for (int i = 0; pnSeed[i]; i++)
+                {
+                    // It'll only connect to one or two seed nodes because once it connects,
+                    // it'll get a pile of addresses with newer timestamps.
+                    CAddress addr;
+                    addr.ip = pnSeed[i];
+                    addr.nTime = 0;
+                    AddAddress(addr);
+                    nSeeds++;
+                }
+                fSeedUsed = true;
+            }
+
+            if (fSeedUsed && mapAddresses.size() > nSeeds + 100)
+            {
+                // Disconnect seed nodes
+                set<unsigned int> setSeed(pnSeed, pnSeed + nSeeds);
+                static int64 nSeedDisconnected;
+                if (nSeedDisconnected == 0)
+                {
+                    nSeedDisconnected = GetTime();
+                    CRITICAL_BLOCK(cs_vNodes)
+                        BOOST_FOREACH(CNode* pnode, vNodes)
+                            if (setSeed.count(pnode->addr.ip))
+                                pnode->fDisconnect = true;
+                }
+>>>>>>> hooks
 
         // Add seed nodes if DNS seeds are all down (an infrastructure attack?).
         if (addrman.size() == 0 && (GetTime() - nStart > 60)) {

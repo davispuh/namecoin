@@ -413,6 +413,7 @@ bool CDB::Rewrite(const string& strFile, const char* pszSkip)
                         delete pdbCopy;
                     }
                 }
+<<<<<<< HEAD
                 if (fSuccess)
                 {
                     Db dbA(&bitdb.dbenv, 0);
@@ -425,11 +426,108 @@ bool CDB::Rewrite(const string& strFile, const char* pszSkip)
                 if (!fSuccess)
                     LogPrintf("Rewriting of %s FAILED!\n", strFileRes);
                 return fSuccess;
+=======
+
+                hooks->AddToWallet(wtx);
+                //// debug print
+                //printf("LoadWallet  %s\n", wtx.GetHash().ToString().c_str());
+                //printf(" %12I64d  %s  %s  %s\n",
+                //    wtx.vout[0].nValue,
+                //    DateTimeStrFormat("%x %H:%M:%S", wtx.GetBlockTime()).c_str(),
+                //    wtx.hashBlock.ToString().substr(0,20).c_str(),
+                //    wtx.mapValue["message"].c_str());
+            }
+            else if (strType == "acentry")
+            {
+                string strAccount;
+                ssKey >> strAccount;
+                uint64 nNumber;
+                ssKey >> nNumber;
+                if (nNumber > nAccountingEntryNumber)
+                    nAccountingEntryNumber = nNumber;
+            }
+            else if (strType == "key" || strType == "wkey")
+            {
+                vector<unsigned char> vchPubKey;
+                ssKey >> vchPubKey;
+                CWalletKey wkey;
+                if (strType == "key")
+                    ssValue >> wkey.vchPrivKey;
+                else
+                    ssValue >> wkey;
+
+                pwallet->mapKeys[vchPubKey] = wkey.vchPrivKey;
+                mapPubKeys[Hash160(vchPubKey)] = vchPubKey;
+            }
+            else if (strType == "defaultkey")
+            {
+                ssValue >> pwallet->vchDefaultKey;
+            }
+            else if (strType == "pool")
+            {
+                int64 nIndex;
+                ssKey >> nIndex;
+                pwallet->setKeyPool.insert(nIndex);
+            }
+            else if (strType == "version")
+            {
+                ssValue >> nFileVersion;
+                if (nFileVersion == 10300)
+                    nFileVersion = 300;
+            }
+            else if (strType == "setting")
+            {
+                string strKey;
+                ssKey >> strKey;
+
+                // Options
+#ifndef GUI
+                if (strKey == "fGenerateBitcoins")  ssValue >> fGenerateBitcoins;
+#endif
+                if (strKey == "nTransactionFee")    ssValue >> nTransactionFee;
+                if (strKey == "fLimitProcessors")   ssValue >> fLimitProcessors;
+                if (strKey == "nLimitProcessors")   ssValue >> nLimitProcessors;
+                if (strKey == "fMinimizeToTray")    ssValue >> fMinimizeToTray;
+                if (strKey == "fMinimizeOnClose")   ssValue >> fMinimizeOnClose;
+                if (strKey == "fUseProxy")          ssValue >> fUseProxy;
+                if (strKey == "addrProxy")          ssValue >> addrProxy;
+                if (fHaveUPnP && strKey == "fUseUPnP")           ssValue >> fUseUPnP;
+>>>>>>> hooks
             }
         }
         MilliSleep(100);
     }
+<<<<<<< HEAD
     return false;
+=======
+
+    BOOST_FOREACH(uint256 hash, vWalletUpgrade)
+        WriteTx(hash, pwallet->mapWallet[hash]);
+
+    printf("nFileVersion = %d\n", nFileVersion);
+    printf("fGenerateBitcoins = %d\n", fGenerateBitcoins);
+    printf("nTransactionFee = %"PRI64d"\n", nTransactionFee);
+    printf("fMinimizeToTray = %d\n", fMinimizeToTray);
+    printf("fMinimizeOnClose = %d\n", fMinimizeOnClose);
+    printf("fUseProxy = %d\n", fUseProxy);
+    printf("addrProxy = %s\n", addrProxy.ToString().c_str());
+    if (fHaveUPnP)
+        printf("fUseUPnP = %d\n", fUseUPnP);
+
+
+    // Upgrade
+    if (nFileVersion < VERSION)
+    {
+        // Get rid of old debug.log file in current directory
+        if (nFileVersion <= 105 && !pszSetDataDir[0])
+            unlink("debug.log");
+
+        WriteVersion(VERSION);
+    }
+
+
+    return true;
+>>>>>>> hooks
 }
 
 
