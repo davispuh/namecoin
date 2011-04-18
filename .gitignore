@@ -30,6 +30,7 @@ src/qt/test/moc*.cpp
 .dirstamp
 .*.swp
 *.*~*
+<<<<<<< HEAD
 *.bak
 *.rej
 *.orig
@@ -82,3 +83,6 @@ qa/pull-tester/run-bitcoind-for-test.sh
 qa/pull-tester/build-tests.sh
 
 !src/leveldb*/Makefile
+=======
+src/namecoind
+>>>>>>> update makefile, change data dir default location
