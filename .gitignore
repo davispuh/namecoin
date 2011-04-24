@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 *.tar.gz
 
 *.exe
+=======
+src/*.exe
+*.pyc
+>>>>>>> ncproxy
 src/bitcoin
 src/bitcoind
 src/bitcoin-cli
