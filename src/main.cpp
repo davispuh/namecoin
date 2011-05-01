@@ -907,8 +907,42 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState &state, const CTransa
         {
             return error("AcceptToMemoryPool: : ConnectInputs failed %s", hash.ToString());
         }
+<<<<<<< HEAD
         // Store transaction in memory
         pool.addUnchecked(hash, entry);
+=======
+        AddToMemoryPoolUnchecked();
+    }
+
+    hooks->AcceptToMemoryPool(txdb, *this);
+
+    ///// are we sure this is ok when loading transactions or restoring block txes
+    // If updated, erase old tx from wallet
+    if (ptxOld)
+        EraseFromWallets(ptxOld->GetHash());
+
+    printf("AcceptToMemoryPool(): accepted %s\n", hash.ToString().substr(0,10).c_str());
+    return true;
+}
+
+bool CTransaction::AcceptToMemoryPool(bool fCheckInputs, bool* pfMissingInputs)
+{
+    CTxDB txdb("r");
+    return AcceptToMemoryPool(txdb, fCheckInputs, pfMissingInputs);
+}
+
+bool CTransaction::AddToMemoryPoolUnchecked()
+{
+    // Add to memory pool without checking anything.  Don't call this directly,
+    // call AcceptToMemoryPool to properly check the transaction first.
+    CRITICAL_BLOCK(cs_mapTransactions)
+    {
+        uint256 hash = GetHash();
+        mapTransactions[hash] = *this;
+        for (int i = 0; i < vin.size(); i++)
+            mapNextTx[vin[i].prevout] = CInPoint(&mapTransactions[hash], i);
+        nTransactionsUpdated++;
+>>>>>>> AcceptToMemoryPool hook, address version hook, fix to Lockin
     }
 
     g_signals.SyncTransaction(hash, tx, NULL);

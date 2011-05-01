@@ -183,6 +183,7 @@ protected:
     // the version byte(s)
     std::vector<unsigned char> vchVersion;
 
+<<<<<<< HEAD
     // the actually encoded data
     typedef std::vector<unsigned char, zero_after_free_allocator<unsigned char> > vector_uchar;
     vector_uchar vchData;
@@ -200,6 +201,32 @@ protected:
         if (!vchData.empty())
             memcpy(&vchData[0], pdata, nSize);
     }
+=======
+/*#define ADDRESSVERSION   ((unsigned char)(fTestNet ? 111 : 0))*/
+extern unsigned char GetAddressVersion();
+
+inline std::string Hash160ToAddress(uint160 hash160)
+{
+    // add 1-byte version number to the front
+    std::vector<unsigned char> vch(1, GetAddressVersion());
+    vch.insert(vch.end(), UBEGIN(hash160), UEND(hash160));
+    return EncodeBase58Check(vch);
+}
+
+inline bool AddressToHash160(const char* psz, uint160& hash160Ret)
+{
+    std::vector<unsigned char> vch;
+    if (!DecodeBase58Check(psz, vch))
+        return false;
+    if (vch.empty())
+        return false;
+    unsigned char nVersion = vch[0];
+    if (vch.size() != sizeof(hash160Ret) + 1)
+        return false;
+    memcpy(&hash160Ret, &vch[1], sizeof(hash160Ret));
+    return (nVersion <= GetAddressVersion());
+}
+>>>>>>> AcceptToMemoryPool hook, address version hook, fix to Lockin
 
     void SetData(const std::vector<unsigned char> &vchVersionIn, const unsigned char *pbegin, const unsigned char *pend)
     {
