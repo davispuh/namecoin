@@ -21,7 +21,33 @@
 #include <vector>
 
 #include <boost/tuple/tuple.hpp>
+<<<<<<< HEAD
 #include <boost/type_traits/is_fundamental.hpp>
+=======
+#include <boost/tuple/tuple_comparison.hpp>
+#include <boost/tuple/tuple_io.hpp>
+
+#if defined(_MSC_VER) || defined(__BORLANDC__)
+typedef __int64  int64;
+typedef unsigned __int64  uint64;
+#else
+typedef long long  int64;
+typedef unsigned long long  uint64;
+#endif
+#if defined(_MSC_VER) && _MSC_VER < 1300
+#define for  if (false) ; else for
+#endif
+class CScript;
+class CDataStream;
+class CAutoFile;
+static const unsigned int MAX_SIZE = 0x02000000;
+
+static const int VERSION = 32450;
+static const char* pszSubVer = "";
+static const bool VERSION_IS_BETA = true;
+
+
+>>>>>>> revamp handling of names in wallet
 
 class CAutoFile;
 class CDataStream;
