@@ -175,7 +175,7 @@ extern int fMinimizeOnClose;
 extern int fUseUPnP;
 
 
-
+extern CHooks* hooks;
 
 
 class CReserveKey;

@@ -786,8 +786,12 @@ void CWalletTx::GetAmounts(list<pair<CTxDestination, int64_t> >& listReceived,
         if (nDebit > 0)
             listSent.push_back(make_pair(address, txout.nValue));
 
+<<<<<<< HEAD
         // If we are receiving the output, add it as a "received" entry
         if (fIsMine)
+=======
+        if (pwallet->IsMine(txout) || hooks->IsMine(*this, txout))
+>>>>>>> IsMine hook for display and wallet acceptance
             listReceived.push_back(make_pair(address, txout.nValue));
     }
 
