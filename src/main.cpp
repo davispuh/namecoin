@@ -1579,7 +1579,7 @@ bool CheckInputs(const CTransaction& tx, CValidationState &state, CCoinsViewCach
             vTxindex.push_back(txindex);
         }
 
-        if (!hooks->ConnectInputs(txdb, *this, vTxPrev, vTxindex, pindexBlock, posThisTx, fBlock, fMiner))
+        if (!hooks->ConnectInputs(txdb, mapTestPool, *this, vTxPrev, vTxindex, pindexBlock, posThisTx, fBlock, fMiner))
             return false;
 
         if (nValueIn < GetValueOut())
