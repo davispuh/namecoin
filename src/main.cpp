@@ -1291,7 +1291,11 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits)
 // Return maximum amount of blocks that other nodes claim to have
 int GetNumBlocksOfPeers()
 {
+<<<<<<< HEAD
     return std::max(cPeerBlockCounts.median(), Checkpoints::GetTotalBlocksEstimate());
+=======
+    return hooks->LockinHeight();
+>>>>>>> missed lockin constant
 }
 
 bool IsInitialBlockDownload()
@@ -2499,6 +2503,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CDiskBlockPos* dbp)
     }
 
     // Relay inventory, but don't relay old inventory during initial block download
+<<<<<<< HEAD
     int nBlockEstimate = Checkpoints::GetTotalBlocksEstimate();
     if (chainActive.Tip()->GetBlockHash() == hash)
     {
@@ -2507,6 +2512,13 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CDiskBlockPos* dbp)
             if (chainActive.Height() > (pnode->nStartingHeight != -1 ? pnode->nStartingHeight - 2000 : nBlockEstimate))
                 pnode->PushInventory(CInv(MSG_BLOCK, hash));
     }
+=======
+    if (hashBestChain == hash)
+        CRITICAL_BLOCK(cs_vNodes)
+            BOOST_FOREACH(CNode* pnode, vNodes)
+                if (nBestHeight > (pnode->nStartingHeight != -1 ? pnode->nStartingHeight - 2000 : hooks->LockinHeight()))
+                    pnode->PushInventory(CInv(MSG_BLOCK, hash));
+>>>>>>> missed lockin constant
 
     return true;
 }
