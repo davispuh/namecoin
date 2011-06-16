@@ -145,8 +145,24 @@ void Shutdown()
 #ifdef ENABLE_WALLET
     if (pwalletMain)
         delete pwalletMain;
+<<<<<<< HEAD
 #endif
     LogPrintf("Shutdown : done\n");
+=======
+        CreateThread(ExitTimeout, NULL);
+        Sleep(50);
+        printf("namecoin exiting\n\n");
+        fExit = true;
+        exit(0);
+    }
+    else
+    {
+        while (!fExit)
+            Sleep(500);
+        Sleep(100);
+        ExitThread(0);
+    }
+>>>>>>> cleaned up some copy references to 'bitcoin' so that they now say 'namecoin'
 }
 
 //
@@ -410,10 +426,67 @@ bool AppInit2(boost::thread_group& threadGroup)
     sa_hup.sa_flags = 0;
     sigaction(SIGHUP, &sa_hup, NULL);
 
+<<<<<<< HEAD
 #if defined (__SVR4) && defined (__sun)
     // ignore SIGPIPE on Solaris
     signal(SIGPIPE, SIG_IGN);
 #endif
+=======
+    ReadConfigFile(mapArgs, mapMultiArgs); // Must be done after processing datadir
+
+    if (mapArgs.count("-?") || mapArgs.count("--help"))
+    {
+        string strUsage = string() +
+          _("namecoin version") + " " + FormatFullVersion() + "\n\n" +
+          _("Usage:") + "\t\t\t\t\t\t\t\t\t\t\n" +
+            "  namecoin [options]                   \t  " + "\n" +
+            "  namecoin [options] <command> [params]\t  " + _("Send command to -server or namecoind\n") +
+            "  namecoin [options] help              \t\t  " + _("List commands\n") +
+            "  namecoin [options] help <command>    \t\t  " + _("Get help for a command\n") +
+          _("Options:\n") +
+            "  -conf=<file>     \t\t  " + _("Specify configuration file (default: bitcoin.conf)\n") +
+            "  -pid=<file>      \t\t  " + _("Specify pid file (default: bitcoind.pid)\n") +
+            "  -gen             \t\t  " + _("Generate coins\n") +
+            "  -gen=0           \t\t  " + _("Don't generate coins\n") +
+            "  -min             \t\t  " + _("Start minimized\n") +
+            "  -datadir=<dir>   \t\t  " + _("Specify data directory\n") +
+            "  -timeout=<n>     \t  "   + _("Specify connection timeout (in milliseconds)\n") +
+            "  -proxy=<ip:port> \t  "   + _("Connect through socks4 proxy\n") +
+            "  -dns             \t  "   + _("Allow DNS lookups for addnode and connect\n") +
+            "  -addnode=<ip>    \t  "   + _("Add a node to connect to\n") +
+            "  -connect=<ip>    \t\t  " + _("Connect only to the specified node\n") +
+            "  -nolisten        \t  "   + _("Don't accept connections from outside\n") +
+#ifdef USE_UPNP
+#if USE_UPNP
+            "  -noupnp          \t  "   + _("Don't attempt to use UPnP to map the listening port\n") +
+#else
+            "  -upnp            \t  "   + _("Attempt to use UPnP to map the listening port\n") +
+#endif
+#endif
+            "  -paytxfee=<amt>  \t  "   + _("Fee per KB to add to transactions you send\n") +
+#ifdef GUI
+            "  -server          \t\t  " + _("Accept command line and JSON-RPC commands\n") +
+#endif
+#ifndef __WXMSW__
+            "  -daemon          \t\t  " + _("Run in the background as a daemon and accept commands\n") +
+#endif
+            "  -testnet         \t\t  " + _("Use the test network\n") +
+            "  -rpcuser=<user>  \t  "   + _("Username for JSON-RPC connections\n") +
+            "  -rpcpassword=<pw>\t  "   + _("Password for JSON-RPC connections\n") +
+            "  -rpcport=<port>  \t\t  " + _("Listen for JSON-RPC connections on <port> (default: 8332)\n") +
+            "  -rpcallowip=<ip> \t\t  " + _("Allow JSON-RPC connections from specified IP address\n") +
+            "  -rpcconnect=<ip> \t  "   + _("Send commands to node running on <ip> (default: 127.0.0.1)\n") +
+            "  -keypool=<n>     \t  "   + _("Set key pool size to <n> (default: 100)\n") +
+            "  -rescan          \t  "   + _("Rescan the block chain for missing wallet transactions\n");
+
+#ifdef USE_SSL
+        strUsage += string() +
+            _("\nSSL options: (see the namecoin Wiki for SSL setup instructions)\n") +
+            "  -rpcssl                                \t  " + _("Use OpenSSL (https) for JSON-RPC connections\n") +
+            "  -rpcsslcertificatechainfile=<file.cert>\t  " + _("Server certificate file (default: server.cert)\n") +
+            "  -rpcsslprivatekeyfile=<file.pem>       \t  " + _("Server private key (default: server.pem)\n") +
+            "  -rpcsslciphers=<ciphers>               \t  " + _("Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)\n");
+>>>>>>> cleaned up some copy references to 'bitcoin' so that they now say 'namecoin'
 #endif
 
     // ********************************************************* Step 2: parameter interactions
@@ -557,11 +630,22 @@ bool AppInit2(boost::thread_group& threadGroup)
 #endif
     // ********************************************************* Step 4: application initialization: dir lock, daemonize, pidfile, debug log
 
+<<<<<<< HEAD
     std::string strDataDir = GetDataDir().string();
 #ifdef ENABLE_WALLET
     // Wallet file must be a plain filename without a directory
     if (strWalletFile != boost::filesystem::basename(strWalletFile) + boost::filesystem::extension(strWalletFile))
         return InitError(strprintf(_("Wallet %s resides outside data directory %s"), strWalletFile, strDataDir));
+=======
+    if (!fDebug && !pszSetDataDir[0])
+        ShrinkDebugFile();
+    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+    printf("namecoin version %s\n", FormatFullVersion().c_str());
+#ifdef GUI
+    printf("OS version %s\n", ((string)wxGetOsDescription()).c_str());
+    printf("System default language is %d %s\n", g_locale.GetSystemLanguage(), ((string)g_locale.GetSysName()).c_str());
+    printf("Language file %s (%s)\n", (string("locale/") + (string)g_locale.GetCanonicalName() + "/LC_MESSAGES/bitcoin.mo").c_str(), ((string)g_locale.GetLocale()).c_str());
+>>>>>>> cleaned up some copy references to 'bitcoin' so that they now say 'namecoin'
 #endif
     // Make sure only a single Bitcoin process is using the data directory.
     boost::filesystem::path pathLockFile = GetDataDir() / ".lock";
@@ -668,6 +752,7 @@ bool AppInit2(boost::thread_group& threadGroup)
 #endif
 #endif
 
+<<<<<<< HEAD
     CService addrProxy;
     bool fProxy = false;
     if (mapArgs.count("-proxy")) {
@@ -685,6 +770,17 @@ bool AppInit2(boost::thread_group& threadGroup)
             SetNameProxy(addrProxy, nSocksVersion);
         }
         fProxy = true;
+=======
+    // Make sure only a single bitcoin process is using the data directory.
+    string strLockFile = GetDataDir() + "/.lock";
+    FILE* file = fopen(strLockFile.c_str(), "a"); // empty lock file; created if it doesn't exist.
+    if (file) fclose(file);
+    static boost::interprocess::file_lock lock(strLockFile.c_str());
+    if (!lock.try_lock())
+    {
+        wxMessageBox(strprintf(_("Cannot obtain a lock on data directory %s.  namecoin is probably already running."), GetDataDir().c_str()), "Bitcoin");
+        return false;
+>>>>>>> cleaned up some copy references to 'bitcoin' so that they now say 'namecoin'
     }
 
     // -onion can override normal proxy, -noonion disables tor entirely
@@ -739,7 +835,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     // Load data files
     //
     if (fDaemon)
-        fprintf(stdout, "bitcoin server starting\n");
+        fprintf(stdout, "namecoin server starting\n");
     strErrors = "";
     int64 nStart;
 >>>>>>> hooks
