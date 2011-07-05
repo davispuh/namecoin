@@ -95,6 +95,7 @@ public:
 class CWallet : public CCryptoKeyStore, public CWalletInterface
 {
 private:
+<<<<<<< HEAD
     bool SelectCoins(int64_t nTargetValue, std::set<std::pair<const CWalletTx*,unsigned int> >& setCoinsRet, int64_t& nValueRet, const CCoinControl *coinControl = NULL) const;
 
     CWalletDB *pwalletdbEncryption;
@@ -104,6 +105,13 @@ private:
 
     // the maximum wallet format version: memory-only variable that specifies to what version this wallet may be upgraded
     int nWalletMaxVersion;
+=======
+    bool SelectCoinsMinConf(int64 nTargetValue, int nConfMine, int nConfTheirs, std::set<std::pair<const CWalletTx*,unsigned int> >& setCoinsRet, int64& nValueRet) const;
+
+public:
+    // visible for NAMECOIN
+    bool SelectCoins(int64 nTargetValue, std::set<std::pair<const CWalletTx*,unsigned int> >& setCoinsRet, int64& nValueRet) const;
+>>>>>>> namecoin using CWallet
 
     int64_t nNextResend;
     int64_t nLastResend;
