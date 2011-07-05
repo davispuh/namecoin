@@ -4,6 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "db.h"
+<<<<<<< HEAD
 
 #include "addrman.h"
 #include "hash.h"
@@ -17,6 +18,10 @@
 #include <sys/stat.h>
 #endif
 
+=======
+#include "net.h"
+#include "auxpow.h"
+>>>>>>> Merged mining
 #include <boost/filesystem.hpp>
 #include <boost/version.hpp>
 #include <openssl/rand.h>
@@ -173,8 +178,53 @@ bool CDBEnv::Salvage(std::string strFile, bool fAggressive,
     int result = db.verify(strFile.c_str(), NULL, &strDump, flags);
     if (result == DB_VERIFY_BAD)
     {
+<<<<<<< HEAD
         LogPrintf("Error: Salvage found errors, all data may not be recoverable.\n");
         if (!fAggressive)
+=======
+        // Read next record
+        CDataStream ssKey;
+        if (fFlags == DB_SET_RANGE)
+            ssKey << make_pair(string("blockindex"), uint256(0));
+        CDataStream ssValue;
+        int ret = ReadAtCursor(pcursor, ssKey, ssValue, fFlags);
+        fFlags = DB_NEXT;
+        if (ret == DB_NOTFOUND)
+            break;
+        else if (ret != 0)
+            return false;
+
+        // Unserialize
+        string strType;
+        ssKey >> strType;
+        if (strType == "blockindex")
+        {
+            CDiskBlockIndex diskindex;
+            ssValue >> diskindex;
+
+            // Construct block index object
+            CBlockIndex* pindexNew = InsertBlockIndex(diskindex.GetBlockHash());
+            pindexNew->pprev          = InsertBlockIndex(diskindex.hashPrev);
+            pindexNew->pnext          = InsertBlockIndex(diskindex.hashNext);
+            pindexNew->nFile          = diskindex.nFile;
+            pindexNew->nBlockPos      = diskindex.nBlockPos;
+            pindexNew->nHeight        = diskindex.nHeight;
+            pindexNew->nVersion       = diskindex.nVersion;
+            pindexNew->hashMerkleRoot = diskindex.hashMerkleRoot;
+            pindexNew->nTime          = diskindex.nTime;
+            pindexNew->nBits          = diskindex.nBits;
+            pindexNew->nNonce         = diskindex.nNonce;
+            pindexNew->auxpow         = diskindex.auxpow;
+
+            // Watch for genesis block
+            if (pindexGenesisBlock == NULL && diskindex.GetBlockHash() == hashGenesisBlock)
+                pindexGenesisBlock = pindexNew;
+
+            if (!pindexNew->CheckIndex())
+                return error("LoadBlockIndex() : CheckIndex failed at %d", pindexNew->nHeight);
+        }
+        else
+>>>>>>> Merged mining
         {
             LogPrintf("Error: Rerun with aggressive mode to ignore errors and continue.\n");
             return false;
@@ -201,8 +251,17 @@ bool CDBEnv::Salvage(std::string strFile, bool fAggressive,
     std::string keyHex, valueHex;
     while (!strDump.eof() && keyHex != "DATA=END")
     {
+<<<<<<< HEAD
         getline(strDump, keyHex);
         if (keyHex != "DATA_END")
+=======
+        if (pindex->nHeight < nBestHeight-2500 && !mapArgs.count("-checkblocks"))
+            break;
+        CBlock block;
+        if (!block.ReadFromDisk(pindex))
+            return error("LoadBlockIndex() : block.ReadFromDisk failed");
+        if (!block.CheckBlock(pindex->nHeight))
+>>>>>>> Merged mining
         {
             getline(strDump, valueHex);
             vResult.push_back(make_pair(ParseHex(keyHex),ParseHex(valueHex)));

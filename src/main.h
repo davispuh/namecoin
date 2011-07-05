@@ -16,6 +16,7 @@
 #include "core.h"
 #include "net.h"
 #include "script.h"
+<<<<<<< HEAD
 #include "sync.h"
 #include "txmempool.h"
 #include "uint256.h"
@@ -28,6 +29,12 @@
 #include <string>
 #include <utility>
 #include <vector>
+=======
+#include "db.h"
+
+#include <list>
+#include <boost/shared_ptr.hpp>
+>>>>>>> Merged mining
 
 class CBlockIndex;
 class CBloomFilter;
@@ -40,7 +47,12 @@ class CBlockIndex;
 class CHooks;
 >>>>>>> hooks
 
+<<<<<<< HEAD
 /** The maximum allowed size for a serialized block, in bytes (network rule) */
+=======
+class CAuxPow;
+
+>>>>>>> Merged mining
 static const unsigned int MAX_BLOCK_SIZE = 1000000;
 /** Default for -blockmaxsize, maximum size for mined blocks **/
 static const unsigned int DEFAULT_BLOCK_MAX_SIZE = 750000;
@@ -194,9 +206,18 @@ void PrintBlockTree();
 bool ProcessMessages(CNode* pfrom);
 /** Send queued protocol messages to be sent to a give node */
 bool SendMessages(CNode* pto, bool fSendTrickle);
+<<<<<<< HEAD
 /** Run an instance of the script checking thread */
 void ThreadScriptCheck();
 /** Check whether a block hash satisfies the proof-of-work requirement specified by nBits */
+=======
+void GenerateBitcoins(bool fGenerate, CWallet* pwallet);
+CBlock* CreateNewBlock(CReserveKey& reservekey);
+void IncrementExtraNonce(CBlock* pblock, CBlockIndex* pindexPrev, unsigned int& nExtraNonce, int64& nPrevTime);
+void IncrementExtraNonceWithAux(CBlock* pblock, CBlockIndex* pindexPrev, unsigned int& nExtraNonce, int64& nPrevTime, std::vector<unsigned char>& vchAux);
+void FormatHashBuffers(CBlock* pblock, char* pmidstate, char* pdata, char* phash1);
+bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey);
+>>>>>>> Merged mining
 bool CheckProofOfWork(uint256 hash, unsigned int nBits);
 /** Calculate the minimum amount of work a received block needs, without knowing its direct parent */
 unsigned int ComputeMinWork(unsigned int nBase, int64_t nTime);
@@ -593,17 +614,38 @@ protected:
         return (nTransactions+(1 << height)-1) >> height;
     }
 
+<<<<<<< HEAD
     // calculate the hash of a node in the merkle tree (at leaf level: the txid's themself)
     uint256 CalcHash(int height, unsigned int pos, const std::vector<uint256> &vTxid);
 
     // recursive function that traverses tree nodes, storing the data as bits and hashes
     void TraverseAndBuild(int height, unsigned int pos, const std::vector<uint256> &vTxid, const std::vector<bool> &vMatch);
+=======
+template <typename Stream>
+int ReadWriteAuxPow(Stream& s, const boost::shared_ptr<CAuxPow>& auxpow, int nType, int nVersion, CSerActionSerialize ser_action);
+
+template <typename Stream>
+int ReadWriteAuxPow(Stream& s, boost::shared_ptr<CAuxPow>& auxpow, int nType, int nVersion, CSerActionUnserialize ser_action);
+
+template <typename Stream>
+int ReadWriteAuxPow(Stream& s, const boost::shared_ptr<CAuxPow>& auxpow, int nType, int nVersion, CSerActionGetSerializeSize ser_action);
+
+enum
+{
+    // primary version
+    BLOCK_VERSION_DEFAULT        = (1 << 0),
+
+    // modifiers
+    BLOCK_VERSION_AUXPOW         = (1 << 16),
+};
+>>>>>>> Merged mining
 
     // recursive function that traverses tree nodes, consuming the bits and hashes produced by TraverseAndBuild.
     // it returns the hash of the respective node.
     uint256 TraverseAndExtract(int height, unsigned int pos, unsigned int &nBitsUsed, unsigned int &nHashUsed, std::vector<uint256> &vMatch);
 
 public:
+<<<<<<< HEAD
 
     // serialization implementation
     IMPLEMENT_SERIALIZE(
@@ -627,6 +669,64 @@ public:
 
     // Construct a partial merkle tree from a list of transaction id's, and a mask that selects a subset of them
     CPartialMerkleTree(const std::vector<uint256> &vTxid, const std::vector<bool> &vMatch);
+=======
+    // header
+    int nVersion;
+    uint256 hashPrevBlock;
+    uint256 hashMerkleRoot;
+    unsigned int nTime;
+    unsigned int nBits;
+    unsigned int nNonce;
+
+    // network and disk
+    std::vector<CTransaction> vtx;
+
+    // header
+    boost::shared_ptr<CAuxPow> auxpow;
+
+    // memory only
+    mutable std::vector<uint256> vMerkleTree;
+
+
+    CBlock()
+    {
+        SetNull();
+    }
+
+    IMPLEMENT_SERIALIZE
+    (
+        READWRITE(this->nVersion);
+        nVersion = this->nVersion;
+        READWRITE(hashPrevBlock);
+        READWRITE(hashMerkleRoot);
+        READWRITE(nTime);
+        READWRITE(nBits);
+        READWRITE(nNonce);
+
+        nSerSize += ReadWriteAuxPow(s, auxpow, nType, nVersion, ser_action);
+
+        // ConnectBlock depends on vtx being last so it can calculate offset
+        if (!(nType & SER_BLOCKHEADERONLY))
+            READWRITE(vtx);
+        else if (fRead)
+            const_cast<CBlock*>(this)->vtx.clear();
+    )
+
+    void SetAuxPow(CAuxPow* pow);
+
+    void SetNull()
+    {
+        nVersion = BLOCK_VERSION_DEFAULT;
+        hashPrevBlock = 0;
+        hashMerkleRoot = 0;
+        nTime = 0;
+        nBits = 0;
+        nNonce = 0;
+        vtx.clear();
+        vMerkleTree.clear();
+        auxpow.reset();
+    }
+>>>>>>> Merged mining
 
     CPartialMerkleTree();
 
@@ -657,14 +757,28 @@ bool ConnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex, C
 // Add this block to the block index, and if necessary, switch the active block chain to this
 bool AddToBlockIndex(CBlock& block, CValidationState& state, const CDiskBlockPos& pos);
 
+<<<<<<< HEAD
 // Context-independent validity checks
 bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW = true, bool fCheckMerkleRoot = true);
+=======
+    bool CheckProofOfWork(int nHeight) const;
+
+    bool ReadFromDisk(unsigned int nFile, unsigned int nBlockPos, bool fReadTransactions=true)
+    {
+        SetNull();
+>>>>>>> Merged mining
 
 // Store block on disk
 // if dbp is provided, the file is known to already reside on disk
 bool AcceptBlock(CBlock& block, CValidationState& state, CDiskBlockPos* dbp = NULL);
 
 
+<<<<<<< HEAD
+=======
+        // Check the header
+        if (!CheckProofOfWork(INT_MAX))
+            return error("CBlock::ReadFromDisk() : errors in block header");
+>>>>>>> Merged mining
 
 class CBlockFileInfo
 {
@@ -748,14 +862,48 @@ public:
     // pointer to the hash of the block, if any. memory is owned by this CBlockIndex
     const uint256* phashBlock;
 
+<<<<<<< HEAD
     // pointer to the index of the predecessor of this block
     CBlockIndex* pprev;
+=======
+    void print() const
+    {
+        printf("CBlock(hash=%s, ver=%d, hashPrevBlock=%s, hashMerkleRoot=%s, nTime=%u, nBits=%08x, nNonce=%u, vtx=%d)\n",
+            GetHash().ToString().substr(0,20).c_str(),
+            nVersion,
+            hashPrevBlock.ToString().substr(0,20).c_str(),
+            hashMerkleRoot.ToString().substr(0,10).c_str(),
+            nTime, nBits, nNonce,
+            vtx.size());
+        for (int i = 0; i < vtx.size(); i++)
+        {
+            printf("  ");
+            vtx[i].print();
+        }
+        printf("  vMerkleTree: ");
+        for (int i = 0; i < vMerkleTree.size(); i++)
+            printf("%s ", vMerkleTree[i].ToString().substr(0,10).c_str());
+
+        printf("\n");
+    }
+>>>>>>> Merged mining
 
     // height of the entry in the chain. The genesis block has height 0
     int nHeight;
 
+<<<<<<< HEAD
     // Which # file this block is stored in (blk?????.dat)
     int nFile;
+=======
+    bool DisconnectBlock(CTxDB& txdb, CBlockIndex* pindex);
+    bool ConnectBlock(CTxDB& txdb, CBlockIndex* pindex);
+    bool ReadFromDisk(const CBlockIndex* pindex, bool fReadTransactions=true);
+    bool SetBestChain(CTxDB& txdb, CBlockIndex* pindexNew);
+    bool AddToBlockIndex(unsigned int nFile, unsigned int nBlockPos);
+    bool CheckBlock(int nHeight) const;
+    bool AcceptBlock();
+};
+>>>>>>> Merged mining
 
     // Byte offset within blk?????.dat where this block's data is stored
     unsigned int nDataPos;
@@ -783,8 +931,14 @@ public:
     unsigned int nBits;
     unsigned int nNonce;
 
+<<<<<<< HEAD
     // (memory only) Sequencial id assigned to distinguish order in which blocks are received.
     uint32_t nSequenceId;
+=======
+    // if this is an aux work block
+    boost::shared_ptr<CAuxPow> auxpow;
+
+>>>>>>> Merged mining
 
     CBlockIndex()
     {
@@ -805,6 +959,7 @@ public:
         nTime          = 0;
         nBits          = 0;
         nNonce         = 0;
+        auxpow.reset();
     }
 
     CBlockIndex(CBlockHeader& block)
@@ -826,6 +981,7 @@ public:
         nTime          = block.nTime;
         nBits          = block.nBits;
         nNonce         = block.nNonce;
+        auxpow         = block.auxpow;
     }
 
     CDiskBlockPos GetBlockPos() const {
@@ -856,6 +1012,7 @@ public:
         block.nTime          = nTime;
         block.nBits          = nBits;
         block.nNonce         = nNonce;
+        block.auxpow         = auxpow;
         return block;
     }
 
@@ -878,10 +1035,19 @@ public:
         return (CBigNum(1)<<256) / (bnTarget+1);
     }
 
+<<<<<<< HEAD
     bool CheckIndex() const
     {
         return CheckProofOfWork(GetBlockHash(), nBits);
     }
+=======
+    bool IsInMainChain() const
+    {
+        return (pnext || this == pindexBest);
+    }
+
+    bool CheckIndex() const;
+>>>>>>> Merged mining
 
     enum { nMedianTimeSpan=11 };
 
@@ -908,6 +1074,7 @@ public:
     static bool IsSuperMajority(int minVersion, const CBlockIndex* pstart,
                                 unsigned int nRequired, unsigned int nToCheck);
 
+<<<<<<< HEAD
     std::string ToString() const
     {
         return strprintf("CBlockIndex(pprev=%p, nHeight=%d, merkle=%s, hashBlock=%s)",
@@ -915,6 +1082,9 @@ public:
             hashMerkleRoot.ToString().c_str(),
             GetBlockHash().ToString().c_str());
     }
+=======
+    std::string ToString() const;
+>>>>>>> Merged mining
 
     void print() const
     {
@@ -960,6 +1130,8 @@ public:
         READWRITE(nTime);
         READWRITE(nBits);
         READWRITE(nNonce);
+
+        ReadWriteAuxPow(s, auxpow, nType, this->nVersion, ser_action);
     )
 
     uint256 GetBlockHash() const
