@@ -1140,9 +1140,10 @@ uint256 static GetOrphanRoot(const uint256& hash)
 =======
 void CBlock::SetAuxPow(CAuxPow* pow)
 {
-    nVersion = BLOCK_VERSION_DEFAULT;
     if (pow != NULL)
         nVersion |=  BLOCK_VERSION_AUXPOW;
+    else
+        nVersion &=  ~BLOCK_VERSION_AUXPOW;
     auxpow.reset(pow);
 }
 
