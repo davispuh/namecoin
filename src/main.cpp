@@ -3402,6 +3402,72 @@ string GetWarnings(string strFor)
     return "error";
 }
 
+<<<<<<< HEAD
+=======
+bool CAlert::CheckSignature()
+{
+    CKey key1, key2;
+    if (!key1.SetPubKey(ParseHex(hooks->GetAlertPubkey1())))
+        return error("CAlert::CheckSignature() : SetPubKey failed");
+    if (!key2.SetPubKey(ParseHex(hooks->GetAlertPubkey2())))
+        return error("CAlert::CheckSignature() : SetPubKey failed");
+    if (!key1.Verify(Hash(vchMsg.begin(), vchMsg.end()), vchSig) && !key2.Verify(Hash(vchMsg.begin(), vchMsg.end()), vchSig) )
+        return error("CAlert::CheckSignature() : verify signature failed");
+
+    // Now unserialize the data
+    CDataStream sMsg(vchMsg);
+    sMsg >> *(CUnsignedAlert*)this;
+    return true;
+}
+
+bool CAlert::ProcessAlert()
+{
+    if (!CheckSignature())
+        return false;
+    if (!IsInEffect())
+        return false;
+
+    CRITICAL_BLOCK(cs_mapAlerts)
+    {
+        // Cancel previous alerts
+        for (map<uint256, CAlert>::iterator mi = mapAlerts.begin(); mi != mapAlerts.end();)
+        {
+            const CAlert& alert = (*mi).second;
+            if (Cancels(alert))
+            {
+                printf("cancelling alert %d\n", alert.nID);
+                mapAlerts.erase(mi++);
+            }
+            else if (!alert.IsInEffect())
+            {
+                printf("expiring alert %d\n", alert.nID);
+                mapAlerts.erase(mi++);
+            }
+            else
+                mi++;
+        }
+
+        // Check if this alert has been cancelled
+        BOOST_FOREACH(PAIRTYPE(const uint256, CAlert)& item, mapAlerts)
+        {
+            const CAlert& alert = item.second;
+            if (alert.Cancels(*this))
+            {
+                printf("alert already cancelled by %d\n", alert.nID);
+                return false;
+            }
+        }
+
+        // Add to mapAlerts
+        mapAlerts.insert(make_pair(GetHash(), *this));
+    }
+
+    printf("accepted alert %d, AppliesToMe()=%d\n", nID, AppliesToMe());
+    MainFrameRepaint();
+    return true;
+}
+
+>>>>>>> Alert public key in hooks
 
 
 

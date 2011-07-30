@@ -1313,8 +1313,12 @@ extern CChain chainActive;
 /** The currently best known chain of headers (some of which may be invalid). */
 extern CChain chainMostWork;
 
+<<<<<<< HEAD
 /** Global variable that points to the active CCoinsView (protected by cs_main) */
 extern CCoinsViewCache *pcoinsTip;
+=======
+    bool CheckSignature();
+>>>>>>> Alert public key in hooks
 
 /** Global variable that points to the active block tree (protected by cs_main) */
 extern CBlockTreeDB *pblocktree;
