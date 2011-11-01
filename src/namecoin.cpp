@@ -522,7 +522,6 @@ Value name_list(const Array& params, bool fHelp)
                 oName.push_back(Pair("value", value));
                 if (!hooks->IsMine(pwalletMain->mapWallet[hash]))
                     oName.push_back(Pair("transferred", 1));
-                oName.push_back(Pair("expires_in", nHeight + GetDisplayExpirationDepth(nHeight) - pindexBest->nHeight));
                 int op;
                 int nOut;
                 vector<vector<unsigned char> > vvch;
@@ -532,6 +531,14 @@ Value name_list(const Array& params, bool fHelp)
                 const CTxOut& txout = tx.vout[nOut];
                 const CScript& scriptPubKey = RemoveNameScriptPrefix(txout.scriptPubKey);
                 oName.push_back(Pair("address", scriptPubKey.GetBitcoinAddress()));
+                if(nHeight + GetDisplayExpirationDepth(nHeight) - pindexBest->nHeight <= 0)
+                {
+                    oName.push_back(Pair("expired", 1));
+                }
+                else
+                {
+                    oName.push_back(Pair("expires_in", nHeight + GetDisplayExpirationDepth(nHeight) - pindexBest->nHeight));
+                }
                 oRes.push_back(oName);
             }
         }
@@ -644,7 +651,6 @@ Value name_history(const Array& params, bool fHelp)
                 string value = stringFromVch(vchValue);
                 oName.push_back(Pair("value", value));
                 oName.push_back(Pair("txid", tx.GetHash().GetHex()));
-                oName.push_back(Pair("expires_in", nHeight + GetDisplayExpirationDepth(nHeight) - pindexBest->nHeight));
                 int op;
                 int nOut;
                 vector<vector<unsigned char> > vvch;
@@ -652,6 +658,14 @@ Value name_history(const Array& params, bool fHelp)
                 const CTxOut& txout = tx.vout[nOut];
                 const CScript& scriptPubKey = RemoveNameScriptPrefix(txout.scriptPubKey);
                 oName.push_back(Pair("address", scriptPubKey.GetBitcoinAddress()));
+                if(nHeight + GetDisplayExpirationDepth(nHeight) - pindexBest->nHeight <= 0)
+                {
+                    oName.push_back(Pair("expired", 1));
+                }
+                else
+                {
+                    oName.push_back(Pair("expires_in", nHeight + GetDisplayExpirationDepth(nHeight) - pindexBest->nHeight));
+                }
                 oRes.push_back(oName);
             }
         }
@@ -698,12 +712,17 @@ Value name_scan(const Array& params, bool fHelp)
         vector<unsigned char> vchValue;
         int nHeight;
         uint256 hash;
-        if (!txPos.IsNull() && GetValueOfTxPos(txPos, vchValue, hash, nHeight))
+        if (txPos.IsNull() ||
+            !GetValueOfTxPos(txPos, vchValue, hash, nHeight) ||
+            (GetValueOfTxPos(txPos, vchValue, hash, nHeight) && nHeight + GetDisplayExpirationDepth(nHeight) - pindexBest->nHeight <= 0))
+        {
+            oName.push_back(Pair("expired", 1));
+        }
+        else
         {
             string value = stringFromVch(vchValue);
             oName.push_back(Pair("value", value));
             oName.push_back(Pair("txid", hash.GetHex()));
-            oName.push_back(Pair("expires_in", nHeight + GetDisplayExpirationDepth(nHeight) - pindexBest->nHeight));
             int op;
             int nOut;
             vector<vector<unsigned char> > vvch;
@@ -713,10 +732,7 @@ Value name_scan(const Array& params, bool fHelp)
             const CTxOut& txout = tx.vout[nOut];
             const CScript& scriptPubKey = RemoveNameScriptPrefix(txout.scriptPubKey);
             oName.push_back(Pair("address", scriptPubKey.GetBitcoinAddress()));
-        }
-        else
-        {
-            oName.push_back(Pair("expired", 1));
+            oName.push_back(Pair("expires_in", nHeight + GetDisplayExpirationDepth(nHeight) - pindexBest->nHeight));
         }
         oRes.push_back(oName);
     }
