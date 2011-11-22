@@ -464,6 +464,7 @@ bool AppInit2(boost::thread_group& threadGroup)
 #endif
 #endif
             "  -paytxfee=<amt>  \t  "   + _("Fee per KB to add to transactions you send\n") +
+            "  -mininput=<amt>  \t  "   + _("When creating transactions, ignore inputs with value less than this (default: 0.0001)\n") +
 #ifdef GUI
             "  -server          \t\t  " + _("Accept command line and JSON-RPC commands\n") +
 #endif
@@ -1145,6 +1146,19 @@ bool AppInit2(boost::thread_group& threadGroup)
 
     nStart = GetTimeMillis();
 
+<<<<<<< HEAD
+=======
+    if (mapArgs.count("-mininput"))
+    {
+        if (!ParseMoney(mapArgs["-mininput"], nMinimumInputValue))
+        {
+            wxMessageBox(_("Invalid amount for -mininput=<amount>"), "Litecoin");
+            return false;
+        }
+    }
+
+    if (fHaveUPnP)
+>>>>>>> Add mininput to deal with dust spam.
     {
         CAddrDB adb;
         if (!adb.Read(addrman))

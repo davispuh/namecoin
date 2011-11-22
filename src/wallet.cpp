@@ -1147,11 +1147,43 @@ void CWallet::AvailableCoins(vector<COutput>& vCoins, bool fOnlyConfirmed, const
             if (nDepth < 0)
                 continue;
 
+<<<<<<< HEAD
             for (unsigned int i = 0; i < pcoin->vout.size(); i++) {
                 if (!(pcoin->IsSpent(i)) && IsMine(pcoin->vout[i]) &&
                     !IsLockedCoin((*it).first, i) && pcoin->vout[i].nValue > 0 &&
                     (!coinControl || !coinControl->HasSelected() || coinControl->IsSelected((*it).first, i)))
                         vCoins.push_back(COutput(pcoin, i, nDepth));
+=======
+            for (int i = 0; i < pcoin->vout.size(); i++)
+            {
+                if (pcoin->IsSpent(i) || !IsMine(pcoin->vout[i]))
+                    continue;
+
+                int64 n = pcoin->vout[i].nValue;
+
+                // If output is less than minimum value, then don't include transaction.
+                // This is to help deal with dust spam clogging up create transactions.
+                if (n <= 0 || n < nMinimumInputValue)
+                    continue;
+
+                pair<int64,pair<const CWalletTx*,unsigned int> > coin = make_pair(n,make_pair(pcoin,i));
+
+                if (n == nTargetValue)
+                {
+                    setCoinsRet.insert(coin.second);
+                    nValueRet += coin.first;
+                    return true;
+                }
+                else if (n < nTargetValue + CENT)
+                {
+                    vValue.push_back(coin);
+                    nTotalLower += n;
+                }
+                else if (n < coinLowestLarger.first)
+                {
+                    coinLowestLarger = coin;
+                }
+>>>>>>> Add mininput to deal with dust spam.
             }
         }
     }
