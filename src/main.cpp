@@ -2629,7 +2629,11 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CDiskBlockPos* dbp)
     return true;
 }
 
+<<<<<<< HEAD
 bool CBlockIndex::IsSuperMajority(int minVersion, const CBlockIndex* pstart, unsigned int nRequired, unsigned int nToCheck)
+=======
+bool ProcessBlock(CNode* pfrom, CBlock* pblock)
+>>>>>>> Add getmemorypool rpc command
 {
     unsigned int nFound = 0;
     for (unsigned int i = 0; i < nToCheck && nFound < nRequired && pstart != NULL; i++)
