@@ -54,6 +54,7 @@ class CAuxPow;
 
 >>>>>>> Merged mining
 static const unsigned int MAX_BLOCK_SIZE = 1000000;
+<<<<<<< HEAD
 /** Default for -blockmaxsize, maximum size for mined blocks **/
 static const unsigned int DEFAULT_BLOCK_MAX_SIZE = 750000;
 /** Default for -blockprioritysize, maximum space for zero/low-fee transactions **/
@@ -73,6 +74,16 @@ static const unsigned int BLOCKFILE_CHUNK_SIZE = 0x1000000; // 16 MiB
 /** The pre-allocation chunk size for rev?????.dat files (since 0.8) */
 static const unsigned int UNDOFILE_CHUNK_SIZE = 0x100000; // 1 MiB
 /** Coinbase transaction outputs can only be spent after this number of new blocks (network rule) */
+=======
+static const unsigned int MAX_BLOCK_SIZE_GEN = MAX_BLOCK_SIZE/2;
+static const int MAX_BLOCK_SIGOPS = MAX_BLOCK_SIZE/50;
+static const int64 COIN = 100000000;
+static const int64 CENT = 1000000;
+static const int64 MIN_TX_FEE = 500000;
+static const int64 MIN_RELAY_TX_FEE = 10000;
+static const int64 MAX_MONEY = 21000000 * COIN;
+inline bool MoneyRange(int64 nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
+>>>>>>> Increase min transaction fee
 static const int COINBASE_MATURITY = 100;
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
