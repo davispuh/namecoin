@@ -443,11 +443,29 @@ public:
         if (!filein)
             return error("CBlockUndo::ReadFromDisk : OpenBlockFile failed");
 
+<<<<<<< HEAD
         // Read block
         uint256 hashChecksum;
         try {
             filein >> *this;
             filein >> hashChecksum;
+=======
+        if (fAllowFree)
+        {
+            if (nBlockSize == 1)
+            {
+                // Transactions under 10K are free
+                // (about 4500bc if made of 50bc inputs)
+                if (nBytes < 10000)
+                    nMinFee = 0;
+            }
+            else
+            {
+                // Free transaction area
+                if (nNewBlockSize < 9000)
+                    nMinFee = 0;
+            }
+>>>>>>> Reduce free transaction area
         }
 <<<<<<< HEAD
         catch (std::exception &e) {
