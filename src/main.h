@@ -449,8 +449,24 @@ public:
             filein >> *this;
             filein >> hashChecksum;
         }
+<<<<<<< HEAD
         catch (std::exception &e) {
             return error("%s : Deserialize or I/O error - %s", __PRETTY_FUNCTION__, e.what());
+=======
+
+        // To limit dust spam, require MIN_TX_FEE/MIN_RELAY_TX_FEE if any output is less than 0.01
+        if (nMinFee < nBaseFee)
+            BOOST_FOREACH(const CTxOut& txout, vout)
+                if (txout.nValue < CENT)
+                    nMinFee += nBaseFee;
+
+        // Raise the price as the block approaches full
+        if (nBlockSize != 1 && nNewBlockSize >= MAX_BLOCK_SIZE_GEN/2)
+        {
+            if (nNewBlockSize >= MAX_BLOCK_SIZE_GEN)
+                return MAX_MONEY;
+            nMinFee *= MAX_BLOCK_SIZE_GEN / (MAX_BLOCK_SIZE_GEN - nNewBlockSize);
+>>>>>>> Increase min fee for each dust transaction
         }
 
         // Verify checksum
