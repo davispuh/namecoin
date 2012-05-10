@@ -300,8 +300,64 @@ struct CDiskBlockPos
         return !(a == b);
     }
 
+<<<<<<< HEAD
     void SetNull() { nFile = -1; nPos = 0; }
     bool IsNull() const { return (nFile == -1); }
+=======
+    std::string ToString() const
+    {
+        if (IsNull())
+            return strprintf("null");
+        else
+            return strprintf("(nFile=%d, nBlockPos=%d, nTxPos=%d)", nFile, nBlockPos, nTxPos);
+    }
+
+    void print() const
+    {
+        printf("%s", ToString().c_str());
+    }
+};
+
+class CNameIndex
+{
+public:
+    CDiskTxPos txPos;
+    unsigned int nHeight;
+    std::vector<unsigned char> vValue;
+
+    CNameIndex()
+    {
+    }
+
+    CNameIndex(CDiskTxPos txPosIn, unsigned int nHeightIn, std::vector<unsigned char> vValueIn)
+    {
+        txPos = txPosIn;
+        nHeight = nHeightIn;
+        vValue = vValueIn;
+    }
+
+    IMPLEMENT_SERIALIZE
+    (
+        READWRITE(txPos);
+        READWRITE(nHeight);
+        READWRITE(vValue);
+    )
+};
+
+
+
+
+class CInPoint
+{
+public:
+    CTransaction* ptx;
+    unsigned int n;
+
+    CInPoint() { SetNull(); }
+    CInPoint(CTransaction* ptxIn, unsigned int nIn) { ptx = ptxIn; n = nIn; }
+    void SetNull() { ptx = NULL; n = -1; }
+    bool IsNull() const { return (ptx == NULL && n == -1); }
+>>>>>>> Faster name_list (11 times) and name_scan (3 times)
 };
 
 struct CDiskTxPos : public CDiskBlockPos
