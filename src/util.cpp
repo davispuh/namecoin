@@ -1110,9 +1110,17 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
 boost::filesystem::path GetPidFile()
 {
+<<<<<<< HEAD
     boost::filesystem::path pathPidFile(GetArg("-pid", "bitcoind.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
+=======
+    namespace fs = boost::filesystem;
+    fs::path pathConfig(GetArg("-pid", "namecoind.pid"));
+    if (!pathConfig.is_complete())
+        pathConfig = fs::path(GetDataDir()) / pathConfig;
+    return pathConfig.string();
+>>>>>>> Set default pid file name to 'namecoind.pid'
 }
 
 #ifndef WIN32
