@@ -39,8 +39,13 @@
 using namespace std;
 using namespace boost;
 
+<<<<<<< HEAD
 #ifdef ENABLE_WALLET
 std::string strWalletFile;
+=======
+void rescanfornames();
+
+>>>>>>> Move rescanfornames earlier
 CWallet* pwalletMain;
 #endif
 
@@ -1178,6 +1183,7 @@ bool AppInit2(boost::thread_group& threadGroup)
 
     RandAddSeedPerfmon();
 
+<<<<<<< HEAD
     //// debug print
     LogPrintf("mapBlockIndex.size() = %"PRIszu"\n",   mapBlockIndex.size());
     LogPrintf("nBestHeight = %d\n",                   chainActive.Height());
@@ -1186,6 +1192,18 @@ bool AppInit2(boost::thread_group& threadGroup)
     LogPrintf("mapWallet.size() = %"PRIszu"\n",       pwalletMain ? pwalletMain->mapWallet.size() : 0);
     LogPrintf("mapAddressBook.size() = %"PRIszu"\n",  pwalletMain ? pwalletMain->mapAddressBook.size() : 0);
 #endif
+=======
+    filesystem::path nameindexfile = filesystem::path(GetDataDir()) / "nameindexfull.dat";
+    if (!filesystem::exists(nameindexfile))
+    {   
+        //PrintConsole("Scanning blockchain for names to create fast index...");
+        rescanfornames();
+        //PrintConsole("\n");
+    }
+
+    if (!CreateThread(StartNode, NULL))
+        wxMessageBox("Error: CreateThread(StartNode) failed", "Bitcoin");
+>>>>>>> Move rescanfornames earlier
 
     StartNode(threadGroup);
     // InitRPCMining is needed here so getwork/getblocktemplate in the GUI debug console works properly.
