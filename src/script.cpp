@@ -332,7 +332,11 @@ bool EvalScript(vector<vector<unsigned char> >& stack, const CScript& script, co
             //
             if (!script.GetOp(pc, opcode, vchPushValue))
                 return false;
+<<<<<<< HEAD
             if (vchPushValue.size() > MAX_SCRIPT_ELEMENT_SIZE)
+=======
+            if (vchPushValue.size() > 1023)
+>>>>>>> Fix issue #3 : set max name length to 1023
                 return false;
 
             // Note how OP_RESERVED does not count towards the opcode limit.
