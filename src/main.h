@@ -17,6 +17,7 @@
 #include "net.h"
 #include "script.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "sync.h"
 #include "txmempool.h"
 #include "uint256.h"
@@ -31,11 +32,24 @@
 #include <vector>
 =======
 #include "db.h"
+=======
+#include "walletdb.h"
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
 #include <list>
 #include <boost/shared_ptr.hpp>
 >>>>>>> Merged mining
 
+<<<<<<< HEAD
+=======
+#ifdef __WXMSW__
+#include <io.h> /* for _commit */
+#else
+#include <sys/prctl.h>
+#endif
+
+class CBlock;
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 class CBlockIndex;
 class CBloomFilter;
 class CInv;
@@ -307,7 +321,7 @@ struct CDiskBlockPos
     std::string ToString() const
     {
         if (IsNull())
-            return strprintf("null");
+            return "null";
         else
             return strprintf("(nFile=%d, nBlockPos=%d, nTxPos=%d)", nFile, nBlockPos, nTxPos);
     }
@@ -386,8 +400,78 @@ struct CDiskTxPos : public CDiskBlockPos
 
 enum GetMinFee_mode
 {
+<<<<<<< HEAD
     GMF_RELAY,
     GMF_SEND,
+=======
+public:
+    COutPoint prevout;
+    CScript scriptSig;
+    unsigned int nSequence;
+
+    CTxIn()
+    {
+        nSequence = UINT_MAX;
+    }
+
+    explicit CTxIn(COutPoint prevoutIn, CScript scriptSigIn=CScript(), unsigned int nSequenceIn=UINT_MAX)
+    {
+        prevout = prevoutIn;
+        scriptSig = scriptSigIn;
+        nSequence = nSequenceIn;
+    }
+
+    CTxIn(uint256 hashPrevTx, unsigned int nOut, CScript scriptSigIn=CScript(), unsigned int nSequenceIn=UINT_MAX)
+    {
+        prevout = COutPoint(hashPrevTx, nOut);
+        scriptSig = scriptSigIn;
+        nSequence = nSequenceIn;
+    }
+
+    IMPLEMENT_SERIALIZE
+    (
+        READWRITE(prevout);
+        READWRITE(scriptSig);
+        READWRITE(nSequence);
+    )
+
+    bool IsFinal() const
+    {
+        return (nSequence == UINT_MAX);
+    }
+
+    friend bool operator==(const CTxIn& a, const CTxIn& b)
+    {
+        return (a.prevout   == b.prevout &&
+                a.scriptSig == b.scriptSig &&
+                a.nSequence == b.nSequence);
+    }
+
+    friend bool operator!=(const CTxIn& a, const CTxIn& b)
+    {
+        return !(a == b);
+    }
+
+    std::string ToString() const
+    {
+        std::string str;
+        str += "CTxIn(";
+        str += prevout.ToString();
+        if (prevout.IsNull())
+            str += strprintf(", coinbase %s", HexStr(scriptSig).c_str());
+        else
+            str += strprintf(", scriptSig=%s", scriptSig.ToString().substr(0,24).c_str());
+        if (nSequence != UINT_MAX)
+            str += strprintf(", nSequence=%u", nSequence);
+        str += ")";
+        return str;
+    }
+
+    void print() const
+    {
+        printf("%s\n", ToString().c_str());
+    }
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 };
 
 int64_t GetMinFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree, enum GetMinFee_mode mode);

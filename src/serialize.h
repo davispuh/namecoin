@@ -27,6 +27,8 @@
 #include <boost/tuple/tuple_comparison.hpp>
 #include <boost/tuple/tuple_io.hpp>
 
+#include "allocators.h"
+
 #if defined(_MSC_VER) || defined(__BORLANDC__)
 typedef __int64  int64;
 typedef unsigned __int64  uint64;
@@ -816,6 +818,7 @@ struct ser_streamplaceholder
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -827,6 +830,13 @@ typedef std::vector<char, zero_after_free_allocator<char> > CSerializeData;
  * >> and << read and write unformatted data using the above serialization templates.
  * Fills with data in linear time; some stringstream implementations take N^2 time.
  */
+=======
+//
+// Double ended buffer combining vector and stream-like interfaces.
+// >> and << read and write unformatted data using the above serialization templates.
+// Fills with data in linear time; some stringstream implementations take N^2 time.
+//
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 class CDataStream
 {
 protected:

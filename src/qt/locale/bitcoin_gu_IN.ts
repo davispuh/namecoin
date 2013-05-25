@@ -8,6 +8,7 @@
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>About Bitcoin Core</source>
         <translation type="unfinished"/>
     </message>
@@ -16,16 +17,28 @@
         <source>&lt;b&gt;Bitcoin Core&lt;/b&gt; version</source>
 =======
         <source>About Bitcoin</source>
+=======
+        <source>About Namecoin</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation>બીટકોઈન વિષે</translation>
     </message>
     <message>
         <location line="+39"/>
+<<<<<<< HEAD
         <source>&lt;b&gt;Bitcoin&lt;/b&gt; version</source>
 >>>>>>> Committing original src/qt
+=======
+        <source>&lt;b&gt;Namecoin&lt;/b&gt; version</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+57"/>
+        <location line="+41"/>
+        <source>Copyright © 2009-2013 The Bitcoin and Namecoin developers</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+13"/>
         <source>
 This is experimental software.
 
@@ -34,6 +47,7 @@ Distributed under the MIT/X11 software license, see the accompanying file COPYIN
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
         <translation type="unfinished"/>
     </message>
+<<<<<<< HEAD
     <message>
 <<<<<<< HEAD
         <location filename="../utilitydialog.cpp" line="+29"/>
@@ -52,6 +66,8 @@ This product includes software developed by the OpenSSL Project for use in the O
 >>>>>>> Committing original src/qt
         <translation type="unfinished"/>
     </message>
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 </context>
 <context>
     <name>AddressBookPage</name>
@@ -79,7 +95,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+22"/>
         <source>Double-click to edit address or label</source>
         <translation type="unfinished"/>
     </message>
@@ -113,13 +129,17 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Bitcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <location line="-46"/>
+        <source>These are your Namecoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/addressbookpage.ui" line="+14"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+60"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>&amp;Copy Address</source>
         <translation type="unfinished"/>
     </message>
@@ -139,8 +159,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
+<<<<<<< HEAD
         <source>Sign a message to prove you own a Bitcoin address</source>
 >>>>>>> Committing original src/qt
+=======
+        <source>Sign a message to prove you own a Namecoin address</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -191,18 +215,8 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+27"/>
-        <source>Export the data in the current tab to a file</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>&amp;Export</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Bitcoin address</source>
+        <location line="-14"/>
+        <source>Verify a message to ensure it was signed with a specified Namecoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -216,6 +230,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../addressbookpage.cpp" line="-5"/>
 >>>>>>> Committing original src/qt
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
@@ -232,16 +247,20 @@ This product includes software developed by the OpenSSL Project for use in the O
         <source>Copy &amp;Label</source>
 =======
         <location line="+13"/>
+=======
+        <location filename="../addressbookpage.cpp" line="+65"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Copy &amp;Label</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>&amp;Edit</source>
 >>>>>>> Committing original src/qt
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
 <<<<<<< HEAD
         <source>&amp;Edit</source>
@@ -256,6 +275,9 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+260"/>
+=======
+        <location line="+250"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Export Address Book Data</source>
 >>>>>>> Committing original src/qt
         <translation type="unfinished"/>
@@ -289,10 +311,14 @@ This product includes software developed by the OpenSSL Project for use in the O
     <name>AddressTableModel</name>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../addresstablemodel.cpp" line="+168"/>
 =======
         <location filename="../addresstablemodel.cpp" line="+144"/>
 >>>>>>> Committing original src/qt
+=======
+        <location filename="../addresstablemodel.cpp" line="+142"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Label</source>
         <translation type="unfinished"/>
     </message>
@@ -380,7 +406,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NAMECOINS&lt;/b&gt;!</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -407,7 +433,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Namecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Namecoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -453,31 +479,43 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>NamecoinGUI</name>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../bitcoingui.cpp" line="+295"/>
 =======
         <location filename="../bitcoingui.cpp" line="+233"/>
 >>>>>>> Committing original src/qt
+=======
+        <location filename="../bitcoingui.cpp" line="+267"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Sign &amp;message...</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+335"/>
 =======
         <location line="+280"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+254"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Synchronizing with network...</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-407"/>
 =======
         <location line="-349"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-322"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>&amp;Overview</source>
         <translation type="unfinished"/>
     </message>
@@ -507,20 +545,43 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+17"/>
 =======
         <location line="+7"/>
+=======
+        <location line="+6"/>
+        <source>&amp;Address Book</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Edit the list of stored addresses and labels</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-14"/>
+        <location line="-15"/>
+        <source>&amp;Receive coins</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Show the list of addresses for receiving payments</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+31"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-8"/>
+        <source>&amp;Send coins</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+39"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>E&amp;xit</source>
         <translation type="unfinished"/>
     </message>
@@ -534,8 +595,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+7"/>
 =======
         <location line="+4"/>
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <source>Show information about Bitcoin</source>
+=======
+        <source>Show information about Namecoin</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -563,10 +628,14 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+9"/>
 =======
         <location line="+6"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+5"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>&amp;Encrypt Wallet...</source>
         <translation type="unfinished"/>
     </message>
@@ -581,6 +650,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+10"/>
         <source>&amp;Sending addresses...</source>
@@ -601,6 +671,9 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="+285"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+259"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Importing blocks from disk...</source>
         <translation type="unfinished"/>
     </message>
@@ -609,26 +682,50 @@ This product includes software developed by the OpenSSL Project for use in the O
         <source>Reindexing blocks on disk...</source>
         <translation type="unfinished"/>
     </message>
+    <message numerus="yes">
+        <location line="+10"/>
+        <source>~%n block(s) remaining</source>
+        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+    </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-405"/>
 =======
         <location line="-347"/>
 >>>>>>> Committing original src/qt
         <source>Send coins to a Bitcoin address</source>
+=======
+        <location line="-265"/>
+        <source>&amp;Export...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-65"/>
+        <source>Send coins to a Namecoin address</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Bitcoin</source>
+        <source>Modify configuration options for Namecoin</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+12"/>
 =======
         <location line="+9"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+17"/>
+        <source>Export the data in the current tab to a file</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-9"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Backup wallet to another location</source>
         <translation type="unfinished"/>
     </message>
@@ -638,7 +735,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+9"/>
         <source>&amp;Debug window</source>
         <translation type="unfinished"/>
     </message>
@@ -648,11 +745,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-4"/>
+        <location line="-7"/>
         <source>&amp;Verify message...</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+430"/>
 =======
@@ -668,10 +766,20 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="-530"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-196"/>
+        <location line="+538"/>
+        <source>Namecoin</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-538"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Wallet</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+146"/>
 =======
@@ -697,6 +805,10 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+22"/>
         <source>&amp;About Bitcoin</source>
+=======
+        <location line="+176"/>
+        <source>&amp;About Namecoin</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -711,35 +823,43 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+2"/>
         <source>Encrypt the private keys that belong to your wallet</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Namecoin addresses to prove you own them</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Namecoin addresses</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+48"/>
 =======
         <location line="+28"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+31"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>&amp;File</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+14"/>
 =======
         <location line="+7"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+8"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>&amp;Settings</source>
         <translation type="unfinished"/>
     </message>
@@ -763,16 +883,26 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-284"/>
         <location line="+376"/>
 =======
         <location line="+17"/>
+=======
+        <location line="+8"/>
+        <source>Actions toolbar</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+13"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <location line="+10"/>
 >>>>>>> Committing original src/qt
         <source>[testnet]</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-401"/>
         <source>Bitcoin Core</source>
@@ -830,23 +960,28 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+141"/>
 >>>>>>> Committing original src/qt
         <source>%n active connection(s) to Bitcoin network</source>
+=======
+        <location line="+63"/>
+        <source>Namecoin client</source>
+        <translation type="unfinished"/>
+    </message>
+    <message numerus="yes">
+        <location line="+79"/>
+        <source>%n active connection(s) to Namecoin network</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
     <message>
-        <location line="+22"/>
-        <source>No block source available...</source>
+        <location line="+45"/>
+        <source>Processed %1 of %2 blocks of transaction history (%3% done).</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+12"/>
-        <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+4"/>
+        <location line="+7"/>
         <source>Processed %1 blocks of transaction history.</source>
         <translation type="unfinished"/>
     </message>
+<<<<<<< HEAD
     <message numerus="yes">
 <<<<<<< HEAD
         <location line="+23"/>
@@ -866,37 +1001,25 @@ This product includes software developed by the OpenSSL Project for use in the O
         <source>%n week(s)</source>
         <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     <message>
-        <location line="+4"/>
-        <source>%1 behind</source>
+        <location line="+70"/>
+        <source>Error</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+21"/>
 =======
         <location line="+14"/>
 >>>>>>> Committing original src/qt
         <source>Last received block was generated %1 ago.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Transactions after this will not yet be visible.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-<<<<<<< HEAD
-        <location line="+27"/>
 =======
-        <location line="+22"/>
->>>>>>> Committing original src/qt
-        <source>Error</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <location line="+3"/>
         <source>Warning</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -904,6 +1027,31 @@ This product includes software developed by the OpenSSL Project for use in the O
         <source>Information</source>
         <translation type="unfinished"/>
     </message>
+    <message>
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <location line="+27"/>
+=======
+        <location line="+22"/>
+>>>>>>> Committing original src/qt
+        <source>Error</source>
+=======
+        <location line="+66"/>
+        <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+210"/>
+        <source>Backup Successful</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>The wallet data was successfully saved to the new location.</source>
+        <translation type="unfinished"/>
+    </message>
+<<<<<<< HEAD
     <message>
 <<<<<<< HEAD
         <location line="-85"/>
@@ -915,29 +1063,70 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-140"/>
 >>>>>>> Committing original src/qt
+=======
+    <message numerus="yes">
+        <location line="-338"/>
+        <source>%n second(s) ago</source>
+        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+4"/>
+        <source>%n minute(s) ago</source>
+        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+4"/>
+        <source>%n hour(s) ago</source>
+        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+4"/>
+        <source>%n day(s) ago</source>
+        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Up to date</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+34"/>
 =======
         <location line="+31"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+7"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Catching up...</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+130"/>
 =======
         <location line="+113"/>
+=======
+        <location line="+10"/>
+        <source>Last received block was generated %1.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+97"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Confirm transaction fee</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+8"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+23"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Sent transaction</source>
         <translation type="unfinished"/>
     </message>
@@ -957,17 +1146,22 @@ Address: %4
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+69"/>
 =======
         <location line="+33"/>
         <location line="+23"/>
+=======
+        <location line="+99"/>
+        <location line="+28"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>URI handling</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-23"/>
-        <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <location line="-28"/>
+        <location line="+28"/>
+        <source>URI can not be parsed! This can be caused by an invalid Namecoin address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -983,11 +1177,36 @@ Address: %4
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../bitcoin.cpp" line="+438"/>
 =======
         <location filename="../bitcoin.cpp" line="+111"/>
 >>>>>>> Committing original src/qt
         <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
+=======
+        <location line="+23"/>
+        <source>Backup Wallet</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Wallet Data (*.dat)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Backup Failed</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>There was an error trying to save the wallet data to the new location.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../Namecoin.cpp" line="+109"/>
+        <source>A fatal error occurred. Namecoin can no longer continue safely and will quit.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
 </context>
@@ -995,10 +1214,14 @@ Address: %4
     <name>ClientModel</name>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../clientmodel.cpp" line="+119"/>
 =======
         <location filename="../clientmodel.cpp" line="+104"/>
 >>>>>>> Committing original src/qt
+=======
+        <location filename="../clientmodel.cpp" line="+86"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Network Alert</source>
         <translation type="unfinished"/>
     </message>
@@ -1127,7 +1350,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../editaddressdialog.cpp" line="+21"/>
+        <location filename="../editaddressdialog.cpp" line="+20"/>
         <source>New receiving address</source>
         <translation type="unfinished"/>
     </message>
@@ -1147,17 +1370,17 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+76"/>
+        <location line="+60"/>
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Bitcoin address.</source>
+        <location line="+5"/>
+        <source>The entered address &quot;%1&quot; is not a valid Namecoin address.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+5"/>
         <source>Could not unlock wallet.</source>
         <translation type="unfinished"/>
     </message>
@@ -1170,9 +1393,9 @@ Address: %4
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <location filename="../guiutil.cpp" line="+424"/>
+        <location filename="../guiutil.cpp" line="+419"/>
         <location line="+12"/>
-        <source>Bitcoin-Qt</source>
+        <source>Namecoin-Qt</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1228,8 +1451,13 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Unlock unspent</source>
+=======
+        <location line="+6"/>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1238,6 +1466,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>Copy fee</source>
         <translation type="unfinished"/>
@@ -1245,6 +1474,15 @@ Address: %4
     <message>
         <location line="+1"/>
         <source>Copy after fee</source>
+=======
+        <location line="+31"/>
+        <source>Automatically start Namecoin after logging in to the system.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Start Namecoin on system login</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1263,8 +1501,13 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Copy change</source>
+=======
+        <location line="+6"/>
+        <source>Automatically open the Namecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1273,6 +1516,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>higher</source>
         <translation type="unfinished"/>
@@ -2206,6 +2450,10 @@ Address: %4
     <message>
         <location line="+7"/>
         <source>Connect to the Bitcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+=======
+        <location line="+7"/>
+        <source>Connect to the Namecoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2397,7 +2645,7 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Bitcoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Namecoin.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2412,7 +2660,7 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Bitcoin addresses in the transaction list or not.</source>
+        <source>Whether to show Namecoin addresses in the transaction list or not.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2538,7 +2786,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../optionsdialog.cpp" line="+53"/>
+        <location filename="../optionsdialog.cpp" line="+55"/>
         <source>default</source>
         <translation type="unfinished"/>
     </message>
@@ -2566,7 +2814,7 @@ Address: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Bitcoin.</source>
+        <source>This setting will take effect after restarting Namecoin.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2583,18 +2831,23 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+50"/>
-        <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <location line="+51"/>
+        <location line="+183"/>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Namecoin network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-124"/>
+        <location line="-141"/>
         <source>Balance:</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+58"/>
+        <source>Number of transactions:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-29"/>
         <source>Unconfirmed:</source>
         <translation type="unfinished"/>
     </message>
@@ -2793,11 +3046,16 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+9"/>
         <source>(no message)</source>
 =======
         <source>PNG Images (*.png)</source>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+124"/>
+        <source>Immature:</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2817,8 +3075,13 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+20"/>
         <source>Inputs...</source>
+=======
+        <location line="-118"/>
+        <source>Your current balance</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2827,6 +3090,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+19"/>
         <source>Insufficient funds!</source>
         <translation type="unfinished"/>
@@ -2834,6 +3098,16 @@ Address: %4
     <message>
         <location line="+89"/>
         <source>Quantity:</source>
+=======
+        <location line="+20"/>
+        <source>Total number of transactions in wallet</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../overviewpage.cpp" line="+115"/>
+        <location line="+1"/>
+        <source>out of sync</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2911,7 +3185,7 @@ Address: %4
         <location line="+53"/>
         <location line="+23"/>
         <location line="+23"/>
-        <location filename="../rpcconsole.cpp" line="+339"/>
+        <location filename="../rpcconsole.cpp" line="+344"/>
         <source>N/A</source>
         <translation type="unfinished"/>
     </message>
@@ -2982,6 +3256,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
+<<<<<<< HEAD
         <source>Show the Bitcoin-Qt help message to get a list with possible Bitcoin command-line options.</source>
 >>>>>>> Committing original src/qt
         <translation type="unfinished"/>
@@ -3000,6 +3275,9 @@ Address: %4
     <message>
         <location line="+41"/>
         <source>Confirm the send action</source>
+=======
+        <source>Show the Namecoin-Qt help message to get a list with possible Namecoin command-line options.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3049,12 +3327,12 @@ Address: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Bitcoin - Debug window</source>
+        <source>Namecoin - Debug window</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+25"/>
-        <source>Bitcoin Core</source>
+        <source>Namecoin Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3064,7 +3342,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Bitcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Namecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3074,8 +3352,12 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
+<<<<<<< HEAD
         <source>Welcome to the Bitcoin RPC console.</source>
 >>>>>>> Committing original src/qt
+=======
+        <source>Welcome to the Namecoin RPC console.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3177,7 +3459,7 @@ Address: %4
     </message>
     <message>
         <location line="+10"/>
-        <source>123.456 BTC</source>
+        <source>... NMC</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3338,8 +3620,12 @@ Address: %4
         <location line="+18"/>
 =======
         <location line="+34"/>
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <source>The address to send the payment to (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+=======
+        <source>The address to send the payment to (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3347,8 +3633,12 @@ Address: %4
         <location filename="../sendcoinsentry.cpp" line="+30"/>
 =======
         <location line="+60"/>
+<<<<<<< HEAD
         <location filename="../sendcoinsentry.cpp" line="+26"/>
 >>>>>>> Committing original src/qt
+=======
+        <location filename="../sendcoinsentry.cpp" line="+25"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Enter a label for this address to add it to your address book</source>
         <translation type="unfinished"/>
     </message>
@@ -3445,7 +3735,7 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <source>Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -3488,7 +3778,7 @@ Address: %4
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <source>The address to sign the message with (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3534,7 +3824,7 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this Namecoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3565,12 +3855,12 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <source>The address the message was signed with (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Namecoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3590,7 +3880,7 @@ Address: %4
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
 >>>>>>> Committing original src/qt
         <location line="+3"/>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <source>Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3600,7 +3890,7 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Bitcoin signature</source>
+        <source>Enter Namecoin signature</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3675,6 +3965,7 @@ Address: %4
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>SplashScreen</name>
     <message>
 <<<<<<< HEAD
@@ -3715,6 +4006,11 @@ Address: %4
     <message>
         <location filename="../transactiondesc.cpp" line="+20"/>
 >>>>>>> Committing original src/qt
+=======
+    <name>TransactionDesc</name>
+    <message>
+        <location filename="../transactiondesc.cpp" line="+19"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Open until %1</source>
         <translation type="unfinished"/>
     </message>
@@ -3943,10 +4239,14 @@ Address: %4
     <name>TransactionTableModel</name>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../transactiontablemodel.cpp" line="+234"/>
 =======
         <location filename="../transactiontablemodel.cpp" line="+225"/>
 >>>>>>> Committing original src/qt
+=======
+        <location filename="../transactiontablemodel.cpp" line="+226"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Date</source>
         <translation type="unfinished"/>
     </message>
@@ -4089,10 +4389,14 @@ Address: %4
     <name>TransactionView</name>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../transactionview.cpp" line="+57"/>
 =======
         <location filename="../transactionview.cpp" line="+52"/>
 >>>>>>> Committing original src/qt
+=======
+        <location filename="../transactionview.cpp" line="+55"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <location line="+16"/>
         <source>All</source>
         <translation type="unfinished"/>
@@ -4187,11 +4491,6 @@ Address: %4
     </message>
     <message>
         <location line="+1"/>
-        <source>Copy transaction ID</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+1"/>
         <source>Edit label</source>
         <translation type="unfinished"/>
     </message>
@@ -4201,6 +4500,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+142"/>
         <source>Export Transaction History</source>
@@ -4230,6 +4530,9 @@ Address: %4
         <location line="-22"/>
 =======
         <location line="+139"/>
+=======
+        <location line="+142"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Export Transaction Data</source>
         <translation type="unfinished"/>
     </message>
@@ -4306,7 +4609,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+100"/>
+        <location line="+95"/>
         <source>Range:</source>
         <translation type="unfinished"/>
     </message>
@@ -4318,34 +4621,42 @@ Address: %4
     </message>
 </context>
 <context>
-    <name>WalletModel</name>
+    <name>Namecoin-core</name>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../walletmodel.cpp" line="+245"/>
 =======
         <location filename="../walletmodel.cpp" line="+193"/>
 >>>>>>> Committing original src/qt
         <source>Send Coins</source>
+=======
+        <location filename="../bitcoinstrings.cpp" line="+88"/>
+        <source>Namecoin version</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
-</context>
-<context>
-    <name>WalletView</name>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../walletview.cpp" line="+43"/>
 =======
         <location filename="../walletview.cpp" line="+42"/>
 >>>>>>> Committing original src/qt
         <source>&amp;Export</source>
+=======
+        <location line="+82"/>
+        <source>Usage:</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Export the data in the current tab to a file</source>
+        <location line="-23"/>
+        <source>Send command to -server or namecoind</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+181"/>
 =======
@@ -4397,12 +4708,39 @@ Address: %4
 =======
         <source>The wallet data was successfully saved to the new location.</source>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-21"/>
+        <source>List commands</source>
         <translation type="unfinished"/>
     </message>
-</context>
-<context>
-    <name>bitcoin-core</name>
     <message>
+        <location line="-11"/>
+        <source>Get help for a command</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>Options:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Specify configuration file (default: namecoin.conf)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Specify pid file (default: namecoind.pid)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-47"/>
+        <source>Generate coins</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+        <translation type="unfinished"/>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../bitcoinstrings.cpp" line="+221"/>
 =======
@@ -4469,69 +4807,108 @@ Address: %4
     </message>
     <message>
         <location line="-9"/>
+=======
+        <location line="-15"/>
+        <source>Don&apos;t generate coins</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+61"/>
+        <source>Specify data directory</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-7"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Set database cache size in megabytes (default: 25)</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-26"/>
 =======
         <location line="-28"/>
 >>>>>>> Committing original src/qt
         <source>Listen for connections on &lt;port&gt; (default: 8333 or testnet: 18333)</source>
+=======
+        <location line="-26"/>
+        <source>Listen for connections on &lt;port&gt; (default: 8334 or testnet: 18334)</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-51"/>
 =======
         <location line="-48"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-34"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+84"/>
 =======
         <location line="+82"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+65"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Specify your own public address</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+5"/>
 =======
         <location line="+3"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+2"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-148"/>
 =======
         <location line="-134"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-114"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-36"/>
 =======
         <location line="-29"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-28"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+34"/>
 =======
@@ -4546,56 +4923,79 @@ Address: %4
 =======
         <location line="+37"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+26"/>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8336 or testnet: 18336)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+34"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Accept command line and JSON-RPC commands</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+80"/>
 =======
         <location line="+76"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+62"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Run in the background as a daemon and accept commands</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+39"/>
 =======
         <location line="+37"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+31"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Use the test network</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-118"/>
 =======
         <location line="-112"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-92"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-95"/>
 =======
         <location line="-80"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-74"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>%s, you must set a rpcpassword in the configuration file:
-%s
+ %s
 It is recommended you use the following random password:
-rpcuser=bitcoinrpc
+rpcuser=namecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+12"/>
         <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>
@@ -4606,6 +5006,9 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
 =======
         <location line="+17"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+15"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
         <translation type="unfinished"/>
     </message>
@@ -4616,11 +5019,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Bitcoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Namecoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development.</source>
 =======
@@ -4635,10 +5039,19 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
 =======
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
 >>>>>>> Committing original src/qt
+=======
+        <source>Corrupted block database detected. Please restart the client with -reindex.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation type="unfinished"/>
@@ -4657,11 +5070,14 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <location line="+18"/>
 =======
         <source>Execute command when a relevant alert is received (%s in cmd is replaced by message)</source>
+=======
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
+        <location line="+4"/>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4670,8 +5086,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+6"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+3"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
         <translation type="unfinished"/>
     </message>
@@ -4705,10 +5125,14 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     <message>
         <location line="+3"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
 =======
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Bitcoin will not work properly.</source>
 >>>>>>> Committing original src/qt
+=======
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Namecoin will not work properly.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4755,7 +5179,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>Connect only to the specified node(s)</source>
         <translation type="unfinished"/>
     </message>
@@ -4774,16 +5198,20 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <location line="+2"/>
 =======
         <location line="+3"/>
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <source>Corrupted block database detected</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
 <<<<<<< HEAD
         <source>Do not load the wallet and disable wallet RPC calls</source>
@@ -4808,17 +5236,20 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
+=======
+        <location line="+3"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Error loading block database</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+4"/>
-        <source>Error opening block database</source>
+        <location line="+5"/>
+        <source>Error: Disk space is low!</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Error: Disk space is low!</source>
+        <location line="+1"/>
+        <source>Error: Transaction creation failed!</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4827,16 +5258,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Error: system error: </source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Failed to read block info</source>
         <translation type="unfinished"/>
@@ -4895,27 +5322,20 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     <message>
         <location line="+1"/>
 =======
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <location line="+2"/>
 >>>>>>> Committing original src/qt
         <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Generate coins (default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+5"/>
         <source>How thorough the block verification is (0-4, default: 3)</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+1"/>
         <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
@@ -4998,22 +5418,19 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <location line="+1"/>
-        <source>Verifying wallet...</source>
+        <source>Importing blocks from block database...</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-69"/>
+        <location line="+1"/>
         <source>Imports blocks from external blk000??.dat file</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-76"/>
-        <source>Set the number of script verification threads (up to 16, 0 = auto, &lt;0 = leave that many cores free, default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+77"/>
+        <location line="+1"/>
         <source>Information</source>
 >>>>>>> Committing original src/qt
         <translation type="unfinished"/>
@@ -5038,6 +5455,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
 <<<<<<< HEAD
         <source>Verifying wallet...</source>
@@ -5075,6 +5493,9 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <location line="+2"/>
         <source>Warning: Deprecated argument -debugnet ignored, use -debug=net</source>
 =======
+=======
+        <location line="+9"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
         <translation type="unfinished"/>
     </message>
@@ -5106,9 +5527,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
 =======
+=======
+        <location line="+1"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
         <translation type="unfinished"/>
     </message>
@@ -5161,7 +5586,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+1"/>
+        <source>Rebuild blockchain index from current blk000??.dat files</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+4"/>
         <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
 >>>>>>> Committing original src/qt
         <translation type="unfinished"/>
@@ -5219,13 +5649,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <location line="+1"/>
-        <source>Signing transaction failed</source>
+        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5234,6 +5659,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+6"/>
 =======
@@ -5267,6 +5693,9 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
 =======
         <location line="+7"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+13"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation type="unfinished"/>
     </message>
@@ -5312,66 +5741,93 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <source>version</source>
 =======
         <location line="+1"/>
+<<<<<<< HEAD
         <source>You need to rebuild the databases using -reindex to change -txindex</source>
 >>>>>>> Committing original src/qt
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>wallet.dat corrupt, salvage failed</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-58"/>
 =======
         <location line="-50"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-43"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Password for JSON-RPC connections</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-70"/>
 =======
         <location line="-67"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-53"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Allow JSON-RPC connections from specified IP address</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+80"/>
 =======
         <location line="+76"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+62"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-132"/>
 =======
         <location line="-120"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-103"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+161"/>
 =======
         <location line="+147"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+124"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Upgrade wallet to latest format</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-24"/>
 =======
         <location line="-21"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-15"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Set key pool size to &lt;n&gt; (default: 100)</source>
         <translation type="unfinished"/>
     </message>
@@ -5386,19 +5842,32 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+38"/>
 =======
         <location line="+35"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-26"/>
+        <source>How many blocks to check at startup (default: 2500, 0 = all)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+55"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Use OpenSSL (https) for JSON-RPC connections</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-30"/>
 =======
         <location line="-26"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-20"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Server certificate file (default: server.cert)</source>
         <translation type="unfinished"/>
     </message>
@@ -5409,65 +5878,99 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+16"/>
 =======
         <location line="-151"/>
+=======
+        <location line="-133"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+165"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+144"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>This help message</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+7"/>
 =======
         <location line="+6"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+3"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-107"/>
 =======
         <location line="-91"/>
+=======
+        <location line="-70"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Connect through socks proxy</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-10"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-11"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+60"/>
 =======
         <location line="+55"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+43"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Loading addresses...</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-37"/>
 =======
         <location line="-35"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-25"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Error loading wallet.dat: Wallet corrupted</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bitcoin</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Namecoin</source>
         <translation type="unfinished"/>
     </message>
     <message>
+        <location line="+73"/>
+        <source>Verifying block database integrity...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+98"/>
 =======
@@ -5482,20 +5985,37 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
 =======
         <location line="-95"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+1"/>
+        <source>Verifying wallet integrity...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Wallet needed to be rewritten: restart Namecoin to complete</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-77"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Error loading wallet.dat</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+31"/>
 =======
         <location line="+28"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+20"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Invalid -proxy address: &apos;%s&apos;</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+56"/>
+        <location line="+46"/>
         <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
         <translation type="unfinished"/>
     </message>
@@ -5506,10 +6026,14 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-101"/>
 =======
         <location line="-96"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-75"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Cannot resolve -bind address: &apos;%s&apos;</source>
         <translation type="unfinished"/>
     </message>
@@ -5520,34 +6044,47 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+48"/>
 =======
         <location line="+44"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+31"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-15"/>
+        <source>Error: could not start node</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+16"/>
         <source>Invalid amount</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-6"/>
+        <location line="-4"/>
         <source>Insufficient funds</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+8"/>
         <source>Loading block index...</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-62"/>
 =======
         <location line="-57"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-45"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation type="unfinished"/>
     </message>
@@ -5556,6 +6093,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <location line="-32"/>
 =======
         <location line="-25"/>
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <source>Unable to bind to %s on this computer. Bitcoin is probably already running.</source>
         <translation type="unfinished"/>
@@ -5565,6 +6103,18 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <location line="+95"/>
 =======
         <location line="+64"/>
+=======
+        <source>Unable to bind to %s on this computer. Namecoin is probably already running.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+54"/>
+        <source>Find peers using internet relay chat (default: 0)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-2"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Fee per KB to add to transactions you send</source>
         <translation type="unfinished"/>
     </message>
@@ -5576,11 +6126,20 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-56"/>
 =======
         <location line="-52"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-40"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Cannot downgrade wallet</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot initialize keypool</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5590,46 +6149,66 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+67"/>
 =======
         <location line="+64"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+49"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Rescanning...</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-58"/>
 =======
         <location line="-57"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-43"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Done loading</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+85"/>
 =======
         <location line="+82"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+65"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>To use the %s option</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-77"/>
 =======
         <location line="-74"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-60"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Error</source>
         <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-35"/>
 =======
         <location line="-31"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-28"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
 %s
 If the file does not exist, create it with owner-readable-only file permissions.</source>

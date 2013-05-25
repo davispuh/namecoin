@@ -55,6 +55,17 @@ static const int64_t CENT = 1000000;
 
 // This is needed because the foreach macro can't get over the comma in pair<t1, t2>
 #define PAIRTYPE(t1, t2)    std::pair<t1, t2>
+<<<<<<< HEAD
+=======
+
+// Used to bypass the rule against non-const reference to temporary
+// where it makes sense with wrappers such as CFlatData or CTxDB
+template<typename T>
+inline T& REF(const T& val)
+{
+    return (T&)val;
+}
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
 // Align by increasing pointer, must have extra space at end of buffer
 template <size_t nBytes, typename T>
@@ -70,7 +81,16 @@ T* alignup(T* p)
     return u.ptr;
 }
 
+<<<<<<< HEAD
 #ifdef WIN32
+=======
+#ifdef __WXMSW__
+#include <windows.h>
+#include <winsock2.h>
+#include <mswsock.h> 
+
+#define MSG_NOSIGNAL        0
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 #define MSG_DONTWAIT        0
 
 #ifndef S_IRUSR
@@ -115,6 +135,7 @@ extern volatile bool fReopenDebugLog;
 
 void RandAddSeed();
 void RandAddSeedPerfmon();
+<<<<<<< HEAD
 
 /* Return true if log accepts specified category */
 bool LogAcceptCategory(const char* category);
@@ -160,6 +181,21 @@ static inline bool error(const char* format)
 }
 
 
+=======
+int OutputDebugStringF(const char* pszFormat, ...);
+int my_snprintf(char* buffer, size_t limit, const char* format, ...);
+
+/** Overload strprintf for char*, so that GCC format type warnings can be given */
+std::string real_strprintf(const char *format, int dummy, ...);
+/** Overload strprintf for std::string, to be able to use it with _ (translation).
+ * This will not support GCC format type warnings (-Wformat) so be careful.
+ */
+std::string real_strprintf(const std::string &format, int dummy, ...);
+#define strprintf(format, ...) real_strprintf(format, 0, __VA_ARGS__)
+std::string vstrprintf(const char *format, va_list ap);
+
+bool error(const char* format, ...);
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 void LogException(std::exception* pex, const char* pszThread);
 void PrintException(std::exception* pex, const char* pszThread);
 void PrintExceptionContinue(std::exception* pex, const char* pszThread);
@@ -355,6 +391,7 @@ inline bool IsSwitchChar(char c)
 #endif
 }
 
+<<<<<<< HEAD
 /**
  * Return string argument or default value
  *
@@ -449,11 +486,44 @@ private:
 public:
     CMedianFilter(unsigned int size, T initial_value):
         nSize(size)
+=======
+inline std::string GetArg(const std::string& strArg, const std::string& strDefault)
+{
+    if (mapArgs.count(strArg))
+        return mapArgs[strArg];
+    return strDefault;
+}
+
+inline int64 GetArg(const std::string& strArg, int64 nDefault)
+{
+    if (mapArgs.count(strArg))
+        return atoi64(mapArgs[strArg]);
+    return nDefault;
+}
+
+inline bool GetBoolArg(const std::string& strArg, bool fDefault=false)
+{
+    if (mapArgs.count(strArg))
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     {
         vValues.reserve(size);
         vValues.push_back(initial_value);
         vSorted = vValues;
     }
+<<<<<<< HEAD
+=======
+    return fDefault;
+}
+
+
+
+
+
+
+
+
+
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
     void input(T value)
     {
@@ -482,7 +552,111 @@ public:
         }
     }
 
+<<<<<<< HEAD
     int size() const
+=======
+
+
+
+
+
+
+
+
+
+template<typename T1>
+inline uint256 Hash(const T1 pbegin, const T1 pend)
+{
+    static unsigned char pblank[1];
+    uint256 hash1;
+    SHA256((pbegin == pend ? pblank : (unsigned char*)&pbegin[0]), (pend - pbegin) * sizeof(pbegin[0]), (unsigned char*)&hash1);
+    uint256 hash2;
+    SHA256((unsigned char*)&hash1, sizeof(hash1), (unsigned char*)&hash2);
+    return hash2;
+}
+
+template<typename T1, typename T2>
+inline uint256 Hash(const T1 p1begin, const T1 p1end,
+                    const T2 p2begin, const T2 p2end)
+{
+    static unsigned char pblank[1];
+    uint256 hash1;
+    SHA256_CTX ctx;
+    SHA256_Init(&ctx);
+    SHA256_Update(&ctx, (p1begin == p1end ? pblank : (unsigned char*)&p1begin[0]), (p1end - p1begin) * sizeof(p1begin[0]));
+    SHA256_Update(&ctx, (p2begin == p2end ? pblank : (unsigned char*)&p2begin[0]), (p2end - p2begin) * sizeof(p2begin[0]));
+    SHA256_Final((unsigned char*)&hash1, &ctx);
+    uint256 hash2;
+    SHA256((unsigned char*)&hash1, sizeof(hash1), (unsigned char*)&hash2);
+    return hash2;
+}
+
+template<typename T1, typename T2, typename T3>
+inline uint256 Hash(const T1 p1begin, const T1 p1end,
+                    const T2 p2begin, const T2 p2end,
+                    const T3 p3begin, const T3 p3end)
+{
+    static unsigned char pblank[1];
+    uint256 hash1;
+    SHA256_CTX ctx;
+    SHA256_Init(&ctx);
+    SHA256_Update(&ctx, (p1begin == p1end ? pblank : (unsigned char*)&p1begin[0]), (p1end - p1begin) * sizeof(p1begin[0]));
+    SHA256_Update(&ctx, (p2begin == p2end ? pblank : (unsigned char*)&p2begin[0]), (p2end - p2begin) * sizeof(p2begin[0]));
+    SHA256_Update(&ctx, (p3begin == p3end ? pblank : (unsigned char*)&p3begin[0]), (p3end - p3begin) * sizeof(p3begin[0]));
+    SHA256_Final((unsigned char*)&hash1, &ctx);
+    uint256 hash2;
+    SHA256((unsigned char*)&hash1, sizeof(hash1), (unsigned char*)&hash2);
+    return hash2;
+}
+
+template<typename T>
+uint256 SerializeHash(const T& obj, int nType=SER_GETHASH, int nVersion=VERSION)
+{
+    // Most of the time is spent allocating and deallocating CDataStream's
+    // buffer.  If this ever needs to be optimized further, make a CStaticStream
+    // class with its buffer on the stack.
+    CDataStream ss(nType, nVersion);
+    ss.reserve(10000);
+    ss << obj;
+    return Hash(ss.begin(), ss.end());
+}
+
+inline uint160 Hash160(const std::vector<unsigned char>& vch)
+{
+    uint256 hash1;
+    SHA256(&vch[0], vch.size(), (unsigned char*)&hash1);
+    uint160 hash2;
+    RIPEMD160((unsigned char*)&hash1, sizeof(hash1), (unsigned char*)&hash2);
+    return hash2;
+}
+
+std::vector<unsigned char> DecodeBase64(const char* p, bool* pfInvalid = NULL);
+std::string EncodeBase64(const unsigned char* pch, size_t len);
+
+
+
+
+
+
+
+// Note: It turns out we might have been able to use boost::thread
+// by using TerminateThread(boost::thread.native_handle(), 0);
+#ifdef __WXMSW__
+typedef HANDLE pthread_t;
+
+inline pthread_t CreateThread(void(*pfn)(void*), void* parg, bool fWantHandle=false)
+{
+    DWORD nUnused = 0;
+    HANDLE hthread =
+        CreateThread(
+            NULL,                        // default security
+            0,                           // inherit stack size from parent
+            (LPTHREAD_START_ROUTINE)pfn, // function pointer
+            parg,                        // argument
+            0,                           // creation option, start immediately
+            &nUnused);                   // thread identifier
+    if (hthread == NULL)
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     {
         return vValues.size();
     }
@@ -584,5 +758,8 @@ template <typename Callable> void TraceThread(const char* name,  Callable func)
         PrintException(NULL, name);
     }
 }
+
+bool SoftSetArg(const std::string& strArg, const std::string& strValue);
+bool SoftSetBoolArg(const std::string& strArg, bool fValue);
 
 #endif

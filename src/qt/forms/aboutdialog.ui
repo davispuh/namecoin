@@ -12,10 +12,14 @@
   </property>
   <property name="windowTitle">
 <<<<<<< HEAD
+<<<<<<< HEAD
    <string>About Bitcoin Core</string>
 =======
    <string>About Bitcoin</string>
 >>>>>>> Committing original src/qt
+=======
+   <string>About Namecoin</string>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout_2">
    <item>
@@ -55,10 +59,14 @@
          </property>
          <property name="text">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <string>&lt;b&gt;Bitcoin Core&lt;/b&gt; version</string>
 =======
           <string>&lt;b&gt;Bitcoin&lt;/b&gt; version</string>
 >>>>>>> Committing original src/qt
+=======
+          <string>&lt;b&gt;Namecoin&lt;/b&gt; version</string>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -100,10 +108,14 @@
        </property>
        <property name="text">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <string notr="true">Copyright &amp;copy; 2009-YYYY The Bitcoin Core developers</string>
 =======
         <string notr="true">Copyright &amp;copy; 2009-YYYY The Bitcoin developers</string>
 >>>>>>> Committing original src/qt
+=======
+        <string notr="true">Copyright &amp;copy; 2009-YYYY The Bitcoin and Namecoin developers</string>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
        </property>
        <property name="textFormat">
         <enum>Qt::RichText</enum>

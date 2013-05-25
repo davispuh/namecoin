@@ -58,9 +58,8 @@ extern void qt_mac_set_dock_menu(QMenu*);
     Q_UNUSED(event)
     Q_UNUSED(replyEvent)
 
-    if (dockIconHandler) {
+    if (dockIconHandler)
         dockIconHandler->handleDockIconClickEvent();
-    }
 }
 
 @end
@@ -87,15 +86,10 @@ MacDockIconHandler::MacDockIconHandler() : QObject()
     [pool release];
 }
 
-void MacDockIconHandler::setMainWindow(QMainWindow *window) {
-    this->mainWindow = window;
-}
-
 MacDockIconHandler::~MacDockIconHandler()
 {
     [this->m_dockIconClickEventHandler release];
     delete this->m_dummyWidget;
-    this->setMainWindow(NULL);
 }
 
 QMenu *MacDockIconHandler::dockMenu()
@@ -159,6 +153,7 @@ MacDockIconHandler *MacDockIconHandler::instance()
 void MacDockIconHandler::handleDockIconClickEvent()
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     if (this->mainWindow)
     {
         this->mainWindow->activateWindow();
@@ -169,5 +164,7 @@ void MacDockIconHandler::handleDockIconClickEvent()
     this->mainWindow->show();
 >>>>>>> Committing original src/qt
 
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     emit this->dockIconClicked();
 }

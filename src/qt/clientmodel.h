@@ -29,9 +29,9 @@ QT_END_NAMESPACE
 
 enum BlockSource {
     BLOCK_SOURCE_NONE,
-    BLOCK_SOURCE_REINDEX,
+    BLOCK_SOURCE_NETWORK,
     BLOCK_SOURCE_DISK,
-    BLOCK_SOURCE_NETWORK
+    BLOCK_SOURCE_REINDEX
 };
 
 /** Model for Bitcoin network client. */
@@ -86,12 +86,15 @@ private:
     int cachedNumBlocks;
     int cachedNumBlocksOfPeers;
 <<<<<<< HEAD
+<<<<<<< HEAD
     bool cachedReindexing;
     bool cachedImporting;
 =======
 	bool cachedReindexing;
 	bool cachedImporting;
 >>>>>>> Committing original src/qt
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
     int numBlocksAtStartup;
 

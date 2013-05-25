@@ -8,6 +8,7 @@
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>About Bitcoin Core</source>
         <translation>Bitcoin Çekirdeği hakkında</translation>
     </message>
@@ -24,9 +25,23 @@
         <source>&lt;b&gt;Bitcoin&lt;/b&gt; version</source>
         <translation>&lt;b&gt;Bitcoin&lt;/b&gt; sürüm</translation>
 >>>>>>> Committing original src/qt
+=======
+        <source>About Namecoin</source>
+        <translation>Namecoin hakkında</translation>
     </message>
     <message>
-        <location line="+57"/>
+        <location line="+39"/>
+        <source>&lt;b&gt;Namecoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Namecoin&lt;/b&gt; sürüm</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+    </message>
+    <message>
+        <location line="+41"/>
+        <source>Copyright © 2009-2013 The Bitcoin and Namecoin developers</source>
+        <translation>Telif hakkı © 2009-2013 Bitcoin, Namecoin geliştiricileri</translation>
+    </message>
+    <message>
+        <location line="+13"/>
         <source>
 This is experimental software.
 
@@ -40,6 +55,7 @@ This product includes software developed by the OpenSSL Project for use in the O
 
  Bu ürün OpenSSL projesi tarafından OpenSSL araç takımı (http://www.openssl.org/) için geliştirilen yazılımlar, Eric Young (eay@cryptsoft.com) tarafından hazırlanmış şifreleme yazılımları ve Thomas Bernard tarafından programlanmış UPnP yazılımı içerir.</translation>
     </message>
+<<<<<<< HEAD
     <message>
 <<<<<<< HEAD
         <location filename="../utilitydialog.cpp" line="+29"/>
@@ -59,6 +75,8 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Bitcoin geliştiricileri</translation>
 >>>>>>> Committing original src/qt
     </message>
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 </context>
 <context>
     <name>AddressBookPage</name>
@@ -71,8 +89,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Adres defteri</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+19"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+22"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Double-click to edit address or label</source>
         <translation>Adresi ya da etiketi düzenlemek için çift tıklayınız</translation>
     </message>
@@ -115,13 +137,17 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;Yeni adres</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Bitcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Bunlar, ödeme almak için Bitcoin adresleridir. Kimin ödeme yaptığını izleyebilmek için her ödeme yollaması gereken kişiye değişik bir adres verebilirsiniz.</translation>
+        <location line="-46"/>
+        <source>These are your Namecoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Bunlar, ödeme almak için Namecoin adresleridir. Kimin ödeme yaptığını izleyebilmek için her ödeme yollaması gereken kişiye değişik bir adres verebilirsiniz.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/addressbookpage.ui" line="+14"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+60"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>&amp;Copy Address</source>
         <translation>Adresi &amp;kopyala</translation>
     </message>
@@ -135,8 +161,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Bitcoin address</source>
-        <translation>Bir Bitcoin adresinin sizin olduğunu ispatlamak için mesaj imzalayın</translation>
+        <source>Sign a message to prove you own a Namecoin address</source>
+        <translation>Bir Namecoin adresinin sizin olduğunu ispatlamak için mesaj imzalayın</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -150,6 +176,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Seçili adresi listeden sil</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+27"/>
         <source>Export the data in the current tab to a file</source>
         <translation>Güncel sekmedeki verileri bir dosyaya aktar</translation>
@@ -196,6 +223,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="-44"/>
         <source>Verify a message to ensure it was signed with a specified Bitcoin address</source>
         <translation>Belirtilen Bitcoin adresi ile imzalandığını doğrulamak için bir mesajı kontrol et</translation>
+=======
+        <location line="-14"/>
+        <source>Verify a message to ensure it was signed with a specified Namecoin address</source>
+        <translation>Belirtilen Namecoin adresi ile imzalandığını doğrulamak için bir mesajı kontrol et</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+3"/>
@@ -208,6 +240,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;Sil</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../addressbookpage.cpp" line="-5"/>
 >>>>>>> Committing original src/qt
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
@@ -224,15 +257,19 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="+13"/>
 >>>>>>> Committing original src/qt
+=======
+        <location filename="../addressbookpage.cpp" line="+65"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Copy &amp;Label</source>
         <translation>&amp;Etiketi kopyala</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>&amp;Edit</source>
         <translation>&amp;Düzenle</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+194"/>
         <source>Export Address List</source>
@@ -244,6 +281,9 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+260"/>
+=======
+        <location line="+250"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Export Address Book Data</source>
         <translation>Adres defteri verilerini dışa aktar</translation>
 >>>>>>> Committing original src/qt
@@ -278,10 +318,14 @@ This product includes software developed by the OpenSSL Project for use in the O
     <name>AddressTableModel</name>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../addresstablemodel.cpp" line="+168"/>
 =======
         <location filename="../addresstablemodel.cpp" line="+144"/>
 >>>>>>> Committing original src/qt
+=======
+        <location filename="../addresstablemodel.cpp" line="+142"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Label</source>
         <translation>Etiket</translation>
     </message>
@@ -369,7 +413,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NAMECOINS&lt;/b&gt;!</source>
         <translation>Uyarı: Eğer cüzdanınızı şifrelerseniz ve parolanızı kaybederseniz, &lt;b&gt;TÜM BİTCOİNLERİNİZİ KAYBEDERSİNİZ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -396,8 +440,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Şifreleme işlemini tamamlamak için Bitcoin şimdi kapanacaktır. Cüzdanınızı şifrelemenin, Bitcoinlerinizin bilgisayara bulaşan kötücül bir yazılım tarafından çalınmaya karşı tamamen koruyamayacağını unutmayınız.</translation>
+        <source>Namecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Namecoins from being stolen by malware infecting your computer.</source>
+        <translation>Şifreleme işlemini tamamlamak için Namecoin şimdi kapanacaktır. Cüzdanınızı şifrelemenin, Bitcoinlerinizin bilgisayara bulaşan kötücül bir yazılım tarafından çalınmaya karşı tamamen koruyamayacağını unutmayınız.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -442,31 +486,43 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>NamecoinGUI</name>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../bitcoingui.cpp" line="+295"/>
 =======
         <location filename="../bitcoingui.cpp" line="+233"/>
 >>>>>>> Committing original src/qt
+=======
+        <location filename="../bitcoingui.cpp" line="+267"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Sign &amp;message...</source>
         <translation>&amp;Mesaj imzala...</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+335"/>
 =======
         <location line="+280"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+254"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Synchronizing with network...</source>
         <translation>Şebeke ile senkronizasyon...</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-407"/>
 =======
         <location line="-349"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-322"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>&amp;Overview</source>
         <translation>&amp;Genel bakış</translation>
     </message>
@@ -496,20 +552,43 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+17"/>
 =======
         <location line="+7"/>
+=======
+        <location line="+6"/>
+        <source>&amp;Address Book</source>
+        <translation>&amp;Adres defteri</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Edit the list of stored addresses and labels</source>
         <translation>Saklanan adres ve etiket listesini düzenle</translation>
     </message>
     <message>
-        <location line="-14"/>
+        <location line="-15"/>
+        <source>&amp;Receive coins</source>
+        <translation>Namecoin &amp;al</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Show the list of addresses for receiving payments</source>
         <translation>Ödeme alma adreslerinin listesini göster</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+31"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-8"/>
+        <source>&amp;Send coins</source>
+        <translation>Namecoin &amp;yolla</translation>
+    </message>
+    <message>
+        <location line="+39"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>E&amp;xit</source>
         <translation>&amp;Çık</translation>
     </message>
@@ -523,9 +602,14 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+7"/>
 =======
         <location line="+4"/>
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <source>Show information about Bitcoin</source>
         <translation>Bitcoin hakkında bilgi göster</translation>
+=======
+        <source>Show information about Namecoin</source>
+        <translation>Namecoin hakkında bilgi göster</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
 <<<<<<< HEAD
@@ -552,10 +636,14 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+9"/>
 =======
         <location line="+6"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+5"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>&amp;Encrypt Wallet...</source>
         <translation>Cüzdanı &amp;şifrele...</translation>
     </message>
@@ -570,6 +658,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Parolayı &amp;değiştir...</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+10"/>
         <source>&amp;Sending addresses...</source>
@@ -590,6 +679,9 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="+285"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+259"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Importing blocks from disk...</source>
         <translation>Bloklar diskten içe aktarılıyor...</translation>
     </message>
@@ -598,7 +690,18 @@ This product includes software developed by the OpenSSL Project for use in the O
         <source>Reindexing blocks on disk...</source>
         <translation>Diskteki bloklar yeniden endeksleniyor...</translation>
     </message>
+    <message numerus="yes">
+        <location line="+10"/>
+        <source>~%n block(s) remaining</source>
+        <translation><numerusform>~%n blok kaldı</numerusform></translation>
+    </message>
     <message>
+        <location line="-265"/>
+        <source>&amp;Export...</source>
+        <translation>&amp;Dışa aktar...</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-405"/>
 =======
@@ -606,18 +709,32 @@ This product includes software developed by the OpenSSL Project for use in the O
 >>>>>>> Committing original src/qt
         <source>Send coins to a Bitcoin address</source>
         <translation>Bir Bitcoin adresine Bitcoin yolla</translation>
+=======
+        <location line="-65"/>
+        <source>Send coins to a Namecoin address</source>
+        <translation>Bir Namecoin adresine Namecoin yolla</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Bitcoin</source>
-        <translation>Bitcoin seçeneklerinin yapılandırmasını değiştir</translation>
+        <source>Modify configuration options for Namecoin</source>
+        <translation>Namecoin seçeneklerinin yapılandırmasını değiştir</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+12"/>
 =======
         <location line="+9"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+17"/>
+        <source>Export the data in the current tab to a file</source>
+        <translation>Güncel sekmedeki verileri bir dosyaya aktar</translation>
+    </message>
+    <message>
+        <location line="-9"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Backup wallet to another location</source>
         <translation>Cüzdanı diğer bir konumda yedekle</translation>
     </message>
@@ -627,7 +744,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Cüzdan şifrelemesi için kullanılan parolayı değiştir</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+9"/>
         <source>&amp;Debug window</source>
         <translation>&amp;Hata ayıklama penceresi</translation>
     </message>
@@ -637,11 +754,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Hata ayıklama ve teşhis penceresini aç</translation>
     </message>
     <message>
-        <location line="-4"/>
+        <location line="-7"/>
         <source>&amp;Verify message...</source>
         <translation>Mesaj &amp;kontrol et...</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+430"/>
 =======
@@ -657,10 +775,20 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="-530"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-196"/>
+        <location line="+538"/>
+        <source>Namecoin</source>
+        <translation>Namecoin</translation>
+    </message>
+    <message>
+        <location line="-538"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Wallet</source>
         <translation>Cüzdan</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+146"/>
 =======
@@ -687,6 +815,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+22"/>
         <source>&amp;About Bitcoin</source>
         <translation>Bitcoin &amp;Hakkında</translation>
+=======
+        <location line="+176"/>
+        <source>&amp;About Namecoin</source>
+        <translation>Namecoin &amp;Hakkında</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+9"/>
@@ -700,17 +833,18 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Ana pencereyi görüntüle ya da sakla</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+2"/>
         <source>Encrypt the private keys that belong to your wallet</source>
         <translation>Cüzdanınızın özel anahtarlarını şifrele</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Mesajları adreslerin size ait olduğunu ispatlamak için Bitcoin adresleri ile imzala</translation>
+        <source>Sign messages with your Namecoin addresses to prove you own them</source>
+        <translation>Mesajları adreslerin size ait olduğunu ispatlamak için Namecoin adresleri ile imzala</translation>
     </message>
     <message>
         <location line="+2"/>
+<<<<<<< HEAD
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
         <translation>Belirtilen Bitcoin adresleri ile imzalandıklarından emin olmak için mesajları kontrol et</translation>
     </message>
@@ -2280,6 +2414,20 @@ Adres: %4
         <location line="+7"/>
         <source>&amp;Save Image...</source>
         <translation>Resmi ka&amp;ydet...</translation>
+=======
+        <source>Verify messages to ensure they were signed with specified Namecoin addresses</source>
+        <translation>Belirtilen Namecoin adresleri ile imzalandıklarından emin olmak için mesajları kontrol et</translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>&amp;File</source>
+        <translation>&amp;Dosya</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>&amp;Settings</source>
+        <translation>&amp;Ayarlar</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location filename="../receiverequestdialog.cpp" line="+56"/>
@@ -2292,6 +2440,7 @@ Adres: %4
         <translation>Ödeme bilgisi</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>URI</source>
         <translation>URI</translation>
@@ -2358,6 +2507,42 @@ Adres: %4
         <location line="+9"/>
         <source>(no message)</source>
         <translation>(boş mesaj)</translation>
+=======
+        <location line="+8"/>
+        <source>Actions toolbar</source>
+        <translation>Faaliyet araç çubuğu</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <location line="+10"/>
+        <source>[testnet]</source>
+        <translation>[testnet]</translation>
+    </message>
+    <message>
+        <location line="+63"/>
+        <source>Namecoin client</source>
+        <translation>Namecoin istemcisi</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+79"/>
+        <source>%n active connection(s) to Namecoin network</source>
+        <translation><numerusform>Namecoin şebekesine %n faal bağlantı</numerusform></translation>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>Processed %1 of %2 blocks of transaction history (%3% done).</source>
+        <translation>Muamele tarihçesinde toplam %2 blok üzerinden %1 blok işlendi (%%3 tamamlandı).</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Processed %1 blocks of transaction history.</source>
+        <translation>Muamele tarihçesinde %1 blok işlendi.</translation>
+    </message>
+    <message>
+        <location line="+70"/>
+        <source>Error</source>
+        <translation>Hata</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
 </context>
 <context>
@@ -2375,6 +2560,7 @@ Adres: %4
         <translation>Para kontrolü özellikleri</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+20"/>
         <source>Inputs...</source>
         <translation>Girdiler...</translation>
@@ -2398,6 +2584,66 @@ Adres: %4
         <location line="+35"/>
         <source>Bytes:</source>
         <translation>Bayt:</translation>
+=======
+        <location line="+66"/>
+        <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
+        <translation>Bu muamele boyut sınırlarını aşmıştır. Gene de %1 ücret ödeyerek gönderebilirsiniz, ki bu ücret muamelenizi işleyen ve şebekeye yardım eden düğümlere ödenecektir. Ücreti ödemek istiyor musunuz?</translation>
+    </message>
+    <message>
+        <location line="+210"/>
+        <source>Backup Successful</source>
+        <translation>Yedekleme başarılı</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>The wallet data was successfully saved to the new location.</source>
+        <translation>Cüzdan verileri başarılı bir şekilde yeni konuma kaydedildi.</translation>
+    </message>
+    <message numerus="yes">
+        <location line="-338"/>
+        <source>%n second(s) ago</source>
+        <translation><numerusform>%n saniye önce</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+4"/>
+        <source>%n minute(s) ago</source>
+        <translation><numerusform>%n dakika önce</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+4"/>
+        <source>%n hour(s) ago</source>
+        <translation><numerusform>%n saat önce</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+4"/>
+        <source>%n day(s) ago</source>
+        <translation><numerusform>%n gün önce</numerusform></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Up to date</source>
+        <translation>Güncel</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Catching up...</source>
+        <translation>Aralık kapatılıyor...</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Last received block was generated %1.</source>
+        <translation>Son alınan blok şu vakit oluşturulmuştu: %1.</translation>
+    </message>
+    <message>
+        <location line="+97"/>
+        <source>Confirm transaction fee</source>
+        <translation>Muamele ücretini teyit et</translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Sent transaction</source>
+        <translation>Muamele yollandı</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+48"/>
@@ -2410,6 +2656,7 @@ Adres: %4
         <translation>Öncelik:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+48"/>
         <source>Fee:</source>
         <translation>Ücret:</translation>
@@ -2418,6 +2665,18 @@ Adres: %4
         <location line="+32"/>
         <source>Low Output:</source>
         <translation>Düşük çıktı:</translation>
+=======
+        <location line="+99"/>
+        <location line="+28"/>
+        <source>URI handling</source>
+        <translation>URI yönetimi</translation>
+    </message>
+    <message>
+        <location line="-28"/>
+        <location line="+28"/>
+        <source>URI can not be parsed! This can be caused by an invalid Namecoin address or malformed URI parameters.</source>
+        <translation>URI okunamadı! Sebebi geçersiz bir Namecoin adresi veya hatalı URI parametreleri olabilir.</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+48"/>
@@ -2430,14 +2689,46 @@ Adres: %4
         <translation>Para üstü:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+44"/>
         <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
         <translation>Bu etkinleştirildiyse fakat para üstü adresi boş ya da geçersizse para üstü yeni oluşturulan bir adrese gönderilecektir.</translation>
+=======
+        <location line="+23"/>
+        <source>Backup Wallet</source>
+        <translation>Cüzdanı yedekle</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Wallet Data (*.dat)</source>
+        <translation>Cüzdan verileri (*.dat)</translation>
     </message>
     <message>
         <location line="+3"/>
+        <source>Backup Failed</source>
+        <translation>Yedekleme başarısız oldu</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>There was an error trying to save the wallet data to the new location.</source>
+        <translation>Cüzdan verilerinin başka bir konumda kaydedilmesi sırasında bir hata meydana geldi.</translation>
+    </message>
+    <message>
+        <location filename="../Namecoin.cpp" line="+109"/>
+        <source>A fatal error occurred. Namecoin can no longer continue safely and will quit.</source>
+        <translation>Ciddi bir hata oluştu. Namecoin artık güvenli bir şekilde işlemeye devam edemez ve kapanacaktır.</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+    </message>
+    <message>
+<<<<<<< HEAD
+        <location line="+3"/>
         <source>Custom change address</source>
         <translation>Özel para üstü adresi</translation>
+=======
+        <location filename="../clientmodel.cpp" line="+86"/>
+        <source>Network Alert</source>
+        <translation>Şebeke hakkında uyarı</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+115"/>
@@ -2469,7 +2760,7 @@ Adres: %4
         <translation>Bu adres defteri unsuru ile ilişkili adres. Bu, sadece gönderi adresi için değiştirilebilir.</translation>
     </message>
     <message>
-        <location filename="../editaddressdialog.cpp" line="+21"/>
+        <location filename="../editaddressdialog.cpp" line="+20"/>
         <source>New receiving address</source>
         <translation>Yeni alım adresi</translation>
     </message>
@@ -2489,17 +2780,17 @@ Adres: %4
         <translation>Gönderi adresini düzenle</translation>
     </message>
     <message>
-        <location line="+76"/>
+        <location line="+60"/>
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
         <translation>Girilen &quot;%1&quot; adresi hâlihazırda adres defterinde mevcuttur.</translation>
     </message>
     <message>
-        <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Bitcoin address.</source>
-        <translation>Girilen &quot;%1&quot; adresi geçerli bir Bitcoin adresi değildir.</translation>
+        <location line="+5"/>
+        <source>The entered address &quot;%1&quot; is not a valid Namecoin address.</source>
+        <translation>Girilen &quot;%1&quot; adresi geçerli bir Namecoin adresi değildir.</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+5"/>
         <source>Could not unlock wallet.</source>
         <translation>Cüzdan kilidi açılamadı.</translation>
     </message>
@@ -2512,10 +2803,10 @@ Adres: %4
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <location filename="../guiutil.cpp" line="+424"/>
+        <location filename="../guiutil.cpp" line="+419"/>
         <location line="+12"/>
-        <source>Bitcoin-Qt</source>
-        <translation>Bitcoin-Qt</translation>
+        <source>Namecoin-Qt</source>
+        <translation>Namecoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -2567,8 +2858,8 @@ Adres: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
-        <translation>Muamelelerin hızlı işlenmesini garantilemeye yardım eden, seçime dayalı kB başı muamele ücreti. Muamelelerin çoğunluğunun boyutu 1 kB&apos;dir.</translation>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.</source>
+        <translation>Muamelelerin hızlı işlenmesini garantilemeye yardım eden, seçime dayalı kB başı muamele ücreti. Muamelelerin çoğunluğunun boyutu 1 kB&apos;dir. 0.01 ücreti tavsiye edilir.</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -2577,13 +2868,13 @@ Adres: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Bitcoin after logging in to the system.</source>
-        <translation>Sistemde oturum açıldığında Bitcoin&apos;i otomatik olarak başlat.</translation>
+        <source>Automatically start Namecoin after logging in to the system.</source>
+        <translation>Sistemde oturum açıldığında Namecoin&apos;i otomatik olarak başlat.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Bitcoin on system login</source>
-        <translation>Bitcoin&apos;i sistem oturumuyla &amp;başlat</translation>
+        <source>&amp;Start Namecoin on system login</source>
+        <translation>Namecoin&apos;i sistem oturumuyla &amp;başlat</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -2602,8 +2893,8 @@ Adres: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Yönlendiricide Bitcoin istemci portlarını otomatik olarak açar. Bu, sadece yönlendiricinizin UPnP desteği bulunuyorsa ve etkinse çalışabilir.</translation>
+        <source>Automatically open the Namecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Yönlendiricide Namecoin istemci portlarını otomatik olarak açar. Bu, sadece yönlendiricinizin UPnP desteği bulunuyorsa ve etkinse çalışabilir.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2612,8 +2903,8 @@ Adres: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Bitcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Bitcoin şebekesine SOCKS vekil sunucusu vasıtasıyla bağlan (mesela Tor ile bağlanıldığında).</translation>
+        <source>Connect to the Namecoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Namecoin şebekesine SOCKS vekil sunucusu vasıtasıyla bağlan (mesela Tor ile bağlanıldığında).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2687,8 +2978,8 @@ Adres: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Bitcoin.</source>
-        <translation>Kullanıcı arayüzünün dili burada belirtilebilir. Bu ayar Bitcoin tekrar başlatıldığında etkinleşecektir.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Namecoin.</source>
+        <translation>Kullanıcı arayüzünün dili burada belirtilebilir. Bu ayar Namecoin tekrar başlatıldığında etkinleşecektir.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -2698,12 +2989,12 @@ Adres: %4
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Bitcoin gönderildiğinde arayüzde gösterilecek varsayılan alt birimi seçiniz.</translation>
+        <translation>Namecoin gönderildiğinde arayüzde gösterilecek varsayılan alt birimi seçiniz.</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Bitcoin addresses in the transaction list or not.</source>
-        <translation>Muamele listesinde Bitcoin adreslerinin gösterilip gösterilmeyeceklerini belirler.</translation>
+        <source>Whether to show Namecoin addresses in the transaction list or not.</source>
+        <translation>Muamele listesinde Namecoin adreslerinin gösterilip gösterilmeyeceklerini belirler.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2726,7 +3017,7 @@ Adres: %4
         <translation>&amp;Uygula</translation>
     </message>
     <message>
-        <location filename="../optionsdialog.cpp" line="+53"/>
+        <location filename="../optionsdialog.cpp" line="+55"/>
         <source>default</source>
         <translation>varsayılan</translation>
     </message>
@@ -2754,8 +3045,8 @@ Adres: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Bitcoin.</source>
-        <translation>Bu ayarlar Bitcoin tekrar başlatıldığında etkinleşecektir.</translation>
+        <source>This setting will take effect after restarting Namecoin.</source>
+        <translation>Bu ayarlar Namecoin tekrar başlatıldığında etkinleşecektir.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -2771,18 +3062,23 @@ Adres: %4
         <translation>Form</translation>
     </message>
     <message>
-        <location line="+50"/>
-        <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <location line="+51"/>
+        <location line="+183"/>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Namecoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Görüntülenen veriler zaman aşımına uğramış olabilir. Bağlantı kurulduğunda cüzdanınız otomatik olarak şebeke ile eşleşir ancak bu işlem henüz tamamlanmamıştır.</translation>
     </message>
     <message>
-        <location line="-124"/>
+        <location line="-141"/>
         <source>Balance:</source>
         <translation>Bakiye:</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+58"/>
+        <source>Number of transactions:</source>
+        <translation>Muamele sayısı:</translation>
+    </message>
+    <message>
+        <location line="-29"/>
         <source>Unconfirmed:</source>
         <translation>Doğrulanmamış:</translation>
     </message>
@@ -2792,7 +3088,7 @@ Adres: %4
         <translation>Cüzdan</translation>
     </message>
     <message>
-        <location line="+107"/>
+        <location line="+124"/>
         <source>Immature:</source>
         <translation>Olgunlaşmamış:</translation>
     </message>
@@ -2807,7 +3103,7 @@ Adres: %4
         <translation>&lt;b&gt;Son muameleler&lt;/b&gt;</translation>
     </message>
     <message>
-        <location line="-101"/>
+        <location line="-118"/>
         <source>Your current balance</source>
         <translation>Güncel bakiyeniz</translation>
     </message>
@@ -2817,18 +3113,15 @@ Adres: %4
         <translation>Doğrulanması beklenen ve henüz güncel bakiyeye ilâve edilmemiş muamelelerin toplamı</translation>
     </message>
     <message>
-        <location filename="../overviewpage.cpp" line="+116"/>
+        <location line="+20"/>
+        <source>Total number of transactions in wallet</source>
+        <translation>Cüzdandaki muamelelerin toplam sayısı</translation>
+    </message>
+    <message>
+        <location filename="../overviewpage.cpp" line="+115"/>
         <location line="+1"/>
         <source>out of sync</source>
         <translation>eşleşme dışı</translation>
-    </message>
-</context>
-<context>
-    <name>PaymentServer</name>
-    <message>
-        <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Bitcoin başlatılamadı: tıkla-ve-öde yöneticisi</translation>
     </message>
 </context>
 <context>
@@ -2906,7 +3199,7 @@ Adres: %4
         <location line="+53"/>
         <location line="+23"/>
         <location line="+23"/>
-        <location filename="../rpcconsole.cpp" line="+339"/>
+        <location filename="../rpcconsole.cpp" line="+344"/>
         <source>N/A</source>
         <translation>Mevcut değil</translation>
     </message>
@@ -2977,8 +3270,8 @@ Adres: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Bitcoin-Qt help message to get a list with possible Bitcoin command-line options.</source>
-        <translation>Mevcut Bitcoin komut satırı seçeneklerinin listesini içeren Bitcoin-Qt yardımını göster.</translation>
+        <source>Show the Namecoin-Qt help message to get a list with possible Namecoin command-line options.</source>
+        <translation>Mevcut Namecoin komut satırı seçeneklerinin listesini içeren Namecoin-Qt yardımını göster.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2997,13 +3290,13 @@ Adres: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Bitcoin - Debug window</source>
-        <translation>Bitcoin - Hata ayıklama penceresi</translation>
+        <source>Namecoin - Debug window</source>
+        <translation>Namecoin - Hata ayıklama penceresi</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Çekirdeği</translation>
+        <source>Namecoin Core</source>
+        <translation>Namecoin Çekirdeği</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -3012,8 +3305,8 @@ Adres: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Bitcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Güncel veri klasöründen Bitcoin hata ayıklama kütük dosyasını açar. Büyük kütük dosyaları için bu birkaç saniye alabilir.</translation>
+        <source>Open the Namecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Güncel veri klasöründen Namecoin hata ayıklama kütük dosyasını açar. Büyük kütük dosyaları için bu birkaç saniye alabilir.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -3022,8 +3315,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Bitcoin RPC console.</source>
-        <translation>Bitcoin RPC konsoluna hoş geldiniz.</translation>
+        <source>Welcome to the Namecoin RPC console.</source>
+        <translation>Namecoin RPC konsoluna hoş geldiniz.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3048,7 +3341,7 @@ Adres: %4
         <location line="+5"/>
         <location line="+5"/>
         <source>Send Coins</source>
-        <translation>Bitcoin yolla</translation>
+        <translation>Namecoin yolla</translation>
     </message>
     <message>
         <location line="+50"/>
@@ -3086,8 +3379,8 @@ Adres: %4
         <location line="+41"/>
 =======
         <location line="+10"/>
-        <source>123.456 BTC</source>
-        <translation>123.456 BTC</translation>
+        <source>... NMC</source>
+        <translation>... NMC</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -3324,17 +3617,26 @@ Adres: %4
     </message>
     <message>
         <location line="+34"/>
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <source>The address to send the payment to (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
         <translation>Ödemenin gönderileceği adres (mesela 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+=======
+        <source>The address to send the payment to (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation>Ödemenin gönderileceği adres (mesela N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
 <<<<<<< HEAD
         <location filename="../sendcoinsentry.cpp" line="+30"/>
 =======
         <location line="+60"/>
+<<<<<<< HEAD
         <location filename="../sendcoinsentry.cpp" line="+26"/>
 >>>>>>> Committing original src/qt
+=======
+        <location filename="../sendcoinsentry.cpp" line="+25"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Enter a label for this address to add it to your address book</source>
         <translation>Adres defterinize eklemek için bu adrese ilişik bir etiket giriniz</translation>
     </message>
@@ -3432,8 +3734,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Bitcoin adresi giriniz (mesela 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation>Namecoin adresi giriniz (mesela N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</translation>
     </message>
 </context>
 <context>
@@ -3475,8 +3777,8 @@ Adres: %4
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Mesajın imzalanmasında kullanılacak adres (mesela 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>The address to sign the message with (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation>Mesajın imzalanmasında kullanılacak adres (mesela N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -3522,13 +3824,13 @@ Adres: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Bu Bitcoin adresinin sizin olduğunu ispatlamak için mesajı imzalayın</translation>
+        <source>Sign the message to prove you own this Namecoin address</source>
+        <translation>Bu Namecoin adresinin sizin olduğunu ispatlamak için mesajı imzalayın</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Sign &amp;Message</source>
-        <translation>&amp;Mesajı imzala</translation>
+        <translation>&amp;Mesaj imzala</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -3544,7 +3846,7 @@ Adres: %4
     <message>
         <location line="-87"/>
         <source>&amp;Verify Message</source>
-        <translation>Mesaj &amp;kontrol et</translation>
+        <translation>Mesajı &amp;kontrol et</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -3553,13 +3855,13 @@ Adres: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Mesajı imzalamak için kullanılmış olan adres (mesela 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>The address the message was signed with (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation>Mesajı imzalamak için kullanılmış olan adres (mesela N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Belirtilen Bitcoin adresi ile imzalandığını doğrulamak için mesajı kontrol et</translation>
+        <source>Verify the message to ensure it was signed with the specified Namecoin address</source>
+        <translation>Belirtilen Namecoin adresi ile imzalandığını doğrulamak için mesajı kontrol et</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3578,8 +3880,8 @@ Adres: %4
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
 >>>>>>> Committing original src/qt
         <location line="+3"/>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Bitcoin adresi giriniz (mesela 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation>Namecoin adresi giriniz (mesela N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -3588,8 +3890,8 @@ Adres: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Bitcoin signature</source>
-        <translation>Bitcoin imzası gir</translation>
+        <source>Enter Namecoin signature</source>
+        <translation>Namecoin imzası gir</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -3663,6 +3965,7 @@ Adres: %4
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>SplashScreen</name>
     <message>
 <<<<<<< HEAD
@@ -3704,6 +4007,11 @@ Adres: %4
     <message>
         <location filename="../transactiondesc.cpp" line="+20"/>
 >>>>>>> Committing original src/qt
+=======
+    <name>TransactionDesc</name>
+    <message>
+        <location filename="../transactiondesc.cpp" line="+19"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Open until %1</source>
         <translation>%1 değerine dek açık</translation>
     </message>
@@ -3730,7 +4038,7 @@ Adres: %4
     <message numerus="yes">
         <location line="+7"/>
         <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, %n düğüm vasıtasıyla yayınlandı</numerusform><numerusform>, %n düğüm vasıtasıyla yayınlandı</numerusform></translation>
+        <translation><numerusform>, %n düğüm vasıtasıyla yayınlandı</numerusform></translation>
     </message>
     <message>
         <location line="+4"/>
@@ -3791,7 +4099,7 @@ Adres: %4
         <location line="-102"/>
 >>>>>>> Committing original src/qt
         <source>matures in %n more block(s)</source>
-        <translation><numerusform>%n ek blok sonrasında olgunlaşacak</numerusform><numerusform>%n ek blok sonrasında olgunlaşacak</numerusform></translation>
+        <translation><numerusform>%n ek blok sonrasında olgunlaşacak</numerusform></translation>
     </message>
     <message>
         <location line="+2"/>
@@ -3867,7 +4175,7 @@ Adres: %4
 =======
         <location line="+3"/>
         <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Oluşturulan Bitcoin&apos;lerin harcanabilmelerinden önce 120 blok beklemeleri gerekmektedir. Bu blok, oluşturduğunuzda blok zincirine eklenmesi için ağda yayınlandı. Zincire eklenmesi başarısız olursa, durumu &quot;kabul edilmedi&quot; olarak değiştirilecek ve harcanamayacaktır. Bu, bazen başka bir düğüm sizden birkaç saniye önce ya da sonra blok oluşturursa meydana gelebilir.</translation>
+        <translation>Oluşturulan Namecoin&apos;lerin harcanabilmelerinden önce 120 blok beklemeleri gerekmektedir. Bu blok, oluşturduğunuzda blok zincirine eklenmesi için ağda yayınlandı. Zincire eklenmesi başarısız olursa, durumu &quot;kabul edilmedi&quot; olarak değiştirilecek ve harcanamayacaktır. Bu, bazen başka bir düğüm sizden birkaç saniye önce ya da sonra blok oluşturursa meydana gelebilir.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3916,7 +4224,7 @@ Adres: %4
     <message numerus="yes">
         <location line="-35"/>
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>%n ilâve blok için açık</numerusform><numerusform>%n ilâve blok için açık</numerusform></translation>
+        <translation><numerusform>%n ilâve blok için açık</numerusform></translation>
     </message>
     <message>
         <location line="+70"/>
@@ -3941,10 +4249,14 @@ Adres: %4
     <name>TransactionTableModel</name>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../transactiontablemodel.cpp" line="+234"/>
 =======
         <location filename="../transactiontablemodel.cpp" line="+225"/>
 >>>>>>> Committing original src/qt
+=======
+        <location filename="../transactiontablemodel.cpp" line="+226"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Date</source>
         <translation>Tarih</translation>
     </message>
@@ -3978,7 +4290,7 @@ Adres: %4
         <location line="+57"/>
 >>>>>>> Committing original src/qt
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>%n ilâve blok için açık</numerusform><numerusform>%n ilâve blok için açık</numerusform></translation>
+        <translation><numerusform>%n ilâve blok için açık</numerusform></translation>
     </message>
     <message>
         <location line="+3"/>
@@ -4012,7 +4324,7 @@ Adres: %4
     <message numerus="yes">
         <location line="+8"/>
         <source>Mined balance will be available when it matures in %n more block(s)</source>
-        <translation><numerusform>Madenden çıkarılan bakiye %n ek blok sonrasında olgunlaştığında kullanılabilecektir</numerusform><numerusform>Madenden çıkarılan bakiye %n ek blok sonrasında olgunlaştığında kullanılabilecektir</numerusform></translation>
+        <translation><numerusform>Madenden çıkarılan bakiye %n ek blok sonrasında olgunlaştığında kullanılabilecektir</numerusform></translation>
     </message>
     <message>
         <location line="+5"/>
@@ -4093,10 +4405,14 @@ Adres: %4
     <name>TransactionView</name>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../transactionview.cpp" line="+57"/>
 =======
         <location filename="../transactionview.cpp" line="+52"/>
 >>>>>>> Committing original src/qt
+=======
+        <location filename="../transactionview.cpp" line="+55"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <location line="+16"/>
         <source>All</source>
         <translation>Hepsi</translation>
@@ -4197,11 +4513,6 @@ Adres: %4
     </message>
     <message>
         <location line="+1"/>
-        <source>Copy transaction ID</source>
-        <translation>Muamele kimliğini kopyala</translation>
-    </message>
-    <message>
-        <location line="+1"/>
         <source>Edit label</source>
         <translation>Etiketi düzenle</translation>
     </message>
@@ -4211,6 +4522,7 @@ Adres: %4
         <translation>Muamele detaylarını göster</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+142"/>
         <source>Export Transaction History</source>
@@ -4240,6 +4552,9 @@ Adres: %4
         <location line="-22"/>
 =======
         <location line="+139"/>
+=======
+        <location line="+142"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Export Transaction Data</source>
         <translation>Muamele verilerini dışa aktar</translation>
     </message>
@@ -4306,8 +4621,12 @@ Adres: %4
         <translation>%1 dosyasına yazılamadı.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+100"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+95"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Range:</source>
         <translation>Aralık:</translation>
     </message>
@@ -4318,6 +4637,7 @@ Adres: %4
     </message>
 </context>
 <context>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <name>WalletFrame</name>
     <message>
@@ -4427,10 +4747,21 @@ Adres: %4
     <message>
         <location line="+102"/>
 >>>>>>> Committing original src/qt
+=======
+    <name>Namecoin-core</name>
+    <message>
+        <location filename="../bitcoinstrings.cpp" line="+88"/>
+        <source>Namecoin version</source>
+        <translation>Namecoin sürümü</translation>
+    </message>
+    <message>
+        <location line="+82"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Usage:</source>
         <translation>Kullanım:</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-54"/>
 =======
@@ -4441,28 +4772,45 @@ Adres: %4
     <message>
         <location line="-23"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-23"/>
+        <source>Send command to -server or namecoind</source>
+        <translation>-server ya da namecoind&apos;ye komut gönder</translation>
+    </message>
+    <message>
+        <location line="-21"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>List commands</source>
         <translation>Komutları listele</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-14"/>
 =======
         <location line="-12"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-11"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Get help for a command</source>
         <translation>Bir komut için yardım al</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+26"/>
 =======
         <location line="+24"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+21"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Options:</source>
         <translation>Seçenekler:</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+22"/>
 =======
@@ -4470,23 +4818,39 @@ Adres: %4
 >>>>>>> Committing original src/qt
         <source>Specify configuration file (default: bitcoin.conf)</source>
         <translation>Yapılandırma dosyası belirt (varsayılan: bitcoin.conf)</translation>
+=======
+        <location line="+22"/>
+        <source>Specify configuration file (default: namecoin.conf)</source>
+        <translation>Yapılandırma dosyası belirt (varsayılan: namecoin.conf)</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: bitcoind.pid)</source>
-        <translation>Pid dosyası belirt (varsayılan: bitcoind.pid)</translation>
+        <source>Specify pid file (default: namecoind.pid)</source>
+        <translation>Pid dosyası belirt (varsayılan: namecoind.pid)</translation>
     </message>
     <message>
-        <location line="-1"/>
+        <location line="-47"/>
+        <source>Generate coins</source>
+        <translation>Madenî para (Namecoin) oluştur</translation>
+    </message>
+    <message>
+        <location line="-15"/>
+        <source>Don&apos;t generate coins</source>
+        <translation>Namecoin oluşturmasını devre dışı bırak</translation>
+    </message>
+    <message>
+        <location line="+61"/>
         <source>Specify data directory</source>
         <translation>Veri dizinini belirt</translation>
     </message>
     <message>
-        <location line="-9"/>
+        <location line="-7"/>
         <source>Set database cache size in megabytes (default: 25)</source>
         <translation>Veritabanı önbellek boyutunu megabayt olarak belirt (varsayılan: 25)</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-26"/>
 =======
@@ -4494,58 +4858,84 @@ Adres: %4
 >>>>>>> Committing original src/qt
         <source>Listen for connections on &lt;port&gt; (default: 8333 or testnet: 18333)</source>
         <translation>Bağlantılar için dinlenecek &lt;port&gt; (varsayılan: 8333 ya da testnet: 18333)</translation>
+=======
+        <location line="-26"/>
+        <source>Listen for connections on &lt;port&gt; (default: 8334 or testnet: 18334)</source>
+        <translation>Bağlantılar için dinlenecek &lt;port&gt; (varsayılan: 8334 ya da testnet: 18334)</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
         <translation>Eşler ile en çok &lt;n&gt; adet bağlantı kur (varsayılan: 125)</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-51"/>
 =======
         <location line="-48"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-34"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
         <translation>Eş adresleri elde etmek için bir düğüme bağlan ve ardından bağlantıyı kes</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+84"/>
 =======
         <location line="+82"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+65"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Specify your own public address</source>
         <translation>Kendi genel adresinizi tanımlayın</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+5"/>
 =======
         <location line="+3"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+2"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
         <translation>Aksaklık gösteren eşlerle bağlantıyı kesme sınırı (varsayılan: 100)</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-148"/>
 =======
         <location line="-134"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-114"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
         <translation>Aksaklık gösteren eşlerle yeni bağlantıları engelleme süresi, saniye olarak (varsayılan: 86400)</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-36"/>
 =======
         <location line="-29"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-28"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
         <translation>IPv4 üzerinde dinlemek için %u numaralı RPC portunun kurulumu sırasında hata meydana geldi: %s</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+34"/>
 =======
@@ -4560,66 +4950,86 @@ Adres: %4
 =======
         <location line="+37"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+26"/>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8336 or testnet: 18336)</source>
+        <translation>JSON-RPC bağlantılarını &lt;port&gt; üzerinde dinle (varsayılan: 8336 veya tesnet: 18336)</translation>
+    </message>
+    <message>
+        <location line="+34"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Accept command line and JSON-RPC commands</source>
         <translation>Konut satırı ve JSON-RPC komutlarını kabul et</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+80"/>
 =======
         <location line="+76"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+62"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Run in the background as a daemon and accept commands</source>
         <translation>Arka planda daemon (servis) olarak çalış ve komutları kabul et</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+39"/>
 =======
         <location line="+37"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+31"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Use the test network</source>
         <translation>Deneme şebekesini kullan</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-118"/>
 =======
         <location line="-112"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-92"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Dışarıdan gelen bağlantıları kabul et (varsayılan: -proxy veya -connect yoksa 1)</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-95"/>
 =======
         <location line="-80"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-74"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>%s, you must set a rpcpassword in the configuration file:
-%s
+ %s
 It is recommended you use the following random password:
-rpcuser=bitcoinrpc
+rpcuser=namecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, şu yapılandırma dosyasında rpc parolası belirtmeniz gerekir:
-%s
+ %s
 Aşağıdaki rastgele oluşturulan parolayı kullanmanız tavsiye edilir:
-rpcuser=bitcoinrpc
+rpcuser=namecoinrpc
 rpcpassword=%s
 (bu parolayı hatırlamanız gerekli değildir)
 Kullanıcı ismi ile parolanın FARKLI olmaları gerekir.
-Dosya mevcut değilse, sadece sahibi için okumayla sınırlı izin ile oluşturunuz.
-Sorunlar hakkında bildiri almak için alertnotify unsurunu ayarlamanız tavsiye edilir;
-mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
-</translation>
+Dosya mevcut değilse, sadece sahibi için okumayla sınırlı izin ile oluşturunuz.</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+12"/>
         <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>
@@ -4630,6 +5040,9 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
 =======
         <location line="+17"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+15"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
         <translation>IPv6 üzerinde dinlemek için %u numaralı RPC portu kurulurken bir hata meydana geldi, IPv4&apos;e dönülüyor: %s</translation>
     </message>
@@ -4640,11 +5053,12 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Bitcoin is probably already running.</source>
-        <translation>%s veri dizininde kilit elde edilemedi. Bitcoin muhtemelen hâlihazırda çalışmaktadır.</translation>
+        <source>Cannot obtain a lock on data directory %s. Namecoin is probably already running.</source>
+        <translation>%s veri dizininde kilit elde edilemedi. Namecoin muhtemelen hâlihazırda çalışmaktadır.</translation>
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development.</source>
         <translation>Anında çözümlenebilen bloklar içeren ve özel zincir kullanan regresyon test kipine gir. Bu, uygulama geliştirme ve regresyon testi araçları için tasarlanmıştır.</translation>
@@ -4671,17 +5085,32 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
         <location line="+6"/>
 =======
         <translation>Hata: Muamelenin miktarı, karmaşıklığı ya da yakın geçmişte alınan fonların kullanılması nedeniyle bu muamele en az %s tutarında ücret gerektirmektedir!</translation>
+=======
+        <source>Corrupted block database detected. Please restart the client with -reindex.</source>
+        <translation>Bozuk blok veritabanı tespit edildi. Lütfen istemciyi -reindex ile tekrar başlatınız.</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
+        <translation>%s veritabanı ortamının başlatılması sırasında bir hata meydana geldi! Düzeltmek için BU KLASÖRÜ YEDEKLEYİN, ardından klasörden wallet.dat dışında tüm dosyaları silin.</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+3"/>
-        <source>Execute command when a relevant alert is received (%s in cmd is replaced by message)</source>
-        <translation>İlgili bir uyarı alındığında komut çalıştır (komuttaki %s mesaj ile değiştirilecektir)</translation>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Hata: Muamele reddedildi! Cüzdanınızdaki madenî paraların bazıları zaten harcanmış olduğunda bu meydana gelebilir. Örneğin wallet.dat dosyasının bir kopyasını kullandıysanız ve kopyada para harcandığında ancak burada harcandığı işaretlenmediğinde.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
 >>>>>>> Committing original src/qt
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>Bir cüzdan muamelesi değiştiğinde komutu çalıştır (komuttaki %s TxID ile değiştirilecektir)</translation>
+=======
+        <location line="+4"/>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation>Hata: Muamelenin miktarı, karmaşıklığı ya da yakın geçmişte alınan fonların kullanılması nedeniyle bu muamele en az %s tutarında ücret gerektirmektedir!</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
 <<<<<<< HEAD
@@ -4692,10 +5121,14 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
         <translation>Yüksek öncelikli/düşük ücretli muamelelerin boyutunu bayt olarak tanımla (varsayılan: 27000)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+6"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+3"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation>Bu yayın öncesi bir deneme sürümüdür - tüm riski siz üstlenmiş olursunuz - bitcoin oluşturmak ya da ticari uygulamalar için kullanmayınız</translation>
+        <translation>Bu yayın öncesi bir deneme sürümüdür - tüm riski siz üstlenmiş olursunuz - Namecoin oluşturmak ya da ticari uygulamalar için kullanmayınız</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -4731,9 +5164,14 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Bitcoin will not work properly.</source>
         <translation>Uyarı: Lütfen bilgisayarınızın tarih ve saatinin doğru olup olmadığını kontrol ediniz! Saatiniz doğru değilse Bitcoin gerektiği gibi çalışamaz.</translation>
 >>>>>>> Committing original src/qt
+=======
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Namecoin will not work properly.</source>
+        <translation>Uyarı: Lütfen bilgisayarınızın tarih ve saatinin doğru olup olmadığını kontrol ediniz! Saatiniz doğru değilse Namecoin gerektiği gibi çalışamaz.</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+3"/>
@@ -4779,7 +5217,7 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
         <translation>Blok oluşturma seçenekleri:</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>Connect only to the specified node(s)</source>
         <translation>Sadece belirtilen düğüme veya düğümlere bağlan</translation>
     </message>
@@ -4798,16 +5236,20 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
         <location line="+2"/>
 =======
         <location line="+3"/>
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <source>Corrupted block database detected</source>
         <translation>Bozuk blok veritabanı tespit edildi</translation>
     </message>
     <message>
         <location line="+1"/>
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
         <translation>Kendi IP adresini keşfet (varsayılan: dinlenildiğinde ve -externalip yoksa 1)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
 <<<<<<< HEAD
         <source>Do not load the wallet and disable wallet RPC calls</source>
@@ -4832,18 +5274,21 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
+=======
+        <location line="+3"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Error loading block database</source>
         <translation>Blok veritabanının yüklenmesinde hata</translation>
     </message>
     <message>
-        <location line="+4"/>
-        <source>Error opening block database</source>
-        <translation>Blok veritabanının açılışı sırasında hata</translation>
-    </message>
-    <message>
-        <location line="+2"/>
+        <location line="+5"/>
         <source>Error: Disk space is low!</source>
         <translation>Hata: Disk alanı düşük!</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Transaction creation failed!</source>
+        <translation>Hata: Muamele oluşturması başarısız oldu!</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -4851,16 +5296,12 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
         <translation>Hata: Cüzdan kilitli, muamele oluşturulamadı!</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Error: system error: </source>
-        <translation>Hata: sistem hatası:</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Herhangi bir portun dinlenmesi başarısız oldu. Bunu istiyorsanız -listen=0 seçeneğini kullanınız.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Failed to read block info</source>
         <translation>Blok verileri okunamadı</translation>
@@ -4919,27 +5360,20 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
     <message>
         <location line="+1"/>
 =======
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <location line="+2"/>
 >>>>>>> Committing original src/qt
         <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
         <translation>Eşleri DNS araması vasıtasıyla bul (varsayılan: 1, eğer -connect kullanılmadıysa)</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Generate coins (default: 0)</source>
-        <translation>Bitcoin oluştur (varsayılan: 0)</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
-        <translation>Başlangıçta kontrol edilecek blok sayısı (varsayılan: 288, 0 = hepsi)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+5"/>
         <source>How thorough the block verification is (0-4, default: 3)</source>
         <translation>Blok kontrolünün ne kadar derin olacağı (0 ilâ 4, varsayılan: 3)</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+1"/>
         <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
@@ -5036,11 +5470,14 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
         <translation>Bloklar kontrol ediliyor...</translation>
     </message>
     <message>
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <location line="+1"/>
-        <source>Verifying wallet...</source>
-        <translation>Cüzdan kontrol ediliyor...</translation>
+        <source>Importing blocks from block database...</source>
+        <translation>Bloklar veritabanından içe aktarılıyor...</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+1"/>
         <source>Wait for RPC server to start</source>
@@ -5071,10 +5508,14 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
 =======
         <location line="-69"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+1"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Imports blocks from external blk000??.dat file</source>
         <translation>Harici blk000??.dat dosyasından blokları içe aktarır</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-105"/>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
@@ -5104,6 +5545,9 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
 =======
         <location line="+77"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+1"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Information</source>
         <translation>Bilgi</translation>
     </message>
@@ -5116,6 +5560,7 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
         <translation>Geçersiz -tor adresi: &apos;%s&apos;</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
 >>>>>>> Committing original src/qt
         <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
@@ -5133,6 +5578,9 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+2"/>
+=======
+        <location line="+9"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
         <translation>Bağlantı başına azami alım tamponu, &lt;n&gt;*1000 bayt (varsayılan: 5000)</translation>
     </message>
@@ -5142,7 +5590,7 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
         <translation>Bağlantı başına azami yollama tamponu, &lt;n&gt;*1000 bayt (varsayılan: 1000)</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
         <translation>Sadece yerleşik kontrol noktalarıyla eşleşen blok zincirini kabul et (varsayılan: 1)</translation>
     </message>
@@ -5170,10 +5618,19 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
         <translation>Hata ayıklama çıktısına tarih ön ekleri ilâve et</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+1"/>
+        <source>Rebuild blockchain index from current blk000??.dat files</source>
+        <translation>Blok zinciri endeksini güncel blk000??.dat dosyalarından yeniden derle</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation> SSL seçenekleri: (SSL kurulum bilgisi için Bitcoin vikisine bakınız)</translation>
+        <translation> SSL seçenekleri: (SSL kurulum bilgisi için Namecoin vikisine bakınız)</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -5209,14 +5666,9 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
         <translation>Bayt olarak asgari blok boyutunu tanımla (varsayılan: 0)</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
         <translation>İstemci başlatıldığında debug.log dosyasını küçült (varsayılan: -debug bulunmadığında 1)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Signing transaction failed</source>
-        <translation>Muamelenin imzalanması başarısız oldu</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -5224,6 +5676,7 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
         <translation>Bağlantı zaman aşım süresini milisaniye olarak belirt (varsayılan: 5000)</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+6"/>
 =======
@@ -5257,6 +5710,9 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
 =======
         <location line="+7"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+13"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation>Dinlenecek portu haritalamak için UPnP kullan (varsayılan: 0)</translation>
     </message>
@@ -5303,66 +5759,93 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
         <translation>sürüm</translation>
 =======
         <location line="+1"/>
+<<<<<<< HEAD
         <source>You need to rebuild the databases using -reindex to change -txindex</source>
         <translation>-txindex&apos;i değiştirmek için veritabanlarını -reindex kullanarak yeniden inşa etmeniz gerekir.</translation>
 >>>>>>> Committing original src/qt
     </message>
     <message>
         <location line="+1"/>
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat bozuk, geri kazanım başarısız oldu</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-58"/>
 =======
         <location line="-50"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-43"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Password for JSON-RPC connections</source>
         <translation>JSON-RPC bağlantıları için parola</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-70"/>
 =======
         <location line="-67"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-53"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Allow JSON-RPC connections from specified IP address</source>
         <translation>Belirtilen İP adresinden JSON-RPC bağlantılarını kabul et</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+80"/>
 =======
         <location line="+76"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+62"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
         <translation>Şu &lt;ip&gt; adresinde (varsayılan: 127.0.0.1) çalışan düğüme komut yolla</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-132"/>
 =======
         <location line="-120"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-103"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>En iyi blok değiştiğinde komutu çalıştır (komut için %s parametresi blok hash değeri ile değiştirilecektir)</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+161"/>
 =======
         <location line="+147"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+124"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Upgrade wallet to latest format</source>
         <translation>Cüzdanı en yeni biçime güncelle</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-24"/>
 =======
         <location line="-21"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-15"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Set key pool size to &lt;n&gt; (default: 100)</source>
         <translation>Anahtar alan boyutunu &lt;n&gt; değerine ayarla (varsayılan: 100)</translation>
     </message>
@@ -5377,19 +5860,32 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+38"/>
 =======
         <location line="+35"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-26"/>
+        <source>How many blocks to check at startup (default: 2500, 0 = all)</source>
+        <translation>Başlangıçta ne kadar blokun denetleneceği (varsayılan: 2500, 0 = tümü)</translation>
+    </message>
+    <message>
+        <location line="+55"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Use OpenSSL (https) for JSON-RPC connections</source>
         <translation>JSON-RPC bağlantıları için OpenSSL (https) kullan</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-30"/>
 =======
         <location line="-26"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-20"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Server certificate file (default: server.cert)</source>
         <translation>Sunucu sertifika dosyası (varsayılan: server.cert)</translation>
     </message>
@@ -5400,65 +5896,104 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+16"/>
 =======
         <location line="-151"/>
+=======
+        <location line="-133"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
         <translation>Kabul edilebilir şifreler (varsayılan: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+165"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+144"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>This help message</source>
         <translation>Bu yardım mesajı</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+7"/>
 =======
         <location line="+6"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+3"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation>Bu bilgisayarda %s unsuruna bağlanılamadı. (bind şu hatayı iletti: %d, %s)</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-107"/>
 =======
         <location line="-91"/>
+=======
+        <location line="-70"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Connect through socks proxy</source>
         <translation>Socks vekil sunucusu vasıtasıyla bağlan</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-10"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-11"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
         <translation>-addnode, -seednode ve -connect için DNS aramalarına izin ver</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+60"/>
 =======
         <location line="+55"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+43"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Loading addresses...</source>
         <translation>Adresler yükleniyor...</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-37"/>
 =======
         <location line="-35"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-25"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Error loading wallet.dat: Wallet corrupted</source>
         <translation>wallet.dat dosyasının yüklenmesinde hata oluştu: bozuk cüzdan</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bitcoin</source>
-        <translation>wallet.dat dosyasının yüklenmesinde hata oluştu: cüzdanın daha yeni bir Bitcoin sürümüne ihtiyacı var</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Namecoin</source>
+        <translation>wallet.dat dosyasının yüklenmesinde hata oluştu: cüzdanın daha yeni bir Namecoin sürümüne ihtiyacı var</translation>
     </message>
     <message>
+        <location line="+73"/>
+        <source>Verifying block database integrity...</source>
+        <translation>Blok veritabanının bütünlüğü kontrol ediliyor...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Verifying wallet integrity...</source>
+        <translation>Cüzdanın bütünlüğü kontrol ediliyor...</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+98"/>
 =======
@@ -5473,20 +6008,32 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
 =======
         <location line="-95"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+1"/>
+        <source>Wallet needed to be rewritten: restart Namecoin to complete</source>
+        <translation>Cüzdanın tekrar yazılması gerekiyordu: işlemi tamamlamak için Namecoin&apos;i yeniden başlatınız</translation>
+    </message>
+    <message>
+        <location line="-77"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Error loading wallet.dat</source>
         <translation>wallet.dat dosyasının yüklenmesinde hata oluştu</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+31"/>
 =======
         <location line="+28"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+20"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Invalid -proxy address: &apos;%s&apos;</source>
         <translation>Geçersiz -proxy adresi: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+56"/>
+        <location line="+46"/>
         <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
         <translation>-onlynet için bilinmeyen bir şebeke belirtildi: &apos;%s&apos;</translation>
     </message>
@@ -5497,10 +6044,14 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-101"/>
 =======
         <location line="-96"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-75"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Cannot resolve -bind address: &apos;%s&apos;</source>
         <translation>-bind adresi çözümlenemedi: &apos;%s&apos;</translation>
     </message>
@@ -5511,17 +6062,26 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+48"/>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>-paytxfee=&lt;meblağ&gt; için geçersiz meblağ: &apos;%s&apos;</translation>
 =======
         <location line="+44"/>
+=======
+        <location line="+31"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>-paytxfee=&lt;miktar&gt; için geçersiz miktar: &apos;%s&apos;</translation>
 >>>>>>> Committing original src/qt
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-15"/>
+        <source>Error: could not start node</source>
+        <translation>Hata: düğüm başlatılamadı</translation>
+    </message>
+    <message>
+        <location line="+16"/>
         <source>Invalid amount</source>
 <<<<<<< HEAD
         <translation>Geçersiz meblağ</translation>
@@ -5530,21 +6090,25 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
 >>>>>>> Committing original src/qt
     </message>
     <message>
-        <location line="-6"/>
+        <location line="-4"/>
         <source>Insufficient funds</source>
         <translation>Yetersiz bakiye</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+8"/>
         <source>Loading block index...</source>
         <translation>Blok indeksi yükleniyor...</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-62"/>
 =======
         <location line="-57"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-45"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>Bağlanılacak düğüm ekle ve bağlantıyı zinde tutmaya çalış</translation>
     </message>
@@ -5553,6 +6117,7 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
         <location line="-32"/>
 =======
         <location line="-25"/>
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <source>Unable to bind to %s on this computer. Bitcoin is probably already running.</source>
         <translation>Bu bilgisayarda %s unsuruna bağlanılamadı. Bitcoin muhtemelen hâlihazırda çalışmaktadır.</translation>
@@ -5562,6 +6127,18 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
         <location line="+95"/>
 =======
         <location line="+64"/>
+=======
+        <source>Unable to bind to %s on this computer. Namecoin is probably already running.</source>
+        <translation>Bu bilgisayarda %s unsuruna bağlanılamadı. Namecoin muhtemelen hâlihazırda çalışmaktadır.</translation>
+    </message>
+    <message>
+        <location line="+54"/>
+        <source>Find peers using internet relay chat (default: 0)</source>
+        <translation>Eşleri Internet Relay Chat vasıtasıyla bul (varsayılan: 0)</translation>
+    </message>
+    <message>
+        <location line="-2"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Fee per KB to add to transactions you send</source>
         <translation>Yolladığınız muameleler için eklenecek KB başı ücret</translation>
     </message>
@@ -5573,12 +6150,21 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-56"/>
 =======
         <location line="-52"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-40"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Cannot downgrade wallet</source>
         <translation>Cüzdan eski biçime geri alınamaz</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot initialize keypool</source>
+        <translation>Keypool başlatılamadı</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -5587,46 +6173,66 @@ mesela: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+67"/>
 =======
         <location line="+64"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+49"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Rescanning...</source>
         <translation>Yeniden tarama...</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-58"/>
 =======
         <location line="-57"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-43"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Done loading</source>
         <translation>Yükleme tamamlandı</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+85"/>
 =======
         <location line="+82"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+65"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>To use the %s option</source>
         <translation>%s seçeneğini kullanmak için</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-77"/>
 =======
         <location line="-74"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-60"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Error</source>
         <translation>Hata</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-35"/>
 =======
         <location line="-31"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-28"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
 %s
 If the file does not exist, create it with owner-readable-only file permissions.</source>

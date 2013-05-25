@@ -18,6 +18,7 @@ extern std::string strWalletFile;
 extern CWallet* pwalletMain;
 
 void StartShutdown();
+<<<<<<< HEAD
 bool ShutdownRequested();
 void Shutdown();
 bool AppInit2(boost::thread_group& threadGroup);
@@ -30,5 +31,11 @@ enum HelpMessageMode
 };
 
 std::string HelpMessage(HelpMessageMode mode);
+=======
+void Shutdown(void* parg);
+bool AppInit(int argc, char* argv[]);
+bool AppInit2(int argc, char* argv[]);
+std::string HelpMessage();
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
 #endif

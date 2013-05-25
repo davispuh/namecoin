@@ -8,6 +8,7 @@
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>About Bitcoin Core</source>
         <translation>Om Bitcoin Core</translation>
     </message>
@@ -24,9 +25,23 @@
         <source>&lt;b&gt;Bitcoin&lt;/b&gt; version</source>
         <translation>&lt;b&gt;Bitcoin&lt;/b&gt; versjon</translation>
 >>>>>>> Committing original src/qt
+=======
+        <source>About Namecoin</source>
+        <translation>Om Namecoin</translation>
     </message>
     <message>
-        <location line="+57"/>
+        <location line="+39"/>
+        <source>&lt;b&gt;Namecoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Namecoin&lt;/b&gt; versjon</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+    </message>
+    <message>
+        <location line="+41"/>
+        <source>Copyright © 2009-2013 The Bitcoin and Namecoin developers</source>
+        <translation>Copyright © 2009-2013 Bitcoin, Namecoin Utviklerne</translation>
+    </message>
+    <message>
+        <location line="+13"/>
         <source>
 This is experimental software.
 
@@ -40,6 +55,7 @@ Distribuert under MIT/X11 programvarelisensen, se medfølgende fil COPYING eller
 
 Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i OpenSSL Toolkit (http://www.openssl.org/) og kryptografisk programvare skrevet av Eric Young (eay@cryptsoft.com) og UPnP programvare skrevet av Thomas Bernard.</translation>
     </message>
+<<<<<<< HEAD
     <message>
 <<<<<<< HEAD
         <location filename="../utilitydialog.cpp" line="+29"/>
@@ -61,6 +77,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 </context>
 <context>
     <name>AddressBookPage</name>
@@ -73,8 +91,12 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <translation>Adressebok</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+19"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+22"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Double-click to edit address or label</source>
         <translation>Dobbeltklikk for å redigere adresse eller merkelapp</translation>
     </message>
@@ -116,13 +138,17 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <translation>&amp;Ny Adresse</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Bitcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Dette er dine Bitcoin-adresser for mottak av betalinger. Du kan gi forskjellige adresser til alle som skal betale deg for å holde bedre oversikt.</translation>
+        <location line="-46"/>
+        <source>These are your Namecoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Dette er dine Namecoin-adresser for mottak av betalinger. Du kan gi forskjellige adresser til alle som skal betale deg for å holde bedre oversikt.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/addressbookpage.ui" line="+14"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+60"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>&amp;Copy Address</source>
         <translation>&amp;Kopier Adresse</translation>
     </message>
@@ -191,8 +217,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Bitcoin address</source>
-        <translation>Signer en melding for å bevise at du eier en Bitcoin-adresse</translation>
+        <source>Sign a message to prove you own a Namecoin address</source>
+        <translation>Signer en melding for å bevise at du eier en Namecoin-adresse</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -202,22 +228,12 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     <message>
         <location line="+25"/>
         <source>Delete the currently selected address from the list</source>
-        <translation>Slett den valgte adressen fra listen.</translation>
-    </message>
-    <message>
-        <location line="+27"/>
-        <source>Export the data in the current tab to a file</source>
-        <translation>Eksporter data fra nåværende fane til fil</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>&amp;Export</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Bitcoin address</source>
-        <translation>Verifiser en melding for å være sikker på at den ble signert av en angitt Bitcoin-adresse</translation>
+        <location line="-14"/>
+        <source>Verify a message to ensure it was signed with a specified Namecoin address</source>
+        <translation>Verifiser en melding for å være sikker på at den ble signert av en angitt Namecoin-adresse</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -230,6 +246,7 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <translation>&amp;Slett</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../addressbookpage.cpp" line="-5"/>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"/>
@@ -237,15 +254,19 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     <message>
         <location line="+13"/>
 >>>>>>> Committing original src/qt
+=======
+        <location filename="../addressbookpage.cpp" line="+65"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Copy &amp;Label</source>
         <translation>Kopier &amp;Merkelapp</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>&amp;Edit</source>
         <translation>&amp;Rediger</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+194"/>
         <source>Export Address List</source>
@@ -257,6 +278,9 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="+260"/>
+=======
+        <location line="+250"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Export Address Book Data</source>
         <translation>Eksporter adressebok</translation>
 >>>>>>> Committing original src/qt
@@ -291,10 +315,14 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     <name>AddressTableModel</name>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../addresstablemodel.cpp" line="+168"/>
 =======
         <location filename="../addresstablemodel.cpp" line="+144"/>
 >>>>>>> Committing original src/qt
+=======
+        <location filename="../addresstablemodel.cpp" line="+142"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Label</source>
         <translation>Merkelapp</translation>
     </message>
@@ -382,8 +410,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Advarsel: Hvis du krypterer lommeboken og mister adgangsfrasen, så vil du &lt;b&gt;MISTE ALLE DINE BITCOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NAMECOINS&lt;/b&gt;!</source>
+        <translation>Advarsel: Hvis du krypterer lommeboken og mister adgangsfrasen, så vil du &lt;b&gt;MISTE ALLE DINE Namecoins&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -393,7 +421,7 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     <message>
         <location line="+15"/>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation>VIKTIG: Tidligere sikkerhetskopier av din lommebok-fil, bør erstattes med den nylig genererte, krypterte filen, da de blir ugyldiggjort av sikkerhetshensyn så snart du begynner å bruke den nye krypterte lommeboken.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+100"/>
@@ -409,8 +437,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="-56"/>
-        <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Bitcoin vil nå lukkes for å fullføre krypteringsprosessen. Husk at kryptering av lommeboken ikke fullt ut kan beskytte dine bitcoins fra å bli stjålet om skadevare infiserer datamaskinen.</translation>
+        <source>Namecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Namecoins from being stolen by malware infecting your computer.</source>
+        <translation>Namecoin vil nå lukkes for å fullføre krypteringsprosessen. Husk at kryptering av lommeboken ikke fullt ut kan beskytte dine Namecoins fra å bli stjålet om skadevare infiserer datamaskinen.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -455,31 +483,43 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>NamecoinGUI</name>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../bitcoingui.cpp" line="+295"/>
 =======
         <location filename="../bitcoingui.cpp" line="+233"/>
 >>>>>>> Committing original src/qt
+=======
+        <location filename="../bitcoingui.cpp" line="+267"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Sign &amp;message...</source>
         <translation>Signer &amp;melding...</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+335"/>
 =======
         <location line="+280"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+254"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Synchronizing with network...</source>
         <translation>Synkroniserer med nettverk...</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-407"/>
 =======
         <location line="-349"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-322"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>&amp;Overview</source>
         <translation>&amp;Oversikt</translation>
     </message>
@@ -509,20 +549,43 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+17"/>
 =======
         <location line="+7"/>
+=======
+        <location line="+6"/>
+        <source>&amp;Address Book</source>
+        <translation>&amp;Adressebok</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Edit the list of stored addresses and labels</source>
         <translation>Rediger listen over adresser og deres merkelapper</translation>
     </message>
     <message>
-        <location line="-14"/>
+        <location line="-15"/>
+        <source>&amp;Receive coins</source>
+        <translation>&amp;Motta Namecoins</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Show the list of addresses for receiving payments</source>
         <translation>Vis listen over adresser for mottak av betalinger</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+31"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-8"/>
+        <source>&amp;Send coins</source>
+        <translation>&amp;Send Namecoins</translation>
+    </message>
+    <message>
+        <location line="+39"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>E&amp;xit</source>
         <translation>&amp;Avslutt</translation>
     </message>
@@ -536,9 +599,14 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <location line="+7"/>
 =======
         <location line="+4"/>
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <source>Show information about Bitcoin</source>
         <translation>Vis informasjon om Bitcoin</translation>
+=======
+        <source>Show information about Namecoin</source>
+        <translation>Vis informasjon om Namecoin</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
 <<<<<<< HEAD
@@ -565,10 +633,14 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+9"/>
 =======
         <location line="+6"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+5"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>&amp;Encrypt Wallet...</source>
         <translation>&amp;Krypter Lommebok...</translation>
     </message>
@@ -583,6 +655,7 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <translation>&amp;Endre Adgangsfrase...</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+10"/>
         <source>&amp;Sending addresses...</source>
@@ -603,15 +676,29 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
 =======
         <location line="+285"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+259"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Importing blocks from disk...</source>
-        <translation>Importere blokker...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
         <source>Reindexing blocks on disk...</source>
-        <translation>Re-indekserer blokker på disk...</translation>
+        <translation type="unfinished"/>
+    </message>
+    <message numerus="yes">
+        <location line="+10"/>
+        <source>~%n block(s) remaining</source>
+        <translation><numerusform>~%n blokk gjenstår</numerusform><numerusform>~%n blokker gjenstår</numerusform></translation>
     </message>
     <message>
+        <location line="-265"/>
+        <source>&amp;Export...</source>
+        <translation>&amp;Eksporter...</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-405"/>
 =======
@@ -619,18 +706,32 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
 >>>>>>> Committing original src/qt
         <source>Send coins to a Bitcoin address</source>
         <translation>Send til en Bitcoin-adresse</translation>
+=======
+        <location line="-65"/>
+        <source>Send coins to a Namecoin address</source>
+        <translation>Send til en Namecoin-adresse</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Bitcoin</source>
-        <translation>Endre oppsett for Bitcoin</translation>
+        <source>Modify configuration options for Namecoin</source>
+        <translation>Endre oppsett for Namecoin</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+12"/>
 =======
         <location line="+9"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+17"/>
+        <source>Export the data in the current tab to a file</source>
+        <translation>Eksporter data fra nåværende fane til fil</translation>
+    </message>
+    <message>
+        <location line="-9"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Backup wallet to another location</source>
         <translation>Sikkerhetskopiér lommebok til annet sted</translation>
     </message>
@@ -640,7 +741,7 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <translation>Endre adgangsfrasen brukt for kryptering av lommebok</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+9"/>
         <source>&amp;Debug window</source>
         <translation>&amp;Feilsøkingsvindu</translation>
     </message>
@@ -650,11 +751,12 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <translation>Åpne konsoll for feilsøk og diagnostikk</translation>
     </message>
     <message>
-        <location line="-4"/>
+        <location line="-7"/>
         <source>&amp;Verify message...</source>
         <translation>&amp;Verifiser melding...</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+430"/>
 =======
@@ -670,10 +772,20 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
 =======
         <location line="-530"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-196"/>
+        <location line="+538"/>
+        <source>Namecoin</source>
+        <translation>Namecoin</translation>
+    </message>
+    <message>
+        <location line="-538"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Wallet</source>
         <translation>Lommebok</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+146"/>
 =======
@@ -700,6 +812,11 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <location line="+22"/>
         <source>&amp;About Bitcoin</source>
         <translation>&amp;Om Bitcoin</translation>
+=======
+        <location line="+176"/>
+        <source>&amp;About Namecoin</source>
+        <translation>&amp;Om Namecoin</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+9"/>
@@ -710,38 +827,46 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     <message>
         <location line="+1"/>
         <source>Show or hide the main Window</source>
-        <translation>Vis eller skjul hovedvinduet</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Krypter de private nøklene som tilhører lommeboken din</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Signér en melding for å bevise at du eier denne adressen</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Bekreft meldinger for å være sikker på at de ble signert av en angitt Bitcoin-adresse</translation>
+        <source>Encrypt the private keys that belong to your wallet</source>
+        <translation type="unfinished"/>
     </message>
     <message>
+        <location line="+7"/>
+        <source>Sign messages with your Namecoin addresses to prove you own them</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Verify messages to ensure they were signed with specified Namecoin addresses</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+48"/>
 =======
         <location line="+28"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+31"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>&amp;File</source>
         <translation>&amp;Fil</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+14"/>
 =======
         <location line="+7"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+8"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>&amp;Settings</source>
         <translation>&amp;Innstillinger</translation>
     </message>
@@ -765,16 +890,26 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-284"/>
         <location line="+376"/>
 =======
         <location line="+17"/>
+=======
+        <location line="+8"/>
+        <source>Actions toolbar</source>
+        <translation>Verktøylinje for handlinger</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <location line="+10"/>
 >>>>>>> Committing original src/qt
         <source>[testnet]</source>
         <translation>[testnett]</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-401"/>
         <source>Bitcoin Core</source>
@@ -849,12 +984,27 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
 <<<<<<< HEAD
         <translation>Lastet %1 av %2 (estimert) blokker med transaksjonshistorikk.</translation>
 =======
+=======
+        <location line="+63"/>
+        <source>Namecoin client</source>
+        <translation>Bitcoinklient</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+79"/>
+        <source>%n active connection(s) to Namecoin network</source>
+        <translation><numerusform>%n aktiv forbindelse til Namecoin-nettverket</numerusform><numerusform>%n aktive forbindelser til Namecoin-nettverket</numerusform></translation>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>Processed %1 of %2 blocks of transaction history (%3% done).</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+7"/>
         <source>Processed %1 blocks of transaction history.</source>
+<<<<<<< HEAD
         <translation>Lastet %1 blokker med transaksjonshistorikk.</translation>
     </message>
     <message numerus="yes">
@@ -917,6 +1067,12 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <translation>Feil</translation>
 =======
         <location line="+22"/>
+=======
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+70"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Error</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
@@ -942,36 +1098,87 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+70"/>
+        <location line="+66"/>
         <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
-        <translation>Denne transaksjonen overstiger størrelsesbegrensningen.  Du kan likevel sende den med et gebyr på %1, som går til nodene som prosesserer transaksjonen din og støtter nettverket.  Vil du betale gebyret?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
+        <location line="+210"/>
+        <source>Backup Successful</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>The wallet data was successfully saved to the new location.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message numerus="yes">
+        <location line="-338"/>
+        <source>%n second(s) ago</source>
+        <translation><numerusform>for %n sekund siden</numerusform><numerusform>for %n sekunder siden</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+4"/>
+        <source>%n minute(s) ago</source>
+        <translation><numerusform>for %n minutt siden</numerusform><numerusform>for %n minutter siden</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+4"/>
+        <source>%n hour(s) ago</source>
+        <translation><numerusform>for %n time siden</numerusform><numerusform>for %n timer siden</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+4"/>
+        <source>%n day(s) ago</source>
+        <translation><numerusform>for %n dag siden</numerusform><numerusform>for %n dager siden</numerusform></translation>
+    </message>
+    <message>
+<<<<<<< HEAD
         <location line="-140"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+6"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Up to date</source>
         <translation>Ajour</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+34"/>
 =======
         <location line="+31"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+7"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Catching up...</source>
         <translation>Kommer ajour...</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+130"/>
 =======
         <location line="+113"/>
+=======
+        <location line="+10"/>
+        <source>Last received block was generated %1.</source>
+        <translation>Siste mottatte blokk ble generert %1.</translation>
+    </message>
+    <message>
+        <location line="+97"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Confirm transaction fee</source>
         <translation>Bekreft transaksjonsgebyr</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+8"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+23"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Sent transaction</source>
         <translation>Sendt transaksjon</translation>
     </message>
@@ -995,18 +1202,23 @@ Adresse: %4
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+69"/>
 =======
         <location line="+33"/>
         <location line="+23"/>
+=======
+        <location line="+99"/>
+        <location line="+28"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>URI handling</source>
         <translation>URI håndtering</translation>
     </message>
     <message>
-        <location line="-23"/>
-        <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>URI kunne ikke tolkes! Dette kan forårsakes av en ugyldig Bitcoin-adresse eller feil i URI-parametere.</translation>
+        <location line="-28"/>
+        <location line="+28"/>
+        <source>URI can not be parsed! This can be caused by an invalid Namecoin address or malformed URI parameters.</source>
+        <translation>URI kunne ikke tolkes! Dette kan forårsakes av en ugyldig Namecoin-adresse eller feil i URI-parametere.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -1021,22 +1233,52 @@ Adresse: %4
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../bitcoin.cpp" line="+438"/>
 =======
         <location filename="../bitcoin.cpp" line="+111"/>
 >>>>>>> Committing original src/qt
         <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
         <translation>En fatal feil har inntruffet. Det er ikke trygt å fortsette og Bitcoin må derfor avslutte.</translation>
+=======
+        <location line="+23"/>
+        <source>Backup Wallet</source>
+        <translation>Sikkerhetskopiér Lommebok</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Wallet Data (*.dat)</source>
+        <translation>Lommeboksdata (*.dat)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Backup Failed</source>
+        <translation>Sikkerhetskopiering feilet</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>There was an error trying to save the wallet data to the new location.</source>
+        <translation>En feil oppstod ved lagring av lommebok til nytt sted</translation>
+    </message>
+    <message>
+        <location filename="../Namecoin.cpp" line="+109"/>
+        <source>A fatal error occurred. Namecoin can no longer continue safely and will quit.</source>
+        <translation>En fatal feil har inntruffet. Det er ikke trygt å fortsette og Namecoin må derfor avslutte.</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
 </context>
 <context>
     <name>ClientModel</name>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../clientmodel.cpp" line="+119"/>
 =======
         <location filename="../clientmodel.cpp" line="+104"/>
 >>>>>>> Committing original src/qt
+=======
+        <location filename="../clientmodel.cpp" line="+86"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Network Alert</source>
         <translation>Nettverksvarsel</translation>
     </message>
@@ -1070,9 +1312,15 @@ Adresse: %4
         <translation>Prioritet:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+45"/>
         <source>Fee:</source>
         <translation>Avgift:</translation>
+=======
+        <location filename="../editaddressdialog.cpp" line="+20"/>
+        <source>New receiving address</source>
+        <translation>Ny mottaksadresse</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+32"/>
@@ -1090,6 +1338,7 @@ Adresse: %4
         <translation>Endring:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+63"/>
         <source>(un)select all</source>
         <translation>Fjern alt valgt</translation>
@@ -1113,6 +1362,21 @@ Adresse: %4
         <location line="+10"/>
         <source>Address</source>
         <translation>Adresse</translation>
+=======
+        <location line="+60"/>
+        <source>The entered address &quot;%1&quot; is already in the address book.</source>
+        <translation>Den oppgitte adressen &quot;%1&quot; er allerede i adresseboken.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>The entered address &quot;%1&quot; is not a valid Namecoin address.</source>
+        <translation>Den angitte adressed &quot;%1&quot; er ikke en gyldig Namecoin-adresse.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Could not unlock wallet.</source>
+        <translation>Kunne ikke låse opp lommeboken.</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+5"/>
@@ -1120,9 +1384,16 @@ Adresse: %4
         <translation>Dato</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
         <source>Confirmations</source>
         <translation>Bekreftelser</translation>
+=======
+        <location filename="../guiutil.cpp" line="+419"/>
+        <location line="+12"/>
+        <source>Namecoin-Qt</source>
+        <translation>Namecoin-Qt</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+3"/>
@@ -1176,9 +1447,15 @@ Adresse: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Copy after fee</source>
         <translation type="unfinished"/>
+=======
+        <location line="+6"/>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.</source>
+        <translation>Valgfritt transaksjonsgebyr per kB som sikrer at dine transaksjoner blir raskt prosessert. De fleste transaksjoner er 1 kB. Et gebyr på 0.01 er anbefalt.</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+1"/>
@@ -1186,6 +1463,7 @@ Adresse: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Copy priority</source>
         <translation type="unfinished"/>
@@ -2537,6 +2815,16 @@ Adresse: %4
         <location line="+29"/>
         <source>Network</source>
         <translation>Nettverk</translation>
+=======
+        <location line="+31"/>
+        <source>Automatically start Namecoin after logging in to the system.</source>
+        <translation>Start Namecoin automatisk etter innlogging.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Start Namecoin on system login</source>
+        <translation>&amp;Start Namecoin ved systeminnlogging</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+7"/>
@@ -2556,9 +2844,15 @@ Adresse: %4
         <translation>Antall tilkoblinger</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+23"/>
         <source>On testnet</source>
         <translation>På testnett</translation>
+=======
+        <location line="+6"/>
+        <source>Automatically open the Namecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Åpne automatisk Namecoin klientporten på ruteren. Dette virker kun om din ruter støtter UPnP og dette er påslått.</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+23"/>
@@ -2568,8 +2862,13 @@ Adresse: %4
     </message>
     <message>
         <location line="+7"/>
+<<<<<<< HEAD
         <source>Current number of blocks</source>
         <translation>Nåværende antall blokker</translation>
+=======
+        <source>Connect to the Namecoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Koble til Namecoin-nettverket gjennom en SOCKS proxy (f.eks. ved tilkobling gjennom Tor).</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+23"/>
@@ -2643,9 +2942,15 @@ Adresse: %4
         <translation>Velkommen til Bitcoin RPC konsoll.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
         <translation>Bruk opp og ned pil for å navigere historikken, og &lt;b&gt;Ctrl-L&lt;/b&gt; for å tømme skjermen.</translation>
+=======
+        <location line="+13"/>
+        <source>The user interface language can be set here. This setting will take effect after restarting Namecoin.</source>
+        <translation>Språket for brukergrensesnittet kan settes her. Innstillingen trer i kraft ved omstart av Namecoin.</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+1"/>
@@ -2653,6 +2958,7 @@ Adresse: %4
         <translation>Skriv &lt;b&gt;help&lt;/b&gt; for en oversikt over kommandoer.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+122"/>
         <source>%1 B</source>
         <translation>%1 B</translation>
@@ -2661,6 +2967,16 @@ Adresse: %4
         <location line="+2"/>
         <source>%1 KB</source>
         <translation>%1 KB</translation>
+=======
+        <location line="+13"/>
+        <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
+        <translation>Velg standard delt enhet for visning i grensesnittet og for sending av Namecoins.</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Whether to show Namecoin addresses in the transaction list or not.</source>
+        <translation>Om Namecoin-adresser skal vises i transaksjonslisten eller ikke.</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+2"/>
@@ -2683,9 +2999,15 @@ Adresse: %4
         <translation>%1 t</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>%1 h %2 m</source>
         <translation>%1 t %2 m</translation>
+=======
+        <location filename="../optionsdialog.cpp" line="+55"/>
+        <source>default</source>
+        <translation>standardverdi</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
 </context>
 <context>
@@ -2736,9 +3058,16 @@ Adresse: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+17"/>
         <source>Clear all fields of the form.</source>
         <translation>Fjern alle felter fra formen.</translation>
+=======
+        <location line="-9"/>
+        <location line="+9"/>
+        <source>This setting will take effect after restarting Namecoin.</source>
+        <translation>Denne innstillingen trer i kraft etter omstart av Namecoin.</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+3"/>
@@ -2751,6 +3080,7 @@ Adresse: %4
         <translation>Ette&amp;rspør betaling</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+47"/>
         <source>Requested payments</source>
         <translation type="unfinished"/>
@@ -2764,6 +3094,27 @@ Adresse: %4
         <location line="+3"/>
         <source>Show</source>
         <translation>Vis</translation>
+=======
+        <location line="+51"/>
+        <location line="+183"/>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Namecoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informasjonen som vises kan være foreldet. Din lommebok synkroniseres automatisk med Namecoin-nettverket etter at tilkobling er opprettet, men denne prosessen er ikke ferdig enda.</translation>
+    </message>
+    <message>
+        <location line="-141"/>
+        <source>Balance:</source>
+        <translation>Saldo:</translation>
+    </message>
+    <message>
+        <location line="+58"/>
+        <source>Number of transactions:</source>
+        <translation>Antall transaksjoner:</translation>
+    </message>
+    <message>
+        <location line="-29"/>
+        <source>Unconfirmed:</source>
+        <translation>Ubekreftet</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+11"/>
@@ -2771,9 +3122,15 @@ Adresse: %4
         <translation>Fjern den valgte oppføringen fra listen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Remove</source>
         <translation>Fjern</translation>
+=======
+        <location line="+124"/>
+        <source>Immature:</source>
+        <translation>Umoden:</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
 </context>
 <context>
@@ -2789,9 +3146,15 @@ Adresse: %4
         <translation>Kopier &amp;URI</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
         <source>Copy &amp;Address</source>
         <translation>Kopier &amp;Adresse</translation>
+=======
+        <location line="-118"/>
+        <source>Your current balance</source>
+        <translation>Din nåværende saldo</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+7"/>
@@ -2799,6 +3162,7 @@ Adresse: %4
         <translation>&amp;Lagre bilde...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../receiverequestdialog.cpp" line="+56"/>
         <source>Request payment to %1</source>
         <translation>Etterspør betaling til %1</translation>
@@ -2808,6 +3172,21 @@ Adresse: %4
         <source>Payment information</source>
         <translation>Betalingsinformasjon</translation>
     </message>
+=======
+        <location line="+20"/>
+        <source>Total number of transactions in wallet</source>
+        <translation>Totalt antall transaksjoner i lommeboken</translation>
+    </message>
+    <message>
+        <location filename="../overviewpage.cpp" line="+115"/>
+        <location line="+1"/>
+        <source>out of sync</source>
+        <translation>ute av synk</translation>
+    </message>
+</context>
+<context>
+    <name>QRCodeDialog</name>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     <message>
         <location line="+1"/>
         <source>URI</source>
@@ -2887,9 +3266,24 @@ Adresse: %4
         <translation>Send Bitcoins</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+76"/>
         <source>Coin Control Features</source>
         <translation>Mynt Kontroll Funksjoner</translation>
+=======
+        <location line="+10"/>
+        <location line="+23"/>
+        <location line="+26"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+36"/>
+        <location line="+53"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location filename="../rpcconsole.cpp" line="+344"/>
+        <source>N/A</source>
+        <translation>-</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+20"/>
@@ -2965,8 +3359,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Bitcoin-Qt help message to get a list with possible Bitcoin command-line options.</source>
-        <translation>Vis Bitcoin-Qt hjelpemelding for å få en liste med mulige kommandolinjevalg.</translation>
+        <source>Show the Namecoin-Qt help message to get a list with possible Namecoin command-line options.</source>
+        <translation>Vis Namecoin-Qt hjelpemelding for å få en liste med mulige kommandolinjevalg.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2985,13 +3379,13 @@ Adresse: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Bitcoin - Debug window</source>
-        <translation>Bitcoin - vindu for feilsøk</translation>
+        <source>Namecoin - Debug window</source>
+        <translation>Namecoin - vindu for feilsøk</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Kjerne</translation>
+        <source>Namecoin Core</source>
+        <translation>Namecoin Kjerne</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -3000,8 +3394,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Bitcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Åpne Bitcoin loggfil for feilsøk fra datamappen. Dette kan ta noen sekunder for store loggfiler.</translation>
+        <source>Open the Namecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Åpne Namecoin loggfil for feilsøk fra datamappen. Dette kan ta noen sekunder for store loggfiler.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -3010,8 +3404,8 @@ Adresse: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Bitcoin RPC console.</source>
-        <translation>Velkommen til Bitcoin RPC konsoll.</translation>
+        <source>Welcome to the Namecoin RPC console.</source>
+        <translation>Velkommen til Namecoin RPC konsoll.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3036,7 +3430,7 @@ Adresse: %4
         <location line="+5"/>
         <location line="+5"/>
         <source>Send Coins</source>
-        <translation>Send Bitcoins</translation>
+        <translation>Send Namecoins</translation>
     </message>
     <message>
         <location line="+50"/>
@@ -3074,8 +3468,8 @@ Adresse: %4
         <location line="+41"/>
 =======
         <location line="+10"/>
-        <source>123.456 BTC</source>
-        <translation>123.456 BTC</translation>
+        <source>... NMC</source>
+        <translation>... NMC</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -3086,6 +3480,7 @@ Adresse: %4
     <message>
         <location line="+3"/>
         <source>S&amp;end</source>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <translation>S&amp;end</translation>
     </message>
@@ -3161,6 +3556,9 @@ Adresse: %4
         <location line="+202"/>
 =======
         <translation>S&amp;avslutt</translation>
+=======
+        <translation type="unfinished"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-59"/>
@@ -3170,7 +3568,7 @@ Adresse: %4
     <message>
         <location line="+5"/>
         <source>Confirm send coins</source>
-        <translation>Bekreft sending av bitcoins</translation>
+        <translation>Bekreft sending av Namecoins</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3272,13 +3670,17 @@ Adresse: %4
 =======
         <location line="+5"/>
         <source>Error: Transaction creation failed!</source>
-        <translation>Feil: Opprettelse av transaksjon feilet  </translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+5"/>
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+<<<<<<< HEAD
         <translation>Feil: Transaksjonen ble avvist. Dette kan skje om noe av beløpet allerede var brukt, f.eks. hvis du kopierte wallet.dat og noen bitcoins ble brukt i kopien men ikke ble markert som brukt her.</translation>
 >>>>>>> Committing original src/qt
+=======
+        <translation>Feil: Transaksjonen ble avvist. Dette kan skje om noe av beløpet allerede var brukt, f.eks. hvis du kopierte wallet.dat og noen Namecoins ble brukt i kopien men ikke ble markert som brukt her.</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
 </context>
 <context>
@@ -3313,17 +3715,26 @@ Adresse: %4
         <location line="+18"/>
 =======
         <location line="+34"/>
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <source>The address to send the payment to (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
         <translation>Adressen betalingen skal sendes til  (f.eks. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+=======
+        <source>The address to send the payment to (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation type="unfinished"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
 <<<<<<< HEAD
         <location filename="../sendcoinsentry.cpp" line="+30"/>
 =======
         <location line="+60"/>
+<<<<<<< HEAD
         <location filename="../sendcoinsentry.cpp" line="+26"/>
 >>>>>>> Committing original src/qt
+=======
+        <location filename="../sendcoinsentry.cpp" line="+25"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Enter a label for this address to add it to your address book</source>
         <translation>Skriv inn en merkelapp for denne adressen for å legge den til i din adressebok</translation>
     </message>
@@ -3421,8 +3832,8 @@ Adresse: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Skriv inn en Bitcoin adresse (f.eks. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation>Skriv inn en Namecoin adresse (f.eks. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</translation>
     </message>
 </context>
 <context>
@@ -3464,8 +3875,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Adressen for signering av meldingen (f.eks. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>The address to sign the message with (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation>Adressen for signering av meldingen (f.eks. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -3515,8 +3926,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Signer meldingen for å bevise at du eier denne Bitcoin-adressen</translation>
+        <source>Sign the message to prove you own this Namecoin address</source>
+        <translation>Signer meldingen for å bevise at du eier denne Namecoin-adressen</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3550,13 +3961,13 @@ Adresse: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Adressen meldingen var signert med (f.eks. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>The address the message was signed with (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation>Adressen meldingen var signert med (f.eks. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Verifiser meldingen for å være sikker på at den ble signert av den angitte Bitcoin-adressen</translation>
+        <source>Verify the message to ensure it was signed with the specified Namecoin address</source>
+        <translation>Verifiser meldingen for å være sikker på at den ble signert av den angitte Namecoin-adressen</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3579,8 +3990,8 @@ Adresse: %4
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
 >>>>>>> Committing original src/qt
         <location line="+3"/>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Skriv inn en Bitcoin adresse (f.eks. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation>Skriv inn en Namecoin adresse (f.eks. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -3589,8 +4000,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Bitcoin signature</source>
-        <translation>Angi Bitcoin signatur</translation>
+        <source>Enter Namecoin signature</source>
+        <translation>Angi Namecoin signatur</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -3664,6 +4075,7 @@ Adresse: %4
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>SplashScreen</name>
     <message>
 <<<<<<< HEAD
@@ -3705,6 +4117,11 @@ Adresse: %4
     <message>
         <location filename="../transactiondesc.cpp" line="+20"/>
 >>>>>>> Committing original src/qt
+=======
+    <name>TransactionDesc</name>
+    <message>
+        <location filename="../transactiondesc.cpp" line="+19"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Open until %1</source>
         <translation>Åpen til %1</translation>
     </message>
@@ -3864,7 +4281,7 @@ Adresse: %4
 =======
         <location line="+3"/>
         <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Genererte bitcoins må modnes 120 blokker før de kan brukes. Da du genererte denne blokken ble den kringkastet til nettverket for å legges til i blokkjeden. Hvis den ikke kommer inn i kjeden får den tilstanden &quot;ikke akseptert&quot; og vil ikke kunne brukes. Dette skjer noen ganger hvis en annen node genererer en blokk noen sekunder fra din.</translation>
+        <translation>Genererte Namecoins må modnes 120 blokker før de kan brukes. Da du genererte denne blokken ble den kringkastet til nettverket for å legges til i blokkjeden. Hvis den ikke kommer inn i kjeden får den tilstanden &quot;ikke akseptert&quot; og vil ikke kunne brukes. Dette skjer noen ganger hvis en annen node genererer en blokk noen sekunder fra din.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3938,10 +4355,14 @@ Adresse: %4
     <name>TransactionTableModel</name>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../transactiontablemodel.cpp" line="+234"/>
 =======
         <location filename="../transactiontablemodel.cpp" line="+225"/>
 >>>>>>> Committing original src/qt
+=======
+        <location filename="../transactiontablemodel.cpp" line="+226"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Date</source>
         <translation>Dato</translation>
     </message>
@@ -4086,10 +4507,14 @@ Adresse: %4
     <name>TransactionView</name>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../transactionview.cpp" line="+57"/>
 =======
         <location filename="../transactionview.cpp" line="+52"/>
 >>>>>>> Committing original src/qt
+=======
+        <location filename="../transactionview.cpp" line="+55"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <location line="+16"/>
         <source>All</source>
         <translation>Alle</translation>
@@ -4184,11 +4609,6 @@ Adresse: %4
     </message>
     <message>
         <location line="+1"/>
-        <source>Copy transaction ID</source>
-        <translation>Kopier transaksjons-ID</translation>
-    </message>
-    <message>
-        <location line="+1"/>
         <source>Edit label</source>
         <translation>Rediger merkelapp</translation>
     </message>
@@ -4198,6 +4618,7 @@ Adresse: %4
         <translation>Vis transaksjonsdetaljer</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+142"/>
         <source>Export Transaction History</source>
@@ -4227,6 +4648,9 @@ Adresse: %4
         <location line="-22"/>
 =======
         <location line="+139"/>
+=======
+        <location line="+142"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Export Transaction Data</source>
         <translation>Eksporter transaksjonsdata</translation>
     </message>
@@ -4289,8 +4713,12 @@ Adresse: %4
         <translation>Kunne ikke skrive til filen %1.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+100"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+95"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Range:</source>
         <translation>Intervall:</translation>
     </message>
@@ -4301,6 +4729,7 @@ Adresse: %4
     </message>
 </context>
 <context>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <name>WalletFrame</name>
     <message>
@@ -4411,10 +4840,21 @@ Adresse: %4
     <message>
         <location line="+102"/>
 >>>>>>> Committing original src/qt
+=======
+    <name>Namecoin-core</name>
+    <message>
+        <location filename="../bitcoinstrings.cpp" line="+88"/>
+        <source>Namecoin version</source>
+        <translation>Namecoin versjon</translation>
+    </message>
+    <message>
+        <location line="+82"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Usage:</source>
         <translation>Bruk:</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-54"/>
 =======
@@ -4425,28 +4865,45 @@ Adresse: %4
     <message>
         <location line="-23"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-23"/>
+        <source>Send command to -server or namecoind</source>
+        <translation>Send kommando til -server eller namecoind</translation>
+    </message>
+    <message>
+        <location line="-21"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>List commands</source>
         <translation>List opp kommandoer</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-14"/>
 =======
         <location line="-12"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-11"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Get help for a command</source>
         <translation>Vis hjelpetekst for en kommando</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+26"/>
 =======
         <location line="+24"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+21"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Options:</source>
         <translation>Innstillinger:</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+22"/>
 =======
@@ -4454,23 +4911,39 @@ Adresse: %4
 >>>>>>> Committing original src/qt
         <source>Specify configuration file (default: bitcoin.conf)</source>
         <translation>Angi konfigurasjonsfil (standardverdi: bitcoin.conf)</translation>
+=======
+        <location line="+22"/>
+        <source>Specify configuration file (default: namecoin.conf)</source>
+        <translation>Angi konfigurasjonsfil (standardverdi: namecoin.conf)</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: bitcoind.pid)</source>
-        <translation>Angi pid-fil (standardverdi: bitcoind.pid)</translation>
+        <source>Specify pid file (default: namecoind.pid)</source>
+        <translation>Angi pid-fil (standardverdi: namecoind.pid)</translation>
     </message>
     <message>
-        <location line="-1"/>
+        <location line="-47"/>
+        <source>Generate coins</source>
+        <translation>Generér Namecoins</translation>
+    </message>
+    <message>
+        <location line="-15"/>
+        <source>Don&apos;t generate coins</source>
+        <translation>Ikke generér Namecoins</translation>
+    </message>
+    <message>
+        <location line="+61"/>
         <source>Specify data directory</source>
         <translation>Angi mappe for datafiler</translation>
     </message>
     <message>
-        <location line="-9"/>
+        <location line="-7"/>
         <source>Set database cache size in megabytes (default: 25)</source>
         <translation>Sett størrelse på mellomlager for database i megabytes (standardverdi: 25)</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-26"/>
 =======
@@ -4478,58 +4951,84 @@ Adresse: %4
 >>>>>>> Committing original src/qt
         <source>Listen for connections on &lt;port&gt; (default: 8333 or testnet: 18333)</source>
         <translation>Lytt etter tilkoblinger på &lt;port&gt; (standardverdi: 8333 eller testnet: 18333)</translation>
+=======
+        <location line="-26"/>
+        <source>Listen for connections on &lt;port&gt; (default: 8334 or testnet: 18334)</source>
+        <translation>Lytt etter tilkoblinger på &lt;port&gt; (standardverdi: 8334 eller testnet: 18334)</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
         <translation>Hold maks &lt;n&gt; koblinger åpne til andre noder (standardverdi: 125)</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-51"/>
 =======
         <location line="-48"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-34"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
         <translation>Koble til node for å hente adresser til andre noder, koble så fra igjen</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+84"/>
 =======
         <location line="+82"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+65"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Specify your own public address</source>
         <translation>Angi din egen offentlige adresse</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+5"/>
 =======
         <location line="+3"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+2"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
         <translation>Grenseverdi for å koble fra noder med dårlig oppførsel (standardverdi: 100)</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-148"/>
 =======
         <location line="-134"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-114"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
         <translation>Antall sekunder noder med dårlig oppførsel hindres fra å koble til på nytt (standardverdi: 86400)</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-36"/>
 =======
         <location line="-29"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-28"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
         <translation>En feil oppstod ved opprettelse av RPC port %u for lytting: %s</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+34"/>
 =======
@@ -4544,65 +5043,79 @@ Adresse: %4
 =======
         <location line="+37"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+26"/>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8336 or testnet: 18336)</source>
+        <translation>Lytt etter JSON-RPC tilkoblinger på &lt;port&gt; (standardverdi: 8336 or testnet: 18336)</translation>
+    </message>
+    <message>
+        <location line="+34"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Accept command line and JSON-RPC commands</source>
         <translation>Ta imot kommandolinje- og JSON-RPC-kommandoer</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+80"/>
 =======
         <location line="+76"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+62"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Run in the background as a daemon and accept commands</source>
         <translation>Kjør i bakgrunnen som daemon og ta imot kommandoer</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+39"/>
 =======
         <location line="+37"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+31"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Use the test network</source>
         <translation>Bruk testnettverket</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-118"/>
 =======
         <location line="-112"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-92"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Ta imot tilkoblinger fra utsiden (standardverdi: 1 hvis uten -proxy eller -connect)</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-95"/>
 =======
         <location line="-80"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-74"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>%s, you must set a rpcpassword in the configuration file:
-%s
+ %s
 It is recommended you use the following random password:
-rpcuser=bitcoinrpc
+rpcuser=namecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
 </source>
-        <translation>%s, du må angi rpcpassord i konfigurasjonsfilen.
-%s
-Det anbefales at du bruker det følgende tilfeldige passordet:
-rpcbruker=bitcoinrpc
-rpcpassord=%s
-(du behøver ikke å huske passordet)
-Brukernavnet og passordet MÅ IKKE være like.
-Om filen ikke eksisterer, opprett den nå med eier-kun-les filrettigheter.
-Det er også anbefalt at å sette varselsmelding slik du får melding om problemer.
-For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@foo.com</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+12"/>
         <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>
@@ -4613,16 +5126,20 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
 =======
         <location line="+17"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+15"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
-        <translation>En feil oppstod under oppsettet av RPC port %u for IPv6, tilbakestilles til IPv4: %s</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
-        <translation>Bind til angitt adresse. Bruk [vertsmaskin]:port notasjon for IPv6</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <source>Cannot obtain a lock on data directory %s. Bitcoin is probably already running.</source>
 <<<<<<< HEAD
         <translation>Kan ikke skaffe lås på denne datamappen %s. Bitcoin kjører sansynlig alerede.</translation>
@@ -4631,10 +5148,14 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
         <location line="+3"/>
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development.</source>
 =======
+=======
+        <source>Cannot obtain a lock on data directory %s. Namecoin is probably already running.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
 >>>>>>> Committing original src/qt
         <translation type="unfinished"/>
@@ -4646,10 +5167,19 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
 =======
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
 >>>>>>> Committing original src/qt
+=======
+        <source>Corrupted block database detected. Please restart the client with -reindex.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Feil: Transaksjonen ble avvist! Dette kan skje hvis noen av myntene i lommeboken alerede er blit brukt, som om du brukte en kopi av wallet.dat og myntene ble brukt i kopien, men ikke markert som brukt her.</translation>
@@ -4670,6 +5200,15 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
 >>>>>>> Committing original src/qt
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>Kjør kommando når en lommeboktransaksjon endres (%s i cmd er erstattet med TxID)</translation>
+=======
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation type="unfinished"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
 <<<<<<< HEAD
@@ -4690,7 +5229,7 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
         <translation>Sett maks størrelse for transaksjoner med høy prioritet / lavt gebyr, i bytes (standardverdi: 27000)</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+3"/>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
         <translation type="unfinished"/>
     </message>
@@ -4721,9 +5260,14 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Bitcoin will not work properly.</source>
         <translation>Advarsel: Vennligst undersøk at din datamaskin har riktig dato og klokkeslett! Hvis klokken er stilt feil vil ikke Bitcoin fungere riktig.</translation>
 >>>>>>> Committing original src/qt
+=======
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Namecoin will not work properly.</source>
+        <translation>Advarsel: Vennligst undersøk at din datamaskin har riktig dato og klokkeslett! Hvis klokken er stilt feil vil ikke Namecoin fungere riktig.</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+3"/>
@@ -4774,7 +5318,7 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
         <translation>Valg for opprettelse av blokker:</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>Connect only to the specified node(s)</source>
         <translation>Koble kun til angitt(e) node(r)</translation>
     </message>
@@ -4793,16 +5337,20 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
         <location line="+2"/>
 =======
         <location line="+3"/>
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <source>Corrupted block database detected</source>
         <translation>Oppdaget korrupt blokkdatabase</translation>
     </message>
     <message>
         <location line="+1"/>
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
         <translation>Oppdag egen IP-adresse (standardverdi: 1 ved lytting og uten -externalip)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
 <<<<<<< HEAD
         <source>Do not load the wallet and disable wallet RPC calls</source>
@@ -4831,6 +5379,9 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
     </message>
     <message>
         <location line="+1"/>
+=======
+        <location line="+3"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Error loading block database</source>
 <<<<<<< HEAD
         <translation>Feil ved lasting av blokkdatabase</translation>
@@ -4839,12 +5390,7 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
 >>>>>>> Committing original src/qt
     </message>
     <message>
-        <location line="+4"/>
-        <source>Error opening block database</source>
-        <translation>Feil under åpning av blokkdatabase</translation>
-    </message>
-    <message>
-        <location line="+2"/>
+        <location line="+5"/>
         <source>Error: Disk space is low!</source>
 <<<<<<< HEAD
         <translation>Feil: lite ledig lagringsplass!</translation>
@@ -4854,28 +5400,37 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
         <source>Error: Wallet locked, unable to create transaction!</source>
 <<<<<<< HEAD
         <translation>Feil: Lommebok låst, kan ikke opprette transaksjon!</translation>
 =======
+=======
+        <source>Error: Transaction creation failed!</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
         <source>Error: system error: </source>
 <<<<<<< HEAD
         <translation>Feil: systemfeil:</translation>
 =======
+=======
+        <source>Error: Wallet locked, unable to create transaction!</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Kunne ikke lytte på noen port. Bruk -listen=0 hvis det er dette du vil.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Failed to read block info</source>
 <<<<<<< HEAD
@@ -4973,12 +5528,15 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
         <translation type="unfinished"/>
     </message>
     <message>
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <location line="+2"/>
 >>>>>>> Committing original src/qt
         <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
         <translation>Finn andre noder gjennom DNS-oppslag (standardverdi: 1 med mindre -connect er oppgit)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Generate coins (default: 0)</source>
 <<<<<<< HEAD
@@ -4998,6 +5556,9 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
     </message>
     <message>
         <location line="+1"/>
+=======
+        <location line="+5"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>How thorough the block verification is (0-4, default: 3)</source>
 <<<<<<< HEAD
         <translation>Hvor grundig verifisering av blokker gjøres (0-4, standardverdi: 3)</translation>
@@ -5038,6 +5599,7 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+19"/>
         <source>Not enough file descriptors available.</source>
         <translation type="unfinished"/>
@@ -5169,16 +5731,19 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
         <translation>Ugyldig mengde for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
 =======
         <location line="-69"/>
+=======
+        <location line="+1"/>
+        <source>Importing blocks from block database...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Imports blocks from external blk000??.dat file</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-76"/>
-        <source>Set the number of script verification threads (up to 16, 0 = auto, &lt;0 = leave that many cores free, default: 0)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+77"/>
+        <location line="+1"/>
         <source>Information</source>
         <translation type="unfinished"/>
     </message>
@@ -5188,6 +5753,7 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
         <translation>Ugyldig -tor adresse: &apos;%s&apos;</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation type="unfinished"/>
@@ -5213,6 +5779,9 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
     </message>
     <message>
         <location line="+2"/>
+=======
+        <location line="+9"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
         <translation>Maks mottaksbuffer per forbindelse, &lt;n&gt;*1000 bytes (standardverdi: 5000)</translation>
     </message>
@@ -5222,7 +5791,7 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
         <translation>Maks sendebuffer per forbindelse, &lt;n&gt;*1000 bytes (standardverdi: 1000)</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
         <translation type="unfinished"/>
     </message>
@@ -5250,8 +5819,17 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
         <translation>Sett tidsstempel på debugmeldinger</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+1"/>
+        <source>Rebuild blockchain index from current blk000??.dat files</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+4"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
         <translation>SSL valg: (se Bitcoin Wiki for instruksjoner for oppsett av SSL)</translation>
     </message>
@@ -5289,11 +5867,12 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
         <translation>Sett minimum blokkstørrelse i bytes (standardverdi: 0)</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
         <translation>Krymp debug.log filen når klienten starter (standardverdi: 1 hvis uten -debug)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Signing transaction failed</source>
 <<<<<<< HEAD
@@ -5303,11 +5882,14 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
 >>>>>>> Committing original src/qt
     </message>
     <message>
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <location line="+2"/>
         <source>Specify connection timeout in milliseconds (default: 5000)</source>
         <translation>Angi tidsavbrudd for forbindelse i millisekunder (standardverdi: 5000)</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+6"/>
         <source>System error: </source>
@@ -5351,6 +5933,9 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
     <message>
         <location line="+7"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+13"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation>Bruk UPnP for lytteport (standardverdi: 0)</translation>
     </message>
@@ -5398,12 +5983,15 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
         <translation>versjon</translation>
 =======
         <location line="+1"/>
+<<<<<<< HEAD
         <source>You need to rebuild the databases using -reindex to change -txindex</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
         <location line="+1"/>
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>wallet.dat corrupt, salvage failed</source>
 <<<<<<< HEAD
         <translation>wallet.dat korrupt, bergning feilet</translation>
@@ -5414,53 +6002,77 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-50"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-43"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Password for JSON-RPC connections</source>
         <translation>Passord for JSON-RPC forbindelser</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-70"/>
 =======
         <location line="-67"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-53"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Allow JSON-RPC connections from specified IP address</source>
         <translation>Tillat JSON-RPC tilkoblinger fra angitt IP-adresse</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+80"/>
 =======
         <location line="+76"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+62"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
         <translation>Send kommandoer til node på &lt;ip&gt; (standardverdi: 127.0.0.1)</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-132"/>
 =======
         <location line="-120"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-103"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Eksekvér kommando når beste blokk endrer seg (%s i kommandoen erstattes med blokkens hash)</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+161"/>
 =======
         <location line="+147"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+124"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Upgrade wallet to latest format</source>
         <translation>Oppgradér lommebok til nyeste format</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-24"/>
 =======
         <location line="-21"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-15"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Set key pool size to &lt;n&gt; (default: 100)</source>
         <translation>Angi størrelse på nøkkel-lager til &lt;n&gt; (standardverdi: 100)</translation>
     </message>
@@ -5475,19 +6087,32 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+38"/>
 =======
         <location line="+35"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-26"/>
+        <source>How many blocks to check at startup (default: 2500, 0 = all)</source>
+        <translation>Hvor mange blokker som skal sjekkes ved oppstart (standardverdi: 2500, 0 = alle)</translation>
+    </message>
+    <message>
+        <location line="+55"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Use OpenSSL (https) for JSON-RPC connections</source>
         <translation>Bruk OpenSSL (https) for JSON-RPC forbindelser</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-30"/>
 =======
         <location line="-26"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-20"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Server certificate file (default: server.cert)</source>
         <translation>Servers sertifikat (standardverdi: server.cert)</translation>
     </message>
@@ -5498,65 +6123,104 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+16"/>
 =======
         <location line="-151"/>
+=======
+        <location line="-133"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
         <translation>Akseptable krypteringsmetoder (standardverdi: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+165"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+144"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>This help message</source>
         <translation>Denne hjelpemeldingen</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+7"/>
 =======
         <location line="+6"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+3"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation>Kan ikke binde til %s på denne datamaskinen (bind returnerte feil %d, %s)</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-107"/>
 =======
         <location line="-91"/>
+=======
+        <location line="-70"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Connect through socks proxy</source>
         <translation>Koble til gjennom socks proxy</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-10"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-11"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
         <translation>Tillat DNS oppslag for -addnode, -seednode og -connect</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+60"/>
 =======
         <location line="+55"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+43"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Loading addresses...</source>
         <translation>Laster adresser...</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-37"/>
 =======
         <location line="-35"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-25"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Error loading wallet.dat: Wallet corrupted</source>
         <translation>Feil ved lasting av wallet.dat: Lommeboken er skadet</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bitcoin</source>
-        <translation>Feil ved lasting av wallet.dat: Lommeboken krever en nyere versjon av Bitcoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Namecoin</source>
+        <translation>Feil ved lasting av wallet.dat: Lommeboken krever en nyere versjon av Namecoin</translation>
     </message>
     <message>
+        <location line="+73"/>
+        <source>Verifying block database integrity...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Verifying wallet integrity...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+98"/>
 =======
@@ -5571,20 +6235,32 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
 =======
         <location line="-95"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+1"/>
+        <source>Wallet needed to be rewritten: restart Namecoin to complete</source>
+        <translation>Lommeboken måtte skrives om: start Namecoin på nytt for å fullføre</translation>
+    </message>
+    <message>
+        <location line="-77"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Error loading wallet.dat</source>
         <translation>Feil ved lasting av wallet.dat</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+31"/>
 =======
         <location line="+28"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+20"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Invalid -proxy address: &apos;%s&apos;</source>
         <translation>Ugyldig -proxy adresse: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+56"/>
+        <location line="+46"/>
         <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
         <translation>Ukjent nettverk angitt i -onlynet &apos;%s&apos;</translation>
     </message>
@@ -5595,10 +6271,14 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-101"/>
 =======
         <location line="-96"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-75"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Cannot resolve -bind address: &apos;%s&apos;</source>
         <translation>Kunne ikke slå opp -bind adresse: &apos;%s&apos;</translation>
     </message>
@@ -5609,34 +6289,47 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+48"/>
 =======
         <location line="+44"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+31"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>Ugyldig beløp for -paytxfee=&lt;beløp&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-15"/>
+        <source>Error: could not start node</source>
+        <translation>Feil: kunne ikke starte node</translation>
+    </message>
+    <message>
+        <location line="+16"/>
         <source>Invalid amount</source>
         <translation>Ugyldig beløp</translation>
     </message>
     <message>
-        <location line="-6"/>
+        <location line="-4"/>
         <source>Insufficient funds</source>
         <translation>Utilstrekkelige midler</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+8"/>
         <source>Loading block index...</source>
         <translation>Laster blokkindeks...</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-62"/>
 =======
         <location line="-57"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-45"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>Legg til node for tilkobling og hold forbindelsen åpen</translation>
     </message>
@@ -5645,6 +6338,7 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
         <location line="-32"/>
 =======
         <location line="-25"/>
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <source>Unable to bind to %s on this computer. Bitcoin is probably already running.</source>
         <translation>Kan ikke binde til %s på denne datamaskinen. Sannsynligvis kjører Bitcoin allerede.</translation>
@@ -5654,6 +6348,18 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
         <location line="+95"/>
 =======
         <location line="+64"/>
+=======
+        <source>Unable to bind to %s on this computer. Namecoin is probably already running.</source>
+        <translation>Kan ikke binde til %s på denne datamaskinen. Sannsynligvis kjører Namecoin allerede.</translation>
+    </message>
+    <message>
+        <location line="+54"/>
+        <source>Find peers using internet relay chat (default: 0)</source>
+        <translation>Finn andre noder via internet relay chat (standardverdi: 0)</translation>
+    </message>
+    <message>
+        <location line="-2"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Fee per KB to add to transactions you send</source>
         <translation>Gebyr per KB for transaksjoner du sender</translation>
     </message>
@@ -5665,12 +6371,21 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-56"/>
 =======
         <location line="-52"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-40"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Cannot downgrade wallet</source>
         <translation>Kan ikke nedgradere lommebok</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot initialize keypool</source>
+        <translation>Kan ikke initialisere nøkkellager</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -5679,46 +6394,66 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Bitcoin varsel&quot; admin@
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+67"/>
 =======
         <location line="+64"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+49"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Rescanning...</source>
         <translation>Leser gjennom...</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-58"/>
 =======
         <location line="-57"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-43"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Done loading</source>
         <translation>Ferdig med lasting</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+85"/>
 =======
         <location line="+82"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+65"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>To use the %s option</source>
         <translation>For å bruke %s opsjonen</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-77"/>
 =======
         <location line="-74"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-60"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Error</source>
         <translation>Feil</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-35"/>
 =======
         <location line="-31"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-28"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
 %s
 If the file does not exist, create it with owner-readable-only file permissions.</source>

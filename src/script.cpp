@@ -333,10 +333,14 @@ bool EvalScript(vector<vector<unsigned char> >& stack, const CScript& script, co
             if (!script.GetOp(pc, opcode, vchPushValue))
                 return false;
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (vchPushValue.size() > MAX_SCRIPT_ELEMENT_SIZE)
 =======
             if (vchPushValue.size() > 1023)
 >>>>>>> Fix issue #3 : set max name length to 1023
+=======
+            if (vchPushValue.size() > 520)
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
                 return false;
 
             // Note how OP_RESERVED does not count towards the opcode limit.
@@ -1382,9 +1386,55 @@ bool Solver(const CKeyStore& keystore, const CScript& scriptPubKey, uint256 hash
             return false;
         else
         {
+<<<<<<< HEAD
             CPubKey vch;
             keystore.GetPubKey(keyID, vch);
             scriptSigRet << vch;
+=======
+            if (item.first == OP_PUBKEY)
+            {
+                // Sign
+                const valtype& vchPubKey = item.second;
+                if (hash == 0)
+                    return keystore.HaveKey(vchPubKey);
+                CPrivKey privkey;
+                if (!keystore.GetPrivKey(vchPubKey, privkey))
+                    return false;
+                if (hash != 0)
+                {
+                    vector<unsigned char> vchSig;
+                    if (!CKey::Sign(privkey, hash, vchSig))
+                        return false;
+                    vchSig.push_back((unsigned char)nHashType);
+                    scriptSigRet << vchSig;
+                }
+            }
+            else if (item.first == OP_PUBKEYHASH)
+            {
+                // Sign and give pubkey
+                map<uint160, valtype>::iterator mi = mapPubKeys.find(uint160(item.second));
+                if (mi == mapPubKeys.end())
+                    return false;
+                const vector<unsigned char>& vchPubKey = (*mi).second;
+                if (hash == 0)
+                    return keystore.HaveKey(vchPubKey);
+                CPrivKey privkey;
+                if (!keystore.GetPrivKey(vchPubKey, privkey))
+                    return false;
+                if (hash != 0)
+                {
+                    vector<unsigned char> vchSig;
+                    if (!CKey::Sign(privkey, hash, vchSig))
+                        return false;
+                    vchSig.push_back((unsigned char)nHashType);
+                    scriptSigRet << vchSig << vchPubKey;
+                }
+            }
+            else
+            {
+                return false;
+            }
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         }
         return true;
     case TX_SCRIPTHASH:
@@ -1456,6 +1506,19 @@ unsigned int HaveKeys(const vector<valtype>& pubkeys, const CKeyStore& keystore)
             ++nResult;
     }
     return nResult;
+}
+
+bool IsMine(const CKeyStore& keystore, const std::string& address)
+{
+    CRITICAL_BLOCK(keystore.cs_mapKeys)
+    {
+        uint160 hash160;
+        AddressToHash160(address, hash160);
+        std::map<uint160, std::vector<unsigned char> >::iterator mi = mapPubKeys.find(hash160);
+        if (mi == mapPubKeys.end())
+            return false;
+        return keystore.HaveKey(mi->second);
+    }
 }
 
 
@@ -2081,4 +2144,13 @@ bool CScriptCompressor::Decompress(unsigned int nSize, const std::vector<unsigne
         return true;
     }
     return false;
+}
+
+bool ExtractDestination(const CScript& scriptPubKey, std::string& addressRet)
+{
+    uint160 h;
+    if (!ExtractHash160(scriptPubKey, h))
+        return false;
+    addressRet = Hash160ToAddress(h);
+    return true;
 }

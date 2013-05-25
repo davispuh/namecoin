@@ -12,10 +12,14 @@
   </property>
   <property name="windowTitle">
 <<<<<<< HEAD
+<<<<<<< HEAD
    <string>Debug window</string>
 =======
    <string>Bitcoin - Debug window</string>
 >>>>>>> Committing original src/qt
+=======
+   <string>Namecoin - Debug window</string>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
@@ -41,10 +45,14 @@
          </property>
          <property name="text">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <string>General</string>
 =======
           <string>Bitcoin Core</string>
 >>>>>>> Committing original src/qt
+=======
+          <string>Namecoin Core</string>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
          </property>
         </widget>
        </item>
@@ -361,7 +369,7 @@
        <item row="15" column="0">
         <widget class="QPushButton" name="openDebugLogfileButton">
          <property name="toolTip">
-          <string>Open the Bitcoin debug log file from the current data directory. This can take a few seconds for large log files.</string>
+          <string>Open the Namecoin debug log file from the current data directory. This can take a few seconds for large log files.</string>
          </property>
          <property name="text">
           <string>&amp;Open</string>
@@ -389,7 +397,7 @@
        <item row="17" column="0">
         <widget class="QPushButton" name="showCLOptionsButton">
          <property name="toolTip">
-          <string>Show the Bitcoin-Qt help message to get a list with possible Bitcoin command-line options.</string>
+          <string>Show the Namecoin-Qt help message to get a list with possible Namecoin command-line options.</string>
          </property>
          <property name="text">
           <string>&amp;Show</string>

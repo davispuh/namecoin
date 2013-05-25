@@ -73,6 +73,7 @@ class QLocalServer;
 class PaymentServer : public QObject
 {
     Q_OBJECT
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 public:
@@ -114,6 +115,8 @@ signals:
     // Fired when a message should be reported to the user
     void message(const QString &title, const QString &message, unsigned int style);
 =======
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 private:
     bool saveURIs;
     QLocalServer* uriServer;

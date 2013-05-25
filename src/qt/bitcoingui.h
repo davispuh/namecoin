@@ -26,14 +26,10 @@ class WalletModel;
 
 #include <QMainWindow>
 #include <QSystemTrayIcon>
-#include <QMap>
 
 class TransactionTableModel;
-class WalletFrame;
-class WalletView;
 class ClientModel;
 class WalletModel;
-class WalletStack;
 class TransactionView;
 class OverviewPage;
 class AddressBookPage;
@@ -42,8 +38,6 @@ class SignVerifyMessageDialog;
 class Notificator;
 class RPCConsole;
 >>>>>>> Committing original src/qt
-
-class CWallet;
 
 QT_BEGIN_NAMESPACE
 <<<<<<< HEAD
@@ -55,11 +49,14 @@ class QLabel;
 class QModelIndex;
 class QProgressBar;
 class QStackedWidget;
+<<<<<<< HEAD
 class QUrl;
 class QListWidget;
 class QPushButton;
 class QAction;
 >>>>>>> Committing original src/qt
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 QT_END_NAMESPACE
 
 /**
@@ -71,11 +68,14 @@ class BitcoinGUI : public QMainWindow
     Q_OBJECT
 
 public:
+<<<<<<< HEAD
     static const QString DEFAULT_WALLET;
 
 <<<<<<< HEAD
     explicit BitcoinGUI(bool fIsTestnet = false, QWidget *parent = 0);
 =======
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     explicit BitcoinGUI(QWidget *parent = 0);
 >>>>>>> Committing original src/qt
     ~BitcoinGUI();
@@ -93,6 +93,7 @@ public:
         The wallet model represents a bitcoin wallet, and offers access to the list of transactions, address book and sending
         functionality.
     */
+<<<<<<< HEAD
 <<<<<<< HEAD
     bool addWallet(const QString& name, WalletModel *walletModel);
     bool setCurrentWallet(const QString& name);
@@ -113,6 +114,9 @@ public:
     QAction * getReceiveCoinsAction() { return receiveCoinsAction; }
     QAction * getSendCoinsAction() { return sendCoinsAction; }
 >>>>>>> Committing original src/qt
+=======
+    void setWalletModel(WalletModel *walletModel);
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
 protected:
     void changeEvent(QEvent *e);
@@ -123,7 +127,16 @@ protected:
 
 private:
     ClientModel *clientModel;
-    WalletFrame *walletFrame;
+    WalletModel *walletModel;
+
+    QStackedWidget *centralWidget;
+
+    OverviewPage *overviewPage;
+    QWidget *transactionsPage;
+    AddressBookPage *addressBookPage;
+    AddressBookPage *receiveCoinsPage;
+    SendCoinsDialog *sendCoinsPage;
+    SignVerifyMessageDialog *signVerifyMessageDialog;
 
     QLabel *labelEncryptionIcon;
     QLabel *labelConnectionsIcon;
@@ -148,6 +161,7 @@ private:
     QAction *receiveCoinsAction;
     QAction *optionsAction;
     QAction *toggleHideAction;
+    QAction *exportAction;
     QAction *encryptWalletAction;
     QAction *backupWalletAction;
     QAction *changePassphraseAction;
@@ -206,11 +220,14 @@ signals:
     void createTrayIcon();
     /** Create system tray menu (or setup the dock menu) */
     void createTrayIconMenu();
+<<<<<<< HEAD
     /** Save window size and position */
     void saveWindowGeometry();
     /** Restore window size and position */
     void restoreWindowGeometry();
 >>>>>>> Committing original src/qt
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
 public slots:
     /** Set number of connections shown in the UI */
@@ -263,9 +280,6 @@ private slots:
     void askFee(qint64 nFeeRequired, bool *payFee);
     void handleURI(QString strURI);
 
-    /** Show incoming transaction notification for new transactions. */
-    void incomingTransaction(const QString& date, int unit, qint64 amount, const QString& type, const QString& address);
-
 private slots:
 >>>>>>> Committing original src/qt
     /** Switch to overview (home) page */
@@ -306,14 +320,24 @@ private slots:
     /** Handle tray icon clicked */
     void trayIconActivated(QSystemTrayIcon::ActivationReason reason);
 #endif
+    /** Show incoming transaction notification for new transactions.
+
+        The new items are those between start and end inclusive, under the given parent item.
+    */
+    void incomingTransaction(const QModelIndex& parent, int start, int /*end*/);
+    /** Encrypt the wallet */
+    void encryptWallet(bool status);
+    /** Backup the wallet */
+    void backupWallet();
+    /** Change encrypted wallet passphrase */
+    void changePassphrase();
+    /** Ask for passphrase to unlock wallet temporarily */
+    void unlockWallet();
 
     /** Show window if hidden, unminimize when minimized, rise when obscured or show if hidden and fToggleHidden is true */
     void showNormalIfMinimized(bool fToggleHidden = false);
     /** Simply calls showNormalIfMinimized(true) for use in SLOT() macro */
     void toggleHidden();
-
-    /** called by a timer to check if fRequestShutdown has been set **/
-    void detectShutdown();
 };
 
 #endif // BITCOINGUI_H

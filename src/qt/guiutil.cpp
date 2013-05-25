@@ -21,8 +21,9 @@
 #include "walletmodel.h"
 #include "bitcoinunits.h"
 
-#include "util.h"
-#include "init.h"
+#include "../headers.h"
+#include "../util.h"
+#include "../init.h"
 
 #include <QDateTime>
 #include <QDoubleValidator>
@@ -141,8 +142,12 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
     // return if URI is not valid or is no bitcoin: URI
 =======
     // return if URI is not valid or is no bitcoin URI
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
     if(!uri.isValid() || uri.scheme() != QString("bitcoin"))
+=======
+    if(!uri.isValid() || uri.scheme() != QString("namecoin"))
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         return false;
 
     SendCoinsRecipient rv;
@@ -210,12 +215,16 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
     //    Cannot handle this later, because bitcoin:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
 <<<<<<< HEAD
+<<<<<<< HEAD
     if(uri.startsWith("bitcoin://", Qt::CaseInsensitive))
 =======
     if(uri.startsWith("bitcoin://"))
 >>>>>>> Committing original src/qt
+=======
+    if(uri.startsWith("namecoin://"))
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     {
-        uri.replace(0, 10, "bitcoin:");
+        uri.replace(0, 10, "namecoin:");
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
@@ -291,6 +300,7 @@ void copyEntryData(QAbstractItemView *view, int column, int role)
     if(!selection.isEmpty())
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Copy first item
         setClipboard(selection.at(0).data(role).toString());
     }
@@ -304,6 +314,10 @@ QString getSaveFileName(QWidget *parent, const QString &caption, const QString &
         QApplication::clipboard()->setText(selection.at(0).data(role).toString(), QClipboard::Clipboard);
         // Copy first item (global mouse selection for e.g. X11 - NOP on Windows)
         QApplication::clipboard()->setText(selection.at(0).data(role).toString(), QClipboard::Selection);
+=======
+        // Copy first item
+        QApplication::clipboard()->setText(selection.at(0).data(role).toString());
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     }
 }
 
@@ -407,7 +421,7 @@ QString getOpenFileName(QWidget *parent, const QString &caption, const QString &
 >>>>>>> Committing original src/qt
 Qt::ConnectionType blockingGUIThreadConnection()
 {
-    if(QThread::currentThread() != qApp->thread())
+    if(QThread::currentThread() != QCoreApplication::instance()->thread())
     {
         return Qt::BlockingQueuedConnection;
     }
@@ -419,7 +433,7 @@ Qt::ConnectionType blockingGUIThreadConnection()
 
 bool checkPoint(const QPoint &p, const QWidget *w)
 {
-    QWidget *atW = QApplication::widgetAt(w->mapToGlobal(p));
+    QWidget *atW = qApp->widgetAt(w->mapToGlobal(p));
     if (!atW) return false;
     return atW->topLevelWidget() == w;
 }
@@ -435,7 +449,7 @@ bool isObscured(QWidget *w)
 
 void openDebugLogfile()
 {
-    boost::filesystem::path pathDebug = GetDataDir() / "debug.log";
+    boost::filesystem::path pathDebug = boost::filesystem::path(GetDataDir()) / "debug.log";
 
     /* Open debug.log with the associated application */
     if (boost::filesystem::exists(pathDebug))
@@ -477,12 +491,12 @@ bool ToolTipToRichTextFilter::eventFilter(QObject *obj, QEvent *evt)
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "Bitcoin.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "Namecoin.lnk";
 }
 
 bool GetStartOnSystemStartup()
 {
-    // check for Bitcoin.lnk
+    // check for Namecoin.lnk
     return boost::filesystem::exists(StartupShortcutPath());
 }
 
@@ -559,7 +573,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "bitcoin.desktop";
+    return GetAutostartDir() / "namecoin.desktop";
 }
 
 bool GetStartOnSystemStartup()
@@ -600,7 +614,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         // Write a bitcoin.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=Bitcoin\n";
+        optionFile << "Name=Namecoin\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";
@@ -709,10 +723,10 @@ void setClipboard(const QString& str)
 HelpMessageBox::HelpMessageBox(QWidget *parent) :
     QMessageBox(parent)
 {
-    header = tr("Bitcoin-Qt") + " " + tr("version") + " " +
+    header = tr("Namecoin-Qt") + " " + tr("version") + " " +
         QString::fromStdString(FormatFullVersion()) + "\n\n" +
         tr("Usage:") + "\n" +
-        "  bitcoin-qt [" + tr("command-line options") + "]                     " + "\n";
+        "  namecoin-qt [" + tr("command-line options") + "]                     " + "\n";
 
     coreOptions = QString::fromStdString(HelpMessage());
 
@@ -721,7 +735,7 @@ HelpMessageBox::HelpMessageBox(QWidget *parent) :
         "  -min                   " + tr("Start minimized") + "\n" +
         "  -splash                " + tr("Show splash screen on startup (default: 1)") + "\n";
 
-    setWindowTitle(tr("Bitcoin-Qt"));
+    setWindowTitle(tr("Namecoin-Qt"));
     setTextFormat(Qt::PlainText);
     // setMinimumWidth is ignored for QMessageBox so put in non-breaking spaces to make it wider.
     setText(header + QString(QChar(0x2003)).repeated(50));
@@ -748,3 +762,20 @@ void HelpMessageBox::showOrPrint()
 }
 
 } // namespace GUIUtil
+
+#ifdef WIN32
+boost::filesystem::path GetSpecialFolderPath(int nFolder, bool fCreate)
+{
+    namespace fs = boost::filesystem;
+
+    char pszPath[MAX_PATH] = "";
+
+    if(SHGetSpecialFolderPathA(NULL, pszPath, nFolder, fCreate))
+    {
+        return fs::path(pszPath);
+    }
+
+    printf("SHGetSpecialFolderPathA() failed, could not obtain requested path.\n");
+    return fs::path("");
+}
+#endif  

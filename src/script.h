@@ -563,6 +563,10 @@ public:
     void SetDestination(const CTxDestination& address);
     void SetMultisig(int nRequired, const std::vector<CPubKey>& keys);
 
+    void SetDestination(const std::string &dest)
+    {
+        SetBitcoinAddress(dest);
+    }
 
     void PrintHex() const
     {
@@ -684,6 +688,7 @@ bool Solver(const CScript& scriptPubKey, txnouttype& typeRet, std::vector<std::v
 int ScriptSigArgsExpected(txnouttype t, const std::vector<std::vector<unsigned char> >& vSolutions);
 bool IsStandard(const CScript& scriptPubKey, txnouttype& whichType);
 bool IsMine(const CKeyStore& keystore, const CScript& scriptPubKey);
+<<<<<<< HEAD
 bool IsMine(const CKeyStore& keystore, const CTxDestination &dest);
 void ExtractAffectedKeys(const CKeyStore &keystore, const CScript& scriptPubKey, std::vector<CKeyID> &vKeys);
 bool ExtractDestination(const CScript& scriptPubKey, CTxDestination& addressRet);
@@ -695,5 +700,13 @@ bool VerifyScript(const CScript& scriptSig, const CScript& scriptPubKey, const C
 // Given two sets of signatures for scriptPubKey, possibly with OP_0 placeholders,
 // combine them intelligently and return the result.
 CScript CombineSignatures(CScript scriptPubKey, const CTransaction& txTo, unsigned int nIn, const CScript& scriptSig1, const CScript& scriptSig2);
+=======
+bool IsMine(const CKeyStore& keystore, const std::string& address);
+bool ExtractPubKey(const CScript& scriptPubKey, const CKeyStore* pkeystore, std::vector<unsigned char>& vchPubKeyRet);
+bool ExtractHash160(const CScript& scriptPubKey, uint160& hash160Ret);
+bool SignSignature(const CKeyStore& keystore, const CTransaction& txFrom, CTransaction& txTo, unsigned int nIn, int nHashType=SIGHASH_ALL, CScript scriptPrereq=CScript());
+bool VerifySignature(const CTransaction& txFrom, const CTransaction& txTo, unsigned int nIn, int nHashType=0);
+bool ExtractDestination(const CScript& scriptPubKey, std::string& addressRet);
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
 #endif

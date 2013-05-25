@@ -169,9 +169,17 @@ public:
 };
 
 
+<<<<<<< HEAD
 // secure_allocator is defined in allocators.h
+=======
+// secure_allocator is defined in serialize.h
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 // CPrivKey is a serialized private key, with all parameters included (279 bytes)
 typedef std::vector<unsigned char, secure_allocator<unsigned char> > CPrivKey;
+// Currently CSecret is encrypted privkey. In Bitcoin it is just 32-byte secret (not the whole key)
+typedef std::vector<unsigned char, secure_allocator<unsigned char> > CSecret;
+
+enum { CSECRET_SIZE = 279 };
 
 /** An encapsulated private key. */
 class CKey {
@@ -183,12 +191,22 @@ private:
     // Whether the public key corresponding to this private key is (to be) compressed.
     bool fCompressed;
 
+<<<<<<< HEAD
     // The actual byte data
     unsigned char vch[32];
+=======
+class CKey
+{
+protected:
+    EC_KEY* pkey;
+    bool fSet;
+    bool fCompressedPubKey;
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
     // Check whether the 32-byte array pointed to be vch is valid keydata.
     bool static Check(const unsigned char *vch);
 public:
+<<<<<<< HEAD
 
     // Construct an invalid private key.
     CKey() : fValid(false) {
@@ -303,6 +321,146 @@ struct CExtKey {
     bool Derive(CExtKey &out, unsigned int nChild) const;
     CExtPubKey Neuter() const;
     void SetMaster(const unsigned char *seed, unsigned int nSeedLen);
+=======
+    CKey()
+    {
+        pkey = EC_KEY_new_by_curve_name(NID_secp256k1);
+        if (pkey == NULL)
+            throw key_error("CKey::CKey() : EC_KEY_new_by_curve_name failed");
+        fSet = false;
+        fCompressedPubKey = false;
+    }
+
+    CKey(const CKey& b)
+    {
+        pkey = EC_KEY_dup(b.pkey);
+        if (pkey == NULL)
+            throw key_error("CKey::CKey(const CKey&) : EC_KEY_dup failed");
+        fSet = b.fSet;
+        fCompressedPubKey = b.fCompressedPubKey;
+    }
+
+    CKey& operator=(const CKey& b)
+    {
+        if (!EC_KEY_copy(pkey, b.pkey))
+            throw key_error("CKey::operator=(const CKey&) : EC_KEY_copy failed");
+        fSet = b.fSet;
+        fCompressedPubKey = b.fCompressedPubKey;
+        return (*this);
+    }
+
+    ~CKey()
+    {
+        EC_KEY_free(pkey);
+    }
+
+    bool IsNull() const
+    {
+        return !fSet;
+    }
+
+    void MakeNewKey()
+    {
+        if (!EC_KEY_generate_key(pkey))
+            throw key_error("CKey::MakeNewKey() : EC_KEY_generate_key failed");
+        fSet = true;
+    }
+
+    bool SetPrivKey(const CPrivKey& vchPrivKey)
+    {
+        const unsigned char* pbegin = &vchPrivKey[0];
+        if (!d2i_ECPrivateKey(&pkey, &pbegin, vchPrivKey.size()))
+            return false;
+        fSet = true;
+        return true;
+    }
+
+    CPrivKey GetPrivKey() const
+    {
+        unsigned int nSize = i2d_ECPrivateKey(pkey, NULL);
+        if (!nSize)
+            throw key_error("CKey::GetPrivKey() : i2d_ECPrivateKey failed");
+        CPrivKey vchPrivKey(nSize, 0);
+        unsigned char* pbegin = &vchPrivKey[0];
+        if (i2d_ECPrivateKey(pkey, &pbegin) != nSize)
+            throw key_error("CKey::GetPrivKey() : i2d_ECPrivateKey returned unexpected size");
+        return vchPrivKey;
+    }
+
+    bool SetPubKey(const std::vector<unsigned char>& vchPubKey)
+    {
+        const unsigned char* pbegin = &vchPubKey[0];
+        if (!o2i_ECPublicKey(&pkey, &pbegin, vchPubKey.size()))
+            return false;
+        fSet = true;
+        return true;
+    }
+
+    std::vector<unsigned char> GetPubKey() const
+    {
+        unsigned int nSize = i2o_ECPublicKey(pkey, NULL);
+        if (!nSize)
+            throw key_error("CKey::GetPubKey() : i2o_ECPublicKey failed");
+        std::vector<unsigned char> vchPubKey(nSize, 0);
+        unsigned char* pbegin = &vchPubKey[0];
+        if (i2o_ECPublicKey(pkey, &pbegin) != nSize)
+            throw key_error("CKey::GetPubKey() : i2o_ECPublicKey returned unexpected size");
+        return vchPubKey;
+    }
+
+    bool Sign(uint256 hash, std::vector<unsigned char>& vchSig)
+    {
+        vchSig.clear();
+        unsigned char pchSig[10000];
+        unsigned int nSize = 0;
+        if (!ECDSA_sign(0, (unsigned char*)&hash, sizeof(hash), pchSig, &nSize, pkey))
+            return false;
+        vchSig.resize(nSize);
+        memcpy(&vchSig[0], pchSig, nSize);
+        return true;
+    }
+
+    bool Verify(uint256 hash, const std::vector<unsigned char>& vchSig)
+    {
+        // -1 = error, 0 = bad sig, 1 = good
+        if (ECDSA_verify(0, (unsigned char*)&hash, sizeof(hash), &vchSig[0], vchSig.size(), pkey) != 1)
+            return false;
+        return true;
+    }
+
+    static bool Sign(const CPrivKey& vchPrivKey, uint256 hash, std::vector<unsigned char>& vchSig)
+    {
+        CKey key;
+        if (!key.SetPrivKey(vchPrivKey))
+            return false;
+        return key.Sign(hash, vchSig);
+    }
+
+    static bool Verify(const std::vector<unsigned char>& vchPubKey, uint256 hash, const std::vector<unsigned char>& vchSig)
+    {
+        CKey key;
+        if (!key.SetPubKey(vchPubKey))
+            return false;
+        return key.Verify(hash, vchSig);
+    }
+    
+    void SetCompressedPubKey(bool fCompressed = true);
+
+    // create a compact signature (65 bytes), which allows reconstructing the used public key
+    // The format is one header byte, followed by two times 32 bytes for the serialized r and s values.
+    // The header byte: 0x1B = first key with even y, 0x1C = first key with odd y,
+    //                  0x1D = second key with even y, 0x1E = second key with odd y
+    bool SignCompact(uint256 hash, std::vector<unsigned char>& vchSig);
+    
+    // reconstruct public key from a compact signature
+    // This is only slightly more CPU intensive than just verifying it.
+    // If this function succeeds, the recovered public key is guaranteed to be valid
+    // (the signature is a valid signature of the given data for that key)
+    bool SetCompactSignature(uint256 hash, const std::vector<unsigned char>& vchSig);
+
+    // Verify a compact signature
+    bool VerifyCompact(uint256 hash, const std::vector<unsigned char>& vchSig); 
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 };
 
 #endif

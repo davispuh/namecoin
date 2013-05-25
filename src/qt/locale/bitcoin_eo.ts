@@ -8,6 +8,7 @@
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>About Bitcoin Core</source>
         <translation>Pri la Bitmona Kerno</translation>
     </message>
@@ -24,6 +25,15 @@
         <source>&lt;b&gt;Bitcoin&lt;/b&gt; version</source>
         <translation>&lt;b&gt;Bitcoin&lt;/b&gt;-a versio</translation>
 >>>>>>> Committing original src/qt
+=======
+        <source>About Namecoin</source>
+        <translation>Pri Namecoin</translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>&lt;b&gt;Namecoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Namecoin&lt;/b&gt;-a versio</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+57"/>
@@ -60,7 +70,7 @@ Tiu ĉi produkto enhavas erojn kreitajn de la &quot;OpenSSL Project&quot; por uz
     </message>
     <message>
         <location line="+0"/>
-        <source>The Bitcoin developers</source>
+        <source>The Namecoin developers</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -186,7 +196,7 @@ Tiu ĉi produkto enhavas erojn kreitajn de la &quot;OpenSSL Project&quot; por uz
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Bitcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your Namecoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -201,7 +211,7 @@ Tiu ĉi produkto enhavas erojn kreitajn de la &quot;OpenSSL Project&quot; por uz
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Bitcoin address</source>
+        <source>Sign a message to prove you own a Namecoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -226,7 +236,7 @@ Tiu ĉi produkto enhavas erojn kreitajn de la &quot;OpenSSL Project&quot; por uz
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Bitcoin address</source>
+        <source>Verify a message to ensure it was signed with a specified Namecoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -241,7 +251,7 @@ Tiu ĉi produkto enhavas erojn kreitajn de la &quot;OpenSSL Project&quot; por uz
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Namecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -452,10 +462,14 @@ Tiu ĉi produkto enhavas erojn kreitajn de la &quot;OpenSSL Project&quot; por uz
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
 <<<<<<< HEAD
         <translation>Atentu! Se vi ĉifras vian monujon kaj perdas la pasfrazon, vi &lt;b&gt;PERDOS LA TUTON DE VIA BITMONO&lt;b&gt;!</translation>
 =======
+=======
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NAMECOINS&lt;/b&gt;!</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -499,10 +513,14 @@ Tiu ĉi produkto enhavas erojn kreitajn de la &quot;OpenSSL Project&quot; por uz
     </message>
     <message>
         <location line="-56"/>
+<<<<<<< HEAD
         <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
 <<<<<<< HEAD
         <translation>Bitmono nun fermiĝos por fini la ĉifradon. Memoru, ke eĉ ĉifrado ne protektas kontraŭ ĉiu atako, ekz. se viruso infektus vian komputilon.</translation>
 =======
+=======
+        <source>Namecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your namecoins from being stolen by malware infecting your computer.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -577,7 +595,7 @@ Tiu ĉi produkto enhavas erojn kreitajn de la &quot;OpenSSL Project&quot; por uz
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>NamecoinGUI</name>
     <message>
 <<<<<<< HEAD
         <location filename="../bitcoingui.cpp" line="+295"/>
@@ -682,7 +700,7 @@ Tiu ĉi produkto enhavas erojn kreitajn de la &quot;OpenSSL Project&quot; por uz
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Bitcoin</source>
+        <source>Show information about Namecoin</source>
         <translation>Vidigu informaĵon pri Bitmono</translation>
     </message>
     <message>
@@ -773,12 +791,13 @@ Tiu ĉi produkto enhavas erojn kreitajn de la &quot;OpenSSL Project&quot; por uz
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Namecoin address</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
         <location line="+49"/>
+<<<<<<< HEAD
         <source>Modify configuration options for Bitcoin</source>
 <<<<<<< HEAD
         <translation>Modifi agordaĵojn por Bitmono</translation>
@@ -788,6 +807,9 @@ Tiu ĉi produkto enhavas erojn kreitajn de la &quot;OpenSSL Project&quot; por uz
         <source>Backup wallet to another location</source>
         <translation>Krei alilokan sekurkopion de monujo</translation>
 =======
+=======
+        <source>Modify configuration options for Namecoin</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -842,7 +864,7 @@ Tiu ĉi produkto enhavas erojn kreitajn de la &quot;OpenSSL Project&quot; por uz
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Bitcoin</source>
+        <source>Namecoin</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -883,7 +905,7 @@ Tiu ĉi produkto enhavas erojn kreitajn de la &quot;OpenSSL Project&quot; por uz
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Bitcoin</source>
+        <source>&amp;About Namecoin</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -912,15 +934,20 @@ Tiu ĉi produkto enhavas erojn kreitajn de la &quot;OpenSSL Project&quot; por uz
     </message>
     <message>
         <location line="+7"/>
+<<<<<<< HEAD
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
 <<<<<<< HEAD
         <translation>Subskribi mesaĝojn per via Bitmon-adresoj por pravigi, ke vi estas la posedanto</translation>
 =======
+=======
+        <source>Sign messages with your Namecoin addresses to prove you own them</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
         <location line="+2"/>
+<<<<<<< HEAD
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
 <<<<<<< HEAD
         <translation>Kontroli mesaĝojn por kontroli ĉu ili estas subskribitaj per specifaj Bitmon-adresoj</translation>
@@ -928,6 +955,9 @@ Tiu ĉi produkto enhavas erojn kreitajn de la &quot;OpenSSL Project&quot; por uz
     <message>
         <location line="+48"/>
 =======
+=======
+        <source>Verify messages to ensure they were signed with specified Namecoin addresses</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1030,12 +1060,12 @@ Tiu ĉi produkto enhavas erojn kreitajn de la &quot;OpenSSL Project&quot; por uz
     </message>
     <message>
         <location line="+47"/>
-        <source>Bitcoin client</source>
+        <source>Namecoin client</source>
         <translation type="unfinished"/>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Bitcoin network</source>
+        <source>%n active connection(s) to Namecoin network</source>
         <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
 >>>>>>> Committing original src/qt
     </message>
@@ -1209,7 +1239,7 @@ Adreso: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid Namecoin address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1233,7 +1263,7 @@ Adreso: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Namecoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -1304,9 +1334,15 @@ Adreso: %4
         <translation>(mal)elekti ĉion</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+13"/>
         <source>Tree mode</source>
         <translation>Arboreĝimo</translation>
+=======
+        <location line="-5"/>
+        <source>The entered address &quot;%1&quot; is not a valid Namecoin address.</source>
+        <translation type="unfinished"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+16"/>
@@ -1725,8 +1761,8 @@ Adreso: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Bitcoin-Qt</source>
-        <translation>Bitcoin-Qt</translation>
+        <source>Namecoin-Qt</source>
+        <translation>Namecoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -2993,12 +3029,12 @@ Adreso: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Bitcoin after logging in to the system.</source>
+        <source>Automatically start Namecoin after logging in to the system.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Bitcoin on system login</source>
+        <source>&amp;Start Namecoin on system login</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3018,7 +3054,7 @@ Adreso: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Namecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3028,7 +3064,7 @@ Adreso: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Bitcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the Namecoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3103,7 +3139,7 @@ Adreso: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Bitcoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Namecoin.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3118,7 +3154,7 @@ Adreso: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Bitcoin addresses in the transaction list or not.</source>
+        <source>Whether to show Namecoin addresses in the transaction list or not.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3170,7 +3206,7 @@ Adreso: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Bitcoin.</source>
+        <source>This setting will take effect after restarting Namecoin.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3189,7 +3225,7 @@ Adreso: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Namecoin network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3243,7 +3279,7 @@ Adreso: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <source>Cannot start namecoin: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -3393,7 +3429,7 @@ Adreso: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Bitcoin-Qt help message to get a list with possible Bitcoin command-line options.</source>
+        <source>Show the Namecoin-Qt help message to get a list with possible Namecoin command-line options.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3413,12 +3449,12 @@ Adreso: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Bitcoin - Debug window</source>
+        <source>Namecoin - Debug window</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+25"/>
-        <source>Bitcoin Core</source>
+        <source>Namecoin Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3428,7 +3464,7 @@ Adreso: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Bitcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Namecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3438,7 +3474,7 @@ Adreso: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Bitcoin RPC console.</source>
+        <source>Welcome to the Namecoin RPC console.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3493,8 +3529,8 @@ Adreso: %4
     </message>
     <message>
         <location line="+10"/>
-        <source>123.456 BTC</source>
-        <translation>123,456 BTC</translation>
+        <source>... NMC</source>
+        <translation>... NMC</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -3711,6 +3747,7 @@ Adreso: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
+<<<<<<< HEAD
         <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
 <<<<<<< HEAD
         <translation>Enigi Bitmon-adreson (ekz. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
@@ -3729,6 +3766,9 @@ Adreso: %4
         <translation>Ne sistemfermu ĝis ĉi tiu fenestro malaperas.</translation>
     </message>
 =======
+=======
+        <source>Enter a Namecoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
 >>>>>>> Committing original src/qt
@@ -3832,10 +3872,14 @@ Adreso: %4
     </message>
     <message>
         <location line="+21"/>
+<<<<<<< HEAD
         <source>Sign the message to prove you own this Bitcoin address</source>
 <<<<<<< HEAD
         <translation>Subskribi la mesaĝon por pravigi, ke vi estas la posedanto de tiu Bitmon-adreso</translation>
 =======
+=======
+        <source>Sign the message to prove you own this Namecoin address</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -3896,10 +3940,14 @@ Adreso: %4
     </message>
     <message>
         <location line="+40"/>
+<<<<<<< HEAD
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
 <<<<<<< HEAD
         <translation>Kontroli la mesaĝon por pravigi, ke ĝi ja estas subskribita per la specifa Bitmon-adreso</translation>
 =======
+=======
+        <source>Verify the message to ensure it was signed with the specified Namecoin address</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -3929,7 +3977,7 @@ Adreso: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <source>Enter a Namecoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -3944,6 +3992,7 @@ Adreso: %4
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <source>Enter Bitcoin signature</source>
 <<<<<<< HEAD
         <translation>Enigi Bitmon-subskribon</translation>
@@ -3954,6 +4003,9 @@ Adreso: %4
         <source>The entered address is invalid.</source>
         <translation>La adreso, kiun vi enmetis, estas nevalida.</translation>
 =======
+=======
+        <source>Enter Namecoin signature</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4082,7 +4134,7 @@ Adreso: %4
         <translation>La programistoj de Bitmona Kerno</translation>
 =======
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Bitcoin developers</source>
+        <source>The Namecoin developers</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -4992,7 +5044,7 @@ Adreso: %4
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>namecoin-core</name>
     <message>
 <<<<<<< HEAD
         <location filename="../bitcoinstrings.cpp" line="+221"/>
@@ -5020,8 +5072,8 @@ Adreso: %4
         <translation>Specifi konfiguran dosieron (defaŭlte: bitcoin.conf)</translation>
 =======
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Bitcoin version</source>
-        <translation>Bitcoin-a versio</translation>
+        <source>Namecoin version</source>
+        <translation>Namecoin-a versio</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -5030,7 +5082,7 @@ Adreso: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or bitcoind</source>
+        <source>Send command to -server or namecoind</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5050,16 +5102,20 @@ Adreso: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: bitcoin.conf)</source>
+        <source>Specify configuration file (default: namecoin.conf)</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <source>Specify pid file (default: bitcoind.pid)</source>
 <<<<<<< HEAD
         <translation>Specifi pid-dosieron (defaŭlte: bitcoind.pid)</translation>
 =======
+=======
+        <source>Specify pid file (default: namecoind.pid)</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -5087,7 +5143,7 @@ Adreso: %4
     </message>
     <message>
         <location line="-28"/>
-        <source>Listen for connections on &lt;port&gt; (default: 8333 or testnet: 18333)</source>
+        <source>Listen for connections on &lt;port&gt; (default: 8334 or testnet: 18334)</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -5179,7 +5235,7 @@ Adreso: %4
     </message>
     <message>
         <location line="+27"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8332 or testnet: 18332)</source>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8336 or testnet: 18336)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5208,13 +5264,13 @@ Adreso: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=bitcoinrpc
+rpcuser=namecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Namecoin Alert&quot; admin@foo.com
 </source>
 <<<<<<< HEAD
         <translation>%s, vi devas specifi rpcpassword en la konfigura dosiero:
@@ -5258,6 +5314,7 @@ ekzemple: alertnotify=echo %%s | mail -s &quot;Averto de Bitmono&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <source>Cannot obtain a lock on data directory %s. Bitcoin is probably already running.</source>
 <<<<<<< HEAD
         <translation>Ne eblas akiri eksklusivan rajton al dosierujo de datumoj %s. Verŝajne Bitmono jam rulas.</translation>
@@ -5271,6 +5328,9 @@ ekzemple: alertnotify=echo %%s | mail -s &quot;Averto de Bitmono&quot; admin@foo
         <location line="+4"/>
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
 =======
+=======
+        <source>Cannot obtain a lock on data directory %s. Namecoin is probably already running.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5345,6 +5405,7 @@ ekzemple: alertnotify=echo %%s | mail -s &quot;Averto de Bitmono&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Bitcoin will not work properly.</source>
 <<<<<<< HEAD
         <translation>Averto: Bonvolu kontroli, ke la horo kaj dato de via komputilo estas ĝuste agorditaj! Se via horloĝo malĝustas, Bitmono ne bone funkcios.</translation>
@@ -5359,6 +5420,9 @@ ekzemple: alertnotify=echo %%s | mail -s &quot;Averto de Bitmono&quot; admin@foo
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
         <translation>Averto: ŝajne ni ne tute konsentas kun niaj samtavolanoj! Eble vi devas ĝisdatigi vian klienton, aŭ eble aliaj nodoj faru same.</translation>
 =======
+=======
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Namecoin will not work properly.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -5953,7 +6017,7 @@ ekzemple: alertnotify=echo %%s | mail -s &quot;Averto de Bitmono&quot; admin@foo
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <source>SSL options: (see the Namecoin Wiki for SSL setup instructions)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6279,6 +6343,7 @@ ekzemple: alertnotify=echo %%s | mail -s &quot;Averto de Bitmono&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
         <source>Error loading wallet.dat: Wallet requires newer version of Bitcoin</source>
 <<<<<<< HEAD
         <translation>Eraro dum ŝargo de wallet.dat: monujo bezonas pli novan version de Bitmono</translation>
@@ -6298,11 +6363,14 @@ ekzemple: alertnotify=echo %%s | mail -s &quot;Averto de Bitmono&quot; admin@foo
         <source>Invalid -proxy address: &apos;%s&apos;</source>
         <translation>Nevalid adreso -proxy: &apos;%s&apos;</translation>
 =======
+=======
+        <source>Error loading wallet.dat: Wallet requires newer version of Namecoin</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Bitcoin to complete</source>
+        <source>Wallet needed to be rewritten: restart Namecoin to complete</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -6413,7 +6481,7 @@ ekzemple: alertnotify=echo %%s | mail -s &quot;Averto de Bitmono&quot; admin@foo
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Bitcoin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Namecoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

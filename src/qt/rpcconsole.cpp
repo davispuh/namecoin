@@ -1,14 +1,21 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 =======
 >>>>>>> Committing original src/qt
+=======
+#include "../json/json_spirit.h"
+#include "../json/json_spirit_writer_template.h"
+
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 #include "rpcconsole.h"
 #include "ui_rpcconsole.h"
 
 #include "clientmodel.h"
+<<<<<<< HEAD
 <<<<<<< HEAD
 #include "guiutil.h"
 
@@ -27,6 +34,9 @@
 #endif
 =======
 #include "bitcoinrpc.h"
+=======
+#include "../rpc.h"
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 #include "guiutil.h"
 
 #include <QTime>
@@ -68,6 +78,7 @@ class RPCExecutor : public QObject
     Q_OBJECT
 
 public slots:
+    void start();
     void request(const QString &command);
 
 signals:
@@ -75,6 +86,11 @@ signals:
 };
 
 #include "rpcconsole.moc"
+
+void RPCExecutor::start()
+{
+   // Nothing to do
+}
 
 /**
  * Split shell command line into a list of arguments. Aims to emulate \c bash and friends.
@@ -175,9 +191,7 @@ void RPCExecutor::request(const QString &command)
         std::string strPrint;
         // Convert argument list to JSON objects in method-dependent way,
         // and pass it along with the method name to the dispatcher.
-        json_spirit::Value result = tableRPC.execute(
-            args[0],
-            RPCConvertValues(args[0], std::vector<std::string>(args.begin() + 1, args.end())));
+        json_spirit::Value result = ExecuteRPC(args[0], std::vector<std::string>(args.begin() + 1, args.end()));
 
         // Format result reply
         if (result.type() == json_spirit::null_type)
@@ -185,7 +199,7 @@ void RPCExecutor::request(const QString &command)
         else if (result.type() == json_spirit::str_type)
             strPrint = result.get_str();
         else
-            strPrint = write_string(result, true);
+            strPrint = json_spirit::write_string(result, true);
 
         emit reply(RPCConsole::CMD_REPLY, QString::fromStdString(strPrint));
     }
@@ -199,7 +213,7 @@ void RPCExecutor::request(const QString &command)
         }
         catch(std::runtime_error &) // raised when converting to invalid type, i.e. missing code or message
         {   // Show raw JSON object
-            emit reply(RPCConsole::CMD_ERROR, QString::fromStdString(write_string(json_spirit::Value(objError), false)));
+            emit reply(RPCConsole::CMD_ERROR, QString::fromStdString(json_spirit::write_string(json_spirit::Value(objError), false)));
         }
     }
     catch (std::exception& e)
@@ -211,7 +225,6 @@ void RPCExecutor::request(const QString &command)
 RPCConsole::RPCConsole(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::RPCConsole),
-    clientModel(0),
     historyPtr(0)
 {
     ui->setupUi(this);
@@ -380,7 +393,7 @@ void RPCConsole::clear()
                 "b { color: #006060; } "
                 );
 
-    message(CMD_REPLY, (tr("Welcome to the Bitcoin RPC console.") + "<br>" +
+    message(CMD_REPLY, (tr("Welcome to the Namecoin RPC console.") + "<br>" +
                         tr("Use up and down arrows to navigate history, and <b>Ctrl-L</b> to clear screen.") + "<br>" +
                         tr("Type <b>help</b> for an overview of available commands.")), true);
 }
@@ -453,15 +466,16 @@ void RPCConsole::browseHistory(int offset)
 
 void RPCConsole::startExecutor()
 {
-    QThread *thread = new QThread;
+    QThread* thread = new QThread;
     RPCExecutor *executor = new RPCExecutor();
     executor->moveToThread(thread);
 
+    // Notify executor when thread started (in executor thread)
+    connect(thread, SIGNAL(started()), executor, SLOT(start()));
     // Replies from executor object must go to this object
     connect(executor, SIGNAL(reply(int,QString)), this, SLOT(message(int,QString)));
     // Requests from this object must go to executor
     connect(this, SIGNAL(cmdRequest(QString)), executor, SLOT(request(QString)));
-
     // On stopExecutor signal
     // - queue executor for deletion (in execution thread)
     // - quit the Qt event loop in the execution thread

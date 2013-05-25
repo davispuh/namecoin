@@ -12,9 +12,16 @@
 =======
 #include "transactionrecord.h"
 
+<<<<<<< HEAD
 #include "wallet.h"
 #include "base58.h"
 >>>>>>> Committing original src/qt
+=======
+#include "../headers.h"
+#include "../wallet.h"
+#include "../base58.h"
+#include "ui_interface.h"
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
 /* Return positive answer if transaction should be shown in list.
  */

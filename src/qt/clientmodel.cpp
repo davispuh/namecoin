@@ -29,9 +29,10 @@ static const int64_t nClientStartupTime = GetTime();
 #include "addresstablemodel.h"
 #include "transactiontablemodel.h"
 
-#include "alert.h"
-#include "main.h"
-#include "checkpoints.h"
+//#include "alert.h"
+#include "../headers.h"
+#include "../main.h"
+//#include "checkpoints.h"
 #include "ui_interface.h"
 
 #include <QDateTime>
@@ -42,9 +43,7 @@ static const int64 nClientStartupTime = GetTime();
 
 ClientModel::ClientModel(OptionsModel *optionsModel, QObject *parent) :
     QObject(parent), optionsModel(optionsModel),
-    cachedNumBlocks(0), cachedNumBlocksOfPeers(0),
-    cachedReindexing(0), cachedImporting(0),
-    numBlocksAtStartup(-1), pollTimer(0)
+    cachedNumBlocks(0), cachedNumBlocksOfPeers(0), numBlocksAtStartup(-1), pollTimer(0)
 {
     pollTimer = new QTimer(this);
 <<<<<<< HEAD
@@ -106,20 +105,27 @@ QDateTime ClientModel::getLastBlockDate() const
 {
     if (pindexBest)
         return QDateTime::fromTime_t(pindexBest->GetBlockTime());
-    else if(!isTestNet())
-        return QDateTime::fromTime_t(1231006505); // Genesis block's time
     else
+<<<<<<< HEAD
         return QDateTime::fromTime_t(1296688602); // Genesis block's time (testnet)
 >>>>>>> Committing original src/qt
+=======
+        return QDateTime::fromTime_t(1231006505); // Genesis block's time
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 }
 
 double ClientModel::getVerificationProgress() const
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return Checkpoints::GuessVerificationProgress(chainActive.Tip());
 =======
     return Checkpoints::GuessVerificationProgress(pindexBest);
 >>>>>>> Committing original src/qt
+=======
+    //return Checkpoints::GuessVerificationProgress(pindexBest);
+    return 0.0;
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 }
 
 void ClientModel::updateTimer()
@@ -129,14 +135,10 @@ void ClientModel::updateTimer()
     int newNumBlocks = getNumBlocks();
     int newNumBlocksOfPeers = getNumBlocksOfPeers();
 
-    // check for changed number of blocks we have, number of blocks peers claim to have, reindexing state and importing state
-    if (cachedNumBlocks != newNumBlocks || cachedNumBlocksOfPeers != newNumBlocksOfPeers ||
-        cachedReindexing != fReindex || cachedImporting != fImporting)
+    if(cachedNumBlocks != newNumBlocks || cachedNumBlocksOfPeers != newNumBlocksOfPeers)
     {
         cachedNumBlocks = newNumBlocks;
         cachedNumBlocksOfPeers = newNumBlocksOfPeers;
-        cachedReindexing = fReindex;
-        cachedImporting = fImporting;
 
         // ensure we return the maximum of newNumBlocksOfPeers and newNumBlocks to not create weird displays in the GUI
         emit numBlocksChanged(newNumBlocks, std::max(newNumBlocksOfPeers, newNumBlocks));
@@ -156,7 +158,7 @@ void ClientModel::updateNumConnections(int numConnections)
 void ClientModel::updateAlert(const QString &hash, int status)
 {
     // Show error message notification for new alert
-    if(status == CT_NEW)
+    /*if(status == CT_NEW)
     {
         uint256 hash_256;
         hash_256.SetHex(hash.toStdString());
@@ -165,7 +167,7 @@ void ClientModel::updateAlert(const QString &hash, int status)
         {
             emit message(tr("Network Alert"), QString::fromStdString(alert.strStatusBar), CClientUIInterface::ICON_ERROR);
         }
-    }
+    }*/
 
     emit alertsChanged(getStatusBarWarnings());
 }
@@ -191,19 +193,17 @@ bool ClientModel::inInitialBlockDownload() const
 
 enum BlockSource ClientModel::getBlockSource() const
 {
-    if (fReindex)
+    /*if (fReindex)
         return BLOCK_SOURCE_REINDEX;
-    else if (fImporting)
-        return BLOCK_SOURCE_DISK;
-    else if (getNumConnections() > 0)
-        return BLOCK_SOURCE_NETWORK;
-
-    return BLOCK_SOURCE_NONE;
+    if (fImporting)
+        return BLOCK_SOURCE_DISK;*/
+    return BLOCK_SOURCE_NETWORK;
 }
 
 int ClientModel::getNumBlocksOfPeers() const
 {
-    return GetNumBlocksOfPeers();
+    return getNumBlocks();
+    //return GetNumBlocksOfPeers();
 }
 
 QString ClientModel::getStatusBarWarnings() const
@@ -223,16 +223,19 @@ QString ClientModel::formatFullVersion() const
 
 QString ClientModel::formatBuildDate() const
 {
+    const std::string CLIENT_DATE = __DATE__ ", " __TIME__;
     return QString::fromStdString(CLIENT_DATE);
 }
 
 bool ClientModel::isReleaseVersion() const
 {
+    const bool CLIENT_VERSION_IS_RELEASE = true;
     return CLIENT_VERSION_IS_RELEASE;
 }
 
 QString ClientModel::clientName() const
 {
+    const std::string CLIENT_NAME = "Namecoin-Qt";
     return QString::fromStdString(CLIENT_NAME);
 }
 

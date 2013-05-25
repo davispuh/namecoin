@@ -55,7 +55,8 @@
 
 #include "guiconstants.h"
 #include "ui_interface.h"
-#include "util.h"
+#include "../headers.h"
+#include "../util.h"
 
 #include <QByteArray>
 #include <QDataStream>
@@ -71,6 +72,7 @@
 using namespace boost;
 
 const int BITCOIN_IPC_CONNECT_TIMEOUT = 1000; // milliseconds
+<<<<<<< HEAD
 const QString BITCOIN_IPC_PREFIX("bitcoin:");
 <<<<<<< HEAD
 const char* BITCOIN_REQUEST_MIMETYPE = "application/bitcoin-paymentrequest";
@@ -88,6 +90,9 @@ void PaymentServer::freeCertStore()
 }
 =======
 >>>>>>> Committing original src/qt
+=======
+const QString BITCOIN_IPC_PREFIX("namecoin:");
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
 //
 // Create a name that is unique for:
@@ -96,16 +101,20 @@ void PaymentServer::freeCertStore()
 //
 static QString ipcServerName()
 {
-    QString name("BitcoinQt");
+    QString name("NamecoinQt");
 
     // Append a simple hash of the datadir
     // Note that GetDataDir(true) returns a different path
     // for -testnet versus main net
 <<<<<<< HEAD
+<<<<<<< HEAD
     QString ddir(QString::fromStdString(GetDataDir(true).string()));
 =======
     QString ddir(GetDataDir(true).string().c_str());
 >>>>>>> Committing original src/qt
+=======
+    QString ddir(GetDataDir(/*true*/)./*string().*/c_str());
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     name.append(QString::number(qHash(ddir)));
 
     return name;
@@ -434,7 +443,7 @@ void PaymentServer::initNetManager()
     uriServer = new QLocalServer(this);
 
     if (!uriServer->listen(name))
-        qDebug() << tr("Cannot start bitcoin: click-to-pay handler");
+        qDebug() << tr("Cannot start namecoin: click-to-pay handler");
     else
         connect(uriServer, SIGNAL(newConnection()), this, SLOT(handleURIConnection()));
 }

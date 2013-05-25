@@ -42,6 +42,151 @@ CDBEnv bitdb;
 
 void CDBEnv::EnvShutdown()
 {
+<<<<<<< HEAD
+=======
+    if (!pdb)
+        return;
+    if (!vTxn.empty())
+        vTxn.front()->abort();
+    vTxn.clear();
+    pdb = NULL;
+
+    // Flush database activity from memory pool to disk log
+    unsigned int nMinutes = 0;
+    if (fReadOnly)
+        nMinutes = 1;
+    if (strFile == "addr.dat")
+        nMinutes = 2;
+    if (strFile == "blkindex.dat" && IsInitialBlockDownload() && nBestHeight % 500 != 0)
+        nMinutes = 1;
+    dbenv.txn_checkpoint(0, nMinutes, 0);
+
+    CRITICAL_BLOCK(cs_db)
+        --mapFileUseCount[strFile];
+}
+
+void static CloseDb(const string& strFile)
+{
+    CRITICAL_BLOCK(cs_db)
+    {
+        if (mapDb[strFile] != NULL)
+        {
+            // Close the database handle
+            Db* pdb = mapDb[strFile];
+            pdb->close(0);
+            delete pdb;
+            mapDb[strFile] = NULL;
+        }
+    }
+}
+
+void static CheckpointLSN(const std::string &strFile)
+{
+    dbenv.txn_checkpoint(0, 0, 0);
+    //if (fMockDb)
+    //    return;
+    dbenv.lsn_reset(strFile.c_str(), 0);
+}
+
+bool CDB::Rewrite(const string& strFile, const char* pszSkip)
+{
+    while (!fShutdown)
+    {
+        CRITICAL_BLOCK(cs_db)
+        {
+            if (!mapFileUseCount.count(strFile) || mapFileUseCount[strFile] == 0)
+            {
+                // Flush log data to the dat file
+                CloseDb(strFile);
+                CheckpointLSN(strFile);
+                mapFileUseCount.erase(strFile);
+
+                bool fSuccess = true;
+                printf("Rewriting %s...\n", strFile.c_str());
+                string strFileRes = strFile + ".rewrite";
+                { // surround usage of db with extra {}
+                    CDB db(strFile.c_str(), "r");
+                    Db* pdbCopy = new Db(&dbenv, 0);
+
+                    int ret = pdbCopy->open(NULL,                 // Txn pointer
+                                            strFileRes.c_str(),   // Filename
+                                            "main",    // Logical db name
+                                            DB_BTREE,  // Database type
+                                            DB_CREATE,    // Flags
+                                            0);
+                    if (ret > 0)
+                    {
+                        printf("Cannot create database file %s\n", strFileRes.c_str());
+                        fSuccess = false;
+                    }
+
+                    Dbc* pcursor = db.GetCursor();
+                    if (pcursor)
+                        while (fSuccess)
+                        {
+                            CDataStream ssKey(SER_DISK, VERSION);
+                            CDataStream ssValue(SER_DISK, VERSION);
+                            int ret = db.ReadAtCursor(pcursor, ssKey, ssValue, DB_NEXT);
+                            if (ret == DB_NOTFOUND)
+                            {
+                                pcursor->close();
+                                break;
+                            }
+                            else if (ret != 0)
+                            {
+                                pcursor->close();
+                                fSuccess = false;
+                                break;
+                            }
+                            if (pszSkip &&
+                                strncmp(&ssKey[0], pszSkip, std::min(ssKey.size(), strlen(pszSkip))) == 0)
+                                continue;
+                            if (strncmp(&ssKey[0], "\x07version", 8) == 0)
+                            {
+                                // Update version:
+                                ssValue.clear();
+                                ssValue << VERSION;
+                            }
+                            Dbt datKey(&ssKey[0], ssKey.size());
+                            Dbt datValue(&ssValue[0], ssValue.size());
+                            int ret2 = pdbCopy->put(NULL, &datKey, &datValue, DB_NOOVERWRITE);
+                            if (ret2 > 0)
+                                fSuccess = false;
+                        }
+                    if (fSuccess)
+                    {
+                        db.Close();
+                        CloseDb(strFile);
+                        if (pdbCopy->close(0))
+                            fSuccess = false;
+                        delete pdbCopy;
+                    }
+                }
+                if (fSuccess)
+                {
+                    Db dbA(&dbenv, 0);
+                    if (dbA.remove(strFile.c_str(), NULL, 0))
+                        fSuccess = false;
+                    Db dbB(&dbenv, 0);
+                    if (dbB.rename(strFileRes.c_str(), NULL, strFile.c_str(), 0))
+                        fSuccess = false;
+                }
+                if (!fSuccess)
+                    printf("Rewriting of %s FAILED!\n", strFileRes.c_str());
+                return fSuccess;
+            }
+        }
+        Sleep(100);
+    }
+    return false;
+}
+
+void DBFlush(bool fShutdown)
+{
+    // Flush log data to the actual data file
+    //  on all files that are not in use
+    printf("DBFlush(%s)%s\n", fShutdown ? "true" : "false", fDbEnvInit ? "" : " db not started");
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     if (!fDbEnvInit)
         return;
 
@@ -344,6 +489,7 @@ CDB::CDB(const char *pszFile, const char* pszMode) :
     }
 }
 
+<<<<<<< HEAD
 void CDB::Flush()
 {
     if (activeTxn)
@@ -565,6 +711,10 @@ bool CDB::Rewrite(const string& strFile, const char* pszSkip)
         WriteTx(hash, pwallet->mapWallet[hash]);
 
     printf("nFileVersion = %d\n", nFileVersion);
+=======
+void PrintSettingsToLog()
+{
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     printf("fGenerateBitcoins = %d\n", fGenerateBitcoins);
     printf("nTransactionFee = %"PRI64d"\n", nTransactionFee);
     printf("nMinimumInputValue = %"PRI64d"\n", nMinimumInputValue);
@@ -574,6 +724,7 @@ bool CDB::Rewrite(const string& strFile, const char* pszSkip)
     printf("addrProxy = %s\n", addrProxy.ToString().c_str());
     if (fHaveUPnP)
         printf("fUseUPnP = %d\n", fUseUPnP);
+<<<<<<< HEAD
 
 
     // Upgrade
@@ -589,6 +740,8 @@ bool CDB::Rewrite(const string& strFile, const char* pszSkip)
 
     return true;
 >>>>>>> hooks
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 }
 
 

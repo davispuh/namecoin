@@ -107,9 +107,24 @@ bool ShutdownRequested()
     return fRequestShutdown;
 }
 
+<<<<<<< HEAD
 static CCoinsViewDB *pcoinsdbview;
 
 void Shutdown()
+=======
+void StartShutdown()
+{
+#ifdef GUI
+    // ensure we leave the Qt main loop for a clean GUI exit (Shutdown() is called in bitcoin.cpp afterwards)
+    uiInterface.QueueShutdown();
+#else
+    // Without UI, Shutdown() can simply be started in a new thread
+    CreateThread(Shutdown, NULL);
+#endif
+}
+
+void Shutdown(void* parg)
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 {
     LogPrintf("Shutdown : In progress...\n");
     static CCriticalSection cs_Shutdown;
@@ -375,6 +390,12 @@ void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
             LogPrintf("Warning: Could not open blocks file %s\n", path.string());
         }
     }
+<<<<<<< HEAD
+=======
+    if (!fRet)
+        StartShutdown();
+    return fRet;
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 }
 
 /** Initialize bitcoin.
@@ -423,6 +444,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     sa.sa_flags = 0;
     sigaction(SIGTERM, &sa, NULL);
     sigaction(SIGINT, &sa, NULL);
+<<<<<<< HEAD
 
     // Reopen debug.log on SIGHUP
     struct sigaction sa_hup;
@@ -437,6 +459,33 @@ bool AppInit2(boost::thread_group& threadGroup)
     signal(SIGPIPE, SIG_IGN);
 #endif
 =======
+=======
+    sigaction(SIGHUP, &sa, NULL);
+#endif
+
+    //
+    // Parameters
+    //
+    if (argc >= 0) // GUI sets argc to -1, because it parses the parameters itself
+    {
+        ParseParameters(argc, argv);
+
+        if (mapArgs.count("-datadir"))
+        {
+            if (filesystem::is_directory(filesystem::system_complete(mapArgs["-datadir"])))
+            {
+                filesystem::path pathDataDir = filesystem::system_complete(mapArgs["-datadir"]);
+                strlcpy(pszSetDataDir, pathDataDir.string().c_str(), sizeof(pszSetDataDir));
+            }
+            else
+            {
+                fprintf(stderr, "Error: Specified directory does not exist\n");
+                Shutdown(NULL);
+            }
+        }
+    }
+
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     ReadConfigFile(mapArgs, mapMultiArgs); // Must be done after processing datadir
 
     if (mapArgs.count("-?") || mapArgs.count("--help"))
@@ -445,6 +494,7 @@ bool AppInit2(boost::thread_group& threadGroup)
           _("namecoin version") + " " + FormatFullVersion() + "\n\n" +
           _("Usage:") + "\t\t\t\t\t\t\t\t\t\t\n" +
             "  namecoin [options]                   \t  " + "\n" +
+<<<<<<< HEAD
             "  namecoin [options] <command> [params]\t  " + _("Send command to -server or namecoind\n") +
             "  namecoin [options] help              \t\t  " + _("List commands\n") +
             "  namecoin [options] help <command>    \t\t  " + _("Get help for a command\n") +
@@ -502,6 +552,23 @@ bool AppInit2(boost::thread_group& threadGroup)
         // even when -connect or -proxy is specified
         if (SoftSetBoolArg("-listen", true))
             LogPrintf("AppInit2 : parameter interaction: -bind set -> setting -listen=1\n");
+=======
+            "  namecoin [options] <command> [params]\t  " + _("Send command to -server or namecoind") + "\n" +
+            "  namecoin [options] help              \t\t  " + _("List commands") + "\n" +
+            "  namecoin [options] help <command>    \t\t  " + _("Get help for a command") + "\n";
+            
+        strUsage += "\n" + HelpMessage();
+
+#if defined(__WXMSW__) && defined(GUI)
+        // Tabs make the columns line up in the message box
+        wxMessageBox(strUsage, "Namecoin", wxOK);
+#else
+        // Remove tabs
+        strUsage.erase(std::remove(strUsage.begin(), strUsage.end(), '\t'), strUsage.end());
+        fprintf(stderr, "%s", strUsage.c_str());
+#endif
+        return false;
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     }
 
     if (mapArgs.count("-connect") && mapMultiArgs["-connect"].size() > 0) {
@@ -647,7 +714,8 @@ bool AppInit2(boost::thread_group& threadGroup)
         ShrinkDebugFile();
     printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     printf("namecoin version %s\n", FormatFullVersion().c_str());
-#ifdef GUI
+//#ifdef GUI
+#if 0
     printf("OS version %s\n", ((string)wxGetOsDescription()).c_str());
     printf("System default language is %d %s\n", g_locale.GetSystemLanguage(), ((string)g_locale.GetSysName()).c_str());
     printf("Language file %s (%s)\n", (string("locale/") + (string)g_locale.GetCanonicalName() + "/LC_MESSAGES/bitcoin.mo").c_str(), ((string)g_locale.GetLocale()).c_str());
@@ -679,6 +747,7 @@ bool AppInit2(boost::thread_group& threadGroup)
             threadGroup.create_thread(&ThreadScriptCheck);
     }
 
+<<<<<<< HEAD
     int64_t nStart;
 
     // ********************************************************* Step 5: verify wallet database integrity
@@ -703,6 +772,34 @@ bool AppInit2(boost::thread_group& threadGroup)
                 // if it still fails, it probably means we can't even create the database env
                 string msg = strprintf(_("Error initializing wallet database environment %s!"), strDataDir);
                 return InitError(msg);
+=======
+    //
+    // Limit to single instance per user
+    // Required to protect the database files if we're going to keep deleting log.*
+    //
+//#if defined(__WXMSW__) && defined(GUI)
+#if 0
+    // wxSingleInstanceChecker doesn't work on Linux
+    wxString strMutexName = wxString("bitcoin_running.") + getenv("HOMEPATH");
+    for (int i = 0; i < strMutexName.size(); i++)
+        if (!isalnum(strMutexName[i]))
+            strMutexName[i] = '.';
+    wxSingleInstanceChecker* psingleinstancechecker = new wxSingleInstanceChecker(strMutexName);
+    if (psingleinstancechecker->IsAnotherRunning())
+    {
+        printf("Existing instance found\n");
+        unsigned int nStart = GetTime();
+        loop
+        {
+            // Show the previous instance and exit
+            HWND hwndPrev = FindWindowA("wxWindowClassNR", "Namecoin");
+            if (hwndPrev)
+            {
+                if (IsIconic(hwndPrev))
+                    ShowWindow(hwndPrev, SW_RESTORE);
+                SetForegroundWindow(hwndPrev);
+                return false;
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
             }
         }
 
@@ -784,11 +881,12 @@ bool AppInit2(boost::thread_group& threadGroup)
     static boost::interprocess::file_lock lock(strLockFile.c_str());
     if (!lock.try_lock())
     {
-        wxMessageBox(strprintf(_("Cannot obtain a lock on data directory %s.  namecoin is probably already running."), GetDataDir().c_str()), "Bitcoin");
+        wxMessageBox(strprintf(_("Cannot obtain a lock on data directory %s.  namecoin is probably already running."), GetDataDir().c_str()), "Namecoin");
         return false;
 >>>>>>> cleaned up some copy references to 'bitcoin' so that they now say 'namecoin'
     }
 
+<<<<<<< HEAD
     // -onion can override normal proxy, -noonion disables tor entirely
     // -tor here is a temporary backwards compatibility measure
     if (mapArgs.count("-tor"))
@@ -805,6 +903,17 @@ bool AppInit2(boost::thread_group& threadGroup)
             return InitError(strprintf(_("Invalid -onion address: '%s'"), mapArgs.count("-onion")?mapArgs["-onion"]:mapArgs["-tor"]));
         SetProxy(NET_TOR, addrOnion, 5);
         SetReachable(NET_TOR);
+=======
+    // Bind to the port early so we can tell if another instance is already running.
+    string strErrors;
+    if (!fNoListen)
+    {
+        if (!BindListenPort(strErrors))
+        {
+            wxMessageBox(strErrors, "Namecoin");
+            return false;
+        }
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     }
 
 <<<<<<< HEAD
@@ -959,6 +1068,7 @@ bool AppInit2(boost::thread_group& threadGroup)
                 break;
             }
 
+<<<<<<< HEAD
             fLoaded = true;
         } while(false);
 
@@ -980,13 +1090,27 @@ bool AppInit2(boost::thread_group& threadGroup)
             }
         }
     }
+=======
+    //// debug print
+    printf("mapBlockIndex.size() = %d\n",   mapBlockIndex.size());
+    printf("nBestHeight = %d\n",            nBestHeight);
+    pwalletMain->DebugPrint();
+    printf("setKeyPool.size() = %d\n",      pwalletMain->setKeyPool.size());
+    printf("mapPubKeys.size() = %d\n",      mapPubKeys.size());
+    printf("mapWallet.size() = %d\n",       pwalletMain->mapWallet.size());
+    printf("mapAddressBook.size() = %d\n",  pwalletMain->mapAddressBook.size());
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
     // As LoadBlockIndex can take several minutes, it's possible the user
     // requested to kill the GUI during the last operation. If so, exit.
     // As the program has not fully started yet, Shutdown() is possibly overkill.
     if (fRequestShutdown)
     {
+<<<<<<< HEAD
         LogPrintf("Shutdown requested. Exiting.\n");
+=======
+        wxMessageBox(strErrors, "Namecoin", wxOK | wxICON_ERROR);
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         return false;
     }
     LogPrintf(" block index %15"PRId64"ms\n", GetTimeMillis() - nStart);
@@ -1048,6 +1172,7 @@ bool AppInit2(boost::thread_group& threadGroup)
         DBErrors nLoadWalletRet = pwalletMain->LoadWallet(fFirstRun);
         if (nLoadWalletRet != DB_LOAD_OK)
         {
+<<<<<<< HEAD
             if (nLoadWalletRet == DB_CORRUPT)
                 strErrors << _("Error loading wallet.dat: Wallet corrupted") << "\n";
             else if (nLoadWalletRet == DB_NONCRITICAL_ERROR)
@@ -1066,6 +1191,10 @@ bool AppInit2(boost::thread_group& threadGroup)
             }
             else
                 strErrors << _("Error loading wallet.dat") << "\n";
+=======
+            wxMessageBox(_("Invalid -proxy address"), "Namecoin");
+            return false;
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         }
 
         if (GetBoolArg("-upgradewallet", fFirstRun))
@@ -1109,6 +1238,7 @@ bool AppInit2(boost::thread_group& threadGroup)
             pindexRescan = chainActive.Genesis();
         else
         {
+<<<<<<< HEAD
             CWalletDB walletdb(strWalletFile);
             CBlockLocator locator;
             if (walletdb.ReadBestBlock(locator))
@@ -1142,6 +1272,13 @@ bool AppInit2(boost::thread_group& threadGroup)
     {
         BOOST_FOREACH(string strFile, mapMultiArgs["-loadblock"])
             vImportFiles.push_back(strFile);
+=======
+            wxMessageBox(_("Invalid amount for -paytxfee=<amount>"), "Namecoin");
+            return false;
+        }
+        if (nTransactionFee > 0.25 * COIN)
+            wxMessageBox(_("Warning: -paytxfee is set very high.  This is the transaction fee you will pay if you send a transaction."), "Namecoin", wxOK | wxICON_EXCLAMATION);
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     }
     threadGroup.create_thread(boost::bind(&ThreadImport, vImportFiles));
 
@@ -1157,7 +1294,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     {
         if (!ParseMoney(mapArgs["-mininput"], nMinimumInputValue))
         {
-            wxMessageBox(_("Invalid amount for -mininput=<amount>"), "Litecoin");
+            wxMessageBox(_("Invalid amount for -mininput=<amount>"), "Namecoin");
             return false;
         }
     }
@@ -1202,8 +1339,12 @@ bool AppInit2(boost::thread_group& threadGroup)
     }
 
     if (!CreateThread(StartNode, NULL))
+<<<<<<< HEAD
         wxMessageBox("Error: CreateThread(StartNode) failed", "Bitcoin");
 >>>>>>> Move rescanfornames earlier
+=======
+        wxMessageBox("Error: CreateThread(StartNode) failed", "Namecoin");
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
     StartNode(threadGroup);
     // InitRPCMining is needed here so getwork/getblocktemplate in the GUI debug console works properly.
@@ -1232,4 +1373,58 @@ bool AppInit2(boost::thread_group& threadGroup)
 #endif
 
     return !fRequestShutdown;
+}
+
+// Core-specific options shared between UI and daemon
+std::string HelpMessage()
+{
+    std::string strUsage = std::string(_("Options:\n")) +
+        "  -conf=<file>     \t\t  " + _("Specify configuration file (default: namecoin.conf)\n") +
+        "  -pid=<file>      \t\t  " + _("Specify pid file (default: namecoind.pid)\n") +
+        "  -gen             \t\t  " + _("Generate coins\n") +
+        "  -gen=0           \t\t  " + _("Don't generate coins\n") +
+        "  -min             \t\t  " + _("Start minimized\n") +
+        "  -datadir=<dir>   \t\t  " + _("Specify data directory\n") +
+        "  -timeout=<n>     \t  "   + _("Specify connection timeout (in milliseconds)\n") +
+        "  -proxy=<ip:port> \t  "   + _("Connect through socks4 proxy\n") +
+        "  -dns             \t  "   + _("Allow DNS lookups for addnode and connect\n") +
+        "  -addnode=<ip>    \t  "   + _("Add a node to connect to\n") +
+        "  -connect=<ip>    \t\t  " + _("Connect only to the specified node\n") +
+        "  -nolisten        \t  "   + _("Don't accept connections from outside\n") +
+#ifdef USE_UPNP
+#if USE_UPNP
+        "  -noupnp          \t  "   + _("Don't attempt to use UPnP to map the listening port\n") +
+#else
+        "  -upnp            \t  "   + _("Attempt to use UPnP to map the listening port\n") +
+#endif
+#endif
+        "  -paytxfee=<amt>  \t  "   + _("Fee per KB to add to transactions you send\n") +
+        "  -mininput=<amt>  \t  "   + _("When creating transactions, ignore inputs with value less than this (default: 0.0001)\n") +
+#ifdef GUI
+        "  -server          \t\t  " + _("Accept command line and JSON-RPC commands\n") +
+#endif
+#ifndef __WXMSW__
+        "  -daemon          \t\t  " + _("Run in the background as a daemon and accept commands\n") +
+#endif
+        "  -testnet         \t\t  " + _("Use the test network\n") +
+        "  -rpcuser=<user>  \t  "   + _("Username for JSON-RPC connections\n") +
+        "  -rpcpassword=<pw>\t  "   + _("Password for JSON-RPC connections\n") +
+        "  -rpcport=<port>  \t\t  " + _("Listen for JSON-RPC connections on <port> (default: 8336)\n") +
+        "  -rpcallowip=<ip> \t\t  " + _("Allow JSON-RPC connections from specified IP address\n") +
+        "  -rpcconnect=<ip> \t  "   + _("Send commands to node running on <ip> (default: 127.0.0.1)\n") +
+        "  -keypool=<n>     \t  "   + _("Set key pool size to <n> (default: 100)\n") +
+        "  -rescan          \t  "   + _("Rescan the block chain for missing wallet transactions\n");
+
+#ifdef USE_SSL
+    strUsage += std::string() +
+        _("\nSSL options: (see the namecoin Wiki for SSL setup instructions)\n") +
+        "  -rpcssl                                \t  " + _("Use OpenSSL (https) for JSON-RPC connections\n") +
+        "  -rpcsslcertificatechainfile=<file.cert>\t  " + _("Server certificate file (default: server.cert)\n") +
+        "  -rpcsslprivatekeyfile=<file.pem>       \t  " + _("Server private key (default: server.pem)\n") +
+        "  -rpcsslciphers=<ciphers>               \t  " + _("Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)\n");
+#endif
+
+    strUsage += std::string() +
+        "  -?               \t\t  " + _("This help message\n");
+    return strUsage;
 }

@@ -823,7 +823,14 @@ void ThreadSocketHandler()
         }
         if(vNodes.size() != nPrevNodeCount) {
             nPrevNodeCount = vNodes.size();
+<<<<<<< HEAD
             uiInterface.NotifyNumConnectionsChanged(nPrevNodeCount);
+=======
+#ifdef GUI
+            uiInterface.NotifyNumConnectionsChanged(vNodes.size());
+#endif
+            //MainFrameRepaint();
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         }
 
 
@@ -1620,8 +1627,21 @@ void ThreadMessageHandler()
                 pnode->Release();
         }
 
+<<<<<<< HEAD
         if (fSleep)
             MilliSleep(100);
+=======
+        // Wait and allow messages to bunch up.
+        // Reduce vnThreadsRunning so StopNode has permission to exit while
+        // we're sleeping, but we must always check fShutdown after doing this.
+        vnThreadsRunning[2]--;
+        Sleep(100);
+        if (fRequestShutdown)
+            StartShutdown();
+        vnThreadsRunning[2]++;
+        if (fShutdown)
+            return;
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     }
 }
 
@@ -1705,7 +1725,11 @@ bool BindListenPort(const CService &addrBind, string& strError)
     {
         int nErr = WSAGetLastError();
         if (nErr == WSAEADDRINUSE)
+<<<<<<< HEAD
             strError = strprintf(_("Unable to bind to %s on this computer. Bitcoin is probably already running."), addrBind.ToString());
+=======
+            strError = strprintf(_("Unable to bind to port %d on this computer.  Namecoin is probably already running."), ntohs(sockaddr.sin_port));
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         else
             strError = strprintf(_("Unable to bind to %s on this computer (bind returned error %d, %s)"), addrBind.ToString(), nErr, strerror(nErr));
         LogPrintf("%s\n", strError);
@@ -1802,10 +1826,18 @@ void StartNode(boost::thread_group& threadGroup)
     // Start threads
     //
 
+<<<<<<< HEAD
     if (!GetBoolArg("-dnsseed", true))
         LogPrintf("DNS seeding disabled\n");
     else
         threadGroup.create_thread(boost::bind(&TraceThread<void (*)()>, "dnsseed", &ThreadDNSAddressSeed));
+=======
+#ifdef USE_UPNP
+    // Map ports with UPnP
+    if (fHaveUPnP)
+        MapPort(fUseUPnP);
+#endif
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
 #ifdef USE_UPNP
     // Map ports with UPnP

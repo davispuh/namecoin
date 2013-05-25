@@ -1356,6 +1356,7 @@ void CheckForkWarningConditions()
 
     if (pindexBestForkTip || (pindexBestInvalid && pindexBestInvalid->nChainWork > chainActive.Tip()->nChainWork + (chainActive.Tip()->GetBlockWork() * 6).getuint256()))
     {
+<<<<<<< HEAD
         if (!fLargeWorkForkFound)
         {
             std::string strCmd = GetArg("-alertnotify", "");
@@ -1384,6 +1385,14 @@ void CheckForkWarningConditions()
     {
         fLargeWorkForkFound = false;
         fLargeWorkInvalidChainFound = false;
+=======
+        bnBestInvalidWork = pindexNew->bnChainWork;
+        CTxDB().WriteBestInvalidWork(bnBestInvalidWork);
+#ifdef GUI
+        uiInterface.NotifyBlocksChanged();
+#endif
+        //MainFrameRepaint();
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     }
 }
 
@@ -2367,6 +2376,13 @@ bool FindUndoPos(CValidationState &state, int nFile, CDiskBlockPos &pos, unsigne
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+#ifdef GUI
+    uiInterface.NotifyBlocksChanged();
+#endif
+    //MainFrameRepaint();
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     return true;
 }
 
@@ -2849,6 +2865,7 @@ void CPartialMerkleTree::TraverseAndBuild(int height, unsigned int pos, const st
     }
 }
 
+<<<<<<< HEAD
 uint256 CPartialMerkleTree::TraverseAndExtract(int height, unsigned int pos, unsigned int &nBitsUsed, unsigned int &nHashUsed, std::vector<uint256> &vMatch) {
     if (nBitsUsed >= vBits.size()) {
         // overflowed the bits array - failure
@@ -2876,6 +2893,23 @@ uint256 CPartialMerkleTree::TraverseAndExtract(int height, unsigned int pos, uns
             right = left;
         // and combine them before returning
         return Hash(BEGIN(left), END(left), BEGIN(right), END(right));
+=======
+    // Check for 15MB because database could create another 10MB log file at any time
+    if (nFreeBytesAvailable < (uint64)15000000 + nAdditionalBytes)
+    {
+        fShutdown = true;
+        string strMessage = _("Warning: Disk space is low  ");
+        strMiscWarning = strMessage;
+        printf("*** %s\n", strMessage.c_str());
+#ifdef GUI
+        uiInterface.ThreadSafeMessageBox(strMessage, "Namecoin", wxOK | wxICON_EXCLAMATION);
+#else
+        ThreadSafeMessageBox(strMessage, "Namecoin", wxOK | wxICON_EXCLAMATION);
+#endif
+
+        CreateThread(Shutdown, NULL);
+        return false;
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     }
 }
 
@@ -3447,11 +3481,17 @@ bool CAlert::ProcessAlert()
             if (Cancels(alert))
             {
                 printf("cancelling alert %d\n", alert.nID);
+#ifdef GUI
+                uiInterface.NotifyAlertChanged((*mi).first, CT_DELETED);  
+#endif
                 mapAlerts.erase(mi++);
             }
             else if (!alert.IsInEffect())
             {
                 printf("expiring alert %d\n", alert.nID);
+#ifdef GUI
+                uiInterface.NotifyAlertChanged((*mi).first, CT_DELETED);
+#endif
                 mapAlerts.erase(mi++);
             }
             else
@@ -3471,6 +3511,11 @@ bool CAlert::ProcessAlert()
 
         // Add to mapAlerts
         mapAlerts.insert(make_pair(GetHash(), *this));
+#ifdef GUI
+        // Notify UI if it applies to me
+        if (AppliesToMe())
+            uiInterface.NotifyAlertChanged(GetHash(), CT_NEW); 
+#endif
     }
 
     printf("accepted alert %d, AppliesToMe()=%d\n", nID, AppliesToMe());

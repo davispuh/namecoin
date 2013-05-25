@@ -134,7 +134,7 @@ bool BitcoinAmountField::eventFilter(QObject *object, QEvent *event)
         {
             // Translate a comma into a period
             QKeyEvent periodKeyEvent(event->type(), Qt::Key_Period, keyEvent->modifiers(), ".", keyEvent->isAutoRepeat(), keyEvent->count());
-            QApplication::sendEvent(object, &periodKeyEvent);
+            qApp->sendEvent(object, &periodKeyEvent);
             return true;
         }
     }
@@ -203,11 +203,6 @@ void BitcoinAmountField::unitChanged(int idx)
 
     if (valid)
 =======
-
-    if(currentUnit == BitcoinUnits::uBTC)
-        amount->setSingleStep(0.01);
-    else
-        amount->setSingleStep(0.001);
 
     if(valid)
 >>>>>>> Committing original src/qt

@@ -10,6 +10,7 @@
 
 #include "addressbookpage.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "guiutil.h"
 #include "walletmodel.h"
 
@@ -24,19 +25,26 @@
 
 =======
 #include "base58.h"
+=======
+#include "../headers.h"
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 #include "guiutil.h"
-#include "init.h"
-#include "main.h"
+#include "../init.h"
+#include "../wallet.h"
 #include "optionsmodel.h"
 #include "walletmodel.h"
-#include "wallet.h"
 
 #include <QClipboard>
 
 #include <string>
 #include <vector>
 
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
+=======
+const static std::string strMessageMagic = "Bitcoin Signed Message:\n";
+
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 SignVerifyMessageDialog::SignVerifyMessageDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::SignVerifyMessageDialog),
@@ -51,12 +59,17 @@ SignVerifyMessageDialog::SignVerifyMessageDialog(QWidget *parent) :
 =======
 #if (QT_VERSION >= 0x040700)
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
-    ui->addressIn_SM->setPlaceholderText(tr("Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)"));
+    ui->addressIn_SM->setPlaceholderText(tr("Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)"));
     ui->signatureOut_SM->setPlaceholderText(tr("Click \"Sign Message\" to generate signature"));
 
+<<<<<<< HEAD
     ui->addressIn_VM->setPlaceholderText(tr("Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)"));
     ui->signatureIn_VM->setPlaceholderText(tr("Enter Bitcoin signature"));
 >>>>>>> Committing original src/qt
+=======
+    ui->addressIn_VM->setPlaceholderText(tr("Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)"));
+    ui->signatureIn_VM->setPlaceholderText(tr("Enter Namecoin signature"));
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 #endif
 
     GUIUtil::setupAddressWidget(ui->addressIn_SM, this);
@@ -146,8 +159,8 @@ void SignVerifyMessageDialog::on_signMessageButton_SM_clicked()
     /* Clear old signature to ensure users don't get confused on error with an old signature displayed */
     ui->signatureOut_SM->clear();
 
-    CBitcoinAddress addr(ui->addressIn_SM->text().toStdString());
-    if (!addr.IsValid())
+    uint160 hash160;
+    if (!AddressToHash160(qPrintable(ui->addressIn_SM->text()), hash160))
     {
 <<<<<<< HEAD
 =======
@@ -155,14 +168,6 @@ void SignVerifyMessageDialog::on_signMessageButton_SM_clicked()
 >>>>>>> Committing original src/qt
         ui->statusLabel_SM->setStyleSheet("QLabel { color: red; }");
         ui->statusLabel_SM->setText(tr("The entered address is invalid.") + QString(" ") + tr("Please check the address and try again."));
-        return;
-    }
-    CKeyID keyID;
-    if (!addr.GetKeyID(keyID))
-    {
-        ui->addressIn_SM->setValid(false);
-        ui->statusLabel_SM->setStyleSheet("QLabel { color: red; }");
-        ui->statusLabel_SM->setText(tr("The entered address does not refer to a key.") + QString(" ") + tr("Please check the address and try again."));
         return;
     }
 
@@ -174,8 +179,15 @@ void SignVerifyMessageDialog::on_signMessageButton_SM_clicked()
         return;
     }
 
-    CKey key;
-    if (!pwalletMain->GetKey(keyID, key))
+    CPrivKey privKey;
+    bool found = false;
+    CRITICAL_BLOCK(pwalletMain->cs_mapKeys)
+    {
+        std::map<uint160, std::vector<unsigned char> >::iterator mi = mapPubKeys.find(hash160);
+        if (mi != mapPubKeys.end() && pwalletMain->GetPrivKey(mi->second, privKey))
+            found = true;
+    }
+    if (!found)
     {
         ui->statusLabel_SM->setStyleSheet("QLabel { color: red; }");
         ui->statusLabel_SM->setText(tr("Private key for the entered address is not available."));
@@ -187,6 +199,8 @@ void SignVerifyMessageDialog::on_signMessageButton_SM_clicked()
     ss << ui->messageIn_SM->document()->toPlainText().toStdString();
 
     std::vector<unsigned char> vchSig;
+    CKey key;
+    key.SetPrivKey(privKey);
     if (!key.SignCompact(Hash(ss.begin(), ss.end()), vchSig))
     {
         ui->statusLabel_SM->setStyleSheet("QLabel { color: red; }");
@@ -238,8 +252,8 @@ void SignVerifyMessageDialog::on_addressBookButton_VM_clicked()
 
 void SignVerifyMessageDialog::on_verifyMessageButton_VM_clicked()
 {
-    CBitcoinAddress addr(ui->addressIn_VM->text().toStdString());
-    if (!addr.IsValid())
+    uint160 hash160;
+    if (!AddressToHash160(qPrintable(ui->addressIn_VM->text()), hash160))
     {
 <<<<<<< HEAD
 =======
@@ -247,14 +261,6 @@ void SignVerifyMessageDialog::on_verifyMessageButton_VM_clicked()
 >>>>>>> Committing original src/qt
         ui->statusLabel_VM->setStyleSheet("QLabel { color: red; }");
         ui->statusLabel_VM->setText(tr("The entered address is invalid.") + QString(" ") + tr("Please check the address and try again."));
-        return;
-    }
-    CKeyID keyID;
-    if (!addr.GetKeyID(keyID))
-    {
-        ui->addressIn_VM->setValid(false);
-        ui->statusLabel_VM->setStyleSheet("QLabel { color: red; }");
-        ui->statusLabel_VM->setText(tr("The entered address does not refer to a key.") + QString(" ") + tr("Please check the address and try again."));
         return;
     }
 
@@ -288,10 +294,14 @@ void SignVerifyMessageDialog::on_verifyMessageButton_VM_clicked()
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     if (!(CBitcoinAddress(pubkey.GetID()) == addr))
 =======
     if (!(CBitcoinAddress(key.GetPubKey().GetID()) == addr))
 >>>>>>> Committing original src/qt
+=======
+    if (Hash160(key.GetPubKey()) != hash160)
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     {
         ui->statusLabel_VM->setStyleSheet("QLabel { color: red; }");
         ui->statusLabel_VM->setText(QString("<nobr>") + tr("Message verification failed.") + QString("</nobr>"));

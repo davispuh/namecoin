@@ -28,12 +28,20 @@
 #include "optionsmodel.h"
 
 #include "bitcoinunits.h"
-#include "init.h"
-#include "walletdb.h"
+#include "../headers.h"
+#include "../init.h"
+//#include "walletdb.h"
 #include "guiutil.h"
+
+#include "netbase.h"
 
 #include <QSettings>
 >>>>>>> Committing original src/qt
+
+#include <set>
+
+static std::set<std::string> LinesToAddrSet(const QString &s, bool *pSuccessful = NULL);
+
 
 OptionsModel::OptionsModel(QObject *parent) :
     QAbstractListModel(parent)
@@ -149,7 +157,7 @@ bool static ApplyProxySettings()
     }
     if (nSocksVersion && !addrProxy.IsValid())
         return false;
-    if (!IsLimited(NET_IPV4))
+    //if (!IsLimited(NET_IPV4))
         SetProxy(NET_IPV4, addrProxy, nSocksVersion);
     if (nSocksVersion > 4) {
 #ifdef USE_IPV6
@@ -175,8 +183,14 @@ void OptionsModel::Init()
 
     // These are shared with core Bitcoin; we want
     // command-line options to override the GUI settings:
-    if (settings.contains("fUseUPnP"))
-        SoftSetBoolArg("-upnp", settings.value("fUseUPnP").toBool());
+    if (!mapArgs.count("-upnp") && !mapArgs.count("-noupnp") && settings.contains("fUseUPnP"))
+    {
+        bool val = settings.value("fUseUPnP").toBool();
+        if (val)
+            SoftSetBoolArg("-upnp", true);
+        else
+            SoftSetBoolArg("-noupnp", true);
+    }
     if (settings.contains("addrProxy") && settings.value("fUseProxy").toBool())
         SoftSetArg("-proxy", settings.value("addrProxy").toString().toStdString());
     if (settings.contains("nSocksVersion") && settings.value("fUseProxy").toBool())
@@ -214,7 +228,8 @@ void OptionsModel::Reset()
 
 bool OptionsModel::Upgrade()
 {
-    QSettings settings;
+    return false;
+    /*QSettings settings;
 
     if (settings.contains("bImportFinished"))
         return false; // Already upgraded
@@ -268,7 +283,7 @@ bool OptionsModel::Upgrade()
     ApplyProxySettings();
     Init();
 
-    return true;
+    return true;*/
 }
 
 
@@ -420,9 +435,19 @@ bool OptionsModel::setData(const QModelIndex & index, const QVariant & value, in
         case MapPortUPnP: // core option - can be changed on-the-fly
 =======
         case MapPortUPnP:
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
             settings.setValue("fUseUPnP", value.toBool());
             MapPort(value.toBool());
+=======
+#ifdef USE_UPNP
+            fUseUPnP = value.toBool();
+            settings.setValue("fUseUPnP", fUseUPnP);
+            MapPort(fUseUPnP);
+#else
+            successful = false;
+#endif
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
             break;
         case MinimizeOnClose:
             fMinimizeOnClose = value.toBool();
@@ -606,4 +631,29 @@ qint64 OptionsModel::getTransactionFee()
 {
     return nTransactionFee;
 >>>>>>> Committing original src/qt
+}
+
+static std::set<std::string> LinesToAddrSet(const QString &s, bool *pSuccessful /*= NULL*/)
+{
+    std::set<std::string> setAddrs;
+    QStringList vLines = s.split(QRegExp("[\r\n]"), QString::SkipEmptyParts);
+
+    if (pSuccessful)
+        *pSuccessful = true;
+
+    for (int i = 0; i < vLines.count(); i++)
+    {
+        QString addr = vLines.at(i).trimmed();
+        if (addr.isEmpty())
+            continue;
+            
+        std::string a = addr.toStdString();
+        CBitcoinAddress addressParsed(a);
+        if (CBitcoinAddress(a).IsValid())
+            setAddrs.insert(a);
+        else if (pSuccessful)
+                *pSuccessful = false;
+    }
+    
+    return setAddrs;
 }

@@ -35,7 +35,7 @@ class uint256;
 
 #include <QObject>
 
-#include "allocators.h" /* for SecureString */
+#include "../allocators.h" /* for SecureString */
 
 class OptionsModel;
 class AddressTableModel;

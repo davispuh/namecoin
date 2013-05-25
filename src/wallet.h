@@ -8,6 +8,7 @@
 #include "core.h"
 #include "crypter.h"
 #include "key.h"
+<<<<<<< HEAD
 #include "keystore.h"
 #include "main.h"
 #include "ui_interface.h"
@@ -30,6 +31,15 @@ extern bool bSpendZeroConfChange;
 class CAccountingEntry;
 class CCoinControl;
 class COutput;
+=======
+#include "script.h"
+
+#ifdef GUI
+#include "qt/ui_interface.h"  // For ChangeType
+#endif
+
+class CWalletTx;
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 class CReserveKey;
 class CScript;
 class CWalletTx;
@@ -107,6 +117,7 @@ private:
     int nWalletMaxVersion;
 =======
     bool SelectCoinsMinConf(int64 nTargetValue, int nConfMine, int nConfTheirs, std::set<std::pair<const CWalletTx*,unsigned int> >& setCoinsRet, int64& nValueRet) const;
+    CWalletDB *pwalletdbEncryption;
 
 public:
     // visible for NAMECOIN
@@ -133,25 +144,53 @@ public:
     bool fFileBacked;
     std::string strWalletFile;
 
+<<<<<<< HEAD
     std::set<int64_t> setKeyPool;
     std::map<CKeyID, CKeyMetadata> mapKeyMetadata;
 
     typedef std::map<unsigned int, CMasterKey> MasterKeyMap;
     MasterKeyMap mapMasterKeys;
     unsigned int nMasterKeyMaxID;
+=======
+    std::set<int64> setKeyPool;
+    
+    typedef std::map<unsigned int, CMasterKey> MasterKeyMap;
+    MasterKeyMap mapMasterKeys;
+    unsigned int nMasterKeyMaxID;
 
-    CWallet()
+    mutable CCriticalSection cs_wallet;
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+
+    // Synonyms for cs_wallet
+    CCriticalSection &cs_setKeyPool;
+    CCriticalSection &cs_mapWallet;
+    CCriticalSection &cs_mapRequestCount;
+    CCriticalSection &cs_mapAddressBook;
+
+    CWallet() :
+        cs_setKeyPool(cs_wallet),
+        cs_mapWallet(cs_wallet),
+        cs_mapRequestCount(cs_wallet),
+        cs_mapAddressBook(cs_wallet)
     {
         nWalletVersion = FEATURE_BASE;
         nWalletMaxVersion = FEATURE_BASE;
         fFileBacked = false;
         nMasterKeyMaxID = 0;
         pwalletdbEncryption = NULL;
+<<<<<<< HEAD
         nOrderPosNext = 0;
         nNextResend = 0;
         nLastResend = 0;
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     }
-    CWallet(std::string strWalletFileIn)
+
+    CWallet(std::string strWalletFileIn) :
+        cs_setKeyPool(cs_wallet),
+        cs_mapWallet(cs_wallet),
+        cs_mapRequestCount(cs_wallet),
+        cs_mapAddressBook(cs_wallet)
     {
         nWalletVersion = FEATURE_BASE;
         nWalletMaxVersion = FEATURE_BASE;
@@ -159,15 +198,23 @@ public:
         fFileBacked = true;
         nMasterKeyMaxID = 0;
         pwalletdbEncryption = NULL;
+<<<<<<< HEAD
         nOrderPosNext = 0;
         nNextResend = 0;
         nLastResend = 0;
     }
 
     std::map<uint256, CWalletTx> mapWallet;
+=======
+    }
+
+    std::map<uint256, CWalletTx> mapWallet;
+    //std::vector<uint256> vWalletUpdated;
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
     int64_t nOrderPosNext;
     std::map<uint256, int> mapRequestCount;
+<<<<<<< HEAD
 
     std::map<CTxDestination, CAddressBookData> mapAddressBook;
 
@@ -242,10 +289,25 @@ public:
     void SyncTransaction(const uint256 &hash, const CTransaction& tx, const CBlock* pblock);
     bool AddToWalletIfInvolvingMe(const uint256 &hash, const CTransaction& tx, const CBlock* pblock, bool fUpdate);
     void EraseFromWallet(const uint256 &hash);
+=======
+
+    std::map<std::string, std::string> mapAddressBook;
+
+    std::vector<unsigned char> vchDefaultKey;
+
+    // Adds a key to the store, and saves it to disk.
+    bool AddKey(const CKey& key);
+    // Adds a key to the store, without saving it to disk (used by LoadWallet)
+    bool LoadKey(const CKey& key) { return CKeyStore::AddKey(key); }
+    bool AddToWallet(const CWalletTx& wtxIn);
+    bool AddToWalletIfInvolvingMe(const CTransaction& tx, const CBlock* pblock, bool fUpdate = false);
+    bool EraseFromWallet(uint256 hash);
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     void WalletUpdateSpent(const CTransaction& prevout);
     int ScanForWalletTransactions(CBlockIndex* pindexStart, bool fUpdate = false);
     void ReacceptWalletTransactions();
     void ResendWalletTransactions();
+<<<<<<< HEAD
     int64_t GetBalance() const;
     int64_t GetUnconfirmedBalance() const;
     int64_t GetImmatureBalance() const;
@@ -253,6 +315,13 @@ public:
                            CWalletTx& wtxNew, CReserveKey& reservekey, int64_t& nFeeRet, std::string& strFailReason, const CCoinControl *coinControl = NULL);
     bool CreateTransaction(CScript scriptPubKey, int64_t nValue,
                            CWalletTx& wtxNew, CReserveKey& reservekey, int64_t& nFeeRet, std::string& strFailReason, const CCoinControl *coinControl = NULL);
+=======
+    int64 GetBalance() const;
+    int64 GetUnconfirmedBalance() const;
+    int64 GetImmatureBalance() const { return 0; }
+    bool CreateTransaction(const std::vector<std::pair<CScript, int64> >& vecSend, CWalletTx& wtxNew, CReserveKey& reservekey, int64& nFeeRet);
+    bool CreateTransaction(CScript scriptPubKey, int64 nValue, CWalletTx& wtxNew, CReserveKey& reservekey, int64& nFeeRet);
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     bool CommitTransaction(CWalletTx& wtxNew, CReserveKey& reservekey);
     std::string SendMoney(CScript scriptPubKey, int64_t nValue, CWalletTx& wtxNew);
     std::string SendMoneyToDestination(const CTxDestination &address, int64_t nValue, CWalletTx& wtxNew);
@@ -267,10 +336,20 @@ public:
     int64_t GetOldestKeyPoolTime();
     void GetAllReserveKeys(std::set<CKeyID>& setAddress) const;
 
+<<<<<<< HEAD
     std::set< std::set<CTxDestination> > GetAddressGroupings();
     std::map<CTxDestination, int64_t> GetAddressBalances();
 
     std::set<CTxDestination> GetAccountAddresses(std::string strAccount) const;
+=======
+    bool NewKeyPool();
+
+    void ReserveKeyFromKeyPool(int64& nIndex, CKeyPool& keypool);
+    void KeepKey(int64 nIndex);
+    void ReturnKey(int64 nIndex);
+    std::vector<unsigned char> GetKeyFromKeyPool();
+    int64 GetOldestKeyPoolTime();
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
     bool IsMine(const CTxIn& txin) const;
     int64_t GetDebit(const CTxIn& txin) const;
@@ -348,7 +427,22 @@ public:
 
     bool DelAddressBook(const CTxDestination& address);
 
+<<<<<<< HEAD
     void UpdatedTransaction(const uint256 &hashTx);
+=======
+    void UpdatedTransaction(const uint256 &hashTx)
+    {
+#ifdef GUI
+        CRITICAL_BLOCK(cs_mapWallet)
+        {
+            //vWalletUpdated.push_back(hashTx);
+            NotifyTransactionChanged(this, hashTx, CT_UPDATED);
+        }
+#endif
+    }
+
+    void PrintWallet(const CBlock& block);
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
     void Inventory(const uint256 &hash)
     {
@@ -360,6 +454,7 @@ public:
         }
     }
 
+<<<<<<< HEAD
     unsigned int GetKeyPoolSize()
     {
         AssertLockHeld(cs_wallet); // setKeyPool
@@ -373,6 +468,25 @@ public:
 
     // change which version we're allowed to upgrade to (note that this does not immediately imply upgrading to that format)
     bool SetMaxVersion(int nVersion);
+=======
+    bool GetTransaction(const uint256 &hashTx, CWalletTx& wtx);
+    
+    bool Unlock(const SecureString& strWalletPassphrase);
+    bool ChangeWalletPassphrase(const SecureString& strOldWalletPassphrase, const SecureString& strNewWalletPassphrase);
+    bool EncryptWallet(const SecureString& strWalletPassphrase);
+    
+    // Adds an encrypted key to the store, and saves it to disk.
+    bool AddCryptedKey(const std::vector<unsigned char> &vchPubKey, const std::vector<unsigned char> &vchCryptedSecret);
+    // Adds an encrypted key to the store, without saving it to disk (used by LoadWallet)
+    bool LoadCryptedKey(const std::vector<unsigned char> &vchPubKey, const std::vector<unsigned char> &vchCryptedSecret) { /*SetMinVersion(FEATURE_WALLETCRYPT);*/ return CKeyStore::AddCryptedKey(vchPubKey, vchCryptedSecret); }
+
+#ifdef GUI    
+    //boost::signals2::signal<void (CWallet *wallet, const CTxDestination &address, const std::string &label, bool isMine, ChangeType status)> NotifyAddressBookChanged;
+    boost::signals2::signal<void (CWallet *wallet, const std::string &address, const std::string &label, bool isMine, ChangeType status)> NotifyAddressBookChanged;
+    boost::signals2::signal<void (CWallet *wallet, const uint256 &hashTx, ChangeType status)> NotifyTransactionChanged;
+#endif
+};
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
     // get the current wallet format (the oldest client version guaranteed to understand this wallet)
     int GetVersion() { AssertLockHeld(cs_wallet); return nWalletVersion; }

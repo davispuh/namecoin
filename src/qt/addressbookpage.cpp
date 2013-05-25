@@ -54,6 +54,7 @@ AddressBookPage::AddressBookPage(Mode mode, Tabs tab, QWidget *parent) :
     ui->setupUi(this);
 
 #ifdef Q_OS_MAC // Icons on push buttons are very uncommon on Mac
+<<<<<<< HEAD
     ui->newAddress->setIcon(QIcon());
     ui->copyAddress->setIcon(QIcon());
     ui->deleteAddress->setIcon(QIcon());
@@ -85,6 +86,11 @@ AddressBookPage::AddressBookPage(Mode mode, Tabs tab, QWidget *parent) :
     ui->verifyMessage->setIcon(QIcon());
     ui->signMessage->setIcon(QIcon());
     ui->exportButton->setIcon(QIcon());
+=======
+    ui->newAddressButton->setIcon(QIcon());
+    ui->copyToClipboard->setIcon(QIcon());
+    ui->deleteButton->setIcon(QIcon());
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 #endif
 
 #ifndef USE_QRCODE
@@ -97,7 +103,6 @@ AddressBookPage::AddressBookPage(Mode mode, Tabs tab, QWidget *parent) :
         connect(ui->tableView, SIGNAL(doubleClicked(QModelIndex)), this, SLOT(accept()));
         ui->tableView->setEditTriggers(QAbstractItemView::NoEditTriggers);
         ui->tableView->setFocus();
-        ui->exportButton->hide();
         break;
     case ForEditing:
         ui->buttonBox->setVisible(false);
@@ -107,6 +112,7 @@ AddressBookPage::AddressBookPage(Mode mode, Tabs tab, QWidget *parent) :
     switch(tab)
     {
     case SendingTab:
+<<<<<<< HEAD
         ui->labelExplanation->setText(tr("These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins."));
         ui->deleteAddress->setVisible(true);
 <<<<<<< HEAD
@@ -115,11 +121,14 @@ AddressBookPage::AddressBookPage(Mode mode, Tabs tab, QWidget *parent) :
         ui->labelExplanation->setText(tr("These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction."));
         ui->deleteAddress->setVisible(false);
 =======
+=======
+        ui->labelExplanation->setVisible(false);
+        ui->deleteButton->setVisible(true);
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         ui->signMessage->setVisible(false);
         break;
     case ReceivingTab:
-        ui->labelExplanation->setText(tr("These are your Bitcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you."));
-        ui->deleteAddress->setVisible(false);
+        ui->deleteButton->setVisible(false);
         ui->signMessage->setVisible(true);
 >>>>>>> Committing original src/qt
         break;
@@ -127,19 +136,27 @@ AddressBookPage::AddressBookPage(Mode mode, Tabs tab, QWidget *parent) :
 
     // Context menu actions
 <<<<<<< HEAD
+<<<<<<< HEAD
     QAction *copyAddressAction = new QAction(tr("&Copy Address"), this);
     QAction *copyLabelAction = new QAction(tr("Copy &Label"), this);
     QAction *editAction = new QAction(tr("&Edit"), this);
 =======
     QAction *copyAddressAction = new QAction(ui->copyAddress->text(), this);
+=======
+    QAction *copyAddressAction = new QAction(ui->copyToClipboard->text(), this);
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     QAction *copyLabelAction = new QAction(tr("Copy &Label"), this);
     QAction *editAction = new QAction(tr("&Edit"), this);
     QAction *sendCoinsAction = new QAction(tr("Send &Coins"), this);
     QAction *showQRCodeAction = new QAction(ui->showQRCode->text(), this);
     QAction *signMessageAction = new QAction(ui->signMessage->text(), this);
     QAction *verifyMessageAction = new QAction(ui->verifyMessage->text(), this);
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
     deleteAction = new QAction(ui->deleteAddress->text(), this);
+=======
+    deleteAction = new QAction(ui->deleteButton->text(), this);
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
     // Build context menu
     contextMenu = new QMenu();
@@ -163,9 +180,10 @@ AddressBookPage::AddressBookPage(Mode mode, Tabs tab, QWidget *parent) :
 >>>>>>> Committing original src/qt
 
     // Connect signals for context menu actions
-    connect(copyAddressAction, SIGNAL(triggered()), this, SLOT(on_copyAddress_clicked()));
+    connect(copyAddressAction, SIGNAL(triggered()), this, SLOT(on_copyToClipboard_clicked()));
     connect(copyLabelAction, SIGNAL(triggered()), this, SLOT(onCopyLabelAction()));
     connect(editAction, SIGNAL(triggered()), this, SLOT(onEditAction()));
+<<<<<<< HEAD
     connect(deleteAction, SIGNAL(triggered()), this, SLOT(on_deleteAddress_clicked()));
 <<<<<<< HEAD
 
@@ -174,6 +192,10 @@ AddressBookPage::AddressBookPage(Mode mode, Tabs tab, QWidget *parent) :
     connect(ui->closeButton, SIGNAL(clicked()), this, SLOT(accept()));
 =======
     connect(sendCoinsAction, SIGNAL(triggered()), this, SLOT(onSendCoinsAction()));
+=======
+    connect(deleteAction, SIGNAL(triggered()), this, SLOT(on_deleteButton_clicked()));
+    connect(sendCoinsAction, SIGNAL(triggered()), this, SLOT(onSendCoins_clicked()));
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     connect(showQRCodeAction, SIGNAL(triggered()), this, SLOT(on_showQRCode_clicked()));
     connect(signMessageAction, SIGNAL(triggered()), this, SLOT(on_signMessage_clicked()));
     connect(verifyMessageAction, SIGNAL(triggered()), this, SLOT(on_verifyMessage_clicked()));
@@ -219,6 +241,7 @@ void AddressBookPage::setModel(AddressTableModel *model)
 
     // Set column widths
 <<<<<<< HEAD
+<<<<<<< HEAD
 #if QT_VERSION < 0x050000
     ui->tableView->horizontalHeader()->setResizeMode(AddressTableModel::Label, QHeaderView::Stretch);
     ui->tableView->horizontalHeader()->setResizeMode(AddressTableModel::Address, QHeaderView::ResizeToContents);
@@ -232,13 +255,20 @@ void AddressBookPage::setModel(AddressTableModel *model)
 =======
     ui->tableView->horizontalHeader()->setResizeMode(AddressTableModel::Label, QHeaderView::Stretch);
     ui->tableView->horizontalHeader()->setResizeMode(AddressTableModel::Address, QHeaderView::ResizeToContents);
+=======
+    ui->tableView->horizontalHeader()->resizeSection(
+            AddressTableModel::Address, 320);
+    ui->tableView->horizontalHeader()->setResizeMode(
+            AddressTableModel::Label, QHeaderView::Stretch);
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
     connect(ui->tableView->selectionModel(), SIGNAL(selectionChanged(QItemSelection,QItemSelection)),
             this, SLOT(selectionChanged()));
 >>>>>>> Committing original src/qt
 
     // Select row for newly created address
-    connect(model, SIGNAL(rowsInserted(QModelIndex,int,int)), this, SLOT(selectNewAddress(QModelIndex,int,int)));
+    connect(model, SIGNAL(rowsInserted(QModelIndex,int,int)),
+            this, SLOT(selectNewAddress(QModelIndex,int,int)));
 
     selectionChanged();
 }
@@ -250,8 +280,12 @@ void AddressBookPage::setOptionsModel(OptionsModel *optionsModel)
     this->optionsModel = optionsModel;
 }
 
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
 void AddressBookPage::on_copyAddress_clicked()
+=======
+void AddressBookPage::on_copyToClipboard_clicked()
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 {
     GUIUtil::copyEntryData(ui->tableView, AddressTableModel::Address);
 }
@@ -317,7 +351,7 @@ void AddressBookPage::on_verifyMessage_clicked()
     }
 }
 
-void AddressBookPage::onSendCoinsAction()
+void AddressBookPage::onSendCoins_clicked()
 {
     QTableView *table = ui->tableView;
     QModelIndexList indexes = table->selectionModel()->selectedRows(AddressTableModel::Address);
@@ -329,8 +363,12 @@ void AddressBookPage::onSendCoinsAction()
     }
 }
 
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
 void AddressBookPage::on_newAddress_clicked()
+=======
+void AddressBookPage::on_newAddressButton_clicked()
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 {
     if(!model)
         return;
@@ -352,7 +390,7 @@ void AddressBookPage::on_newAddress_clicked()
     }
 }
 
-void AddressBookPage::on_deleteAddress_clicked()
+void AddressBookPage::on_deleteButton_clicked()
 {
     QTableView *table = ui->tableView;
     if(!table->selectionModel())
@@ -378,8 +416,8 @@ void AddressBookPage::selectionChanged()
         {
         case SendingTab:
             // In sending tab, allow deletion of selection
-            ui->deleteAddress->setEnabled(true);
-            ui->deleteAddress->setVisible(true);
+            ui->deleteButton->setEnabled(true);
+            ui->deleteButton->setVisible(true);
             deleteAction->setEnabled(true);
 <<<<<<< HEAD
 =======
@@ -391,8 +429,8 @@ void AddressBookPage::selectionChanged()
             break;
         case ReceivingTab:
             // Deleting receiving addresses, however, is not allowed
-            ui->deleteAddress->setEnabled(false);
-            ui->deleteAddress->setVisible(false);
+            ui->deleteButton->setEnabled(false);
+            ui->deleteButton->setVisible(false);
             deleteAction->setEnabled(false);
 <<<<<<< HEAD
             break;
@@ -405,18 +443,22 @@ void AddressBookPage::selectionChanged()
             ui->verifyMessage->setVisible(false);
             break;
         }
-        ui->copyAddress->setEnabled(true);
+        ui->copyToClipboard->setEnabled(true);
         ui->showQRCode->setEnabled(true);
 >>>>>>> Committing original src/qt
     }
     else
     {
+<<<<<<< HEAD
         ui->deleteAddress->setEnabled(false);
 <<<<<<< HEAD
         ui->copyAddress->setEnabled(false);
 =======
+=======
+        ui->deleteButton->setEnabled(false);
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         ui->showQRCode->setEnabled(false);
-        ui->copyAddress->setEnabled(false);
+        ui->copyToClipboard->setEnabled(false);
         ui->signMessage->setEnabled(false);
         ui->verifyMessage->setEnabled(false);
 >>>>>>> Committing original src/qt
@@ -453,7 +495,7 @@ void AddressBookPage::done(int retval)
     QDialog::done(retval);
 }
 
-void AddressBookPage::on_exportButton_clicked()
+void AddressBookPage::exportClicked()
 {
     // CSV is currently the only supported format
 <<<<<<< HEAD

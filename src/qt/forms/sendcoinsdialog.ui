@@ -795,10 +795,14 @@
          </property>
          <property name="text">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <string notr="true">123.456 BTC</string>
 =======
           <string>123.456 BTC</string>
 >>>>>>> Committing original src/qt
+=======
+          <string>... NMC</string>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>

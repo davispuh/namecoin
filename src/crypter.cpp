@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2009-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -11,6 +12,21 @@
 #include <boost/foreach.hpp>
 #include <openssl/aes.h>
 #include <openssl/evp.h>
+=======
+// Copyright (c) 2009-2012 The Bitcoin Developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <openssl/aes.h>
+#include <openssl/evp.h>
+#include <vector>
+#include <string>
+#ifdef WIN32
+#include <windows.h>
+#endif
+
+#include "crypter.h"
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
 bool CCrypter::SetKeyFromPassphrase(const SecureString& strKeyData, const std::vector<unsigned char>& chSalt, const unsigned int nRounds, const unsigned int nDerivationMethod)
 {
@@ -100,17 +116,28 @@ bool CCrypter::Decrypt(const std::vector<unsigned char>& vchCiphertext, CKeyingM
 }
 
 
+<<<<<<< HEAD
 bool EncryptSecret(const CKeyingMaterial& vMasterKey, const CKeyingMaterial &vchPlaintext, const uint256& nIV, std::vector<unsigned char> &vchCiphertext)
+=======
+bool EncryptSecret(CKeyingMaterial& vMasterKey, const CSecret &vchPlaintext, const uint256& nIV, std::vector<unsigned char> &vchCiphertext)
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 {
     CCrypter cKeyCrypter;
     std::vector<unsigned char> chIV(WALLET_CRYPTO_KEY_SIZE);
     memcpy(&chIV[0], &nIV, WALLET_CRYPTO_KEY_SIZE);
     if(!cKeyCrypter.SetKey(vMasterKey, chIV))
         return false;
+<<<<<<< HEAD
     return cKeyCrypter.Encrypt(*((const CKeyingMaterial*)&vchPlaintext), vchCiphertext);
 }
 
 bool DecryptSecret(const CKeyingMaterial& vMasterKey, const std::vector<unsigned char>& vchCiphertext, const uint256& nIV, CKeyingMaterial& vchPlaintext)
+=======
+    return cKeyCrypter.Encrypt((CKeyingMaterial)vchPlaintext, vchCiphertext);
+}
+
+bool DecryptSecret(const CKeyingMaterial& vMasterKey, const std::vector<unsigned char>& vchCiphertext, const uint256& nIV, CSecret& vchPlaintext)
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 {
     CCrypter cKeyCrypter;
     std::vector<unsigned char> chIV(WALLET_CRYPTO_KEY_SIZE);
@@ -119,6 +146,7 @@ bool DecryptSecret(const CKeyingMaterial& vMasterKey, const std::vector<unsigned
         return false;
     return cKeyCrypter.Decrypt(vchCiphertext, *((CKeyingMaterial*)&vchPlaintext));
 }
+<<<<<<< HEAD
 
 bool CCryptoKeyStore::SetCrypted()
 {
@@ -272,3 +300,5 @@ bool CCryptoKeyStore::EncryptKeys(CKeyingMaterial& vMasterKeyIn)
     }
     return true;
 }
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.

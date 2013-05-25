@@ -32,22 +32,32 @@
 #include "bitcoingui.h"
 
 #include "transactiontablemodel.h"
+#include "addressbookpage.h"
+#include "sendcoinsdialog.h"
+#include "signverifymessagedialog.h"
 #include "optionsdialog.h"
 #include "aboutdialog.h"
 #include "clientmodel.h"
 #include "walletmodel.h"
-#include "walletframe.h"
+#include "editaddressdialog.h"
 #include "optionsmodel.h"
 #include "transactiondescdialog.h"
+#include "addresstablemodel.h"
+#include "transactionview.h"
+#include "overviewpage.h"
 #include "bitcoinunits.h"
 #include "guiconstants.h"
+#include "askpassphrasedialog.h"
 #include "notificator.h"
 #include "guiutil.h"
 #include "rpcconsole.h"
 #include "ui_interface.h"
+<<<<<<< HEAD
 #include "wallet.h"
 #include "init.h"
 >>>>>>> Committing original src/qt
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
 #ifdef Q_OS_MAC
 #include "macdockiconhandler.h"
@@ -105,23 +115,24 @@ BitcoinGUI::BitcoinGUI(bool fIsTestnet, QWidget *parent) :
 #include <QStackedWidget>
 #include <QDateTime>
 #include <QMovie>
+#include <QFileDialog>
+#include <QDesktopServices>
 #include <QTimer>
 #include <QDragEnterEvent>
 #include <QUrl>
 #include <QMimeData>
 #include <QStyle>
-#include <QSettings>
-#include <QDesktopWidget>
-#include <QListWidget>
 
 #include <iostream>
 
-const QString BitcoinGUI::DEFAULT_WALLET = "~Default";
-
-BitcoinGUI::BitcoinGUI(QWidget *parent) :
+BitcoinGUI::BitcoinGUI(QWidget *parent):
     QMainWindow(parent),
     clientModel(0),
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
+=======
+    walletModel(0),
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     encryptWalletAction(0),
     changePassphraseAction(0),
     aboutQtAction(0),
@@ -193,28 +204,34 @@ BitcoinGUI::BitcoinGUI(QWidget *parent) :
 =======
     prevBlocks(0)
 {
-    restoreWindowGeometry();
-    setWindowTitle(tr("Bitcoin") + " - " + tr("Wallet"));
+    resize(850, 550);
+    setWindowTitle(tr("Namecoin") + " - " + tr("Wallet"));
 #ifndef Q_OS_MAC
-    QApplication::setWindowIcon(QIcon(":icons/bitcoin"));
+    qApp->setWindowIcon(QIcon(":icons/bitcoin"));
     setWindowIcon(QIcon(":icons/bitcoin"));
 #else
     setUnifiedTitleAndToolBarOnMac(true);
     QApplication::setAttribute(Qt::AA_DontShowIconsInMenus);
 #endif
+<<<<<<< HEAD
     // Create wallet frame and make it the central widget
     walletFrame = new WalletFrame(this);
     setCentralWidget(walletFrame);
 >>>>>>> Committing original src/qt
 
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     // Accept D&D of URIs
     setAcceptDrops(true);
 
     // Create actions for the toolbar, menu bar and tray/dock icon
+<<<<<<< HEAD
     // Needs walletFrame to be initialized
 <<<<<<< HEAD
     createActions(fIsTestnet);
 =======
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     createActions();
 >>>>>>> Committing original src/qt
 
@@ -230,6 +247,31 @@ BitcoinGUI::BitcoinGUI(QWidget *parent) :
 =======
     createTrayIcon();
 >>>>>>> Committing original src/qt
+
+    // Create tabs
+    overviewPage = new OverviewPage();
+
+    transactionsPage = new QWidget(this);
+    QVBoxLayout *vbox = new QVBoxLayout();
+    transactionView = new TransactionView(this);
+    vbox->addWidget(transactionView);
+    transactionsPage->setLayout(vbox);
+
+    addressBookPage = new AddressBookPage(AddressBookPage::ForEditing, AddressBookPage::SendingTab);
+
+    receiveCoinsPage = new AddressBookPage(AddressBookPage::ForEditing, AddressBookPage::ReceivingTab);
+
+    sendCoinsPage = new SendCoinsDialog(this);
+
+    signVerifyMessageDialog = new SignVerifyMessageDialog(this);
+
+    centralWidget = new QStackedWidget(this);
+    centralWidget->addWidget(overviewPage);
+    centralWidget->addWidget(transactionsPage);
+    centralWidget->addWidget(addressBookPage);
+    centralWidget->addWidget(receiveCoinsPage);
+    centralWidget->addWidget(sendCoinsPage);
+    setCentralWidget(centralWidget);
 
     // Create status bar
     statusBar();
@@ -263,7 +305,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent) :
     // Override style sheet for progress bar for styles that have a segmented progress bar,
     // as they make the text unreadable (workaround for issue #1071)
     // See https://qt-project.org/doc/qt-4.8/gallery.html
-    QString curStyle = QApplication::style()->metaObject()->className();
+    QString curStyle = qApp->style()->metaObject()->className();
     if(curStyle == "QWindowsStyle" || curStyle == "QWindowsXPStyle")
     {
         progressBar->setStyleSheet("QProgressBar { background-color: #e8e8e8; border: 1px solid grey; border-radius: 7px; padding: 1px; text-align: center; } QProgressBar::chunk { background: QLinearGradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #FF8000, stop: 1 orange); border-radius: 7px; margin: 0px; }");
@@ -290,16 +332,36 @@ BitcoinGUI::BitcoinGUI(QWidget *parent) :
 =======
     syncIconMovie = new QMovie(":/movies/update_spinner", "mng", this);
 
+    // Clicking on a transaction on the overview page simply sends you to transaction history page
+    connect(overviewPage, SIGNAL(transactionClicked(QModelIndex)), this, SLOT(gotoHistoryPage()));
+    connect(overviewPage, SIGNAL(transactionClicked(QModelIndex)), transactionView, SLOT(focusTransaction(QModelIndex)));
+
+    // Double-clicking on a transaction on the transaction history page shows details
+    connect(transactionView, SIGNAL(doubleClicked(QModelIndex)), transactionView, SLOT(showDetails()));
+
     rpcConsole = new RPCConsole(this);
     connect(openRPCConsoleAction, SIGNAL(triggered()), rpcConsole, SLOT(show()));
 
+    // Clicking on "Send Coins" in the address book sends you to the send coins tab
+    connect(addressBookPage, SIGNAL(sendCoins(QString)), this, SLOT(gotoSendCoinsPage(QString)));
+    // Clicking on "Verify Message" in the address book opens the verify message tab in the Sign/Verify Message dialog
+    connect(addressBookPage, SIGNAL(verifyMessage(QString)), this, SLOT(gotoVerifyMessageTab(QString)));
+    // Clicking on "Sign Message" in the receive coins page opens the sign message tab in the Sign/Verify Message dialog
+    connect(receiveCoinsPage, SIGNAL(signMessage(QString)), this, SLOT(gotoSignMessageTab(QString)));
+
     // Install event filter to be able to catch status tip events (QEvent::StatusTip)
     this->installEventFilter(this);
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
+=======
+
+    gotoOverviewPage();
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 }
 
 BitcoinGUI::~BitcoinGUI()
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     // Unsubscribe from notifications from core
     unsubscribeFromCoreSignals();
@@ -308,11 +370,12 @@ BitcoinGUI::~BitcoinGUI()
 =======
     saveWindowGeometry();
 >>>>>>> Committing original src/qt
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     if(trayIcon) // Hide tray icon, as deleting will let it linger until quit (on Ubuntu)
         trayIcon->hide();
 #ifdef Q_OS_MAC
     delete appMenuBar;
-    MacDockIconHandler::instance()->setMainWindow(NULL);
 #endif
 }
 
@@ -331,17 +394,21 @@ void BitcoinGUI::createActions()
     overviewAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_1));
     tabGroup->addAction(overviewAction);
 
-    sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&Send"), this);
-    sendCoinsAction->setStatusTip(tr("Send coins to a Bitcoin address"));
+    sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&Send coins"), this);
+    sendCoinsAction->setStatusTip(tr("Send coins to a Namecoin address"));
     sendCoinsAction->setToolTip(sendCoinsAction->statusTip());
     sendCoinsAction->setCheckable(true);
     sendCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_2));
     tabGroup->addAction(sendCoinsAction);
 
+<<<<<<< HEAD
     receiveCoinsAction = new QAction(QIcon(":/icons/receiving_addresses"), tr("&Receive"), this);
 <<<<<<< HEAD
     receiveCoinsAction->setStatusTip(tr("Request payments (generates QR codes and bitcoin: URIs)"));
 =======
+=======
+    receiveCoinsAction = new QAction(QIcon(":/icons/receiving_addresses"), tr("&Receive coins"), this);
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     receiveCoinsAction->setStatusTip(tr("Show the list of addresses for receiving payments"));
 >>>>>>> Committing original src/qt
     receiveCoinsAction->setToolTip(receiveCoinsAction->statusTip());
@@ -357,10 +424,14 @@ void BitcoinGUI::createActions()
     tabGroup->addAction(historyAction);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     // These showNormalIfMinimized are needed because Send Coins and Receive Coins
     // can be triggered from the tray menu, and need to show the GUI to be useful.
 =======
     addressBookAction = new QAction(QIcon(":/icons/address-book"), tr("&Addresses"), this);
+=======
+    addressBookAction = new QAction(QIcon(":/icons/address-book"), tr("&Address Book"), this);
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     addressBookAction->setStatusTip(tr("Edit the list of stored addresses and labels"));
     addressBookAction->setToolTip(addressBookAction->statusTip());
     addressBookAction->setCheckable(true);
@@ -387,6 +458,7 @@ void BitcoinGUI::createActions()
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
 <<<<<<< HEAD
+<<<<<<< HEAD
     if (!fIsTestnet)
         aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About Bitcoin Core"), this);
     else
@@ -401,13 +473,17 @@ void BitcoinGUI::createActions()
 =======
     aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About Bitcoin"), this);
     aboutAction->setStatusTip(tr("Show information about Bitcoin"));
+=======
+    aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About Namecoin"), this);
+    aboutAction->setStatusTip(tr("Show information about Namecoin"));
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     aboutAction->setMenuRole(QAction::AboutRole);
     aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
 >>>>>>> Committing original src/qt
     aboutQtAction->setStatusTip(tr("Show information about Qt"));
     aboutQtAction->setMenuRole(QAction::AboutQtRole);
     optionsAction = new QAction(QIcon(":/icons/options"), tr("&Options..."), this);
-    optionsAction->setStatusTip(tr("Modify configuration options for Bitcoin"));
+    optionsAction->setStatusTip(tr("Modify configuration options for Namecoin"));
     optionsAction->setMenuRole(QAction::PreferencesRole);
 <<<<<<< HEAD
     if (!fIsTestnet)
@@ -418,7 +494,6 @@ void BitcoinGUI::createActions()
     toggleHideAction = new QAction(QIcon(":/icons/bitcoin"), tr("&Show / Hide"), this);
 >>>>>>> Committing original src/qt
     toggleHideAction->setStatusTip(tr("Show or hide the main Window"));
-
     encryptWalletAction = new QAction(QIcon(":/icons/lock_closed"), tr("&Encrypt Wallet..."), this);
     encryptWalletAction->setStatusTip(tr("Encrypt the private keys that belong to your wallet"));
     encryptWalletAction->setCheckable(true);
@@ -427,10 +502,13 @@ void BitcoinGUI::createActions()
     changePassphraseAction = new QAction(QIcon(":/icons/key"), tr("&Change Passphrase..."), this);
     changePassphraseAction->setStatusTip(tr("Change the passphrase used for wallet encryption"));
     signMessageAction = new QAction(QIcon(":/icons/edit"), tr("Sign &message..."), this);
-    signMessageAction->setStatusTip(tr("Sign messages with your Bitcoin addresses to prove you own them"));
+    signMessageAction->setStatusTip(tr("Sign messages with your Namecoin addresses to prove you own them"));
     verifyMessageAction = new QAction(QIcon(":/icons/transaction_0"), tr("&Verify message..."), this);
-    verifyMessageAction->setStatusTip(tr("Verify messages to ensure they were signed with specified Bitcoin addresses"));
+    verifyMessageAction->setStatusTip(tr("Verify messages to ensure they were signed with specified Namecoin addresses"));
 
+    exportAction = new QAction(QIcon(":/icons/export"), tr("&Export..."), this);
+    exportAction->setStatusTip(tr("Export the data in the current tab to a file"));
+    exportAction->setToolTip(exportAction->statusTip());
     openRPCConsoleAction = new QAction(QIcon(":/icons/debugwindow"), tr("&Debug window"), this);
     openRPCConsoleAction->setStatusTip(tr("Open debugging and diagnostic console"));
 
@@ -454,6 +532,7 @@ void BitcoinGUI::createActions()
     connect(optionsAction, SIGNAL(triggered()), this, SLOT(optionsClicked()));
     connect(toggleHideAction, SIGNAL(triggered()), this, SLOT(toggleHidden()));
 <<<<<<< HEAD
+<<<<<<< HEAD
     connect(showHelpMessageAction, SIGNAL(triggered()), this, SLOT(showHelpMessageClicked()));
 #ifdef ENABLE_WALLET
     if(walletFrame)
@@ -472,6 +551,11 @@ void BitcoinGUI::createActions()
     connect(encryptWalletAction, SIGNAL(triggered(bool)), walletFrame, SLOT(encryptWallet(bool)));
     connect(backupWalletAction, SIGNAL(triggered()), walletFrame, SLOT(backupWallet()));
     connect(changePassphraseAction, SIGNAL(triggered()), walletFrame, SLOT(changePassphrase()));
+=======
+    connect(encryptWalletAction, SIGNAL(triggered(bool)), this, SLOT(encryptWallet(bool)));
+    connect(backupWalletAction, SIGNAL(triggered()), this, SLOT(backupWallet()));
+    connect(changePassphraseAction, SIGNAL(triggered()), this, SLOT(changePassphrase()));
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     connect(signMessageAction, SIGNAL(triggered()), this, SLOT(gotoSignMessageTab()));
     connect(verifyMessageAction, SIGNAL(triggered()), this, SLOT(gotoVerifyMessageTab()));
 >>>>>>> Committing original src/qt
@@ -520,6 +604,7 @@ void BitcoinGUI::createMenuBar()
     help->addAction(showHelpMessageAction);
 =======
     file->addAction(backupWalletAction);
+    file->addAction(exportAction);
     file->addAction(signMessageAction);
     file->addAction(verifyMessageAction);
     file->addSeparator();
@@ -560,7 +645,14 @@ void BitcoinGUI::createToolBars()
     toolbar->addAction(receiveCoinsAction);
     toolbar->addAction(historyAction);
     toolbar->addAction(addressBookAction);
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
+=======
+
+    QToolBar *toolbar2 = addToolBar(tr("Actions toolbar"));
+    toolbar2->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+    toolbar2->addAction(exportAction);
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 }
 
 void BitcoinGUI::setClientModel(ClientModel *clientModel)
@@ -575,7 +667,7 @@ void BitcoinGUI::setClientModel(ClientModel *clientModel)
         {
             setWindowTitle(windowTitle() + QString(" ") + tr("[testnet]"));
 #ifndef Q_OS_MAC
-            QApplication::setWindowIcon(QIcon(":icons/bitcoin_testnet"));
+            qApp->setWindowIcon(QIcon(":icons/bitcoin_testnet"));
             setWindowIcon(QIcon(":icons/bitcoin_testnet"));
 #else
             MacDockIconHandler::instance()->setIcon(QIcon(":icons/bitcoin_testnet"));
@@ -594,7 +686,8 @@ void BitcoinGUI::setClientModel(ClientModel *clientModel)
 >>>>>>> Committing original src/qt
         // Create system tray menu (or setup the dock menu) that late to prevent users from calling actions,
         // while the client has not yet fully loaded
-        createTrayIconMenu();
+        if(trayIcon)
+            createTrayIconMenu();
 
         // Keep up to date with client
         setNumConnections(clientModel->getNumConnections());
@@ -627,11 +720,14 @@ bool BitcoinGUI::addWallet(const QString& name, WalletModel *walletModel)
         // Receive and report messages from network/worker thread
         connect(clientModel, SIGNAL(message(QString,QString,unsigned int)), this, SLOT(message(QString,QString,unsigned int)));
 
+        overviewPage->setClientModel(clientModel);
         rpcConsole->setClientModel(clientModel);
-        walletFrame->setClientModel(clientModel);
+        addressBookPage->setOptionsModel(clientModel->getOptionsModel());
+        receiveCoinsPage->setOptionsModel(clientModel->getOptionsModel());
     }
 }
 
+<<<<<<< HEAD
 bool BitcoinGUI::addWallet(const QString& name, WalletModel *walletModel)
 {
 >>>>>>> Committing original src/qt
@@ -677,6 +773,34 @@ void BitcoinGUI::setWalletActionsEnabled(bool enabled)
 void BitcoinGUI::createTrayIcon(bool fIsTestnet)
 =======
     walletFrame->removeAllWallets();
+=======
+void BitcoinGUI::setWalletModel(WalletModel *walletModel)
+{
+    this->walletModel = walletModel;
+    if(walletModel)
+    {
+        // Receive and report messages from wallet thread
+        connect(walletModel, SIGNAL(message(QString,QString,unsigned int)), this, SLOT(message(QString,QString,unsigned int)));
+
+        // Put transaction list in tabs
+        transactionView->setModel(walletModel);
+        overviewPage->setWalletModel(walletModel);
+        addressBookPage->setModel(walletModel->getAddressTableModel());
+        receiveCoinsPage->setModel(walletModel->getAddressTableModel());
+        sendCoinsPage->setModel(walletModel);
+        signVerifyMessageDialog->setModel(walletModel);
+
+        setEncryptionStatus(walletModel->getEncryptionStatus());
+        connect(walletModel, SIGNAL(encryptionStatusChanged(int)), this, SLOT(setEncryptionStatus(int)));
+
+        // Balloon pop-up for new transaction
+        connect(walletModel->getTransactionTableModel(), SIGNAL(rowsInserted(QModelIndex,int,int)),
+                this, SLOT(incomingTransaction(QModelIndex,int,int)));
+
+        // Ask for passphrase if needed
+        connect(walletModel, SIGNAL(requireUnlock()), this, SLOT(unlockWallet()));
+    }
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 }
 
 void BitcoinGUI::createTrayIcon()
@@ -685,6 +809,7 @@ void BitcoinGUI::createTrayIcon()
 #ifndef Q_OS_MAC
     trayIcon = new QSystemTrayIcon(this);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     if (!fIsTestnet)
     {
@@ -703,22 +828,25 @@ void BitcoinGUI::createTrayIcon()
     notificator = new Notificator(QApplication::applicationName(), trayIcon, this);
 =======
     trayIcon->setToolTip(tr("Bitcoin client"));
+=======
+    trayIcon->setToolTip(tr("Namecoin client"));
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     trayIcon->setIcon(QIcon(":/icons/toolbar"));
     trayIcon->show();
 #endif
 
+<<<<<<< HEAD
     notificator = new Notificator(QApplication::applicationName(), trayIcon);
 >>>>>>> Committing original src/qt
+=======
+    notificator = new Notificator(qApp->applicationName(), trayIcon);
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 }
 
 void BitcoinGUI::createTrayIconMenu()
 {
     QMenu *trayIconMenu;
 #ifndef Q_OS_MAC
-    // return if trayIcon is unset (only on non-Mac OSes)
-    if (!trayIcon)
-        return;
-
     trayIconMenu = new QMenu(this);
     trayIcon->setContextMenu(trayIconMenu);
 
@@ -727,7 +855,6 @@ void BitcoinGUI::createTrayIconMenu()
 #else
     // Note: On Mac, the dock icon is used to provide the tray's functionality.
     MacDockIconHandler *dockIconHandler = MacDockIconHandler::instance();
-    dockIconHandler->setMainWindow((QMainWindow *)this);
     trayIconMenu = dockIconHandler->dockMenu();
 #endif
 
@@ -760,6 +887,7 @@ void BitcoinGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
 #endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 void BitcoinGUI::saveWindowGeometry()
 {
@@ -784,6 +912,8 @@ void BitcoinGUI::restoreWindowGeometry()
 }
 
 >>>>>>> Committing original src/qt
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 void BitcoinGUI::optionsClicked()
 {
     if(!clientModel || !clientModel->getOptionsModel())
@@ -812,6 +942,7 @@ void BitcoinGUI::aboutClicked()
     dlg.exec();
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 void BitcoinGUI::showHelpMessageClicked()
 {
@@ -888,6 +1019,8 @@ void BitcoinGUI::gotoVerifyMessageTab(QString addr)
 =======
 >>>>>>> Committing original src/qt
 
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 void BitcoinGUI::setNumConnections(int count)
 {
     QString icon;
@@ -900,7 +1033,7 @@ void BitcoinGUI::setNumConnections(int count)
     default: icon = ":/icons/connect_4"; break;
     }
     labelConnectionsIcon->setPixmap(QIcon(icon).pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
-    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to Bitcoin network", "", count));
+    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to Namecoin network", "", count));
 }
 
 void BitcoinGUI::setNumBlocks(int count, int nTotalBlocks)
@@ -908,25 +1041,30 @@ void BitcoinGUI::setNumBlocks(int count, int nTotalBlocks)
     // Prevent orphan statusbar messages (e.g. hover Quit in main menu, wait until chain-sync starts -> garbelled text)
     statusBar()->clearMessage();
 
-    // Acquire current block source
-    enum BlockSource blockSource = clientModel->getBlockSource();
-    switch (blockSource) {
-        case BLOCK_SOURCE_NETWORK:
-            progressBarLabel->setText(tr("Synchronizing with network..."));
-            break;
-        case BLOCK_SOURCE_DISK:
-            progressBarLabel->setText(tr("Importing blocks from disk..."));
-            break;
-        case BLOCK_SOURCE_REINDEX:
-            progressBarLabel->setText(tr("Reindexing blocks on disk..."));
-            break;
-        case BLOCK_SOURCE_NONE:
-            // Case: not Importing, not Reindexing and no network connection
-            progressBarLabel->setText(tr("No block source available..."));
-            break;
+    // don't show / hide progress bar and its label if we have no connection to the network
+    enum BlockSource blockSource = clientModel ? clientModel->getBlockSource() : BLOCK_SOURCE_NONE;
+    if (blockSource == BLOCK_SOURCE_NONE || (blockSource == BLOCK_SOURCE_NETWORK && clientModel->getNumConnections() == 0))
+    {
+        progressBarLabel->setVisible(false);
+        progressBar->setVisible(false);
+
+        return;
     }
 
     QString tooltip;
+
+    QString importText;
+    switch (blockSource) {
+    case BLOCK_SOURCE_NONE:
+    case BLOCK_SOURCE_NETWORK:
+        importText = tr("Synchronizing with network...");
+        break;
+    case BLOCK_SOURCE_DISK:
+        importText = tr("Importing blocks from disk...");
+        break;
+    case BLOCK_SOURCE_REINDEX:
+        importText = tr("Reindexing blocks on disk...");
+    }
 
     QDateTime lastBlockDate = clientModel->getLastBlockDate();
     QDateTime currentDate = QDateTime::currentDateTime();
@@ -948,6 +1086,7 @@ void BitcoinGUI::setNumBlocks(int count, int nTotalBlocks)
         labelBlocksIcon->setPixmap(QIcon(":/icons/synced").pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #ifdef ENABLE_WALLET
         if(walletFrame)
             walletFrame->showOutOfSyncWarning(false);
@@ -955,6 +1094,9 @@ void BitcoinGUI::setNumBlocks(int count, int nTotalBlocks)
 =======
         walletFrame->showOutOfSyncWarning(false);
 >>>>>>> Committing original src/qt
+=======
+        overviewPage->showOutOfSyncWarning(false);
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
         progressBarLabel->setVisible(false);
         progressBar->setVisible(false);
@@ -976,6 +1118,7 @@ void BitcoinGUI::setNumBlocks(int count, int nTotalBlocks)
             timeBehindText = tr("%n week(s)","",secs/(7*24*60*60));
         }
 
+        progressBarLabel->setText(importText);
         progressBarLabel->setVisible(true);
         progressBar->setFormat(tr("%1 behind").arg(timeBehindText));
         progressBar->setMaximum(1000000000);
@@ -1003,8 +1146,12 @@ void BitcoinGUI::setNumBlocks(int count, int nTotalBlocks)
             syncIconMovie->jumpToNextFrame();
         prevBlocks = count;
 
+<<<<<<< HEAD
         walletFrame->showOutOfSyncWarning(true);
 >>>>>>> Committing original src/qt
+=======
+        overviewPage->showOutOfSyncWarning(true);
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
         tooltip += QString("<br>");
         tooltip += tr("Last received block was generated %1 ago.").arg(timeBehindText);
@@ -1022,11 +1169,12 @@ void BitcoinGUI::setNumBlocks(int count, int nTotalBlocks)
 
 void BitcoinGUI::message(const QString &title, const QString &message, unsigned int style, bool *ret)
 {
-    QString strTitle = tr("Bitcoin"); // default title
+    QString strTitle = tr("Namecoin") + " - ";
     // Default to information icon
     int nMBoxIcon = QMessageBox::Information;
     int nNotifyIcon = Notificator::Information;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     QString msgType;
 
@@ -1053,22 +1201,28 @@ void BitcoinGUI::message(const QString &title, const QString &message, unsigned 
 =======
     // Override title based on style
     QString msgType;
+=======
+    // Check for usage of predefined title
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     switch (style) {
     case CClientUIInterface::MSG_ERROR:
-        msgType = tr("Error");
+        strTitle += tr("Error");
         break;
     case CClientUIInterface::MSG_WARNING:
-        msgType = tr("Warning");
+        strTitle += tr("Warning");
         break;
     case CClientUIInterface::MSG_INFORMATION:
-        msgType = tr("Information");
+        strTitle += tr("Information");
         break;
     default:
-        msgType = title; // Use supplied title
+        strTitle += title; // Use supplied title
     }
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
     if (!msgType.isEmpty())
         strTitle += " - " + msgType;
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
     // Check for error/warning icon
     if (style & CClientUIInterface::ICON_ERROR) {
@@ -1132,7 +1286,7 @@ void BitcoinGUI::closeEvent(QCloseEvent *event)
         if(!clientModel->getOptionsModel()->getMinimizeToTray() &&
            !clientModel->getOptionsModel()->getMinimizeOnClose())
         {
-            QApplication::quit();
+            qApp->quit();
         }
 #endif
     }
@@ -1153,9 +1307,28 @@ void BitcoinGUI::askFee(qint64 nFeeRequired, bool *payFee)
     *payFee = (retval == QMessageBox::Yes);
 }
 
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
 void BitcoinGUI::incomingTransaction(const QString& date, int unit, qint64 amount, const QString& type, const QString& address)
+=======
+void BitcoinGUI::incomingTransaction(const QModelIndex& parent, int start, int /*end*/)
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 {
+    // Prevent balloon-spam when initial block download is in progress
+    if(!walletModel || !clientModel || clientModel->inInitialBlockDownload())
+        return;
+
+    TransactionTableModel *ttm = walletModel->getTransactionTableModel();
+
+    QString date = ttm->index(start, TransactionTableModel::Date, parent)
+                     .data().toString();
+    qint64 amount = ttm->index(start, TransactionTableModel::Amount, parent)
+                      .data(Qt::EditRole).toULongLong();
+    QString type = ttm->index(start, TransactionTableModel::Type, parent)
+                     .data().toString();
+    QString address = ttm->index(start, TransactionTableModel::ToAddress, parent)
+                        .data().toString();
+
     // On new transaction, make an info balloon
     message((amount)<0 ? tr("Sent transaction") : tr("Incoming transaction"),
              tr("Date: %1\n"
@@ -1163,7 +1336,7 @@ void BitcoinGUI::incomingTransaction(const QString& date, int unit, qint64 amoun
                 "Type: %3\n"
                 "Address: %4\n")
                   .arg(date)
-                  .arg(BitcoinUnits::formatWithUnit(unit, amount, true))
+                  .arg(BitcoinUnits::formatWithUnit(walletModel->getOptionsModel()->getDisplayUnit(), amount, true))
                   .arg(type)
                   .arg(address), CClientUIInterface::MSG_INFORMATION);
 }
@@ -1171,6 +1344,75 @@ void BitcoinGUI::incomingTransaction(const QString& date, int unit, qint64 amoun
 #endif
 =======
 >>>>>>> Committing original src/qt
+
+void BitcoinGUI::gotoOverviewPage()
+{
+    overviewAction->setChecked(true);
+    centralWidget->setCurrentWidget(overviewPage);
+
+    exportAction->setEnabled(false);
+    disconnect(exportAction, SIGNAL(triggered()), 0, 0);
+}
+
+void BitcoinGUI::gotoHistoryPage()
+{
+    historyAction->setChecked(true);
+    centralWidget->setCurrentWidget(transactionsPage);
+
+    exportAction->setEnabled(true);
+    disconnect(exportAction, SIGNAL(triggered()), 0, 0);
+    connect(exportAction, SIGNAL(triggered()), transactionView, SLOT(exportClicked()));
+}
+
+void BitcoinGUI::gotoAddressBookPage()
+{
+    addressBookAction->setChecked(true);
+    centralWidget->setCurrentWidget(addressBookPage);
+
+    exportAction->setEnabled(true);
+    disconnect(exportAction, SIGNAL(triggered()), 0, 0);
+    connect(exportAction, SIGNAL(triggered()), addressBookPage, SLOT(exportClicked()));
+}
+
+void BitcoinGUI::gotoReceiveCoinsPage()
+{
+    receiveCoinsAction->setChecked(true);
+    centralWidget->setCurrentWidget(receiveCoinsPage);
+
+    exportAction->setEnabled(true);
+    disconnect(exportAction, SIGNAL(triggered()), 0, 0);
+    connect(exportAction, SIGNAL(triggered()), receiveCoinsPage, SLOT(exportClicked()));
+}
+
+void BitcoinGUI::gotoSendCoinsPage(QString addr)
+{
+    sendCoinsAction->setChecked(true);
+    centralWidget->setCurrentWidget(sendCoinsPage);
+
+    exportAction->setEnabled(false);
+    disconnect(exportAction, SIGNAL(triggered()), 0, 0);
+
+    if(!addr.isEmpty())
+        sendCoinsPage->setAddress(addr);
+}
+
+void BitcoinGUI::gotoSignMessageTab(QString addr)
+{
+    // call show() in showTab_SM()
+    signVerifyMessageDialog->showTab_SM(true);
+
+    if(!addr.isEmpty())
+        signVerifyMessageDialog->setAddress_SM(addr);
+}
+
+void BitcoinGUI::gotoVerifyMessageTab(QString addr)
+{
+    // call show() in showTab_VM()
+    signVerifyMessageDialog->showTab_VM(true);
+
+    if(!addr.isEmpty())
+        signVerifyMessageDialog->setAddress_VM(addr);
+}
 
 void BitcoinGUI::dragEnterEvent(QDragEnterEvent *event)
 {
@@ -1194,15 +1436,15 @@ void BitcoinGUI::dropEvent(QDropEvent *event)
         QList<QUrl> uris = event->mimeData()->urls();
         foreach(const QUrl &uri, uris)
         {
-            if (walletFrame->handleURI(uri.toString()))
+            if (sendCoinsPage->handleURI(uri.toString()))
                 nValidUrisFound++;
         }
 
         // if valid URIs were found
         if (nValidUrisFound)
-            walletFrame->gotoSendCoinsPage();
+            gotoSendCoinsPage();
         else
-            message(tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters."),
+            message(tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid Namecoin address or malformed URI parameters."),
                       CClientUIInterface::ICON_WARNING);
     }
 
@@ -1216,7 +1458,7 @@ bool BitcoinGUI::eventFilter(QObject *object, QEvent *event)
     if (event->type() == QEvent::StatusTip)
     {
         // Prevent adding text from setStatusTip(), if we currently use the status bar for displaying other stuff
-        if (progressBarLabel->isVisible() || progressBar->isVisible())
+        if (progressBarLabel->isVisible() && progressBar->isVisible())
             return true;
     }
     return QMainWindow::eventFilter(object, event);
@@ -1239,8 +1481,13 @@ bool BitcoinGUI::handlePaymentRequest(const SendCoinsRecipient& recipient)
 void BitcoinGUI::handleURI(QString strURI)
 {
     // URI has to be valid
-    if (!walletFrame->handleURI(strURI))
-        message(tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters."),
+    if (sendCoinsPage->handleURI(strURI))
+    {
+        showNormalIfMinimized();
+        gotoSendCoinsPage();
+    }
+    else
+        message(tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid Namecoin address or malformed URI parameters."),
                   CClientUIInterface::ICON_WARNING);
 >>>>>>> Committing original src/qt
 }
@@ -1278,6 +1525,53 @@ void BitcoinGUI::setEncryptionStatus(int status)
 =======
 >>>>>>> Committing original src/qt
 
+void BitcoinGUI::encryptWallet(bool status)
+{
+    if(!walletModel)
+        return;
+    AskPassphraseDialog dlg(status ? AskPassphraseDialog::Encrypt:
+                                     AskPassphraseDialog::Decrypt, this);
+    dlg.setModel(walletModel);
+    dlg.exec();
+
+    setEncryptionStatus(walletModel->getEncryptionStatus());
+}
+
+void BitcoinGUI::backupWallet()
+{
+    QString saveDir = QDesktopServices::storageLocation(QDesktopServices::DocumentsLocation);
+    QString filename = QFileDialog::getSaveFileName(this, tr("Backup Wallet"), saveDir, tr("Wallet Data (*.dat)"));
+    if(!filename.isEmpty()) {
+        if(!walletModel->backupWallet(filename)) {
+            message(tr("Backup Failed"), tr("There was an error trying to save the wallet data to the new location."),
+                      CClientUIInterface::MSG_ERROR);
+        }
+        else
+            message(tr("Backup Successful"), tr("The wallet data was successfully saved to the new location."),
+                      CClientUIInterface::MSG_INFORMATION);
+    }
+}
+
+void BitcoinGUI::changePassphrase()
+{
+    AskPassphraseDialog dlg(AskPassphraseDialog::ChangePass, this);
+    dlg.setModel(walletModel);
+    dlg.exec();
+}
+
+void BitcoinGUI::unlockWallet()
+{
+    if(!walletModel)
+        return;
+    // Unlock wallet when requested by wallet model
+    if(walletModel->getEncryptionStatus() == WalletModel::Locked)
+    {
+        AskPassphraseDialog dlg(AskPassphraseDialog::Unlock, this);
+        dlg.setModel(walletModel);
+        dlg.exec();
+    }
+}
+
 void BitcoinGUI::showNormalIfMinimized(bool fToggleHidden)
 {
     // activateWindow() (sometimes) helps with keyboard focus on Windows
@@ -1304,6 +1598,7 @@ void BitcoinGUI::toggleHidden()
 {
     showNormalIfMinimized(true);
 }
+<<<<<<< HEAD
 
 void BitcoinGUI::detectShutdown()
 {
@@ -1344,3 +1639,5 @@ void BitcoinGUI::unsubscribeFromCoreSignals()
         QMetaObject::invokeMethod(QCoreApplication::instance(), "quit", Qt::QueuedConnection);
 >>>>>>> Committing original src/qt
 }
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.

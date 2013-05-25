@@ -8,6 +8,7 @@
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>About Bitcoin Core</source>
         <translation type="unfinished"/>
     </message>
@@ -24,9 +25,23 @@
         <source>&lt;b&gt;Bitcoin&lt;/b&gt; version</source>
         <translation>&lt;b&gt;Bitcoin&lt;/b&gt; バージョン</translation>
 >>>>>>> Committing original src/qt
+=======
+        <source>About Namecoin</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+57"/>
+        <location line="+39"/>
+        <source>&lt;b&gt;Namecoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Namecoin&lt;/b&gt; Bertsio</translation>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+    </message>
+    <message>
+        <location line="+41"/>
+        <source>Copyright © 2009-2013 The Bitcoin and Namecoin developers</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+13"/>
         <source>
 This is experimental software.
 
@@ -52,6 +67,7 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
 =======
         <translation type="unfinished"/>
     </message>
+<<<<<<< HEAD
     <message>
         <location filename="../aboutdialog.cpp" line="+14"/>
         <source>Copyright</source>
@@ -63,6 +79,8 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
 >>>>>>> Committing original src/qt
         <translation type="unfinished"/>
     </message>
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 </context>
 <context>
     <name>AddressBookPage</name>
@@ -72,18 +90,22 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
 =======
         <location filename="../forms/addressbookpage.ui" line="+14"/>
         <source>Address Book</source>
-        <translation>アドレス帳</translation>
+        <translation>Helbide-liburua</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+19"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+22"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Double-click to edit address or label</source>
-        <translation>アドレスまたはラベルを編集するにはダブルクリック</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+27"/>
         <source>Create a new address</source>
-        <translation>新規アドレスの作成</translation>
+        <translation>Sortu helbide berria</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -97,7 +119,7 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <location line="+14"/>
 >>>>>>> Committing original src/qt
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>現在選択されているアドレスをシステムのクリップボードにコピーする</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
@@ -180,12 +202,12 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Bitcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <location line="-46"/>
+        <source>These are your Namecoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../forms/addressbookpage.ui" line="+14"/>
+        <location line="+60"/>
         <source>&amp;Copy Address</source>
         <translation type="unfinished"/>
     </message>
@@ -196,7 +218,7 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Bitcoin address</source>
+        <source>Sign a message to prove you own a Namecoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -210,18 +232,8 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+27"/>
-        <source>Export the data in the current tab to a file</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>&amp;Export</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Bitcoin address</source>
+        <location line="-14"/>
+        <source>Verify a message to ensure it was signed with a specified Namecoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -232,21 +244,16 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
     <message>
         <location line="+14"/>
         <source>&amp;Delete</source>
-        <translation>削除(&amp;D)</translation>
+        <translation>&amp;Ezabatu</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+13"/>
+        <location filename="../addressbookpage.cpp" line="+65"/>
         <source>Copy &amp;Label</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>&amp;Edit</source>
 <<<<<<< HEAD
         <translation>編集 (&amp;E)</translation>
@@ -261,20 +268,15 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Send &amp;Coins</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+260"/>
+        <location line="+250"/>
         <source>Export Address Book Data</source>
-        <translation>アドレス帳データをエクスポートする</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
 >>>>>>> Committing original src/qt
         <location line="+1"/>
         <source>Comma separated file (*.csv)</source>
-        <translation>CSVファイル (*.csv)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+13"/>
@@ -288,35 +290,43 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <translation type="unfinished"/>
 =======
         <source>Error exporting</source>
-        <translation>エクスポートエラー</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+0"/>
         <source>Could not write to file %1.</source>
+<<<<<<< HEAD
         <translation>%1のファイルに書き込めませんでした。</translation>
 >>>>>>> Committing original src/qt
+=======
+        <translation type="unfinished"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
 </context>
 <context>
     <name>AddressTableModel</name>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../addresstablemodel.cpp" line="+168"/>
 =======
         <location filename="../addresstablemodel.cpp" line="+144"/>
 >>>>>>> Committing original src/qt
+=======
+        <location filename="../addresstablemodel.cpp" line="+142"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Label</source>
-        <translation>ラベル</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+0"/>
         <source>Address</source>
-        <translation>アドレス</translation>
+        <translation>Helbidea</translation>
     </message>
     <message>
         <location line="+36"/>
         <source>(no label)</source>
-        <translation>（ラベル無し）</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -333,17 +343,17 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
     <message>
         <location line="+21"/>
         <source>Enter passphrase</source>
-        <translation>パスフレーズを入力</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+14"/>
         <source>New passphrase</source>
-        <translation>新しいパスフレーズ</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+14"/>
         <source>Repeat new passphrase</source>
-        <translation>新しいパスフレーズをもう一度</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
@@ -352,54 +362,58 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <location filename="../askpassphrasedialog.cpp" line="+33"/>
 >>>>>>> Committing original src/qt
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>ウォレットの新しいパスフレーズを入力してください。&lt;br/&gt;&lt;b&gt;8個以上の単語か10個以上のランダムな文字&lt;/b&gt;を使ってください。</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
         <source>Encrypt wallet</source>
-        <translation>ウォレットを暗号化する</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>この操作はウォレットをアンロックするためにパスフレーズが必要です。</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+5"/>
         <source>Unlock wallet</source>
-        <translation>ウォレットをアンロックする</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>この操作はウォレットの暗号化解除のためにパスフレーズが必要です。</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+5"/>
         <source>Decrypt wallet</source>
-        <translation>ウォレットの暗号化を解除する</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
         <source>Change passphrase</source>
-        <translation>パスフレーズの変更</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
         <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>新旧両方のパスフレーズを入力してください。</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+46"/>
         <source>Confirm wallet encryption</source>
-        <translation>ウォレットの暗号化を確認する</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
 <<<<<<< HEAD
         <translation>警告: もしもあなたのウォレットを暗号化してパスフレーズを失ってしまったなら、&lt;b&gt;あなたの Bitcoin はすべて失われます&lt;/b&gt;!</translation>
 =======
+=======
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NAMECOINS&lt;/b&gt;!</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -435,14 +449,18 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <location line="-130"/>
         <location line="+58"/>
         <source>Wallet encrypted</source>
-        <translation>ウォレットは暗号化されました</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="-56"/>
+<<<<<<< HEAD
         <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
 <<<<<<< HEAD
         <translation>Bitcoin は暗号化プロセスを終了するために今すぐ終了します。あなたのコンピュータがマルウェアに感染してコインを盗まれることもあるので、暗号化してもあなたのウォレットを完全に保護できないことを覚えていてください。</translation>
 =======
+=======
+        <source>Namecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Namecoins from being stolen by malware infecting your computer.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -452,35 +470,35 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <location line="+42"/>
         <location line="+6"/>
         <source>Wallet encryption failed</source>
-        <translation>ウォレットの暗号化に失敗しました</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="-54"/>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
-        <translation>内部エラーによりウォレットの暗号化が失敗しました。ウォレットは暗号化されませんでした。</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+7"/>
         <location line="+48"/>
         <source>The supplied passphrases do not match.</source>
-        <translation>パスフレーズが同じではありません。</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="-37"/>
         <source>Wallet unlock failed</source>
-        <translation>ウォレットのアンロックに失敗しました</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
         <location line="+11"/>
         <location line="+19"/>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>ウォレットの暗号化解除のパスフレーズが正しくありません。</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="-20"/>
         <source>Wallet decryption failed</source>
-        <translation>ウォレットの暗号化解除に失敗しました</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+14"/>
@@ -493,8 +511,9 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>NamecoinGUI</name>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../bitcoingui.cpp" line="+295"/>
         <source>Sign &amp;message...</source>
@@ -504,23 +523,34 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <location line="+335"/>
 =======
         <location filename="../bitcoingui.cpp" line="+233"/>
+=======
+        <location filename="../bitcoingui.cpp" line="+267"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Sign &amp;message...</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+280"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+254"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Synchronizing with network...</source>
-        <translation>ネットワークに同期中……</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-407"/>
 =======
         <location line="-349"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-322"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>&amp;Overview</source>
-        <translation>概要(&amp;O)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
@@ -534,35 +564,54 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <location line="+1"/>
 >>>>>>> Committing original src/qt
         <source>Show general overview of wallet</source>
-        <translation>ウォレットの概要を見る</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+20"/>
         <source>&amp;Transactions</source>
-        <translation>取引(&amp;T)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
         <source>Browse transaction history</source>
-        <translation>取引履歴を閲覧</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+17"/>
         <source>E&amp;xit</source>
         <translation>終了(&amp;E)</translation>
 =======
         <location line="+7"/>
+=======
+        <location line="+6"/>
+        <source>&amp;Address Book</source>
+        <translation>&amp;Helbide-liburua</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Edit the list of stored addresses and labels</source>
-        <translation>保存されたアドレスとラベルのリストを編集</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-14"/>
+        <location line="-15"/>
+        <source>&amp;Receive coins</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Show the list of addresses for receiving payments</source>
-        <translation>支払い受け取り用アドレスのリストを見る</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="-8"/>
+        <source>&amp;Send coins</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+39"/>
         <source>E&amp;xit</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
@@ -570,16 +619,21 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
     <message>
         <location line="+1"/>
         <source>Quit application</source>
-        <translation>アプリケーションを終了</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
         <location line="+7"/>
 =======
         <location line="+4"/>
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <source>Show information about Bitcoin</source>
         <translation>Bitcoinに関する情報を見る</translation>
+=======
+        <source>Show information about Namecoin</source>
+        <translation type="unfinished"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
 <<<<<<< HEAD
@@ -607,6 +661,7 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <location line="+2"/>
         <source>&amp;Options...</source>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <translation>オプション... (&amp;O)</translation>
     </message>
     <message>
@@ -615,9 +670,12 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <translation>ウォレットの暗号化... (&amp;E)</translation>
 =======
         <translation>オプション(&amp;O)</translation>
+=======
+        <translation type="unfinished"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+5"/>
         <source>&amp;Encrypt Wallet...</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
@@ -660,7 +718,7 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+285"/>
+        <location line="+259"/>
         <source>Importing blocks from disk...</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
@@ -678,14 +736,25 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
 =======
         <translation type="unfinished"/>
     </message>
+    <message numerus="yes">
+        <location line="+10"/>
+        <source>~%n block(s) remaining</source>
+        <translation type="unfinished"><numerusform></numerusform></translation>
+    </message>
     <message>
-        <location line="-347"/>
-        <source>Send coins to a Bitcoin address</source>
+        <location line="-265"/>
+        <source>&amp;Export...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-65"/>
+        <source>Send coins to a Namecoin address</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
         <location line="+49"/>
+<<<<<<< HEAD
         <source>Modify configuration options for Bitcoin</source>
 <<<<<<< HEAD
         <translation>Bitcoin の設定を変更する</translation>
@@ -695,10 +764,18 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <source>Backup wallet to another location</source>
         <translation>ウォレットを他の場所にバックアップ</translation>
 =======
+=======
+        <source>Modify configuration options for Namecoin</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+17"/>
+        <source>Export the data in the current tab to a file</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-9"/>
         <source>Backup wallet to another location</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
@@ -706,10 +783,10 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
     <message>
         <location line="+2"/>
         <source>Change the passphrase used for wallet encryption</source>
-        <translation>ウォレット暗号化用パスフレーズの変更</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+9"/>
         <source>&amp;Debug window</source>
 <<<<<<< HEAD
         <translation>デバッグ ウインドウ (&amp;D)</translation>
@@ -727,7 +804,7 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
 >>>>>>> Committing original src/qt
     </message>
     <message>
-        <location line="-4"/>
+        <location line="-7"/>
         <source>&amp;Verify message...</source>
 <<<<<<< HEAD
         <translation>メッセージの検証... (&amp;V)</translation>
@@ -750,17 +827,18 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-165"/>
-        <location line="+530"/>
-        <source>Bitcoin</source>
+        <location line="-196"/>
+        <location line="+538"/>
+        <source>Namecoin</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-530"/>
+        <location line="-538"/>
         <source>Wallet</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+101"/>
         <source>&amp;Send</source>
         <translation type="unfinished"/>
@@ -788,6 +866,10 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
     <message>
         <location line="+22"/>
         <source>&amp;About Bitcoin</source>
+=======
+        <location line="+176"/>
+        <source>&amp;About Namecoin</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -806,7 +888,7 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
 >>>>>>> Committing original src/qt
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+2"/>
         <source>Encrypt the private keys that belong to your wallet</source>
 <<<<<<< HEAD
         <translation>あなたのウォレットの秘密鍵を暗号化します</translation>
@@ -816,15 +898,20 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
     </message>
     <message>
         <location line="+7"/>
+<<<<<<< HEAD
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
 <<<<<<< HEAD
         <translation>あなたが所有していることを証明するために、あなたの Bitcoin アドレスでメッセージに署名してください</translation>
 =======
+=======
+        <source>Sign messages with your Namecoin addresses to prove you own them</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
         <location line="+2"/>
+<<<<<<< HEAD
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
 <<<<<<< HEAD
         <translation>指定された Bitcoin アドレスで署名されたことを確認するためにメッセージを検証します</translation>
@@ -837,17 +924,28 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
     <message>
         <location line="+28"/>
 >>>>>>> Committing original src/qt
-        <source>&amp;File</source>
-        <translation>ファイル(&amp;F)</translation>
+=======
+        <source>Verify messages to ensure they were signed with specified Namecoin addresses</source>
+        <translation type="unfinished"/>
     </message>
     <message>
+        <location line="+31"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+        <source>&amp;File</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+14"/>
 =======
         <location line="+7"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+8"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>&amp;Settings</source>
-        <translation>設定(&amp;S)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
@@ -856,7 +954,7 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <location line="+6"/>
 >>>>>>> Committing original src/qt
         <source>&amp;Help</source>
-        <translation>ヘルプ(&amp;H)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
 <<<<<<< HEAD
@@ -865,6 +963,7 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <location line="+9"/>
 >>>>>>> Committing original src/qt
         <source>Tabs toolbar</source>
+<<<<<<< HEAD
         <translation>タブツールバー</translation>
     </message>
     <message>
@@ -947,19 +1046,33 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
 <<<<<<< HEAD
         <translation>利用可能なブロックがありません...</translation>
 =======
+=======
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Actions toolbar</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+12"/>
         <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
 <<<<<<< HEAD
         <translation>取引履歴の %2 (推定値) の内 %1 ブロックを処理しました。</translation>
 =======
+=======
+        <location line="+13"/>
+        <location line="+10"/>
+        <source>[testnet]</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
         <source>Processed %1 blocks of transaction history.</source>
 <<<<<<< HEAD
@@ -993,10 +1106,20 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
 <<<<<<< HEAD
         <translation><numerusform>%n 週間</numerusform></translation>
 =======
+=======
+        <location line="+63"/>
+        <source>Namecoin client</source>
+        <translation type="unfinished"/>
+    </message>
+    <message numerus="yes">
+        <location line="+79"/>
+        <source>%n active connection(s) to Namecoin network</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"><numerusform></numerusform></translation>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
         <source>%1 behind</source>
 <<<<<<< HEAD
@@ -1012,10 +1135,15 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
     <message>
         <location line="+14"/>
         <source>Last received block was generated %1 ago.</source>
+=======
+        <location line="+45"/>
+        <source>Processed %1 of %2 blocks of transaction history (%3% done).</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>Transactions after this will not yet be visible.</source>
 <<<<<<< HEAD
@@ -1026,10 +1154,14 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <source>Error</source>
         <translation>エラー</translation>
 =======
+=======
+        <location line="+7"/>
+        <source>Processed %1 blocks of transaction history.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+22"/>
+        <location line="+70"/>
         <source>Error</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
@@ -1055,17 +1187,52 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+70"/>
+        <location line="+66"/>
         <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-140"/>
 >>>>>>> Committing original src/qt
-        <source>Up to date</source>
-        <translation>バージョンは最新です</translation>
+=======
+        <location line="+210"/>
+        <source>Backup Successful</source>
+        <translation type="unfinished"/>
     </message>
     <message>
+        <location line="+0"/>
+        <source>The wallet data was successfully saved to the new location.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message numerus="yes">
+        <location line="-338"/>
+        <source>%n second(s) ago</source>
+        <translation type="unfinished"><numerusform></numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+4"/>
+        <source>%n minute(s) ago</source>
+        <translation type="unfinished"><numerusform></numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+4"/>
+        <source>%n hour(s) ago</source>
+        <translation type="unfinished"><numerusform></numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+4"/>
+        <source>%n day(s) ago</source>
+        <translation type="unfinished"><numerusform></numerusform></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+        <source>Up to date</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+34"/>
         <source>Catching up...</source>
@@ -1075,24 +1242,36 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <location line="+130"/>
 =======
         <location line="+31"/>
+=======
+        <location line="+7"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Catching up...</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+113"/>
+        <location line="+10"/>
+        <source>Last received block was generated %1.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+97"/>
         <source>Confirm transaction fee</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+8"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+23"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Sent transaction</source>
-        <translation>送金取引</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+0"/>
         <source>Incoming transaction</source>
-        <translation>着金取引</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
@@ -1115,26 +1294,31 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+33"/>
-        <location line="+23"/>
+        <location line="+99"/>
+        <location line="+28"/>
         <source>URI handling</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-23"/>
-        <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <location line="-28"/>
+        <location line="+28"/>
+        <source>URI can not be parsed! This can be caused by an invalid Namecoin address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+17"/>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
+<<<<<<< HEAD
         <translation>ウォレットは&lt;b&gt;暗号化され、アンロックされています&lt;/b&gt;</translation>
 >>>>>>> Committing original src/qt
+=======
+        <translation type="unfinished"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+8"/>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <translation>ウォレットは&lt;b&gt;暗号化されて、ロックされています&lt;/b&gt;</translation>
     </message>
@@ -1145,10 +1329,33 @@ Address: %4
 </translation>
 =======
         <translation>ウォレットは&lt;b&gt;暗号化され、ロックされています&lt;/b&gt;</translation>
+=======
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
+        <location line="+23"/>
+        <source>Backup Wallet</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Wallet Data (*.dat)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Backup Failed</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>There was an error trying to save the wallet data to the new location.</source>
+        <translation type="unfinished"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+    </message>
+    <message>
+        <location filename="../Namecoin.cpp" line="+109"/>
+        <source>A fatal error occurred. Namecoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -1157,7 +1364,11 @@ Address: %4
     <name>ClientModel</name>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../clientmodel.cpp" line="+119"/>
+=======
+        <location filename="../clientmodel.cpp" line="+86"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Network Alert</source>
         <translation>ネットワーク警告</translation>
     </message>
@@ -1165,6 +1376,7 @@ Address: %4
 <context>
     <name>CoinControlDialog</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/coincontroldialog.ui" line="+14"/>
         <source>Coin Control Address Selection</source>
         <translation type="unfinished"/>
@@ -1238,10 +1450,81 @@ Address: %4
         <location line="+5"/>
         <source>Date</source>
         <translation>日付</translation>
+=======
+        <location filename="../forms/editaddressdialog.ui" line="+14"/>
+        <source>Edit Address</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>&amp;Label</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>The label associated with this address book entry</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Address</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>The address associated with this address book entry. This can only be modified for sending addresses.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../editaddressdialog.cpp" line="+20"/>
+        <source>New receiving address</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>New sending address</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Edit receiving address</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Edit sending address</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+60"/>
+        <source>The entered address &quot;%1&quot; is already in the address book.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+5"/>
+        <source>The entered address &quot;%1&quot; is not a valid Namecoin address.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Could not unlock wallet.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>New key generation failed.</source>
+        <translation type="unfinished"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+    </message>
+    <message>
+<<<<<<< HEAD
+        <location line="+5"/>
         <source>Confirmations</source>
+=======
+        <location filename="../guiutil.cpp" line="+419"/>
+        <location line="+12"/>
+        <source>Namecoin-Qt</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1281,8 +1564,13 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Unlock unspent</source>
+=======
+        <location filename="../forms/optionsdialog.ui" line="+14"/>
+        <source>Options</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1291,8 +1579,13 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>Copy fee</source>
+=======
+        <location line="+6"/>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1301,6 +1594,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Copy bytes</source>
         <translation type="unfinished"/>
@@ -1308,6 +1602,15 @@ Address: %4
     <message>
         <location line="+1"/>
         <source>Copy priority</source>
+=======
+        <location line="+31"/>
+        <source>Automatically start Namecoin after logging in to the system.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Start Namecoin on system login</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1326,8 +1629,13 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>higher</source>
+=======
+        <location line="+6"/>
+        <source>Automatically open the Namecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1336,8 +1644,13 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>medium-high</source>
+=======
+        <location line="+7"/>
+        <source>Connect to the Namecoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1412,8 +1725,13 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>This label turns red, if the priority is smaller than &quot;medium&quot;.</source>
+=======
+        <location line="+13"/>
+        <source>The user interface language can be set here. This setting will take effect after restarting Namecoin.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1428,8 +1746,13 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-3"/>
         <source>Amounts below 0.546 times the minimum relay fee are shown as dust.</source>
+=======
+        <location line="+9"/>
+        <source>Whether to show Namecoin addresses in the transaction list or not.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1457,9 +1780,15 @@ Address: %4
 <context>
     <name>EditAddressDialog</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/editaddressdialog.ui" line="+14"/>
         <source>Edit Address</source>
         <translation>アドレスの編集</translation>
+=======
+        <location filename="../optionsdialog.cpp" line="+55"/>
+        <source>default</source>
+        <translation type="unfinished"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+11"/>
@@ -1482,9 +1811,16 @@ Address: %4
         <translation>アドレス帳 (&amp;A)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../editaddressdialog.cpp" line="+28"/>
         <source>New receiving address</source>
         <translation>新しい受信アドレス</translation>
+=======
+        <location line="-9"/>
+        <location line="+9"/>
+        <source>This setting will take effect after restarting Namecoin.</source>
+        <translation type="unfinished"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+4"/>
@@ -1492,6 +1828,7 @@ Address: %4
         <translation>新しい送信アドレス</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Edit receiving address</source>
         <translation>受信アドレスを編集</translation>
@@ -1510,6 +1847,32 @@ Address: %4
         <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid Bitcoin address.</source>
         <translation>入力されたアドレス &quot;%1&quot; は無効な Bitcoin アドレスです。</translation>
+=======
+        <location filename="../forms/overviewpage.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+51"/>
+        <location line="+183"/>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Namecoin network after a connection is established, but this process has not completed yet.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-141"/>
+        <source>Balance:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+58"/>
+        <source>Number of transactions:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-29"/>
+        <source>Unconfirmed:</source>
+        <translation type="unfinished"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+10"/>
@@ -1517,9 +1880,15 @@ Address: %4
         <translation>ウォレットをアンロックできませんでした。</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
         <source>New key generation failed.</source>
         <translation>新しいキーの生成に失敗しました。</translation>
+=======
+        <location line="+124"/>
+        <source>Immature:</source>
+        <translation type="unfinished"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
 </context>
 <context>
@@ -1530,6 +1899,7 @@ Address: %4
         <translation>新しいデータ ディレクトリが作成されます。</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+22"/>
         <source>name</source>
         <translation>name</translation>
@@ -1538,6 +1908,16 @@ Address: %4
         <location line="+2"/>
         <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
         <translation>ディレクトリがもうあります。 新しいのディレクトリを作るつもりなら%1を書いてください。</translation>
+=======
+        <location line="+46"/>
+        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-118"/>
+        <source>Your current balance</source>
+        <translation type="unfinished"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+3"/>
@@ -1545,6 +1925,7 @@ Address: %4
         <translation>パスが存在しますがディレクトリではありません。</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
         <source>Cannot create data directory here.</source>
         <translation>ここにデータ ディレクトリを作成することはできません。</translation>
@@ -1555,6 +1936,16 @@ Address: %4
     <message>
         <location filename="../forms/helpmessagedialog.ui" line="+19"/>
         <source>Bitcoin Core - Command-line options</source>
+=======
+        <location line="+20"/>
+        <source>Total number of transactions in wallet</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../overviewpage.cpp" line="+115"/>
+        <location line="+1"/>
+        <source>out of sync</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3898,6 +4289,7 @@ Address: %4
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-81"/>
         <location line="+8"/>
         <location line="+73"/>
@@ -3906,6 +4298,19 @@ Address: %4
 <<<<<<< HEAD
         <translation>アドレスを確かめてからもう一度試してください。</translation>
 =======
+=======
+        <location line="+10"/>
+        <location line="+23"/>
+        <location line="+26"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+36"/>
+        <location line="+53"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location filename="../rpcconsole.cpp" line="+344"/>
+        <source>N/A</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -4090,6 +4495,7 @@ Address: %4
     </message>
     <message numerus="yes">
         <location line="+7"/>
+<<<<<<< HEAD
         <source>, broadcast through %n node(s)</source>
 <<<<<<< HEAD
         <translation><numerusform>%n ノードにブロードキャスト</numerusform></translation>
@@ -4103,6 +4509,9 @@ Address: %4
 <<<<<<< HEAD
         <translation>日付</translation>
 =======
+=======
+        <source>Show the Namecoin-Qt help message to get a list with possible Namecoin command-line options.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -4135,6 +4544,7 @@ Address: %4
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <location line="+22"/>
         <location line="+58"/>
@@ -4142,16 +4552,25 @@ Address: %4
 <<<<<<< HEAD
         <translation>受信</translation>
 =======
+=======
+        <location line="-104"/>
+        <source>Namecoin - Debug window</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-77"/>
         <location line="+2"/>
         <source>own address</source>
 <<<<<<< HEAD
         <translation>自分のアドレス</translation>
 =======
+=======
+        <location line="+25"/>
+        <source>Namecoin Core</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -4165,6 +4584,7 @@ Address: %4
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+37"/>
         <location line="+12"/>
         <location line="+45"/>
@@ -4181,6 +4601,10 @@ Address: %4
 =======
         <location line="+30"/>
         <source>Credit</source>
+=======
+        <location line="+7"/>
+        <source>Open the Namecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message numerus="yes">
@@ -4235,10 +4659,15 @@ Address: %4
         <translation>メッセージ</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-7"/>
         <source>Comment</source>
         <translation>コメント</translation>
 =======
+=======
+        <location filename="../rpcconsole.cpp" line="-30"/>
+        <source>Welcome to the Namecoin RPC console.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4253,10 +4682,23 @@ Address: %4
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>Transaction ID</source>
 <<<<<<< HEAD
         <translation>取引 ID</translation>
+=======
+        <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
+        <location filename="../sendcoinsdialog.cpp" line="+124"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <location line="+6"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <source>Send Coins</source>
+        <translation type="unfinished"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+18"/>
@@ -4281,8 +4723,18 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
         <source>Debug information</source>
+=======
+        <location line="+22"/>
+        <source>Balance:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>... NMC</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -4404,9 +4856,15 @@ Address: %4
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+0"/>
         <source>Address</source>
         <translation>Helbidea</translation>
+=======
+        <location filename="../forms/sendcoinsentry.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+0"/>
@@ -4419,11 +4877,17 @@ Address: %4
         <source>Immature (%1 confirmations, will be available after %2)</source>
         <translation type="unfinished"/>
     </message>
+<<<<<<< HEAD
     <message numerus="yes">
         <location line="+16"/>
         <source>Open for %n more block(s)</source>
         <translation><numerusform>%n 以上のブロックを開く</numerusform></translation>
 =======
+=======
+    <message>
+        <location line="+34"/>
+        <source>The address to send the payment to (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message numerus="yes">
@@ -4433,11 +4897,17 @@ Address: %4
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Open until %1</source>
 <<<<<<< HEAD
         <translation>ユニット %1 を開く</translation>
 =======
+=======
+        <location line="+60"/>
+        <location filename="../sendcoinsentry.cpp" line="+25"/>
+        <source>Enter a label for this address to add it to your address book</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -4505,11 +4975,16 @@ Address: %4
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>Received from</source>
 <<<<<<< HEAD
         <translation>送り主</translation>
 =======
+=======
+        <location filename="../sendcoinsentry.cpp" line="+1"/>
+        <source>Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -4541,11 +5016,16 @@ Address: %4
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+38"/>
         <source>(n/a)</source>
 <<<<<<< HEAD
         <translation>(n/a)</translation>
 =======
+=======
+        <location line="+18"/>
+        <source>The address to sign the message with (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -4620,11 +5100,16 @@ Address: %4
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>This week</source>
 <<<<<<< HEAD
         <translation>今週</translation>
 =======
+=======
+        <location line="+21"/>
+        <source>Sign the message to prove you own this Namecoin address</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -4674,20 +5159,30 @@ Address: %4
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>Sent to</source>
 <<<<<<< HEAD
         <translation>送り先</translation>
 =======
+=======
+        <location line="+21"/>
+        <source>The address the message was signed with (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>To yourself</source>
 <<<<<<< HEAD
         <translation>自分自身</translation>
 =======
+=======
+        <location line="+40"/>
+        <source>Verify the message to ensure it was signed with the specified Namecoin address</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -4707,9 +5202,16 @@ Address: %4
         <translation>その他</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+6"/>
         <source>Enter address or label to search</source>
         <translation>検索するアドレスまたはラベルを入力</translation>
+=======
+        <location filename="../signverifymessagedialog.cpp" line="+27"/>
+        <location line="+3"/>
+        <source>Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation type="unfinished"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+6"/>
@@ -4719,8 +5221,13 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
         <source>Enter address or label to search</source>
+=======
+        <location line="+3"/>
+        <source>Enter Namecoin signature</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4810,6 +5317,7 @@ Address: %4
 =======
         <translation type="unfinished"/>
     </message>
+<<<<<<< HEAD
     <message>
         <location line="+139"/>
         <source>Export Transaction Data</source>
@@ -4829,6 +5337,14 @@ Address: %4
 =======
         <location line="+8"/>
         <source>Confirmed</source>
+=======
+</context>
+<context>
+    <name>TransactionDesc</name>
+    <message>
+        <location filename="../transactiondesc.cpp" line="+19"/>
+        <source>Open until %1</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -5057,8 +5573,13 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-23"/>
         <source>List commands</source>
+=======
+        <location filename="../transactiontablemodel.cpp" line="+226"/>
+        <source>Date</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5181,8 +5702,14 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+82"/>
         <source>Specify your own public address</source>
+=======
+        <location filename="../transactionview.cpp" line="+55"/>
+        <location line="+16"/>
+        <source>All</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5296,6 +5823,7 @@ rpcpassword=%s
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation type="unfinished"/>
@@ -5304,6 +5832,10 @@ rpcpassword=%s
         <location line="+4"/>
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+1"/>
+        <source>Edit label</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5313,6 +5845,7 @@ rpcpassword=%s
         <translation>エラー: 取引は拒否されました。wallet.dat のコピーを使い、そしてコピーしたウォレットからコインを使用したことがマークされなかったときなど、ウォレットのいくつかのコインがすでに使用されている場合に、このエラーは起こるかもしれません。</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
         <translation>エラー: この取引は、額、複雑さ、あるいは最近受け取った資金の使用のために、少なくとも %s の手数料が必要です!</translation>
@@ -5321,6 +5854,16 @@ rpcpassword=%s
         <location line="+6"/>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>ウォレットの取引を変更する際にコマンドを実行 (cmd の %s は TxID に置換される)</translation>
+=======
+        <location line="+142"/>
+        <source>Export Transaction Data</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Comma separated file (*.csv)</source>
+        <translation type="unfinished"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+18"/>
@@ -5340,8 +5883,13 @@ rpcpassword=%s
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+11"/>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
+=======
+        <location line="+1"/>
+        <source>Label</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5366,6 +5914,7 @@ rpcpassword=%s
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Bitcoin will not work properly.</source>
 <<<<<<< HEAD
@@ -5381,6 +5930,20 @@ rpcpassword=%s
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
         <translation>警告： ピアーと完全に同意しないみたいです！アップグレードは必要かもしれません、それとも他のノードはアップグレードは必要かもしれません。</translation>
 =======
+=======
+        <location line="+4"/>
+        <source>Error exporting</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Could not write to file %1.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+95"/>
+        <source>Range:</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -5393,6 +5956,7 @@ rpcpassword=%s
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
+<<<<<<< HEAD
     <message>
         <location line="+3"/>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
@@ -5465,10 +6029,44 @@ rpcpassword=%s
     <message>
         <location line="+3"/>
         <source>Corrupted block database detected</source>
+=======
+</context>
+<context>
+    <name>Namecoin-core</name>
+    <message>
+        <location filename="../bitcoinstrings.cpp" line="+88"/>
+        <source>Namecoin version</source>
+        <translation>Namecoin Bertsio</translation>
+    </message>
+    <message>
+        <location line="+82"/>
+        <source>Usage:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-23"/>
+        <source>Send command to -server or namecoind</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-21"/>
+        <source>List commands</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-11"/>
+        <source>Get help for a command</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>Options:</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
 <<<<<<< HEAD
@@ -5487,159 +6085,266 @@ rpcpassword=%s
 <<<<<<< HEAD
         <translation>ブロック データベースを今すぐ再構築しますか?</translation>
 =======
+=======
+        <location line="+22"/>
+        <source>Specify configuration file (default: namecoin.conf)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Specify pid file (default: namecoind.pid)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-47"/>
+        <source>Generate coins</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>Error initializing block database</source>
 <<<<<<< HEAD
         <translation>ブロック データベースの初期化中にエラー</translation>
 =======
+=======
+        <location line="-15"/>
+        <source>Don&apos;t generate coins</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Error initializing wallet database environment %s!</source>
 <<<<<<< HEAD
         <translation>ウォレットのデータベース環境 %s 初期化エラー!</translation>
 =======
+=======
+        <location line="+61"/>
+        <source>Specify data directory</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Error loading block database</source>
 <<<<<<< HEAD
         <translation>ブロック データベースの読み込みエラー</translation>
 =======
+=======
+        <location line="-7"/>
+        <source>Set database cache size in megabytes (default: 25)</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
         <source>Error opening block database</source>
 <<<<<<< HEAD
         <translation>ブロック データベースの開始エラー</translation>
 =======
+=======
+        <location line="-26"/>
+        <source>Listen for connections on &lt;port&gt; (default: 8334 or testnet: 18334)</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>Error: Disk space is low!</source>
 <<<<<<< HEAD
         <translation>エラー: ディスク容量不足!</translation>
 =======
+=======
+        <location line="+4"/>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Error: Wallet locked, unable to create transaction!</source>
 <<<<<<< HEAD
         <translation>エラー: ウォレットはロックされ、取引を作成できません!</translation>
 =======
+=======
+        <location line="-34"/>
+        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Error: system error: </source>
 <<<<<<< HEAD
         <translation>エラー: システム エラー:</translation>
 =======
+=======
+        <location line="+65"/>
+        <source>Specify your own public address</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
 <<<<<<< HEAD
         <translation>ポートのリスンに失敗しました。必要であれば -listen=0 を使用してください。</translation>
 =======
+=======
+        <location line="+2"/>
+        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Failed to read block info</source>
 <<<<<<< HEAD
         <translation>ブロック情報の読み取りに失敗しました</translation>
 =======
+=======
+        <location line="-114"/>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Failed to read block</source>
 <<<<<<< HEAD
         <translation>ブロックの読み取りに失敗しました</translation>
 =======
+=======
+        <location line="-28"/>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Failed to sync block index</source>
 <<<<<<< HEAD
         <translation>ブロック インデックスの同期に失敗しました</translation>
 =======
+=======
+        <location line="+26"/>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8336 or testnet: 18336)</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Failed to write block index</source>
 <<<<<<< HEAD
         <translation>ブロック インデックスの書き込みに失敗しました</translation>
 =======
+=======
+        <location line="+34"/>
+        <source>Accept command line and JSON-RPC commands</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Failed to write block info</source>
 <<<<<<< HEAD
         <translation>ブロック情報の書き込みに失敗しました</translation>
 =======
+=======
+        <location line="+62"/>
+        <source>Run in the background as a daemon and accept commands</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Failed to write block</source>
 <<<<<<< HEAD
         <translation>ブロックの書き込みに失敗しました</translation>
 =======
+=======
+        <location line="+31"/>
+        <source>Use the test network</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Failed to write file info</source>
 <<<<<<< HEAD
         <translation>ファイル情報の書き込みに失敗しました</translation>
 =======
+=======
+        <location line="-92"/>
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Failed to write to coin database</source>
 <<<<<<< HEAD
         <translation>コインデータベースへの書き込みに失敗しました</translation>
 =======
+=======
+        <location line="-74"/>
+        <source>%s, you must set a rpcpassword in the configuration file:
+ %s
+It is recommended you use the following random password:
+rpcuser=namecoinrpc
+rpcpassword=%s
+(you do not need to remember this password)
+The username and password MUST NOT be the same.
+If the file does not exist, create it with owner-readable-only file permissions.
+</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Failed to write transaction index</source>
 <<<<<<< HEAD
         <translation>取引インデックスの書き込みに失敗しました</translation>
 =======
+=======
+        <location line="+15"/>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -5650,6 +6355,7 @@ rpcpassword=%s
         <translation>元へ戻すデータの書き込みに失敗しました</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Fee per kB to add to transactions you send</source>
         <translation type="unfinished"/>
@@ -5659,29 +6365,52 @@ rpcpassword=%s
         <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
         <translation>DNS ルックアップでピアを探す (初期値: -connect を使っていなければ1)</translation>
 =======
+=======
+        <location line="+3"/>
+        <source>Cannot obtain a lock on data directory %s. Namecoin is probably already running.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Corrupted block database detected. Please restart the client with -reindex.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+2"/>
+<<<<<<< HEAD
         <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
+=======
+        <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Generate coins (default: 0)</source>
 <<<<<<< HEAD
         <translation>コインを生成 (初期値: 0)</translation>
 =======
+=======
+        <location line="+3"/>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>How many blocks to check at startup (default: 288, 0 = all)</source>
 <<<<<<< HEAD
         <translation>起動時に点検するブロック数 (初期値: 288, 0=すべて)</translation>
 =======
+=======
+        <location line="+4"/>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -5692,8 +6421,13 @@ rpcpassword=%s
         <translation>ブロックの検証レベル (0-4, 初期値: 3)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
+=======
+        <location line="+3"/>
+        <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5707,6 +6441,7 @@ rpcpassword=%s
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+15"/>
         <source>Not enough file descriptors available.</source>
         <translation>使用可能なファイルディスクリプタが不足しています。</translation>
@@ -5714,6 +6449,10 @@ rpcpassword=%s
     <message>
         <location line="+5"/>
         <source>Prepend debug output with timestamp (default: 1)</source>
+=======
+        <location line="+3"/>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Namecoin will not work properly.</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5743,6 +6482,7 @@ rpcpassword=%s
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+16"/>
         <source>Set the number of threads to service RPC calls (default: 4)</source>
         <translation type="unfinished"/>
@@ -5857,11 +6597,49 @@ rpcpassword=%s
         <translation type="unfinished"/>
     </message>
     <message>
+=======
+        <location line="+6"/>
+        <source>Connect only to the specified node(s)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Error loading block database</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Error: Disk space is low!</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Transaction creation failed!</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Wallet locked, unable to create transaction!</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <location line="+2"/>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
 >>>>>>> Committing original src/qt
@@ -5909,10 +6687,29 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+89"/>
+=======
+        <location line="+5"/>
+        <source>How thorough the block verification is (0-4, default: 3)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Importing blocks from block database...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Imports blocks from external blk000??.dat file</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Information</source>
         <translation>情報</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
         <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>不正な額 -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
@@ -5929,6 +6726,9 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+2"/>
+=======
+        <location line="+9"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
         <translation>接続毎の最大受信バッファ &lt;n&gt;*1000 バイト (初期値: 5000)</translation>
     </message>
@@ -5938,7 +6738,7 @@ rpcpassword=%s
         <translation>接続毎の最大送信バッファ &lt;n&gt;*1000 バイト (初期値: 1000)</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
         <translation>内蔵のチェックポイントと一致するブロック チェーンのみを許可 (初期値: 1)</translation>
     </message>
@@ -5976,7 +6776,12 @@ rpcpassword=%s
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+1"/>
+        <source>Rebuild blockchain index from current blk000??.dat files</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+4"/>
         <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
         <translation type="unfinished"/>
     </message>
@@ -6007,6 +6812,7 @@ rpcpassword=%s
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
 <<<<<<< HEAD
@@ -6021,6 +6827,10 @@ rpcpassword=%s
 <<<<<<< HEAD
         <translation>取引の署名に失敗しました</translation>
 =======
+=======
+        <location line="+1"/>
+        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
@@ -6043,6 +6853,7 @@ rpcpassword=%s
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
         <source>System error: </source>
         <translation type="unfinished"/>
@@ -6077,6 +6888,9 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+7"/>
+=======
+        <location line="+13"/>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
@@ -6130,12 +6944,15 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
         <source>You need to rebuild the databases using -reindex to change -txindex</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
         <location line="+1"/>
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>wallet.dat corrupt, salvage failed</source>
 <<<<<<< HEAD
         <translation>wallet.dat が壊れ、復旧に失敗しました</translation>
@@ -6188,32 +7005,32 @@ rpcpassword=%s
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-50"/>
+        <location line="-43"/>
         <source>Password for JSON-RPC connections</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-67"/>
+        <location line="-53"/>
         <source>Allow JSON-RPC connections from specified IP address</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+76"/>
+        <location line="+62"/>
         <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-120"/>
+        <location line="-103"/>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+147"/>
+        <location line="+124"/>
         <source>Upgrade wallet to latest format</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-21"/>
+        <location line="-15"/>
         <source>Set key pool size to &lt;n&gt; (default: 100)</source>
         <translation type="unfinished"/>
     </message>
@@ -6223,12 +7040,17 @@ rpcpassword=%s
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+35"/>
+        <location line="-26"/>
+        <source>How many blocks to check at startup (default: 2500, 0 = all)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+55"/>
         <source>Use OpenSSL (https) for JSON-RPC connections</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-26"/>
+        <location line="-20"/>
         <source>Server certificate file (default: server.cert)</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
@@ -6267,43 +7089,44 @@ rpcpassword=%s
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-151"/>
+        <location line="-133"/>
         <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+165"/>
+        <location line="+144"/>
         <source>This help message</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+3"/>
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-91"/>
+        <location line="-70"/>
         <source>Connect through socks proxy</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-10"/>
+        <location line="-11"/>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+55"/>
+        <location line="+43"/>
         <source>Loading addresses...</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-35"/>
+        <location line="-25"/>
         <source>Error loading wallet.dat: Wallet corrupted</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
         <source>Error loading wallet.dat: Wallet requires newer version of Bitcoin</source>
 <<<<<<< HEAD
         <translation>wallet.dat 読み込みエラー: ウォレットは Bitcoin の最新バージョンを必要とします</translation>
@@ -6323,26 +7146,39 @@ rpcpassword=%s
         <source>Invalid -proxy address: &apos;%s&apos;</source>
         <translation>無効な -proxy アドレス: &apos;%s&apos;</translation>
 =======
+=======
+        <source>Error loading wallet.dat: Wallet requires newer version of Namecoin</source>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Bitcoin to complete</source>
+        <location line="+73"/>
+        <source>Verifying block database integrity...</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-95"/>
+        <location line="+1"/>
+        <source>Verifying wallet integrity...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Wallet needed to be rewritten: restart Namecoin to complete</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-77"/>
         <source>Error loading wallet.dat</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="+20"/>
         <source>Invalid -proxy address: &apos;%s&apos;</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
-        <location line="+56"/>
+        <location line="+46"/>
         <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
 <<<<<<< HEAD
         <translation>-onlynet で指定された &apos;%s&apos; は未知のネットワークです</translation>
@@ -6364,7 +7200,7 @@ rpcpassword=%s
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-96"/>
+        <location line="-75"/>
         <source>Cannot resolve -bind address: &apos;%s&apos;</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
@@ -6383,13 +7219,18 @@ rpcpassword=%s
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+44"/>
+        <location line="+31"/>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-15"/>
+        <source>Error: could not start node</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+16"/>
         <source>Invalid amount</source>
 <<<<<<< HEAD
         <translation>無効な総額</translation>
@@ -6398,7 +7239,7 @@ rpcpassword=%s
 >>>>>>> Committing original src/qt
     </message>
     <message>
-        <location line="-6"/>
+        <location line="-4"/>
         <source>Insufficient funds</source>
 <<<<<<< HEAD
         <translation>残高不足</translation>
@@ -6407,7 +7248,7 @@ rpcpassword=%s
 >>>>>>> Committing original src/qt
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+8"/>
         <source>Loading block index...</source>
 <<<<<<< HEAD
         <translation>ブロック インデックスを読み込んでいます...</translation>
@@ -6435,17 +7276,22 @@ rpcpassword=%s
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-57"/>
+        <location line="-45"/>
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Bitcoin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Namecoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+64"/>
+        <location line="+54"/>
+        <source>Find peers using internet relay chat (default: 0)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-2"/>
         <source>Fee per KB to add to transactions you send</source>
         <translation type="unfinished"/>
     </message>
@@ -6455,10 +7301,15 @@ rpcpassword=%s
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-52"/>
+        <location line="-40"/>
         <source>Cannot downgrade wallet</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot initialize keypool</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
@@ -6498,27 +7349,27 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+64"/>
+        <location line="+49"/>
         <source>Rescanning...</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-57"/>
+        <location line="-43"/>
         <source>Done loading</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+82"/>
+        <location line="+65"/>
         <source>To use the %s option</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-74"/>
+        <location line="-60"/>
         <source>Error</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-31"/>
+        <location line="-28"/>
         <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
 %s
 If the file does not exist, create it with owner-readable-only file permissions.</source>

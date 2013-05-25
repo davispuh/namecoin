@@ -46,7 +46,8 @@ static int column_alignments[] = {
 #include "addresstablemodel.h"
 #include "bitcoinunits.h"
 
-#include "wallet.h"
+#include "../headers.h"
+#include "../wallet.h"
 #include "ui_interface.h"
 
 #include <QList>

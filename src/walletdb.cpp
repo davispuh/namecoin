@@ -1,4 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
+<<<<<<< HEAD
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -15,12 +16,26 @@
 
 #include <boost/filesystem.hpp>
 #include <boost/foreach.hpp>
+=======
+// Copyright (c) 2009-2012 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include "headers.h"
+#include "db.h"
+#include "wallet.h"
+#include <boost/filesystem.hpp>
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
 using namespace std;
 using namespace boost;
 
+<<<<<<< HEAD
 
 static uint64_t nAccountingEntryNumber = 0;
+=======
+uint64 nAccountingEntryNumber = 0;
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
 //
 // CWalletDB
@@ -40,6 +55,7 @@ bool CWalletDB::EraseName(const string& strAddress)
     return Erase(make_pair(string("name"), strAddress));
 }
 
+<<<<<<< HEAD
 bool CWalletDB::WritePurpose(const string& strAddress, const string& strPurpose)
 {
     nWalletDBUpdated++;
@@ -159,6 +175,8 @@ bool CWalletDB::WriteMinVersion(int nVersion)
     return Write(std::string("minversion"), nVersion);
 }
 
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 bool CWalletDB::ReadAccount(const string& strAccount, CAccount& account)
 {
     account.SetNull();
@@ -170,6 +188,7 @@ bool CWalletDB::WriteAccount(const string& strAccount, const CAccount& account)
     return Write(make_pair(string("acc"), strAccount), account);
 }
 
+<<<<<<< HEAD
 bool CWalletDB::WriteAccountingEntry(const uint64_t nAccEntryNum, const CAccountingEntry& acentry)
 {
     return Write(boost::make_tuple(string("acentry"), acentry.strAccount, nAccEntryNum), acentry);
@@ -181,11 +200,23 @@ bool CWalletDB::WriteAccountingEntry(const CAccountingEntry& acentry)
 }
 
 int64_t CWalletDB::GetAccountCreditDebit(const string& strAccount)
+=======
+bool CWalletDB::WriteAccountingEntry(const CAccountingEntry& acentry)
+{
+    return Write(make_tuple(string("acentry"), acentry.strAccount, ++nAccountingEntryNumber), acentry);
+}
+
+int64 CWalletDB::GetAccountCreditDebit(const string& strAccount)
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 {
     list<CAccountingEntry> entries;
     ListAccountCreditDebit(strAccount, entries);
 
+<<<<<<< HEAD
     int64_t nCreditDebit = 0;
+=======
+    int64 nCreditDebit = 0;
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     BOOST_FOREACH (const CAccountingEntry& entry, entries)
         nCreditDebit += entry.nCreditDebit;
 
@@ -194,12 +225,18 @@ int64_t CWalletDB::GetAccountCreditDebit(const string& strAccount)
 
 void CWalletDB::ListAccountCreditDebit(const string& strAccount, list<CAccountingEntry>& entries)
 {
+<<<<<<< HEAD
+=======
+    int64 nCreditDebit = 0;
+
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     bool fAllAccounts = (strAccount == "*");
 
     Dbc* pcursor = GetCursor();
     if (!pcursor)
         throw runtime_error("CWalletDB::ListAccountCreditDebit() : cannot create DB cursor");
     unsigned int fFlags = DB_SET_RANGE;
+<<<<<<< HEAD
     while (true)
     {
         // Read next record
@@ -207,6 +244,15 @@ void CWalletDB::ListAccountCreditDebit(const string& strAccount, list<CAccountin
         if (fFlags == DB_SET_RANGE)
             ssKey << boost::make_tuple(string("acentry"), (fAllAccounts? string("") : strAccount), uint64_t(0));
         CDataStream ssValue(SER_DISK, CLIENT_VERSION);
+=======
+    loop
+    {
+        // Read next record
+        CDataStream ssKey;
+        if (fFlags == DB_SET_RANGE)
+            ssKey << make_tuple(string("acentry"), (fAllAccounts? string("") : strAccount), uint64(0));
+        CDataStream ssValue;
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         int ret = ReadAtCursor(pcursor, ssKey, ssValue, fFlags);
         fFlags = DB_NEXT;
         if (ret == DB_NOTFOUND)
@@ -228,7 +274,10 @@ void CWalletDB::ListAccountCreditDebit(const string& strAccount, list<CAccountin
             break;
 
         ssValue >> acentry;
+<<<<<<< HEAD
         ssKey >> acentry.nEntryNo;
+=======
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         entries.push_back(acentry);
     }
 
@@ -236,6 +285,7 @@ void CWalletDB::ListAccountCreditDebit(const string& strAccount, list<CAccountin
 }
 
 
+<<<<<<< HEAD
 DBErrors
 CWalletDB::ReorderTransactions(CWallet* pwallet)
 {
@@ -962,4 +1012,214 @@ bool CWalletDB::EraseDestData(const std::string &address, const std::string &key
 {
     nWalletDBUpdated++;
     return Erase(boost::make_tuple(string("destdata"), address, key));
+=======
+bool CWalletDB::LoadWallet(CWallet* pwallet)
+{
+    pwallet->vchDefaultKey.clear();
+    int nFileVersion = 0;
+    vector<uint256> vWalletUpgrade;
+
+    // Modify defaults
+#ifndef __WXMSW__
+    // Tray icon sometimes disappears on 9.10 karmic koala 64-bit, leaving no way to access the program
+    fMinimizeToTray = false;
+    fMinimizeOnClose = false;
+#endif
+
+    //// todo: shouldn't we catch exceptions and try to recover and continue?
+    CRITICAL_BLOCK(pwallet->cs_mapWallet)
+    CRITICAL_BLOCK(pwallet->cs_mapKeys)
+    {
+        // Get cursor
+        Dbc* pcursor = GetCursor();
+        if (!pcursor)
+            return false;
+
+        loop
+        {
+            // Read next record
+            CDataStream ssKey;
+            CDataStream ssValue;
+            int ret = ReadAtCursor(pcursor, ssKey, ssValue);
+            if (ret == DB_NOTFOUND)
+                break;
+            else if (ret != 0)
+                return false;
+
+            // Unserialize
+            // Taking advantage of the fact that pair serialization
+            // is just the two items serialized one after the other
+            string strType;
+            ssKey >> strType;
+            if (strType == "name")
+            {
+                string strAddress;
+                ssKey >> strAddress;
+                ssValue >> pwallet->mapAddressBook[strAddress];
+            }
+            else if (strType == "tx")
+            {
+                uint256 hash;
+                ssKey >> hash;
+                CWalletTx& wtx = pwallet->mapWallet[hash];
+                ssValue >> wtx;
+                wtx.pwallet = pwallet;
+
+                if (wtx.GetHash() != hash)
+                    printf("Error in wallet.dat, hash mismatch\n");
+
+                // Undo serialize changes in 31600
+                if (31404 <= wtx.fTimeReceivedIsTxTime && wtx.fTimeReceivedIsTxTime <= 31703)
+                {
+                    if (!ssValue.empty())
+                    {
+                        char fTmp;
+                        char fUnused;
+                        ssValue >> fTmp >> fUnused >> wtx.strFromAccount;
+                        printf("LoadWallet() upgrading tx ver=%d %d '%s' %s\n", wtx.fTimeReceivedIsTxTime, fTmp, wtx.strFromAccount.c_str(), hash.ToString().c_str());
+                        wtx.fTimeReceivedIsTxTime = fTmp;
+                    }
+                    else
+                    {
+                        printf("LoadWallet() repairing tx ver=%d %s\n", wtx.fTimeReceivedIsTxTime, hash.ToString().c_str());
+                        wtx.fTimeReceivedIsTxTime = 0;
+                    }
+                    vWalletUpgrade.push_back(hash);
+                }
+
+                hooks->AddToWallet(wtx);
+                //// debug print
+                //printf("LoadWallet  %s\n", wtx.GetHash().ToString().c_str());
+                //printf(" %12I64d  %s  %s  %s\n",
+                //    wtx.vout[0].nValue,
+                //    DateTimeStrFormat("%x %H:%M:%S", wtx.GetBlockTime()).c_str(),
+                //    wtx.hashBlock.ToString().substr(0,20).c_str(),
+                //    wtx.mapValue["message"].c_str());
+            }
+            else if (strType == "acentry")
+            {
+                string strAccount;
+                ssKey >> strAccount;
+                uint64 nNumber;
+                ssKey >> nNumber;
+                if (nNumber > nAccountingEntryNumber)
+                    nAccountingEntryNumber = nNumber;
+            }
+            else if (strType == "key" || strType == "wkey")
+            {
+                vector<unsigned char> vchPubKey;
+                ssKey >> vchPubKey;
+                CWalletKey wkey;
+                if (strType == "key")
+                    ssValue >> wkey.vchPrivKey;
+                else
+                    ssValue >> wkey;
+
+                CKey key;
+                if (!key.SetPrivKey(wkey.vchPrivKey))
+                {
+                    printf("Failed to set PrivKey\n");
+                    return false;
+                }
+                else if (!key.SetPubKey(vchPubKey))
+                {
+                    printf("Failed to set PubKey\n");
+                    return false;
+                }
+                else if (!pwallet->LoadKey(key))
+                {
+                    return false;
+                    printf("Failed to add key\n");
+                }
+                //pwallet->mapKeys[vchPubKey] = wkey.vchPrivKey;
+                //mapPubKeys[Hash160(vchPubKey)] = vchPubKey;
+            }
+            else if (strType == "mkey")
+            {
+                unsigned int nID;
+                ssKey >> nID;
+                CMasterKey kMasterKey;
+                ssValue >> kMasterKey;
+                if(pwallet->mapMasterKeys.count(nID) != 0)
+                {
+                    printf("Error reading wallet database: duplicate CMasterKey id %u\n", nID);
+                    return false;
+                }
+                pwallet->mapMasterKeys[nID] = kMasterKey;
+                if (pwallet->nMasterKeyMaxID < nID)
+                    pwallet->nMasterKeyMaxID = nID;
+            }
+            else if (strType == "ckey")
+            {
+                vector<unsigned char> vchPubKey;
+                ssKey >> vchPubKey;
+                vector<unsigned char> vchPrivKey;
+                ssValue >> vchPrivKey;
+                if (!pwallet->LoadCryptedKey(vchPubKey, vchPrivKey))
+                {
+                    printf("Error reading wallet database: LoadCryptedKey failed\n");
+                    return false;
+                }
+            }
+            else if (strType == "defaultkey")
+            {
+                ssValue >> pwallet->vchDefaultKey;
+            }
+            else if (strType == "pool")
+            {
+                int64 nIndex;
+                ssKey >> nIndex;
+                pwallet->setKeyPool.insert(nIndex);
+            }
+            else if (strType == "version")
+            {
+                ssValue >> nFileVersion;
+                if (nFileVersion == 10300)
+                    nFileVersion = 300;
+            }
+            else if (strType == "setting")
+            {
+                string strKey;
+                ssKey >> strKey;
+
+                // Options
+#ifndef GUI
+                if (strKey == "fGenerateBitcoins")  ssValue >> fGenerateBitcoins;
+#endif
+                if (strKey == "nTransactionFee")    ssValue >> nTransactionFee;
+                if (strKey == "nMinimumInputValue") ssValue >> nMinimumInputValue;
+                if (strKey == "fLimitProcessors")   ssValue >> fLimitProcessors;
+                if (strKey == "nLimitProcessors")   ssValue >> nLimitProcessors;
+                if (strKey == "fMinimizeToTray")    ssValue >> fMinimizeToTray;
+                if (strKey == "fMinimizeOnClose")   ssValue >> fMinimizeOnClose;
+                if (strKey == "fUseProxy")          ssValue >> fUseProxy;
+                if (strKey == "addrProxy")          ssValue >> addrProxy;
+                if (fHaveUPnP && strKey == "fUseUPnP")           ssValue >> fUseUPnP;
+            }
+        }
+        pcursor->close();
+    }
+
+    BOOST_FOREACH(uint256 hash, vWalletUpgrade)
+        WriteTx(hash, pwallet->mapWallet[hash]);
+
+    printf("nFileVersion = %d\n", nFileVersion);
+
+#ifndef GUI
+    PrintSettingsToLog();
+#endif
+
+    // Upgrade
+    if (nFileVersion < VERSION)
+    {
+        // Get rid of old debug.log file in current directory
+        if (nFileVersion <= 105 && !pszSetDataDir[0])
+            unlink("debug.log");
+
+        WriteVersion(VERSION);
+    }
+
+
+    return true;
+>>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 }
