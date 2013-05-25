@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+=======
+>>>>>>> Committing original src/qt
 #include "bitcoinunits.h"
 
 #include <QStringList>
@@ -67,6 +70,7 @@ qint64 BitcoinUnits::factor(int unit)
     }
 }
 
+<<<<<<< HEAD
 qint64 BitcoinUnits::maxAmount(int unit)
 {
     switch(unit)
@@ -78,6 +82,8 @@ qint64 BitcoinUnits::maxAmount(int unit)
     }
 }
 
+=======
+>>>>>>> Committing original src/qt
 int BitcoinUnits::amountDigits(int unit)
 {
     switch(unit)

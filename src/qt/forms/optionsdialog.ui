@@ -6,8 +6,13 @@
    <rect>
     <x>0</x>
     <y>0</y>
+<<<<<<< HEAD
     <width>560</width>
     <height>400</height>
+=======
+    <width>540</width>
+    <height>380</height>
+>>>>>>> Committing original src/qt
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,6 +24,12 @@
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QTabWidget" name="tabWidget">
+<<<<<<< HEAD
+=======
+     <property name="tabPosition">
+      <enum>QTabWidget::North</enum>
+     </property>
+>>>>>>> Committing original src/qt
      <property name="currentIndex">
       <number>0</number>
      </property>
@@ -28,6 +39,7 @@
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_Main">
        <item>
+<<<<<<< HEAD
         <widget class="QCheckBox" name="bitcoinAtStartup">
          <property name="toolTip">
           <string>Automatically start Bitcoin after logging in to the system.</string>
@@ -144,6 +156,8 @@
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_Wallet">
        <item>
+=======
+>>>>>>> Committing original src/qt
         <widget class="QLabel" name="transactionFeeInfoLabel">
          <property name="text">
           <string>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</string>
@@ -157,7 +171,11 @@
         </widget>
        </item>
        <item>
+<<<<<<< HEAD
         <layout class="QHBoxLayout" name="horizontalLayout_1_Wallet">
+=======
+        <layout class="QHBoxLayout" name="horizontalLayout_1_Main">
+>>>>>>> Committing original src/qt
          <item>
           <widget class="QLabel" name="transactionFeeLabel">
            <property name="text">
@@ -175,7 +193,11 @@
           <widget class="BitcoinAmountField" name="transactionFee"/>
          </item>
          <item>
+<<<<<<< HEAD
           <spacer name="horizontalSpacer_1_Wallet">
+=======
+          <spacer name="horizontalSpacer_1_Main">
+>>>>>>> Committing original src/qt
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
@@ -190,6 +212,7 @@
         </layout>
        </item>
        <item>
+<<<<<<< HEAD
         <widget class="QLabel" name="spendZeroConfChangeInfoLabel">
          <property name="text">
           <string>If you disable the spending of unconfirmed change, the change from a transaction cannot be used until that transaction has at least one confirmation. This also affects how your balance is computed.</string>
@@ -206,11 +229,23 @@
         <widget class="QCheckBox" name="spendZeroConfChange">
          <property name="text">
           <string>&amp;Spend unconfirmed change (experts only)</string>
+=======
+        <widget class="QCheckBox" name="bitcoinAtStartup">
+         <property name="toolTip">
+          <string>Automatically start Bitcoin after logging in to the system.</string>
+         </property>
+         <property name="text">
+          <string>&amp;Start Bitcoin on system login</string>
+>>>>>>> Committing original src/qt
          </property>
         </widget>
        </item>
        <item>
+<<<<<<< HEAD
         <spacer name="verticalSpacer_Wallet">
+=======
+        <spacer name="verticalSpacer_Main">
+>>>>>>> Committing original src/qt
          <property name="orientation">
           <enum>Qt::Vertical</enum>
          </property>
@@ -222,6 +257,39 @@
          </property>
         </spacer>
        </item>
+<<<<<<< HEAD
+=======
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2_Main">
+         <item>
+          <spacer name="horizontalSpacer_2_Main">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="resetButton">
+           <property name="toolTip">
+            <string>Reset all client options to default.</string>
+           </property>
+           <property name="text">
+            <string>&amp;Reset Options</string>
+           </property>
+           <property name="autoDefault">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+>>>>>>> Committing original src/qt
       </layout>
      </widget>
      <widget class="QWidget" name="tabNetwork">
@@ -242,15 +310,26 @@
        <item>
         <widget class="QCheckBox" name="connectSocks">
          <property name="toolTip">
+<<<<<<< HEAD
           <string>Connect to the Bitcoin network through a SOCKS proxy.</string>
          </property>
          <property name="text">
           <string>&amp;Connect through SOCKS proxy (default proxy):</string>
+=======
+          <string>Connect to the Bitcoin network through a SOCKS proxy (e.g. when connecting through Tor).</string>
+         </property>
+         <property name="text">
+          <string>&amp;Connect through SOCKS proxy:</string>
+>>>>>>> Committing original src/qt
          </property>
         </widget>
        </item>
        <item>
+<<<<<<< HEAD
         <layout class="QHBoxLayout" name="horizontalLayout_1_Network">
+=======
+        <layout class="QHBoxLayout" name="horizontalLayout_Network">
+>>>>>>> Committing original src/qt
          <item>
           <widget class="QLabel" name="proxyIpLabel">
            <property name="text">
@@ -266,12 +345,15 @@
          </item>
          <item>
           <widget class="QValidatedLineEdit" name="proxyIp">
+<<<<<<< HEAD
            <property name="minimumSize">
             <size>
              <width>140</width>
              <height>0</height>
             </size>
            </property>
+=======
+>>>>>>> Committing original src/qt
            <property name="maximumSize">
             <size>
              <width>140</width>
@@ -279,7 +361,11 @@
             </size>
            </property>
            <property name="toolTip">
+<<<<<<< HEAD
             <string>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</string>
+=======
+            <string>IP address of the proxy (e.g. 127.0.0.1)</string>
+>>>>>>> Committing original src/qt
            </property>
           </widget>
          </item>
@@ -298,12 +384,15 @@
          </item>
          <item>
           <widget class="QLineEdit" name="proxyPort">
+<<<<<<< HEAD
            <property name="minimumSize">
             <size>
              <width>55</width>
              <height>0</height>
             </size>
            </property>
+=======
+>>>>>>> Committing original src/qt
            <property name="maximumSize">
             <size>
              <width>55</width>
@@ -336,7 +425,11 @@
           </widget>
          </item>
          <item>
+<<<<<<< HEAD
           <spacer name="horizontalSpacer_1_Network">
+=======
+          <spacer name="horizontalSpacer_Network">
+>>>>>>> Committing original src/qt
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
@@ -469,6 +562,7 @@
         </widget>
        </item>
        <item>
+<<<<<<< HEAD
         <widget class="QCheckBox" name="coinControlFeatures">
          <property name="toolTip">
           <string>Whether to show coin control features or not.</string>
@@ -479,6 +573,8 @@
         </widget>
        </item>
        <item>
+=======
+>>>>>>> Committing original src/qt
         <spacer name="verticalSpacer_Display">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
@@ -496,6 +592,7 @@
     </widget>
    </item>
    <item>
+<<<<<<< HEAD
     <widget class="QFrame" name="frame">
      <layout class="QVBoxLayout" name="verticalLayout_Bottom">
       <item>
@@ -557,6 +654,10 @@
       </widget>
      </item>
      <item>
+=======
+    <layout class="QHBoxLayout" name="horizontalLayout_Buttons">
+     <item>
+>>>>>>> Committing original src/qt
       <spacer name="horizontalSpacer_1">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
@@ -571,12 +672,15 @@
      </item>
      <item>
       <widget class="QLabel" name="statusLabel">
+<<<<<<< HEAD
        <property name="minimumSize">
         <size>
          <width>200</width>
          <height>0</height>
         </size>
        </property>
+=======
+>>>>>>> Committing original src/qt
        <property name="font">
         <font>
          <weight>75</weight>
@@ -624,6 +728,19 @@
        </property>
       </widget>
      </item>
+<<<<<<< HEAD
+=======
+     <item>
+      <widget class="QPushButton" name="applyButton">
+       <property name="text">
+        <string>&amp;Apply</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+>>>>>>> Committing original src/qt
     </layout>
    </item>
   </layout>
@@ -631,6 +748,7 @@
  <customwidgets>
   <customwidget>
    <class>BitcoinAmountField</class>
+<<<<<<< HEAD
    <extends>QLineEdit</extends>
    <header>bitcoinamountfield.h</header>
    <container>1</container>
@@ -639,12 +757,24 @@
    <class>QValidatedLineEdit</class>
    <extends>QLineEdit</extends>
    <header>qvalidatedlineedit.h</header>
+=======
+   <extends>QSpinBox</extends>
+   <header>bitcoinamountfield.h</header>
+>>>>>>> Committing original src/qt
   </customwidget>
   <customwidget>
    <class>QValueComboBox</class>
    <extends>QComboBox</extends>
    <header>qvaluecombobox.h</header>
   </customwidget>
+<<<<<<< HEAD
+=======
+  <customwidget>
+   <class>QValidatedLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qvalidatedlineedit.h</header>
+  </customwidget>
+>>>>>>> Committing original src/qt
  </customwidgets>
  <resources/>
  <connections/>

@@ -1,24 +1,38 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+=======
+>>>>>>> Committing original src/qt
 #ifndef SIGNVERIFYMESSAGEDIALOG_H
 #define SIGNVERIFYMESSAGEDIALOG_H
 
 #include <QDialog>
 
+<<<<<<< HEAD
 class WalletModel;
 
 namespace Ui {
     class SignVerifyMessageDialog;
 }
+=======
+namespace Ui {
+    class SignVerifyMessageDialog;
+}
+class WalletModel;
+>>>>>>> Committing original src/qt
 
 class SignVerifyMessageDialog : public QDialog
 {
     Q_OBJECT
 
 public:
+<<<<<<< HEAD
     explicit SignVerifyMessageDialog(QWidget *parent);
+=======
+    explicit SignVerifyMessageDialog(QWidget *parent = 0);
+>>>>>>> Committing original src/qt
     ~SignVerifyMessageDialog();
 
     void setModel(WalletModel *model);

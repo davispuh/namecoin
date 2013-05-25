@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -7,6 +8,13 @@
 
 #include <QAbstractListModel>
 #include <QString>
+=======
+#ifndef BITCOINUNITS_H
+#define BITCOINUNITS_H
+
+#include <QString>
+#include <QAbstractListModel>
+>>>>>>> Committing original src/qt
 
 /** Bitcoin unit definitions. Encapsulates parsing and formatting
    and serves as list model for drop-down selection boxes.
@@ -42,8 +50,11 @@ public:
     static QString description(int unit);
     //! Number of Satoshis (1e-8) per unit
     static qint64 factor(int unit);
+<<<<<<< HEAD
     //! Max amount per unit
     static qint64 maxAmount(int unit);
+=======
+>>>>>>> Committing original src/qt
     //! Number of amount digits (to represent max number of coins)
     static int amountDigits(int unit);
     //! Number of decimals left

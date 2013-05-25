@@ -1,12 +1,16 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+=======
+>>>>>>> Committing original src/qt
 #ifndef OVERVIEWPAGE_H
 #define OVERVIEWPAGE_H
 
 #include <QWidget>
 
+<<<<<<< HEAD
 class ClientModel;
 class TransactionFilterProxy;
 class TxViewDelegate;
@@ -15,6 +19,15 @@ class WalletModel;
 namespace Ui {
     class OverviewPage;
 }
+=======
+namespace Ui {
+    class OverviewPage;
+}
+class ClientModel;
+class WalletModel;
+class TxViewDelegate;
+class TransactionFilterProxy;
+>>>>>>> Committing original src/qt
 
 QT_BEGIN_NAMESPACE
 class QModelIndex;

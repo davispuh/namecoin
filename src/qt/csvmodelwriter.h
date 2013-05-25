@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -7,6 +8,13 @@
 
 #include <QList>
 #include <QObject>
+=======
+#ifndef CSVMODELWRITER_H
+#define CSVMODELWRITER_H
+
+#include <QObject>
+#include <QList>
+>>>>>>> Committing original src/qt
 
 QT_BEGIN_NAMESPACE
 class QAbstractItemModel;

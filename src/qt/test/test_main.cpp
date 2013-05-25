@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "bitcoin-config.h"
 #if defined(HAVE_CONFIG_H)
 #include "bitcoin-config.h"
@@ -19,12 +20,19 @@ Q_IMPORT_PLUGIN(qjpcodecs)
 Q_IMPORT_PLUGIN(qtwcodecs)
 Q_IMPORT_PLUGIN(qkrcodecs)
 #endif
+=======
+#include <QTest>
+#include <QObject>
+
+#include "uritests.h"
+>>>>>>> Committing original src/qt
 
 // This is all you need to run all the tests
 int main(int argc, char *argv[])
 {
     bool fInvalid = false;
 
+<<<<<<< HEAD
     // Don't remove this, it's needed to access
     // QCoreApplication:: in the tests
     QCoreApplication app(argc, argv);
@@ -38,6 +46,11 @@ int main(int argc, char *argv[])
     if (QTest::qExec(&test2) != 0)
         fInvalid = true;
 #endif
+=======
+    URITests test1;
+    if (QTest::qExec(&test1) != 0)
+        fInvalid = true;
+>>>>>>> Committing original src/qt
 
     return fInvalid;
 }

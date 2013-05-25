@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+=======
+>>>>>>> Committing original src/qt
 #ifndef QVALIDATEDLINEEDIT_H
 #define QVALIDATEDLINEEDIT_H
 
@@ -15,6 +18,7 @@ class QValidatedLineEdit : public QLineEdit
     Q_OBJECT
 
 public:
+<<<<<<< HEAD
     explicit QValidatedLineEdit(QWidget *parent);
     void clear();
     void setCheckValidator(const QValidator *v);
@@ -34,6 +38,22 @@ public slots:
 private slots:
     void markValid();
     void checkValidity();
+=======
+    explicit QValidatedLineEdit(QWidget *parent = 0);
+    void clear();
+
+protected:
+    void focusInEvent(QFocusEvent *evt);
+
+private:
+    bool valid;
+
+public slots:
+    void setValid(bool valid);
+
+private slots:
+    void markValid();
+>>>>>>> Committing original src/qt
 };
 
 #endif // QVALIDATEDLINEEDIT_H

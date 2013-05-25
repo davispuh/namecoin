@@ -1,11 +1,15 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+=======
+>>>>>>> Committing original src/qt
 #include "rpcconsole.h"
 #include "ui_rpcconsole.h"
 
 #include "clientmodel.h"
+<<<<<<< HEAD
 #include "guiutil.h"
 
 #include "rpcserver.h"
@@ -21,6 +25,18 @@
 #if QT_VERSION < 0x050000
 #include <QUrl>
 #endif
+=======
+#include "bitcoinrpc.h"
+#include "guiutil.h"
+
+#include <QTime>
+#include <QThread>
+#include <QKeyEvent>
+#include <QUrl>
+#include <QScrollBar>
+
+#include <openssl/crypto.h>
+>>>>>>> Committing original src/qt
 
 // TODO: add a scrollback limit, as there is currently none
 // TODO: make it possible to filter out categories (esp debug messages when implemented)
@@ -29,8 +45,11 @@
 const int CONSOLE_HISTORY = 50;
 const QSize ICON_SIZE(24, 24);
 
+<<<<<<< HEAD
 const int INITIAL_TRAFFIC_GRAPH_MINS = 30;
 
+=======
+>>>>>>> Committing original src/qt
 const struct {
     const char *url;
     const char *source;
@@ -196,10 +215,17 @@ RPCConsole::RPCConsole(QWidget *parent) :
     historyPtr(0)
 {
     ui->setupUi(this);
+<<<<<<< HEAD
     GUIUtil::restoreWindowGeometry("nRPCConsoleWindow", this->size(), this);
 
 #ifndef Q_OS_MAC
     ui->openDebugLogfileButton->setIcon(QIcon(":/icons/export"));
+=======
+
+#ifndef Q_OS_MAC
+    ui->openDebugLogfileButton->setIcon(QIcon(":/icons/export"));
+    ui->showCLOptionsButton->setIcon(QIcon(":/icons/options"));
+>>>>>>> Committing original src/qt
 #endif
 
     // Install event filter for up and down arrow
@@ -207,20 +233,29 @@ RPCConsole::RPCConsole(QWidget *parent) :
     ui->messagesWidget->installEventFilter(this);
 
     connect(ui->clearButton, SIGNAL(clicked()), this, SLOT(clear()));
+<<<<<<< HEAD
     connect(ui->btnClearTrafficGraph, SIGNAL(clicked()), ui->trafficGraph, SLOT(clear()));
+=======
+>>>>>>> Committing original src/qt
 
     // set OpenSSL version label
     ui->openSSLVersion->setText(SSLeay_version(SSLEAY_VERSION));
 
     startExecutor();
+<<<<<<< HEAD
     setTrafficGraphRange(INITIAL_TRAFFIC_GRAPH_MINS);
+=======
+>>>>>>> Committing original src/qt
 
     clear();
 }
 
 RPCConsole::~RPCConsole()
 {
+<<<<<<< HEAD
     GUIUtil::saveWindowGeometry("nRPCConsoleWindow", this);
+=======
+>>>>>>> Committing original src/qt
     emit stopExecutor();
     delete ui;
 }
@@ -263,6 +298,7 @@ bool RPCConsole::eventFilter(QObject* obj, QEvent *event)
 
 void RPCConsole::setClientModel(ClientModel *model)
 {
+<<<<<<< HEAD
     clientModel = model;
     ui->trafficGraph->setClientModel(model);
     if(model)
@@ -277,13 +313,27 @@ void RPCConsole::setClientModel(ClientModel *model)
         updateTrafficStats(model->getTotalBytesRecv(), model->getTotalBytesSent());
         connect(model, SIGNAL(bytesChanged(quint64,quint64)), this, SLOT(updateTrafficStats(quint64, quint64)));
 
+=======
+    this->clientModel = model;
+    if(model)
+    {
+        // Subscribe to information, replies, messages, errors
+        connect(model, SIGNAL(numConnectionsChanged(int)), this, SLOT(setNumConnections(int)));
+        connect(model, SIGNAL(numBlocksChanged(int,int)), this, SLOT(setNumBlocks(int,int)));
+
+>>>>>>> Committing original src/qt
         // Provide initial values
         ui->clientVersion->setText(model->formatFullVersion());
         ui->clientName->setText(model->clientName());
         ui->buildDate->setText(model->formatBuildDate());
         ui->startupTime->setText(model->formatClientStartupTime());
 
+<<<<<<< HEAD
         ui->networkName->setText(model->getNetworkName());
+=======
+        setNumConnections(model->getNumConnections());
+        ui->isTestNet->setChecked(model->isTestNet());
+>>>>>>> Committing original src/qt
     }
 }
 
@@ -320,7 +370,11 @@ void RPCConsole::clear()
     ui->messagesWidget->document()->setDefaultStyleSheet(
                 "table { }"
                 "td.time { color: #808080; padding-top: 3px; } "
+<<<<<<< HEAD
                 "td.message { font-family: monospace; font-size: 12px; } " // Todo: Remove fixed font-size
+=======
+                "td.message { font-family: Monospace; font-size: 12px; } "
+>>>>>>> Committing original src/qt
                 "td.cmd-request { color: #006060; } "
                 "td.cmd-error { color: red; } "
                 "b { color: #006060; } "
@@ -440,6 +494,7 @@ void RPCConsole::scrollToEnd()
     scrollbar->setValue(scrollbar->maximum());
 }
 
+<<<<<<< HEAD
 void RPCConsole::on_sldGraphRange_valueChanged(int value)
 {
     const int multiplier = 5; // each position on the slider represents 5 min
@@ -479,4 +534,10 @@ void RPCConsole::updateTrafficStats(quint64 totalBytesIn, quint64 totalBytesOut)
 {
     ui->lblBytesIn->setText(FormatBytes(totalBytesIn));
     ui->lblBytesOut->setText(FormatBytes(totalBytesOut));
+=======
+void RPCConsole::on_showCLOptionsButton_clicked()
+{
+    GUIUtil::HelpMessageBox help;
+    help.exec();
+>>>>>>> Committing original src/qt
 }

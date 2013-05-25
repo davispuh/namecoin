@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -7,6 +8,13 @@
 
 #include <QDateTime>
 #include <QSortFilterProxyModel>
+=======
+#ifndef TRANSACTIONFILTERPROXY_H
+#define TRANSACTIONFILTERPROXY_H
+
+#include <QSortFilterProxyModel>
+#include <QDateTime>
+>>>>>>> Committing original src/qt
 
 /** Filter the transaction list according to pre-specified rules. */
 class TransactionFilterProxy : public QSortFilterProxyModel
@@ -36,9 +44,12 @@ public:
     /** Set maximum number of rows returned, -1 if unlimited. */
     void setLimit(int limit);
 
+<<<<<<< HEAD
     /** Set whether to show conflicted transactions. */
     void setShowInactive(bool showInactive);
 
+=======
+>>>>>>> Committing original src/qt
     int rowCount(const QModelIndex &parent = QModelIndex()) const;
 
 protected:
@@ -51,7 +62,10 @@ private:
     quint32 typeFilter;
     qint64 minAmount;
     int limitRows;
+<<<<<<< HEAD
     bool showInactive;
+=======
+>>>>>>> Committing original src/qt
 };
 
 #endif // TRANSACTIONFILTERPROXY_H

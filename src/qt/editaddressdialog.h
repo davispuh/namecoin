@@ -1,17 +1,27 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+=======
+>>>>>>> Committing original src/qt
 #ifndef EDITADDRESSDIALOG_H
 #define EDITADDRESSDIALOG_H
 
 #include <QDialog>
 
+<<<<<<< HEAD
 class AddressTableModel;
 
 namespace Ui {
     class EditAddressDialog;
 }
+=======
+namespace Ui {
+    class EditAddressDialog;
+}
+class AddressTableModel;
+>>>>>>> Committing original src/qt
 
 QT_BEGIN_NAMESPACE
 class QDataWidgetMapper;
@@ -31,7 +41,11 @@ public:
         EditSendingAddress
     };
 
+<<<<<<< HEAD
     explicit EditAddressDialog(Mode mode, QWidget *parent);
+=======
+    explicit EditAddressDialog(Mode mode, QWidget *parent = 0);
+>>>>>>> Committing original src/qt
     ~EditAddressDialog();
 
     void setModel(AddressTableModel *model);

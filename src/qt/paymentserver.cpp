@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -43,11 +44,35 @@
 #else
 #include <QUrlQuery>
 #endif
+=======
+// Copyright (c) 2009-2012 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include <QApplication>
+
+#include "paymentserver.h"
+
+#include "guiconstants.h"
+#include "ui_interface.h"
+#include "util.h"
+
+#include <QByteArray>
+#include <QDataStream>
+#include <QDebug>
+#include <QFileOpenEvent>
+#include <QHash>
+#include <QLocalServer>
+#include <QLocalSocket>
+#include <QStringList>
+#include <QUrl>
+>>>>>>> Committing original src/qt
 
 using namespace boost;
 
 const int BITCOIN_IPC_CONNECT_TIMEOUT = 1000; // milliseconds
 const QString BITCOIN_IPC_PREFIX("bitcoin:");
+<<<<<<< HEAD
 const char* BITCOIN_REQUEST_MIMETYPE = "application/bitcoin-paymentrequest";
 const char* BITCOIN_PAYMENTACK_MIMETYPE = "application/bitcoin-paymentack";
 const char* BITCOIN_PAYMENTACK_CONTENTTYPE = "application/bitcoin-payment";
@@ -61,6 +86,8 @@ void PaymentServer::freeCertStore()
         PaymentServer::certStore = NULL;
     }
 }
+=======
+>>>>>>> Committing original src/qt
 
 //
 // Create a name that is unique for:
@@ -74,13 +101,18 @@ static QString ipcServerName()
     // Append a simple hash of the datadir
     // Note that GetDataDir(true) returns a different path
     // for -testnet versus main net
+<<<<<<< HEAD
     QString ddir(QString::fromStdString(GetDataDir(true).string()));
+=======
+    QString ddir(GetDataDir(true).string().c_str());
+>>>>>>> Committing original src/qt
     name.append(QString::number(qHash(ddir)));
 
     return name;
 }
 
 //
+<<<<<<< HEAD
 // We store payment URIs and requests received before
 // the main GUI window is up and ready to ask the user
 // to send payment.
@@ -171,6 +203,13 @@ void PaymentServer::LoadRootCAs(X509_STORE* _store)
     //    or use Qt's blacklist?
     //   "certificate stapling" with server-side caching is more efficient
 }
+=======
+// This stores payment requests received before
+// the main GUI window is up and ready to ask the user
+// to send payment.
+//
+static QStringList savedPaymentRequests;
+>>>>>>> Committing original src/qt
 
 //
 // Sending to the server is done synchronously, at startup.
@@ -178,6 +217,7 @@ void PaymentServer::LoadRootCAs(X509_STORE* _store)
 // and the items in savedPaymentRequest will be handled
 // when uiReady() is called.
 //
+<<<<<<< HEAD
 bool PaymentServer::ipcParseCommandLine(int argc, char* argv[])
 {
     for (int i = 1; i < argc; i++)
@@ -235,19 +275,42 @@ bool PaymentServer::ipcSendCommandLine()
 {
     bool fResult = false;
     foreach (const QString& r, savedPaymentRequests)
+=======
+bool PaymentServer::ipcSendCommandLine()
+{
+    bool fResult = false;
+
+    const QStringList& args = qApp->arguments();
+    for (int i = 1; i < args.size(); i++)
+    {
+        if (!args[i].startsWith(BITCOIN_IPC_PREFIX, Qt::CaseInsensitive))
+            continue;
+        savedPaymentRequests.append(args[i]);
+    }
+
+    foreach (const QString& arg, savedPaymentRequests)
+>>>>>>> Committing original src/qt
     {
         QLocalSocket* socket = new QLocalSocket();
         socket->connectToServer(ipcServerName(), QIODevice::WriteOnly);
         if (!socket->waitForConnected(BITCOIN_IPC_CONNECT_TIMEOUT))
+<<<<<<< HEAD
         {
             delete socket;
             return false;
         }
+=======
+            return false;
+>>>>>>> Committing original src/qt
 
         QByteArray block;
         QDataStream out(&block, QIODevice::WriteOnly);
         out.setVersion(QDataStream::Qt_4_0);
+<<<<<<< HEAD
         out << r;
+=======
+        out << arg;
+>>>>>>> Committing original src/qt
         out.device()->seek(0);
         socket->write(block);
         socket->flush();
@@ -257,6 +320,7 @@ bool PaymentServer::ipcSendCommandLine()
         delete socket;
         fResult = true;
     }
+<<<<<<< HEAD
 
     return fResult;
 }
@@ -277,12 +341,22 @@ PaymentServer::PaymentServer(QObject* parent, bool startLocalServer) :
     // other OSes: helpful when dealing with payment request files (in the future)
     if (parent)
         parent->installEventFilter(this);
+=======
+    return fResult;
+}
+
+PaymentServer::PaymentServer(QApplication* parent) : QObject(parent), saveURIs(true)
+{
+    // Install global event filter to catch QFileOpenEvents on the mac (sent when you click bitcoin: links)
+    parent->installEventFilter(this);
+>>>>>>> Committing original src/qt
 
     QString name = ipcServerName();
 
     // Clean up old socket leftover from a crash:
     QLocalServer::removeServer(name);
 
+<<<<<<< HEAD
     if (startLocalServer)
     {
         uriServer = new QLocalServer(this);
@@ -356,10 +430,37 @@ void PaymentServer::initNetManager()
             this, SLOT(netRequestFinished(QNetworkReply*)));
     connect(netManager, SIGNAL(sslErrors(QNetworkReply*, const QList<QSslError> &)),
             this, SLOT(reportSslErrors(QNetworkReply*, const QList<QSslError> &)));
+=======
+    uriServer = new QLocalServer(this);
+
+    if (!uriServer->listen(name))
+        qDebug() << tr("Cannot start bitcoin: click-to-pay handler");
+    else
+        connect(uriServer, SIGNAL(newConnection()), this, SLOT(handleURIConnection()));
+}
+
+bool PaymentServer::eventFilter(QObject *object, QEvent *event)
+{
+    // clicking on bitcoin: URLs creates FileOpen events on the Mac:
+    if (event->type() == QEvent::FileOpen)
+    {
+        QFileOpenEvent* fileEvent = static_cast<QFileOpenEvent*>(event);
+        if (!fileEvent->url().isEmpty())
+        {
+            if (saveURIs) // Before main window is ready:
+                savedPaymentRequests.append(fileEvent->url().toString());
+            else
+                emit receivedURI(fileEvent->url().toString());
+            return true;
+        }
+    }
+    return false;
+>>>>>>> Committing original src/qt
 }
 
 void PaymentServer::uiReady()
 {
+<<<<<<< HEAD
     initNetManager();
 
     saveURIs = false;
@@ -436,6 +537,14 @@ void PaymentServer::handleURIOrFile(const QString& s)
     }
 }
 
+=======
+    saveURIs = false;
+    foreach (const QString& s, savedPaymentRequests)
+        emit receivedURI(s);
+    savedPaymentRequests.clear();
+}
+
+>>>>>>> Committing original src/qt
 void PaymentServer::handleURIConnection()
 {
     QLocalSocket *clientConnection = uriServer->nextPendingConnection();
@@ -451,6 +560,7 @@ void PaymentServer::handleURIConnection()
     if (clientConnection->bytesAvailable() < (int)sizeof(quint16)) {
         return;
     }
+<<<<<<< HEAD
     QString msg;
     in >> msg;
 
@@ -673,4 +783,13 @@ void PaymentServer::handlePaymentACK(const QString& paymentACKMsg)
 {
     // currently we don't futher process or store the paymentACK message
     emit message(tr("Payment acknowledged"), paymentACKMsg, CClientUIInterface::ICON_INFORMATION | CClientUIInterface::MODAL);
+=======
+    QString message;
+    in >> message;
+
+    if (saveURIs)
+        savedPaymentRequests.append(message);
+    else
+        emit receivedURI(message);
+>>>>>>> Committing original src/qt
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -15,6 +16,16 @@
 QT_BEGIN_NAMESPACE
 class QSystemTrayIcon;
 
+=======
+#ifndef NOTIFICATOR_H
+#define NOTIFICATOR_H
+
+#include <QObject>
+#include <QIcon>
+
+QT_BEGIN_NAMESPACE
+class QSystemTrayIcon;
+>>>>>>> Committing original src/qt
 #ifdef USE_DBUS
 class QDBusInterface;
 #endif
@@ -29,7 +40,11 @@ public:
     /** Create a new notificator.
        @note Ownership of trayIcon is not transferred to this object.
     */
+<<<<<<< HEAD
     Notificator(const QString &programName, QSystemTrayIcon *trayIcon, QWidget *parent);
+=======
+    Notificator(const QString &programName=QString(), QSystemTrayIcon *trayIcon=0, QWidget *parent=0);
+>>>>>>> Committing original src/qt
     ~Notificator();
 
     // Message class
@@ -55,12 +70,20 @@ public slots:
 private:
     QWidget *parent;
     enum Mode {
+<<<<<<< HEAD
         None,                       /**< Ignore informational notifications, and show a modal pop-up dialog for Critical notifications. */
         Freedesktop,                /**< Use DBus org.freedesktop.Notifications */
         QSystemTray,                /**< Use QSystemTray::showMessage */
         Growl12,                    /**< Use the Growl 1.2 notification system (Mac only) */
         Growl13,                    /**< Use the Growl 1.3 notification system (Mac only) */
         UserNotificationCenter      /**< Use the 10.8+ User Notification Center (Mac only) */
+=======
+        None,           /**< Ignore informational notifications, and show a modal pop-up dialog for Critical notifications. */
+        Freedesktop,    /**< Use DBus org.freedesktop.Notifications */
+        QSystemTray,    /**< Use QSystemTray::showMessage */
+        Growl12,        /**< Use the Growl 1.2 notification system (Mac only) */
+        Growl13         /**< Use the Growl 1.3 notification system (Mac only) */
+>>>>>>> Committing original src/qt
     };
     QString programName;
     Mode mode;
@@ -73,7 +96,10 @@ private:
     void notifySystray(Class cls, const QString &title, const QString &text, const QIcon &icon, int millisTimeout);
 #ifdef Q_OS_MAC
     void notifyGrowl(Class cls, const QString &title, const QString &text, const QIcon &icon);
+<<<<<<< HEAD
     void notifyMacUserNotificationCenter(Class cls, const QString &title, const QString &text, const QIcon &icon);
+=======
+>>>>>>> Committing original src/qt
 #endif
 };
 

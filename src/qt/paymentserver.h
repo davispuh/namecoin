@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef PAYMENTSERVER_H
 #define PAYMENTSERVER_H
+=======
+#ifndef PAYMENTSERVER_H
+#define PAYMENTSERVER_H
+
+//
+>>>>>>> Committing original src/qt
 // This class handles payment requests from clicking on
 // bitcoin: URIs
 //
@@ -19,7 +26,11 @@
 // received at or during startup in a list.
 //
 // When startup is finished and the main window is
+<<<<<<< HEAD
 // shown, a signal is sent to slot uiReady(), which
+=======
+// show, a signal is sent to slot uiReady(), which
+>>>>>>> Committing original src/qt
 // emits a receivedURL() signal for any payment
 // requests that happened during startup.
 //
@@ -30,6 +41,7 @@
 // and, if a server is running in another process,
 // sends them to the server.
 //
+<<<<<<< HEAD
 
 #include "paymentrequestplus.h"
 #include "walletmodel.h"
@@ -50,11 +62,19 @@ class QUrl;
 QT_END_NAMESPACE
 
 class CWallet;
+=======
+#include <QObject>
+#include <QString>
+
+class QApplication;
+class QLocalServer;
+>>>>>>> Committing original src/qt
 
 class PaymentServer : public QObject
 {
     Q_OBJECT
 
+<<<<<<< HEAD
 public:
     // Parse URIs on command line
     // Returns false on error
@@ -93,12 +113,31 @@ signals:
 
     // Fired when a message should be reported to the user
     void message(const QString &title, const QString &message, unsigned int style);
+=======
+private:
+    bool saveURIs;
+    QLocalServer* uriServer;
+
+public:
+    // Returns true if there were URIs on the command line
+    // which were successfully sent to an already-running
+    // process.
+    static bool ipcSendCommandLine();
+
+    PaymentServer(QApplication* parent);
+
+    bool eventFilter(QObject *object, QEvent *event);
+
+signals:
+    void receivedURI(QString);
+>>>>>>> Committing original src/qt
 
 public slots:
     // Signal this when the main window's UI is ready
     // to display payment requests to the user
     void uiReady();
 
+<<<<<<< HEAD
     // Submit Payment message to a merchant, get back PaymentACK:
     void fetchPaymentACK(CWallet* wallet, SendCoinsRecipient recipient, QByteArray transaction);
 
@@ -133,6 +172,10 @@ private:
     QNetworkAccessManager* netManager;  // Used to fetch payment requests
 
     OptionsModel *optionsModel;
+=======
+private slots:
+    void handleURIConnection();
+>>>>>>> Committing original src/qt
 };
 
 #endif // PAYMENTSERVER_H

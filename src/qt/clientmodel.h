@@ -1,16 +1,25 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+=======
+>>>>>>> Committing original src/qt
 #ifndef CLIENTMODEL_H
 #define CLIENTMODEL_H
 
 #include <QObject>
 
+<<<<<<< HEAD
 class AddressTableModel;
 class OptionsModel;
 class TransactionTableModel;
 
+=======
+class OptionsModel;
+class AddressTableModel;
+class TransactionTableModel;
+>>>>>>> Committing original src/qt
 class CWallet;
 
 QT_BEGIN_NAMESPACE
@@ -40,6 +49,7 @@ public:
     int getNumBlocks() const;
     int getNumBlocksAtStartup();
 
+<<<<<<< HEAD
     quint64 getTotalBytesRecv() const;
     quint64 getTotalBytesSent() const;
 
@@ -48,6 +58,13 @@ public:
 
     //! Return network (main, testnet3, regtest)
     QString getNetworkName() const;
+=======
+    double getVerificationProgress() const;
+    QDateTime getLastBlockDate() const;
+
+    //! Return true if client connected to testnet
+    bool isTestNet() const;
+>>>>>>> Committing original src/qt
     //! Return true if core is doing initial block download
     bool inInitialBlockDownload() const;
     //! Return true if core is importing blocks
@@ -68,8 +85,13 @@ private:
 
     int cachedNumBlocks;
     int cachedNumBlocksOfPeers;
+<<<<<<< HEAD
     bool cachedReindexing;
     bool cachedImporting;
+=======
+	bool cachedReindexing;
+	bool cachedImporting;
+>>>>>>> Committing original src/qt
 
     int numBlocksAtStartup;
 
@@ -82,9 +104,14 @@ signals:
     void numConnectionsChanged(int count);
     void numBlocksChanged(int count, int countOfPeers);
     void alertsChanged(const QString &warnings);
+<<<<<<< HEAD
     void bytesChanged(quint64 totalBytesIn, quint64 totalBytesOut);
 
     //! Fired when a message should be reported to the user
+=======
+
+    //! Asynchronous message notification
+>>>>>>> Committing original src/qt
     void message(const QString &title, const QString &message, unsigned int style);
 
 public slots:

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -25,6 +26,29 @@ BitcoinAmountField::BitcoinAmountField(QWidget *parent) :
     amount->setLocale(QLocale::c());
     amount->installEventFilter(this);
     amount->setMaximumWidth(170);
+=======
+#include "bitcoinamountfield.h"
+
+#include "qvaluecombobox.h"
+#include "bitcoinunits.h"
+#include "guiconstants.h"
+
+#include <QHBoxLayout>
+#include <QKeyEvent>
+#include <QDoubleSpinBox>
+#include <QApplication>
+#include <qmath.h> // for qPow()
+
+BitcoinAmountField::BitcoinAmountField(QWidget *parent):
+        QWidget(parent), amount(0), currentUnit(-1)
+{
+    amount = new QDoubleSpinBox(this);
+    amount->setLocale(QLocale::c());
+    amount->setDecimals(8);
+    amount->installEventFilter(this);
+    amount->setMaximumWidth(170);
+    amount->setSingleStep(0.001);
+>>>>>>> Committing original src/qt
 
     QHBoxLayout *layout = new QHBoxLayout(this);
     layout->addWidget(amount);
@@ -66,9 +90,13 @@ bool BitcoinAmountField::validate()
     bool valid = true;
     if (amount->value() == 0.0)
         valid = false;
+<<<<<<< HEAD
     else if (!BitcoinUnits::parse(currentUnit, text(), 0))
         valid = false;
     else if (amount->value() > BitcoinUnits::maxAmount(currentUnit))
+=======
+    if (valid && !BitcoinUnits::parse(currentUnit, text(), 0))
+>>>>>>> Committing original src/qt
         valid = false;
 
     setValid(valid);
@@ -116,15 +144,23 @@ bool BitcoinAmountField::eventFilter(QObject *object, QEvent *event)
 QWidget *BitcoinAmountField::setupTabChain(QWidget *prev)
 {
     QWidget::setTabOrder(prev, amount);
+<<<<<<< HEAD
     QWidget::setTabOrder(amount, unit);
     return unit;
+=======
+    return amount;
+>>>>>>> Committing original src/qt
 }
 
 qint64 BitcoinAmountField::value(bool *valid_out) const
 {
     qint64 val_out = 0;
     bool valid = BitcoinUnits::parse(currentUnit, text(), &val_out);
+<<<<<<< HEAD
     if (valid_out)
+=======
+    if(valid_out)
+>>>>>>> Committing original src/qt
     {
         *valid_out = valid;
     }
@@ -136,12 +172,15 @@ void BitcoinAmountField::setValue(qint64 value)
     setText(BitcoinUnits::format(currentUnit, value));
 }
 
+<<<<<<< HEAD
 void BitcoinAmountField::setReadOnly(bool fReadOnly)
 {
     amount->setReadOnly(fReadOnly);
     unit->setEnabled(!fReadOnly);
 }
 
+=======
+>>>>>>> Committing original src/qt
 void BitcoinAmountField::unitChanged(int idx)
 {
     // Use description tooltip for current unit for the combobox
@@ -159,9 +198,19 @@ void BitcoinAmountField::unitChanged(int idx)
     // Set max length after retrieving the value, to prevent truncation
     amount->setDecimals(BitcoinUnits::decimals(currentUnit));
     amount->setMaximum(qPow(10, BitcoinUnits::amountDigits(currentUnit)) - qPow(10, -amount->decimals()));
+<<<<<<< HEAD
     amount->setSingleStep((double)nSingleStep / (double)BitcoinUnits::factor(currentUnit));
 
     if (valid)
+=======
+
+    if(currentUnit == BitcoinUnits::uBTC)
+        amount->setSingleStep(0.01);
+    else
+        amount->setSingleStep(0.001);
+
+    if(valid)
+>>>>>>> Committing original src/qt
     {
         // If value was valid, re-place it in the widget with the new unit
         setValue(currentValue);
@@ -178,9 +227,12 @@ void BitcoinAmountField::setDisplayUnit(int newUnit)
 {
     unit->setValue(newUnit);
 }
+<<<<<<< HEAD
 
 void BitcoinAmountField::setSingleStep(qint64 step)
 {
     nSingleStep = step;
     unitChanged(unit->currentIndex());
 }
+=======
+>>>>>>> Committing original src/qt

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -19,6 +20,24 @@ class QFont;
 class QLineEdit;
 class QUrl;
 class QWidget;
+=======
+#ifndef GUIUTIL_H
+#define GUIUTIL_H
+
+#include <QString>
+#include <QObject>
+#include <QMessageBox>
+
+class SendCoinsRecipient;
+
+QT_BEGIN_NAMESPACE
+class QFont;
+class QLineEdit;
+class QWidget;
+class QDateTime;
+class QUrl;
+class QAbstractItemView;
+>>>>>>> Committing original src/qt
 QT_END_NAMESPACE
 
 /** Utility functions used by the Bitcoin Qt UI.
@@ -33,6 +52,7 @@ namespace GUIUtil
     QFont bitcoinAddressFont();
 
     // Set up widgets for address and amounts
+<<<<<<< HEAD
     void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent);
     void setupAmountWidget(QLineEdit *widget, QWidget *parent);
 
@@ -43,6 +63,15 @@ namespace GUIUtil
 
     // Returns true if given address+amount meets "dust" definition
     bool isDust(const QString& address, qint64 amount);
+=======
+    void setupAddressWidget(QLineEdit *widget, QWidget *parent);
+    void setupAmountWidget(QLineEdit *widget, QWidget *parent);
+
+    // Parse "bitcoin:" URI into recipient object, return true on successful parsing
+    // See Bitcoin URI definition discussion here: https://bitcointalk.org/index.php?topic=33490.0
+    bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out);
+    bool parseBitcoinURI(QString uri, SendCoinsRecipient *out);
+>>>>>>> Committing original src/qt
 
     // HTML escaping for rich text controls
     QString HtmlEscape(const QString& str, bool fMultiLine=false);
@@ -56,8 +85,11 @@ namespace GUIUtil
      */
     void copyEntryData(QAbstractItemView *view, int column, int role=Qt::EditRole);
 
+<<<<<<< HEAD
     void setClipboard(const QString& str);
 
+=======
+>>>>>>> Committing original src/qt
     /** Get save filename, mimics QFileDialog::getSaveFileName, except that it appends a default suffix
         when no suffix is provided by the user.
 
@@ -68,6 +100,7 @@ namespace GUIUtil
       @param[out] selectedSuffixOut  Pointer to return the suffix (file type) that was selected (or 0).
                   Can be useful when choosing the save file format based on suffix.
      */
+<<<<<<< HEAD
     QString getSaveFileName(QWidget *parent, const QString &caption, const QString &dir,
         const QString &filter,
         QString *selectedSuffixOut);
@@ -84,6 +117,11 @@ namespace GUIUtil
     QString getOpenFileName(QWidget *parent, const QString &caption, const QString &dir,
         const QString &filter,
         QString *selectedSuffixOut);
+=======
+    QString getSaveFileName(QWidget *parent=0, const QString &caption=QString(),
+                                   const QString &dir=QString(), const QString &filter=QString(),
+                                   QString *selectedSuffixOut=0);
+>>>>>>> Committing original src/qt
 
     /** Get connection type to call object slot in GUI thread with invokeMethod. The call will be blocking.
 
@@ -119,10 +157,32 @@ namespace GUIUtil
     bool GetStartOnSystemStartup();
     bool SetStartOnSystemStartup(bool fAutoStart);
 
+<<<<<<< HEAD
     /** Save window size and position */
     void saveWindowGeometry(const QString& strSetting, QWidget *parent);
     /** Restore window size and position */
     void restoreWindowGeometry(const QString& strSetting, const QSize &defaultSizeIn, QWidget *parent);
+=======
+    /** Help message for Bitcoin-Qt, shown with --help. */
+    class HelpMessageBox : public QMessageBox
+    {
+        Q_OBJECT
+
+    public:
+        HelpMessageBox(QWidget *parent = 0);
+
+        /** Show message box or print help message to standard output, based on operating system. */
+        void showOrPrint();
+
+        /** Print help message to console */
+        void printToConsole();
+
+    private:
+        QString header;
+        QString coreOptions;
+        QString uiOptions;
+    };
+>>>>>>> Committing original src/qt
 
 } // namespace GUIUtil
 

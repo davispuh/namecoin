@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -10,23 +11,42 @@
 #include "guiutil.h"
 #include "optionsmodel.h"
 #include "walletmodel.h"
+=======
+#include "sendcoinsentry.h"
+#include "ui_sendcoinsentry.h"
+
+#include "guiutil.h"
+#include "bitcoinunits.h"
+#include "addressbookpage.h"
+#include "walletmodel.h"
+#include "optionsmodel.h"
+#include "addresstablemodel.h"
+>>>>>>> Committing original src/qt
 
 #include <QApplication>
 #include <QClipboard>
 
 SendCoinsEntry::SendCoinsEntry(QWidget *parent) :
+<<<<<<< HEAD
     QStackedWidget(parent),
+=======
+    QFrame(parent),
+>>>>>>> Committing original src/qt
     ui(new Ui::SendCoinsEntry),
     model(0)
 {
     ui->setupUi(this);
 
+<<<<<<< HEAD
     setCurrentWidget(ui->SendCoins);
 
+=======
+>>>>>>> Committing original src/qt
 #ifdef Q_OS_MAC
     ui->payToLayout->setSpacing(4);
 #endif
 #if QT_VERSION >= 0x040700
+<<<<<<< HEAD
     ui->addAsLabel->setPlaceholderText(tr("Enter a label for this address to add it to your address book"));
 #endif
 
@@ -34,6 +54,16 @@ SendCoinsEntry::SendCoinsEntry(QWidget *parent) :
     GUIUtil::setupAddressWidget(ui->payTo, this);
     // just a label for displaying bitcoin address(es)
     ui->payTo_is->setFont(GUIUtil::bitcoinAddressFont());
+=======
+    /* Do not move this to the XML file, Qt before 4.7 will choke on it */
+    ui->addAsLabel->setPlaceholderText(tr("Enter a label for this address to add it to your address book"));
+    ui->payTo->setPlaceholderText(tr("Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)"));
+#endif
+    setFocusPolicy(Qt::TabFocus);
+    setFocusProxy(ui->payTo);
+
+    GUIUtil::setupAddressWidget(ui->payTo, this);
+>>>>>>> Committing original src/qt
 }
 
 SendCoinsEntry::~SendCoinsEntry()
@@ -51,7 +81,11 @@ void SendCoinsEntry::on_addressBookButton_clicked()
 {
     if(!model)
         return;
+<<<<<<< HEAD
     AddressBookPage dlg(AddressBookPage::ForSelection, AddressBookPage::SendingTab, this);
+=======
+    AddressBookPage dlg(AddressBookPage::ForSending, AddressBookPage::SendingTab, this);
+>>>>>>> Committing original src/qt
     dlg.setModel(model->getAddressTableModel());
     if(dlg.exec())
     {
@@ -62,13 +96,23 @@ void SendCoinsEntry::on_addressBookButton_clicked()
 
 void SendCoinsEntry::on_payTo_textChanged(const QString &address)
 {
+<<<<<<< HEAD
     updateLabel(address);
+=======
+    if(!model)
+        return;
+    // Fill in label from address book, if address has an associated label
+    QString associatedLabel = model->getAddressTableModel()->labelForAddress(address);
+    if(!associatedLabel.isEmpty())
+        ui->addAsLabel->setText(associatedLabel);
+>>>>>>> Committing original src/qt
 }
 
 void SendCoinsEntry::setModel(WalletModel *model)
 {
     this->model = model;
 
+<<<<<<< HEAD
     if (model && model->getOptionsModel())
         connect(model->getOptionsModel(), SIGNAL(displayUnitChanged(int)), this, SLOT(updateDisplayUnit()));
 
@@ -98,17 +142,41 @@ void SendCoinsEntry::clear()
     ui->memoTextLabel_s->clear();
     ui->payAmount_s->clear();
 
+=======
+    if(model && model->getOptionsModel())
+        connect(model->getOptionsModel(), SIGNAL(displayUnitChanged(int)), this, SLOT(updateDisplayUnit()));
+
+    clear();
+}
+
+void SendCoinsEntry::setRemoveEnabled(bool enabled)
+{
+    ui->deleteButton->setEnabled(enabled);
+}
+
+void SendCoinsEntry::clear()
+{
+    ui->payTo->clear();
+    ui->addAsLabel->clear();
+    ui->payAmount->clear();
+    ui->payTo->setFocus();
+>>>>>>> Committing original src/qt
     // update the display unit, to not use the default ("BTC")
     updateDisplayUnit();
 }
 
+<<<<<<< HEAD
 void SendCoinsEntry::deleteClicked()
+=======
+void SendCoinsEntry::on_deleteButton_clicked()
+>>>>>>> Committing original src/qt
 {
     emit removeEntry(this);
 }
 
 bool SendCoinsEntry::validate()
 {
+<<<<<<< HEAD
     if (!model)
         return false;
 
@@ -133,6 +201,29 @@ bool SendCoinsEntry::validate()
     // Reject dust outputs:
     if (retval && GUIUtil::isDust(ui->payTo->text(), ui->payAmount->value())) {
         ui->payAmount->setValid(false);
+=======
+    // Check input validity
+    bool retval = true;
+
+    if(!ui->payAmount->validate())
+    {
+        retval = false;
+    }
+    else
+    {
+        if(ui->payAmount->value() <= 0)
+        {
+            // Cannot send 0 coins or less
+            ui->payAmount->setValid(false);
+            retval = false;
+        }
+    }
+
+    if(!ui->payTo->hasAcceptableInput() ||
+       (model && !model->validateAddress(ui->payTo->text())))
+    {
+        ui->payTo->setValid(false);
+>>>>>>> Committing original src/qt
         retval = false;
     }
 
@@ -141,6 +232,7 @@ bool SendCoinsEntry::validate()
 
 SendCoinsRecipient SendCoinsEntry::getValue()
 {
+<<<<<<< HEAD
     // Payment request
     if (recipient.paymentRequest.IsInitialized())
         return recipient;
@@ -152,21 +244,39 @@ SendCoinsRecipient SendCoinsEntry::getValue()
     recipient.message = ui->messageTextLabel->text();
 
     return recipient;
+=======
+    SendCoinsRecipient rv;
+
+    rv.address = ui->payTo->text();
+    rv.label = ui->addAsLabel->text();
+    rv.amount = ui->payAmount->value();
+
+    return rv;
+>>>>>>> Committing original src/qt
 }
 
 QWidget *SendCoinsEntry::setupTabChain(QWidget *prev)
 {
     QWidget::setTabOrder(prev, ui->payTo);
+<<<<<<< HEAD
     QWidget::setTabOrder(ui->payTo, ui->addAsLabel);
     QWidget *w = ui->payAmount->setupTabChain(ui->addAsLabel);
     QWidget::setTabOrder(w, ui->addressBookButton);
     QWidget::setTabOrder(ui->addressBookButton, ui->pasteButton);
     QWidget::setTabOrder(ui->pasteButton, ui->deleteButton);
     return ui->deleteButton;
+=======
+    QWidget::setTabOrder(ui->payTo, ui->addressBookButton);
+    QWidget::setTabOrder(ui->addressBookButton, ui->pasteButton);
+    QWidget::setTabOrder(ui->pasteButton, ui->deleteButton);
+    QWidget::setTabOrder(ui->deleteButton, ui->addAsLabel);
+    return ui->payAmount->setupTabChain(ui->addAsLabel);
+>>>>>>> Committing original src/qt
 }
 
 void SendCoinsEntry::setValue(const SendCoinsRecipient &value)
 {
+<<<<<<< HEAD
     recipient = value;
 
     if (recipient.paymentRequest.IsInitialized()) // payment request
@@ -199,6 +309,11 @@ void SendCoinsEntry::setValue(const SendCoinsRecipient &value)
         ui->addAsLabel->setText(recipient.label);
         ui->payAmount->setValue(recipient.amount);
     }
+=======
+    ui->payTo->setText(value.address);
+    ui->addAsLabel->setText(value.label);
+    ui->payAmount->setValue(value.amount);
+>>>>>>> Committing original src/qt
 }
 
 void SendCoinsEntry::setAddress(const QString &address)
@@ -209,7 +324,11 @@ void SendCoinsEntry::setAddress(const QString &address)
 
 bool SendCoinsEntry::isClear()
 {
+<<<<<<< HEAD
     return ui->payTo->text().isEmpty() && ui->payTo_is->text().isEmpty() && ui->payTo_s->text().isEmpty();
+=======
+    return ui->payTo->text().isEmpty();
+>>>>>>> Committing original src/qt
 }
 
 void SendCoinsEntry::setFocus()
@@ -223,6 +342,7 @@ void SendCoinsEntry::updateDisplayUnit()
     {
         // Update payAmount with the current unit
         ui->payAmount->setDisplayUnit(model->getOptionsModel()->getDisplayUnit());
+<<<<<<< HEAD
         ui->payAmount_is->setDisplayUnit(model->getOptionsModel()->getDisplayUnit());
         ui->payAmount_s->setDisplayUnit(model->getOptionsModel()->getDisplayUnit());
     }
@@ -243,3 +363,7 @@ bool SendCoinsEntry::updateLabel(const QString &address)
 
     return false;
 }
+=======
+    }
+}
+>>>>>>> Committing original src/qt

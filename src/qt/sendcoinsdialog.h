@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -11,6 +12,17 @@
 #include <QString>
 
 class OptionsModel;
+=======
+#ifndef SENDCOINSDIALOG_H
+#define SENDCOINSDIALOG_H
+
+#include <QDialog>
+
+namespace Ui {
+    class SendCoinsDialog;
+}
+class WalletModel;
+>>>>>>> Committing original src/qt
 class SendCoinsEntry;
 class SendCoinsRecipient;
 
@@ -18,10 +30,13 @@ QT_BEGIN_NAMESPACE
 class QUrl;
 QT_END_NAMESPACE
 
+<<<<<<< HEAD
 namespace Ui {
     class SendCoinsDialog;
 }
 
+=======
+>>>>>>> Committing original src/qt
 /** Dialog for sending bitcoins */
 class SendCoinsDialog : public QDialog
 {
@@ -39,14 +54,22 @@ public:
 
     void setAddress(const QString &address);
     void pasteEntry(const SendCoinsRecipient &rv);
+<<<<<<< HEAD
     bool handlePaymentRequest(const SendCoinsRecipient &recipient);
+=======
+    bool handleURI(const QString &uri);
+>>>>>>> Committing original src/qt
 
 public slots:
     void clear();
     void reject();
     void accept();
     SendCoinsEntry *addEntry();
+<<<<<<< HEAD
     void updateTabsAndLabels();
+=======
+    void updateRemoveEnabled();
+>>>>>>> Committing original src/qt
     void setBalance(qint64 balance, qint64 unconfirmedBalance, qint64 immatureBalance);
 
 private:
@@ -54,15 +77,19 @@ private:
     WalletModel *model;
     bool fNewRecipientAllowed;
 
+<<<<<<< HEAD
     // Process WalletModel::SendCoinsReturn and generate a pair consisting
     // of a message and message flags for use in emit message().
     // Additional parameter msgArg can be used via .arg(msgArg).
     void processSendCoinsReturn(const WalletModel::SendCoinsReturn &sendCoinsReturn, const QString &msgArg = QString());
 
+=======
+>>>>>>> Committing original src/qt
 private slots:
     void on_sendButton_clicked();
     void removeEntry(SendCoinsEntry* entry);
     void updateDisplayUnit();
+<<<<<<< HEAD
     void coinControlFeatureChanged(bool);
     void coinControlButtonClicked();
     void coinControlChangeChecked(int);
@@ -80,6 +107,8 @@ private slots:
 signals:
     // Fired when a message should be reported to the user
     void message(const QString &title, const QString &message, unsigned int style);
+=======
+>>>>>>> Committing original src/qt
 };
 
 #endif // SENDCOINSDIALOG_H

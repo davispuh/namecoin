@@ -1,12 +1,16 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+=======
+>>>>>>> Committing original src/qt
 #ifndef ADDRESSBOOKPAGE_H
 #define ADDRESSBOOKPAGE_H
 
 #include <QDialog>
 
+<<<<<<< HEAD
 class AddressTableModel;
 class OptionsModel;
 
@@ -20,6 +24,20 @@ class QMenu;
 class QModelIndex;
 class QSortFilterProxyModel;
 class QTableView;
+=======
+namespace Ui {
+    class AddressBookPage;
+}
+class AddressTableModel;
+class OptionsModel;
+
+QT_BEGIN_NAMESPACE
+class QTableView;
+class QItemSelection;
+class QSortFilterProxyModel;
+class QMenu;
+class QModelIndex;
+>>>>>>> Committing original src/qt
 QT_END_NAMESPACE
 
 /** Widget that shows a list of sending or receiving addresses.
@@ -35,6 +53,7 @@ public:
     };
 
     enum Mode {
+<<<<<<< HEAD
         ForSelection, /**< Open address book to pick address */
         ForEditing  /**< Open address book for editing */
     };
@@ -43,6 +62,17 @@ public:
     ~AddressBookPage();
 
     void setModel(AddressTableModel *model);
+=======
+        ForSending, /**< Open address book to pick address for sending */
+        ForEditing  /**< Open address book for editing */
+    };
+
+    explicit AddressBookPage(Mode mode, Tabs tab, QWidget *parent = 0);
+    ~AddressBookPage();
+
+    void setModel(AddressTableModel *model);
+    void setOptionsModel(OptionsModel *optionsModel);
+>>>>>>> Committing original src/qt
     const QString &getReturnValue() const { return returnValue; }
 
 public slots:
@@ -51,6 +81,10 @@ public slots:
 private:
     Ui::AddressBookPage *ui;
     AddressTableModel *model;
+<<<<<<< HEAD
+=======
+    OptionsModel *optionsModel;
+>>>>>>> Committing original src/qt
     Mode mode;
     Tabs tab;
     QString returnValue;
@@ -66,6 +100,17 @@ private slots:
     void on_newAddress_clicked();
     /** Copy address of currently selected address entry to clipboard */
     void on_copyAddress_clicked();
+<<<<<<< HEAD
+=======
+    /** Open the sign message tab in the Sign/Verify Message dialog with currently selected address */
+    void on_signMessage_clicked();
+    /** Open the verify message tab in the Sign/Verify Message dialog with currently selected address */
+    void on_verifyMessage_clicked();
+    /** Open send coins dialog for currently selected address (no button) */
+    void onSendCoinsAction();
+    /** Generate a QR Code from the currently selected address */
+    void on_showQRCode_clicked();
+>>>>>>> Committing original src/qt
     /** Copy label of currently selected address entry to clipboard (no button) */
     void onCopyLabelAction();
     /** Edit currently selected address entry (no button) */
@@ -81,6 +126,11 @@ private slots:
     void selectNewAddress(const QModelIndex &parent, int begin, int /*end*/);
 
 signals:
+<<<<<<< HEAD
+=======
+    void signMessage(QString addr);
+    void verifyMessage(QString addr);
+>>>>>>> Committing original src/qt
     void sendCoins(QString addr);
 };
 

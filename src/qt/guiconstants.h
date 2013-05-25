@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+=======
+>>>>>>> Committing original src/qt
 #ifndef GUICONSTANTS_H
 #define GUICONSTANTS_H
 
@@ -32,6 +35,7 @@ static const int TOOLTIP_WRAP_THRESHOLD = 80;
 /* Maximum allowed URI length */
 static const int MAX_URI_LENGTH = 255;
 
+<<<<<<< HEAD
 /* Maximum somewhat-sane size of a payment request file */
 static const int MAX_PAYMENT_REQUEST_SIZE = 50000; // bytes
 
@@ -41,4 +45,9 @@ static const int MAX_PAYMENT_REQUEST_SIZE = 50000; // bytes
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 35
 
+=======
+/* QRCodeDialog -- size of exported QR Code image */
+#define EXPORT_IMAGE_SIZE 256
+
+>>>>>>> Committing original src/qt
 #endif // GUICONSTANTS_H

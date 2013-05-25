@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
+=======
+#include <QApplication>
+>>>>>>> Committing original src/qt
 
 #include "guiutil.h"
 
 #include "bitcoinaddressvalidator.h"
+<<<<<<< HEAD
 #include "bitcoinunits.h"
 #include "qvalidatedlineedit.h"
 #include "walletmodel.h"
@@ -12,6 +17,28 @@
 #include "core.h"
 #include "init.h"
 #include "util.h"
+=======
+#include "walletmodel.h"
+#include "bitcoinunits.h"
+
+#include "util.h"
+#include "init.h"
+
+#include <QDateTime>
+#include <QDoubleValidator>
+#include <QFont>
+#include <QLineEdit>
+#include <QUrl>
+#include <QTextDocument> // For Qt::escape
+#include <QAbstractItemView>
+#include <QClipboard>
+#include <QFileDialog>
+#include <QDesktopServices>
+#include <QThread>
+
+#include <boost/filesystem.hpp>
+#include <boost/filesystem/fstream.hpp>
+>>>>>>> Committing original src/qt
 
 #ifdef WIN32
 #ifdef _WIN32_WINNT
@@ -26,6 +53,7 @@
 #ifndef NOMINMAX
 #define NOMINMAX
 #endif
+<<<<<<< HEAD
 #include "shellapi.h"
 #include "shlobj.h"
 #include "shlwapi.h"
@@ -52,6 +80,11 @@
 #include <QUrl>
 #else
 #include <QUrlQuery>
+=======
+#include "shlwapi.h"
+#include "shlobj.h"
+#include "shellapi.h"
+>>>>>>> Committing original src/qt
 #endif
 
 namespace GUIUtil {
@@ -73,6 +106,7 @@ QFont bitcoinAddressFont()
     return font;
 }
 
+<<<<<<< HEAD
 void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
 {
     parent->setFocusProxy(widget);
@@ -83,6 +117,13 @@ void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
 #endif
     widget->setValidator(new BitcoinAddressEntryValidator(parent));
     widget->setCheckValidator(new BitcoinAddressCheckValidator(parent));
+=======
+void setupAddressWidget(QLineEdit *widget, QWidget *parent)
+{
+    widget->setMaxLength(BitcoinAddressValidator::MaxAddressLength);
+    widget->setValidator(new BitcoinAddressValidator(parent));
+    widget->setFont(bitcoinAddressFont());
+>>>>>>> Committing original src/qt
 }
 
 void setupAmountWidget(QLineEdit *widget, QWidget *parent)
@@ -96,13 +137,18 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
+<<<<<<< HEAD
     // return if URI is not valid or is no bitcoin: URI
+=======
+    // return if URI is not valid or is no bitcoin URI
+>>>>>>> Committing original src/qt
     if(!uri.isValid() || uri.scheme() != QString("bitcoin"))
         return false;
 
     SendCoinsRecipient rv;
     rv.address = uri.path();
     rv.amount = 0;
+<<<<<<< HEAD
 
 #if QT_VERSION < 0x050000
     QList<QPair<QString, QString> > items = uri.queryItems();
@@ -110,6 +156,9 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
     QUrlQuery uriQuery(uri);
     QList<QPair<QString, QString> > items = uriQuery.queryItems();
 #endif
+=======
+    QList<QPair<QString, QString> > items = uri.queryItems();
+>>>>>>> Committing original src/qt
     for (QList<QPair<QString, QString> >::iterator i = items.begin(); i != items.end(); i++)
     {
         bool fShouldReturnFalse = false;
@@ -124,11 +173,14 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
             rv.label = i->second;
             fShouldReturnFalse = false;
         }
+<<<<<<< HEAD
         if (i->first == "message")
         {
             rv.message = i->second;
             fShouldReturnFalse = false;
         }
+=======
+>>>>>>> Committing original src/qt
         else if (i->first == "amount")
         {
             if(!i->second.isEmpty())
@@ -157,7 +209,11 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
     //
     //    Cannot handle this later, because bitcoin:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
+<<<<<<< HEAD
     if(uri.startsWith("bitcoin://", Qt::CaseInsensitive))
+=======
+    if(uri.startsWith("bitcoin://"))
+>>>>>>> Committing original src/qt
     {
         uri.replace(0, 10, "bitcoin:");
     }
@@ -165,6 +221,7 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
     return parseBitcoinURI(uriInstance, out);
 }
 
+<<<<<<< HEAD
 QString formatBitcoinURI(const SendCoinsRecipient &info)
 {
     QString ret = QString("bitcoin:%1").arg(info.address);
@@ -208,6 +265,11 @@ QString HtmlEscape(const QString& str, bool fMultiLine)
 #else
     QString escaped = str.toHtmlEscaped();
 #endif
+=======
+QString HtmlEscape(const QString& str, bool fMultiLine)
+{
+    QString escaped = Qt::escape(str);
+>>>>>>> Committing original src/qt
     if(fMultiLine)
     {
         escaped = escaped.replace("\n", "<br>\n");
@@ -228,6 +290,7 @@ void copyEntryData(QAbstractItemView *view, int column, int role)
 
     if(!selection.isEmpty())
     {
+<<<<<<< HEAD
         // Copy first item
         setClipboard(selection.at(0).data(role).toString());
     }
@@ -236,23 +299,44 @@ void copyEntryData(QAbstractItemView *view, int column, int role)
 QString getSaveFileName(QWidget *parent, const QString &caption, const QString &dir,
     const QString &filter,
     QString *selectedSuffixOut)
+=======
+        // Copy first item (global clipboard)
+        QApplication::clipboard()->setText(selection.at(0).data(role).toString(), QClipboard::Clipboard);
+        // Copy first item (global mouse selection for e.g. X11 - NOP on Windows)
+        QApplication::clipboard()->setText(selection.at(0).data(role).toString(), QClipboard::Selection);
+    }
+}
+
+QString getSaveFileName(QWidget *parent, const QString &caption,
+                                 const QString &dir,
+                                 const QString &filter,
+                                 QString *selectedSuffixOut)
+>>>>>>> Committing original src/qt
 {
     QString selectedFilter;
     QString myDir;
     if(dir.isEmpty()) // Default to user documents location
     {
+<<<<<<< HEAD
 #if QT_VERSION < 0x050000
         myDir = QDesktopServices::storageLocation(QDesktopServices::DocumentsLocation);
 #else
         myDir = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
 #endif
+=======
+        myDir = QDesktopServices::storageLocation(QDesktopServices::DocumentsLocation);
+>>>>>>> Committing original src/qt
     }
     else
     {
         myDir = dir;
     }
+<<<<<<< HEAD
     /* Directly convert path to native OS path separators */
     QString result = QDir::toNativeSeparators(QFileDialog::getSaveFileName(parent, caption, myDir, filter, &selectedFilter));
+=======
+    QString result = QFileDialog::getSaveFileName(parent, caption, myDir, filter, &selectedFilter);
+>>>>>>> Committing original src/qt
 
     /* Extract first suffix from filter pattern "Description (*.foo)" or "Description (*.foo *.bar ...) */
     QRegExp filter_re(".* \\(\\*\\.(.*)[ \\)]");
@@ -283,6 +367,7 @@ QString getSaveFileName(QWidget *parent, const QString &caption, const QString &
     return result;
 }
 
+<<<<<<< HEAD
 QString getOpenFileName(QWidget *parent, const QString &caption, const QString &dir,
     const QString &filter,
     QString *selectedSuffixOut)
@@ -318,6 +403,8 @@ QString getOpenFileName(QWidget *parent, const QString &caption, const QString &
     return result;
 }
 
+=======
+>>>>>>> Committing original src/qt
 Qt::ConnectionType blockingGUIThreadConnection()
 {
     if(QThread::currentThread() != qApp->thread())
@@ -367,11 +454,19 @@ bool ToolTipToRichTextFilter::eventFilter(QObject *obj, QEvent *evt)
     {
         QWidget *widget = static_cast<QWidget*>(obj);
         QString tooltip = widget->toolTip();
+<<<<<<< HEAD
         if(tooltip.size() > size_threshold && !tooltip.startsWith("<qt") && !Qt::mightBeRichText(tooltip))
         {
             // Envelop with <qt></qt> to make sure Qt detects this as rich text
             // Escape the current message as HTML and replace \n by <br>
             tooltip = "<qt>" + HtmlEscape(tooltip, true) + "</qt>";
+=======
+        if(tooltip.size() > size_threshold && !tooltip.startsWith("<qt/>") && !Qt::mightBeRichText(tooltip))
+        {
+            // Prefix <qt/> to make sure Qt detects this as rich text
+            // Escape the current message as HTML and replace \n by <br>
+            tooltip = "<qt/>" + HtmlEscape(tooltip, true);
+>>>>>>> Committing original src/qt
             widget->setToolTip(tooltip);
             return true;
         }
@@ -513,6 +608,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
     }
     return true;
 }
+<<<<<<< HEAD
 
 
 #elif defined(Q_OS_MAC)
@@ -569,11 +665,19 @@ bool SetStartOnSystemStartup(bool fAutoStart)
 }
 #else
 
+=======
+#else
+
+// TODO: OSX startup stuff; see:
+// https://developer.apple.com/library/mac/#documentation/MacOSX/Conceptual/BPSystemStartup/Articles/CustomLogin.html
+
+>>>>>>> Committing original src/qt
 bool GetStartOnSystemStartup() { return false; }
 bool SetStartOnSystemStartup(bool fAutoStart) { return false; }
 
 #endif
 
+<<<<<<< HEAD
 void saveWindowGeometry(const QString& strSetting, QWidget *parent)
 {
     QSettings settings;
@@ -601,6 +705,46 @@ void setClipboard(const QString& str)
 {
     QApplication::clipboard()->setText(str, QClipboard::Clipboard);
     QApplication::clipboard()->setText(str, QClipboard::Selection);
+=======
+HelpMessageBox::HelpMessageBox(QWidget *parent) :
+    QMessageBox(parent)
+{
+    header = tr("Bitcoin-Qt") + " " + tr("version") + " " +
+        QString::fromStdString(FormatFullVersion()) + "\n\n" +
+        tr("Usage:") + "\n" +
+        "  bitcoin-qt [" + tr("command-line options") + "]                     " + "\n";
+
+    coreOptions = QString::fromStdString(HelpMessage());
+
+    uiOptions = tr("UI options") + ":\n" +
+        "  -lang=<lang>           " + tr("Set language, for example \"de_DE\" (default: system locale)") + "\n" +
+        "  -min                   " + tr("Start minimized") + "\n" +
+        "  -splash                " + tr("Show splash screen on startup (default: 1)") + "\n";
+
+    setWindowTitle(tr("Bitcoin-Qt"));
+    setTextFormat(Qt::PlainText);
+    // setMinimumWidth is ignored for QMessageBox so put in non-breaking spaces to make it wider.
+    setText(header + QString(QChar(0x2003)).repeated(50));
+    setDetailedText(coreOptions + "\n" + uiOptions);
+}
+
+void HelpMessageBox::printToConsole()
+{
+    // On other operating systems, the expected action is to print the message to the console.
+    QString strUsage = header + "\n" + coreOptions + "\n" + uiOptions;
+    fprintf(stdout, "%s", strUsage.toStdString().c_str());
+}
+
+void HelpMessageBox::showOrPrint()
+{
+#if defined(WIN32)
+        // On Windows, show a message box, as there is no stderr/stdout in windowed applications
+        exec();
+#else
+        // On other operating systems, print help text to console
+        printToConsole();
+#endif
+>>>>>>> Committing original src/qt
 }
 
 } // namespace GUIUtil

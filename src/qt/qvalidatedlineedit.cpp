@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -11,6 +12,14 @@ QValidatedLineEdit::QValidatedLineEdit(QWidget *parent) :
     QLineEdit(parent),
     valid(true),
     checkValidator(0)
+=======
+#include "qvalidatedlineedit.h"
+
+#include "guiconstants.h"
+
+QValidatedLineEdit::QValidatedLineEdit(QWidget *parent) :
+    QLineEdit(parent), valid(true)
+>>>>>>> Committing original src/qt
 {
     connect(this, SIGNAL(textChanged(QString)), this, SLOT(markValid()));
 }
@@ -37,6 +46,7 @@ void QValidatedLineEdit::focusInEvent(QFocusEvent *evt)
 {
     // Clear invalid flag on focus
     setValid(true);
+<<<<<<< HEAD
 
     QLineEdit::focusInEvent(evt);
 }
@@ -51,6 +61,13 @@ void QValidatedLineEdit::focusOutEvent(QFocusEvent *evt)
 void QValidatedLineEdit::markValid()
 {
     // As long as a user is typing ensure we display state as valid
+=======
+    QLineEdit::focusInEvent(evt);
+}
+
+void QValidatedLineEdit::markValid()
+{
+>>>>>>> Committing original src/qt
     setValid(true);
 }
 
@@ -59,6 +76,7 @@ void QValidatedLineEdit::clear()
     setValid(true);
     QLineEdit::clear();
 }
+<<<<<<< HEAD
 
 void QValidatedLineEdit::setEnabled(bool enabled)
 {
@@ -105,3 +123,5 @@ void QValidatedLineEdit::setCheckValidator(const QValidator *v)
 {
     checkValidator = v;
 }
+=======
+>>>>>>> Committing original src/qt

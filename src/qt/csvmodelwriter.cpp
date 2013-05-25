@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+=======
+>>>>>>> Committing original src/qt
 #include "csvmodelwriter.h"
 
 #include <QAbstractItemModel>
@@ -89,3 +92,7 @@ bool CSVModelWriter::write()
 
     return file.error() == QFile::NoError;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> Committing original src/qt

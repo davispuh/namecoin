@@ -1,8 +1,13 @@
 <?xml version="1.0" ?><!DOCTYPE TS><TS language="bg" version="2.0">
+<<<<<<< HEAD
+=======
+<defaultcodec>UTF-8</defaultcodec>
+>>>>>>> Committing original src/qt
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
+<<<<<<< HEAD
         <source>About Bitcoin Core</source>
         <translation type="unfinished"/>
     </message>
@@ -10,6 +15,15 @@
         <location line="+39"/>
         <source>&lt;b&gt;Bitcoin Core&lt;/b&gt; version</source>
         <translation type="unfinished"/>
+=======
+        <source>About Bitcoin</source>
+        <translation>За Биткоин</translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>&lt;b&gt;Bitcoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Биткоин&lt;/b&gt; версия</translation>
+>>>>>>> Committing original src/qt
     </message>
     <message>
         <location line="+57"/>
@@ -27,26 +41,44 @@ This product includes software developed by the OpenSSL Project for use in the O
 Използван е софтуер, разработен от OpenSSL Project за употреба в OpenSSL Toolkit (http://www.openssl.org/), криптографски софтуер разработен от Eric Young (eay@cryptsoft.com) и UPnP софтуер разработен от Thomas Bernard.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../utilitydialog.cpp" line="+29"/>
+=======
+        <location filename="../aboutdialog.cpp" line="+14"/>
+>>>>>>> Committing original src/qt
         <source>Copyright</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+0"/>
+<<<<<<< HEAD
         <source>The Bitcoin Core developers</source>
+=======
+        <source>The Bitcoin developers</source>
+>>>>>>> Committing original src/qt
         <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>AddressBookPage</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/addressbookpage.ui" line="+30"/>
+=======
+        <location filename="../forms/addressbookpage.ui" line="+14"/>
+        <source>Address Book</source>
+        <translation>Адреси</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+>>>>>>> Committing original src/qt
         <source>Double-click to edit address or label</source>
         <translation>Двоен клик за редакция на адрес или име</translation>
     </message>
     <message>
         <location line="+27"/>
         <source>Create a new address</source>
+<<<<<<< HEAD
         <translation>Създаване на нов адрес</translation>
     </message>
     <message>
@@ -71,10 +103,32 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+74"/>
+=======
+        <translation>Създава нов адрес</translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Copy the currently selected address to the system clipboard</source>
+        <translation>Копира избрания адрес</translation>
+    </message>
+    <message>
+        <location line="-11"/>
+        <source>&amp;New Address</source>
+        <translation>&amp;Нов адрес</translation>
+    </message>
+    <message>
+        <location filename="../addressbookpage.cpp" line="+63"/>
+        <source>These are your Bitcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Това са вашите Биткоин адреси за получаване на плащания. За по-лесно проследяване на плащанията и повишена анонимност можете да използвате нов адрес за всяко плащане.</translation>
+    </message>
+    <message>
+        <location filename="../forms/addressbookpage.ui" line="+14"/>
+>>>>>>> Committing original src/qt
         <source>&amp;Copy Address</source>
         <translation>&amp;Копирай</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/addressbookpage.ui" line="-41"/>
         <source>Delete the currently selected address from the list</source>
         <translation>Изтрий избрания адрес от списъка</translation>
@@ -121,16 +175,68 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
+=======
+        <location line="+11"/>
+        <source>Show &amp;QR Code</source>
+        <translation>Покажи &amp;QR код</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Sign a message to prove you own a Bitcoin address</source>
+        <translation>Подпишете съобщение като доказателство, че притежавате определен адрес</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Sign &amp;Message</source>
+        <translation>Подпиши &amp;съобщение</translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Delete the currently selected address from the list</source>
+        <translation>Изтрий избрания адрес от списъка</translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Export the data in the current tab to a file</source>
+        <translation>Запишете данните от текущия раздел във файл</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Export</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-44"/>
+        <source>Verify a message to ensure it was signed with a specified Bitcoin address</source>
+        <translation>Проверете съобщение, за да сте сигурни че е подписано с определен Биткоин адрес</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Verify Message</source>
+        <translation>&amp;Провери съобщение</translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>&amp;Delete</source>
+        <translation>&amp;Изтрий</translation>
+    </message>
+    <message>
+        <location filename="../addressbookpage.cpp" line="-5"/>
+>>>>>>> Committing original src/qt
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+7"/>
+=======
+        <location line="+13"/>
+>>>>>>> Committing original src/qt
         <source>Copy &amp;Label</source>
         <translation>Копирай &amp;име</translation>
     </message>
@@ -140,17 +246,31 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;Редактирай</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+194"/>
         <source>Export Address List</source>
         <translation type="unfinished"/>
     </message>
     <message>
+=======
+        <location line="+1"/>
+        <source>Send &amp;Coins</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+260"/>
+        <source>Export Address Book Data</source>
+        <translation>Запазване на адреси</translation>
+    </message>
+    <message>
+>>>>>>> Committing original src/qt
         <location line="+1"/>
         <source>Comma separated file (*.csv)</source>
         <translation>CSV файл (*.csv)</translation>
     </message>
     <message>
         <location line="+13"/>
+<<<<<<< HEAD
         <source>Exporting Failed</source>
         <translation type="unfinished"/>
     </message>
@@ -158,12 +278,25 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+1"/>
         <source>There was an error trying to save the address list to %1.</source>
         <translation type="unfinished"/>
+=======
+        <source>Error exporting</source>
+        <translation>Грешка при записа</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Could not write to file %1.</source>
+        <translation>Неуспешен запис в %1.</translation>
+>>>>>>> Committing original src/qt
     </message>
 </context>
 <context>
     <name>AddressTableModel</name>
     <message>
+<<<<<<< HEAD
         <location filename="../addresstablemodel.cpp" line="+168"/>
+=======
+        <location filename="../addresstablemodel.cpp" line="+144"/>
+>>>>>>> Committing original src/qt
         <source>Label</source>
         <translation>Име</translation>
     </message>
@@ -188,7 +321,11 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+21"/>
         <source>Enter passphrase</source>
+<<<<<<< HEAD
         <translation>Въведи парола</translation>
+=======
+        <translation>Парола</translation>
+>>>>>>> Committing original src/qt
     </message>
     <message>
         <location line="+14"/>
@@ -201,7 +338,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Още веднъж</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../askpassphrasedialog.cpp" line="+40"/>
+=======
+        <location filename="../askpassphrasedialog.cpp" line="+33"/>
+>>>>>>> Committing original src/qt
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Въведете нова парола за портфейла.&lt;br/&gt;Моля използвайте &lt;b&gt;поне 10 случайни символа&lt;/b&gt; или &lt;b&gt;8 или повече думи&lt;/b&gt;.</translation>
     </message>
@@ -275,7 +416,11 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-56"/>
         <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+<<<<<<< HEAD
         <translation>Биткоин ще се затоври сега за да завърши процеса на криптиране. Запомнете, че криптирането на вашия портефейл не може напълно да предпази вашите Бит-монети от кражба чрез зловреден софтуер, инфектирал вашия компютър</translation>
+=======
+        <translation type="unfinished"/>
+>>>>>>> Committing original src/qt
     </message>
     <message>
         <location line="+13"/>
@@ -322,27 +467,43 @@ This product includes software developed by the OpenSSL Project for use in the O
 <context>
     <name>BitcoinGUI</name>
     <message>
+<<<<<<< HEAD
         <location filename="../bitcoingui.cpp" line="+295"/>
+=======
+        <location filename="../bitcoingui.cpp" line="+233"/>
+>>>>>>> Committing original src/qt
         <source>Sign &amp;message...</source>
         <translation>Подписване на &amp;съобщение...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+335"/>
+=======
+        <location line="+280"/>
+>>>>>>> Committing original src/qt
         <source>Synchronizing with network...</source>
         <translation>Синхронизиране с мрежата...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-407"/>
+=======
+        <location line="-349"/>
+>>>>>>> Committing original src/qt
         <source>&amp;Overview</source>
         <translation>&amp;Баланс</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-137"/>
         <source>Node</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+138"/>
+=======
+        <location line="+1"/>
+>>>>>>> Committing original src/qt
         <source>Show general overview of wallet</source>
         <translation>Обобщена информация за портфейла</translation>
     </message>
@@ -354,16 +515,34 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+1"/>
         <source>Browse transaction history</source>
+<<<<<<< HEAD
         <translation>История на транзакциите</translation>
     </message>
     <message>
         <location line="+17"/>
+=======
+        <translation>История на входящите и изходящи транзакции</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Edit the list of stored addresses and labels</source>
+        <translation>Редактиране на адреси</translation>
+    </message>
+    <message>
+        <location line="-14"/>
+        <source>Show the list of addresses for receiving payments</source>
+        <translation>Списък на адресите за получаване</translation>
+    </message>
+    <message>
+        <location line="+31"/>
+>>>>>>> Committing original src/qt
         <source>E&amp;xit</source>
         <translation>Из&amp;ход</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Quit application</source>
+<<<<<<< HEAD
         <translation>Изход от приложението</translation>
     </message>
     <message>
@@ -373,14 +552,30 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+3"/>
+=======
+        <translation>Затваря приложението</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Show information about Bitcoin</source>
+        <translation>Показва информация за Биткоин</translation>
+    </message>
+    <message>
+>>>>>>> Committing original src/qt
         <location line="+2"/>
         <source>About &amp;Qt</source>
         <translation>За &amp;Qt</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>Show information about Qt</source>
         <translation>Покажи информация за Qt</translation>
+=======
+        <location line="+1"/>
+        <source>Show information about Qt</source>
+        <translation type="unfinished"/>
+>>>>>>> Committing original src/qt
     </message>
     <message>
         <location line="+2"/>
@@ -388,7 +583,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;Опции...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+9"/>
+=======
+        <location line="+6"/>
+>>>>>>> Committing original src/qt
         <source>&amp;Encrypt Wallet...</source>
         <translation>&amp;Криптиране на портфейла...</translation>
     </message>
@@ -403,6 +602,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;Смяна на паролата...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+10"/>
         <source>&amp;Sending addresses...</source>
         <translation type="unfinished"/>
@@ -419,6 +619,9 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+325"/>
+=======
+        <location line="+285"/>
+>>>>>>> Committing original src/qt
         <source>Importing blocks from disk...</source>
         <translation type="unfinished"/>
     </message>
@@ -428,7 +631,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-405"/>
+=======
+        <location line="-347"/>
+>>>>>>> Committing original src/qt
         <source>Send coins to a Bitcoin address</source>
         <translation>Изпращане към Биткоин адрес</translation>
     </message>
@@ -438,7 +645,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+12"/>
+=======
+        <location line="+9"/>
+>>>>>>> Committing original src/qt
         <source>Backup wallet to another location</source>
         <translation type="unfinished"/>
     </message>
@@ -463,17 +674,30 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;Проверка на съобщение...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+430"/>
+=======
+        <location line="-165"/>
+        <location line="+530"/>
+>>>>>>> Committing original src/qt
         <source>Bitcoin</source>
         <translation>Биткоин</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-643"/>
+=======
+        <location line="-530"/>
+>>>>>>> Committing original src/qt
         <source>Wallet</source>
         <translation>Портфейл</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+146"/>
+=======
+        <location line="+101"/>
+>>>>>>> Committing original src/qt
         <source>&amp;Send</source>
         <translation type="unfinished"/>
     </message>
@@ -483,8 +707,22 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+46"/>
         <location line="+2"/>
+=======
+        <location line="+14"/>
+        <source>&amp;Addresses</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>&amp;About Bitcoin</source>
+        <translation>&amp;За Биткоин</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+>>>>>>> Committing original src/qt
         <source>&amp;Show / Hide</source>
         <translation type="unfinished"/>
     </message>
@@ -509,32 +747,54 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+48"/>
+=======
+        <location line="+28"/>
+>>>>>>> Committing original src/qt
         <source>&amp;File</source>
         <translation>&amp;Файл</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+14"/>
+=======
+        <location line="+7"/>
+>>>>>>> Committing original src/qt
         <source>&amp;Settings</source>
         <translation>&amp;Настройки</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+9"/>
+=======
+        <location line="+6"/>
+>>>>>>> Committing original src/qt
         <source>&amp;Help</source>
         <translation>&amp;Помощ</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+15"/>
+=======
+        <location line="+9"/>
+>>>>>>> Committing original src/qt
         <source>Tabs toolbar</source>
         <translation>Раздели</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-284"/>
         <location line="+376"/>
+=======
+        <location line="+17"/>
+        <location line="+10"/>
+>>>>>>> Committing original src/qt
         <source>[testnet]</source>
         <translation>[testnet]</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-401"/>
         <source>Bitcoin Core</source>
         <translation type="unfinished"/>
@@ -578,11 +838,18 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+159"/>
         <location line="+5"/>
+=======
+        <location line="+47"/>
+>>>>>>> Committing original src/qt
         <source>Bitcoin client</source>
         <translation type="unfinished"/>
     </message>
     <message numerus="yes">
+<<<<<<< HEAD
         <location line="+142"/>
+=======
+        <location line="+141"/>
+>>>>>>> Committing original src/qt
         <source>%n active connection(s) to Bitcoin network</source>
         <translation><numerusform>%n връзка към Биткоин мрежата</numerusform><numerusform>%n връзки към Биткоин мрежата</numerusform></translation>
     </message>
@@ -602,7 +869,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished"/>
     </message>
     <message numerus="yes">
+<<<<<<< HEAD
         <location line="+23"/>
+=======
+        <location line="+20"/>
+>>>>>>> Committing original src/qt
         <source>%n hour(s)</source>
         <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
@@ -622,7 +893,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+21"/>
+=======
+        <location line="+14"/>
+>>>>>>> Committing original src/qt
         <source>Last received block was generated %1 ago.</source>
         <translation type="unfinished"/>
     </message>
@@ -632,9 +907,15 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+27"/>
         <source>Error</source>
         <translation>Грешка</translation>
+=======
+        <location line="+22"/>
+        <source>Error</source>
+        <translation type="unfinished"/>
+>>>>>>> Committing original src/qt
     </message>
     <message>
         <location line="+3"/>
@@ -647,17 +928,39 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-85"/>
+=======
+        <location line="+70"/>
+        <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-140"/>
+>>>>>>> Committing original src/qt
         <source>Up to date</source>
         <translation>Синхронизиран</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+34"/>
+=======
+        <location line="+31"/>
+>>>>>>> Committing original src/qt
         <source>Catching up...</source>
         <translation>Зарежда блокове...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+130"/>
+=======
+        <location line="+113"/>
+        <source>Confirm transaction fee</source>
+        <translation>Потвърждение за такса</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+>>>>>>> Committing original src/qt
         <source>Sent transaction</source>
         <translation>Изходяща транзакция</translation>
     </message>
@@ -676,7 +979,23 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+69"/>
+=======
+        <location line="+33"/>
+        <location line="+23"/>
+        <source>URI handling</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-23"/>
+        <location line="+23"/>
+        <source>URI can not be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+17"/>
+>>>>>>> Committing original src/qt
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Портфейлът е &lt;b&gt;криптиран&lt;/b&gt; и &lt;b&gt;отключен&lt;/b&gt;</translation>
     </message>
@@ -686,7 +1005,11 @@ Address: %4
         <translation>Портфейлът е &lt;b&gt;криптиран&lt;/b&gt; и &lt;b&gt;заключен&lt;/b&gt;</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../bitcoin.cpp" line="+438"/>
+=======
+        <location filename="../bitcoin.cpp" line="+111"/>
+>>>>>>> Committing original src/qt
         <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
@@ -694,12 +1017,17 @@ Address: %4
 <context>
     <name>ClientModel</name>
     <message>
+<<<<<<< HEAD
         <location filename="../clientmodel.cpp" line="+119"/>
+=======
+        <location filename="../clientmodel.cpp" line="+104"/>
+>>>>>>> Committing original src/qt
         <source>Network Alert</source>
         <translation type="unfinished"/>
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>CoinControlDialog</name>
     <message>
         <location filename="../forms/coincontroldialog.ui" line="+14"/>
@@ -825,10 +1153,91 @@ Address: %4
     <message>
         <location line="+22"/>
         <source>Copy quantity</source>
+=======
+    <name>EditAddressDialog</name>
+    <message>
+        <location filename="../forms/editaddressdialog.ui" line="+14"/>
+        <source>Edit Address</source>
+        <translation>Редактиране на адрес</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>&amp;Label</source>
+        <translation>&amp;Име</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>The label associated with this address book entry</source>
+        <translation>Името свързано с този запис в списъка с адреси</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Address</source>
+        <translation>&amp;Адрес</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>The address associated with this address book entry. This can only be modified for sending addresses.</source>
+        <translation>Адресът свързан с този запис в списъка с адреси. Може да се променя само за изходящи адреси.</translation>
+    </message>
+    <message>
+        <location filename="../editaddressdialog.cpp" line="+21"/>
+        <source>New receiving address</source>
+        <translation>Нов адрес за получаване</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>New sending address</source>
+        <translation>Нов адрес за изпращане</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Edit receiving address</source>
+        <translation>Редактиране на входящ адрес</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Edit sending address</source>
+        <translation>Редактиране на изходящ адрес</translation>
+    </message>
+    <message>
+        <location line="+76"/>
+        <source>The entered address &quot;%1&quot; is already in the address book.</source>
+        <translation>Вече има адрес &quot;%1&quot; в списъка с адреси.</translation>
+    </message>
+    <message>
+        <location line="-5"/>
+        <source>The entered address &quot;%1&quot; is not a valid Bitcoin address.</source>
+        <translation>&quot;%1&quot; не е валиден Биткоин адрес.</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Could not unlock wallet.</source>
+        <translation>Отключването на портфейла беше неуспешно.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>New key generation failed.</source>
+        <translation>Създаването на ключ беше неуспешно.</translation>
+    </message>
+</context>
+<context>
+    <name>GUIUtil::HelpMessageBox</name>
+    <message>
+        <location filename="../guiutil.cpp" line="+424"/>
+        <location line="+12"/>
+        <source>Bitcoin-Qt</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-12"/>
+        <source>version</source>
+>>>>>>> Committing original src/qt
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+2"/>
+<<<<<<< HEAD
         <source>Copy fee</source>
         <translation type="unfinished"/>
     </message>
@@ -875,30 +1284,51 @@ Address: %4
     <message>
         <location line="+1"/>
         <source>medium-high</source>
+=======
+        <source>Usage:</source>
+>>>>>>> Committing original src/qt
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
         <source>medium</source>
+=======
+        <source>command-line options</source>
+>>>>>>> Committing original src/qt
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+4"/>
+<<<<<<< HEAD
         <source>low-medium</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
         <source>low</source>
+=======
+        <source>UI options</source>
+        <translation>UI Опции</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
+>>>>>>> Committing original src/qt
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
         <source>lower</source>
+=======
+        <source>Start minimized</source>
+>>>>>>> Committing original src/qt
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
         <source>lowest</source>
         <translation type="unfinished"/>
     </message>
@@ -2075,10 +2505,437 @@ Address: %4
     <message>
         <location line="+20"/>
         <source>Inputs...</source>
+=======
+        <source>Show splash screen on startup (default: 1)</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>OptionsDialog</name>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="+14"/>
+        <source>Options</source>
+        <translation>Опции</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>&amp;Main</source>
+        <translation>&amp;Основни</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Pay transaction &amp;fee</source>
+        <translation>&amp;Такса за изходяща транзакция</translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Automatically start Bitcoin after logging in to the system.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Start Bitcoin on system login</source>
+        <translation>&amp;Пускане на Биткоин при вход в системата</translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Reset all client options to default.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Reset Options</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>&amp;Network</source>
+        <translation>&amp;Мрежа</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматично отваряне на входящия Bitcoin порт. Работи само с рутери поддържащи UPnP.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Map port using &amp;UPnP</source>
+        <translation>Отваряне на входящия порт чрез &amp;UPnP</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Connect to the Bitcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Connect through SOCKS proxy:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Proxy &amp;IP:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>IP address of the proxy (e.g. 127.0.0.1)</source>
+        <translation>IP адрес на прокси сървъра (например 127.0.0.1)</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Port:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Port of the proxy (e.g. 9050)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+7"/>
+        <source>SOCKS &amp;Version:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>SOCKS version of the proxy (e.g. 5)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>&amp;Window</source>
+        <translation>&amp;Прозорец</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Show only a tray icon after minimizing the window.</source>
+        <translation>След минимизиране ще е видима само иконата в системния трей.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Minimize to the tray instead of the taskbar</source>
+        <translation>&amp;Минимизиране в системния трей</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
+        <translation>При затваряне на прозореца приложението остава минимизирано. Ако изберете тази опция, приложението може да се затвори само чрез Изход в менюто.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>M&amp;inimize on close</source>
+        <translation>М&amp;инимизиране при затваряне</translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>&amp;Display</source>
+        <translation>&amp;Интерфейс</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>User Interface &amp;language:</source>
+        <translation>Език:</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>The user interface language can be set here. This setting will take effect after restarting Bitcoin.</source>
+        <translation>Промяната на езика ще влезе в сила след рестартиране на Биткоин.</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>Мерни единици:</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
+        <translation>Изберете единиците, показвани по подразбиране в интерфейса.</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Whether to show Bitcoin addresses in the transaction list or not.</source>
+        <translation>Ще се показват адресите в списъка с транзакции независимо от наличието на кратко име.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Display addresses in transaction list</source>
+        <translation>Показвай и адресите в списъка с транзакции</translation>
+    </message>
+    <message>
+        <location line="+71"/>
+        <source>&amp;OK</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Cancel</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>&amp;Apply</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../optionsdialog.cpp" line="+53"/>
+        <source>default</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+130"/>
+        <source>Confirm options reset</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Some settings may require a client restart to take effect.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Do you want to proceed?</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+42"/>
+        <location line="+9"/>
+        <source>Warning</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-9"/>
+        <location line="+9"/>
+        <source>This setting will take effect after restarting Bitcoin.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>The supplied proxy address is invalid.</source>
+        <translation>Прокси адресът е невалиден.</translation>
+    </message>
+</context>
+<context>
+    <name>OverviewPage</name>
+    <message>
+        <location filename="../forms/overviewpage.ui" line="+14"/>
+        <source>Form</source>
+        <translation>Форма</translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <location line="+166"/>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-124"/>
+        <source>Balance:</source>
+        <translation>Баланс:</translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Unconfirmed:</source>
+        <translation>Непотвърдени:</translation>
+    </message>
+    <message>
+        <location line="-78"/>
+        <source>Wallet</source>
+        <translation>Портфейл</translation>
+    </message>
+    <message>
+        <location line="+107"/>
+        <source>Immature:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Mined balance that has not yet matured</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+46"/>
+        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Последни транзакции&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location line="-101"/>
+        <source>Your current balance</source>
+        <translation>Вашият текущ баланс</translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the current balance</source>
+        <translation>Сборът на все още непотвърдените транзакции, които не са част от текущия баланс</translation>
+    </message>
+    <message>
+        <location filename="../overviewpage.cpp" line="+116"/>
+        <location line="+1"/>
+        <source>out of sync</source>
+        <translation>несинхронизиран</translation>
+    </message>
+</context>
+<context>
+    <name>PaymentServer</name>
+    <message>
+        <location filename="../paymentserver.cpp" line="+107"/>
+        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>QRCodeDialog</name>
+    <message>
+        <location filename="../forms/qrcodedialog.ui" line="+14"/>
+        <source>QR Code Dialog</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+59"/>
+        <source>Request Payment</source>
+        <translation>Изискай плащане</translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <source>Amount:</source>
+        <translation>Сума:</translation>
+    </message>
+    <message>
+        <location line="-44"/>
+        <source>Label:</source>
+        <translation>Име:</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Message:</source>
+        <translation>Съобщение:</translation>
+    </message>
+    <message>
+        <location line="+71"/>
+        <source>&amp;Save As...</source>
+        <translation>&amp;Запази като...</translation>
+    </message>
+    <message>
+        <location filename="../qrcodedialog.cpp" line="+62"/>
+        <source>Error encoding URI into QR Code.</source>
+        <translation>Грешка при създаването на QR Code от URI.</translation>
+    </message>
+    <message>
+        <location line="+40"/>
+        <source>The entered amount is invalid, please check.</source>
+        <translation>Въведената сума е невалидна, моля проверете.</translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Resulting URI too long, try to reduce the text for label / message.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Save QR Code</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>PNG Images (*.png)</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>RPCConsole</name>
+    <message>
+        <location filename="../forms/rpcconsole.ui" line="+46"/>
+        <source>Client name</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+10"/>
+        <location line="+23"/>
+        <location line="+26"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+36"/>
+        <location line="+53"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location filename="../rpcconsole.cpp" line="+339"/>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
+    <message>
+        <location line="-217"/>
+        <source>Client version</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-45"/>
+        <source>&amp;Information</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+68"/>
+        <source>Using OpenSSL version</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+49"/>
+        <source>Startup time</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Network</source>
+        <translation>Мрежа</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Number of connections</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>On testnet</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Block chain</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Current number of blocks</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Estimated total blocks</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Last block time</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>&amp;Open</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Command-line options</source>
+>>>>>>> Committing original src/qt
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+<<<<<<< HEAD
         <source>automatically selected</source>
         <translation type="unfinished"/>
     </message>
@@ -2139,6 +2996,83 @@ Address: %4
     </message>
     <message>
         <location line="+115"/>
+=======
+        <source>Show the Bitcoin-Qt help message to get a list with possible Bitcoin command-line options.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Show</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>&amp;Console</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-260"/>
+        <source>Build date</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-104"/>
+        <source>Bitcoin - Debug window</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Bitcoin Core</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+279"/>
+        <source>Debug log file</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Open the Bitcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+102"/>
+        <source>Clear console</source>
+        <translation>Изчисти конзолата</translation>
+    </message>
+    <message>
+        <location filename="../rpcconsole.cpp" line="-30"/>
+        <source>Welcome to the Bitcoin RPC console.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
+        <translation>Използвайте стрелки надолу и нагореза разглеждане на историятаот команди и &lt;b&gt;Ctrl-L&lt;/b&gt; за изчистване на конзолата.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>SendCoinsDialog</name>
+    <message>
+        <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
+        <location filename="../sendcoinsdialog.cpp" line="+124"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <location line="+6"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <source>Send Coins</source>
+        <translation>Изпращане</translation>
+    </message>
+    <message>
+        <location line="+50"/>
+>>>>>>> Committing original src/qt
         <source>Send to multiple recipients at once</source>
         <translation>Изпращане към повече от един получател</translation>
     </message>
@@ -2149,8 +3083,13 @@ Address: %4
     </message>
     <message>
         <location line="+20"/>
+<<<<<<< HEAD
         <source>Clear all fields of the form.</source>
         <translation type="unfinished"/>
+=======
+        <source>Remove all transaction fields</source>
+        <translation>Изчистване на всички полета</translation>
+>>>>>>> Committing original src/qt
     </message>
     <message>
         <location line="+3"/>
@@ -2163,7 +3102,16 @@ Address: %4
         <translation>Баланс:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+41"/>
+=======
+        <location line="+10"/>
+        <source>123.456 BTC</source>
+        <translation>123.456 BTC</translation>
+    </message>
+    <message>
+        <location line="+31"/>
+>>>>>>> Committing original src/qt
         <source>Confirm the send action</source>
         <translation>Потвърдете изпращането</translation>
     </message>
@@ -2173,6 +3121,7 @@ Address: %4
         <translation>И&amp;зпрати</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../sendcoinsdialog.cpp" line="-228"/>
         <source>Confirm send coins</source>
         <translation>Потвърждаване</translation>
@@ -2242,30 +3191,70 @@ Address: %4
     </message>
     <message>
         <location line="+202"/>
+=======
+        <location filename="../sendcoinsdialog.cpp" line="-59"/>
+        <source>&lt;b&gt;%1&lt;/b&gt; to %2 (%3)</source>
+        <translation>&lt;b&gt;%1&lt;/b&gt; на %2 (%3)</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Confirm send coins</source>
+        <translation>Потвърждаване</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Are you sure you want to send %1?</source>
+        <translation>Сигурни ли сте, че искате да изпратите %1?</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source> and </source>
+        <translation> и </translation>
+    </message>
+    <message>
+        <location line="+23"/>
+>>>>>>> Committing original src/qt
         <source>The recipient address is not valid, please recheck.</source>
         <translation>Невалиден адрес на получателя.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
+=======
+        <location line="+5"/>
+>>>>>>> Committing original src/qt
         <source>The amount to pay must be larger than 0.</source>
         <translation>Сумата трябва да е по-голяма от 0.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
+=======
+        <location line="+5"/>
+>>>>>>> Committing original src/qt
         <source>The amount exceeds your balance.</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
+=======
+        <location line="+5"/>
+>>>>>>> Committing original src/qt
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
+=======
+        <location line="+6"/>
+>>>>>>> Committing original src/qt
         <source>Duplicate address found, can only send to each address once per send operation.</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Transaction creation failed!</source>
         <translation type="unfinished"/>
@@ -2309,38 +3298,75 @@ Address: %4
         <location line="+8"/>
         <source>Invalid payment address %1</source>
         <translation type="unfinished"/>
+=======
+        <location line="+5"/>
+        <source>Error: Transaction creation failed!</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Грешка: транзакцията беше отхвърлена. Това е възможно ако част от парите в портфейла са вече похарчени, например при паралелно използване на копие на wallet.dat</translation>
+>>>>>>> Committing original src/qt
     </message>
 </context>
 <context>
     <name>SendCoinsEntry</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/sendcoinsentry.ui" line="+131"/>
         <location line="+521"/>
         <location line="+536"/>
+=======
+        <location filename="../forms/sendcoinsentry.ui" line="+14"/>
+        <source>Form</source>
+        <translation>Форма</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+>>>>>>> Committing original src/qt
         <source>A&amp;mount:</source>
         <translation>С&amp;ума:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-1152"/>
+=======
+        <location line="+13"/>
+>>>>>>> Committing original src/qt
         <source>Pay &amp;To:</source>
         <translation>Плати &amp;На:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+18"/>
+=======
+        <location line="+34"/>
+>>>>>>> Committing original src/qt
         <source>The address to send the payment to (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../sendcoinsentry.cpp" line="+30"/>
+=======
+        <location line="+60"/>
+        <location filename="../sendcoinsentry.cpp" line="+26"/>
+>>>>>>> Committing original src/qt
         <source>Enter a label for this address to add it to your address book</source>
         <translation>Въведете име за този адрес, за да го добавите в списъка с адреси</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/sendcoinsentry.ui" line="+57"/>
+=======
+        <location line="-78"/>
+>>>>>>> Committing original src/qt
         <source>&amp;Label:</source>
         <translation>&amp;Име:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-50"/>
         <source>Choose previously used address</source>
         <translation type="unfinished"/>
@@ -2352,6 +3378,14 @@ Address: %4
     </message>
     <message>
         <location line="+50"/>
+=======
+        <location line="+28"/>
+        <source>Choose address from address book</source>
+        <translation>Изберете от списъка с адреси</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+>>>>>>> Committing original src/qt
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
@@ -2367,6 +3401,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
+<<<<<<< HEAD
         <location line="+524"/>
         <location line="+536"/>
         <source>Remove this entry</source>
@@ -2408,6 +3443,10 @@ Address: %4
         <location line="+536"/>
         <source>Memo:</source>
         <translation type="unfinished"/>
+=======
+        <source>Remove this recipient</source>
+        <translation>Махни този получател</translation>
+>>>>>>> Committing original src/qt
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
@@ -2416,6 +3455,7 @@ Address: %4
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+48"/>
@@ -2429,6 +3469,8 @@ Address: %4
     </message>
 </context>
 <context>
+=======
+>>>>>>> Committing original src/qt
     <name>SignVerifyMessageDialog</name>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="+14"/>
@@ -2436,7 +3478,11 @@ Address: %4
         <translation>Подпиши / Провери съобщение</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+10"/>
+=======
+        <location line="+13"/>
+>>>>>>> Committing original src/qt
         <source>&amp;Sign Message</source>
         <translation>&amp;Подпиши</translation>
     </message>
@@ -2453,8 +3499,13 @@ Address: %4
     <message>
         <location line="+10"/>
         <location line="+213"/>
+<<<<<<< HEAD
         <source>Choose previously used address</source>
         <translation type="unfinished"/>
+=======
+        <source>Choose an address from the address book</source>
+        <translation>Изберете от списъка с адреси</translation>
+>>>>>>> Committing original src/qt
     </message>
     <message>
         <location line="-203"/>
@@ -2539,7 +3590,11 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../signverifymessagedialog.cpp" line="+29"/>
+=======
+        <location filename="../signverifymessagedialog.cpp" line="+27"/>
+>>>>>>> Committing original src/qt
         <location line="+3"/>
         <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
         <translation>Въведете Биткоин адрес (например 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
@@ -2555,7 +3610,11 @@ Address: %4
         <translation>Биткоин подпис</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+84"/>
+=======
+        <location line="+82"/>
+>>>>>>> Committing original src/qt
         <location line="+81"/>
         <source>The entered address is invalid.</source>
         <translation>Въведеният адрес е невалиден.</translation>
@@ -2624,6 +3683,7 @@ Address: %4
 <context>
     <name>SplashScreen</name>
     <message>
+<<<<<<< HEAD
         <location filename="../splashscreen.cpp" line="+28"/>
         <source>Bitcoin Core</source>
         <translation type="unfinished"/>
@@ -2631,6 +3691,10 @@ Address: %4
     <message>
         <location line="+2"/>
         <source>The Bitcoin Core developers</source>
+=======
+        <location filename="../splashscreen.cpp" line="+22"/>
+        <source>The Bitcoin developers</source>
+>>>>>>> Committing original src/qt
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2640,6 +3704,7 @@ Address: %4
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>TrafficGraphWidget</name>
     <message>
         <location filename="../trafficgraphwidget.cpp" line="+79"/>
@@ -2651,6 +3716,11 @@ Address: %4
     <name>TransactionDesc</name>
     <message>
         <location filename="../transactiondesc.cpp" line="+28"/>
+=======
+    <name>TransactionDesc</name>
+    <message>
+        <location filename="../transactiondesc.cpp" line="+20"/>
+>>>>>>> Committing original src/qt
         <source>Open until %1</source>
         <translation>Подлежи на промяна до %1</translation>
     </message>
@@ -2723,12 +3793,20 @@ Address: %4
         <location line="+12"/>
         <location line="+45"/>
         <location line="+17"/>
+<<<<<<< HEAD
         <location line="+53"/>
+=======
+        <location line="+30"/>
+>>>>>>> Committing original src/qt
         <source>Credit</source>
         <translation>Кредит</translation>
     </message>
     <message numerus="yes">
+<<<<<<< HEAD
         <location line="-125"/>
+=======
+        <location line="-102"/>
+>>>>>>> Committing original src/qt
         <source>matures in %n more block(s)</source>
         <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
@@ -2741,12 +3819,20 @@ Address: %4
         <location line="+44"/>
         <location line="+8"/>
         <location line="+15"/>
+<<<<<<< HEAD
         <location line="+53"/>
+=======
+        <location line="+30"/>
+>>>>>>> Committing original src/qt
         <source>Debit</source>
         <translation>Дебит</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-62"/>
+=======
+        <location line="-39"/>
+>>>>>>> Committing original src/qt
         <source>Transaction fee</source>
         <translation>Такса</translation>
     </message>
@@ -2757,12 +3843,19 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
+<<<<<<< HEAD
         <location line="+9"/>
+=======
+>>>>>>> Committing original src/qt
         <source>Message</source>
         <translation>Съобщение</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-7"/>
+=======
+        <location line="+2"/>
+>>>>>>> Committing original src/qt
         <source>Comment</source>
         <translation>Коментар</translation>
     </message>
@@ -2772,17 +3865,25 @@ Address: %4
         <translation>ID</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+18"/>
         <source>Merchant</source>
+=======
+        <location line="+3"/>
+        <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+>>>>>>> Committing original src/qt
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+7"/>
+<<<<<<< HEAD
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+8"/>
+=======
+>>>>>>> Committing original src/qt
         <source>Debug information</source>
         <translation type="unfinished"/>
     </message>
@@ -2812,7 +3913,11 @@ Address: %4
         <translation>false</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-232"/>
+=======
+        <location line="-209"/>
+>>>>>>> Committing original src/qt
         <source>, has not been successfully broadcast yet</source>
         <translation>, все още не е изпратено</translation>
     </message>
@@ -2843,7 +3948,11 @@ Address: %4
 <context>
     <name>TransactionTableModel</name>
     <message>
+<<<<<<< HEAD
         <location filename="../transactiontablemodel.cpp" line="+234"/>
+=======
+        <location filename="../transactiontablemodel.cpp" line="+225"/>
+>>>>>>> Committing original src/qt
         <source>Date</source>
         <translation>Дата</translation>
     </message>
@@ -2862,6 +3971,7 @@ Address: %4
         <source>Amount</source>
         <translation>Сума</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <location line="+59"/>
         <source>Immature (%1 confirmations, will be available after %2)</source>
@@ -2869,6 +3979,10 @@ Address: %4
     </message>
     <message numerus="yes">
         <location line="+16"/>
+=======
+    <message numerus="yes">
+        <location line="+57"/>
+>>>>>>> Committing original src/qt
         <source>Open for %n more block(s)</source>
         <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
@@ -2888,6 +4002,7 @@ Address: %4
         <translation>Непотвърдени (%1 от %2 потвърждения)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-22"/>
         <location line="+25"/>
         <source>Confirmed (%1 confirmations)</source>
@@ -2895,23 +4010,47 @@ Address: %4
     </message>
     <message>
         <location line="-22"/>
+=======
+        <location line="+3"/>
+        <source>Confirmed (%1 confirmations)</source>
+        <translation>Потвърдени (%1 потвърждения)</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+8"/>
+        <source>Mined balance will be available when it matures in %n more block(s)</source>
+        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+>>>>>>> Committing original src/qt
         <source>This block was not received by any other nodes and will probably not be accepted!</source>
         <translation>Блокът не е получен от останалите участници и най-вероятно няма да бъде одобрен.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Generated but not accepted</source>
+<<<<<<< HEAD
         <translation>Генерирана, но отхвърлена от мрежата</translation>
     </message>
     <message>
         <location line="+62"/>
+=======
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+43"/>
+>>>>>>> Committing original src/qt
         <source>Received with</source>
         <translation>Получени с</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Received from</source>
+<<<<<<< HEAD
         <translation>Получен от</translation>
+=======
+        <translation type="unfinished"/>
+>>>>>>> Committing original src/qt
     </message>
     <message>
         <location line="+3"/>
@@ -2962,7 +4101,11 @@ Address: %4
 <context>
     <name>TransactionView</name>
     <message>
+<<<<<<< HEAD
         <location filename="../transactionview.cpp" line="+57"/>
+=======
+        <location filename="../transactionview.cpp" line="+52"/>
+>>>>>>> Committing original src/qt
         <location line="+16"/>
         <source>All</source>
         <translation>Всички</translation>
@@ -3023,12 +4166,20 @@ Address: %4
         <translation>Други</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+6"/>
+=======
+        <location line="+7"/>
+>>>>>>> Committing original src/qt
         <source>Enter address or label to search</source>
         <translation>Търсене по адрес или име</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+6"/>
+=======
+        <location line="+7"/>
+>>>>>>> Committing original src/qt
         <source>Min amount</source>
         <translation>Минимална сума</translation>
     </message>
@@ -3045,7 +4196,11 @@ Address: %4
     <message>
         <location line="+1"/>
         <source>Copy amount</source>
+<<<<<<< HEAD
         <translation>Копирай сума</translation>
+=======
+        <translation type="unfinished"/>
+>>>>>>> Committing original src/qt
     </message>
     <message>
         <location line="+1"/>
@@ -3063,6 +4218,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+142"/>
         <source>Export Transaction History</source>
         <translation type="unfinished"/>
@@ -3089,11 +4245,23 @@ Address: %4
     </message>
     <message>
         <location line="-22"/>
+=======
+        <location line="+139"/>
+        <source>Export Transaction Data</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> Committing original src/qt
         <source>Comma separated file (*.csv)</source>
         <translation>CSV файл (*.csv)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+9"/>
+=======
+        <location line="+8"/>
+>>>>>>> Committing original src/qt
         <source>Confirmed</source>
         <translation>Потвърдени</translation>
     </message>
@@ -3125,10 +4293,27 @@ Address: %4
     <message>
         <location line="+1"/>
         <source>ID</source>
+<<<<<<< HEAD
         <translation>ИД</translation>
     </message>
     <message>
         <location line="+107"/>
+=======
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Error exporting</source>
+        <translation>Грешка при записа</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Could not write to file %1.</source>
+        <translation>Неуспешен запис в %1.</translation>
+    </message>
+    <message>
+        <location line="+100"/>
+>>>>>>> Committing original src/qt
         <source>Range:</source>
         <translation>От:</translation>
     </message>
@@ -3139,6 +4324,7 @@ Address: %4
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>WalletFrame</name>
     <message>
         <location filename="../walletframe.cpp" line="+26"/>
@@ -3150,6 +4336,11 @@ Address: %4
     <name>WalletModel</name>
     <message>
         <location filename="../walletmodel.cpp" line="+245"/>
+=======
+    <name>WalletModel</name>
+    <message>
+        <location filename="../walletmodel.cpp" line="+193"/>
+>>>>>>> Committing original src/qt
         <source>Send Coins</source>
         <translation>Изпращане</translation>
     </message>
@@ -3157,7 +4348,11 @@ Address: %4
 <context>
     <name>WalletView</name>
     <message>
+<<<<<<< HEAD
         <location filename="../walletview.cpp" line="+43"/>
+=======
+        <location filename="../walletview.cpp" line="+42"/>
+>>>>>>> Committing original src/qt
         <source>&amp;Export</source>
         <translation type="unfinished"/>
     </message>
@@ -3167,39 +4362,64 @@ Address: %4
         <translation>Запишете данните от текущия раздел във файл</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+181"/>
+=======
+        <location line="+193"/>
+>>>>>>> Committing original src/qt
         <source>Backup Wallet</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
+=======
+        <location line="+0"/>
+>>>>>>> Committing original src/qt
         <source>Wallet Data (*.dat)</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+6"/>
+=======
+        <location line="+3"/>
+>>>>>>> Committing original src/qt
         <source>Backup Failed</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+0"/>
+<<<<<<< HEAD
         <source>There was an error trying to save the wallet data to %1.</source>
+=======
+        <source>There was an error trying to save the wallet data to the new location.</source>
+>>>>>>> Committing original src/qt
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+4"/>
+<<<<<<< HEAD
         <source>The wallet data was successfully saved to %1.</source>
+=======
+        <source>Backup Successful</source>
+>>>>>>> Committing original src/qt
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+0"/>
+<<<<<<< HEAD
         <source>Backup Successful</source>
+=======
+        <source>The wallet data was successfully saved to the new location.</source>
+>>>>>>> Committing original src/qt
         <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>bitcoin-core</name>
     <message>
+<<<<<<< HEAD
         <location filename="../bitcoinstrings.cpp" line="+221"/>
         <source>Usage:</source>
         <translation>Използване:</translation>
@@ -3216,11 +4436,43 @@ Address: %4
     </message>
     <message>
         <location line="+26"/>
+=======
+        <location filename="../bitcoinstrings.cpp" line="+94"/>
+        <source>Bitcoin version</source>
+        <translation>Биткоин версия</translation>
+    </message>
+    <message>
+        <location line="+102"/>
+        <source>Usage:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-29"/>
+        <source>Send command to -server or bitcoind</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-23"/>
+        <source>List commands</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-12"/>
+        <source>Get help for a command</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+24"/>
+>>>>>>> Committing original src/qt
         <source>Options:</source>
         <translation>Опции:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+22"/>
+=======
+        <location line="+24"/>
+>>>>>>> Committing original src/qt
         <source>Specify configuration file (default: bitcoin.conf)</source>
         <translation type="unfinished"/>
     </message>
@@ -3232,7 +4484,11 @@ Address: %4
     <message>
         <location line="-1"/>
         <source>Specify data directory</source>
+<<<<<<< HEAD
         <translation>Определете директория за данните</translation>
+=======
+        <translation type="unfinished"/>
+>>>>>>> Committing original src/qt
     </message>
     <message>
         <location line="-9"/>
@@ -3240,7 +4496,11 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-26"/>
+=======
+        <location line="-28"/>
+>>>>>>> Committing original src/qt
         <source>Listen for connections on &lt;port&gt; (default: 8333 or testnet: 18333)</source>
         <translation type="unfinished"/>
     </message>
@@ -3250,16 +4510,25 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-51"/>
+=======
+        <location line="-48"/>
+>>>>>>> Committing original src/qt
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+84"/>
+=======
+        <location line="+82"/>
+>>>>>>> Committing original src/qt
         <source>Specify your own public address</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
         <translation>Праг на прекъсване на връзката при непорядъчно държащи се пиъри (по подразбиране:100)</translation>
@@ -3271,36 +4540,74 @@ Address: %4
     </message>
     <message>
         <location line="-36"/>
+=======
+        <location line="+3"/>
+        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-134"/>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-29"/>
+>>>>>>> Committing original src/qt
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+34"/>
+=======
+        <location line="+27"/>
+>>>>>>> Committing original src/qt
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8332 or testnet: 18332)</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+45"/>
+=======
+        <location line="+37"/>
+>>>>>>> Committing original src/qt
         <source>Accept command line and JSON-RPC commands</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+80"/>
+=======
+        <location line="+76"/>
+>>>>>>> Committing original src/qt
         <source>Run in the background as a daemon and accept commands</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+39"/>
         <source>Use the test network</source>
         <translation>Използвайте тестовата мрежа</translation>
     </message>
     <message>
         <location line="-118"/>
+=======
+        <location line="+37"/>
+        <source>Use the test network</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-112"/>
+>>>>>>> Committing original src/qt
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-95"/>
+=======
+        <location line="-80"/>
+>>>>>>> Committing original src/qt
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
@@ -3315,12 +4622,16 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+12"/>
         <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+5"/>
+=======
+        <location line="+17"/>
+>>>>>>> Committing original src/qt
         <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
         <translation type="unfinished"/>
     </message>
@@ -3336,16 +4647,25 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development.</source>
+=======
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+>>>>>>> Committing original src/qt
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+4"/>
+<<<<<<< HEAD
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
+=======
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+>>>>>>> Committing original src/qt
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation type="unfinished"/>
     </message>
@@ -3361,32 +4681,60 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+18"/>
+=======
+        <source>Execute command when a relevant alert is received (%s in cmd is replaced by message)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+6"/>
+>>>>>>> Committing original src/qt
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+5"/>
+<<<<<<< HEAD
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: -proxy)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
+=======
+>>>>>>> Committing original src/qt
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Bitcoin will not work properly.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
+=======
+        <source>Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</source>
+>>>>>>> Committing original src/qt
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
+=======
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Bitcoin will not work properly.</source>
+>>>>>>> Committing original src/qt
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3400,16 +4748,21 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+9"/>
         <source>&lt;category&gt; can be:</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+6"/>
+=======
+        <location line="+14"/>
+>>>>>>> Committing original src/qt
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Bitcoin Core Daemon</source>
         <translation type="unfinished"/>
@@ -3421,6 +4774,9 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
+=======
+        <location line="+2"/>
+>>>>>>> Committing original src/qt
         <source>Block creation options:</source>
         <translation type="unfinished"/>
     </message>
@@ -3430,6 +4786,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Connect through SOCKS proxy</source>
         <translation type="unfinished"/>
@@ -3441,6 +4798,9 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+2"/>
+=======
+        <location line="+3"/>
+>>>>>>> Committing original src/qt
         <source>Corrupted block database detected</source>
         <translation type="unfinished"/>
     </message>
@@ -3451,11 +4811,14 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
         <source>Do not load the wallet and disable wallet RPC calls</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
+=======
+>>>>>>> Committing original src/qt
         <source>Do you want to rebuild the block database now?</source>
         <translation type="unfinished"/>
     </message>
@@ -3550,12 +4913,16 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Fee per kB to add to transactions you send</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
+=======
+        <location line="+2"/>
+>>>>>>> Committing original src/qt
         <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
         <translation type="unfinished"/>
     </message>
@@ -3575,6 +4942,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
         <translation type="unfinished"/>
@@ -3591,10 +4959,14 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+15"/>
+=======
+        <location line="+19"/>
+>>>>>>> Committing original src/qt
         <source>Not enough file descriptors available.</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
         <source>Prepend debug output with timestamp (default: 1)</source>
         <translation type="unfinished"/>
@@ -3606,10 +4978,14 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
+=======
+        <location line="+8"/>
+>>>>>>> Committing original src/qt
         <source>Rebuild block chain index from current blk000??.dat files</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
         <source>Select SOCKS version for -proxy (4 or 5, default: 5)</source>
         <translation type="unfinished"/>
@@ -3626,10 +5002,14 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+2"/>
+=======
+        <location line="+16"/>
+>>>>>>> Committing original src/qt
         <source>Set the number of threads to service RPC calls (default: 4)</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
         <source>Specify wallet file (within data directory)</source>
         <translation type="unfinished"/>
@@ -3651,6 +5031,9 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+7"/>
+=======
+        <location line="+26"/>
+>>>>>>> Committing original src/qt
         <source>Verifying blocks...</source>
         <translation type="unfinished"/>
     </message>
@@ -3660,6 +5043,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Wait for RPC server to start</source>
         <translation type="unfinished"/>
@@ -3702,20 +5086,28 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     <message>
         <location line="+2"/>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
+=======
+        <location line="-69"/>
+        <source>Imports blocks from external blk000??.dat file</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="-76"/>
         <source>Set the number of script verification threads (up to 16, 0 = auto, &lt;0 = leave that many cores free, default: 0)</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+89"/>
+        <location line="+77"/>
         <source>Information</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+3"/>
+        <source>Invalid -tor address: &apos;%s&apos;</source>
+        <translation>Невалиден -tor адрес: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation type="unfinished"/>
     </message>
@@ -3737,15 +5129,89 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     <message>
         <location line="+1"/>
         <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
+>>>>>>> Committing original src/qt
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+2"/>
+<<<<<<< HEAD
+        <source>Set the number of script verification threads (up to 16, 0 = auto, &lt;0 = leave that many cores free, default: 0)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+89"/>
+        <source>Information</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+=======
         <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
+        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Output extra debugging information. Implies all other -debug* options</source>
+>>>>>>> Committing original src/qt
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+<<<<<<< HEAD
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Maintain a full transaction index (default: 0)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
+=======
+        <source>Output extra network debugging information</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Prepend debug output with timestamp</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+>>>>>>> Committing original src/qt
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+<<<<<<< HEAD
+        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
+=======
+        <source>Select the version of socks proxy to use (4-5, default: 5)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Send trace/debug info to console instead of debug.log file</source>
+>>>>>>> Committing original src/qt
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+<<<<<<< HEAD
         <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
         <translation type="unfinished"/>
     </message>
@@ -3761,6 +5227,18 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+6"/>
+=======
+        <source>Send trace/debug info to debugger</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Set maximum block size in bytes (default: 250000)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> Committing original src/qt
         <source>Set minimum block size in bytes (default: 0)</source>
         <translation type="unfinished"/>
     </message>
@@ -3780,12 +5258,20 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+6"/>
+=======
+        <location line="+4"/>
+>>>>>>> Committing original src/qt
         <source>System error: </source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
+=======
+        <location line="+4"/>
+>>>>>>> Committing original src/qt
         <source>Transaction amount too small</source>
         <translation type="unfinished"/>
     </message>
@@ -3800,7 +5286,11 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+8"/>
+=======
+        <location line="+7"/>
+>>>>>>> Committing original src/qt
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation type="unfinished"/>
     </message>
@@ -3810,23 +5300,46 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>Username for JSON-RPC connections</source>
         <translation>Потребителско име за JSON-RPC връзките</translation>
     </message>
     <message>
         <location line="+7"/>
+=======
+        <location line="+1"/>
+        <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Username for JSON-RPC connections</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+4"/>
+>>>>>>> Committing original src/qt
         <source>Warning</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
+=======
+        <location line="+1"/>
+>>>>>>> Committing original src/qt
         <source>Warning: This version is obsolete, upgrade required!</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>version</source>
+=======
+        <location line="+1"/>
+        <source>You need to rebuild the databases using -reindex to change -txindex</source>
+>>>>>>> Committing original src/qt
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3835,6 +5348,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-58"/>
         <source>Password for JSON-RPC connections</source>
         <translation>Парола за  JSON-RPC връзките</translation>
@@ -3851,20 +5365,47 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="-132"/>
+=======
+        <location line="-50"/>
+        <source>Password for JSON-RPC connections</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-67"/>
+        <source>Allow JSON-RPC connections from specified IP address</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+76"/>
+        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-120"/>
+>>>>>>> Committing original src/qt
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+161"/>
+=======
+        <location line="+147"/>
+>>>>>>> Committing original src/qt
         <source>Upgrade wallet to latest format</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-24"/>
+=======
+        <location line="-21"/>
+>>>>>>> Committing original src/qt
         <source>Set key pool size to &lt;n&gt; (default: 100)</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-11"/>
         <source>Rescan the block chain for missing wallet transactions</source>
         <translation>Повторно сканиране на блок-връзка за липсващи портефейлни транзакции</translation>
@@ -3878,10 +5419,26 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <location line="-30"/>
         <source>Server certificate file (default: server.cert)</source>
         <translation>Сертификатен файл на сървъра (По подразбиране:server.cert)</translation>
+=======
+        <location line="-12"/>
+        <source>Rescan the block chain for missing wallet transactions</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Use OpenSSL (https) for JSON-RPC connections</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-26"/>
+        <source>Server certificate file (default: server.cert)</source>
+        <translation type="unfinished"/>
+>>>>>>> Committing original src/qt
     </message>
     <message>
         <location line="+1"/>
         <source>Server private key (default: server.pem)</source>
+<<<<<<< HEAD
         <translation>Поверителен ключ за сървъра (default: server.pem)</translation>
     </message>
     <message>
@@ -3891,21 +5448,54 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+7"/>
+=======
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-151"/>
+        <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+165"/>
+        <source>This help message</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+6"/>
+>>>>>>> Committing original src/qt
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-107"/>
+=======
+        <location line="-91"/>
+        <source>Connect through socks proxy</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-10"/>
+>>>>>>> Committing original src/qt
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+60"/>
+=======
+        <location line="+55"/>
+>>>>>>> Committing original src/qt
         <source>Loading addresses...</source>
         <translation>Зареждане на адресите...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-37"/>
+=======
+        <location line="-35"/>
+>>>>>>> Committing original src/qt
         <source>Error loading wallet.dat: Wallet corrupted</source>
         <translation type="unfinished"/>
     </message>
@@ -3915,17 +5505,29 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+98"/>
+=======
+        <location line="+93"/>
+>>>>>>> Committing original src/qt
         <source>Wallet needed to be rewritten: restart Bitcoin to complete</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-100"/>
+=======
+        <location line="-95"/>
+>>>>>>> Committing original src/qt
         <source>Error loading wallet.dat</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+31"/>
+=======
+        <location line="+28"/>
+>>>>>>> Committing original src/qt
         <source>Invalid -proxy address: &apos;%s&apos;</source>
         <translation>Невалиден -proxy address: &apos;%s&apos;</translation>
     </message>
@@ -3940,7 +5542,11 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-101"/>
+=======
+        <location line="-96"/>
+>>>>>>> Committing original src/qt
         <source>Cannot resolve -bind address: &apos;%s&apos;</source>
         <translation type="unfinished"/>
     </message>
@@ -3950,7 +5556,11 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+48"/>
+=======
+        <location line="+44"/>
+>>>>>>> Committing original src/qt
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation type="unfinished"/>
     </message>
@@ -3970,22 +5580,43 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation>Зареждане на блок индекса...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-62"/>
+=======
+        <location line="-57"/>
+>>>>>>> Committing original src/qt
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-32"/>
+=======
+        <location line="-25"/>
+>>>>>>> Committing original src/qt
         <source>Unable to bind to %s on this computer. Bitcoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+95"/>
+=======
+        <location line="+64"/>
+        <source>Fee per KB to add to transactions you send</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+19"/>
+>>>>>>> Committing original src/qt
         <source>Loading wallet...</source>
         <translation>Зареждане на портфейла...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-56"/>
+=======
+        <location line="-52"/>
+>>>>>>> Committing original src/qt
         <source>Cannot downgrade wallet</source>
         <translation type="unfinished"/>
     </message>
@@ -3995,27 +5626,47 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+67"/>
+=======
+        <location line="+64"/>
+>>>>>>> Committing original src/qt
         <source>Rescanning...</source>
         <translation>Преразглеждане на последовтелността от блокове...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-58"/>
+=======
+        <location line="-57"/>
+>>>>>>> Committing original src/qt
         <source>Done loading</source>
         <translation>Зареждането е завършено</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+85"/>
+=======
+        <location line="+82"/>
+>>>>>>> Committing original src/qt
         <source>To use the %s option</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-77"/>
+=======
+        <location line="-74"/>
+>>>>>>> Committing original src/qt
         <source>Error</source>
         <translation>Грешка</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-35"/>
+=======
+        <location line="-31"/>
+>>>>>>> Committing original src/qt
         <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
 %s
 If the file does not exist, create it with owner-readable-only file permissions.</source>

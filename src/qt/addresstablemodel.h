@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+=======
+>>>>>>> Committing original src/qt
 #ifndef ADDRESSTABLEMODEL_H
 #define ADDRESSTABLEMODEL_H
 
@@ -9,9 +12,14 @@
 #include <QStringList>
 
 class AddressTablePriv;
+<<<<<<< HEAD
 class WalletModel;
 
 class CWallet;
+=======
+class CWallet;
+class WalletModel;
+>>>>>>> Committing original src/qt
 
 /**
    Qt model of the address book in the core. This allows views to access and modify the address book.
@@ -84,10 +92,20 @@ private:
     /** Notify listeners that data changed. */
     void emitDataChanged(int index);
 
+<<<<<<< HEAD
 public slots:
     /* Update address list from core.
      */
     void updateEntry(const QString &address, const QString &label, bool isMine, const QString &purpose, int status);
+=======
+signals:
+    void defaultAddressChanged(const QString &address);
+
+public slots:
+    /* Update address list from core.
+     */
+    void updateEntry(const QString &address, const QString &label, bool isMine, int status);
+>>>>>>> Committing original src/qt
 
     friend class AddressTablePriv;
 };

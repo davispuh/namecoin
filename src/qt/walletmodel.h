@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -28,6 +29,19 @@ class COutput;
 class CPubKey;
 class CWallet;
 class uint256;
+=======
+#ifndef WALLETMODEL_H
+#define WALLETMODEL_H
+
+#include <QObject>
+
+#include "allocators.h" /* for SecureString */
+
+class OptionsModel;
+class AddressTableModel;
+class TransactionTableModel;
+class CWallet;
+>>>>>>> Committing original src/qt
 
 QT_BEGIN_NAMESPACE
 class QTimer;
@@ -36,6 +50,7 @@ QT_END_NAMESPACE
 class SendCoinsRecipient
 {
 public:
+<<<<<<< HEAD
     explicit SendCoinsRecipient() : amount(0), nVersion(SendCoinsRecipient::CURRENT_VERSION) { }
     explicit SendCoinsRecipient(const QString &addr, const QString &label, quint64 amount, const QString &message):
         address(addr), label(label), amount(amount), message(message), nVersion(SendCoinsRecipient::CURRENT_VERSION) {}
@@ -90,6 +105,11 @@ public:
             pthis->authenticatedMerchant = QString::fromStdString(sAuthenticatedMerchant);
         }
     )
+=======
+    QString address;
+    QString label;
+    qint64 amount;
+>>>>>>> Committing original src/qt
 };
 
 /** Interface to Bitcoin wallet from Qt view code. */
@@ -110,7 +130,12 @@ public:
         AmountWithFeeExceedsBalance,
         DuplicateAddress,
         TransactionCreationFailed, // Error returned when wallet is still locked
+<<<<<<< HEAD
         TransactionCommitFailed
+=======
+        TransactionCommitFailed,
+        Aborted
+>>>>>>> Committing original src/qt
     };
 
     enum EncryptionStatus
@@ -123,9 +148,14 @@ public:
     OptionsModel *getOptionsModel();
     AddressTableModel *getAddressTableModel();
     TransactionTableModel *getTransactionTableModel();
+<<<<<<< HEAD
     RecentRequestsTableModel *getRecentRequestsTableModel();
 
     qint64 getBalance(const CCoinControl *coinControl = NULL) const;
+=======
+
+    qint64 getBalance() const;
+>>>>>>> Committing original src/qt
     qint64 getUnconfirmedBalance() const;
     qint64 getImmatureBalance() const;
     int getNumTransactions() const;
@@ -137,6 +167,7 @@ public:
     // Return status record for SendCoins, contains error id + information
     struct SendCoinsReturn
     {
+<<<<<<< HEAD
         SendCoinsReturn(StatusCode status = OK):
             status(status) {}
         StatusCode status;
@@ -147,6 +178,19 @@ public:
 
     // Send coins to a list of recipients
     SendCoinsReturn sendCoins(WalletModelTransaction &transaction);
+=======
+        SendCoinsReturn(StatusCode status,
+                         qint64 fee=0,
+                         QString hex=QString()):
+            status(status), fee(fee), hex(hex) {}
+        StatusCode status;
+        qint64 fee; // is used in case status is "AmountWithFeeExceedsBalance"
+        QString hex; // is filled with the transaction hash if status is "OK"
+    };
+
+    // Send coins to a list of recipients
+    SendCoinsReturn sendCoins(const QList<SendCoinsRecipient> &recipients);
+>>>>>>> Committing original src/qt
 
     // Wallet encryption
     bool setWalletEncrypted(bool encrypted, const SecureString &passphrase);
@@ -178,6 +222,7 @@ public:
 
     UnlockContext requestUnlock();
 
+<<<<<<< HEAD
     bool getPubKey(const CKeyID &address, CPubKey& vchPubKeyOut) const;
     void getOutputs(const std::vector<COutPoint>& vOutpoints, std::vector<COutput>& vOutputs);
     void listCoins(std::map<QString, std::vector<COutput> >& mapCoins) const;
@@ -190,6 +235,8 @@ public:
     void loadReceiveRequests(std::vector<std::string>& vReceiveRequests);
     bool saveReceiveRequest(const std::string &sAddress, const int64_t nId, const std::string &sRequest);
 
+=======
+>>>>>>> Committing original src/qt
 private:
     CWallet *wallet;
 
@@ -199,7 +246,10 @@ private:
 
     AddressTableModel *addressTableModel;
     TransactionTableModel *transactionTableModel;
+<<<<<<< HEAD
     RecentRequestsTableModel *recentRequestsTableModel;
+=======
+>>>>>>> Committing original src/qt
 
     // Cache some values to be able to detect changes
     qint64 cachedBalance;
@@ -230,19 +280,29 @@ signals:
     // this means that the unlocking failed or was cancelled.
     void requireUnlock();
 
+<<<<<<< HEAD
     // Fired when a message should be reported to the user
     void message(const QString &title, const QString &message, unsigned int style);
 
     // Coins sent: from wallet, to recipient, in (serialized) transaction:
     void coinsSent(CWallet* wallet, SendCoinsRecipient recipient, QByteArray transaction);
 
+=======
+    // Asynchronous message notification
+    void message(const QString &title, const QString &message, unsigned int style);
+
+>>>>>>> Committing original src/qt
 public slots:
     /* Wallet status might have changed */
     void updateStatus();
     /* New transaction, or transaction changed status */
     void updateTransaction(const QString &hash, int status);
     /* New, updated or removed address book entry */
+<<<<<<< HEAD
     void updateAddressBook(const QString &address, const QString &label, bool isMine, const QString &purpose, int status);
+=======
+    void updateAddressBook(const QString &address, const QString &label, bool isMine, int status);
+>>>>>>> Committing original src/qt
     /* Current, immature or unconfirmed balance might have changed - emit 'balanceChanged' if so */
     void pollBalanceChanged();
 };

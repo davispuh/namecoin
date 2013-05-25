@@ -11,7 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
+<<<<<<< HEAD
    <string>Debug window</string>
+=======
+   <string>Bitcoin - Debug window</string>
+>>>>>>> Committing original src/qt
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
@@ -36,7 +40,11 @@
           </font>
          </property>
          <property name="text">
+<<<<<<< HEAD
           <string>General</string>
+=======
+          <string>Bitcoin Core</string>
+>>>>>>> Committing original src/qt
          </property>
         </widget>
        </item>
@@ -172,14 +180,24 @@
         </widget>
        </item>
        <item row="7" column="0">
+<<<<<<< HEAD
         <widget class="QLabel" name="label_8">
          <property name="text">
           <string>Name</string>
+=======
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>Number of connections</string>
+>>>>>>> Committing original src/qt
          </property>
         </widget>
        </item>
        <item row="7" column="1">
+<<<<<<< HEAD
         <widget class="QLabel" name="networkName">
+=======
+        <widget class="QLabel" name="numberOfConnections">
+>>>>>>> Committing original src/qt
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
@@ -195,13 +213,20 @@
         </widget>
        </item>
        <item row="8" column="0">
+<<<<<<< HEAD
         <widget class="QLabel" name="label_7">
          <property name="text">
           <string>Number of connections</string>
+=======
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>On testnet</string>
+>>>>>>> Committing original src/qt
          </property>
         </widget>
        </item>
        <item row="8" column="1">
+<<<<<<< HEAD
         <widget class="QLabel" name="numberOfConnections">
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
@@ -214,6 +239,14 @@
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+=======
+        <widget class="QCheckBox" name="isTestNet">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string/>
+>>>>>>> Committing original src/qt
          </property>
         </widget>
        </item>
@@ -339,6 +372,35 @@
         </widget>
        </item>
        <item row="16" column="0">
+<<<<<<< HEAD
+=======
+        <widget class="QLabel" name="labelCLOptions">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Command-line options</string>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="0">
+        <widget class="QPushButton" name="showCLOptionsButton">
+         <property name="toolTip">
+          <string>Show the Bitcoin-Qt help message to get a list with possible Bitcoin command-line options.</string>
+         </property>
+         <property name="text">
+          <string>&amp;Show</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="18" column="0">
+>>>>>>> Committing original src/qt
         <spacer name="verticalSpacer">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
@@ -425,6 +487,7 @@
        </item>
       </layout>
      </widget>
+<<<<<<< HEAD
      <widget class="QWidget" name="tab">
       <attribute name="title">
        <string>&amp;Network Traffic</string>
@@ -675,10 +738,13 @@
        </item>
       </layout>
      </widget>
+=======
+>>>>>>> Committing original src/qt
     </widget>
    </item>
   </layout>
  </widget>
+<<<<<<< HEAD
  <customwidgets>
   <customwidget>
    <class>TrafficGraphWidget</class>
@@ -690,6 +756,8 @@
    </slots>
   </customwidget>
  </customwidgets>
+=======
+>>>>>>> Committing original src/qt
  <resources>
   <include location="../bitcoin.qrc"/>
  </resources>

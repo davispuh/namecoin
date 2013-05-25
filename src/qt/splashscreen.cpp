@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -16,6 +17,18 @@ SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f, bool isTest
 {
     setAutoFillBackground(true);
 
+=======
+#include "splashscreen.h"
+#include "clientversion.h"
+#include "util.h"
+
+#include <QPainter>
+#include <QApplication>
+
+SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f) :
+    QSplashScreen(pixmap, f)
+{
+>>>>>>> Committing original src/qt
     // set reference point, paddings
     int paddingRight            = 50;
     int paddingTop              = 50;
@@ -25,16 +38,26 @@ SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f, bool isTest
     float fontFactor            = 1.0;
 
     // define text to place
+<<<<<<< HEAD
     QString titleText       = tr("Bitcoin Core");
     QString versionText     = QString("Version %1").arg(QString::fromStdString(FormatFullVersion()));
     QString copyrightText   = QChar(0xA9)+QString(" 2009-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Bitcoin Core developers"));
+=======
+    QString titleText       = QString(QApplication::applicationName()).replace(QString("-testnet"), QString(""), Qt::CaseSensitive); // cut of testnet, place it as single object further down
+    QString versionText     = QString("Version %1").arg(QString::fromStdString(FormatFullVersion()));
+    QString copyrightText   = QChar(0xA9)+QString(" 2009-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Bitcoin developers"));
+>>>>>>> Committing original src/qt
     QString testnetAddText  = QString(tr("[testnet]")); // define text to place as single text object
 
     QString font            = "Arial";
 
     // load the bitmap for writing some text over it
     QPixmap newPixmap;
+<<<<<<< HEAD
     if(isTestNet) {
+=======
+    if(GetBoolArg("-testnet")) {
+>>>>>>> Committing original src/qt
         newPixmap     = QPixmap(":/images/splash_testnet");
     }
     else {
@@ -73,8 +96,14 @@ SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f, bool isTest
     pixPaint.setFont(QFont(font, 10*fontFactor));
     pixPaint.drawText(newPixmap.width()-titleTextWidth-paddingRight,paddingTop+titleCopyrightVSpace,copyrightText);
 
+<<<<<<< HEAD
     // draw testnet string if testnet is on
     if(isTestNet) {
+=======
+    // draw testnet string if -testnet is on
+    if(QApplication::applicationName().contains(QString("-testnet"))) {
+        // draw copyright stuff
+>>>>>>> Committing original src/qt
         QFont boldFont = QFont(font, 10*fontFactor);
         boldFont.setWeight(QFont::Bold);
         pixPaint.setFont(boldFont);
@@ -86,6 +115,7 @@ SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f, bool isTest
     pixPaint.end();
 
     this->setPixmap(newPixmap);
+<<<<<<< HEAD
 
     subscribeToCoreSignals();
 }
@@ -119,4 +149,6 @@ void SplashScreen::unsubscribeFromCoreSignals()
 {
     // Disconnect signals from client
     uiInterface.InitMessage.disconnect(boost::bind(InitMessage, this, _1));
+=======
+>>>>>>> Committing original src/qt
 }

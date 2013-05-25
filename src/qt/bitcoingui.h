@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -19,13 +20,46 @@ class RPCConsole;
 class SendCoinsRecipient;
 class WalletFrame;
 class WalletModel;
+=======
+#ifndef BITCOINGUI_H
+#define BITCOINGUI_H
+
+#include <QMainWindow>
+#include <QSystemTrayIcon>
+#include <QMap>
+
+class TransactionTableModel;
+class WalletFrame;
+class WalletView;
+class ClientModel;
+class WalletModel;
+class WalletStack;
+class TransactionView;
+class OverviewPage;
+class AddressBookPage;
+class SendCoinsDialog;
+class SignVerifyMessageDialog;
+class Notificator;
+class RPCConsole;
+>>>>>>> Committing original src/qt
 
 class CWallet;
 
 QT_BEGIN_NAMESPACE
+<<<<<<< HEAD
 class QAction;
 class QLabel;
 class QProgressBar;
+=======
+class QLabel;
+class QModelIndex;
+class QProgressBar;
+class QStackedWidget;
+class QUrl;
+class QListWidget;
+class QPushButton;
+class QAction;
+>>>>>>> Committing original src/qt
 QT_END_NAMESPACE
 
 /**
@@ -39,23 +73,46 @@ class BitcoinGUI : public QMainWindow
 public:
     static const QString DEFAULT_WALLET;
 
+<<<<<<< HEAD
     explicit BitcoinGUI(bool fIsTestnet = false, QWidget *parent = 0);
+=======
+    explicit BitcoinGUI(QWidget *parent = 0);
+>>>>>>> Committing original src/qt
     ~BitcoinGUI();
 
     /** Set the client model.
         The client model represents the part of the core that communicates with the P2P network, and is wallet-agnostic.
     */
     void setClientModel(ClientModel *clientModel);
+<<<<<<< HEAD
 
 #ifdef ENABLE_WALLET
+=======
+>>>>>>> Committing original src/qt
     /** Set the wallet model.
         The wallet model represents a bitcoin wallet, and offers access to the list of transactions, address book and sending
         functionality.
     */
+<<<<<<< HEAD
     bool addWallet(const QString& name, WalletModel *walletModel);
     bool setCurrentWallet(const QString& name);
     void removeAllWallets();
 #endif
+=======
+
+    bool addWallet(const QString& name, WalletModel *walletModel);
+    bool setCurrentWallet(const QString& name);
+
+    void removeAllWallets();
+
+    /** Used by WalletView to allow access to needed QActions */
+    // Todo: Use Qt signals for these
+    QAction * getOverviewAction() { return overviewAction; }
+    QAction * getHistoryAction() { return historyAction; }
+    QAction * getAddressBookAction() { return addressBookAction; }
+    QAction * getReceiveCoinsAction() { return receiveCoinsAction; }
+    QAction * getSendCoinsAction() { return sendCoinsAction; }
+>>>>>>> Committing original src/qt
 
 protected:
     void changeEvent(QEvent *e);
@@ -79,8 +136,12 @@ private:
     QAction *historyAction;
     QAction *quitAction;
     QAction *sendCoinsAction;
+<<<<<<< HEAD
     QAction *usedSendingAddressesAction;
     QAction *usedReceivingAddressesAction;
+=======
+    QAction *addressBookAction;
+>>>>>>> Committing original src/qt
     QAction *signMessageAction;
     QAction *verifyMessageAction;
     QAction *aboutAction;
@@ -92,6 +153,7 @@ private:
     QAction *changePassphraseAction;
     QAction *aboutQtAction;
     QAction *openRPCConsoleAction;
+<<<<<<< HEAD
     QAction *openAction;
     QAction *showHelpMessageAction;
 
@@ -105,11 +167,26 @@ private:
 
     /** Create the main UI actions. */
     void createActions(bool fIsTestnet);
+=======
+
+    QSystemTrayIcon *trayIcon;
+    Notificator *notificator;
+    TransactionView *transactionView;
+    RPCConsole *rpcConsole;
+
+    QMovie *syncIconMovie;
+    /** Keep track of previous number of blocks, to detect progress */
+    int prevBlocks;
+
+    /** Create the main UI actions. */
+    void createActions();
+>>>>>>> Committing original src/qt
     /** Create the menu bar and sub-menus. */
     void createMenuBar();
     /** Create the toolbars */
     void createToolBars();
     /** Create system tray icon and notification */
+<<<<<<< HEAD
     void createTrayIcon(bool fIsTestnet);
     /** Create system tray menu (or setup the dock menu) */
     void createTrayIconMenu();
@@ -125,12 +202,29 @@ private:
 signals:
     /** Signal raised when a URI was entered or dragged to the GUI */
     void receivedURI(const QString &uri);
+=======
+    void createTrayIcon();
+    /** Create system tray menu (or setup the dock menu) */
+    void createTrayIconMenu();
+    /** Save window size and position */
+    void saveWindowGeometry();
+    /** Restore window size and position */
+    void restoreWindowGeometry();
+>>>>>>> Committing original src/qt
 
 public slots:
     /** Set number of connections shown in the UI */
     void setNumConnections(int count);
     /** Set number of blocks shown in the UI */
     void setNumBlocks(int count, int nTotalBlocks);
+<<<<<<< HEAD
+=======
+    /** Set the encryption status as shown in the UI.
+       @param[in] status            current encryption status
+       @see WalletModel::EncryptionStatus
+    */
+    void setEncryptionStatus(int status);
+>>>>>>> Committing original src/qt
 
     /** Notify the user of an event from the core network or transaction handling code.
        @param[in] title     the message box / notification title
@@ -140,6 +234,7 @@ public slots:
        @param[in] ret       pointer to a bool that will be modified to whether Ok was clicked (modal only)
     */
     void message(const QString &title, const QString &message, unsigned int style, bool *ret = NULL);
+<<<<<<< HEAD
 
 #ifdef ENABLE_WALLET
     /** Set the encryption status as shown in the UI.
@@ -156,10 +251,32 @@ public slots:
 
 private slots:
 #ifdef ENABLE_WALLET
+=======
+    /** Asks the user whether to pay the transaction fee or to cancel the transaction.
+       It is currently not possible to pass a return value to another thread through
+       BlockingQueuedConnection, so an indirected pointer is used.
+       https://bugreports.qt-project.org/browse/QTBUG-10440
+
+      @param[in] nFeeRequired       the required fee
+      @param[out] payFee            true to pay the fee, false to not pay the fee
+    */
+    void askFee(qint64 nFeeRequired, bool *payFee);
+    void handleURI(QString strURI);
+
+    /** Show incoming transaction notification for new transactions. */
+    void incomingTransaction(const QString& date, int unit, qint64 amount, const QString& type, const QString& address);
+
+private slots:
+>>>>>>> Committing original src/qt
     /** Switch to overview (home) page */
     void gotoOverviewPage();
     /** Switch to history (transactions) page */
     void gotoHistoryPage();
+<<<<<<< HEAD
+=======
+    /** Switch to address book page */
+    void gotoAddressBookPage();
+>>>>>>> Committing original src/qt
     /** Switch to receive coins page */
     void gotoReceiveCoinsPage();
     /** Switch to send coins page */
@@ -170,15 +287,21 @@ private slots:
     /** Show Sign/Verify Message dialog and switch to verify message tab */
     void gotoVerifyMessageTab(QString addr = "");
 
+<<<<<<< HEAD
     /** Show open dialog */
     void openClicked();
 #endif
+=======
+>>>>>>> Committing original src/qt
     /** Show configuration dialog */
     void optionsClicked();
     /** Show about dialog */
     void aboutClicked();
+<<<<<<< HEAD
     /** Show help message dialog */
     void showHelpMessageClicked();
+=======
+>>>>>>> Committing original src/qt
 #ifndef Q_OS_MAC
     /** Handle tray icon clicked */
     void trayIconActivated(QSystemTrayIcon::ActivationReason reason);

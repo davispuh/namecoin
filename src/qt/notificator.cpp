@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -32,6 +33,35 @@
 const int FREEDESKTOP_NOTIFICATION_ICON_SIZE = 128;
 
 Notificator::Notificator(const QString &programName, QSystemTrayIcon *trayicon, QWidget *parent) :
+=======
+#include "notificator.h"
+
+#include <QMetaType>
+#include <QVariant>
+#include <QIcon>
+#include <QApplication>
+#include <QStyle>
+#include <QByteArray>
+#include <QSystemTrayIcon>
+#include <QMessageBox>
+#include <QTemporaryFile>
+#include <QImageWriter>
+
+#ifdef USE_DBUS
+#include <QtDBus>
+#include <stdint.h>
+#endif
+
+#ifdef Q_OS_MAC
+#include <ApplicationServices/ApplicationServices.h>
+extern bool qt_mac_execute_apple_script(const QString &script, AEDesc *ret);
+#endif
+
+// https://wiki.ubuntu.com/NotificationDevelopmentGuidelines recommends at least 128
+const int FREEDESKTOP_NOTIFICATION_ICON_SIZE = 128;
+
+Notificator::Notificator(const QString &programName, QSystemTrayIcon *trayicon, QWidget *parent):
+>>>>>>> Committing original src/qt
     QObject(parent),
     parent(parent),
     programName(programName),
@@ -47,13 +77,18 @@ Notificator::Notificator(const QString &programName, QSystemTrayIcon *trayicon, 
     }
 #ifdef USE_DBUS
     interface = new QDBusInterface("org.freedesktop.Notifications",
+<<<<<<< HEAD
         "/org/freedesktop/Notifications", "org.freedesktop.Notifications");
+=======
+          "/org/freedesktop/Notifications", "org.freedesktop.Notifications");
+>>>>>>> Committing original src/qt
     if(interface->isValid())
     {
         mode = Freedesktop;
     }
 #endif
 #ifdef Q_OS_MAC
+<<<<<<< HEAD
     // check if users OS has support for NSUserNotification
     if( MacNotificationHandler::instance()->hasUserNotificationCenterSupport()) {
         mode = UserNotificationCenter;
@@ -73,6 +108,21 @@ Notificator::Notificator(const QString &programName, QSystemTrayIcon *trayicon, 
             CFRelease(cfurl);
             CFRelease(bundle);
         }
+=======
+    // Check if Growl is installed (based on Qt's tray icon implementation)
+    CFURLRef cfurl;
+    OSStatus status = LSGetApplicationForInfo(kLSUnknownType, kLSUnknownCreator, CFSTR("growlTicket"), kLSRolesAll, 0, &cfurl);
+    if (status != kLSApplicationNotFoundErr) {
+        CFBundleRef bundle = CFBundleCreate(0, cfurl);
+        if (CFStringCompare(CFBundleGetIdentifier(bundle), CFSTR("com.Growl.GrowlHelperApp"), kCFCompareCaseInsensitive | kCFCompareBackwards) == kCFCompareEqualTo) {
+            if (CFStringHasSuffix(CFURLGetString(cfurl), CFSTR("/Growl.app/")))
+                mode = Growl13;
+            else
+                mode = Growl12;
+        }
+        CFRelease(cfurl);
+        CFRelease(bundle);
+>>>>>>> Committing original src/qt
     }
 #endif
 }
@@ -282,6 +332,7 @@ void Notificator::notifyGrowl(Class cls, const QString &title, const QString &te
     quotedTitle.replace("\\", "\\\\").replace("\"", "\\");
     quotedText.replace("\\", "\\\\").replace("\"", "\\");
     QString growlApp(this->mode == Notificator::Growl13 ? "Growl" : "GrowlHelperApp");
+<<<<<<< HEAD
     MacNotificationHandler::instance()->sendAppleScript(script.arg(notificationApp, quotedTitle, quotedText, notificationIcon, growlApp));
 }
 
@@ -290,6 +341,10 @@ void Notificator::notifyMacUserNotificationCenter(Class cls, const QString &titl
     MacNotificationHandler::instance()->showNotification(title, text);
 }
 
+=======
+    qt_mac_execute_apple_script(script.arg(notificationApp, quotedTitle, quotedText, notificationIcon, growlApp), 0);
+}
+>>>>>>> Committing original src/qt
 #endif
 
 void Notificator::notify(Class cls, const QString &title, const QString &text, const QIcon &icon, int millisTimeout)
@@ -305,9 +360,12 @@ void Notificator::notify(Class cls, const QString &title, const QString &text, c
         notifySystray(cls, title, text, icon, millisTimeout);
         break;
 #ifdef Q_OS_MAC
+<<<<<<< HEAD
     case UserNotificationCenter:
         notifyMacUserNotificationCenter(cls, title, text, icon);
         break;
+=======
+>>>>>>> Committing original src/qt
     case Growl12:
     case Growl13:
         notifyGrowl(cls, title, text, icon);
