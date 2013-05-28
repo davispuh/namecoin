@@ -273,6 +273,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+194"/>
         <source>Export Address List</source>
         <translation type="unfinished"></translation>
@@ -286,6 +287,14 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="+248"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+1"/>
+        <source>Send &amp;Coins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+263"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Export Address Book Data</source>
         <translation>Export Address Book Data</translation>
 >>>>>>> Committing original src/qt
@@ -320,10 +329,14 @@ This product includes software developed by the OpenSSL Project for use in the O
     <name>AddressTableModel</name>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../addresstablemodel.cpp" line="+168"/>
 =======
         <location filename="../addresstablemodel.cpp" line="+144"/>
 >>>>>>> Committing original src/qt
+=======
+        <location filename="../addresstablemodel.cpp" line="+146"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Label</source>
         <translation>Label</translation>
     </message>
@@ -420,7 +433,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Are you sure you wish to encrypt your wallet?</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+11"/>
+        <source>Namecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your namecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
         <translation>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</translation>
     </message>
@@ -437,12 +455,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Wallet encrypted</translation>
     </message>
     <message>
-        <location line="-56"/>
         <source>Namecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Namecoins from being stolen by malware infecting your computer.</source>
-        <translation>Namecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Namecoins from being stolen by malware infecting your computer.</translation>
+        <translation type="obsolete">Namecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Namecoins from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="-43"/>
         <location line="+7"/>
         <location line="+42"/>
         <location line="+6"/>
@@ -484,8 +501,9 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
 </context>
 <context>
-    <name>NamecoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../bitcoingui.cpp" line="+295"/>
@@ -521,8 +539,27 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="-322"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location filename="../bitcoin.cpp" line="+115"/>
+        <source>A fatal error occurred. Namecoin can no longer continue safely and will quit.</source>
+        <translation type="unfinished">A fatal error occurred. Namecoin can no longer continue safely and will quit.</translation>
+    </message>
+    <message>
+        <location filename="../bitcoingui.cpp" line="+73"/>
+        <location line="+550"/>
+        <source>Namecoin</source>
+        <translation type="unfinished">Namecoin</translation>
+    </message>
+    <message>
+        <location line="-550"/>
+        <source>Wallet</source>
+        <translation type="unfinished">Wallet</translation>
+    </message>
+    <message>
+        <location line="+139"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>&amp;Overview</source>
-        <translation>&amp;Overview</translation>
+        <translation type="unfinished">&amp;Overview</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -536,17 +573,17 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+1"/>
 >>>>>>> Committing original src/qt
         <source>Show general overview of wallet</source>
-        <translation>Show general overview of wallet</translation>
+        <translation type="unfinished">Show general overview of wallet</translation>
     </message>
     <message>
-        <location line="+20"/>
-        <source>&amp;Transactions</source>
-        <translation>&amp;Transactions</translation>
+        <location line="+6"/>
+        <source>&amp;Send coins</source>
+        <translation type="unfinished">&amp;Send coins</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Browse transaction history</source>
-        <translation>Browse transaction history</translation>
+        <source>Send coins to a Namecoin address</source>
+        <translation type="unfinished">Send coins to a Namecoin address</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -556,26 +593,32 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+7"/>
 =======
         <location line="+6"/>
-        <source>&amp;Address Book</source>
-        <translation>&amp;Address Book</translation>
+        <source>&amp;Receive coins</source>
+        <translation type="unfinished">&amp;Receive coins</translation>
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Edit the list of stored addresses and labels</source>
         <translation>Edit the list of stored addresses and labels</translation>
+=======
+        <source>Show the list of addresses for receiving payments</source>
+        <translation type="unfinished">Show the list of addresses for receiving payments</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="-15"/>
-        <source>&amp;Receive coins</source>
-        <translation>&amp;Receive coins</translation>
+        <location line="+6"/>
+        <source>&amp;Transactions</source>
+        <translation type="unfinished">&amp;Transactions</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show the list of addresses for receiving payments</source>
-        <translation>Show the list of addresses for receiving payments</translation>
+        <source>Browse transaction history</source>
+        <translation type="unfinished">Browse transaction history</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+31"/>
 >>>>>>> Committing original src/qt
@@ -587,15 +630,29 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+39"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+6"/>
+        <source>&amp;Address Book</source>
+        <translation type="unfinished">&amp;Address Book</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Edit the list of stored addresses and labels</source>
+        <translation type="unfinished">Edit the list of stored addresses and labels</translation>
+    </message>
+    <message>
+        <location line="+17"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>E&amp;xit</source>
-        <translation>E&amp;xit</translation>
+        <translation type="unfinished">E&amp;xit</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Quit application</source>
-        <translation>Quit application</translation>
+        <translation type="unfinished">Quit application</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+7"/>
 =======
@@ -608,6 +665,16 @@ This product includes software developed by the OpenSSL Project for use in the O
         <source>Show information about Namecoin</source>
         <translation>Show information about Namecoin</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+3"/>
+        <source>&amp;About Namecoin</source>
+        <translation type="unfinished">&amp;About Namecoin</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show information about Namecoin</source>
+        <translation type="unfinished">Show information about Namecoin</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
 <<<<<<< HEAD
@@ -616,7 +683,7 @@ This product includes software developed by the OpenSSL Project for use in the O
 >>>>>>> Committing original src/qt
         <location line="+2"/>
         <source>About &amp;Qt</source>
-        <translation>About &amp;Qt</translation>
+        <translation type="unfinished">About &amp;Qt</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -625,14 +692,15 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+1"/>
 >>>>>>> Committing original src/qt
         <source>Show information about Qt</source>
-        <translation>Show information about Qt</translation>
+        <translation type="unfinished">Show information about Qt</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Options...</source>
-        <translation>&amp;Options...</translation>
+        <translation type="unfinished">&amp;Options...</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+9"/>
@@ -682,13 +750,24 @@ This product includes software developed by the OpenSSL Project for use in the O
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Importing blocks from disk...</source>
         <translation>Importing blocks from disk...</translation>
+=======
+        <location line="+1"/>
+        <source>Modify configuration options for Namecoin</source>
+        <translation type="unfinished">Modify configuration options for Namecoin</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Reindexing blocks on disk...</source>
-        <translation>Reindexing blocks on disk...</translation>
+        <location line="+2"/>
+        <source>&amp;Show / Hide</source>
+        <translation type="unfinished">&amp;Show / Hide</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
+        <location line="+1"/>
+        <source>Show or hide the main Window</source>
+        <translation type="unfinished">Show or hide the main Window</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-405"/>
@@ -707,13 +786,24 @@ This product includes software developed by the OpenSSL Project for use in the O
         <source>Send coins to a Namecoin address</source>
         <translation>Send coins to a Namecoin address</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+1"/>
+        <source>&amp;Encrypt Wallet...</source>
+        <translation type="unfinished">&amp;Encrypt Wallet...</translation>
     </message>
     <message>
-        <location line="+49"/>
-        <source>Modify configuration options for Namecoin</source>
-        <translation>Modify configuration options for Namecoin</translation>
+        <location line="+1"/>
+        <source>Encrypt the private keys that belong to your wallet</source>
+        <translation type="unfinished">Encrypt the private keys that belong to your wallet</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
+        <location line="+2"/>
+        <source>&amp;Backup Wallet...</source>
+        <translation type="unfinished">&amp;Backup Wallet...</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+12"/>
@@ -730,25 +820,36 @@ This product includes software developed by the OpenSSL Project for use in the O
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Backup wallet to another location</source>
         <translation>Backup wallet to another location</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Change the passphrase used for wallet encryption</source>
-        <translation>Change the passphrase used for wallet encryption</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>&amp;Debug window</source>
-        <translation>&amp;Debug window</translation>
+=======
+        <location line="+1"/>
+        <source>Backup wallet to another location</source>
+        <translation type="unfinished">Backup wallet to another location</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Open debugging and diagnostic console</source>
-        <translation>Open debugging and diagnostic console</translation>
+        <source>&amp;Change Passphrase...</source>
+        <translation type="unfinished">&amp;Change Passphrase...</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="-7"/>
+        <location line="+1"/>
+        <source>Change the passphrase used for wallet encryption</source>
+        <translation type="unfinished">Change the passphrase used for wallet encryption</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Sign &amp;message...</source>
+        <translation type="unfinished">Sign &amp;message...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Sign messages with your Namecoin addresses to prove you own them</source>
+        <translation type="unfinished">Sign messages with your Namecoin addresses to prove you own them</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>&amp;Verify message...</source>
+<<<<<<< HEAD
         <translation>&amp;Verify message...</translation>
     </message>
     <message>
@@ -819,28 +920,37 @@ This product includes software developed by the OpenSSL Project for use in the O
 >>>>>>> Committing original src/qt
         <source>&amp;Show / Hide</source>
         <translation>&amp;Show / Hide</translation>
+=======
+        <translation type="unfinished">&amp;Verify message...</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show or hide the main Window</source>
-        <translation>Show or hide the main Window</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Encrypt the private keys that belong to your wallet</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Sign messages with your Namecoin addresses to prove you own them</source>
-        <translation>Sign messages with your Namecoin addresses to prove you own them</translation>
-    </message>
-    <message>
-        <location line="+2"/>
         <source>Verify messages to ensure they were signed with specified Namecoin addresses</source>
-        <translation>Verify messages to ensure they were signed with specified Namecoin addresses</translation>
+        <translation type="unfinished">Verify messages to ensure they were signed with specified Namecoin addresses</translation>
     </message>
     <message>
+        <location line="+2"/>
+        <source>&amp;Export...</source>
+        <translation type="unfinished">&amp;Export...</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Export the data in the current tab to a file</source>
+        <translation type="unfinished">Export the data in the current tab to a file</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&amp;Debug window</source>
+        <translation type="unfinished">&amp;Debug window</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Open debugging and diagnostic console</source>
+        <translation type="unfinished">Open debugging and diagnostic console</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+48"/>
@@ -850,8 +960,11 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="+31"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+25"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>&amp;File</source>
-        <translation>&amp;File</translation>
+        <translation type="unfinished">&amp;File</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -864,7 +977,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+8"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>&amp;Settings</source>
-        <translation>&amp;Settings</translation>
+        <translation type="unfinished">&amp;Settings</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -873,7 +986,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+6"/>
 >>>>>>> Committing original src/qt
         <source>&amp;Help</source>
-        <translation>&amp;Help</translation>
+        <translation type="unfinished">&amp;Help</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -882,7 +995,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+9"/>
 >>>>>>> Committing original src/qt
         <source>Tabs toolbar</source>
-        <translation>Tabs toolbar</translation>
+        <translation type="unfinished">Tabs toolbar</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -894,17 +1007,22 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="+8"/>
         <source>Actions toolbar</source>
-        <translation>Actions toolbar</translation>
+        <translation type="unfinished">Actions toolbar</translation>
     </message>
     <message>
         <location line="+13"/>
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <location line="+10"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+80"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <translation type="unfinished">[testnet]</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-401"/>
@@ -965,36 +1083,68 @@ This product includes software developed by the OpenSSL Project for use in the O
         <source>%n active connection(s) to Bitcoin network</source>
 =======
         <location line="+63"/>
+=======
+        <location line="-5"/>
+        <location line="+5"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Namecoin client</source>
-        <translation>Namecoin client</translation>
+        <translation type="unfinished">Namecoin client</translation>
     </message>
     <message numerus="yes">
-        <location line="+79"/>
+        <location line="+80"/>
         <source>%n active connection(s) to Namecoin network</source>
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation>
+=======
+        <translation type="unfinished">
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
             <numerusform>%n active connection to Namecoin network</numerusform>
             <numerusform>%n active connections to Namecoin network</numerusform>
         </translation>
     </message>
     <message>
-        <location line="+39"/>
+        <location line="+24"/>
+        <source>Synchronizing with network...</source>
+        <translation type="unfinished">Synchronizing with network...</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Importing blocks from disk...</source>
+        <translation type="unfinished">Importing blocks from disk...</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Reindexing blocks on disk...</source>
+        <translation type="unfinished">Reindexing blocks on disk...</translation>
+    </message>
+    <message>
+        <location line="+9"/>
         <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
-        <translation>Processed %1 of %2 (estimated) blocks of transaction history.</translation>
+        <translation type="unfinished">Processed %1 of %2 (estimated) blocks of transaction history.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Processed %1 blocks of transaction history.</source>
-        <translation>Processed %1 blocks of transaction history.</translation>
+        <translation type="unfinished">Processed %1 blocks of transaction history.</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Up to date</source>
+        <translation type="unfinished">Up to date</translation>
     </message>
     <message numerus="yes">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+23"/>
 =======
         <location line="+20"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+14"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>%n hour(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform>%n hour</numerusform>
             <numerusform>%n hours</numerusform>
         </translation>
@@ -1002,7 +1152,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform>%n day</numerusform>
             <numerusform>%n days</numerusform>
         </translation>
@@ -1010,7 +1160,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message numerus="yes">
         <location line="+4"/>
         <source>%n week(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform>%n week</numerusform>
             <numerusform>%n weeks</numerusform>
         </translation>
@@ -1018,21 +1168,30 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+5"/>
         <source>%1 behind</source>
-        <translation>%1 behind</translation>
+        <translation type="unfinished">%1 behind</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+21"/>
 =======
         <location line="+14"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+5"/>
+        <source>Catching up...</source>
+        <translation type="unfinished">Catching up...</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Last received block was generated %1 ago.</source>
-        <translation>Last received block was generated %1 ago.</translation>
+        <translation type="unfinished">Last received block was generated %1 ago.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Transactions after this will not yet be visible.</source>
-        <translation>Transactions after this will not yet be visible.</translation>
+        <translation type="unfinished">Transactions after this will not yet be visible.</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -1045,17 +1204,17 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+21"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Error</source>
-        <translation>Error</translation>
+        <translation type="unfinished">Error</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning</source>
-        <translation>Warning</translation>
+        <translation type="unfinished">Warning</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Information</source>
-        <translation>Information</translation>
+        <translation type="unfinished">Information</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -1067,6 +1226,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+68"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
+<<<<<<< HEAD
         <translation>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</translation>
     </message>
     <message>
@@ -1111,8 +1271,14 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="+110"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <translation type="unfinished">This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Confirm transaction fee</source>
-        <translation>Confirm transaction fee</translation>
+        <translation type="unfinished">Confirm transaction fee</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -1122,12 +1288,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+23"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Sent transaction</source>
-        <translation>Sent transaction</translation>
+        <translation type="unfinished">Sent transaction</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Incoming transaction</source>
-        <translation>Incoming transaction</translation>
+        <translation type="unfinished">Incoming transaction</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1136,7 +1302,7 @@ Amount: %2
 Type: %3
 Address: %4
 </source>
-        <translation>Date: %1
+        <translation type="unfinished">Date: %1
 Amount: %2
 Type: %3
 Address: %4
@@ -1145,33 +1311,37 @@ Address: %4
     <message>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+69"/>
 =======
         <location line="+33"/>
         <location line="+23"/>
 =======
         <location line="+99"/>
+=======
+        <location line="+102"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <location line="+28"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>URI handling</source>
-        <translation>URI handling</translation>
+        <translation type="unfinished">URI handling</translation>
     </message>
     <message>
         <location line="-28"/>
         <location line="+28"/>
         <source>URI can not be parsed! This can be caused by an invalid Namecoin address or malformed URI parameters.</source>
-        <translation>URI can not be parsed! This can be caused by an invalid Namecoin address or malformed URI parameters.</translation>
+        <translation type="unfinished">URI can not be parsed! This can be caused by an invalid Namecoin address or malformed URI parameters.</translation>
     </message>
     <message>
         <location line="+17"/>
 >>>>>>> Committing original src/qt
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</translation>
+        <translation type="unfinished">Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</translation>
+        <translation type="unfinished">Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -1185,33 +1355,45 @@ Address: %4
 =======
         <location line="+23"/>
         <source>Backup Wallet</source>
-        <translation>Backup Wallet</translation>
+        <translation type="unfinished">Backup Wallet</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Wallet Data (*.dat)</source>
-        <translation>Wallet Data (*.dat)</translation>
+        <translation type="unfinished">Wallet Data (*.dat)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Backup Failed</source>
-        <translation>Backup Failed</translation>
+        <translation type="unfinished">Backup Failed</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>There was an error trying to save the wallet data to the new location.</source>
-        <translation>There was an error trying to save the wallet data to the new location.</translation>
+        <translation type="unfinished">There was an error trying to save the wallet data to the new location.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../Namecoin.cpp" line="+108"/>
         <source>A fatal error occurred. Namecoin can no longer continue safely and will quit.</source>
         <translation>A fatal error occurred. Namecoin can no longer continue safely and will quit.</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+4"/>
+        <source>Backup Successful</source>
+        <translation type="unfinished">Backup Successful</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>The wallet data was successfully saved to the new location.</source>
+        <translation type="unfinished">The wallet data was successfully saved to the new location.</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
     <name>ClientModel</name>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../clientmodel.cpp" line="+119"/>
@@ -1221,8 +1403,10 @@ Address: %4
 =======
         <location filename="../clientmodel.cpp" line="+96"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Network Alert</source>
-        <translation>Network Alert</translation>
+        <translation type="obsolete">Network Alert</translation>
     </message>
 </context>
 <context>
@@ -1311,11 +1495,15 @@ Address: %4
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+5"/>
         <source>Confirmations</source>
         <translation type="unfinished"></translation>
 =======
         <location filename="../guiutil.cpp" line="+422"/>
+=======
+        <location filename="../guiutil.cpp" line="+423"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <location line="+12"/>
         <source>Namecoin-Qt</source>
         <translation>Namecoin-Qt</translation>
@@ -1362,6 +1550,7 @@ Address: %4
         <source>Unlock unspent</source>
         <translation type="unfinished"></translation>
     </message>
+<<<<<<< HEAD
     <message>
         <location line="+22"/>
         <source>Copy quantity</source>
@@ -2910,6 +3099,1022 @@ Address: %4
         <location line="+5"/>
         <source>%1 h</source>
         <translation type="unfinished"></translation>
+=======
+</context>
+<context>
+    <name>Namecoin-core</name>
+    <message>
+        <source>Namecoin version</source>
+        <translation type="obsolete">Namecoin version</translation>
+    </message>
+    <message>
+        <source>Usage:</source>
+        <translation type="obsolete">Usage:</translation>
+    </message>
+    <message>
+        <source>Send command to -server or namecoind</source>
+        <translation type="obsolete">Send command to -server or namecoind</translation>
+    </message>
+    <message>
+        <source>List commands</source>
+        <translation type="obsolete">List commands</translation>
+    </message>
+    <message>
+        <source>Get help for a command</source>
+        <translation type="obsolete">Get help for a command</translation>
+    </message>
+    <message>
+        <source>Options:</source>
+        <translation type="obsolete">Options:</translation>
+    </message>
+    <message>
+        <source>Specify configuration file (default: namecoin.conf)</source>
+        <translation type="obsolete">Specify configuration file (default: namecoin.conf)</translation>
+    </message>
+    <message>
+        <source>Specify pid file (default: namecoind.pid)</source>
+        <translation type="obsolete">Specify pid file (default: namecoind.pid)</translation>
+    </message>
+    <message>
+        <source>Generate coins</source>
+        <translation type="obsolete">Generate coins</translation>
+    </message>
+    <message>
+        <source>Don&apos;t generate coins</source>
+        <translation type="obsolete">Don&apos;t generate coins</translation>
+    </message>
+    <message>
+        <source>Specify data directory</source>
+        <translation type="obsolete">Specify data directory</translation>
+    </message>
+    <message>
+        <source>Set database cache size in megabytes (default: 25)</source>
+        <translation type="obsolete">Set database cache size in megabytes (default: 25)</translation>
+    </message>
+    <message>
+        <source>Listen for connections on &lt;port&gt; (default: 8334 or testnet: 18334)</source>
+        <translation type="obsolete">Listen for connections on &lt;port&gt; (default: 8334 or testnet: 18334)</translation>
+    </message>
+    <message>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
+        <translation type="obsolete">Maintain at most &lt;n&gt; connections to peers (default: 125)</translation>
+    </message>
+    <message>
+        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
+        <translation type="obsolete">Connect to a node to retrieve peer addresses, and disconnect</translation>
+    </message>
+    <message>
+        <source>Specify your own public address</source>
+        <translation type="obsolete">Specify your own public address</translation>
+    </message>
+    <message>
+        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
+        <translation type="obsolete">Threshold for disconnecting misbehaving peers (default: 100)</translation>
+    </message>
+    <message>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
+        <translation type="obsolete">Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</translation>
+    </message>
+    <message>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
+        <translation type="obsolete">An error occurred while setting up the RPC port %u for listening on IPv4: %s</translation>
+    </message>
+    <message>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8336 or testnet: 18336)</source>
+        <translation type="obsolete">Listen for JSON-RPC connections on &lt;port&gt; (default: 8336 or testnet: 18336)</translation>
+    </message>
+    <message>
+        <source>Accept command line and JSON-RPC commands</source>
+        <translation type="obsolete">Accept command line and JSON-RPC commands</translation>
+    </message>
+    <message>
+        <source>Run in the background as a daemon and accept commands</source>
+        <translation type="obsolete">Run in the background as a daemon and accept commands</translation>
+    </message>
+    <message>
+        <source>Use the test network</source>
+        <translation type="obsolete">Use the test network</translation>
+    </message>
+    <message>
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+        <translation type="obsolete">Accept connections from outside (default: 1 if no -proxy or -connect)</translation>
+    </message>
+    <message>
+        <source>%s, you must set a rpcpassword in the configuration file:
+ %s
+It is recommended you use the following random password:
+rpcuser=namecoinrpc
+rpcpassword=%s
+(you do not need to remember this password)
+The username and password MUST NOT be the same.
+If the file does not exist, create it with owner-readable-only file permissions.
+</source>
+        <translation type="obsolete">%s, you must set a rpcpassword in the configuration file:
+ %s
+It is recommended you use the following random password:
+rpcuser=namecoinrpc
+rpcpassword=%s
+(you do not need to remember this password)
+The username and password MUST NOT be the same.
+If the file does not exist, create it with owner-readable-only file permissions.</translation>
+    </message>
+    <message>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
+        <translation type="obsolete">An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</translation>
+    </message>
+    <message>
+        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
+        <translation type="obsolete">Bind to given address and always listen on it. Use [host]:port notation for IPv6</translation>
+    </message>
+    <message>
+        <source>Cannot obtain a lock on data directory %s. Namecoin is probably already running.</source>
+        <translation type="obsolete">Cannot obtain a lock on data directory %s. Namecoin is probably already running.</translation>
+    </message>
+    <message>
+        <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
+        <translation type="obsolete">Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</translation>
+    </message>
+    <message>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation type="obsolete">Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</translation>
+    </message>
+    <message>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation type="obsolete">Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</translation>
+    </message>
+    <message>
+        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
+        <translation type="obsolete">Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</translation>
+    </message>
+    <message>
+        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
+        <translation type="obsolete">Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</translation>
+    </message>
+    <message>
+        <source>Set the number of script verification threads (1-16, 0=auto, default: 0)</source>
+        <translation type="obsolete">Set the number of script verification threads (1-16, 0=auto, default: 0)</translation>
+    </message>
+    <message>
+        <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
+        <translation type="obsolete">This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</translation>
+    </message>
+    <message>
+        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
+        <translation type="obsolete">Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</translation>
+    </message>
+    <message>
+        <source>Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</source>
+        <translation type="obsolete">Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</translation>
+    </message>
+    <message>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Namecoin will not work properly.</source>
+        <translation type="obsolete">Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Namecoin will not work properly.</translation>
+    </message>
+    <message>
+        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
+        <translation type="obsolete">Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</translation>
+    </message>
+    <message>
+        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
+        <translation type="obsolete">Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</translation>
+    </message>
+    <message>
+        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
+        <translation type="obsolete">Attempt to recover private keys from a corrupt wallet.dat</translation>
+    </message>
+    <message>
+        <source>Block creation options:</source>
+        <translation type="obsolete">Block creation options:</translation>
+    </message>
+    <message>
+        <source>Connect only to the specified node(s)</source>
+        <translation type="obsolete">Connect only to the specified node(s)</translation>
+    </message>
+    <message>
+        <source>Corrupted block database detected</source>
+        <translation type="obsolete">Corrupted block database detected</translation>
+    </message>
+    <message>
+        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
+        <translation type="obsolete">Discover own IP address (default: 1 when listening and no -externalip)</translation>
+    </message>
+    <message>
+        <source>Do you want to rebuild the block database now?</source>
+        <translation type="obsolete">Do you want to rebuild the block database now?</translation>
+    </message>
+    <message>
+        <source>Error initializing block database</source>
+        <translation type="obsolete">Error initializing block database</translation>
+    </message>
+    <message>
+        <source>Error loading block database</source>
+        <translation type="obsolete">Error loading block database</translation>
+    </message>
+    <message>
+        <source>Error opening block database</source>
+        <translation type="obsolete">Error opening block database</translation>
+    </message>
+    <message>
+        <source>Error: Disk space is low!</source>
+        <translation type="obsolete">Error: Disk space is low!</translation>
+    </message>
+    <message>
+        <source>Error: Transaction creation failed!</source>
+        <translation type="obsolete">Error: Transaction creation failed!</translation>
+    </message>
+    <message>
+        <source>Error: Wallet locked, unable to create transaction!</source>
+        <translation type="obsolete">Error: Wallet locked, unable to create transaction!</translation>
+    </message>
+    <message>
+        <source>Error: system error: </source>
+        <translation type="obsolete">Error: system error: </translation>
+    </message>
+    <message>
+        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
+        <translation type="obsolete">Failed to listen on any port. Use -listen=0 if you want this.</translation>
+    </message>
+    <message>
+        <source>Failed to read block info</source>
+        <translation type="obsolete">Failed to read block info</translation>
+    </message>
+    <message>
+        <source>Failed to read block</source>
+        <translation type="obsolete">Failed to read block</translation>
+    </message>
+    <message>
+        <source>Failed to sync block index</source>
+        <translation type="obsolete">Failed to sync block index</translation>
+    </message>
+    <message>
+        <source>Failed to write block index</source>
+        <translation type="obsolete">Failed to write block index</translation>
+    </message>
+    <message>
+        <source>Failed to write block info</source>
+        <translation type="obsolete">Failed to write block info</translation>
+    </message>
+    <message>
+        <source>Failed to write block</source>
+        <translation type="obsolete">Failed to write block</translation>
+    </message>
+    <message>
+        <source>Failed to write file info</source>
+        <translation type="obsolete">Failed to write file info</translation>
+    </message>
+    <message>
+        <source>Failed to write to coin database</source>
+        <translation type="obsolete">Failed to write to coin database</translation>
+    </message>
+    <message>
+        <source>Failed to write transaction index</source>
+        <translation type="obsolete">Failed to write transaction index</translation>
+    </message>
+    <message>
+        <source>Failed to write undo data</source>
+        <translation type="obsolete">Failed to write undo data</translation>
+    </message>
+    <message>
+        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
+        <translation type="obsolete">Find peers using DNS lookup (default: 1 unless -connect)</translation>
+    </message>
+    <message>
+        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
+        <translation type="obsolete">How many blocks to check at startup (default: 288, 0 = all)</translation>
+    </message>
+    <message>
+        <source>How thorough the block verification is (0-4, default: 3)</source>
+        <translation type="obsolete">How thorough the block verification is (0-4, default: 3)</translation>
+    </message>
+    <message>
+        <source>Importing blocks from block database...</source>
+        <translation type="obsolete">Importing blocks from block database...</translation>
+    </message>
+    <message>
+        <source>Imports blocks from external blk000??.dat file</source>
+        <translation type="obsolete">Imports blocks from external blk000??.dat file</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation type="obsolete">Information</translation>
+    </message>
+    <message>
+        <source>Invalid -tor address: &apos;%s&apos;</source>
+        <translation type="obsolete">Invalid -tor address: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Maintain a full transaction index (default: 0)</source>
+        <translation type="obsolete">Maintain a full transaction index (default: 0)</translation>
+    </message>
+    <message>
+        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
+        <translation type="obsolete">Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</translation>
+    </message>
+    <message>
+        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
+        <translation type="obsolete">Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</translation>
+    </message>
+    <message>
+        <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
+        <translation type="obsolete">Only accept block chain matching built-in checkpoints (default: 1)</translation>
+    </message>
+    <message>
+        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
+        <translation type="obsolete">Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</translation>
+    </message>
+    <message>
+        <source>Output extra debugging information. Implies all other -debug* options</source>
+        <translation type="obsolete">Output extra debugging information. Implies all other -debug* options</translation>
+    </message>
+    <message>
+        <source>Output extra network debugging information</source>
+        <translation type="obsolete">Output extra network debugging information</translation>
+    </message>
+    <message>
+        <source>Prepend debug output with timestamp</source>
+        <translation type="obsolete">Prepend debug output with timestamp</translation>
+    </message>
+    <message>
+        <source>Rebuild blockchain index from current blk000??.dat files</source>
+        <translation type="obsolete">Rebuild blockchain index from current blk000??.dat files</translation>
+    </message>
+    <message>
+        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation type="obsolete">SSL options: (see the Bitcoin Wiki for SSL setup instructions)</translation>
+    </message>
+    <message>
+        <source>Select the version of socks proxy to use (4-5, default: 5)</source>
+        <translation type="obsolete">Select the version of socks proxy to use (4-5, default: 5)</translation>
+    </message>
+    <message>
+        <source>Send trace/debug info to console instead of debug.log file</source>
+        <translation type="obsolete">Send trace/debug info to console instead of debug.log file</translation>
+    </message>
+    <message>
+        <source>Send trace/debug info to debugger</source>
+        <translation type="obsolete">Send trace/debug info to debugger</translation>
+    </message>
+    <message>
+        <source>Set maximum block size in bytes (default: 250000)</source>
+        <translation type="obsolete">Set maximum block size in bytes (default: 250000)</translation>
+    </message>
+    <message>
+        <source>Set minimum block size in bytes (default: 0)</source>
+        <translation type="obsolete">Set minimum block size in bytes (default: 0)</translation>
+    </message>
+    <message>
+        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
+        <translation type="obsolete">Shrink debug.log file on client startup (default: 1 when no -debug)</translation>
+    </message>
+    <message>
+        <source>Specify connection timeout in milliseconds (default: 5000)</source>
+        <translation type="obsolete">Specify connection timeout in milliseconds (default: 5000)</translation>
+    </message>
+    <message>
+        <source>System error: </source>
+        <translation type="obsolete">System error: </translation>
+    </message>
+    <message>
+        <source>Use UPnP to map the listening port (default: 0)</source>
+        <translation type="obsolete">Use UPnP to map the listening port (default: 0)</translation>
+    </message>
+    <message>
+        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
+        <translation type="obsolete">Use UPnP to map the listening port (default: 1 when listening)</translation>
+    </message>
+    <message>
+        <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
+        <translation type="obsolete">Use proxy to reach tor hidden services (default: same as -proxy)</translation>
+    </message>
+    <message>
+        <source>Username for JSON-RPC connections</source>
+        <translation type="obsolete">Username for JSON-RPC connections</translation>
+    </message>
+    <message>
+        <source>Verifying database...</source>
+        <translation type="obsolete">Verifying database...</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation type="obsolete">Warning</translation>
+    </message>
+    <message>
+        <source>Warning: This version is obsolete, upgrade required!</source>
+        <translation type="obsolete">Warning: This version is obsolete, upgrade required!</translation>
+    </message>
+    <message>
+        <source>You need to rebuild the databases using -reindex to change -txindex</source>
+        <translation type="obsolete">You need to rebuild the databases using -reindex to change -txindex</translation>
+    </message>
+    <message>
+        <source>wallet.dat corrupt, salvage failed</source>
+        <translation type="obsolete">wallet.dat corrupt, salvage failed</translation>
+    </message>
+    <message>
+        <source>Password for JSON-RPC connections</source>
+        <translation type="obsolete">Password for JSON-RPC connections</translation>
+    </message>
+    <message>
+        <source>Allow JSON-RPC connections from specified IP address</source>
+        <translation type="obsolete">Allow JSON-RPC connections from specified IP address</translation>
+    </message>
+    <message>
+        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
+        <translation type="obsolete">Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</translation>
+    </message>
+    <message>
+        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
+        <translation type="obsolete">Execute command when the best block changes (%s in cmd is replaced by block hash)</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet to latest format</source>
+        <translation type="obsolete">Upgrade wallet to latest format</translation>
+    </message>
+    <message>
+        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
+        <translation type="obsolete">Set key pool size to &lt;n&gt; (default: 100)</translation>
+    </message>
+    <message>
+        <source>Rescan the block chain for missing wallet transactions</source>
+        <translation type="obsolete">Rescan the block chain for missing wallet transactions</translation>
+    </message>
+    <message>
+        <source>Use OpenSSL (https) for JSON-RPC connections</source>
+        <translation type="obsolete">Use OpenSSL (https) for JSON-RPC connections</translation>
+    </message>
+    <message>
+        <source>Server certificate file (default: server.cert)</source>
+        <translation type="obsolete">Server certificate file (default: server.cert)</translation>
+    </message>
+    <message>
+        <source>Server private key (default: server.pem)</source>
+        <translation type="obsolete">Server private key (default: server.pem)</translation>
+    </message>
+    <message>
+        <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
+        <translation type="obsolete">Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
+    </message>
+    <message>
+        <source>This help message</source>
+        <translation type="obsolete">This help message</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
+        <translation type="obsolete">Unable to bind to %s on this computer (bind returned error %d, %s)</translation>
+    </message>
+    <message>
+        <source>Connect through socks proxy</source>
+        <translation type="obsolete">Connect through socks proxy</translation>
+    </message>
+    <message>
+        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
+        <translation type="obsolete">Allow DNS lookups for -addnode, -seednode and -connect</translation>
+    </message>
+    <message>
+        <source>Loading addresses...</source>
+        <translation type="obsolete">Loading addresses...</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet corrupted</source>
+        <translation type="obsolete">Error loading wallet.dat: Wallet corrupted</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet requires newer version of Namecoin</source>
+        <translation type="obsolete">Error loading wallet.dat: Wallet requires newer version of Namecoin</translation>
+    </message>
+    <message>
+        <source>Verifying wallet integrity...</source>
+        <translation type="obsolete">Verifying wallet integrity...</translation>
+    </message>
+    <message>
+        <source>Wallet needed to be rewritten: restart Namecoin to complete</source>
+        <translation type="obsolete">Wallet needed to be rewritten: restart Namecoin to complete</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat</source>
+        <translation type="obsolete">Error loading wallet.dat</translation>
+    </message>
+    <message>
+        <source>Invalid -proxy address: &apos;%s&apos;</source>
+        <translation type="obsolete">Invalid -proxy address: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
+        <translation type="obsolete">Unknown network specified in -onlynet: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Unknown -socks proxy version requested: %i</source>
+        <translation type="obsolete">Unknown -socks proxy version requested: %i</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
+        <translation type="obsolete">Cannot resolve -bind address: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
+        <translation type="obsolete">Cannot resolve -externalip address: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation type="obsolete">Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Error: could not start node</source>
+        <translation type="obsolete">Error: could not start node</translation>
+    </message>
+    <message>
+        <source>Invalid amount</source>
+        <translation type="obsolete">Invalid amount</translation>
+    </message>
+    <message>
+        <source>Insufficient funds</source>
+        <translation type="obsolete">Insufficient funds</translation>
+    </message>
+    <message>
+        <source>Loading block index...</source>
+        <translation type="obsolete">Loading block index...</translation>
+    </message>
+    <message>
+        <source>Add a node to connect to and attempt to keep the connection open</source>
+        <translation type="obsolete">Add a node to connect to and attempt to keep the connection open</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer. Namecoin is probably already running.</source>
+        <translation type="obsolete">Unable to bind to %s on this computer. Namecoin is probably already running.</translation>
+    </message>
+    <message>
+        <source>Find peers using internet relay chat (default: 0)</source>
+        <translation type="obsolete">Find peers using internet relay chat (default: 0)</translation>
+    </message>
+    <message>
+        <source>Fee per KB to add to transactions you send</source>
+        <translation type="obsolete">Fee per KB to add to transactions you send</translation>
+    </message>
+    <message>
+        <source>Loading wallet...</source>
+        <translation type="obsolete">Loading wallet...</translation>
+    </message>
+    <message>
+        <source>Cannot downgrade wallet</source>
+        <translation type="obsolete">Cannot downgrade wallet</translation>
+    </message>
+    <message>
+        <source>Cannot initialize keypool</source>
+        <translation type="obsolete">Cannot initialize keypool</translation>
+    </message>
+    <message>
+        <source>Cannot write default address</source>
+        <translation type="obsolete">Cannot write default address</translation>
+    </message>
+    <message>
+        <source>Rescanning...</source>
+        <translation type="obsolete">Rescanning...</translation>
+    </message>
+    <message>
+        <source>Done loading</source>
+        <translation type="obsolete">Done loading</translation>
+    </message>
+    <message>
+        <source>To use the %s option</source>
+        <translation type="obsolete">To use the %s option</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="obsolete">Error</translation>
+    </message>
+    <message>
+        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
+%s
+If the file does not exist, create it with owner-readable-only file permissions.</source>
+        <translation type="obsolete">You must set rpcpassword=&lt;password&gt; in the configuration file:
+%s
+If the file does not exist, create it with owner-readable-only file permissions.</translation>
+    </message>
+</context>
+<context>
+    <name>NamecoinGUI</name>
+    <message>
+        <source>Sign &amp;message...</source>
+        <translation type="obsolete">Sign &amp;message...</translation>
+    </message>
+    <message>
+        <source>Synchronizing with network...</source>
+        <translation type="obsolete">Synchronizing with network...</translation>
+    </message>
+    <message>
+        <source>&amp;Overview</source>
+        <translation type="obsolete">&amp;Overview</translation>
+    </message>
+    <message>
+        <source>Show general overview of wallet</source>
+        <translation type="obsolete">Show general overview of wallet</translation>
+    </message>
+    <message>
+        <source>&amp;Transactions</source>
+        <translation type="obsolete">&amp;Transactions</translation>
+    </message>
+    <message>
+        <source>Browse transaction history</source>
+        <translation type="obsolete">Browse transaction history</translation>
+    </message>
+    <message>
+        <source>&amp;Address Book</source>
+        <translation type="obsolete">&amp;Address Book</translation>
+    </message>
+    <message>
+        <source>Edit the list of stored addresses and labels</source>
+        <translation type="obsolete">Edit the list of stored addresses and labels</translation>
+    </message>
+    <message>
+        <source>&amp;Receive coins</source>
+        <translation type="obsolete">&amp;Receive coins</translation>
+    </message>
+    <message>
+        <source>Show the list of addresses for receiving payments</source>
+        <translation type="obsolete">Show the list of addresses for receiving payments</translation>
+    </message>
+    <message>
+        <source>&amp;Send coins</source>
+        <translation type="obsolete">&amp;Send coins</translation>
+    </message>
+    <message>
+        <source>E&amp;xit</source>
+        <translation type="obsolete">E&amp;xit</translation>
+    </message>
+    <message>
+        <source>Quit application</source>
+        <translation type="obsolete">Quit application</translation>
+    </message>
+    <message>
+        <source>Show information about Namecoin</source>
+        <translation type="obsolete">Show information about Namecoin</translation>
+    </message>
+    <message>
+        <source>About &amp;Qt</source>
+        <translation type="obsolete">About &amp;Qt</translation>
+    </message>
+    <message>
+        <source>Show information about Qt</source>
+        <translation type="obsolete">Show information about Qt</translation>
+    </message>
+    <message>
+        <source>&amp;Options...</source>
+        <translation type="obsolete">&amp;Options...</translation>
+    </message>
+    <message>
+        <source>&amp;Encrypt Wallet...</source>
+        <translation type="obsolete">&amp;Encrypt Wallet...</translation>
+    </message>
+    <message>
+        <source>&amp;Backup Wallet...</source>
+        <translation type="obsolete">&amp;Backup Wallet...</translation>
+    </message>
+    <message>
+        <source>&amp;Change Passphrase...</source>
+        <translation type="obsolete">&amp;Change Passphrase...</translation>
+    </message>
+    <message>
+        <source>Importing blocks from disk...</source>
+        <translation type="obsolete">Importing blocks from disk...</translation>
+    </message>
+    <message>
+        <source>Reindexing blocks on disk...</source>
+        <translation type="obsolete">Reindexing blocks on disk...</translation>
+    </message>
+    <message>
+        <source>&amp;Export...</source>
+        <translation type="obsolete">&amp;Export...</translation>
+    </message>
+    <message>
+        <source>Send coins to a Namecoin address</source>
+        <translation type="obsolete">Send coins to a Namecoin address</translation>
+    </message>
+    <message>
+        <source>Modify configuration options for Namecoin</source>
+        <translation type="obsolete">Modify configuration options for Namecoin</translation>
+    </message>
+    <message>
+        <source>Export the data in the current tab to a file</source>
+        <translation type="obsolete">Export the data in the current tab to a file</translation>
+    </message>
+    <message>
+        <source>Backup wallet to another location</source>
+        <translation type="obsolete">Backup wallet to another location</translation>
+    </message>
+    <message>
+        <source>Change the passphrase used for wallet encryption</source>
+        <translation type="obsolete">Change the passphrase used for wallet encryption</translation>
+    </message>
+    <message>
+        <source>&amp;Debug window</source>
+        <translation type="obsolete">&amp;Debug window</translation>
+    </message>
+    <message>
+        <source>Open debugging and diagnostic console</source>
+        <translation type="obsolete">Open debugging and diagnostic console</translation>
+    </message>
+    <message>
+        <source>&amp;Verify message...</source>
+        <translation type="obsolete">&amp;Verify message...</translation>
+    </message>
+    <message>
+        <source>Namecoin</source>
+        <translation type="obsolete">Namecoin</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation type="obsolete">Wallet</translation>
+    </message>
+    <message>
+        <source>&amp;About Namecoin</source>
+        <translation type="obsolete">&amp;About Namecoin</translation>
+    </message>
+    <message>
+        <source>&amp;Show / Hide</source>
+        <translation type="obsolete">&amp;Show / Hide</translation>
+    </message>
+    <message>
+        <source>Show or hide the main Window</source>
+        <translation type="obsolete">Show or hide the main Window</translation>
+    </message>
+    <message>
+        <source>Encrypt the private keys that belong to your wallet</source>
+        <translation type="obsolete">Encrypt the private keys that belong to your wallet</translation>
+    </message>
+    <message>
+        <source>Sign messages with your Namecoin addresses to prove you own them</source>
+        <translation type="obsolete">Sign messages with your Namecoin addresses to prove you own them</translation>
+    </message>
+    <message>
+        <source>Verify messages to ensure they were signed with specified Namecoin addresses</source>
+        <translation type="obsolete">Verify messages to ensure they were signed with specified Namecoin addresses</translation>
+    </message>
+    <message>
+        <source>&amp;File</source>
+        <translation type="obsolete">&amp;File</translation>
+    </message>
+    <message>
+        <source>&amp;Settings</source>
+        <translation type="obsolete">&amp;Settings</translation>
+    </message>
+    <message>
+        <source>&amp;Help</source>
+        <translation type="obsolete">&amp;Help</translation>
+    </message>
+    <message>
+        <source>Tabs toolbar</source>
+        <translation type="obsolete">Tabs toolbar</translation>
+    </message>
+    <message>
+        <source>Actions toolbar</source>
+        <translation type="obsolete">Actions toolbar</translation>
+    </message>
+    <message>
+        <source>[testnet]</source>
+        <translation type="obsolete">[testnet]</translation>
+    </message>
+    <message>
+        <source>Namecoin client</source>
+        <translation type="obsolete">Namecoin client</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n active connection(s) to Namecoin network</source>
+        <translation type="obsolete">
+            <numerusform>%n active connection to Namecoin network</numerusform>
+            <numerusform>%n active connections to Namecoin network</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
+        <translation type="obsolete">Processed %1 of %2 (estimated) blocks of transaction history.</translation>
+    </message>
+    <message>
+        <source>Processed %1 blocks of transaction history.</source>
+        <translation type="obsolete">Processed %1 blocks of transaction history.</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n hour(s)</source>
+        <translation type="obsolete">
+            <numerusform>%n hour</numerusform>
+            <numerusform>%n hours</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation type="obsolete">
+            <numerusform>%n day</numerusform>
+            <numerusform>%n days</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n week(s)</source>
+        <translation type="obsolete">
+            <numerusform>%n week</numerusform>
+            <numerusform>%n weeks</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>%1 behind</source>
+        <translation type="obsolete">%1 behind</translation>
+    </message>
+    <message>
+        <source>Last received block was generated %1 ago.</source>
+        <translation type="obsolete">Last received block was generated %1 ago.</translation>
+    </message>
+    <message>
+        <source>Transactions after this will not yet be visible.</source>
+        <translation type="obsolete">Transactions after this will not yet be visible.</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="obsolete">Error</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation type="obsolete">Warning</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation type="obsolete">Information</translation>
+    </message>
+    <message>
+        <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
+        <translation type="obsolete">This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</translation>
+    </message>
+    <message>
+        <source>Backup Successful</source>
+        <translation type="obsolete">Backup Successful</translation>
+    </message>
+    <message>
+        <source>The wallet data was successfully saved to the new location.</source>
+        <translation type="obsolete">The wallet data was successfully saved to the new location.</translation>
+    </message>
+    <message>
+        <source>Up to date</source>
+        <translation type="obsolete">Up to date</translation>
+    </message>
+    <message>
+        <source>Catching up...</source>
+        <translation type="obsolete">Catching up...</translation>
+    </message>
+    <message>
+        <source>Confirm transaction fee</source>
+        <translation type="obsolete">Confirm transaction fee</translation>
+    </message>
+    <message>
+        <source>Sent transaction</source>
+        <translation type="obsolete">Sent transaction</translation>
+    </message>
+    <message>
+        <source>Incoming transaction</source>
+        <translation type="obsolete">Incoming transaction</translation>
+    </message>
+    <message>
+        <source>Date: %1
+Amount: %2
+Type: %3
+Address: %4
+</source>
+        <translation type="obsolete">Date: %1
+Amount: %2
+Type: %3
+Address: %4
+</translation>
+    </message>
+    <message>
+        <source>URI handling</source>
+        <translation type="obsolete">URI handling</translation>
+    </message>
+    <message>
+        <source>URI can not be parsed! This can be caused by an invalid Namecoin address or malformed URI parameters.</source>
+        <translation type="obsolete">URI can not be parsed! This can be caused by an invalid Namecoin address or malformed URI parameters.</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
+        <translation type="obsolete">Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
+        <translation type="obsolete">Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Backup Wallet</source>
+        <translation type="obsolete">Backup Wallet</translation>
+    </message>
+    <message>
+        <source>Wallet Data (*.dat)</source>
+        <translation type="obsolete">Wallet Data (*.dat)</translation>
+    </message>
+    <message>
+        <source>Backup Failed</source>
+        <translation type="obsolete">Backup Failed</translation>
+    </message>
+    <message>
+        <source>There was an error trying to save the wallet data to the new location.</source>
+        <translation type="obsolete">There was an error trying to save the wallet data to the new location.</translation>
+    </message>
+    <message>
+        <source>A fatal error occurred. Namecoin can no longer continue safely and will quit.</source>
+        <translation type="obsolete">A fatal error occurred. Namecoin can no longer continue safely and will quit.</translation>
+    </message>
+</context>
+<context>
+    <name>OptionsDialog</name>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="+14"/>
+        <source>Options</source>
+        <translation>Options</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>&amp;Main</source>
+        <translation>&amp;Main</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.</source>
+        <translation>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Pay transaction &amp;fee</source>
+        <translation>Pay transaction &amp;fee</translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Automatically start Namecoin after logging in to the system.</source>
+        <translation>Automatically start Namecoin after logging in to the system.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Start Namecoin on system login</source>
+        <translation>&amp;Start Namecoin on system login</translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Reset all client options to default.</source>
+        <translation>Reset all client options to default.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Reset Options</source>
+        <translation>&amp;Reset Options</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>&amp;Network</source>
+        <translation>&amp;Network</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Automatically open the Namecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatically open the Namecoin client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Map port using &amp;UPnP</source>
+        <translation>Map port using &amp;UPnP</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Connect to the Namecoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Connect to the Namecoin network through a SOCKS proxy (e.g. when connecting through Tor).</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Connect through SOCKS proxy:</source>
+        <translation>&amp;Connect through SOCKS proxy:</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Proxy &amp;IP:</source>
+        <translation>Proxy &amp;IP:</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>IP address of the proxy (e.g. 127.0.0.1)</source>
+        <translation>IP address of the proxy (e.g. 127.0.0.1)</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Port:</source>
+        <translation>&amp;Port:</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>Port of the proxy (e.g. 9050)</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>SOCKS &amp;Version:</source>
+        <translation>SOCKS &amp;Version:</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>SOCKS version of the proxy (e.g. 5)</source>
+        <translation>SOCKS version of the proxy (e.g. 5)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+2"/>
@@ -3170,6 +4375,7 @@ Address: %4
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+0"/>
         <source>Message</source>
         <translation type="unfinished">Message</translation>
@@ -3178,6 +4384,15 @@ Address: %4
         <source>Cannot start Namecoin: click-to-pay handler</source>
         <translation>Cannot start Namecoin: click-to-pay handler</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <source>Cannot start Namecoin: click-to-pay handler</source>
+        <translation type="obsolete">Cannot start Namecoin: click-to-pay handler</translation>
+    </message>
+    <message>
+        <location filename="../paymentserver.cpp" line="+108"/>
+        <source>Cannot start namecoin: click-to-pay handler</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+0"/>
@@ -3259,7 +4474,7 @@ Address: %4
         <location line="+53"/>
         <location line="+23"/>
         <location line="+23"/>
-        <location filename="../rpcconsole.cpp" line="+344"/>
+        <location filename="../rpcconsole.cpp" line="+345"/>
         <source>N/A</source>
         <translation>N/A</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
@@ -3396,7 +4611,7 @@ Address: %4
     <name>SendCoinsDialog</name>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
-        <location filename="../sendcoinsdialog.cpp" line="+124"/>
+        <location filename="../sendcoinsdialog.cpp" line="+125"/>
         <location line="+5"/>
         <location line="+5"/>
         <location line="+5"/>
@@ -3961,9 +5176,13 @@ Address: %4
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../signverifymessagedialog.cpp" line="+30"/>
 =======
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
+=======
+        <location filename="../signverifymessagedialog.cpp" line="+28"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <location line="+3"/>
 <<<<<<< HEAD
 >>>>>>> Committing original src/qt
@@ -3994,12 +5213,17 @@ Address: %4
     </message>
     <message>
         <location line="+82"/>
+<<<<<<< HEAD
         <location line="+81"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+82"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>The entered address is invalid.</source>
         <translation>The entered address is invalid.</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-80"/>
         <location line="+8"/>
@@ -4010,10 +5234,15 @@ Address: %4
         <location line="+73"/>
 >>>>>>> Committing original src/qt
         <location line="+8"/>
+=======
+        <location line="-82"/>
+        <location line="+82"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Please check the address and try again.</source>
         <translation>Please check the address and try again.</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-80"/>
         <location line="+80"/>
@@ -4021,25 +5250,31 @@ Address: %4
         <location line="-81"/>
         <location line="+81"/>
 >>>>>>> Committing original src/qt
+=======
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>The entered address does not refer to a key.</source>
-        <translation>The entered address does not refer to a key.</translation>
+        <translation type="obsolete">The entered address does not refer to a key.</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-72"/>
 =======
         <location line="-73"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-74"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Wallet unlock was cancelled.</source>
         <translation>Wallet unlock was cancelled.</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+15"/>
         <source>Private key for the entered address is not available.</source>
         <translation>Private key for the entered address is not available.</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+14"/>
         <source>Message signing failed.</source>
         <translation>Message signing failed.</translation>
     </message>
@@ -4050,10 +5285,14 @@ Address: %4
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+58"/>
 =======
         <location line="+59"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+51"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>The signature could not be decoded.</source>
         <translation>The signature could not be decoded.</translation>
     </message>
@@ -4122,8 +5361,12 @@ Address: %4
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     <name>TransactionDesc</name>
     <message>
+<<<<<<< HEAD
         <location filename="../transactiondesc.cpp" line="+20"/>
 >>>>>>> Committing original src/qt
+=======
+        <location filename="../transactiondesc.cpp" line="+21"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Open until %1</source>
         <translation>Open until %1</translation>
     </message>
@@ -4308,26 +5551,27 @@ Address: %4
         <translation>Inputs</translation>
     </message>
     <message>
-        <location line="+23"/>
         <source>Amount</source>
-        <translation>Amount</translation>
+        <translation type="obsolete">Amount</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>true</source>
-        <translation>true</translation>
+        <translation type="obsolete">true</translation>
     </message>
     <message>
-        <location line="+0"/>
         <source>false</source>
-        <translation>false</translation>
+        <translation type="obsolete">false</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-232"/>
 =======
         <location line="-209"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-185"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>, has not been successfully broadcast yet</source>
         <translation>, has not been successfully broadcast yet</translation>
     </message>
@@ -4362,10 +5606,14 @@ Address: %4
     <name>TransactionTableModel</name>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../transactiontablemodel.cpp" line="+234"/>
 =======
         <location filename="../transactiontablemodel.cpp" line="+225"/>
 >>>>>>> Committing original src/qt
+=======
+        <location filename="../transactiontablemodel.cpp" line="+226"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Date</source>
         <translation>Date</translation>
     </message>
@@ -4829,6 +6077,7 @@ Address: %4
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>bitcoin-core</name>
     <message>
 <<<<<<< HEAD
@@ -4843,12 +6092,31 @@ Address: %4
 >>>>>>> Committing original src/qt
 =======
     <name>Namecoin-core</name>
+=======
+    <name>namecoin-core</name>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     <message>
-        <location filename="../bitcoinstrings.cpp" line="+91"/>
-        <source>Namecoin version</source>
-        <translation>Namecoin version</translation>
+        <location filename="../bitcoinstrings.cpp" line="+9"/>
+        <source>%s, you must set a rpcpassword in the configuration file:
+ %s
+It is recommended you use the following random password:
+rpcuser=namecoinrpc
+rpcpassword=%s
+(you do not need to remember this password)
+The username and password MUST NOT be the same.
+If the file does not exist, create it with owner-readable-only file permissions.
+</source>
+        <translation type="unfinished">%s, you must set a rpcpassword in the configuration file:
+ %s
+It is recommended you use the following random password:
+rpcuser=namecoinrpc
+rpcpassword=%s
+(you do not need to remember this password)
+The username and password MUST NOT be the same.
+If the file does not exist, create it with owner-readable-only file permissions.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+99"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Usage:</source>
@@ -4917,33 +6185,64 @@ Address: %4
         <source>Specify configuration file (default: namecoin.conf)</source>
         <translation>Specify configuration file (default: namecoin.conf)</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+10"/>
+        <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
+        <translation type="unfinished">Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: namecoind.pid)</source>
-        <translation>Specify pid file (default: namecoind.pid)</translation>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
+        <translation type="unfinished">An error occurred while setting up the RPC port %u for listening on IPv4: %s</translation>
     </message>
     <message>
-        <location line="-48"/>
-        <source>Generate coins</source>
-        <translation>Generate coins</translation>
+        <location line="+2"/>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
+        <translation type="unfinished">An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</translation>
     </message>
     <message>
-        <location line="-28"/>
-        <source>Don&apos;t generate coins</source>
-        <translation>Don&apos;t generate coins</translation>
+        <location line="+3"/>
+        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
+        <translation type="unfinished">Bind to given address and always listen on it. Use [host]:port notation for IPv6</translation>
     </message>
     <message>
-        <location line="+75"/>
-        <source>Specify data directory</source>
-        <translation>Specify data directory</translation>
+        <location line="+3"/>
+        <source>Cannot obtain a lock on data directory %s. Namecoin is probably already running.</source>
+        <translation type="unfinished">Cannot obtain a lock on data directory %s. Namecoin is probably already running.</translation>
     </message>
     <message>
-        <location line="-7"/>
-        <source>Set database cache size in megabytes (default: 25)</source>
-        <translation>Set database cache size in megabytes (default: 25)</translation>
+        <location line="+3"/>
+        <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
+        <translation type="unfinished">Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
+        <location line="+3"/>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation type="unfinished">Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation type="unfinished">Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
+        <translation type="unfinished">Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
+        <translation type="unfinished">Execute command when the best block changes (%s in cmd is replaced by block hash)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8336 or testnet: 18336)</source>
+        <translation type="unfinished">Listen for JSON-RPC connections on &lt;port&gt; (default: 8336 or testnet: 18336)</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-26"/>
@@ -4957,13 +6256,19 @@ Address: %4
         <source>Listen for connections on &lt;port&gt; (default: 8334 or testnet: 18334)</source>
         <translation>Listen for connections on &lt;port&gt; (default: 8334 or testnet: 18334)</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+2"/>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
+        <translation type="unfinished">Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="+5"/>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation>Maintain at most &lt;n&gt; connections to peers (default: 125)</translation>
+        <location line="+3"/>
+        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
+        <translation type="unfinished">Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-51"/>
@@ -4988,12 +6293,23 @@ Address: %4
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Specify your own public address</source>
         <translation>Specify your own public address</translation>
+=======
+        <location line="+3"/>
+        <source>Set the number of script verification threads (1-16, 0=auto, default: 0)</source>
+        <translation type="unfinished">Set the number of script verification threads (1-16, 0=auto, default: 0)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
+        <translation type="unfinished">This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
 <<<<<<< HEAD
         <location line="+5"/>
 =======
         <location line="+3"/>
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
         <translation>Threshold for disconnecting misbehaving peers (default: 100)</translation>
@@ -5082,10 +6398,57 @@ Address: %4
 =======
         <location line="-109"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Accept connections from outside (default: 1 if no -proxy or -connect)</translation>
+=======
+        <source>Unable to bind to %s on this computer. Namecoin is probably already running.</source>
+        <translation type="unfinished">Unable to bind to %s on this computer. Namecoin is probably already running.</translation>
     </message>
     <message>
+        <location line="+2"/>
+        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
+        <translation type="unfinished">Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</source>
+        <translation type="unfinished">Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Namecoin will not work properly.</source>
+        <translation type="unfinished">Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Namecoin will not work properly.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
+        <translation type="unfinished">Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
+        <translation type="unfinished">Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
+%s
+If the file does not exist, create it with owner-readable-only file permissions.</source>
+        <translation type="unfinished">You must set rpcpassword=&lt;password&gt; in the configuration file:
+%s
+If the file does not exist, create it with owner-readable-only file permissions.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Accept command line and JSON-RPC commands</source>
+        <translation type="unfinished">Accept command line and JSON-RPC commands</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+        <translation type="unfinished">Accept connections from outside (default: 1 if no -proxy or -connect)</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-95"/>
@@ -5130,23 +6493,34 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
         <translation>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</translation>
+=======
+        <location line="+1"/>
+        <source>Add a node to connect to and attempt to keep the connection open</source>
+        <translation type="unfinished">Add a node to connect to and attempt to keep the connection open</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
-        <translation>Bind to given address and always listen on it. Use [host]:port notation for IPv6</translation>
+        <location line="+1"/>
+        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
+        <translation type="unfinished">Allow DNS lookups for -addnode, -seednode and -connect</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Namecoin is probably already running.</source>
-        <translation>Cannot obtain a lock on data directory %s. Namecoin is probably already running.</translation>
+        <location line="+1"/>
+        <source>Allow JSON-RPC connections from specified IP address</source>
+        <translation type="unfinished">Allow JSON-RPC connections from specified IP address</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
-        <translation>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</translation>
+        <location line="+1"/>
+        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
+        <translation type="unfinished">Attempt to recover private keys from a corrupt wallet.dat</translation>
     </message>
     <message>
+        <location line="+1"/>
+        <source>Namecoin version</source>
+        <translation type="unfinished">Namecoin version</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
         <location line="+3"/>
 <<<<<<< HEAD
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development.</source>
@@ -5163,13 +6537,19 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Committing original src/qt
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</translation>
+=======
+        <location line="+1"/>
+        <source>Block creation options:</source>
+        <translation type="unfinished">Block creation options:</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="+4"/>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</translation>
+        <location line="+1"/>
+        <source>Cannot downgrade wallet</source>
+        <translation type="unfinished">Cannot downgrade wallet</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+6"/>
 =======
@@ -5251,18 +6631,54 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Namecoin will not work properly.</source>
         <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Namecoin will not work properly.</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+1"/>
+        <source>Cannot initialize keypool</source>
+        <translation type="unfinished">Cannot initialize keypool</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</translation>
+        <location line="+1"/>
+        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
+        <translation type="unfinished">Cannot resolve -bind address: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</translation>
+        <location line="+1"/>
+        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
+        <translation type="unfinished">Cannot resolve -externalip address: &apos;%s&apos;</translation>
     </message>
     <message>
+        <location line="+1"/>
+        <source>Cannot write default address</source>
+        <translation type="unfinished">Cannot write default address</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect only to the specified node(s)</source>
+        <translation type="unfinished">Connect only to the specified node(s)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect through socks proxy</source>
+        <translation type="unfinished">Connect through socks proxy</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
+        <translation type="unfinished">Connect to a node to retrieve peer addresses, and disconnect</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Corrupted block database detected</source>
+        <translation type="unfinished">Corrupted block database detected</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
+        <translation type="unfinished">Discover own IP address (default: 1 when listening and no -externalip)</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+9"/>
         <source>&lt;category&gt; can be:</source>
@@ -5294,13 +6710,24 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Committing original src/qt
         <source>Block creation options:</source>
         <translation>Block creation options:</translation>
+=======
+        <location line="+1"/>
+        <source>Do you want to rebuild the block database now?</source>
+        <translation type="unfinished">Do you want to rebuild the block database now?</translation>
     </message>
     <message>
-        <location line="+6"/>
-        <source>Connect only to the specified node(s)</source>
-        <translation>Connect only to the specified node(s)</translation>
+        <location line="+1"/>
+        <source>Don&apos;t generate coins</source>
+        <translation type="unfinished">Don&apos;t generate coins</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
+        <location line="+1"/>
+        <source>Done loading</source>
+        <translation type="unfinished">Done loading</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+1"/>
         <source>Connect through SOCKS proxy</source>
@@ -5318,14 +6745,20 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Committing original src/qt
         <source>Corrupted block database detected</source>
         <translation>Corrupted block database detected</translation>
+=======
+        <location line="+1"/>
+        <source>Error initializing block database</source>
+        <translation type="unfinished">Error initializing block database</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Discover own IP address (default: 1 when listening and no -externalip)</translation>
+        <source>Error loading block database</source>
+        <translation type="unfinished">Error loading block database</translation>
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <source>Do not load the wallet and disable wallet RPC calls</source>
         <translation type="unfinished"></translation>
@@ -5336,95 +6769,110 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Committing original src/qt
         <source>Do you want to rebuild the block database now?</source>
         <translation>Do you want to rebuild the block database now?</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Error initializing block database</source>
-        <translation>Error initializing block database</translation>
+=======
+        <source>Error loading wallet.dat</source>
+        <translation type="unfinished">Error loading wallet.dat</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading block database</source>
-        <translation>Error loading block database</translation>
+        <source>Error loading wallet.dat: Wallet corrupted</source>
+        <translation type="unfinished">Error loading wallet.dat: Wallet corrupted</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+1"/>
+        <source>Error loading wallet.dat: Wallet requires newer version of Namecoin</source>
+        <translation type="unfinished">Error loading wallet.dat: Wallet requires newer version of Namecoin</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Error opening block database</source>
-        <translation>Error opening block database</translation>
+        <translation type="unfinished">Error opening block database</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
+        <source>Error</source>
+        <translation type="unfinished">Error</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Error: Disk space is low!</source>
-        <translation>Error: Disk space is low!</translation>
+        <translation type="unfinished">Error: Disk space is low!</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Error: Transaction creation failed!</source>
-        <translation>Error: Transaction creation failed!</translation>
+        <translation type="unfinished">Error: Transaction creation failed!</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation>Error: Wallet locked, unable to create transaction!</translation>
+        <translation type="unfinished">Error: Wallet locked, unable to create transaction!</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
+        <source>Error: could not start node</source>
+        <translation type="unfinished">Error: could not start node</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Error: system error: </source>
-        <translation>Error: system error: </translation>
+        <translation type="unfinished">Error: system error: </translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation>Failed to listen on any port. Use -listen=0 if you want this.</translation>
+        <translation type="unfinished">Failed to listen on any port. Use -listen=0 if you want this.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to read block info</source>
-        <translation>Failed to read block info</translation>
+        <translation type="unfinished">Failed to read block info</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to read block</source>
-        <translation>Failed to read block</translation>
+        <translation type="unfinished">Failed to read block</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to sync block index</source>
-        <translation>Failed to sync block index</translation>
+        <translation type="unfinished">Failed to sync block index</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to write block index</source>
-        <translation>Failed to write block index</translation>
+        <translation type="unfinished">Failed to write block index</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to write block info</source>
-        <translation>Failed to write block info</translation>
+        <translation type="unfinished">Failed to write block info</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to write block</source>
-        <translation>Failed to write block</translation>
+        <translation type="unfinished">Failed to write block</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to write file info</source>
-        <translation>Failed to write file info</translation>
+        <translation type="unfinished">Failed to write file info</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to write to coin database</source>
-        <translation>Failed to write to coin database</translation>
+        <translation type="unfinished">Failed to write to coin database</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to write transaction index</source>
-        <translation>Failed to write transaction index</translation>
+        <translation type="unfinished">Failed to write transaction index</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to write undo data</source>
+<<<<<<< HEAD
         <translation>Failed to write undo data</translation>
     </message>
     <message>
@@ -5440,16 +6888,19 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Committing original src/qt
         <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
         <translation>Find peers using DNS lookup (default: 1 unless -connect)</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
-        <translation>How many blocks to check at startup (default: 288, 0 = all)</translation>
+=======
+        <translation type="unfinished">Failed to write undo data</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
-        <source>How thorough the block verification is (0-4, default: 3)</source>
-        <translation>How thorough the block verification is (0-4, default: 3)</translation>
+        <source>Fee per KB to add to transactions you send</source>
+        <translation type="unfinished">Fee per KB to add to transactions you send</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
+        <translation type="unfinished">Find peers using DNS lookup (default: 1 unless -connect)</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -5552,8 +7003,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
 =======
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <location line="+1"/>
-        <source>Importing blocks from block database...</source>
-        <translation>Importing blocks from block database...</translation>
+        <source>Find peers using internet relay chat (default: 0)</source>
+        <translation type="unfinished">Find peers using internet relay chat (default: 0)</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -5589,9 +7040,14 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Committing original src/qt
 =======
         <location line="+1"/>
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Imports blocks from external blk000??.dat file</source>
         <translation>Imports blocks from external blk000??.dat file</translation>
+=======
+        <source>Generate coins</source>
+        <translation type="unfinished">Generate coins</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
 <<<<<<< HEAD
@@ -5626,6 +7082,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Committing original src/qt
 =======
         <location line="+1"/>
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Information</source>
         <translation>Information</translation>
@@ -5656,44 +7113,64 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <location line="+8"/>
         <source>Maintain a full transaction index (default: 0)</source>
         <translation>Maintain a full transaction index (default: 0)</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
-        <translation>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
-        <translation>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</translation>
+=======
+        <source>Get help for a command</source>
+        <translation type="unfinished">Get help for a command</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
-        <translation>Only accept block chain matching built-in checkpoints (default: 1)</translation>
+        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
+        <translation type="unfinished">How many blocks to check at startup (default: 288, 0 = all)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
-        <translation>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</translation>
+        <source>How thorough the block verification is (0-4, default: 3)</source>
+        <translation type="unfinished">How thorough the block verification is (0-4, default: 3)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
+        <location line="+1"/>
+        <source>Importing blocks from block database...</source>
+        <translation type="unfinished">Importing blocks from block database...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Imports blocks from external blk000??.dat file</source>
+        <translation type="unfinished">Imports blocks from external blk000??.dat file</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Information</source>
+        <translation type="unfinished">Information</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Insufficient funds</source>
+        <translation type="unfinished">Insufficient funds</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+9"/>
 =======
         <location line="+2"/>
         <source>Output extra debugging information. Implies all other -debug* options</source>
         <translation>Output extra debugging information. Implies all other -debug* options</translation>
+=======
+        <location line="+1"/>
+        <source>Invalid -proxy address: &apos;%s&apos;</source>
+        <translation type="unfinished">Invalid -proxy address: &apos;%s&apos;</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
-        <source>Output extra network debugging information</source>
-        <translation>Output extra network debugging information</translation>
+        <source>Invalid -tor address: &apos;%s&apos;</source>
+        <translation type="unfinished">Invalid -tor address: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Prepend debug output with timestamp</source>
-        <translation>Prepend debug output with timestamp</translation>
+        <location line="+1"/>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation type="unfinished">Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -5701,59 +7178,77 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Committing original src/qt
 =======
         <location line="+1"/>
-        <source>Rebuild blockchain index from current blk000??.dat files</source>
-        <translation>Rebuild blockchain index from current blk000??.dat files</translation>
+        <source>Invalid amount</source>
+        <translation type="unfinished">Invalid amount</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
         <translation>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</translation>
+=======
+        <location line="+1"/>
+        <source>List commands</source>
+        <translation type="unfinished">List commands</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
 <<<<<<< HEAD
         <location line="+4"/>
 =======
         <location line="+1"/>
-        <source>Select the version of socks proxy to use (4-5, default: 5)</source>
-        <translation>Select the version of socks proxy to use (4-5, default: 5)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 8334 or testnet: 18334)</source>
+        <translation type="unfinished">Listen for connections on &lt;port&gt; (default: 8334 or testnet: 18334)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
 >>>>>>> Committing original src/qt
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Send trace/debug info to console instead of debug.log file</translation>
+=======
+        <location line="+1"/>
+        <source>Loading addresses...</source>
+        <translation type="unfinished">Loading addresses...</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
 <<<<<<< HEAD
         <location line="+6"/>
 =======
         <location line="+1"/>
-        <source>Send trace/debug info to debugger</source>
-        <translation>Send trace/debug info to debugger</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Set maximum block size in bytes (default: 250000)</source>
-        <translation>Set maximum block size in bytes (default: 250000)</translation>
+        <source>Loading block index...</source>
+        <translation type="unfinished">Loading block index...</translation>
     </message>
     <message>
         <location line="+1"/>
+        <source>Loading wallet...</source>
+        <translation type="unfinished">Loading wallet...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <source>Set minimum block size in bytes (default: 0)</source>
         <translation>Set minimum block size in bytes (default: 0)</translation>
+=======
+        <source>Maintain a full transaction index (default: 0)</source>
+        <translation type="unfinished">Maintain a full transaction index (default: 0)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
-        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Shrink debug.log file on client startup (default: 1 when no -debug)</translation>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
+        <translation type="unfinished">Maintain at most &lt;n&gt; connections to peers (default: 125)</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation>Specify connection timeout in milliseconds (default: 5000)</translation>
+        <location line="+1"/>
+        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
+        <translation type="unfinished">Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+6"/>
 =======
@@ -5793,24 +7288,40 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation>Use UPnP to map the listening port (default: 0)</translation>
+=======
+        <location line="+1"/>
+        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
+        <translation type="unfinished">Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Use UPnP to map the listening port (default: 1 when listening)</translation>
+        <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
+        <translation type="unfinished">Only accept block chain matching built-in checkpoints (default: 1)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
+        <translation type="unfinished">Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</translation>
     </message>
     <message>
 <<<<<<< HEAD
 =======
         <location line="+1"/>
-        <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
-        <translation>Use proxy to reach tor hidden services (default: same as -proxy)</translation>
+        <source>Options:</source>
+        <translation type="unfinished">Options:</translation>
     </message>
     <message>
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <location line="+2"/>
         <source>Username for JSON-RPC connections</source>
         <translation>Username for JSON-RPC connections</translation>
+=======
+        <location line="+1"/>
+        <source>Output extra debugging information. Implies all other -debug* options</source>
+        <translation type="unfinished">Output extra debugging information. Implies all other -debug* options</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
 <<<<<<< HEAD
@@ -5821,23 +7332,34 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Committing original src/qt
 =======
         <location line="+1"/>
-        <source>Verifying database...</source>
-        <translation>Verifying database...</translation>
+        <source>Output extra network debugging information</source>
+        <translation type="unfinished">Output extra network debugging information</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Warning</source>
         <translation>Warning</translation>
+=======
+        <location line="+1"/>
+        <source>Password for JSON-RPC connections</source>
+        <translation type="unfinished">Password for JSON-RPC connections</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
 <<<<<<< HEAD
         <location line="+2"/>
 =======
         <location line="+1"/>
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <source>Warning: This version is obsolete, upgrade required!</source>
         <translation>Warning: This version is obsolete, upgrade required!</translation>
+=======
+        <source>Prepend debug output with timestamp</source>
+        <translation type="unfinished">Prepend debug output with timestamp</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
 <<<<<<< HEAD
@@ -5846,16 +7368,22 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <translation type="unfinished">version</translation>
 =======
         <location line="+1"/>
+<<<<<<< HEAD
         <source>You need to rebuild the databases using -reindex to change -txindex</source>
         <translation>You need to rebuild the databases using -reindex to change -txindex</translation>
 >>>>>>> Committing original src/qt
+=======
+        <source>Rebuild blockchain index from current blk000??.dat files</source>
+        <translation type="unfinished">Rebuild blockchain index from current blk000??.dat files</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
-        <source>wallet.dat corrupt, salvage failed</source>
-        <translation>wallet.dat corrupt, salvage failed</translation>
+        <source>Rescan the block chain for missing wallet transactions</source>
+        <translation type="unfinished">Rescan the block chain for missing wallet transactions</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-58"/>
@@ -5965,12 +7493,56 @@ If the file does not exist, create it with owner-readable-only file permissions.
 =======
         <location line="-21"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+1"/>
+        <source>Rescanning...</source>
+        <translation type="unfinished">Rescanning...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Run in the background as a daemon and accept commands</source>
+        <translation type="unfinished">Run in the background as a daemon and accept commands</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation type="unfinished">SSL options: (see the Bitcoin Wiki for SSL setup instructions)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Select the version of socks proxy to use (4-5, default: 5)</source>
+        <translation type="unfinished">Select the version of socks proxy to use (4-5, default: 5)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send command to -server or namecoind</source>
+        <translation type="unfinished">Send command to -server or namecoind</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
+        <translation type="unfinished">Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send trace/debug info to console instead of debug.log file</source>
+        <translation type="unfinished">Send trace/debug info to console instead of debug.log file</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send trace/debug info to debugger</source>
+        <translation type="unfinished">Send trace/debug info to debugger</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Server certificate file (default: server.cert)</source>
-        <translation>Server certificate file (default: server.cert)</translation>
+        <translation type="unfinished">Server certificate file (default: server.cert)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Server private key (default: server.pem)</source>
+<<<<<<< HEAD
         <translation>Server private key (default: server.pem)</translation>
     </message>
     <message>
@@ -6055,13 +7627,42 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Error loading wallet.dat: Wallet corrupted</source>
         <translation>Error loading wallet.dat: Wallet corrupted</translation>
+=======
+        <translation type="unfinished">Server private key (default: server.pem)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Namecoin</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of Namecoin</translation>
+        <source>Set database cache size in megabytes (default: 25)</source>
+        <translation type="unfinished">Set database cache size in megabytes (default: 25)</translation>
     </message>
     <message>
+        <location line="+1"/>
+        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
+        <translation type="unfinished">Set key pool size to &lt;n&gt; (default: 100)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set maximum block size in bytes (default: 250000)</source>
+        <translation type="unfinished">Set maximum block size in bytes (default: 250000)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set minimum block size in bytes (default: 0)</source>
+        <translation type="unfinished">Set minimum block size in bytes (default: 0)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
+        <translation type="unfinished">Shrink debug.log file on client startup (default: 1 when no -debug)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specify configuration file (default: bitcoin.conf)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+98"/>
@@ -6081,13 +7682,19 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <location line="+88"/>
         <source>Verifying wallet integrity...</source>
         <translation>Verifying wallet integrity...</translation>
+=======
+        <location line="+1"/>
+        <source>Specify connection timeout in milliseconds (default: 5000)</source>
+        <translation type="unfinished">Specify connection timeout in milliseconds (default: 5000)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Namecoin to complete</source>
-        <translation>Wallet needed to be rewritten: restart Namecoin to complete</translation>
+        <source>Specify data directory</source>
+        <translation type="unfinished">Specify data directory</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-91"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Error loading wallet.dat</source>
@@ -6105,18 +7712,29 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Invalid -proxy address: &apos;%s&apos;</source>
         <translation>Invalid -proxy address: &apos;%s&apos;</translation>
+=======
+        <location line="+1"/>
+        <source>Specify pid file (default: namecoind.pid)</source>
+        <translation type="unfinished">Specify pid file (default: namecoind.pid)</translation>
     </message>
     <message>
-        <location line="+48"/>
-        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation>Unknown network specified in -onlynet: &apos;%s&apos;</translation>
+        <location line="+1"/>
+        <source>Specify your own public address</source>
+        <translation type="unfinished">Specify your own public address</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="-1"/>
-        <source>Unknown -socks proxy version requested: %i</source>
-        <translation>Unknown -socks proxy version requested: %i</translation>
+        <location line="+1"/>
+        <source>System error: </source>
+        <translation type="unfinished">System error: </translation>
     </message>
     <message>
+        <location line="+1"/>
+        <source>This help message</source>
+        <translation type="unfinished">This help message</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-101"/>
@@ -6128,13 +7746,19 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Cannot resolve -bind address: &apos;%s&apos;</source>
         <translation>Cannot resolve -bind address: &apos;%s&apos;</translation>
+=======
+        <location line="+1"/>
+        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
+        <translation type="unfinished">Threshold for disconnecting misbehaving peers (default: 100)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation>Cannot resolve -externalip address: &apos;%s&apos;</translation>
+        <source>To use the %s option</source>
+        <translation type="unfinished">To use the %s option</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+48"/>
@@ -6146,28 +7770,34 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+=======
+        <location line="+1"/>
+        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
+        <translation type="unfinished">Unable to bind to %s on this computer (bind returned error %d, %s)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="-26"/>
-        <source>Error: could not start node</source>
-        <translation>Error: could not start node</translation>
+        <location line="+1"/>
+        <source>Unknown -socks proxy version requested: %i</source>
+        <translation type="unfinished">Unknown -socks proxy version requested: %i</translation>
     </message>
     <message>
-        <location line="+27"/>
-        <source>Invalid amount</source>
-        <translation>Invalid amount</translation>
+        <location line="+1"/>
+        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
+        <translation type="unfinished">Unknown network specified in -onlynet: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="-4"/>
-        <source>Insufficient funds</source>
-        <translation>Insufficient funds</translation>
+        <location line="+1"/>
+        <source>Upgrade wallet to latest format</source>
+        <translation type="unfinished">Upgrade wallet to latest format</translation>
     </message>
     <message>
-        <location line="+8"/>
-        <source>Loading block index...</source>
-        <translation>Loading block index...</translation>
+        <location line="+1"/>
+        <source>Usage:</source>
+        <translation type="unfinished">Usage:</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-62"/>
@@ -6198,13 +7828,24 @@ If the file does not exist, create it with owner-readable-only file permissions.
 =======
         <source>Unable to bind to %s on this computer. Namecoin is probably already running.</source>
         <translation>Unable to bind to %s on this computer. Namecoin is probably already running.</translation>
+=======
+        <location line="+1"/>
+        <source>Use OpenSSL (https) for JSON-RPC connections</source>
+        <translation type="unfinished">Use OpenSSL (https) for JSON-RPC connections</translation>
     </message>
     <message>
-        <location line="+69"/>
-        <source>Find peers using internet relay chat (default: 0)</source>
-        <translation>Find peers using internet relay chat (default: 0)</translation>
+        <location line="+1"/>
+        <source>Use UPnP to map the listening port (default: 0)</source>
+        <translation type="unfinished">Use UPnP to map the listening port (default: 0)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
+        <location line="+1"/>
+        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
+        <translation type="unfinished">Use UPnP to map the listening port (default: 1 when listening)</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
         <location line="-2"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Fee per KB to add to transactions you send</source>
@@ -6228,18 +7869,34 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Cannot downgrade wallet</source>
         <translation>Cannot downgrade wallet</translation>
+=======
+        <location line="+1"/>
+        <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
+        <translation type="unfinished">Use proxy to reach tor hidden services (default: same as -proxy)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot initialize keypool</source>
-        <translation>Cannot initialize keypool</translation>
+        <source>Use the test network</source>
+        <translation type="unfinished">Use the test network</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Cannot write default address</source>
-        <translation>Cannot write default address</translation>
+        <location line="+1"/>
+        <source>Username for JSON-RPC connections</source>
+        <translation type="unfinished">Username for JSON-RPC connections</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
+        <location line="+1"/>
+        <source>Verifying database...</source>
+        <translation type="unfinished">Verifying database...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Verifying wallet integrity...</source>
+        <translation type="unfinished">Verifying wallet integrity...</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+67"/>
@@ -6303,6 +7960,31 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <translation>You must set rpcpassword=&lt;password&gt; in the configuration file:
 %s
 If the file does not exist, create it with owner-readable-only file permissions.</translation>
+=======
+        <location line="+1"/>
+        <source>Wallet needed to be rewritten: restart Namecoin to complete</source>
+        <translation type="unfinished">Wallet needed to be rewritten: restart Namecoin to complete</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Warning</source>
+        <translation type="unfinished">Warning</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Warning: This version is obsolete, upgrade required!</source>
+        <translation type="unfinished">Warning: This version is obsolete, upgrade required!</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>You need to rebuild the databases using -reindex to change -txindex</source>
+        <translation type="unfinished">You need to rebuild the databases using -reindex to change -txindex</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>wallet.dat corrupt, salvage failed</source>
+        <translation type="unfinished">wallet.dat corrupt, salvage failed</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 </TS>

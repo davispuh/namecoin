@@ -238,12 +238,20 @@ boost::filesystem::path GetSpecialFolderPath(int nFolder, bool fCreate = true);
 boost::filesystem::path GetTempPath();
 void ShrinkDebugFile();
 int GetRandInt(int nMax);
+<<<<<<< HEAD
 uint64_t GetRand(uint64_t nMax);
 uint256 GetRandHash();
 int64_t GetTime();
 void SetMockTime(int64_t nMockTimeIn);
 int64_t GetAdjustedTime();
 int64_t GetTimeOffset();
+=======
+uint64 GetRand(uint64 nMax);
+int64 GetTime();
+int64 GetAdjustedTime();
+void AddTimeData(unsigned int ip, int64 nTime);
+int64 GetTimeOffset();
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
 std::string FormatFullVersion();
 std::string FormatSubVersion(const std::string& name, int nClientVersion, const std::vector<std::string>& comments);
 void AddTimeData(const CNetAddr& ip, int64_t nTime);
@@ -525,6 +533,28 @@ inline bool GetBoolArg(const std::string& strArg, bool fDefault=false)
 
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
+<<<<<<< HEAD
+=======
+
+/** Median filter over a stream of values.
+ * Returns the median of the last N numbers
+ */
+template <typename T> class CMedianFilter
+{
+private:
+    std::vector<T> vValues;
+    std::vector<T> vSorted;
+    unsigned int nSize;
+public:
+    CMedianFilter(unsigned int size, T initial_value):
+        nSize(size)
+    {
+        vValues.reserve(size);
+        vValues.push_back(initial_value);
+        vSorted = vValues;
+    }
+
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     void input(T value)
     {
         if(vValues.size() == nSize)
@@ -536,6 +566,54 @@ inline bool GetBoolArg(const std::string& strArg, bool fDefault=false)
         vSorted.resize(vValues.size());
         std::copy(vValues.begin(), vValues.end(), vSorted.begin());
         std::sort(vSorted.begin(), vSorted.end());
+<<<<<<< HEAD
+=======
+    }
+
+    T median() const
+    {
+        int size = vSorted.size();
+        assert(size>0);
+        if(size & 1) // Odd number of elements
+        {
+            return vSorted[size/2];
+        }
+        else // Even number of elements
+        {
+            return (vSorted[size/2-1] + vSorted[size/2]) / 2;
+        }
+    }
+
+    int size() const
+    {
+        return vValues.size();
+    }
+
+    std::vector<T> sorted () const
+    {
+        return vSorted;
+    }
+};
+
+
+
+
+
+
+
+
+// Randomize the stack to help protect against buffer overrun exploits
+#define IMPLEMENT_RANDOMIZE_STACK(ThreadFn)     \
+    {                                           \
+        static char nLoops;                     \
+        if (nLoops <= 0)                        \
+            nLoops = GetRand(20) + 1;           \
+        if (nLoops-- > 1)                       \
+        {                                       \
+            ThreadFn;                           \
+            return;                             \
+        }                                       \
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     }
 
     T median() const

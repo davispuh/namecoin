@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 <?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_TW" version="2.0">
 <<<<<<< HEAD
 =======
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="zh_TW">
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
 <defaultcodec>UTF-8</defaultcodec>
 >>>>>>> Committing original src/qt
 <context>
@@ -30,12 +36,11 @@
 >>>>>>> Committing original src/qt
     </message>
     <message>
-        <location line="+41"/>
         <source>Copyright © 2009-2013 The Bitcoin and Namecoin developers</source>
-        <translation>版權為 Namecoin 開發人員自西元 2009 至 2013 年起所有</translation>
+        <translation type="obsolete">版權為 Namecoin 開發人員自西元 2009 至 2013 年起所有</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+57"/>
         <source>
 This is experimental software.
 
@@ -62,6 +67,7 @@ This product includes software developed by the OpenSSL Project for use in the O
 此產品也包含了由 OpenSSL Project 所開發的 OpenSSL Toolkit (http://www.openssl.org/) 軟體, 由 Eric Young (eay@cryptsoft.com) 撰寫的加解密軟體, 以及由 Thomas Bernard 所撰寫的 UPnP 軟體.</translation>
     </message>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <message>
         <location filename="../aboutdialog.cpp" line="+14"/>
 >>>>>>> Committing original src/qt
@@ -80,6 +86,18 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
 =======
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+    <message>
+        <location filename="../aboutdialog.cpp" line="+17"/>
+        <source>Copyright</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>2009-%1 The Bitcoin and Namecoin developers</source>
+        <translation type="unfinished"></translation>
+    </message>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
 </context>
 <context>
     <name>AddressBookPage</name>
@@ -250,6 +268,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../addressbookpage.cpp" line="-5"/>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>這是你用來付款的位元幣位址. 在付錢之前, 務必要檢查金額和收款位址是否正確.</translation>
@@ -260,15 +279,19 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location filename="../addressbookpage.cpp" line="+65"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location filename="../addressbookpage.cpp" line="+66"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Copy &amp;Label</source>
         <translation>複製標記</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>&amp;Edit</source>
         <translation>編輯</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+194"/>
@@ -284,6 +307,14 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="+250"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+1"/>
+        <source>Send &amp;Coins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+263"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Export Address Book Data</source>
         <translation>匯出位址簿資料</translation>
 >>>>>>> Committing original src/qt
@@ -323,6 +354,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../addresstablemodel.cpp" line="+168"/>
 =======
         <location filename="../addresstablemodel.cpp" line="+144"/>
@@ -330,6 +362,9 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location filename="../addresstablemodel.cpp" line="+142"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location filename="../addresstablemodel.cpp" line="+146"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Label</source>
         <translation>標記</translation>
     </message>
@@ -484,7 +519,12 @@ This product includes software developed by the OpenSSL Project for use in the O
 >>>>>>> Committing original src/qt
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+11"/>
+        <source>Namecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your namecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
 <<<<<<< HEAD
         <translation>重要: 請改用新產生有加密的錢包檔，來取代舊錢包檔的備份。為了安全性的理由，當你開始使用新的有加密的錢包後，舊錢包檔的備份就不能再使用了。</translation>
@@ -509,6 +549,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>錢包已加密</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-56"/>
 <<<<<<< HEAD
         <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
@@ -520,9 +561,13 @@ This product includes software developed by the OpenSSL Project for use in the O
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation>位元幣現在要關閉以完成加密程序. 請記住, 加密錢包無法完全防止入侵電腦的惡意程式偷取你的位元幣.</translation>
 >>>>>>> Committing original src/qt
+=======
+        <source>Namecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Namecoins from being stolen by malware infecting your computer.</source>
+        <translation type="obsolete">位元幣現在要關閉以完成加密程序. 請記住, 加密錢包無法完全防止入侵電腦的惡意程式偷取你的位元幣.</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="+13"/>
+        <location line="-43"/>
         <location line="+7"/>
         <location line="+42"/>
         <location line="+6"/>
@@ -584,8 +629,9 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
 </context>
 <context>
-    <name>NamecoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../bitcoingui.cpp" line="+295"/>
@@ -606,21 +652,36 @@ This product includes software developed by the OpenSSL Project for use in the O
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Sign &amp;message...</source>
         <translation>訊息簽署...</translation>
+=======
+        <location filename="../bitcoin.cpp" line="+115"/>
+        <source>A fatal error occurred. Namecoin can no longer continue safely and will quit.</source>
+        <translation type="unfinished">發生了致命的錯誤. 位元幣程式無法再繼續安全執行, 只好結束.</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="+254"/>
-        <source>Synchronizing with network...</source>
-        <translation>網路同步中...</translation>
+        <location filename="../bitcoingui.cpp" line="+73"/>
+        <location line="+550"/>
+        <source>Namecoin</source>
+        <translation type="unfinished">位元幣</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-349"/>
 >>>>>>> Committing original src/qt
 =======
         <location line="-322"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="-550"/>
+        <source>Wallet</source>
+        <translation type="unfinished">錢包</translation>
+    </message>
+    <message>
+        <location line="+139"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>&amp;Overview</source>
-        <translation>總覽</translation>
+        <translation type="unfinished">總覽</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -634,17 +695,17 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+1"/>
 >>>>>>> Committing original src/qt
         <source>Show general overview of wallet</source>
-        <translation>顯示錢包一般總覽</translation>
+        <translation type="unfinished">顯示錢包一般總覽</translation>
     </message>
     <message>
-        <location line="+20"/>
-        <source>&amp;Transactions</source>
-        <translation>交易</translation>
+        <location line="+6"/>
+        <source>&amp;Send coins</source>
+        <translation type="unfinished">付錢</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Browse transaction history</source>
-        <translation>瀏覽交易紀錄</translation>
+        <source>Send coins to a Namecoin address</source>
+        <translation type="unfinished">付錢到一個位元幣位址</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -654,26 +715,32 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+7"/>
 =======
         <location line="+6"/>
-        <source>&amp;Address Book</source>
-        <translation>位址簿</translation>
+        <source>&amp;Receive coins</source>
+        <translation type="unfinished">收錢</translation>
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Edit the list of stored addresses and labels</source>
         <translation>編輯位址與標記的儲存列表</translation>
+=======
+        <source>Show the list of addresses for receiving payments</source>
+        <translation type="unfinished">顯示收款位址的列表</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="-15"/>
-        <source>&amp;Receive coins</source>
-        <translation>收錢</translation>
+        <location line="+6"/>
+        <source>&amp;Transactions</source>
+        <translation type="unfinished">交易</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show the list of addresses for receiving payments</source>
-        <translation>顯示收款位址的列表</translation>
+        <source>Browse transaction history</source>
+        <translation type="unfinished">瀏覽交易紀錄</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+31"/>
 >>>>>>> Committing original src/qt
@@ -685,15 +752,29 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+39"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+6"/>
+        <source>&amp;Address Book</source>
+        <translation type="unfinished">位址簿</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Edit the list of stored addresses and labels</source>
+        <translation type="unfinished">編輯位址與標記的儲存列表</translation>
+    </message>
+    <message>
+        <location line="+17"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>E&amp;xit</source>
-        <translation>結束</translation>
+        <translation type="unfinished">結束</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Quit application</source>
-        <translation>結束應用程式</translation>
+        <translation type="unfinished">結束應用程式</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+7"/>
         <source>Show information about Bitcoin</source>
@@ -703,14 +784,22 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+3"/>
 =======
         <location line="+4"/>
+=======
+        <location line="+3"/>
+        <source>&amp;About Namecoin</source>
+        <translation type="unfinished">關於位元幣</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Show information about Namecoin</source>
-        <translation>顯示位元幣相關資訊</translation>
+        <translation type="unfinished">顯示位元幣相關資訊</translation>
     </message>
     <message>
 >>>>>>> Committing original src/qt
         <location line="+2"/>
         <source>About &amp;Qt</source>
-        <translation>關於 &amp;Qt</translation>
+        <translation type="unfinished">關於 &amp;Qt</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -720,12 +809,17 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="+1"/>
         <source>Show information about Qt</source>
+<<<<<<< HEAD
         <translation>顯示有關於 Qt 的資訊</translation>
 >>>>>>> Committing original src/qt
+=======
+        <translation type="unfinished">顯示有關於 Qt 的資訊</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Options...</source>
+<<<<<<< HEAD
         <translation>選項...</translation>
     </message>
     <message>
@@ -803,13 +897,32 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+10"/>
         <source>~%n block(s) remaining</source>
         <translation><numerusform>剩下 ~%n 個區塊</numerusform></translation>
+=======
+        <translation type="unfinished">選項...</translation>
     </message>
     <message>
-        <location line="-265"/>
-        <source>&amp;Export...</source>
-        <translation>匯出...</translation>
+        <location line="+1"/>
+        <source>Modify configuration options for Namecoin</source>
+        <translation type="unfinished">修改位元幣的設定選項</translation>
     </message>
     <message>
+        <location line="+2"/>
+        <source>&amp;Show / Hide</source>
+        <translation type="unfinished">顯示或隱藏</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show or hide the main Window</source>
+        <translation type="unfinished">顯示或隱藏主視窗</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Encrypt Wallet...</source>
+        <translation type="unfinished">錢包加密...</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-347"/>
         <source>Send coins to a Bitcoin address</source>
@@ -837,44 +950,70 @@ This product includes software developed by the OpenSSL Project for use in the O
         <source>Modify configuration options for Namecoin</source>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation>修改位元幣的設定選項</translation>
+=======
+        <location line="+1"/>
+        <source>Encrypt the private keys that belong to your wallet</source>
+        <translation type="unfinished">將屬於你的錢包的密鑰加密</translation>
     </message>
     <message>
-        <location line="+17"/>
-        <source>Export the data in the current tab to a file</source>
-        <translation>將目前分頁的資料匯出存成檔案</translation>
+        <location line="+2"/>
+        <source>&amp;Backup Wallet...</source>
+        <translation type="unfinished">錢包備份...</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
+        <location line="+1"/>
+        <source>Backup wallet to another location</source>
+        <translation type="unfinished">將錢包備份到其它地方</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
         <location line="-9"/>
         <source>Backup wallet to another location</source>
         <translation>將錢包備份到其它地方</translation>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+1"/>
+        <source>&amp;Change Passphrase...</source>
+        <translation type="unfinished">密碼變更...</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Change the passphrase used for wallet encryption</source>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <translation>改變錢包加密用的密碼</translation>
 =======
         <translation>變更錢包加密用的密碼</translation>
 >>>>>>> Committing original src/qt
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>&amp;Debug window</source>
-        <translation>除錯視窗</translation>
+=======
+        <translation type="unfinished">變更錢包加密用的密碼</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
+        <source>Sign &amp;message...</source>
+        <translation type="unfinished">訊息簽署...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+<<<<<<< HEAD
         <source>Open debugging and diagnostic console</source>
 <<<<<<< HEAD
         <translation>開啓除錯和診斷主控台</translation>
 =======
         <translation>開啓除錯與診斷主控台</translation>
 >>>>>>> Committing original src/qt
+=======
+        <source>Sign messages with your Namecoin addresses to prove you own them</source>
+        <translation type="unfinished">用位元幣位址簽署訊息來證明那是你的</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="-7"/>
+        <location line="+1"/>
         <source>&amp;Verify message...</source>
+<<<<<<< HEAD
         <translation>訊息驗證...</translation>
     </message>
     <message>
@@ -949,14 +1088,28 @@ This product includes software developed by the OpenSSL Project for use in the O
 >>>>>>> Committing original src/qt
         <source>&amp;Show / Hide</source>
         <translation>顯示或隱藏</translation>
+=======
+        <translation type="unfinished">訊息驗證...</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show or hide the main Window</source>
-        <translation>顯示或隱藏主視窗</translation>
+        <source>Verify messages to ensure they were signed with specified Namecoin addresses</source>
+        <translation type="unfinished">驗證訊息以確認那是用指定的位元幣位址簽署的</translation>
     </message>
     <message>
         <location line="+2"/>
+        <source>&amp;Export...</source>
+        <translation type="unfinished">匯出...</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Export the data in the current tab to a file</source>
+        <translation type="unfinished">將目前分頁的資料匯出存成檔案</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+<<<<<<< HEAD
         <source>Encrypt the private keys that belong to your wallet</source>
 <<<<<<< HEAD
         <translation>把錢包中的密鑰加密</translation>
@@ -999,8 +1152,20 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+31"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <source>&amp;Debug window</source>
+        <translation type="unfinished">除錯視窗</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Open debugging and diagnostic console</source>
+        <translation type="unfinished">開啓除錯與診斷主控台</translation>
+    </message>
+    <message>
+        <location line="+25"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>&amp;File</source>
-        <translation>檔案</translation>
+        <translation type="unfinished">檔案</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -1013,7 +1178,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+8"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>&amp;Settings</source>
-        <translation>設定</translation>
+        <translation type="unfinished">設定</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -1026,13 +1191,13 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="+6"/>
         <source>&amp;Help</source>
-        <translation>求助</translation>
+        <translation type="unfinished">求助</translation>
     </message>
     <message>
         <location line="+9"/>
 >>>>>>> Committing original src/qt
         <source>Tabs toolbar</source>
-        <translation>分頁工具列</translation>
+        <translation type="unfinished">分頁工具列</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -1044,17 +1209,22 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="+8"/>
         <source>Actions toolbar</source>
-        <translation>動作工具列</translation>
+        <translation type="unfinished">動作工具列</translation>
     </message>
     <message>
         <location line="+13"/>
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <location line="+10"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+80"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <translation type="unfinished">[testnet]</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-401"/>
@@ -1116,12 +1286,17 @@ This product includes software developed by the OpenSSL Project for use in the O
         <source>%n active connection(s) to Bitcoin network</source>
 =======
         <location line="+63"/>
+=======
+        <location line="-5"/>
+        <location line="+5"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Namecoin client</source>
-        <translation>位元幣客戶端軟體</translation>
+        <translation type="unfinished">位元幣客戶端軟體</translation>
     </message>
     <message numerus="yes">
-        <location line="+79"/>
+        <location line="+80"/>
         <source>%n active connection(s) to Namecoin network</source>
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation><numerusform>與位元幣網路有 %n 個連線在使用中</numerusform></translation>
 >>>>>>> Committing original src/qt
@@ -1214,18 +1389,29 @@ This product includes software developed by the OpenSSL Project for use in the O
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Error</source>
         <translation>錯誤</translation>
+=======
+        <translation type="unfinished">
+            <numerusform>與位元幣網路有 %n 個連線在使用中</numerusform>
+        </translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Synchronizing with network...</source>
+        <translation type="unfinished">網路同步中...</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning</source>
-        <translation>警告</translation>
+        <source>Importing blocks from disk...</source>
+        <translation type="unfinished">從磁碟匯入區塊中...</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Information</source>
-        <translation>資訊</translation>
+        <source>Reindexing blocks on disk...</source>
+        <translation type="unfinished">重建磁碟區塊索引中...</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-85"/>
@@ -1245,33 +1431,45 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+210"/>
         <source>Backup Successful</source>
         <translation>備份成功</translation>
+=======
+        <location line="+9"/>
+        <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+0"/>
-        <source>The wallet data was successfully saved to the new location.</source>
-        <translation>錢包的資料已經成功儲存到新的地方了.</translation>
-    </message>
-    <message numerus="yes">
-        <location line="-338"/>
-        <source>%n second(s) ago</source>
-        <translation><numerusform>%n 秒鐘前</numerusform></translation>
-    </message>
-    <message numerus="yes">
         <location line="+4"/>
-        <source>%n minute(s) ago</source>
-        <translation><numerusform>%n 分鐘前</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <location line="+4"/>
-        <source>%n hour(s) ago</source>
-        <translation><numerusform>%n 小時前</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <location line="+4"/>
-        <source>%n day(s) ago</source>
-        <translation><numerusform>%n 天前</numerusform></translation>
+        <source>Processed %1 blocks of transaction history.</source>
+        <translation type="unfinished">已處理了 %1 個區塊的交易紀錄.</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
+        <location line="+6"/>
+        <source>Up to date</source>
+        <translation type="unfinished">最新狀態</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+14"/>
+        <source>%n hour(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <location line="+4"/>
+        <source>%n day(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <location line="+4"/>
+        <source>%n week(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+<<<<<<< HEAD
         <location line="+6"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Up to date</source>
@@ -1291,18 +1489,51 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="+7"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+5"/>
+        <source>%1 behind</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Catching up...</source>
-        <translation>進度追趕中...</translation>
+        <translation type="unfinished">進度追趕中...</translation>
     </message>
     <message>
-        <location line="+10"/>
-        <source>Last received block was generated %1.</source>
-        <translation>最近收到的區塊產生於 %1.</translation>
+        <location line="+9"/>
+        <source>Last received block was generated %1 ago.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+97"/>
+        <location line="+2"/>
+        <source>Transactions after this will not yet be visible.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>Error</source>
+        <translation type="unfinished">錯誤</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning</source>
+        <translation type="unfinished">警告</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Information</source>
+        <translation type="unfinished">資訊</translation>
+    </message>
+    <message>
+        <location line="+68"/>
+        <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
+        <translation type="unfinished">這筆交易的資料大小超過限制了. 你還是可以付出 %1 的費用來傳送, 這筆費用會付給處理你的交易的節點, 並幫助維持整個網路. 你願意支付這項費用嗎?</translation>
+    </message>
+    <message>
+        <location line="+4"/>
         <source>Confirm transaction fee</source>
-        <translation>確認交易手續費</translation>
+        <translation type="unfinished">確認交易手續費</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -1312,12 +1543,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+23"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Sent transaction</source>
-        <translation>付款交易</translation>
+        <translation type="unfinished">付款交易</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Incoming transaction</source>
-        <translation>收款交易</translation>
+        <translation type="unfinished">收款交易</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1326,7 +1557,7 @@ Amount: %2
 Type: %3
 Address: %4
 </source>
-        <translation>日期: %1
+        <translation type="unfinished">日期: %1
 金額: %2
 <<<<<<< HEAD
 種類: %3
@@ -1342,26 +1573,31 @@ Address: %4
 位址: %4</translation>
     </message>
     <message>
-        <location line="+99"/>
+        <location line="+102"/>
         <location line="+28"/>
         <source>URI handling</source>
-        <translation>URI 處理</translation>
+        <translation type="unfinished">URI 處理</translation>
     </message>
     <message>
         <location line="-28"/>
         <location line="+28"/>
         <source>URI can not be parsed! This can be caused by an invalid Namecoin address or malformed URI parameters.</source>
-        <translation>無法解析 URI! 也許位元幣位址無效或 URI 參數有誤.</translation>
+        <translation type="unfinished">無法解析 URI! 也許位元幣位址無效或 URI 參數有誤.</translation>
     </message>
     <message>
         <location line="+17"/>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
+<<<<<<< HEAD
         <translation>錢包&lt;b&gt;已加密&lt;/b&gt;並且正&lt;b&gt;解鎖中&lt;/b&gt;</translation>
 >>>>>>> Committing original src/qt
+=======
+        <translation type="unfinished">錢包&lt;b&gt;已加密&lt;/b&gt;並且正&lt;b&gt;解鎖中&lt;/b&gt;</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+8"/>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <translation>錢包&lt;b&gt;已加密&lt;/b&gt;並且&lt;b&gt;上鎖中&lt;/b&gt;</translation>
     </message>
@@ -1371,37 +1607,52 @@ Address: %4
         <translation>發生了致命的錯誤。位元幣軟體沒辦法再繼續安全執行，只好結束。</translation>
 =======
         <translation>錢包&lt;b&gt;已加密&lt;/b&gt;並且正&lt;b&gt;上鎖中&lt;/b&gt;</translation>
+=======
+        <translation type="unfinished">錢包&lt;b&gt;已加密&lt;/b&gt;並且正&lt;b&gt;上鎖中&lt;/b&gt;</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+23"/>
         <source>Backup Wallet</source>
-        <translation>錢包備份</translation>
+        <translation type="unfinished">錢包備份</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Wallet Data (*.dat)</source>
-        <translation>錢包資料檔 (*.dat)</translation>
+        <translation type="unfinished">錢包資料檔 (*.dat)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Backup Failed</source>
-        <translation>備份失敗</translation>
+        <translation type="unfinished">備份失敗</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>There was an error trying to save the wallet data to the new location.</source>
-        <translation>儲存錢包資料到新的地方時發生錯誤</translation>
+        <translation type="unfinished">儲存錢包資料到新的地方時發生錯誤</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../Namecoin.cpp" line="+109"/>
         <source>A fatal error occurred. Namecoin can no longer continue safely and will quit.</source>
         <translation>發生了致命的錯誤. 位元幣程式無法再繼續安全執行, 只好結束.</translation>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+4"/>
+        <source>Backup Successful</source>
+        <translation type="unfinished">備份成功</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>The wallet data was successfully saved to the new location.</source>
+        <translation type="unfinished">錢包的資料已經成功儲存到新的地方了.</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
     <name>ClientModel</name>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../clientmodel.cpp" line="+119"/>
@@ -1411,8 +1662,10 @@ Address: %4
 =======
         <location filename="../clientmodel.cpp" line="+86"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Network Alert</source>
-        <translation>網路警報</translation>
+        <translation type="obsolete">網路警報</translation>
     </message>
 </context>
 <context>
@@ -1459,7 +1712,7 @@ Address: %4
         <translation>與這個位址簿項目關聯的位址. 只能修改付款位址.</translation>
     </message>
     <message>
-        <location filename="../editaddressdialog.cpp" line="+20"/>
+        <location filename="../editaddressdialog.cpp" line="+21"/>
         <source>New receiving address</source>
         <translation>新收款位址</translation>
     </message>
@@ -1486,6 +1739,7 @@ Address: %4
         <translation>全選或全不選</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+13"/>
         <source>Tree mode</source>
         <translation>樹狀模式</translation>
@@ -1496,16 +1750,19 @@ Address: %4
         <translation>列表模式</translation>
 =======
         <location line="+60"/>
+=======
+        <location line="+76"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
         <translation>輸入的位址&quot;%1&quot;已存在於位址簿中.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid Namecoin address.</source>
         <translation>輸入的位址 &quot;%1&quot; 並不是有效的位元幣位址.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+10"/>
         <source>Could not unlock wallet.</source>
         <translation>無法將錢包解鎖.</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
@@ -1517,11 +1774,15 @@ Address: %4
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+10"/>
         <source>Address</source>
         <translation>位址</translation>
 =======
         <location filename="../guiutil.cpp" line="+419"/>
+=======
+        <location filename="../guiutil.cpp" line="+423"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <location line="+12"/>
         <source>Namecoin-Qt</source>
         <translation>位元幣-Qt</translation>
@@ -1559,6 +1820,7 @@ Address: %4
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
         <location line="+26"/>
         <source>Copy amount</source>
         <translation>複製金額</translation>
@@ -1602,6 +1864,916 @@ Address: %4
         <location line="+1"/>
         <source>Copy priority</source>
         <translation>複製優先度</translation>
+=======
+        <source>Show splash screen on startup (default: 1)</source>
+        <translation>顯示啓動畫面 (預設: 1)</translation>
+    </message>
+</context>
+<context>
+    <name>Namecoin-core</name>
+    <message>
+        <source>Namecoin version</source>
+        <translation type="obsolete">位元幣版本</translation>
+    </message>
+    <message>
+        <source>Usage:</source>
+        <translation type="obsolete">用法:</translation>
+    </message>
+    <message>
+        <source>Send command to -server or namecoind</source>
+        <translation type="obsolete">送指令至 -server 或 namecoind
+</translation>
+    </message>
+    <message>
+        <source>List commands</source>
+        <translation type="obsolete">列出指令
+</translation>
+    </message>
+    <message>
+        <source>Get help for a command</source>
+        <translation type="obsolete">取得指令說明
+</translation>
+    </message>
+    <message>
+        <source>Options:</source>
+        <translation type="obsolete">選項:
+</translation>
+    </message>
+    <message>
+        <source>Specify configuration file (default: namecoin.conf)</source>
+        <translation type="obsolete">指定設定檔 (預設: namecoin.conf)
+</translation>
+    </message>
+    <message>
+        <source>Specify pid file (default: namecoind.pid)</source>
+        <translation type="obsolete">指定行程識別碼檔案 (預設: namecoind.pid)
+</translation>
+    </message>
+    <message>
+        <source>Generate coins</source>
+        <translation type="obsolete">生產位元幣
+</translation>
+    </message>
+    <message>
+        <source>Don&apos;t generate coins</source>
+        <translation type="obsolete">不生產位元幣
+</translation>
+    </message>
+    <message>
+        <source>Specify data directory</source>
+        <translation type="obsolete">指定資料目錄
+</translation>
+    </message>
+    <message>
+        <source>Set database cache size in megabytes (default: 25)</source>
+        <translation type="obsolete">設定資料庫快取大小為多少百萬位元組(MB, 預設: 25)</translation>
+    </message>
+    <message>
+        <source>Listen for connections on &lt;port&gt; (default: 8334 or testnet: 18334)</source>
+        <translation type="obsolete">在通訊埠 &lt;port&gt; 聽候連線 (預設: 8334, 或若為測試網路: 18334)</translation>
+    </message>
+    <message>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
+        <translation type="obsolete">維持與節點連線數的上限為 &lt;n&gt; 個 (預設: 125)</translation>
+    </message>
+    <message>
+        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
+        <translation type="obsolete">連線到某個節點以取得其它節點的位址, 然後斷線</translation>
+    </message>
+    <message>
+        <source>Specify your own public address</source>
+        <translation type="obsolete">指定自己公開的位址</translation>
+    </message>
+    <message>
+        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
+        <translation type="obsolete">與亂搞的節點斷線的臨界值 (預設: 100)</translation>
+    </message>
+    <message>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
+        <translation type="obsolete">避免與亂搞的節點連線的秒數 (預設: 86400)</translation>
+    </message>
+    <message>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
+        <translation type="obsolete">在 IPv4 網路上以通訊埠 %u 聽取 RPC 連線時發生錯誤: %s</translation>
+    </message>
+    <message>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8336 or testnet: 18336)</source>
+        <translation type="obsolete">在通訊埠 &lt;port&gt; 聽候 JSON-RPC 連線 (預設: 8336, 或若為測試網路: 18336)</translation>
+    </message>
+    <message>
+        <source>Accept command line and JSON-RPC commands</source>
+        <translation type="obsolete">接受命令列與 JSON-RPC 指令
+</translation>
+    </message>
+    <message>
+        <source>Run in the background as a daemon and accept commands</source>
+        <translation type="obsolete">以背景程式執行並接受指令</translation>
+    </message>
+    <message>
+        <source>Use the test network</source>
+        <translation type="obsolete">使用測試網路
+</translation>
+    </message>
+    <message>
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+        <translation type="obsolete">是否接受外來連線 (預設: 當沒有 -proxy 或 -connect 時預設為 1)</translation>
+    </message>
+    <message>
+        <source>%s, you must set a rpcpassword in the configuration file:
+ %s
+It is recommended you use the following random password:
+rpcuser=namecoinrpc
+rpcpassword=%s
+(you do not need to remember this password)
+The username and password MUST NOT be the same.
+If the file does not exist, create it with owner-readable-only file permissions.
+</source>
+        <translation type="obsolete">%s, 你必須要在以下設定檔中設定 RPC 密碼(rpcpassword):
+%s
+建議你使用以下隨機產生的密碼:
+rpcuser=namecoinrpc
+rpcpassword=%s
+(你不用記住這個密碼)
+使用者名稱(rpcuser)和密碼(rpcpassword)不可以相同!
+如果這個檔案還不存在, 請在新增時, 設定檔案權限為&quot;只有主人才能讀取&quot;.</translation>
+    </message>
+    <message>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
+        <translation type="obsolete">設定在 IPv6 網路的通訊埠 %u 上聽候 RPC 連線失敗, 退而改用 IPv4 網路: %s</translation>
+    </message>
+    <message>
+        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
+        <translation type="obsolete">和指定的位址繫結, 並總是在該位址聽候連線. IPv6 請用 &quot;[主機]:通訊埠&quot; 這種格式</translation>
+    </message>
+    <message>
+        <source>Cannot obtain a lock on data directory %s. Namecoin is probably already running.</source>
+        <translation type="obsolete">無法鎖定資料目錄 %s. 也許位元幣已經在執行了.</translation>
+    </message>
+    <message>
+        <source>Corrupted block database detected. Please restart the client with -reindex.</source>
+        <translation type="obsolete">發現區塊資料庫壞掉了. 請加上 -reindex 參數來重新啓動客戶端軟體.</translation>
+    </message>
+    <message>
+        <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
+        <translation type="obsolete">資料庫環境 %s 初始化失敗了! 要復原資料, 請*務必先備份該資料夾*, 然後將其中除了錢包檔 wallet.dat 外的東西都刪除掉.</translation>
+    </message>
+    <message>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation type="obsolete">錯誤: 交易被拒絕了! 有時候會發生這種錯誤, 是因為你錢包中的一些錢已經被花掉了. 比如說你複製了錢包檔 wallet.dat, 然後用複製的錢包花掉了錢, 你現在所用的原來的錢包中卻沒有該筆交易紀錄.</translation>
+    </message>
+    <message>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation type="obsolete">錯誤: 這筆交易需要至少 %s 的手續費! 因為它的金額太大, 或複雜度太高, 或是使用了最近才剛收到的款項.</translation>
+    </message>
+    <message>
+        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
+        <translation type="obsolete">設定高優先權或低手續費的交易資料大小上限為多少位元組 (預設: 27000)</translation>
+    </message>
+    <message>
+        <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
+        <translation type="obsolete">這是尚未發表的測試版本 - 使用請自負風險 - 請不要用於開採或商業應用</translation>
+    </message>
+    <message>
+        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
+        <translation type="obsolete">警告: -paytxfee 設定了很高的金額! 這可是你交易付款所要付的手續費.</translation>
+    </message>
+    <message>
+        <source>Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</source>
+        <translation type="obsolete">警告: 顯示的交易可能不正確! 你可能需要升級, 或者需要等其它的節點升級.</translation>
+    </message>
+    <message>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Namecoin will not work properly.</source>
+        <translation type="obsolete">警告: 請檢查電腦時間與日期是否正確! 位元幣無法在時鐘不準的情況下正常運作.</translation>
+    </message>
+    <message>
+        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
+        <translation type="obsolete">警告: 讀取錢包檔 wallet.dat 失敗了! 所有的密鑰都正確讀取了, 但是交易資料或位址簿資料可能會缺少或不正確.</translation>
+    </message>
+    <message>
+        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
+        <translation type="obsolete">警告: 錢包檔 wallet.dat 壞掉, 但資料被拯救回來了! 原來的 wallet.dat 會改儲存在 %s, 檔名為 wallet.{timestamp}.bak. 如果餘額或交易資料有誤, 你應該要用備份資料復原回來.</translation>
+    </message>
+    <message>
+        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
+        <translation type="obsolete">嘗試從壞掉的錢包檔 wallet.dat 復原密鑰</translation>
+    </message>
+    <message>
+        <source>Block creation options:</source>
+        <translation type="obsolete">區塊產生選項:</translation>
+    </message>
+    <message>
+        <source>Connect only to the specified node(s)</source>
+        <translation type="obsolete">只連線至指定節點(可多個)</translation>
+    </message>
+    <message>
+        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
+        <translation type="obsolete">找出自己的網際網路位址 (預設: 當有聽候連線且沒有 -externalip 時為 1)</translation>
+    </message>
+    <message>
+        <source>Error loading block database</source>
+        <translation type="obsolete">載入區塊資料庫失敗</translation>
+    </message>
+    <message>
+        <source>Error: Disk space is low!</source>
+        <translation type="obsolete">錯誤: 磁碟空間很少!</translation>
+    </message>
+    <message>
+        <source>Error: Transaction creation failed!</source>
+        <translation type="obsolete">錯誤: 交易產生失敗!</translation>
+    </message>
+    <message>
+        <source>Error: Wallet locked, unable to create transaction!</source>
+        <translation type="obsolete">錯誤: 錢包被上鎖了, 無法產生新的交易!</translation>
+    </message>
+    <message>
+        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
+        <translation type="obsolete">在任意的通訊埠聽候失敗. 如果你想的話可以用 -listen=0.</translation>
+    </message>
+    <message>
+        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
+        <translation type="obsolete">是否允許在找節點時使用域名查詢 (預設: 當沒用 -connect 時為 1)</translation>
+    </message>
+    <message>
+        <source>How thorough the block verification is (0-4, default: 3)</source>
+        <translation type="obsolete">區塊檢查的仔細程度 (0 至 4, 預設: 3)</translation>
+    </message>
+    <message>
+        <source>Importing blocks from block database...</source>
+        <translation type="obsolete">從區塊資料庫匯入區塊中...</translation>
+    </message>
+    <message>
+        <source>Imports blocks from external blk000??.dat file</source>
+        <translation type="obsolete">從其它來源的 blk000??.dat 檔匯入區塊</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation type="obsolete">資訊</translation>
+    </message>
+    <message>
+        <source>Invalid -tor address: &apos;%s&apos;</source>
+        <translation type="obsolete">無效的 -tor 位址: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
+        <translation type="obsolete">每個連線的接收緩衝區大小上限為 &lt;n&gt;*1000 個位元組 (預設: 5000)</translation>
+    </message>
+    <message>
+        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
+        <translation type="obsolete">每個連線的傳送緩衝區大小上限為 &lt;n&gt;*1000 位元組 (預設: 1000)</translation>
+    </message>
+    <message>
+        <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
+        <translation type="obsolete">只接受與內建的檢查段點吻合的區塊鎖鏈 (預設: 1)</translation>
+    </message>
+    <message>
+        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
+        <translation type="obsolete">只和 &lt;net&gt; 網路上的節點連線 (IPv4, IPv6, 或 Tor)</translation>
+    </message>
+    <message>
+        <source>Output extra debugging information. Implies all other -debug* options</source>
+        <translation type="obsolete">輸出額外的除錯資訊. 包含了其它所有的 -debug* 選項</translation>
+    </message>
+    <message>
+        <source>Output extra network debugging information</source>
+        <translation type="obsolete">輸出額外的網路除錯資訊</translation>
+    </message>
+    <message>
+        <source>Prepend debug output with timestamp</source>
+        <translation type="obsolete">在除錯輸出內容前附加時間</translation>
+    </message>
+    <message>
+        <source>Rebuild blockchain index from current blk000??.dat files</source>
+        <translation type="obsolete">從目前的區塊檔 blk000??.dat 重建索引</translation>
+    </message>
+    <message>
+        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation type="obsolete">SSL 選項: (SSL 設定程序請見 Bitcoin Wiki)</translation>
+    </message>
+    <message>
+        <source>Select the version of socks proxy to use (4-5, default: 5)</source>
+        <translation type="obsolete">選擇 SOCKS 代理伺服器的協定版本(4 或 5, 預設: 5)</translation>
+    </message>
+    <message>
+        <source>Send trace/debug info to console instead of debug.log file</source>
+        <translation type="obsolete">輸出追蹤或除錯資訊至終端機, 而非 debug.log 檔案</translation>
+    </message>
+    <message>
+        <source>Send trace/debug info to debugger</source>
+        <translation type="obsolete">輸出追蹤或除錯資訊給除錯器</translation>
+    </message>
+    <message>
+        <source>Set maximum block size in bytes (default: 250000)</source>
+        <translation type="obsolete">設定區塊大小上限為多少位元組 (預設: 250000)</translation>
+    </message>
+    <message>
+        <source>Set minimum block size in bytes (default: 0)</source>
+        <translation type="obsolete">設定區塊大小下限為多少位元組 (預設: 0)</translation>
+    </message>
+    <message>
+        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
+        <translation type="obsolete">客戶端軟體啓動時將 debug.log 檔縮小 (預設: 當沒有 -debug 時為 1)</translation>
+    </message>
+    <message>
+        <source>Specify connection timeout in milliseconds (default: 5000)</source>
+        <translation type="obsolete">指定連線在幾毫秒後逾時 (預設: 5000)</translation>
+    </message>
+    <message>
+        <source>Use UPnP to map the listening port (default: 0)</source>
+        <translation type="obsolete">是否使用通用即插即用(UPnP)協定來設定聽候連線的通訊埠 (預設: 0)</translation>
+    </message>
+    <message>
+        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
+        <translation type="obsolete">是否使用通用即插即用(UPnP)協定來設定聽候連線的通訊埠 (預設: 當有聽候連線為 1)</translation>
+    </message>
+    <message>
+        <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
+        <translation type="obsolete">透過代理伺服器來使用 Tor 隱藏服務 (預設: 同 -proxy)</translation>
+    </message>
+    <message>
+        <source>Username for JSON-RPC connections</source>
+        <translation type="obsolete">JSON-RPC 連線使用者名稱</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation type="obsolete">警告</translation>
+    </message>
+    <message>
+        <source>Warning: This version is obsolete, upgrade required!</source>
+        <translation type="obsolete">警告: 這個版本已經被淘汰掉了, 必須要升級!</translation>
+    </message>
+    <message>
+        <source>wallet.dat corrupt, salvage failed</source>
+        <translation type="obsolete">錢包檔 weallet.dat 壞掉了, 拯救失敗</translation>
+    </message>
+    <message>
+        <source>Password for JSON-RPC connections</source>
+        <translation type="obsolete">JSON-RPC 連線密碼</translation>
+    </message>
+    <message>
+        <source>Allow JSON-RPC connections from specified IP address</source>
+        <translation type="obsolete">只允許從指定網路位址來的 JSON-RPC 連線</translation>
+    </message>
+    <message>
+        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
+        <translation type="obsolete">送指令給在 &lt;ip&gt; 的節點 (預設: 127.0.0.1)
+</translation>
+    </message>
+    <message>
+        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
+        <translation type="obsolete">當最新區塊改變時所要執行的指令 (指令中的 %s 會被取代為區塊的雜湊值)</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet to latest format</source>
+        <translation type="obsolete">將錢包升級成最新的格式</translation>
+    </message>
+    <message>
+        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
+        <translation type="obsolete">設定密鑰池大小為 &lt;n&gt; (預設: 100)
+</translation>
+    </message>
+    <message>
+        <source>Rescan the block chain for missing wallet transactions</source>
+        <translation type="obsolete">重新掃描區塊鎖鏈, 以尋找錢包所遺漏的交易.</translation>
+    </message>
+    <message>
+        <source>How many blocks to check at startup (default: 2500, 0 = all)</source>
+        <translation type="obsolete">啓動時檢查多少區塊 (預設: 2500, 0 表示全部)</translation>
+    </message>
+    <message>
+        <source>Use OpenSSL (https) for JSON-RPC connections</source>
+        <translation type="obsolete">於 JSON-RPC 連線使用 OpenSSL (https)
+</translation>
+    </message>
+    <message>
+        <source>Server certificate file (default: server.cert)</source>
+        <translation type="obsolete">伺服器憑證檔 (預設: server.cert)
+</translation>
+    </message>
+    <message>
+        <source>Server private key (default: server.pem)</source>
+        <translation type="obsolete">伺服器密鑰檔 (預設: server.pem)
+</translation>
+    </message>
+    <message>
+        <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
+        <translation type="obsolete">可以接受的加密法 (預設: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)
+</translation>
+    </message>
+    <message>
+        <source>This help message</source>
+        <translation type="obsolete">此協助訊息
+</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
+        <translation type="obsolete">無法和這台電腦上的 %s 繫結 (繫結回傳錯誤 %d, %s)</translation>
+    </message>
+    <message>
+        <source>Connect through socks proxy</source>
+        <translation type="obsolete">透過 SOCKS 代理伺服器連線</translation>
+    </message>
+    <message>
+        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
+        <translation type="obsolete">允許對 -addnode, -seednode, -connect 的參數使用域名查詢 </translation>
+    </message>
+    <message>
+        <source>Loading addresses...</source>
+        <translation type="obsolete">載入位址中...</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet corrupted</source>
+        <translation type="obsolete">載入檔案 wallet.dat 失敗: 錢包壞掉了</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet requires newer version of Namecoin</source>
+        <translation type="obsolete">載入檔案 wallet.dat 失敗: 此錢包需要新版的 Namecoin</translation>
+    </message>
+    <message>
+        <source>Verifying block database integrity...</source>
+        <translation type="obsolete">驗證區塊資料庫是否完整中...</translation>
+    </message>
+    <message>
+        <source>Verifying wallet integrity...</source>
+        <translation type="obsolete">驗證錢包資料是否完整中...</translation>
+    </message>
+    <message>
+        <source>Wallet needed to be rewritten: restart Namecoin to complete</source>
+        <translation type="obsolete">錢包需要重寫: 請重啟位元幣來完成</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat</source>
+        <translation type="obsolete">載入檔案 wallet.dat 失敗</translation>
+    </message>
+    <message>
+        <source>Invalid -proxy address: &apos;%s&apos;</source>
+        <translation type="obsolete">無效的 -proxy 位址: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
+        <translation type="obsolete">在 -onlynet 指定了不明的網路別: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Unknown -socks proxy version requested: %i</source>
+        <translation type="obsolete">在 -socks 指定了不明的代理協定版本: %i</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
+        <translation type="obsolete">無法解析 -bind 位址: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
+        <translation type="obsolete">無法解析 -externalip 位址: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation type="obsolete">設定 -paytxfee=&lt;金額&gt; 的金額無效: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Error: could not start node</source>
+        <translation type="obsolete">錯誤: 無法啓動節點</translation>
+    </message>
+    <message>
+        <source>Invalid amount</source>
+        <translation type="obsolete">無效的金額</translation>
+    </message>
+    <message>
+        <source>Insufficient funds</source>
+        <translation type="obsolete">累積金額不足</translation>
+    </message>
+    <message>
+        <source>Loading block index...</source>
+        <translation type="obsolete">載入區塊索引中...</translation>
+    </message>
+    <message>
+        <source>Add a node to connect to and attempt to keep the connection open</source>
+        <translation type="obsolete">加入一個要連線的節線, 並試著保持對它的連線暢通</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer. Namecoin is probably already running.</source>
+        <translation type="obsolete">無法和這台電腦上的 %s 繫結. 也許位元幣已經在執行了.</translation>
+    </message>
+    <message>
+        <source>Find peers using internet relay chat (default: 0)</source>
+        <translation type="obsolete">是否使用網際網路中繼聊天(IRC)來找節點 (預設: 0)</translation>
+    </message>
+    <message>
+        <source>Fee per KB to add to transactions you send</source>
+        <translation type="obsolete">交易付款時每 KB 的交易手續費</translation>
+    </message>
+    <message>
+        <source>Loading wallet...</source>
+        <translation type="obsolete">載入錢包中...</translation>
+    </message>
+    <message>
+        <source>Cannot downgrade wallet</source>
+        <translation type="obsolete">無法將錢包格式降級</translation>
+    </message>
+    <message>
+        <source>Cannot initialize keypool</source>
+        <translation type="obsolete">無法將密鑰池初始化</translation>
+    </message>
+    <message>
+        <source>Cannot write default address</source>
+        <translation type="obsolete">無法寫入預設位址</translation>
+    </message>
+    <message>
+        <source>Rescanning...</source>
+        <translation type="obsolete">重新掃描中...</translation>
+    </message>
+    <message>
+        <source>Done loading</source>
+        <translation type="obsolete">載入完成</translation>
+    </message>
+    <message>
+        <source>To use the %s option</source>
+        <translation type="obsolete">為了要使用 %s 選項</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="obsolete">錯誤</translation>
+    </message>
+    <message>
+        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
+%s
+If the file does not exist, create it with owner-readable-only file permissions.</source>
+        <translation type="obsolete">你必須在下列設定檔中設定 RPC 密碼(rpcpassword=&lt;password&gt;):
+%s
+如果這個檔案還不存在, 請在新增時, 設定檔案權限為&quot;只有主人才能讀取&quot;.</translation>
+    </message>
+</context>
+<context>
+    <name>NamecoinGUI</name>
+    <message>
+        <source>Sign &amp;message...</source>
+        <translation type="obsolete">訊息簽署...</translation>
+    </message>
+    <message>
+        <source>Synchronizing with network...</source>
+        <translation type="obsolete">網路同步中...</translation>
+    </message>
+    <message>
+        <source>&amp;Overview</source>
+        <translation type="obsolete">總覽</translation>
+    </message>
+    <message>
+        <source>Show general overview of wallet</source>
+        <translation type="obsolete">顯示錢包一般總覽</translation>
+    </message>
+    <message>
+        <source>&amp;Transactions</source>
+        <translation type="obsolete">交易</translation>
+    </message>
+    <message>
+        <source>Browse transaction history</source>
+        <translation type="obsolete">瀏覽交易紀錄</translation>
+    </message>
+    <message>
+        <source>&amp;Address Book</source>
+        <translation type="obsolete">位址簿</translation>
+    </message>
+    <message>
+        <source>Edit the list of stored addresses and labels</source>
+        <translation type="obsolete">編輯位址與標記的儲存列表</translation>
+    </message>
+    <message>
+        <source>&amp;Receive coins</source>
+        <translation type="obsolete">收錢</translation>
+    </message>
+    <message>
+        <source>Show the list of addresses for receiving payments</source>
+        <translation type="obsolete">顯示收款位址的列表</translation>
+    </message>
+    <message>
+        <source>&amp;Send coins</source>
+        <translation type="obsolete">付錢</translation>
+    </message>
+    <message>
+        <source>E&amp;xit</source>
+        <translation type="obsolete">結束</translation>
+    </message>
+    <message>
+        <source>Quit application</source>
+        <translation type="obsolete">結束應用程式</translation>
+    </message>
+    <message>
+        <source>Show information about Namecoin</source>
+        <translation type="obsolete">顯示位元幣相關資訊</translation>
+    </message>
+    <message>
+        <source>About &amp;Qt</source>
+        <translation type="obsolete">關於 &amp;Qt</translation>
+    </message>
+    <message>
+        <source>Show information about Qt</source>
+        <translation type="obsolete">顯示有關於 Qt 的資訊</translation>
+    </message>
+    <message>
+        <source>&amp;Options...</source>
+        <translation type="obsolete">選項...</translation>
+    </message>
+    <message>
+        <source>&amp;Encrypt Wallet...</source>
+        <translation type="obsolete">錢包加密...</translation>
+    </message>
+    <message>
+        <source>&amp;Backup Wallet...</source>
+        <translation type="obsolete">錢包備份...</translation>
+    </message>
+    <message>
+        <source>&amp;Change Passphrase...</source>
+        <translation type="obsolete">密碼變更...</translation>
+    </message>
+    <message>
+        <source>Importing blocks from disk...</source>
+        <translation type="obsolete">從磁碟匯入區塊中...</translation>
+    </message>
+    <message>
+        <source>Reindexing blocks on disk...</source>
+        <translation type="obsolete">重建磁碟區塊索引中...</translation>
+    </message>
+    <message numerus="yes">
+        <source>~%n block(s) remaining</source>
+        <translation type="obsolete">
+            <numerusform>剩下 ~%n 個區塊</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>&amp;Export...</source>
+        <translation type="obsolete">匯出...</translation>
+    </message>
+    <message>
+        <source>Send coins to a Namecoin address</source>
+        <translation type="obsolete">付錢到一個位元幣位址</translation>
+    </message>
+    <message>
+        <source>Modify configuration options for Namecoin</source>
+        <translation type="obsolete">修改位元幣的設定選項</translation>
+    </message>
+    <message>
+        <source>Export the data in the current tab to a file</source>
+        <translation type="obsolete">將目前分頁的資料匯出存成檔案</translation>
+    </message>
+    <message>
+        <source>Backup wallet to another location</source>
+        <translation type="obsolete">將錢包備份到其它地方</translation>
+    </message>
+    <message>
+        <source>Change the passphrase used for wallet encryption</source>
+        <translation type="obsolete">變更錢包加密用的密碼</translation>
+    </message>
+    <message>
+        <source>&amp;Debug window</source>
+        <translation type="obsolete">除錯視窗</translation>
+    </message>
+    <message>
+        <source>Open debugging and diagnostic console</source>
+        <translation type="obsolete">開啓除錯與診斷主控台</translation>
+    </message>
+    <message>
+        <source>&amp;Verify message...</source>
+        <translation type="obsolete">訊息驗證...</translation>
+    </message>
+    <message>
+        <source>Namecoin</source>
+        <translation type="obsolete">位元幣</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation type="obsolete">錢包</translation>
+    </message>
+    <message>
+        <source>&amp;About Namecoin</source>
+        <translation type="obsolete">關於位元幣</translation>
+    </message>
+    <message>
+        <source>&amp;Show / Hide</source>
+        <translation type="obsolete">顯示或隱藏</translation>
+    </message>
+    <message>
+        <source>Show or hide the main Window</source>
+        <translation type="obsolete">顯示或隱藏主視窗</translation>
+    </message>
+    <message>
+        <source>Encrypt the private keys that belong to your wallet</source>
+        <translation type="obsolete">將屬於你的錢包的密鑰加密</translation>
+    </message>
+    <message>
+        <source>Sign messages with your Namecoin addresses to prove you own them</source>
+        <translation type="obsolete">用位元幣位址簽署訊息來證明那是你的</translation>
+    </message>
+    <message>
+        <source>Verify messages to ensure they were signed with specified Namecoin addresses</source>
+        <translation type="obsolete">驗證訊息以確認那是用指定的位元幣位址簽署的</translation>
+    </message>
+    <message>
+        <source>&amp;File</source>
+        <translation type="obsolete">檔案</translation>
+    </message>
+    <message>
+        <source>&amp;Settings</source>
+        <translation type="obsolete">設定</translation>
+    </message>
+    <message>
+        <source>&amp;Help</source>
+        <translation type="obsolete">求助</translation>
+    </message>
+    <message>
+        <source>Tabs toolbar</source>
+        <translation type="obsolete">分頁工具列</translation>
+    </message>
+    <message>
+        <source>Actions toolbar</source>
+        <translation type="obsolete">動作工具列</translation>
+    </message>
+    <message>
+        <source>[testnet]</source>
+        <translation type="obsolete">[testnet]</translation>
+    </message>
+    <message>
+        <source>Namecoin client</source>
+        <translation type="obsolete">位元幣客戶端軟體</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n active connection(s) to Namecoin network</source>
+        <translation type="obsolete">
+            <numerusform>與位元幣網路有 %n 個連線在使用中</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Processed %1 of %2 blocks of transaction history (%3% done).</source>
+        <translation type="obsolete">已處理了全部 %2 個中的 %1 個區塊的交易紀錄 (完成度 %3%).</translation>
+    </message>
+    <message>
+        <source>Processed %1 blocks of transaction history.</source>
+        <translation type="obsolete">已處理了 %1 個區塊的交易紀錄.</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="obsolete">錯誤</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation type="obsolete">警告</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation type="obsolete">資訊</translation>
+    </message>
+    <message>
+        <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
+        <translation type="obsolete">這筆交易的資料大小超過限制了. 你還是可以付出 %1 的費用來傳送, 這筆費用會付給處理你的交易的節點, 並幫助維持整個網路. 你願意支付這項費用嗎?</translation>
+    </message>
+    <message>
+        <source>Backup Successful</source>
+        <translation type="obsolete">備份成功</translation>
+    </message>
+    <message>
+        <source>The wallet data was successfully saved to the new location.</source>
+        <translation type="obsolete">錢包的資料已經成功儲存到新的地方了.</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n second(s) ago</source>
+        <translation type="obsolete">
+            <numerusform>%n 秒鐘前</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n minute(s) ago</source>
+        <translation type="obsolete">
+            <numerusform>%n 分鐘前</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n hour(s) ago</source>
+        <translation type="obsolete">
+            <numerusform>%n 小時前</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s) ago</source>
+        <translation type="obsolete">
+            <numerusform>%n 天前</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Up to date</source>
+        <translation type="obsolete">最新狀態</translation>
+    </message>
+    <message>
+        <source>Catching up...</source>
+        <translation type="obsolete">進度追趕中...</translation>
+    </message>
+    <message>
+        <source>Last received block was generated %1.</source>
+        <translation type="obsolete">最近收到的區塊產生於 %1.</translation>
+    </message>
+    <message>
+        <source>Confirm transaction fee</source>
+        <translation type="obsolete">確認交易手續費</translation>
+    </message>
+    <message>
+        <source>Sent transaction</source>
+        <translation type="obsolete">付款交易</translation>
+    </message>
+    <message>
+        <source>Incoming transaction</source>
+        <translation type="obsolete">收款交易</translation>
+    </message>
+    <message>
+        <source>Date: %1
+Amount: %2
+Type: %3
+Address: %4
+</source>
+        <translation type="obsolete">日期: %1
+金額: %2
+類別: %3
+位址: %4</translation>
+    </message>
+    <message>
+        <source>URI handling</source>
+        <translation type="obsolete">URI 處理</translation>
+    </message>
+    <message>
+        <source>URI can not be parsed! This can be caused by an invalid Namecoin address or malformed URI parameters.</source>
+        <translation type="obsolete">無法解析 URI! 也許位元幣位址無效或 URI 參數有誤.</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
+        <translation type="obsolete">錢包&lt;b&gt;已加密&lt;/b&gt;並且正&lt;b&gt;解鎖中&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
+        <translation type="obsolete">錢包&lt;b&gt;已加密&lt;/b&gt;並且正&lt;b&gt;上鎖中&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Backup Wallet</source>
+        <translation type="obsolete">錢包備份</translation>
+    </message>
+    <message>
+        <source>Wallet Data (*.dat)</source>
+        <translation type="obsolete">錢包資料檔 (*.dat)</translation>
+    </message>
+    <message>
+        <source>Backup Failed</source>
+        <translation type="obsolete">備份失敗</translation>
+    </message>
+    <message>
+        <source>There was an error trying to save the wallet data to the new location.</source>
+        <translation type="obsolete">儲存錢包資料到新的地方時發生錯誤</translation>
+    </message>
+    <message>
+        <source>A fatal error occurred. Namecoin can no longer continue safely and will quit.</source>
+        <translation type="obsolete">發生了致命的錯誤. 位元幣程式無法再繼續安全執行, 只好結束.</translation>
+    </message>
+</context>
+<context>
+    <name>OptionsDialog</name>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="+14"/>
+        <source>Options</source>
+        <translation>選項</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>&amp;Main</source>
+        <translation>主要</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.</source>
+        <translation>非必要的交易手續費, 以 kB 為計費單位, 且有助於縮短你的交易處理時間. 大部份交易的資料大小是 1 kB. 建議設定為 0.01 元.</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Pay transaction &amp;fee</source>
+        <translation>付交易手續費</translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Automatically start Namecoin after logging in to the system.</source>
+        <translation>在登入系統後自動啓動位元幣.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Start Namecoin on system login</source>
+        <translation>系統登入時啟動位元幣</translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Reset all client options to default.</source>
+        <translation>回復所有客戶端軟體選項成預設值.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Reset Options</source>
+        <translation>選項回復</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>&amp;Network</source>
+        <translation>網路</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
@@ -1731,10 +2903,16 @@ Address: %4
         <translation>當找零金額小於 %1 時，文字會變紅色。</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+43"/>
         <location line="+66"/>
         <source>(no label)</source>
         <translation>(無標記)</translation>
+=======
+        <location filename="../optionsdialog.cpp" line="+53"/>
+        <source>default</source>
+        <translation>預設</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="-9"/>
@@ -1837,6 +3015,20 @@ Address: %4
         <source>Path already exists, and is not a directory.</source>
         <translation>已經有指定的路徑了，並且不是一個目錄。</translation>
     </message>
+<<<<<<< HEAD
+=======
+</context>
+<context>
+    <name>PaymentServer</name>
+    <message>
+        <location filename="../paymentserver.cpp" line="+108"/>
+        <source>Cannot start namecoin: click-to-pay handler</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>QRCodeDialog</name>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     <message>
         <location line="+7"/>
         <source>Cannot create data directory here.</source>
@@ -1910,8 +3102,20 @@ Address: %4
     </message>
     <message>
         <location line="+26"/>
+<<<<<<< HEAD
         <source>As this is the first time the program is launched, you can choose where Bitcoin Core will store its data.</source>
         <translation>因為這是程式第一次啓動，你可以選擇位元幣核心儲存資料的地方。</translation>
+=======
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+36"/>
+        <location line="+53"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location filename="../rpcconsole.cpp" line="+345"/>
+        <source>N/A</source>
+        <translation>無</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+10"/>
@@ -2045,9 +3249,22 @@ Address: %4
         <translation>透過 SOCKS 代理伺服器來連線到位元幣網路。</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>&amp;Connect through SOCKS proxy (default proxy):</source>
         <translation>透過 SOCKS 代理伺服器連線(預設代理伺服器):</translation>
+=======
+        <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
+        <location filename="../sendcoinsdialog.cpp" line="+125"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <location line="+6"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <source>Send Coins</source>
+        <translation>付錢</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+34"/>
@@ -2165,9 +3382,16 @@ Address: %4
         <translation>是否要在交易列表中顯示位元幣位址。</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>&amp;Display addresses in transaction list</source>
         <translation>在交易列表顯示位址</translation>
+=======
+        <location line="+60"/>
+        <location filename="../sendcoinsentry.cpp" line="+26"/>
+        <source>Enter a label for this address to add it to your address book</source>
+        <translation>輸入一個標記給這個位址, 並加到位址簿中</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+7"/>
@@ -2325,9 +3549,16 @@ Address: %4
         <translation>要求付款時發生錯誤</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-353"/>
         <source>Cannot start bitcoin: click-to-pay handler</source>
         <translation>沒辦法啟動 bitcoin 協議的按就付處理器</translation>
+=======
+        <location filename="../signverifymessagedialog.cpp" line="+28"/>
+        <location line="+3"/>
+        <source>Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation>輸入位元幣位址 (比如說 N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+58"/>
@@ -2340,6 +3571,7 @@ Address: %4
         <translation>目前使用中的代理伺服器不支援 SOCKS5 通訊協定，因此不能透過它來要求付款。</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+52"/>
         <source>Payment request fetch URL is invalid: %1</source>
         <translation>取得付款要求的 URL 無效: %1</translation>
@@ -2368,6 +3600,37 @@ Address: %4
         <location line="+43"/>
         <source>Error communicating with %1: %2</source>
         <translation>跟 %1 通訊時發生錯誤: %2</translation>
+=======
+        <location line="+82"/>
+        <location line="+82"/>
+        <source>The entered address is invalid.</source>
+        <translation>輸入的位址無效.</translation>
+    </message>
+    <message>
+        <location line="-82"/>
+        <location line="+82"/>
+        <source>Please check the address and try again.</source>
+        <translation>請檢查位址是否正確後再試一次.</translation>
+    </message>
+    <message>
+        <source>The entered address does not refer to a key.</source>
+        <translation type="obsolete">輸入的位址沒有指到任何密鑰.</translation>
+    </message>
+    <message>
+        <location line="-74"/>
+        <source>Wallet unlock was cancelled.</source>
+        <translation>錢包解鎖已取消.</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Private key for the entered address is not available.</source>
+        <translation>沒有所輸入位址的密鑰.</translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Message signing failed.</source>
+        <translation>訊息簽署失敗.</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+24"/>
@@ -2375,9 +3638,15 @@ Address: %4
         <translation>沒辦法解析或處理付款要求！</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+11"/>
         <source>Bad response from server %1</source>
         <translation>伺服器 %1 的回應有誤</translation>
+=======
+        <location line="+51"/>
+        <source>The signature could not be decoded.</source>
+        <translation>無法將這個簽章解碼.</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+33"/>
@@ -2412,9 +3681,15 @@ Address: %4
 <context>
     <name>QRImageWidget</name>
     <message>
+<<<<<<< HEAD
         <location filename="../receiverequestdialog.cpp" line="+36"/>
         <source>&amp;Save Image...</source>
         <translation>儲存圖片...</translation>
+=======
+        <location filename="../transactiondesc.cpp" line="+21"/>
+        <source>Open until %1</source>
+        <translation>在 %1 前未定</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+3"/>
@@ -2439,6 +3714,7 @@ Address: %4
         <source>Client name</source>
         <translation>客戶端軟體名稱</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <location line="+10"/>
         <location line="+23"/>
@@ -2453,6 +3729,14 @@ Address: %4
         <location filename="../rpcconsole.cpp" line="+359"/>
         <source>N/A</source>
         <translation>未知</translation>
+=======
+    <message numerus="yes">
+        <location line="+7"/>
+        <source>, broadcast through %n node(s)</source>
+        <translation>
+            <numerusform>, 已公告至 %n 個節點</numerusform>
+        </translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="-223"/>
@@ -2494,10 +3778,19 @@ Address: %4
         <source>Name</source>
         <translation>名稱</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <location line="+23"/>
         <source>Number of connections</source>
         <translation>連線數</translation>
+=======
+    <message numerus="yes">
+        <location line="-102"/>
+        <source>matures in %n more block(s)</source>
+        <translation>
+            <numerusform>將在 %n 個區塊產出後熟成</numerusform>
+        </translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+29"/>
@@ -2555,6 +3848,7 @@ Address: %4
         <translation>輸出:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-521"/>
         <source>Build date</source>
         <translation>建置日期</translation>
@@ -2578,6 +3872,30 @@ Address: %4
         <location filename="../rpcconsole.cpp" line="-30"/>
         <source>Welcome to the Bitcoin RPC console.</source>
         <translation>歡迎使用位元幣 RPC 主控台。</translation>
+=======
+        <source>Amount</source>
+        <translation type="obsolete">金額</translation>
+    </message>
+    <message>
+        <source>true</source>
+        <translation type="obsolete">是</translation>
+    </message>
+    <message>
+        <source>false</source>
+        <translation type="obsolete">否</translation>
+    </message>
+    <message>
+        <location line="-185"/>
+        <source>, has not been successfully broadcast yet</source>
+        <translation>, 尚未成功公告出去</translation>
+    </message>
+    <message numerus="yes">
+        <location line="-35"/>
+        <source>Open for %n more block(s)</source>
+        <translation>
+            <numerusform>在接下來 %n 個區塊產出前未定</numerusform>
+        </translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
@@ -2614,10 +3932,19 @@ Address: %4
         <source>%1 m</source>
         <translation>%1 分</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <location line="+5"/>
         <source>%1 h</source>
         <translation>%1 小時</translation>
+=======
+    <message numerus="yes">
+        <location line="+57"/>
+        <source>Open for %n more block(s)</source>
+        <translation>
+            <numerusform>在接下來 %n 個區塊產出前未定</numerusform>
+        </translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+2"/>
@@ -2652,10 +3979,19 @@ Address: %4
         <source>R&amp;euse an existing receiving address (not recommended)</source>
         <translation>重複使用現有的收款位址(不建議)</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <location line="+27"/>
         <source>An optional label to associate with the new receiving address</source>
         <translation>跟新收款位址關聯的標記，可以不填</translation>
+=======
+    <message numerus="yes">
+        <location line="+8"/>
+        <source>Mined balance will be available when it matures in %n more block(s)</source>
+        <translation>
+            <numerusform>開採金額將可在 %n 個區塊熟成後可用</numerusform>
+        </translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+7"/>
@@ -2784,9 +4120,16 @@ Address: %4
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
+<<<<<<< HEAD
         <location filename="../recentrequeststablemodel.cpp" line="+24"/>
         <source>Date</source>
         <translation>日期</translation>
+=======
+        <location filename="../transactionview.cpp" line="+52"/>
+        <location line="+16"/>
+        <source>All</source>
+        <translation>全部</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+0"/>
@@ -5573,6 +6916,7 @@ rpcpassword=%s
         <translation>錯誤: 這筆交易需要至少 %s 的手續費! 因為它的金額太大, 或複雜度太高, 或是使用了最近才剛收到的款項.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+11"/>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
         <translation>設定高優先權或低手續費的交易資料大小上限為多少位元組 (預設: 27000)</translation>
@@ -6047,6 +7391,483 @@ rpcpassword=%s
         <location line="-79"/>
 =======
         <translation>驗證錢包資料中...</translation>
+=======
+        <location line="+1"/>
+        <source>Copy amount</source>
+        <translation>複製金額</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Edit label</source>
+        <translation>編輯標記</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show transaction details</source>
+        <translation>顯示交易明細</translation>
+    </message>
+    <message>
+        <location line="+137"/>
+        <source>Export Transaction Data</source>
+        <translation>匯出交易資料</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Comma separated file (*.csv)</source>
+        <translation>逗號分隔資料檔 (*.csv)</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Confirmed</source>
+        <translation>已確認</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Date</source>
+        <translation>日期</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Type</source>
+        <translation>種類</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Label</source>
+        <translation>標記</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Address</source>
+        <translation>位址</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Amount</source>
+        <translation>金額</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>ID</source>
+        <translation>識別碼</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Error exporting</source>
+        <translation>匯出錯誤</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Could not write to file %1.</source>
+        <translation>無法寫入至 %1 檔案.</translation>
+    </message>
+    <message>
+        <location line="+95"/>
+        <source>Range:</source>
+        <translation>範圍:</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>to</source>
+        <translation>至</translation>
+    </message>
+</context>
+<context>
+    <name>namecoin-core</name>
+    <message>
+        <location filename="../bitcoinstrings.cpp" line="+9"/>
+        <source>%s, you must set a rpcpassword in the configuration file:
+ %s
+It is recommended you use the following random password:
+rpcuser=namecoinrpc
+rpcpassword=%s
+(you do not need to remember this password)
+The username and password MUST NOT be the same.
+If the file does not exist, create it with owner-readable-only file permissions.
+</source>
+        <translation type="unfinished">%s, 你必須要在以下設定檔中設定 RPC 密碼(rpcpassword):
+%s
+建議你使用以下隨機產生的密碼:
+rpcuser=namecoinrpc
+rpcpassword=%s
+(你不用記住這個密碼)
+使用者名稱(rpcuser)和密碼(rpcpassword)不可以相同!
+如果這個檔案還不存在, 請在新增時, 設定檔案權限為&quot;只有主人才能讀取&quot;.</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
+        <translation type="unfinished">可以接受的加密法 (預設: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)
+</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
+        <translation type="unfinished">在 IPv4 網路上以通訊埠 %u 聽取 RPC 連線時發生錯誤: %s</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
+        <translation type="unfinished">設定在 IPv6 網路的通訊埠 %u 上聽候 RPC 連線失敗, 退而改用 IPv4 網路: %s</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
+        <translation type="unfinished">和指定的位址繫結, 並總是在該位址聽候連線. IPv6 請用 &quot;[主機]:通訊埠&quot; 這種格式</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Cannot obtain a lock on data directory %s. Namecoin is probably already running.</source>
+        <translation type="unfinished">無法鎖定資料目錄 %s. 也許位元幣已經在執行了.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
+        <translation type="unfinished">資料庫環境 %s 初始化失敗了! 要復原資料, 請*務必先備份該資料夾*, 然後將其中除了錢包檔 wallet.dat 外的東西都刪除掉.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation type="unfinished">錯誤: 交易被拒絕了! 有時候會發生這種錯誤, 是因為你錢包中的一些錢已經被花掉了. 比如說你複製了錢包檔 wallet.dat, 然後用複製的錢包花掉了錢, 你現在所用的原來的錢包中卻沒有該筆交易紀錄.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation type="unfinished">錯誤: 這筆交易需要至少 %s 的手續費! 因為它的金額太大, 或複雜度太高, 或是使用了最近才剛收到的款項.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
+        <translation type="unfinished">當最新區塊改變時所要執行的指令 (指令中的 %s 會被取代為區塊的雜湊值)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8336 or testnet: 18336)</source>
+        <translation type="unfinished">在通訊埠 &lt;port&gt; 聽候 JSON-RPC 連線 (預設: 8336, 或若為測試網路: 18336)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
+        <translation type="unfinished">避免與亂搞的節點連線的秒數 (預設: 86400)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
+        <translation type="unfinished">設定高優先權或低手續費的交易資料大小上限為多少位元組 (預設: 27000)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Set the number of script verification threads (1-16, 0=auto, default: 0)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
+        <translation type="unfinished">這是尚未發表的測試版本 - 使用請自負風險 - 請不要用於開採或商業應用</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Unable to bind to %s on this computer. Namecoin is probably already running.</source>
+        <translation type="unfinished">無法和這台電腦上的 %s 繫結. 也許位元幣已經在執行了.</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
+        <translation type="unfinished">警告: -paytxfee 設定了很高的金額! 這可是你交易付款所要付的手續費.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</source>
+        <translation type="unfinished">警告: 顯示的交易可能不正確! 你可能需要升級, 或者需要等其它的節點升級.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Namecoin will not work properly.</source>
+        <translation type="unfinished">警告: 請檢查電腦時間與日期是否正確! 位元幣無法在時鐘不準的情況下正常運作.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
+        <translation type="unfinished">警告: 讀取錢包檔 wallet.dat 失敗了! 所有的密鑰都正確讀取了, 但是交易資料或位址簿資料可能會缺少或不正確.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
+        <translation type="unfinished">警告: 錢包檔 wallet.dat 壞掉, 但資料被拯救回來了! 原來的 wallet.dat 會改儲存在 %s, 檔名為 wallet.{timestamp}.bak. 如果餘額或交易資料有誤, 你應該要用備份資料復原回來.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
+%s
+If the file does not exist, create it with owner-readable-only file permissions.</source>
+        <translation type="unfinished">你必須在下列設定檔中設定 RPC 密碼(rpcpassword=&lt;password&gt;):
+%s
+如果這個檔案還不存在, 請在新增時, 設定檔案權限為&quot;只有主人才能讀取&quot;.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Accept command line and JSON-RPC commands</source>
+        <translation type="unfinished">接受命令列與 JSON-RPC 指令
+</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+        <translation type="unfinished">是否接受外來連線 (預設: 當沒有 -proxy 或 -connect 時預設為 1)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Add a node to connect to and attempt to keep the connection open</source>
+        <translation type="unfinished">加入一個要連線的節線, 並試著保持對它的連線暢通</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
+        <translation type="unfinished">允許對 -addnode, -seednode, -connect 的參數使用域名查詢 </translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Allow JSON-RPC connections from specified IP address</source>
+        <translation type="unfinished">只允許從指定網路位址來的 JSON-RPC 連線</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
+        <translation type="unfinished">嘗試從壞掉的錢包檔 wallet.dat 復原密鑰</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Namecoin version</source>
+        <translation type="unfinished">位元幣版本</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Block creation options:</source>
+        <translation type="unfinished">區塊產生選項:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot downgrade wallet</source>
+        <translation type="unfinished">無法將錢包格式降級</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot initialize keypool</source>
+        <translation type="unfinished">無法將密鑰池初始化</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
+        <translation type="unfinished">無法解析 -bind 位址: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
+        <translation type="unfinished">無法解析 -externalip 位址: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot write default address</source>
+        <translation type="unfinished">無法寫入預設位址</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect only to the specified node(s)</source>
+        <translation type="unfinished">只連線至指定節點(可多個)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect through socks proxy</source>
+        <translation type="unfinished">透過 SOCKS 代理伺服器連線</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
+        <translation type="unfinished">連線到某個節點以取得其它節點的位址, 然後斷線</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Corrupted block database detected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
+        <translation type="unfinished">找出自己的網際網路位址 (預設: 當有聽候連線且沒有 -externalip 時為 1)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you want to rebuild the block database now?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Don&apos;t generate coins</source>
+        <translation type="unfinished">不生產位元幣
+</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Done loading</source>
+        <translation type="unfinished">載入完成</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error initializing block database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error loading block database</source>
+        <translation type="unfinished">載入區塊資料庫失敗</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error loading wallet.dat</source>
+        <translation type="unfinished">載入檔案 wallet.dat 失敗</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error loading wallet.dat: Wallet corrupted</source>
+        <translation type="unfinished">載入檔案 wallet.dat 失敗: 錢包壞掉了</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error loading wallet.dat: Wallet requires newer version of Namecoin</source>
+        <translation type="unfinished">載入檔案 wallet.dat 失敗: 此錢包需要新版的 Namecoin</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error opening block database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error</source>
+        <translation type="unfinished">錯誤</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Disk space is low!</source>
+        <translation type="unfinished">錯誤: 磁碟空間很少!</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Transaction creation failed!</source>
+        <translation type="unfinished">錯誤: 交易產生失敗!</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Wallet locked, unable to create transaction!</source>
+        <translation type="unfinished">錯誤: 錢包被上鎖了, 無法產生新的交易!</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: could not start node</source>
+        <translation type="unfinished">錯誤: 無法啓動節點</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: system error: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
+        <translation type="unfinished">在任意的通訊埠聽候失敗. 如果你想的話可以用 -listen=0.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to read block info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to read block</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to sync block index</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write block index</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write block info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write block</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write file info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write to coin database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write transaction index</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write undo data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Fee per KB to add to transactions you send</source>
+        <translation type="unfinished">交易付款時每 KB 的交易手續費</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
+        <translation type="unfinished">是否允許在找節點時使用域名查詢 (預設: 當沒用 -connect 時為 1)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Find peers using internet relay chat (default: 0)</source>
+        <translation type="unfinished">是否使用網際網路中繼聊天(IRC)來找節點 (預設: 0)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Generate coins</source>
+        <translation type="unfinished">生產位元幣
+</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Get help for a command</source>
+        <translation type="unfinished">取得指令說明
+</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
+        <translation type="unfinished">啓動時檢查多少區塊 (預設: 2500, 0 表示全部) {288, 0 ?}</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>How thorough the block verification is (0-4, default: 3)</source>
+        <translation type="unfinished">區塊檢查的仔細程度 (0 至 4, 預設: 3)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="-69"/>
@@ -6054,13 +7875,13 @@ rpcpassword=%s
 =======
         <location line="+1"/>
         <source>Importing blocks from block database...</source>
-        <translation>從區塊資料庫匯入區塊中...</translation>
+        <translation type="unfinished">從區塊資料庫匯入區塊中...</translation>
     </message>
     <message>
         <location line="+1"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Imports blocks from external blk000??.dat file</source>
-        <translation>從其它來源的 blk000??.dat 檔匯入區塊</translation>
+        <translation type="unfinished">從其它來源的 blk000??.dat 檔匯入區塊</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -6098,6 +7919,7 @@ rpcpassword=%s
         <location line="+1"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Information</source>
+<<<<<<< HEAD
         <translation>資訊</translation>
     </message>
     <message>
@@ -6175,21 +7997,40 @@ rpcpassword=%s
         <location line="+9"/>
 =======
         <translation>只和 &lt;net&gt; 網路上的節點連線 (IPv4, IPv6, 或 Tor)</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Output extra debugging information. Implies all other -debug* options</source>
-        <translation>輸出額外的除錯資訊. 包含了其它所有的 -debug* 選項</translation>
+=======
+        <translation type="unfinished">資訊</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Output extra network debugging information</source>
-        <translation>輸出額外的網路除錯資訊</translation>
+        <source>Insufficient funds</source>
+        <translation type="unfinished">累積金額不足</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Prepend debug output with timestamp</source>
-        <translation>在除錯輸出內容前附加時間</translation>
+        <location line="+1"/>
+        <source>Invalid -proxy address: &apos;%s&apos;</source>
+        <translation type="unfinished">無效的 -proxy 位址: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid -tor address: &apos;%s&apos;</source>
+        <translation type="unfinished">無效的 -tor 位址: &apos;%s&apos;</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation type="unfinished">設定 -paytxfee=&lt;金額&gt; 的金額無效: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid amount</source>
+        <translation type="unfinished">無效的金額</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>List commands</source>
+        <translation type="unfinished">列出指令
+</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -6197,14 +8038,20 @@ rpcpassword=%s
 >>>>>>> Committing original src/qt
 =======
         <location line="+1"/>
-        <source>Rebuild blockchain index from current blk000??.dat files</source>
-        <translation>從目前的區塊檔 blk000??.dat 重建索引</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 8334 or testnet: 18334)</source>
+        <translation type="unfinished">在通訊埠 &lt;port&gt; 聽候連線 (預設: 8334, 或若為測試網路: 18334)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
         <translation>SSL 選項: (SSL 設定程序請見 Bitcoin Wiki)</translation>
+=======
+        <location line="+1"/>
+        <source>Loading addresses...</source>
+        <translation type="unfinished">載入位址中...</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
 <<<<<<< HEAD
@@ -6218,26 +8065,27 @@ rpcpassword=%s
         <translation>設定區塊大小下限成多少位元組(預設值: 0)</translation>
 =======
         <location line="+1"/>
-        <source>Select the version of socks proxy to use (4-5, default: 5)</source>
-        <translation>選擇 SOCKS 代理伺服器的協定版本(4 或 5, 預設: 5)</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation>輸出追蹤或除錯資訊至終端機, 而非 debug.log 檔案</translation>
+        <source>Loading block index...</source>
+        <translation type="unfinished">載入區塊索引中...</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send trace/debug info to debugger</source>
-        <translation>輸出追蹤或除錯資訊給除錯器</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Set maximum block size in bytes (default: 250000)</source>
-        <translation>設定區塊大小上限為多少位元組 (預設: 250000)</translation>
+        <source>Loading wallet...</source>
+        <translation type="unfinished">載入錢包中...</translation>
     </message>
     <message>
         <location line="+1"/>
+        <source>Maintain a full transaction index (default: 0)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
+        <translation type="unfinished">維持與節點連線數的上限為 &lt;n&gt; 個 (預設: 125)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+<<<<<<< HEAD
         <source>Set minimum block size in bytes (default: 0)</source>
         <translation>設定區塊大小下限為多少位元組 (預設: 0)</translation>
 >>>>>>> Committing original src/qt
@@ -6315,13 +8163,44 @@ rpcpassword=%s
         <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
         <translation>透過代理伺服器來使用 Tor 隱藏服務 (預設: 同 -proxy)</translation>
 >>>>>>> Committing original src/qt
+=======
+        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
+        <translation type="unfinished">每個連線的接收緩衝區大小上限為 &lt;n&gt;*1000 個位元組 (預設: 5000)</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Username for JSON-RPC connections</source>
-        <translation>JSON-RPC 連線使用者名稱</translation>
+        <location line="+1"/>
+        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
+        <translation type="unfinished">每個連線的傳送緩衝區大小上限為 &lt;n&gt;*1000 位元組 (預設: 1000)</translation>
     </message>
     <message>
+        <location line="+1"/>
+        <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
+        <translation type="unfinished">只接受與內建的檢查段點吻合的區塊鎖鏈 (預設: 1)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
+        <translation type="unfinished">只和 &lt;net&gt; 網路上的節點連線 (IPv4, IPv6, 或 Tor)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Options:</source>
+        <translation type="unfinished">選項:
+</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Output extra debugging information. Implies all other -debug* options</source>
+        <translation type="unfinished">輸出額外的除錯資訊. 包含了其它所有的 -debug* 選項</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Output extra network debugging information</source>
+        <translation type="unfinished">輸出額外的網路除錯資訊</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+7"/>
 =======
@@ -6329,6 +8208,11 @@ rpcpassword=%s
 >>>>>>> Committing original src/qt
         <source>Warning</source>
         <translation>警告</translation>
+=======
+        <location line="+1"/>
+        <source>Password for JSON-RPC connections</source>
+        <translation type="unfinished">JSON-RPC 連線密碼</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
 <<<<<<< HEAD
@@ -6342,11 +8226,12 @@ rpcpassword=%s
         <translation>版本</translation>
 =======
         <location line="+1"/>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>警告: 這個版本已經被淘汰掉了, 必須要升級!</translation>
+        <source>Prepend debug output with timestamp</source>
+        <translation type="unfinished">在除錯輸出內容前附加時間</translation>
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <source>You need to rebuild the databases using -reindex to change -txindex</source>
         <translation>改變 -txindex 參數後, 必須要用 -reindex 參數來重建資料庫</translation>
@@ -6423,55 +8308,69 @@ rpcpassword=%s
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Allow JSON-RPC connections from specified IP address</source>
         <translation>只允許從指定網路位址來的 JSON-RPC 連線</translation>
+=======
+        <source>Rebuild blockchain index from current blk000??.dat files</source>
+        <translation type="unfinished">從目前的區塊檔 blk000??.dat 重建索引</translation>
     </message>
     <message>
-        <location line="+62"/>
-        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation>送指令給在 &lt;ip&gt; 的節點 (預設: 127.0.0.1)
-</translation>
-    </message>
-    <message>
-        <location line="-103"/>
-        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>當最新區塊改變時所要執行的指令 (指令中的 %s 會被取代為區塊的雜湊值)</translation>
-    </message>
-    <message>
-        <location line="+124"/>
-        <source>Upgrade wallet to latest format</source>
-        <translation>將錢包升級成最新的格式</translation>
-    </message>
-    <message>
-        <location line="-15"/>
-        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation>設定密鑰池大小為 &lt;n&gt; (預設: 100)
-</translation>
-    </message>
-    <message>
-        <location line="-12"/>
+        <location line="+1"/>
         <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>重新掃描區塊鎖鏈, 以尋找錢包所遺漏的交易.</translation>
+        <translation type="unfinished">重新掃描區塊鎖鏈, 以尋找錢包所遺漏的交易.</translation>
     </message>
     <message>
-        <location line="-26"/>
-        <source>How many blocks to check at startup (default: 2500, 0 = all)</source>
-        <translation>啓動時檢查多少區塊 (預設: 2500, 0 表示全部)</translation>
+        <location line="+1"/>
+        <source>Rescanning...</source>
+        <translation type="unfinished">重新掃描中...</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="+55"/>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>於 JSON-RPC 連線使用 OpenSSL (https)
+        <location line="+1"/>
+        <source>Run in the background as a daemon and accept commands</source>
+        <translation type="unfinished">以背景程式執行並接受指令</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation type="unfinished">SSL 選項: (SSL 設定程序請見 Bitcoin Wiki)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Select the version of socks proxy to use (4-5, default: 5)</source>
+        <translation type="unfinished">選擇 SOCKS 代理伺服器的協定版本(4 或 5, 預設: 5)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send command to -server or namecoind</source>
+        <translation type="unfinished">送指令至 -server 或 namecoind
 </translation>
     </message>
     <message>
-        <location line="-20"/>
+        <location line="+1"/>
+        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
+        <translation type="unfinished">送指令給在 &lt;ip&gt; 的節點 (預設: 127.0.0.1)
+</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send trace/debug info to console instead of debug.log file</source>
+        <translation type="unfinished">輸出追蹤或除錯資訊至終端機, 而非 debug.log 檔案</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send trace/debug info to debugger</source>
+        <translation type="unfinished">輸出追蹤或除錯資訊給除錯器</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Server certificate file (default: server.cert)</source>
-        <translation>伺服器憑證檔 (預設: server.cert)
+        <translation type="unfinished">伺服器憑證檔 (預設: server.cert)
 </translation>
 >>>>>>> Committing original src/qt
     </message>
     <message>
         <location line="+1"/>
         <source>Server private key (default: server.pem)</source>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <translation>伺服器私鑰檔(預設值: server.pem)</translation>
     </message>
@@ -6489,21 +8388,24 @@ rpcpassword=%s
         <location line="-107"/>
 =======
         <translation>伺服器密鑰檔 (預設: server.pem)
+=======
+        <translation type="unfinished">伺服器密鑰檔 (預設: server.pem)
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
 </translation>
     </message>
     <message>
-        <location line="-133"/>
-        <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
-        <translation>可以接受的加密法 (預設: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)
+        <location line="+1"/>
+        <source>Set database cache size in megabytes (default: 25)</source>
+        <translation type="unfinished">設定資料庫快取大小為多少百萬位元組(MB, 預設: 25)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
+        <translation type="unfinished">設定密鑰池大小為 &lt;n&gt; (預設: 100)
 </translation>
     </message>
     <message>
-        <location line="+144"/>
-        <source>This help message</source>
-        <translation>此協助訊息
-</translation>
-    </message>
-    <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation>無法和這台電腦上的 %s 繫結 (繫結回傳錯誤 %d, %s)</translation>
@@ -6573,28 +8475,46 @@ rpcpassword=%s
         <source>Error loading wallet.dat: Wallet requires newer version of Namecoin</source>
         <translation>載入檔案 wallet.dat 失敗: 此錢包需要新版的 Namecoin</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
-    </message>
-    <message>
-        <location line="+73"/>
-        <source>Verifying block database integrity...</source>
-        <translation>驗證區塊資料庫是否完整中...</translation>
+=======
+        <location line="+1"/>
+        <source>Set maximum block size in bytes (default: 250000)</source>
+        <translation type="unfinished">設定區塊大小上限為多少位元組 (預設: 250000)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Verifying wallet integrity...</source>
-        <translation>驗證錢包資料是否完整中...</translation>
+        <source>Set minimum block size in bytes (default: 0)</source>
+        <translation type="unfinished">設定區塊大小下限為多少位元組 (預設: 0)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Namecoin to complete</source>
-        <translation>錢包需要重寫: 請重啟位元幣來完成</translation>
+        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
+        <translation type="unfinished">客戶端軟體啓動時將 debug.log 檔縮小 (預設: 當沒有 -debug 時為 1)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="-77"/>
-        <source>Error loading wallet.dat</source>
-        <translation>載入檔案 wallet.dat 失敗</translation>
+        <location line="+1"/>
+        <source>Specify configuration file (default: bitcoin.conf)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+1"/>
+        <source>Specify connection timeout in milliseconds (default: 5000)</source>
+        <translation type="unfinished">指定連線在幾毫秒後逾時 (預設: 5000)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specify data directory</source>
+        <translation type="unfinished">指定資料目錄
+</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specify pid file (default: namecoind.pid)</source>
+        <translation type="unfinished">指定行程識別碼檔案 (預設: namecoind.pid)
+</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+28"/>
 >>>>>>> Committing original src/qt
@@ -6603,18 +8523,25 @@ rpcpassword=%s
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Invalid -proxy address: &apos;%s&apos;</source>
         <translation>無效的 -proxy 位址: &apos;%s&apos;</translation>
+=======
+        <location line="+1"/>
+        <source>Specify your own public address</source>
+        <translation type="unfinished">指定自己公開的位址</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="+46"/>
-        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation>在 -onlynet 指定了不明的網路別: &apos;%s&apos;</translation>
+        <location line="+1"/>
+        <source>System error: </source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-1"/>
-        <source>Unknown -socks proxy version requested: %i</source>
-        <translation>在 -socks 指定了不明的代理協定版本: %i</translation>
+        <location line="+1"/>
+        <source>This help message</source>
+        <translation type="unfinished">此協助訊息
+</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-101"/>
@@ -6649,23 +8576,39 @@ rpcpassword=%s
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>設定 -paytxfee=&lt;金額&gt; 的金額無效: &apos;%s&apos;</translation>
+=======
+        <location line="+1"/>
+        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
+        <translation type="unfinished">與亂搞的節點斷線的臨界值 (預設: 100)</translation>
     </message>
     <message>
-        <location line="-15"/>
-        <source>Error: could not start node</source>
-        <translation>錯誤: 無法啓動節點</translation>
+        <location line="+1"/>
+        <source>To use the %s option</source>
+        <translation type="unfinished">為了要使用 %s 選項</translation>
     </message>
     <message>
-        <location line="+16"/>
-        <source>Invalid amount</source>
-        <translation>無效的金額</translation>
+        <location line="+1"/>
+        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
+        <translation type="unfinished">無法和這台電腦上的 %s 繫結 (繫結回傳錯誤 %d, %s)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="-4"/>
-        <source>Insufficient funds</source>
-        <translation>累積金額不足</translation>
+        <location line="+1"/>
+        <source>Unknown -socks proxy version requested: %i</source>
+        <translation type="unfinished">在 -socks 指定了不明的代理協定版本: %i</translation>
     </message>
     <message>
+        <location line="+1"/>
+        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
+        <translation type="unfinished">在 -onlynet 指定了不明的網路別: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Upgrade wallet to latest format</source>
+        <translation type="unfinished">將錢包升級成最新的格式</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
         <location line="+8"/>
         <source>Loading block index...</source>
 <<<<<<< HEAD
@@ -6692,44 +8635,58 @@ rpcpassword=%s
         <translation>沒辦法把錢包格式降級</translation>
 =======
         <translation>載入區塊索引中...</translation>
+=======
+        <location line="+1"/>
+        <source>Usage:</source>
+        <translation type="unfinished">用法:</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="-45"/>
-        <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>加入一個要連線的節線, 並試著保持對它的連線暢通</translation>
+        <location line="+1"/>
+        <source>Use OpenSSL (https) for JSON-RPC connections</source>
+        <translation type="unfinished">於 JSON-RPC 連線使用 OpenSSL (https)
+</translation>
     </message>
     <message>
-        <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Namecoin is probably already running.</source>
-        <translation>無法和這台電腦上的 %s 繫結. 也許位元幣已經在執行了.</translation>
+        <location line="+1"/>
+        <source>Use UPnP to map the listening port (default: 0)</source>
+        <translation type="unfinished">是否使用通用即插即用(UPnP)協定來設定聽候連線的通訊埠 (預設: 0)</translation>
     </message>
     <message>
-        <location line="+54"/>
-        <source>Find peers using internet relay chat (default: 0)</source>
-        <translation>是否使用網際網路中繼聊天(IRC)來找節點 (預設: 0)</translation>
+        <location line="+1"/>
+        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
+        <translation type="unfinished">是否使用通用即插即用(UPnP)協定來設定聽候連線的通訊埠 (預設: 當有聽候連線為 1)</translation>
     </message>
     <message>
-        <location line="-2"/>
-        <source>Fee per KB to add to transactions you send</source>
-        <translation>交易付款時每 KB 的交易手續費</translation>
+        <location line="+1"/>
+        <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
+        <translation type="unfinished">透過代理伺服器來使用 Tor 隱藏服務 (預設: 同 -proxy)</translation>
     </message>
     <message>
-        <location line="+19"/>
-        <source>Loading wallet...</source>
-        <translation>載入錢包中...</translation>
+        <location line="+1"/>
+        <source>Use the test network</source>
+        <translation type="unfinished">使用測試網路
+</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-40"/>
         <source>Cannot downgrade wallet</source>
         <translation>無法將錢包格式降級</translation>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+1"/>
+        <source>Username for JSON-RPC connections</source>
+        <translation type="unfinished">JSON-RPC 連線使用者名稱</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot initialize keypool</source>
-        <translation>無法將密鑰池初始化</translation>
+        <source>Verifying database...</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Cannot write default address</source>
 <<<<<<< HEAD
@@ -6744,13 +8701,19 @@ rpcpassword=%s
         <location line="-58"/>
 =======
         <translation>無法寫入預設位址</translation>
+=======
+        <location line="+1"/>
+        <source>Verifying wallet integrity...</source>
+        <translation type="unfinished">驗證錢包資料是否完整中...</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="+49"/>
-        <source>Rescanning...</source>
-        <translation>重新掃描中...</translation>
+        <location line="+1"/>
+        <source>Wallet needed to be rewritten: restart Namecoin to complete</source>
+        <translation type="unfinished">錢包需要重寫: 請重啟位元幣來完成</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-57"/>
 >>>>>>> Committing original src/qt
@@ -6808,6 +8771,26 @@ If the file does not exist, create it with owner-readable-only file permissions.
 %s
 如果這個檔案還不存在, 請在新增時, 設定檔案權限為&quot;只有主人才能讀取&quot;.</translation>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+1"/>
+        <source>Warning</source>
+        <translation type="unfinished">警告</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Warning: This version is obsolete, upgrade required!</source>
+        <translation type="unfinished">警告: 這個版本已經被淘汰掉了, 必須要升級!</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>You need to rebuild the databases using -reindex to change -txindex</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>wallet.dat corrupt, salvage failed</source>
+        <translation type="unfinished">錢包檔 weallet.dat 壞掉了, 拯救失敗</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 </TS>

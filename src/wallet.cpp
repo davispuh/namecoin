@@ -494,14 +494,23 @@ void CWallet::WalletUpdateSpent(const CTransaction &tx)
 
 void CWallet::MarkDirty()
 {
+<<<<<<< HEAD
     {
         LOCK(cs_wallet);
+=======
+    CRITICAL_BLOCK(cs_wallet)
+    {
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         BOOST_FOREACH(PAIRTYPE(const uint256, CWalletTx)& item, mapWallet)
             item.second.MarkDirty();
     }
 }
 
+<<<<<<< HEAD
 bool CWallet::AddToWallet(const CWalletTx& wtxIn, bool fFromLoadWallet)
+=======
+bool CWallet::AddToWallet(const CWalletTx& wtxIn)
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
 {
     uint256 hash = wtxIn.GetHash();
 <<<<<<< HEAD

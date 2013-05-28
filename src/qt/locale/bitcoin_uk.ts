@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 <?xml version="1.0" ?><!DOCTYPE TS><TS language="uk" version="2.0">
 <<<<<<< HEAD
 =======
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="uk">
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
 <defaultcodec>UTF-8</defaultcodec>
 >>>>>>> Committing original src/qt
 <context>
@@ -36,12 +42,11 @@
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
-        <location line="+41"/>
         <source>Copyright © 2009-2013 The Bitcoin and Namecoin developers</source>
-        <translation>Авторське право © 2009-2013 Розробники Bitcoin, Namecoin</translation>
+        <translation type="obsolete">Авторське право © 2009-2013 Розробники Bitcoin, Namecoin</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+57"/>
         <source>
 This is experimental software.
 
@@ -55,6 +60,7 @@ This product includes software developed by the OpenSSL Project for use in the O
 
 Цей продукт включає в себе програмне забезпечення, розроблене в рамках проекту OpenSSL (http://www.openssl.org/), криптографічне програмне забезпечення, написане Еріком Янгом (eay@cryptsoft.com), та функції для роботи з UPnP, написані Томасом Бернардом.</translation>
     </message>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <message>
 <<<<<<< HEAD
@@ -76,6 +82,18 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
 =======
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+    <message>
+        <location filename="../aboutdialog.cpp" line="+17"/>
+        <source>Copyright</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>2009-%1 The Bitcoin and Namecoin developers</source>
+        <translation type="unfinished"></translation>
+    </message>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
 </context>
 <context>
     <name>AddressBookPage</name>
@@ -225,17 +243,17 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+25"/>
         <source>Delete the currently selected address from the list</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-14"/>
         <source>Verify a message to ensure it was signed with a specified Namecoin address</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Verify Message</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
@@ -243,6 +261,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;Видалити</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../addressbookpage.cpp" line="-5"/>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
@@ -254,15 +273,19 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location filename="../addressbookpage.cpp" line="+65"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location filename="../addressbookpage.cpp" line="+66"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Copy &amp;Label</source>
         <translation>Скопіювати &amp;мітку</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>&amp;Edit</source>
         <translation>&amp;Редагувати</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+194"/>
@@ -280,6 +303,14 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="+250"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+1"/>
+        <source>Send &amp;Coins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+263"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Export Address Book Data</source>
         <translation>Експортувати адресну книгу</translation>
     </message>
@@ -315,6 +346,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../addresstablemodel.cpp" line="+168"/>
 =======
         <location filename="../addresstablemodel.cpp" line="+144"/>
@@ -322,6 +354,9 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location filename="../addresstablemodel.cpp" line="+142"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location filename="../addresstablemodel.cpp" line="+146"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Label</source>
         <translation>Назва</translation>
     </message>
@@ -341,7 +376,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location filename="../forms/askpassphrasedialog.ui" line="+26"/>
         <source>Passphrase Dialog</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+21"/>
@@ -418,13 +453,22 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Ви дійсно хочете зашифрувати свій гаманець?</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+11"/>
+        <source>Namecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your namecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <translation>ВАЖЛИВО: Всі попередні резервні копії, які ви зробили з вашого гаманця файл повинен бути замінений новоствореному, зашифрованому файлі гаманця. З міркувань безпеки, попередні резервні копії в незашифрованому файлі гаманець стане марним, як тільки ви починаєте використовувати нову, зашифрований гаманець.</translation>
 =======
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
+=======
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+100"/>
@@ -439,12 +483,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Гаманець зашифровано</translation>
     </message>
     <message>
-        <location line="-56"/>
         <source>Namecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Namecoins from being stolen by malware infecting your computer.</source>
-        <translation>Namecoin-клієнт буде закрито для завершення процесу шифрування. Пам’ятайте, що шифрування гаманця не може повністю захистити ваші NMC від кражі, у випадку якщо ваш комп’ютер буде інфіковано шкідливими програмами.</translation>
+        <translation type="obsolete">Namecoin-клієнт буде закрито для завершення процесу шифрування. Пам’ятайте, що шифрування гаманця не може повністю захистити ваші NMC від кражі, у випадку якщо ваш комп’ютер буде інфіковано шкідливими програмами.</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="-43"/>
         <location line="+7"/>
         <location line="+42"/>
         <location line="+6"/>
@@ -486,8 +529,9 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
 </context>
 <context>
-    <name>NamecoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../bitcoingui.cpp" line="+295"/>
@@ -523,8 +567,27 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="-322"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location filename="../bitcoin.cpp" line="+115"/>
+        <source>A fatal error occurred. Namecoin can no longer continue safely and will quit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bitcoingui.cpp" line="+73"/>
+        <location line="+550"/>
+        <source>Namecoin</source>
+        <translation type="unfinished">Namecoin</translation>
+    </message>
+    <message>
+        <location line="-550"/>
+        <source>Wallet</source>
+        <translation type="unfinished">Гаманець</translation>
+    </message>
+    <message>
+        <location line="+139"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>&amp;Overview</source>
-        <translation>&amp;Огляд</translation>
+        <translation type="unfinished">&amp;Огляд</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -538,17 +601,17 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+1"/>
 >>>>>>> Committing original src/qt
         <source>Show general overview of wallet</source>
-        <translation>Показати загальний огляд гаманця</translation>
+        <translation type="unfinished">Показати загальний огляд гаманця</translation>
     </message>
     <message>
-        <location line="+20"/>
-        <source>&amp;Transactions</source>
-        <translation>Пе&amp;реклади</translation>
+        <location line="+6"/>
+        <source>&amp;Send coins</source>
+        <translation type="unfinished">В&amp;ідправити</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Browse transaction history</source>
-        <translation>Переглянути історію переказів</translation>
+        <source>Send coins to a Namecoin address</source>
+        <translation type="unfinished">Відправити монети на вказану адресу</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -558,26 +621,32 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+7"/>
 =======
         <location line="+6"/>
-        <source>&amp;Address Book</source>
-        <translation>&amp;Адресна книга</translation>
+        <source>&amp;Receive coins</source>
+        <translation type="unfinished">О&amp;тримати</translation>
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Edit the list of stored addresses and labels</source>
         <translation>Редагувати список збережених адрес та міток</translation>
+=======
+        <source>Show the list of addresses for receiving payments</source>
+        <translation type="unfinished">Показати список адрес для отримання платежів</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="-15"/>
-        <source>&amp;Receive coins</source>
-        <translation>О&amp;тримати</translation>
+        <location line="+6"/>
+        <source>&amp;Transactions</source>
+        <translation type="unfinished">Пе&amp;реклади</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show the list of addresses for receiving payments</source>
-        <translation>Показати список адрес для отримання платежів</translation>
+        <source>Browse transaction history</source>
+        <translation type="unfinished">Переглянути історію переказів</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+31"/>
 >>>>>>> Committing original src/qt
@@ -589,15 +658,29 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+39"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+6"/>
+        <source>&amp;Address Book</source>
+        <translation type="unfinished">&amp;Адресна книга</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Edit the list of stored addresses and labels</source>
+        <translation type="unfinished">Редагувати список збережених адрес та міток</translation>
+    </message>
+    <message>
+        <location line="+17"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>E&amp;xit</source>
-        <translation>&amp;Вихід</translation>
+        <translation type="unfinished">&amp;Вихід</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Quit application</source>
-        <translation>Вийти</translation>
+        <translation type="unfinished">Вийти</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+7"/>
 =======
@@ -610,6 +693,16 @@ This product includes software developed by the OpenSSL Project for use in the O
         <source>Show information about Namecoin</source>
         <translation>Показати інформацію про Namecoin</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+3"/>
+        <source>&amp;About Namecoin</source>
+        <translation type="unfinished">&amp;Про Namecoin</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show information about Namecoin</source>
+        <translation type="unfinished">Показати інформацію про Namecoin</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
 <<<<<<< HEAD
@@ -618,7 +711,7 @@ This product includes software developed by the OpenSSL Project for use in the O
 >>>>>>> Committing original src/qt
         <location line="+2"/>
         <source>About &amp;Qt</source>
-        <translation>&amp;Про Qt</translation>
+        <translation type="unfinished">&amp;Про Qt</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -627,11 +720,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+1"/>
 >>>>>>> Committing original src/qt
         <source>Show information about Qt</source>
-        <translation>Показати інформацію про Qt</translation>
+        <translation type="unfinished">Показати інформацію про Qt</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Options...</source>
+<<<<<<< HEAD
         <translation>&amp;Параметри...</translation>
     </message>
     <message>
@@ -646,14 +740,18 @@ This product includes software developed by the OpenSSL Project for use in the O
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>&amp;Encrypt Wallet...</source>
         <translation>&amp;Шифрування гаманця...</translation>
+=======
+        <translation type="unfinished">&amp;Параметри...</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Backup Wallet...</source>
-        <translation>&amp;Резервне копіювання гаманця...</translation>
+        <location line="+1"/>
+        <source>Modify configuration options for Namecoin</source>
+        <translation type="unfinished">Редагувати параметри</translation>
     </message>
     <message>
         <location line="+2"/>
+<<<<<<< HEAD
         <source>&amp;Change Passphrase...</source>
         <translation>Змінити парол&amp;ь...</translation>
     </message>
@@ -700,13 +798,23 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+10"/>
         <source>~%n block(s) remaining</source>
         <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
+=======
+        <source>&amp;Show / Hide</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-265"/>
-        <source>&amp;Export...</source>
-        <translation>&amp;Експорт...</translation>
+        <location line="+1"/>
+        <source>Show or hide the main Window</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
+        <location line="+1"/>
+        <source>&amp;Encrypt Wallet...</source>
+        <translation type="unfinished">&amp;Шифрування гаманця...</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-347"/>
 >>>>>>> Committing original src/qt
@@ -716,13 +824,19 @@ This product includes software developed by the OpenSSL Project for use in the O
         <source>Send coins to a Namecoin address</source>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation>Відправити монети на вказану адресу</translation>
+=======
+        <location line="+1"/>
+        <source>Encrypt the private keys that belong to your wallet</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="+49"/>
-        <source>Modify configuration options for Namecoin</source>
-        <translation>Редагувати параметри</translation>
+        <location line="+2"/>
+        <source>&amp;Backup Wallet...</source>
+        <translation type="unfinished">&amp;Резервне копіювання гаманця...</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+12"/>
@@ -739,25 +853,36 @@ This product includes software developed by the OpenSSL Project for use in the O
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Backup wallet to another location</source>
         <translation>Резервне копіювання гаманця в інше місце</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Change the passphrase used for wallet encryption</source>
-        <translation>Змінити пароль, який використовується для шифрування гаманця</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>&amp;Debug window</source>
-        <translation type="unfinished"/>
+=======
+        <location line="+1"/>
+        <source>Backup wallet to another location</source>
+        <translation type="unfinished">Резервне копіювання гаманця в інше місце</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Open debugging and diagnostic console</source>
-        <translation type="unfinished"/>
+        <source>&amp;Change Passphrase...</source>
+        <translation type="unfinished">Змінити парол&amp;ь...</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="-7"/>
+        <location line="+1"/>
+        <source>Change the passphrase used for wallet encryption</source>
+        <translation type="unfinished">Змінити пароль, який використовується для шифрування гаманця</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Sign &amp;message...</source>
+        <translation type="unfinished">&amp;Підписати повідомлення...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Sign messages with your Namecoin addresses to prove you own them</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>&amp;Verify message...</source>
+<<<<<<< HEAD
         <translation type="unfinished"/>
     </message>
     <message>
@@ -833,14 +958,28 @@ This product includes software developed by the OpenSSL Project for use in the O
 >>>>>>> Committing original src/qt
         <source>&amp;Show / Hide</source>
         <translation type="unfinished"/>
+=======
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show or hide the main Window</source>
-        <translation type="unfinished"/>
+        <source>Verify messages to ensure they were signed with specified Namecoin addresses</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
+        <source>&amp;Export...</source>
+        <translation type="unfinished">&amp;Експорт...</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Export the data in the current tab to a file</source>
+        <translation type="unfinished">Експортувати дані з поточної вкладки в файл</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+<<<<<<< HEAD
         <source>Encrypt the private keys that belong to your wallet</source>
 <<<<<<< HEAD
         <translation>Шифрування закритих ключів, які належать вашому гаманці</translation>
@@ -852,13 +991,18 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+7"/>
         <source>Sign messages with your Namecoin addresses to prove you own them</source>
         <translation type="unfinished"/>
+=======
+        <source>&amp;Debug window</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Namecoin addresses</source>
-        <translation type="unfinished"/>
+        <location line="+1"/>
+        <source>Open debugging and diagnostic console</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+48"/>
@@ -868,8 +1012,11 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="+31"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+25"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>&amp;File</source>
-        <translation>&amp;Файл</translation>
+        <translation type="unfinished">&amp;Файл</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -882,7 +1029,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+8"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>&amp;Settings</source>
-        <translation>&amp;Налаштування</translation>
+        <translation type="unfinished">&amp;Налаштування</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -891,7 +1038,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+6"/>
 >>>>>>> Committing original src/qt
         <source>&amp;Help</source>
-        <translation>&amp;Довідка</translation>
+        <translation type="unfinished">&amp;Довідка</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -900,7 +1047,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+9"/>
 >>>>>>> Committing original src/qt
         <source>Tabs toolbar</source>
-        <translation>Панель вкладок</translation>
+        <translation type="unfinished">Панель вкладок</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -912,17 +1059,22 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="+8"/>
         <source>Actions toolbar</source>
-        <translation>Панель дій</translation>
+        <translation type="unfinished">Панель дій</translation>
     </message>
     <message>
         <location line="+13"/>
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <location line="+10"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+80"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>[testnet]</source>
-        <translation>[тестова мережа]</translation>
+        <translation type="unfinished">[тестова мережа]</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-401"/>
@@ -991,12 +1143,17 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
 =======
         <location line="+63"/>
+=======
+        <location line="-5"/>
+        <location line="+5"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Namecoin client</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location line="+79"/>
+        <location line="+80"/>
         <source>%n active connection(s) to Namecoin network</source>
+<<<<<<< HEAD
         <translation><numerusform>%n активне з’єднання з мережею</numerusform><numerusform>%n активні з’єднання з мережею</numerusform><numerusform>%n активних з’єднань з мережею</numerusform></translation>
     </message>
     <message>
@@ -1040,11 +1197,23 @@ This product includes software developed by the OpenSSL Project for use in the O
         <source>Error</source>
         <translation type="unfinished"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <translation type="unfinished">
+            <numerusform>%n активне з’єднання з мережею</numerusform>
+            <numerusform>%n активні з’єднання з мережею</numerusform>
+            <numerusform>%n активних з’єднань з мережею</numerusform>
+        </translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Synchronizing with network...</source>
+        <translation type="unfinished">Синхронізація з мережею...</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning</source>
-        <translation type="unfinished"/>
+        <source>Importing blocks from disk...</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -1074,29 +1243,30 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Помилка</translation>
 =======
         <location line="+3"/>
-        <source>Information</source>
-        <translation type="unfinished"/>
+        <source>Reindexing blocks on disk...</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+66"/>
-        <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
-        <translation type="unfinished"/>
+        <location line="+9"/>
+        <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+210"/>
         <source>Backup Successful</source>
         <translation type="unfinished"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+4"/>
+        <source>Processed %1 blocks of transaction history.</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="+0"/>
-        <source>The wallet data was successfully saved to the new location.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message numerus="yes">
-        <location line="-338"/>
-        <source>%n second(s) ago</source>
-        <translation><numerusform>%n секунду тому</numerusform><numerusform>%n секунди тому</numerusform><numerusform>%n секунд тому</numerusform></translation>
+        <location line="+6"/>
+        <source>Up to date</source>
+        <translation type="unfinished">Синхронізовано</translation>
     </message>
 <<<<<<< HEAD
     <message>
@@ -1112,21 +1282,34 @@ This product includes software developed by the OpenSSL Project for use in the O
 >>>>>>> Committing original src/qt
 =======
     <message numerus="yes">
-        <location line="+4"/>
-        <source>%n minute(s) ago</source>
-        <translation><numerusform>%n хвилину тому</numerusform><numerusform>%n хвилини тому</numerusform><numerusform>%n хвилин тому</numerusform></translation>
+        <location line="+14"/>
+        <source>%n hour(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
-        <source>%n hour(s) ago</source>
-        <translation><numerusform>%n годину тому</numerusform><numerusform>%n години тому</numerusform><numerusform>%n годин тому</numerusform></translation>
+        <source>%n day(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
-        <source>%n day(s) ago</source>
-        <translation><numerusform>%n день тому</numerusform><numerusform>%n дня тому</numerusform><numerusform>%n днів тому</numerusform></translation>
+        <source>%n week(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+6"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Up to date</source>
@@ -1142,10 +1325,19 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="+7"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
-        <source>Catching up...</source>
-        <translation>Синхронізується...</translation>
+=======
+        <location line="+5"/>
+        <source>%1 behind</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+5"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+        <source>Catching up...</source>
+        <translation type="unfinished">Синхронізується...</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+130"/>
@@ -1159,8 +1351,41 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+97"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+9"/>
+        <source>Last received block was generated %1 ago.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Transactions after this will not yet be visible.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning</source>
+        <translation type="unfinished">Увага</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+68"/>
+        <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Confirm transaction fee</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -1170,12 +1395,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+23"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Sent transaction</source>
-        <translation>Надіслані перекази</translation>
+        <translation type="unfinished">Надіслані перекази</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Incoming transaction</source>
-        <translation>Отримані перекази</translation>
+        <translation type="unfinished">Отримані перекази</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1184,7 +1409,7 @@ Amount: %2
 Type: %3
 Address: %4
 </source>
-        <translation>Дата: %1
+        <translation type="unfinished">Дата: %1
 Кількість: %2
 Тип: %3
 Адреса: %4
@@ -1193,33 +1418,37 @@ Address: %4
     <message>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+69"/>
 =======
         <location line="+33"/>
         <location line="+23"/>
 =======
         <location line="+99"/>
+=======
+        <location line="+102"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <location line="+28"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>URI handling</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-28"/>
         <location line="+28"/>
         <source>URI can not be parsed! This can be caused by an invalid Namecoin address or malformed URI parameters.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+17"/>
 >>>>>>> Committing original src/qt
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Зашифрований&lt;/b&gt; гаманець &lt;b&gt;розблоковано&lt;/b&gt;</translation>
+        <translation type="unfinished">&lt;b&gt;Зашифрований&lt;/b&gt; гаманець &lt;b&gt;розблоковано&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Зашифрований&lt;/b&gt; гаманець &lt;b&gt;заблоковано&lt;/b&gt;</translation>
+        <translation type="unfinished">&lt;b&gt;Зашифрований&lt;/b&gt; гаманець &lt;b&gt;заблоковано&lt;/b&gt;</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -1233,34 +1462,38 @@ Address: %4
 =======
         <location line="+23"/>
         <source>Backup Wallet</source>
-        <translation>Резервне копіювання гаманця</translation>
+        <translation type="unfinished">Резервне копіювання гаманця</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Wallet Data (*.dat)</source>
-        <translation>Дані гаманця (*.dat)</translation>
+        <translation type="unfinished">Дані гаманця (*.dat)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Backup Failed</source>
-        <translation>Резервне копіювання не вдалося</translation>
+        <translation type="unfinished">Резервне копіювання не вдалося</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>There was an error trying to save the wallet data to the new location.</source>
-        <translation>Виникла помилка при спробі зберегти гаманець в новому місці</translation>
+        <translation type="unfinished">Виникла помилка при спробі зберегти гаманець в новому місці</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../Namecoin.cpp" line="+109"/>
         <source>A fatal error occurred. Namecoin can no longer continue safely and will quit.</source>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+4"/>
+        <source>Backup Successful</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
-</context>
-<context>
-    <name>ClientModel</name>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../clientmodel.cpp" line="+119"/>
@@ -1272,6 +1505,11 @@ Address: %4
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Network Alert</source>
         <translation type="unfinished"/>
+=======
+        <location line="+0"/>
+        <source>The wallet data was successfully saved to the new location.</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
@@ -1319,7 +1557,7 @@ Address: %4
         <translation>Адреса, пов’язана з цим записом адресної книги.</translation>
     </message>
     <message>
-        <location filename="../editaddressdialog.cpp" line="+20"/>
+        <location filename="../editaddressdialog.cpp" line="+21"/>
         <source>New receiving address</source>
         <translation>Нова адреса для отримання</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
@@ -1340,6 +1578,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+63"/>
         <source>(un)select all</source>
@@ -1366,22 +1605,26 @@ Address: %4
         <translation>Адреса</translation>
 =======
         <location line="+60"/>
+=======
+        <location line="+76"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
         <translation>Введена адреса «%1» вже присутня в адресній книзі.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid Namecoin address.</source>
         <translation>Введена адреса «%1» не є коректною адресою в мережі Namecoin.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+10"/>
         <source>Could not unlock wallet.</source>
         <translation>Неможливо розблокувати гаманець.</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
         <location line="+5"/>
+<<<<<<< HEAD
         <source>Date</source>
         <translation>Дата</translation>
     </message>
@@ -1405,6 +1648,44 @@ Address: %4
         <location filename="../coincontroldialog.cpp" line="+42"/>
         <source>Copy address</source>
         <translation>Скопіювати адресу</translation>
+=======
+        <source>New key generation failed.</source>
+        <translation>Не вдалося згенерувати нові ключі.</translation>
+    </message>
+</context>
+<context>
+    <name>GUIUtil::HelpMessageBox</name>
+    <message>
+        <location filename="../guiutil.cpp" line="+423"/>
+        <location line="+12"/>
+        <source>Namecoin-Qt</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-12"/>
+        <source>version</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Usage:</source>
+        <translation>Вкористання:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>command-line options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>UI options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
@@ -1413,6 +1694,7 @@ Address: %4
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
         <location line="+26"/>
         <source>Copy amount</source>
         <translation>Копіювати кількість</translation>
@@ -1466,6 +1748,580 @@ Address: %4
         <location line="+1"/>
         <source>Copy change</source>
         <translation type="unfinished"/>
+=======
+        <source>Show splash screen on startup (default: 1)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Namecoin-core</name>
+    <message>
+        <source>Namecoin version</source>
+        <translation type="obsolete">Версія</translation>
+    </message>
+    <message>
+        <source>Usage:</source>
+        <translation type="obsolete">Вкористання:</translation>
+    </message>
+    <message>
+        <source>Send command to -server or namecoind</source>
+        <translation type="obsolete">Відправити команду серверу -server чи демону
+</translation>
+    </message>
+    <message>
+        <source>List commands</source>
+        <translation type="obsolete">Список команд
+</translation>
+    </message>
+    <message>
+        <source>Get help for a command</source>
+        <translation type="obsolete">Отримати довідку по команді
+</translation>
+    </message>
+    <message>
+        <source>Options:</source>
+        <translation type="obsolete">Параметри:
+</translation>
+    </message>
+    <message>
+        <source>Specify configuration file (default: namecoin.conf)</source>
+        <translation type="obsolete">Вкажіть файл конфігурації (за промовчуванням: namecoin.conf)
+</translation>
+    </message>
+    <message>
+        <source>Specify pid file (default: namecoind.pid)</source>
+        <translation type="obsolete">Вкажіть pid-файл (за промовчуванням: namecoind.pid)
+</translation>
+    </message>
+    <message>
+        <source>Generate coins</source>
+        <translation type="obsolete">Генерувати монети
+</translation>
+    </message>
+    <message>
+        <source>Don&apos;t generate coins</source>
+        <translation type="obsolete">Не генерувати монети
+</translation>
+    </message>
+    <message>
+        <source>Specify data directory</source>
+        <translation type="obsolete">Вкажіть робочий каталог
+</translation>
+    </message>
+    <message>
+        <source>Listen for connections on &lt;port&gt; (default: 8334 or testnet: 18334)</source>
+        <translation type="obsolete">Чекати на з&apos;єднання на порту (по замовченню 8334 або тестова мережа 18334)</translation>
+    </message>
+    <message>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
+        <translation type="obsolete">Підтримувати не більше &lt;n&gt; зв&apos;язків з колегами (за замовчуванням: 125)</translation>
+    </message>
+    <message>
+        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
+        <translation type="obsolete">Поріг відключення неправильно підєднаних пірів (за замовчуванням: 100)</translation>
+    </message>
+    <message>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
+        <translation type="obsolete">Максимальній розмір вхідного буферу на одне з&apos;єднання (за замовчуванням 86400)</translation>
+    </message>
+    <message>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8336 or testnet: 18336)</source>
+        <translation type="obsolete">Прослуховувати &lt;port&gt; для JSON-RPC-з’єднань (за промовчуванням: 8336)
+</translation>
+    </message>
+    <message>
+        <source>Accept command line and JSON-RPC commands</source>
+        <translation type="obsolete">Приймати команди із командного рядка та команди JSON-RPC
+</translation>
+    </message>
+    <message>
+        <source>Run in the background as a daemon and accept commands</source>
+        <translation type="obsolete">Запустити в фоновому режимі (як демон) та приймати команди
+</translation>
+    </message>
+    <message>
+        <source>Use the test network</source>
+        <translation type="obsolete">Використовувати тестову мережу
+</translation>
+    </message>
+    <message>
+        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
+        <translation type="obsolete">Увага: встановлено занадто велику комісію (-paytxfee).  Комісія зніматиметься кожен раз коли ви проводитимете перекази.</translation>
+    </message>
+    <message>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Namecoin will not work properly.</source>
+        <translation type="obsolete">Увага: будь ласка, перевірте дату і час на свому комп’ютері.  Якщо ваш годинник йде неправильно, Namecoin може працювати некоректно.</translation>
+    </message>
+    <message>
+        <source>Connect only to the specified node(s)</source>
+        <translation type="obsolete">Підключитись лише до вказаного вузла</translation>
+    </message>
+    <message>
+        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
+        <translation type="obsolete">Максимальоий буфер , &lt;n&gt; * 1000 байт (за умовчанням: 5000)</translation>
+    </message>
+    <message>
+        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
+        <translation type="obsolete">Максимальній розмір виіхідного буферу на одне з&apos;єднання (за замовчуванням 1000)</translation>
+    </message>
+    <message>
+        <source>Output extra debugging information. Implies all other -debug* options</source>
+        <translation type="obsolete">Виводити більше налагоджувальної інформації. Implies all other -debug* options</translation>
+    </message>
+    <message>
+        <source>Prepend debug output with timestamp</source>
+        <translation type="obsolete">Доповнювати налагоджувальний вивід відміткою часу</translation>
+    </message>
+    <message>
+        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation type="obsolete">Параметри SSL: (див. Bitcoin Wiki)</translation>
+    </message>
+    <message>
+        <source>Send trace/debug info to console instead of debug.log file</source>
+        <translation type="obsolete">Відсилаті налагоджувальну інформацію на консоль, а не у файл debug.log</translation>
+    </message>
+    <message>
+        <source>Send trace/debug info to debugger</source>
+        <translation type="obsolete">Відсилаті налагоджувальну інформацію до налагоджувача</translation>
+    </message>
+    <message>
+        <source>Specify connection timeout in milliseconds (default: 5000)</source>
+        <translation type="obsolete">Odredi vremenski prozor za spajanje na mrežu u milisekundama (ugrađeni izbor: 5000)</translation>
+    </message>
+    <message>
+        <source>Use UPnP to map the listening port (default: 0)</source>
+        <translation type="obsolete">Намагатись використовувати UPnP для відображення порту що прослуховується на роутері (default: 0)</translation>
+    </message>
+    <message>
+        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
+        <translation type="obsolete">Намагатись використовувати UPnP для відображення порту що прослуховується на роутері (default: 1 when listening)</translation>
+    </message>
+    <message>
+        <source>Username for JSON-RPC connections</source>
+        <translation type="obsolete">Ім’я користувача для JSON-RPC-з’єднань
+</translation>
+    </message>
+    <message>
+        <source>Password for JSON-RPC connections</source>
+        <translation type="obsolete">Пароль для JSON-RPC-з’єднань
+</translation>
+    </message>
+    <message>
+        <source>Allow JSON-RPC connections from specified IP address</source>
+        <translation type="obsolete">Дозволити JSON-RPC-з’єднання з вказаної IP-адреси
+</translation>
+    </message>
+    <message>
+        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
+        <translation type="obsolete">Відправляти команди на вузол, запущений на &lt;ip&gt; (за промовчуванням: 127.0.0.1)
+</translation>
+    </message>
+    <message>
+        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
+        <translation type="obsolete">Встановити розмір пулу ключів &lt;n&gt; (за промовчуванням: 100)
+</translation>
+    </message>
+    <message>
+        <source>Rescan the block chain for missing wallet transactions</source>
+        <translation type="obsolete">Пересканувати ланцюжок блоків, в пошуку втрачених переказів
+</translation>
+    </message>
+    <message>
+        <source>Use OpenSSL (https) for JSON-RPC connections</source>
+        <translation type="obsolete">Використовувати OpenSSL (https) для JSON-RPC-з’єднань
+</translation>
+    </message>
+    <message>
+        <source>Server certificate file (default: server.cert)</source>
+        <translation type="obsolete">Сертифікату сервера (за промовчуванням: server.cert)
+</translation>
+    </message>
+    <message>
+        <source>Server private key (default: server.pem)</source>
+        <translation type="obsolete">Закритий ключ сервера (за промовчуванням: server.pem)
+</translation>
+    </message>
+    <message>
+        <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
+        <translation type="obsolete">Допустимі шифри (за промовчуванням: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)
+</translation>
+    </message>
+    <message>
+        <source>This help message</source>
+        <translation type="obsolete">Дана довідка
+</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
+        <translation type="obsolete">Неможливо прив’язати до порту %s на цьому комп’ютері (bind returned error %d, %s)</translation>
+    </message>
+    <message>
+        <source>Connect through socks proxy</source>
+        <translation type="obsolete">Підключитись через SOCKS-проксі</translation>
+    </message>
+    <message>
+        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
+        <translation type="obsolete">Дозволити пошук в DNS для команд «addnode» і «connect»
+</translation>
+    </message>
+    <message>
+        <source>Loading addresses...</source>
+        <translation type="obsolete">Завантаження адрес...</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet corrupted</source>
+        <translation type="obsolete">Помилка при завантаженні wallet.dat: Гаманець пошкоджено      </translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet requires newer version of Namecoin</source>
+        <translation type="obsolete">Помилка при завантаженні wallet.dat: Гаманець потребує новішої версії Namecoin-клієнта</translation>
+    </message>
+    <message>
+        <source>Wallet needed to be rewritten: restart Namecoin to complete</source>
+        <translation type="obsolete">Потрібно перезаписати гаманець: перезапустіть Namecoin-клієнт для завершення</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat</source>
+        <translation type="obsolete">Помилка при завантаженні wallet.dat</translation>
+    </message>
+    <message>
+        <source>Invalid -proxy address: &apos;%s&apos;</source>
+        <translation type="obsolete">Помилка в адресі проксі-сервера: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation type="obsolete">Помилка у величині комісії: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Insufficient funds</source>
+        <translation type="obsolete">Недостатньо коштів</translation>
+    </message>
+    <message>
+        <source>Loading block index...</source>
+        <translation type="obsolete">Завантаження індексу блоків...</translation>
+    </message>
+    <message>
+        <source>Add a node to connect to and attempt to keep the connection open</source>
+        <translation type="obsolete">Додати вузол для підключення and attempt to keep the connection open</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer. Namecoin is probably already running.</source>
+        <translation type="obsolete">Неможливо прив’язати до порту %s на цьому комп’ютері. Молживо гаманець вже запущено.</translation>
+    </message>
+    <message>
+        <source>Fee per KB to add to transactions you send</source>
+        <translation type="obsolete">Комісія за Кб
+</translation>
+    </message>
+    <message>
+        <source>Loading wallet...</source>
+        <translation type="obsolete">Завантаження гаманця...</translation>
+    </message>
+    <message>
+        <source>Rescanning...</source>
+        <translation type="obsolete">Сканування...</translation>
+    </message>
+    <message>
+        <source>Done loading</source>
+        <translation type="obsolete">Завантаження завершене</translation>
+    </message>
+</context>
+<context>
+    <name>NamecoinGUI</name>
+    <message>
+        <source>Sign &amp;message...</source>
+        <translation type="obsolete">&amp;Підписати повідомлення...</translation>
+    </message>
+    <message>
+        <source>Synchronizing with network...</source>
+        <translation type="obsolete">Синхронізація з мережею...</translation>
+    </message>
+    <message>
+        <source>&amp;Overview</source>
+        <translation type="obsolete">&amp;Огляд</translation>
+    </message>
+    <message>
+        <source>Show general overview of wallet</source>
+        <translation type="obsolete">Показати загальний огляд гаманця</translation>
+    </message>
+    <message>
+        <source>&amp;Transactions</source>
+        <translation type="obsolete">Пе&amp;реклади</translation>
+    </message>
+    <message>
+        <source>Browse transaction history</source>
+        <translation type="obsolete">Переглянути історію переказів</translation>
+    </message>
+    <message>
+        <source>&amp;Address Book</source>
+        <translation type="obsolete">&amp;Адресна книга</translation>
+    </message>
+    <message>
+        <source>Edit the list of stored addresses and labels</source>
+        <translation type="obsolete">Редагувати список збережених адрес та міток</translation>
+    </message>
+    <message>
+        <source>&amp;Receive coins</source>
+        <translation type="obsolete">О&amp;тримати</translation>
+    </message>
+    <message>
+        <source>Show the list of addresses for receiving payments</source>
+        <translation type="obsolete">Показати список адрес для отримання платежів</translation>
+    </message>
+    <message>
+        <source>&amp;Send coins</source>
+        <translation type="obsolete">В&amp;ідправити</translation>
+    </message>
+    <message>
+        <source>E&amp;xit</source>
+        <translation type="obsolete">&amp;Вихід</translation>
+    </message>
+    <message>
+        <source>Quit application</source>
+        <translation type="obsolete">Вийти</translation>
+    </message>
+    <message>
+        <source>Show information about Namecoin</source>
+        <translation type="obsolete">Показати інформацію про Namecoin</translation>
+    </message>
+    <message>
+        <source>About &amp;Qt</source>
+        <translation type="obsolete">&amp;Про Qt</translation>
+    </message>
+    <message>
+        <source>Show information about Qt</source>
+        <translation type="obsolete">Показати інформацію про Qt</translation>
+    </message>
+    <message>
+        <source>&amp;Options...</source>
+        <translation type="obsolete">&amp;Параметри...</translation>
+    </message>
+    <message>
+        <source>&amp;Encrypt Wallet...</source>
+        <translation type="obsolete">&amp;Шифрування гаманця...</translation>
+    </message>
+    <message>
+        <source>&amp;Backup Wallet...</source>
+        <translation type="obsolete">&amp;Резервне копіювання гаманця...</translation>
+    </message>
+    <message>
+        <source>&amp;Change Passphrase...</source>
+        <translation type="obsolete">Змінити парол&amp;ь...</translation>
+    </message>
+    <message>
+        <source>&amp;Export...</source>
+        <translation type="obsolete">&amp;Експорт...</translation>
+    </message>
+    <message>
+        <source>Send coins to a Namecoin address</source>
+        <translation type="obsolete">Відправити монети на вказану адресу</translation>
+    </message>
+    <message>
+        <source>Modify configuration options for Namecoin</source>
+        <translation type="obsolete">Редагувати параметри</translation>
+    </message>
+    <message>
+        <source>Export the data in the current tab to a file</source>
+        <translation type="obsolete">Експортувати дані з поточної вкладки в файл</translation>
+    </message>
+    <message>
+        <source>Backup wallet to another location</source>
+        <translation type="obsolete">Резервне копіювання гаманця в інше місце</translation>
+    </message>
+    <message>
+        <source>Change the passphrase used for wallet encryption</source>
+        <translation type="obsolete">Змінити пароль, який використовується для шифрування гаманця</translation>
+    </message>
+    <message>
+        <source>Namecoin</source>
+        <translation type="obsolete">Namecoin</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation type="obsolete">Гаманець</translation>
+    </message>
+    <message>
+        <source>&amp;About Namecoin</source>
+        <translation type="obsolete">&amp;Про Namecoin</translation>
+    </message>
+    <message>
+        <source>&amp;File</source>
+        <translation type="obsolete">&amp;Файл</translation>
+    </message>
+    <message>
+        <source>&amp;Settings</source>
+        <translation type="obsolete">&amp;Налаштування</translation>
+    </message>
+    <message>
+        <source>&amp;Help</source>
+        <translation type="obsolete">&amp;Довідка</translation>
+    </message>
+    <message>
+        <source>Tabs toolbar</source>
+        <translation type="obsolete">Панель вкладок</translation>
+    </message>
+    <message>
+        <source>Actions toolbar</source>
+        <translation type="obsolete">Панель дій</translation>
+    </message>
+    <message>
+        <source>[testnet]</source>
+        <translation type="obsolete">[тестова мережа]</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n active connection(s) to Namecoin network</source>
+        <translation type="obsolete">
+            <numerusform>%n активне з’єднання з мережею</numerusform>
+            <numerusform>%n активні з’єднання з мережею</numerusform>
+            <numerusform>%n активних з’єднань з мережею</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n second(s) ago</source>
+        <translation type="obsolete">
+            <numerusform>%n секунду тому</numerusform>
+            <numerusform>%n секунди тому</numerusform>
+            <numerusform>%n секунд тому</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n minute(s) ago</source>
+        <translation type="obsolete">
+            <numerusform>%n хвилину тому</numerusform>
+            <numerusform>%n хвилини тому</numerusform>
+            <numerusform>%n хвилин тому</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n hour(s) ago</source>
+        <translation type="obsolete">
+            <numerusform>%n годину тому</numerusform>
+            <numerusform>%n години тому</numerusform>
+            <numerusform>%n годин тому</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s) ago</source>
+        <translation type="obsolete">
+            <numerusform>%n день тому</numerusform>
+            <numerusform>%n дня тому</numerusform>
+            <numerusform>%n днів тому</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Up to date</source>
+        <translation type="obsolete">Синхронізовано</translation>
+    </message>
+    <message>
+        <source>Catching up...</source>
+        <translation type="obsolete">Синхронізується...</translation>
+    </message>
+    <message>
+        <source>Last received block was generated %1.</source>
+        <translation type="obsolete">Останній отриманий блок було згенеровано %1.</translation>
+    </message>
+    <message>
+        <source>Sent transaction</source>
+        <translation type="obsolete">Надіслані перекази</translation>
+    </message>
+    <message>
+        <source>Incoming transaction</source>
+        <translation type="obsolete">Отримані перекази</translation>
+    </message>
+    <message>
+        <source>Date: %1
+Amount: %2
+Type: %3
+Address: %4
+</source>
+        <translation type="obsolete">Дата: %1
+Кількість: %2
+Тип: %3
+Адреса: %4
+</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
+        <translation type="obsolete">&lt;b&gt;Зашифрований&lt;/b&gt; гаманець &lt;b&gt;розблоковано&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
+        <translation type="obsolete">&lt;b&gt;Зашифрований&lt;/b&gt; гаманець &lt;b&gt;заблоковано&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Backup Wallet</source>
+        <translation type="obsolete">Резервне копіювання гаманця</translation>
+    </message>
+    <message>
+        <source>Wallet Data (*.dat)</source>
+        <translation type="obsolete">Дані гаманця (*.dat)</translation>
+    </message>
+    <message>
+        <source>Backup Failed</source>
+        <translation type="obsolete">Резервне копіювання не вдалося</translation>
+    </message>
+    <message>
+        <source>There was an error trying to save the wallet data to the new location.</source>
+        <translation type="obsolete">Виникла помилка при спробі зберегти гаманець в новому місці</translation>
+    </message>
+</context>
+<context>
+    <name>OptionsDialog</name>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="+14"/>
+        <source>Options</source>
+        <translation>Параметри</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>&amp;Main</source>
+        <translation>&amp;Головні</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.</source>
+        <translation>Добровільна комісія за кожен Кб переказу, яка дозволяє бути впевненим у тому, що ваш переказ буде оброблено швидко. Розмір більшості переказів рівен 1 Кб. Рекомендована комісія: 0,01.</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Pay transaction &amp;fee</source>
+        <translation>Заплатити комісі&amp;ю</translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Automatically start Namecoin after logging in to the system.</source>
+        <translation>Автоматично запускати гаманець при вмиканні комп’ютера</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Start Namecoin on system login</source>
+        <translation>&amp;Запускати гаманець при вході в систему</translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Reset all client options to default.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Reset Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>&amp;Network</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Automatically open the Namecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматично відкривати порт для клієнту Namecoin на роутері. Працює лише якщо ваш роутер підтримує UPnP і ця функція увімкнена.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Map port using &amp;UPnP</source>
+        <translation>Відображення порту через &amp;UPnP</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+323"/>
@@ -1498,6 +2354,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>low</source>
         <translation type="unfinished"/>
@@ -1511,6 +2368,21 @@ Address: %4
         <location line="+1"/>
         <source>lowest</source>
         <translation type="unfinished"/>
+=======
+        <location line="+7"/>
+        <source>SOCKS &amp;Version:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>SOCKS version of the proxy (e.g. 5)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>&amp;Window</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+11"/>
@@ -1538,6 +2410,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+10"/>
         <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
         <translation type="unfinished"/>
@@ -1547,6 +2420,16 @@ Address: %4
         <location line="+5"/>
         <source>This means a fee of at least %1 per kB is required.</source>
         <translation type="unfinished"/>
+=======
+        <location line="+8"/>
+        <source>User Interface &amp;language:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>The user interface language can be set here. This setting will take effect after restarting Namecoin.</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="-4"/>
@@ -1559,9 +2442,15 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>This label turns red, if the priority is smaller than &quot;medium&quot;.</source>
         <translation type="unfinished"/>
+=======
+        <location line="+9"/>
+        <source>Whether to show Namecoin addresses in the transaction list or not.</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+3"/>
@@ -1569,6 +2458,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <location line="+4"/>
         <source>This means a fee of at least %1 is required.</source>
@@ -1599,14 +2489,50 @@ Address: %4
         <location line="+1"/>
         <source>(change)</source>
         <translation type="unfinished"/>
+=======
+        <location line="+71"/>
+        <source>&amp;OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>&amp;Apply</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../optionsdialog.cpp" line="+53"/>
+        <source>default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+130"/>
+        <source>Confirm options reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Some settings may require a client restart to take effect.</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
     <name>EditAddressDialog</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/editaddressdialog.ui" line="+14"/>
         <source>Edit Address</source>
         <translation>Редагувати адресу</translation>
+=======
+        <location line="+0"/>
+        <source>Do you want to proceed?</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+11"/>
@@ -1614,6 +2540,7 @@ Address: %4
         <translation>&amp;Мітка</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+10"/>
         <source>The label associated with this address list entry</source>
         <translation type="unfinished"/>
@@ -1622,6 +2549,17 @@ Address: %4
         <location line="+17"/>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
         <translation type="unfinished"/>
+=======
+        <location line="-9"/>
+        <location line="+9"/>
+        <source>This setting will take effect after restarting Namecoin.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>The supplied proxy address is invalid.</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="-10"/>
@@ -1629,9 +2567,16 @@ Address: %4
         <translation>&amp;Адреса</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../editaddressdialog.cpp" line="+28"/>
         <source>New receiving address</source>
         <translation>Нова адреса для отримання</translation>
+=======
+        <location line="+51"/>
+        <location line="+183"/>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Namecoin network after a connection is established, but this process has not completed yet.</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+4"/>
@@ -1654,6 +2599,7 @@ Address: %4
         <translation>Введена адреса «%1» вже присутня в адресній книзі.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid Bitcoin address.</source>
         <translation>Введена адреса «%1» не є коректною адресою в мережі Bitcoin.</translation>
@@ -1662,6 +2608,16 @@ Address: %4
         <location line="+10"/>
         <source>Could not unlock wallet.</source>
         <translation>Неможливо розблокувати гаманець.</translation>
+=======
+        <location line="+124"/>
+        <source>Immature:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Mined balance that has not yet matured</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+5"/>
@@ -1687,6 +2643,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Path already exists, and is not a directory.</source>
         <translation type="unfinished"/>
@@ -1695,14 +2652,34 @@ Address: %4
         <location line="+7"/>
         <source>Cannot create data directory here.</source>
         <translation type="unfinished"/>
+=======
+        <location filename="../overviewpage.cpp" line="+115"/>
+        <location line="+1"/>
+        <source>out of sync</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PaymentServer</name>
+    <message>
+        <location filename="../paymentserver.cpp" line="+108"/>
+        <source>Cannot start namecoin: click-to-pay handler</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
     <name>HelpMessageDialog</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/helpmessagedialog.ui" line="+19"/>
         <source>Bitcoin Core - Command-line options</source>
         <translation type="unfinished"/>
+=======
+        <location filename="../forms/qrcodedialog.ui" line="+14"/>
+        <source>QR Code Dialog</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location filename="../utilitydialog.cpp" line="+38"/>
@@ -1730,6 +2707,7 @@ Address: %4
         <translation>Параметри інтерфейсу</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
         <translation>Встановлення мови, наприклад &quot;de_DE&quot; (типово: системна)</translation>
@@ -1748,11 +2726,32 @@ Address: %4
         <location line="+1"/>
         <source>Choose data directory on startup (default: 0)</source>
         <translation type="unfinished"/>
+=======
+        <location filename="../qrcodedialog.cpp" line="+62"/>
+        <source>Error encoding URI into QR Code.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+40"/>
+        <source>The entered amount is invalid, please check.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Resulting URI too long, try to reduce the text for label / message.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Save QR Code</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
     <name>Intro</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/intro.ui" line="+14"/>
         <source>Welcome</source>
         <translation>Вітання</translation>
@@ -1761,9 +2760,15 @@ Address: %4
         <location line="+9"/>
         <source>Welcome to Bitcoin Core.</source>
         <translation type="unfinished"/>
+=======
+        <location filename="../forms/rpcconsole.ui" line="+46"/>
+        <source>Client name</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+26"/>
+<<<<<<< HEAD
         <source>As this is the first time the program is launched, you can choose where Bitcoin Core will store its data.</source>
         <translation type="unfinished"/>
     </message>
@@ -1806,11 +2811,63 @@ Address: %4
         <location line="+3"/>
         <source>(of %1GB needed)</source>
         <translation type="unfinished"/>
+=======
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+36"/>
+        <location line="+53"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location filename="../rpcconsole.cpp" line="+345"/>
+        <source>N/A</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-217"/>
+        <source>Client version</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-45"/>
+        <source>&amp;Information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+68"/>
+        <source>Using OpenSSL version</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+49"/>
+        <source>Startup time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Network</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Number of connections</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>On testnet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Block chain</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/openuridialog.ui" line="+14"/>
         <source>Open URI</source>
         <translation type="unfinished"/>
@@ -1834,11 +2891,37 @@ Address: %4
         <location filename="../openuridialog.cpp" line="+47"/>
         <source>Select payment request file to open</source>
         <translation type="unfinished"/>
+=======
+        <location line="+7"/>
+        <source>Current number of blocks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Estimated total blocks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Last block time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>&amp;Open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Command-line options</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
     <name>OptionsDialog</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/optionsdialog.ui" line="+14"/>
         <source>Options</source>
         <translation>Параметри</translation>
@@ -1907,11 +2990,84 @@ Address: %4
         <location line="+34"/>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation type="unfinished"/>
+=======
+        <location line="+7"/>
+        <source>Show the Namecoin-Qt help message to get a list with possible Namecoin command-line options.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+3"/>
+        <source>&amp;Show</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>&amp;Console</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-260"/>
+        <source>Build date</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-104"/>
+        <source>Namecoin - Debug window</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Namecoin Core</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+279"/>
+        <source>Debug log file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Open the Namecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+102"/>
+        <source>Clear console</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../rpcconsole.cpp" line="-30"/>
+        <source>Welcome to the Namecoin RPC console.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+    </message>
+    <message>
+<<<<<<< HEAD
         <location line="+224"/>
         <source>Active command-line options that override above options:</source>
         <translation type="unfinished"/>
+=======
+        <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
+        <location filename="../sendcoinsdialog.cpp" line="+125"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <location line="+6"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <source>Send Coins</source>
+        <translation>Відправити</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+43"/>
@@ -2004,9 +3160,15 @@ Address: %4
         <translation>Встановлює мову інтерфейсу. Зміни набудуть чинності після перезапуску Bitcoin.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+11"/>
         <source>&amp;Unit to show amounts in:</source>
         <translation>В&amp;имірювати монети в:</translation>
+=======
+        <location line="+5"/>
+        <source>Error: Transaction creation failed!</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+13"/>
@@ -2029,6 +3191,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Display coin &amp;control features (experts only)</source>
         <translation type="unfinished"/>
@@ -2037,6 +3200,17 @@ Address: %4
         <location line="+136"/>
         <source>&amp;OK</source>
         <translation>&amp;Гаразд</translation>
+=======
+        <location line="+34"/>
+        <source>The address to send the payment to (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+60"/>
+        <location filename="../sendcoinsentry.cpp" line="+26"/>
+        <source>Enter a label for this address to add it to your address book</source>
+        <translation>Введіть мітку для цієї адреси для додавання її в адресну книгу</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+7"/>
@@ -2083,9 +3257,15 @@ Address: %4
 <context>
     <name>OverviewPage</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/overviewpage.ui" line="+14"/>
         <source>Form</source>
         <translation>Форма</translation>
+=======
+        <location filename="../forms/signverifymessagedialog.ui" line="+14"/>
+        <source>Signatures - Sign / Verify a Message</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+50"/>
@@ -2094,9 +3274,15 @@ Address: %4
         <translation>Показана інформація вже може бути застарілою. Ваш гаманець буде автоматично синхронізовано з мережею Bitcoin після встановлення підключення, але цей процес ще не завершено.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-155"/>
         <source>Unconfirmed:</source>
         <translation>Непідтверджені:</translation>
+=======
+        <location line="+6"/>
+        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="-83"/>
@@ -2129,6 +3315,7 @@ Address: %4
         <translation>Замінований баланс, який ще не дозрів</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+16"/>
         <source>Total:</source>
         <translation>всього:</translation>
@@ -2137,6 +3324,16 @@ Address: %4
         <location line="+16"/>
         <source>Your current total balance</source>
         <translation>Ваше поточне Сукупний баланс</translation>
+=======
+        <location line="+7"/>
+        <source>Signature</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Copy the current signature to the system clipboard</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+71"/>
@@ -2144,19 +3341,31 @@ Address: %4
         <translation>&lt;b&gt;Недавні транзакції&lt;/b&gt;</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../overviewpage.cpp" line="+120"/>
         <location line="+1"/>
         <source>out of sync</source>
         <translation>не синхронізовано</translation>
+=======
+        <location line="+3"/>
+        <source>Sign &amp;Message</source>
+        <translation type="unfinished">&amp;Підписати повідомлення</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
     <name>PaymentServer</name>
     <message>
+<<<<<<< HEAD
         <location filename="../paymentserver.cpp" line="+403"/>
         <location line="+13"/>
         <source>URI handling</source>
         <translation>Обробка URI</translation>
+=======
+        <location line="+14"/>
+        <source>Reset all sign message fields</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
@@ -2164,6 +3373,7 @@ Address: %4
         <translation>Неможливо обробити URI! Це може бути викликано неправильною Bitcoin-адресою, чи невірними параметрами URI.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+96"/>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
         <translation type="unfinished"/>
@@ -2177,6 +3387,16 @@ Address: %4
         <location line="+16"/>
         <source>Payment request error</source>
         <translation type="unfinished"/>
+=======
+        <location line="-87"/>
+        <source>&amp;Verify Message</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="-353"/>
@@ -2184,6 +3404,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+58"/>
         <source>Net manager warning</source>
         <translation type="unfinished"/>
@@ -2202,6 +3423,27 @@ Address: %4
         <location line="+27"/>
         <source>Payment request file handling</source>
         <translation type="unfinished"/>
+=======
+        <location line="+40"/>
+        <source>Verify the message to ensure it was signed with the specified Namecoin address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Verify &amp;Message</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Reset all verify message fields</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../signverifymessagedialog.cpp" line="+28"/>
+        <location line="+3"/>
+        <source>Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation>Введіть адресу Namecoin (наприклад N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
@@ -2209,6 +3451,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+73"/>
         <source>Unverified payment requests to custom payment scripts are unsupported.</source>
         <translation type="unfinished"/>
@@ -2242,11 +3485,44 @@ Address: %4
         <location line="-11"/>
         <source>Network request error</source>
         <translation type="unfinished"/>
+=======
+        <location line="+3"/>
+        <source>Enter Namecoin signature</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+82"/>
+        <location line="+82"/>
+        <source>The entered address is invalid.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-82"/>
+        <location line="+82"/>
+        <source>Please check the address and try again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-74"/>
+        <source>Wallet unlock was cancelled.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Private key for the entered address is not available.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Message signing failed.</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
+<<<<<<< HEAD
         <location filename="../bitcoin.cpp" line="+71"/>
         <location line="+11"/>
         <source>Bitcoin</source>
@@ -2261,11 +3537,28 @@ Address: %4
         <location line="-12"/>
         <source>Error: Invalid combination of -regtest and -testnet.</source>
         <translation type="unfinished"/>
+=======
+        <location line="+5"/>
+        <source>Message signed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+51"/>
+        <source>The signature could not be decoded.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <location line="+13"/>
+        <source>Please check the signature and try again.</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
     <name>QRImageWidget</name>
     <message>
+<<<<<<< HEAD
         <location filename="../receiverequestdialog.cpp" line="+36"/>
         <source>&amp;Save Image...</source>
         <translation>&amp;Зберегти зображення...</translation>
@@ -2284,14 +3577,35 @@ Address: %4
         <location line="+0"/>
         <source>PNG Image (*.png)</source>
         <translation type="unfinished"/>
+=======
+        <location line="+0"/>
+        <source>The signature did not match the message digest.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Message verification failed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Message verified.</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
     <name>RPCConsole</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/rpcconsole.ui" line="+46"/>
         <source>Client name</source>
         <translation>Назва клієнту</translation>
+=======
+        <location filename="../transactiondesc.cpp" line="+21"/>
+        <source>Open until %1</source>
+        <translation>Відкрити до %1</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+10"/>
@@ -2323,10 +3637,21 @@ Address: %4
         <source>Debug window</source>
         <translation type="unfinished"/>
     </message>
+<<<<<<< HEAD
     <message>
         <location line="+25"/>
         <source>General</source>
         <translation type="unfinished"/>
+=======
+    <message numerus="yes">
+        <location line="+7"/>
+        <source>, broadcast through %n node(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+53"/>
@@ -2334,9 +3659,15 @@ Address: %4
         <translation>Використовується OpenSSL версії</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+49"/>
         <source>Startup time</source>
         <translation>Час запуску</translation>
+=======
+        <location line="+7"/>
+        <source>Source</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+29"/>
@@ -2349,6 +3680,7 @@ Address: %4
         <translation>Ім’я</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+23"/>
         <source>Number of connections</source>
         <translation>Кількість підключень</translation>
@@ -2357,6 +3689,19 @@ Address: %4
         <location line="+29"/>
         <source>Block chain</source>
         <translation>Ланцюг блоків</translation>
+=======
+        <location line="+1"/>
+        <location line="+22"/>
+        <location line="+58"/>
+        <source>To</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-77"/>
+        <location line="+2"/>
+        <source>own address</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+7"/>
@@ -2368,10 +3713,21 @@ Address: %4
         <source>Estimated total blocks</source>
         <translation>Розрахункове число блоків</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <location line="+23"/>
         <source>Last block time</source>
         <translation>Час останнього блоку</translation>
+=======
+    <message numerus="yes">
+        <location line="-102"/>
+        <source>matures in %n more block(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+52"/>
@@ -2420,6 +3776,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
+<<<<<<< HEAD
         <source>Open the Bitcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Відкрийте налагодження файл журналу Bitcoin з поточного каталогу даних. Це може зайняти кілька секунд для великих файлів журналів.</translation>
     </message>
@@ -2462,6 +3819,38 @@ Address: %4
         <location line="+2"/>
         <source>%1 GB</source>
         <translation type="unfinished"/>
+=======
+        <source>Debug information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Transaction</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Inputs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation type="obsolete">Кількість</translation>
+    </message>
+    <message>
+        <location line="-185"/>
+        <source>, has not been successfully broadcast yet</source>
+        <translation>, ще не було успішно розіслано</translation>
+    </message>
+    <message numerus="yes">
+        <location line="-35"/>
+        <source>Open for %n more block(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+7"/>
@@ -2497,9 +3886,24 @@ Address: %4
         <translation>&amp;Повідомлення:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-17"/>
         <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
         <translation type="unfinished"/>
+=======
+        <location line="+0"/>
+        <source>Amount</source>
+        <translation>Кількість</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+57"/>
+        <source>Open for %n more block(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+3"/>
@@ -2521,10 +3925,21 @@ Address: %4
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
         <translation type="unfinished"/>
     </message>
+<<<<<<< HEAD
     <message>
         <location line="+39"/>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
         <translation type="unfinished"/>
+=======
+    <message numerus="yes">
+        <location line="+8"/>
+        <source>Mined balance will be available when it matures in %n more block(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+17"/>
@@ -2595,9 +4010,16 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+6"/>
         <source>Payment information</source>
         <translation type="unfinished"/>
+=======
+        <location filename="../transactionview.cpp" line="+52"/>
+        <location line="+16"/>
+        <source>All</source>
+        <translation>Всі</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
@@ -2689,18 +4111,30 @@ Address: %4
         <translation>Неможливо розблокувати гаманець.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
         <source>New key generation failed.</source>
         <translation>Не вдалося згенерувати нові ключі.</translation>
+=======
+        <location line="+1"/>
+        <source>Show transaction details</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
+<<<<<<< HEAD
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
         <source>Bitcoin-Qt</source>
         <translation>Bitcoin-Qt</translation>
+=======
+        <location line="+137"/>
+        <source>Export Transaction Data</source>
+        <translation>Експортувати дані переказів</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="-12"/>
@@ -2776,6 +4210,7 @@ Address: %4
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>OptionsDialog</name>
     <message>
         <location filename="../forms/optionsdialog.ui" line="+14"/>
@@ -5812,6 +7247,397 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <location line="-76"/>
         <source>Set the number of script verification threads (up to 16, 0 = auto, &lt;0 = leave that many cores free, default: 0)</source>
         <translation type="unfinished"/>
+=======
+    <name>namecoin-core</name>
+    <message>
+        <location filename="../bitcoinstrings.cpp" line="+9"/>
+        <source>%s, you must set a rpcpassword in the configuration file:
+ %s
+It is recommended you use the following random password:
+rpcuser=namecoinrpc
+rpcpassword=%s
+(you do not need to remember this password)
+The username and password MUST NOT be the same.
+If the file does not exist, create it with owner-readable-only file permissions.
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
+        <translation type="unfinished">Допустимі шифри (за промовчуванням: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)
+</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Cannot obtain a lock on data directory %s. Namecoin is probably already running.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8336 or testnet: 18336)</source>
+        <translation type="unfinished">Прослуховувати &lt;port&gt; для JSON-RPC-з’єднань (за промовчуванням: 8336)
+</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
+        <translation type="unfinished">Максимальній розмір вхідного буферу на одне з&apos;єднання (за замовчуванням 86400)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Set the number of script verification threads (1-16, 0=auto, default: 0)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Unable to bind to %s on this computer. Namecoin is probably already running.</source>
+        <translation type="unfinished">Неможливо прив’язати до порту %s на цьому комп’ютері. Молживо гаманець вже запущено.</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
+        <translation type="unfinished">Увага: встановлено занадто велику комісію (-paytxfee).  Комісія зніматиметься кожен раз коли ви проводитимете перекази.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Namecoin will not work properly.</source>
+        <translation type="unfinished">Увага: будь ласка, перевірте дату і час на свому комп’ютері.  Якщо ваш годинник йде неправильно, Namecoin може працювати некоректно.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
+%s
+If the file does not exist, create it with owner-readable-only file permissions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Accept command line and JSON-RPC commands</source>
+        <translation type="unfinished">Приймати команди із командного рядка та команди JSON-RPC
+</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Add a node to connect to and attempt to keep the connection open</source>
+        <translation type="unfinished">Додати вузол для підключення and attempt to keep the connection open</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
+        <translation type="unfinished">Дозволити пошук в DNS для команд «addnode» і «connect»
+</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Allow JSON-RPC connections from specified IP address</source>
+        <translation type="unfinished">Дозволити JSON-RPC-з’єднання з вказаної IP-адреси
+</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Namecoin version</source>
+        <translation type="unfinished">Версія</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Block creation options:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot downgrade wallet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot initialize keypool</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot write default address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect only to the specified node(s)</source>
+        <translation type="unfinished">Підключитись лише до вказаного вузла</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect through socks proxy</source>
+        <translation type="unfinished">Підключитись через SOCKS-проксі</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Corrupted block database detected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you want to rebuild the block database now?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Don&apos;t generate coins</source>
+        <translation type="unfinished">Не генерувати монети
+</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Done loading</source>
+        <translation type="unfinished">Завантаження завершене</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error initializing block database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error loading block database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error loading wallet.dat</source>
+        <translation type="unfinished">Помилка при завантаженні wallet.dat</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error loading wallet.dat: Wallet corrupted</source>
+        <translation type="unfinished">Помилка при завантаженні wallet.dat: Гаманець пошкоджено      </translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error loading wallet.dat: Wallet requires newer version of Namecoin</source>
+        <translation type="unfinished">Помилка при завантаженні wallet.dat: Гаманець потребує новішої версії Namecoin-клієнта</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error opening block database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Disk space is low!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Transaction creation failed!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Wallet locked, unable to create transaction!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: could not start node</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: system error: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to read block info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to read block</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to sync block index</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write block index</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write block info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write block</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write file info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write to coin database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write transaction index</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write undo data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Fee per KB to add to transactions you send</source>
+        <translation type="unfinished">Комісія за Кб
+</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Find peers using internet relay chat (default: 0)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Generate coins</source>
+        <translation type="unfinished">Генерувати монети
+</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Get help for a command</source>
+        <translation type="unfinished">Отримати довідку по команді
+</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>How thorough the block verification is (0-4, default: 3)</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+77"/>
@@ -5819,17 +7645,18 @@ If the file does not exist, create it with owner-readable-only file permissions.
 =======
         <location line="+1"/>
         <source>Importing blocks from block database...</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Imports blocks from external blk000??.dat file</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Information</source>
+<<<<<<< HEAD
         <translation type="unfinished"/>
     </message>
     <message>
@@ -5871,14 +7698,23 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
         <translation>Максимальоий буфер , &lt;n&gt; * 1000 байт (за умовчанням: 5000)</translation>
+=======
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
-        <translation>Максимальній розмір виіхідного буферу на одне з&apos;єднання (за замовчуванням 1000)</translation>
+        <source>Insufficient funds</source>
+        <translation type="unfinished">Недостатньо коштів</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
+        <source>Invalid -proxy address: &apos;%s&apos;</source>
+        <translation type="unfinished">Помилка в адресі проксі-сервера: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+<<<<<<< HEAD
         <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
 <<<<<<< HEAD
         <translation>Тільки приймати блок відповідності ланцюга вбудованих контрольно-пропускних пунктів (за замовчуванням: 1)</translation>
@@ -5896,21 +7732,31 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <location line="+9"/>
 =======
         <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Output extra debugging information. Implies all other -debug* options</source>
-        <translation>Виводити більше налагоджувальної інформації. Implies all other -debug* options</translation>
+=======
+        <source>Invalid -tor address: &apos;%s&apos;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Output extra network debugging information</source>
-        <translation type="unfinished"/>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation type="unfinished">Помилка у величині комісії: &apos;%s&apos;</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="+2"/>
-        <source>Prepend debug output with timestamp</source>
-        <translation>Доповнювати налагоджувальний вивід відміткою часу</translation>
+        <location line="+1"/>
+        <source>Invalid amount</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>List commands</source>
+        <translation type="unfinished">Список команд
+</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Listen for connections on &lt;port&gt; (default: 8334 or testnet: 18334)</source>
+        <translation type="unfinished">Чекати на з&apos;єднання на порту (по замовченню 8334 або тестова мережа 18334)</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -5918,44 +7764,57 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Committing original src/qt
 =======
         <location line="+1"/>
-        <source>Rebuild blockchain index from current blk000??.dat files</source>
-        <translation type="unfinished"/>
+        <source>Loading addresses...</source>
+        <translation type="unfinished">Завантаження адрес...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
         <translation>Параметри SSL: (див. Bitcoin Wiki)</translation>
+=======
+        <location line="+1"/>
+        <source>Loading block index...</source>
+        <translation type="unfinished">Завантаження індексу блоків...</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
 <<<<<<< HEAD
         <location line="+4"/>
 =======
         <location line="+1"/>
-        <source>Select the version of socks proxy to use (4-5, default: 5)</source>
-        <translation type="unfinished"/>
+        <source>Loading wallet...</source>
+        <translation type="unfinished">Завантаження гаманця...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
 >>>>>>> Committing original src/qt
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Відсилаті налагоджувальну інформацію на консоль, а не у файл debug.log</translation>
+=======
+        <location line="+1"/>
+        <source>Maintain a full transaction index (default: 0)</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
 <<<<<<< HEAD
         <location line="+6"/>
 =======
         <location line="+1"/>
-        <source>Send trace/debug info to debugger</source>
-        <translation>Відсилаті налагоджувальну інформацію до налагоджувача</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Set maximum block size in bytes (default: 250000)</source>
-        <translation type="unfinished"/>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
+        <translation type="unfinished">Підтримувати не більше &lt;n&gt; зв&apos;язків з колегами (за замовчуванням: 125)</translation>
     </message>
     <message>
         <location line="+1"/>
+        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
+        <translation type="unfinished">Максимальоий буфер , &lt;n&gt; * 1000 байт (за умовчанням: 5000)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <source>Set minimum block size in bytes (default: 0)</source>
         <translation type="unfinished"/>
@@ -5972,13 +7831,23 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
+=======
+        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
+        <translation type="unfinished">Максимальній розмір виіхідного буферу на одне з&apos;єднання (за замовчуванням 1000)</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation>Odredi vremenski prozor za spajanje na mrežu u milisekundama (ugrađeni izbor: 5000)</translation>
+        <location line="+1"/>
+        <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
+        <location line="+1"/>
+        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+6"/>
@@ -6027,20 +7896,27 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation>Намагатись використовувати UPnP для відображення порту що прослуховується на роутері (default: 0)</translation>
+=======
+        <location line="+1"/>
+        <source>Options:</source>
+        <translation type="unfinished">Параметри:
+</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Намагатись використовувати UPnP для відображення порту що прослуховується на роутері (default: 1 when listening)</translation>
+        <source>Output extra debugging information. Implies all other -debug* options</source>
+        <translation type="unfinished">Виводити більше налагоджувальної інформації. Implies all other -debug* options</translation>
     </message>
     <message>
 <<<<<<< HEAD
 =======
         <location line="+1"/>
-        <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
-        <translation type="unfinished"/>
+        <source>Output extra network debugging information</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <location line="+2"/>
         <source>Username for JSON-RPC connections</source>
@@ -6078,13 +7954,25 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+1"/>
+        <source>Password for JSON-RPC connections</source>
+        <translation type="unfinished">Пароль для JSON-RPC-з’єднань
+</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>wallet.dat corrupt, salvage failed</source>
-        <translation type="unfinished"/>
+        <source>Prepend debug output with timestamp</source>
+        <translation type="unfinished">Доповнювати налагоджувальний вивід відміткою часу</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
+        <location line="+1"/>
+        <source>Rebuild blockchain index from current blk000??.dat files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-58"/>
@@ -6206,17 +8094,70 @@ If the file does not exist, create it with owner-readable-only file permissions.
 =======
         <location line="-20"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+1"/>
+        <source>Rescan the block chain for missing wallet transactions</source>
+        <translation type="unfinished">Пересканувати ланцюжок блоків, в пошуку втрачених переказів
+</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Rescanning...</source>
+        <translation type="unfinished">Сканування...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Run in the background as a daemon and accept commands</source>
+        <translation type="unfinished">Запустити в фоновому режимі (як демон) та приймати команди
+</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation type="unfinished">Параметри SSL: (див. Bitcoin Wiki)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Select the version of socks proxy to use (4-5, default: 5)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send command to -server or namecoind</source>
+        <translation type="unfinished">Відправити команду серверу -server чи демону
+</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
+        <translation type="unfinished">Відправляти команди на вузол, запущений на &lt;ip&gt; (за промовчуванням: 127.0.0.1)
+</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send trace/debug info to console instead of debug.log file</source>
+        <translation type="unfinished">Відсилаті налагоджувальну інформацію на консоль, а не у файл debug.log</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send trace/debug info to debugger</source>
+        <translation type="unfinished">Відсилаті налагоджувальну інформацію до налагоджувача</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Server certificate file (default: server.cert)</source>
-        <translation>Сертифікату сервера (за промовчуванням: server.cert)
+        <translation type="unfinished">Сертифікату сервера (за промовчуванням: server.cert)
 </translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Server private key (default: server.pem)</source>
-        <translation>Закритий ключ сервера (за промовчуванням: server.pem)
+        <translation type="unfinished">Закритий ключ сервера (за промовчуванням: server.pem)
 </translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+16"/>
@@ -6301,21 +8242,48 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Error loading wallet.dat: Wallet corrupted</source>
         <translation>Помилка при завантаженні wallet.dat: Гаманець пошкоджено      </translation>
+=======
+        <location line="+1"/>
+        <source>Set database cache size in megabytes (default: 25)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Namecoin</source>
-        <translation>Помилка при завантаженні wallet.dat: Гаманець потребує новішої версії Namecoin-клієнта</translation>
-    </message>
-    <message>
-        <location line="+73"/>
-        <source>Verifying block database integrity...</source>
-        <translation type="unfinished"/>
+        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
+        <translation type="unfinished">Встановити розмір пулу ключів &lt;n&gt; (за промовчуванням: 100)
+</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Verifying wallet integrity...</source>
-        <translation type="unfinished"/>
+        <source>Set maximum block size in bytes (default: 250000)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set minimum block size in bytes (default: 0)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specify configuration file (default: bitcoin.conf)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specify connection timeout in milliseconds (default: 5000)</source>
+        <translation type="unfinished">Odredi vremenski prozor za spajanje na mrežu u milisekundama (ugrađeni izbor: 5000)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specify data directory</source>
+        <translation type="unfinished">Вкажіть робочий каталог
+</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -6335,10 +8303,12 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Committing original src/qt
 =======
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Namecoin to complete</source>
-        <translation>Потрібно перезаписати гаманець: перезапустіть Namecoin-клієнт для завершення</translation>
+        <source>Specify pid file (default: namecoind.pid)</source>
+        <translation type="unfinished">Вкажіть pid-файл (за промовчуванням: namecoind.pid)
+</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-77"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Error loading wallet.dat</source>
@@ -6356,13 +8326,25 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Invalid -proxy address: &apos;%s&apos;</source>
         <translation>Помилка в адресі проксі-сервера: &apos;%s&apos;</translation>
+=======
+        <location line="+1"/>
+        <source>Specify your own public address</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+46"/>
-        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation type="unfinished"/>
+        <location line="+1"/>
+        <source>System error: </source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
+        <location line="+1"/>
+        <source>This help message</source>
+        <translation type="unfinished">Дана довідка
+</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
         <location line="-1"/>
         <source>Unknown -socks proxy version requested: %i</source>
 <<<<<<< HEAD
@@ -6382,13 +8364,24 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Cannot resolve -bind address: &apos;%s&apos;</source>
         <translation type="unfinished"/>
+=======
+        <location line="+1"/>
+        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
+        <translation type="unfinished">Поріг відключення неправильно підєднаних пірів (за замовчуванням: 100)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation type="unfinished"/>
+        <source>To use the %s option</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
+        <location line="+1"/>
+        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
+        <translation type="unfinished">Неможливо прив’язати до порту %s на цьому комп’ютері (bind returned error %d, %s)</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+48"/>
@@ -6400,28 +8393,35 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>Помилка у величині комісії: &apos;%s&apos;</translation>
+=======
+        <location line="+1"/>
+        <source>Unknown -socks proxy version requested: %i</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="-15"/>
-        <source>Error: could not start node</source>
-        <translation type="unfinished"/>
+        <location line="+1"/>
+        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+16"/>
-        <source>Invalid amount</source>
-        <translation type="unfinished"/>
+        <location line="+1"/>
+        <source>Upgrade wallet to latest format</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-4"/>
-        <source>Insufficient funds</source>
-        <translation>Недостатньо коштів</translation>
+        <location line="+1"/>
+        <source>Usage:</source>
+        <translation type="unfinished">Вкористання:</translation>
     </message>
     <message>
-        <location line="+8"/>
-        <source>Loading block index...</source>
-        <translation>Завантаження індексу блоків...</translation>
+        <location line="+1"/>
+        <source>Use OpenSSL (https) for JSON-RPC connections</source>
+        <translation type="unfinished">Використовувати OpenSSL (https) для JSON-RPC-з’єднань
+</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-62"/>
@@ -6452,13 +8452,24 @@ If the file does not exist, create it with owner-readable-only file permissions.
 =======
         <source>Unable to bind to %s on this computer. Namecoin is probably already running.</source>
         <translation>Неможливо прив’язати до порту %s на цьому комп’ютері. Молживо гаманець вже запущено.</translation>
+=======
+        <location line="+1"/>
+        <source>Use UPnP to map the listening port (default: 0)</source>
+        <translation type="unfinished">Намагатись використовувати UPnP для відображення порту що прослуховується на роутері (default: 0)</translation>
     </message>
     <message>
-        <location line="+54"/>
-        <source>Find peers using internet relay chat (default: 0)</source>
-        <translation type="unfinished"/>
+        <location line="+1"/>
+        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
+        <translation type="unfinished">Намагатись використовувати UPnP для відображення порту що прослуховується на роутері (default: 1 when listening)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
+        <location line="+1"/>
+        <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+<<<<<<< HEAD
         <location line="-2"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Fee per KB to add to transactions you send</source>
@@ -6485,18 +8496,31 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <source>Cannot downgrade wallet</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+1"/>
+        <source>Use the test network</source>
+        <translation type="unfinished">Використовувати тестову мережу
+</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot initialize keypool</source>
-        <translation type="unfinished"/>
+        <source>Username for JSON-RPC connections</source>
+        <translation type="unfinished">Ім’я користувача для JSON-RPC-з’єднань
+</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="+3"/>
-        <source>Cannot write default address</source>
-        <translation type="unfinished"/>
+        <location line="+1"/>
+        <source>Verifying database...</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+1"/>
+        <source>Verifying wallet integrity...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+67"/>
@@ -6563,6 +8587,31 @@ If the file does not exist, create it with owner-readable-only file permissions.
 %s
 If the file does not exist, create it with owner-readable-only file permissions.</source>
         <translation type="unfinished"/>
+=======
+        <location line="+1"/>
+        <source>Wallet needed to be rewritten: restart Namecoin to complete</source>
+        <translation type="unfinished">Потрібно перезаписати гаманець: перезапустіть Namecoin-клієнт для завершення</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Warning</source>
+        <translation type="unfinished">Увага</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Warning: This version is obsolete, upgrade required!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>You need to rebuild the databases using -reindex to change -txindex</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>wallet.dat corrupt, salvage failed</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 </TS>

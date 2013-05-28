@@ -46,6 +46,7 @@ CTxMemPool mempool;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
 <<<<<<< HEAD
+<<<<<<< HEAD
 CChain chainActive;
 CChain chainMostWork;
 int64_t nTimeBestReceived = 0;
@@ -93,8 +94,11 @@ struct CBlockIndexWorkComparator
         if (pa->nSequenceId > pb->nSequenceId) return true;
 =======
 uint256 hashGenesisBlock("0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f");
+=======
+uint256 hashGenesisBlock("0x000000000062b72c5e2ceb45fbc8587e807c155b0da735e6483dfba2f0a9c770");
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
 CBigNum bnProofOfWorkLimit(~uint256(0) >> 32);
-const int nTotalBlocksEstimate = 134444; // Conservative estimate of total nr of blocks on main chain
+int nTotalBlocksEstimate = 112000; // Conservative estimate of total nr of blocks on main chain
 const int nInitialBlockThreshold = 120; // Regard blocks up until N-threshold as "initial download"
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -103,6 +107,8 @@ CBigNum bnBestInvalidWork = 0;
 uint256 hashBestChain = 0;
 CBlockIndex* pindexBest = NULL;
 int64 nTimeBestReceived = 0;
+
+CMedianFilter<int> cPeerBlockCounts(8, 0); // Amount of blocks that other nodes claim to have
 
 map<uint256, CBlock*> mapOrphanBlocks;
 multimap<uint256, CBlock*> mapOrphanBlocksByPrev;
@@ -1321,6 +1327,13 @@ int GetNumBlocksOfPeers()
 =======
     return hooks->LockinHeight();
 >>>>>>> missed lockin constant
+}
+
+// Return maximum amount of blocks that other nodes claim to have
+int GetNumBlocksOfPeers()
+{
+    return std::max(cPeerBlockCounts.median(), nTotalBlocksEstimate);
+    //return std::max(cPeerBlockCounts.median(), Checkpoints::GetTotalBlocksEstimate());
 }
 
 bool IsInitialBlockDownload()
@@ -3056,6 +3069,7 @@ bool static LoadBlockIndexDB()
     sort(vSortedByHeight.begin(), vSortedByHeight.end());
     BOOST_FOREACH(const PAIRTYPE(int, CBlockIndex*)& item, vSortedByHeight)
     {
+<<<<<<< HEAD
         CBlockIndex* pindex = item.second;
         pindex->nChainWork = (pindex->pprev ? pindex->pprev->nChainWork : 0) + pindex->GetBlockWork().getuint256();
         pindex->nChainTx = (pindex->pprev ? pindex->pprev->nChainTx : 0) + pindex->nTx;
@@ -3063,6 +3077,15 @@ bool static LoadBlockIndexDB()
             setBlockIndexValid.insert(pindex);
         if (pindex->nStatus & BLOCK_FAILED_MASK && (!pindexBestInvalid || pindex->nChainWork > pindexBestInvalid->nChainWork))
             pindexBestInvalid = pindex;
+=======
+        hashGenesisBlock = uint256("0x00000007199508e34a9ff81e6ec0c477a4cccff2a4767a8eee39c11db367b008");
+        nTotalBlocksEstimate = 23000;
+        bnProofOfWorkLimit = CBigNum(~uint256(0) >> 28);
+        pchMessageStart[0] = 0xfa;
+        pchMessageStart[1] = 0xbf;
+        pchMessageStart[2] = 0xb5;
+        pchMessageStart[3] = 0xda;
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     }
 
 <<<<<<< HEAD
@@ -3782,11 +3805,16 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
 
         pfrom->fSuccessfullyConnected = true;
 
+<<<<<<< HEAD
         LogPrintf("receive version message: %s: version %d, blocks=%d, us=%s, them=%s, peer=%s\n", pfrom->cleanSubVer, pfrom->nVersion, pfrom->nStartingHeight, addrMe.ToString(), addrFrom.ToString(), pfrom->addr.ToString());
 
         AddTimeData(pfrom->addr, nTime);
 
         LOCK(cs_main);
+=======
+        printf("version message: version %d, blocks=%d\n", pfrom->nVersion, pfrom->nStartingHeight);
+
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         cPeerBlockCounts.input(pfrom->nStartingHeight);
     }
 

@@ -246,11 +246,16 @@ void FormatHashBuffers(CBlock* pblock, char* pmidstate, char* pdata, char* phash
 bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey);
 >>>>>>> Merged mining
 bool CheckProofOfWork(uint256 hash, unsigned int nBits);
+<<<<<<< HEAD
 /** Calculate the minimum amount of work a received block needs, without knowing its direct parent */
 unsigned int ComputeMinWork(unsigned int nBase, int64_t nTime);
 /** Get the number of active peers */
 int GetNumBlocksOfPeers();
 /** Check whether we are doing an initial block download (synchronizing from disk or network) */
+=======
+int GetTotalBlocksEstimate();
+int GetNumBlocksOfPeers();
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
 bool IsInitialBlockDownload();
 /** Format a string that describes several potential problems detected by the core */
 std::string GetWarnings(std::string strFor);

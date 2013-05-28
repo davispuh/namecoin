@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 <?xml version="1.0" ?><!DOCTYPE TS><TS language="sk" version="2.0">
 <<<<<<< HEAD
 =======
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="sk">
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
 <defaultcodec>UTF-8</defaultcodec>
 >>>>>>> Committing original src/qt
 <context>
@@ -36,19 +42,24 @@
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
-        <location line="+41"/>
-        <source>Copyright © 2009-2013 The Bitcoin and Namecoin developers</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+13"/>
+        <location line="+57"/>
         <source>
 This is experimental software.
 
 Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../aboutdialog.cpp" line="+17"/>
+        <source>Copyright</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>2009-%1 The Bitcoin and Namecoin developers</source>
+        <translation type="unfinished"></translation>
     </message>
 <<<<<<< HEAD
     <message>
@@ -168,7 +179,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+25"/>
 >>>>>>> Committing original src/qt
         <source>Delete the currently selected address from the list</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -223,13 +234,17 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="-14"/>
         <source>Verify a message to ensure it was signed with a specified Namecoin address</source>
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
+=======
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Verify Message</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
@@ -237,6 +252,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>&amp;Zmazať</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../addressbookpage.cpp" line="-5"/>
 >>>>>>> Committing original src/qt
@@ -257,15 +273,19 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location filename="../addressbookpage.cpp" line="+65"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location filename="../addressbookpage.cpp" line="+66"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Copy &amp;Label</source>
         <translation>Kopírovať &amp;popis</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>&amp;Edit</source>
         <translation>&amp;Upraviť</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+194"/>
@@ -281,6 +301,14 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="+250"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+1"/>
+        <source>Send &amp;Coins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+263"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Export Address Book Data</source>
         <translation>Exportovať dáta z adresára</translation>
 >>>>>>> Committing original src/qt
@@ -316,6 +344,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../addresstablemodel.cpp" line="+168"/>
 =======
         <location filename="../addresstablemodel.cpp" line="+144"/>
@@ -323,6 +352,9 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location filename="../addresstablemodel.cpp" line="+142"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location filename="../addresstablemodel.cpp" line="+146"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Label</source>
         <translation>Popis</translation>
     </message>
@@ -343,10 +375,14 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location filename="../forms/askpassphrasedialog.ui" line="+26"/>
         <source>Passphrase Dialog</source>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <translation>Dialóg hesla</translation>
 =======
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
+=======
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+21"/>
@@ -423,9 +459,14 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Ste si istí, že si želáte zašifrovať peňaženku?</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+11"/>
+        <source>Namecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your namecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+100"/>
@@ -440,12 +481,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Peňaženka zašifrovaná</translation>
     </message>
     <message>
-        <location line="-56"/>
         <source>Namecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Namecoins from being stolen by malware infecting your computer.</source>
-        <translation>Namecoin sa teraz ukončí pre dokončenie procesu šifrovania. Pamätaj že šifrovanie peňaženky Ťa nemôže úplne ochrániť pred kráďežou namecoinov pomocou škodlivého software.</translation>
+        <translation type="obsolete">Namecoin sa teraz ukončí pre dokončenie procesu šifrovania. Pamätaj že šifrovanie peňaženky Ťa nemôže úplne ochrániť pred kráďežou namecoinov pomocou škodlivého software.</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="-43"/>
         <location line="+7"/>
         <location line="+42"/>
         <location line="+6"/>
@@ -487,8 +527,9 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
 </context>
 <context>
-    <name>NamecoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../bitcoingui.cpp" line="+295"/>
@@ -524,8 +565,27 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="-322"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location filename="../bitcoin.cpp" line="+115"/>
+        <source>A fatal error occurred. Namecoin can no longer continue safely and will quit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../bitcoingui.cpp" line="+73"/>
+        <location line="+550"/>
+        <source>Namecoin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-550"/>
+        <source>Wallet</source>
+        <translation type="unfinished">Peňaženka</translation>
+    </message>
+    <message>
+        <location line="+139"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>&amp;Overview</source>
-        <translation>&amp;Prehľad</translation>
+        <translation type="unfinished">&amp;Prehľad</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -539,17 +599,17 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+1"/>
 >>>>>>> Committing original src/qt
         <source>Show general overview of wallet</source>
-        <translation>Zobraziť celkový prehľad o peňaženke</translation>
+        <translation type="unfinished">Zobraziť celkový prehľad o peňaženke</translation>
     </message>
     <message>
-        <location line="+20"/>
-        <source>&amp;Transactions</source>
-        <translation>&amp;Transakcie</translation>
+        <location line="+6"/>
+        <source>&amp;Send coins</source>
+        <translation type="unfinished">&amp;Poslať Namecoins</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Browse transaction history</source>
-        <translation>Prechádzať históriu transakcií</translation>
+        <source>Send coins to a Namecoin address</source>
+        <translation type="unfinished">Poslať Namecoins na adresu</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -559,26 +619,32 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+7"/>
 =======
         <location line="+6"/>
-        <source>&amp;Address Book</source>
-        <translation>&amp;Adresár</translation>
+        <source>&amp;Receive coins</source>
+        <translation type="unfinished">&amp;Prijať Namecoins</translation>
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Edit the list of stored addresses and labels</source>
         <translation>Editovať zoznam uložených adries a popisov</translation>
+=======
+        <source>Show the list of addresses for receiving payments</source>
+        <translation type="unfinished">Zobraziť zoznam adries pre prijímanie platieb.</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="-15"/>
-        <source>&amp;Receive coins</source>
-        <translation>&amp;Prijať Namecoins</translation>
+        <location line="+6"/>
+        <source>&amp;Transactions</source>
+        <translation type="unfinished">&amp;Transakcie</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show the list of addresses for receiving payments</source>
-        <translation>Zobraziť zoznam adries pre prijímanie platieb.</translation>
+        <source>Browse transaction history</source>
+        <translation type="unfinished">Prechádzať históriu transakcií</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+31"/>
 >>>>>>> Committing original src/qt
@@ -590,15 +656,29 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+39"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+6"/>
+        <source>&amp;Address Book</source>
+        <translation type="unfinished">&amp;Adresár</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Edit the list of stored addresses and labels</source>
+        <translation type="unfinished">Editovať zoznam uložených adries a popisov</translation>
+    </message>
+    <message>
+        <location line="+17"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>E&amp;xit</source>
-        <translation>U&amp;končiť</translation>
+        <translation type="unfinished">U&amp;končiť</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Quit application</source>
-        <translation>Ukončiť program</translation>
+        <translation type="unfinished">Ukončiť program</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+7"/>
 =======
@@ -611,6 +691,16 @@ This product includes software developed by the OpenSSL Project for use in the O
         <source>Show information about Namecoin</source>
         <translation>Zobraziť informácie o Namecoin</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+3"/>
+        <source>&amp;About Namecoin</source>
+        <translation type="unfinished">&amp;O Namecoin</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show information about Namecoin</source>
+        <translation type="unfinished">Zobraziť informácie o Namecoin</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
 <<<<<<< HEAD
@@ -619,7 +709,7 @@ This product includes software developed by the OpenSSL Project for use in the O
 >>>>>>> Committing original src/qt
         <location line="+2"/>
         <source>About &amp;Qt</source>
-        <translation>O &amp;Qt</translation>
+        <translation type="unfinished">O &amp;Qt</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -628,11 +718,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+1"/>
 >>>>>>> Committing original src/qt
         <source>Show information about Qt</source>
-        <translation>Zobrazit informácie o Qt</translation>
+        <translation type="unfinished">Zobrazit informácie o Qt</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Options...</source>
+<<<<<<< HEAD
         <translation>&amp;Možnosti...</translation>
     </message>
     <message>
@@ -647,14 +738,18 @@ This product includes software developed by the OpenSSL Project for use in the O
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>&amp;Encrypt Wallet...</source>
         <translation>&amp;Zašifrovať Peňaženku...</translation>
+=======
+        <translation type="unfinished">&amp;Možnosti...</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Backup Wallet...</source>
-        <translation>&amp;Backup peňaženku...</translation>
+        <location line="+1"/>
+        <source>Modify configuration options for Namecoin</source>
+        <translation type="unfinished">Upraviť možnosti nastavenia pre Namecoin</translation>
     </message>
     <message>
         <location line="+2"/>
+<<<<<<< HEAD
         <source>&amp;Change Passphrase...</source>
         <translation>&amp;Zmena Hesla...</translation>
     </message>
@@ -703,13 +798,23 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+10"/>
         <source>~%n block(s) remaining</source>
         <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
+=======
+        <source>&amp;Show / Hide</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-265"/>
-        <source>&amp;Export...</source>
-        <translation>&amp;Export...</translation>
+        <location line="+1"/>
+        <source>Show or hide the main Window</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
+        <location line="+1"/>
+        <source>&amp;Encrypt Wallet...</source>
+        <translation type="unfinished">&amp;Zašifrovať Peňaženku...</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-347"/>
 >>>>>>> Committing original src/qt
@@ -720,13 +825,19 @@ This product includes software developed by the OpenSSL Project for use in the O
         <source>Send coins to a Namecoin address</source>
         <translation>Poslať Namecoins na adresu</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+1"/>
+        <source>Encrypt the private keys that belong to your wallet</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="+49"/>
-        <source>Modify configuration options for Namecoin</source>
-        <translation>Upraviť možnosti nastavenia pre Namecoin</translation>
+        <location line="+2"/>
+        <source>&amp;Backup Wallet...</source>
+        <translation type="unfinished">&amp;Backup peňaženku...</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+12"/>
@@ -743,25 +854,36 @@ This product includes software developed by the OpenSSL Project for use in the O
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Backup wallet to another location</source>
         <translation>Zálohovať peňaženku na iné miesto</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Change the passphrase used for wallet encryption</source>
-        <translation>Zmeniť heslo použité na šifrovanie peňaženky</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>&amp;Debug window</source>
-        <translation type="unfinished"/>
+=======
+        <location line="+1"/>
+        <source>Backup wallet to another location</source>
+        <translation type="unfinished">Zálohovať peňaženku na iné miesto</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Open debugging and diagnostic console</source>
-        <translation type="unfinished"/>
+        <source>&amp;Change Passphrase...</source>
+        <translation type="unfinished">&amp;Zmena Hesla...</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="-7"/>
+        <location line="+1"/>
+        <source>Change the passphrase used for wallet encryption</source>
+        <translation type="unfinished">Zmeniť heslo použité na šifrovanie peňaženky</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Sign &amp;message...</source>
+        <translation type="unfinished">Podpísať &amp;správu...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Sign messages with your Namecoin addresses to prove you own them</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>&amp;Verify message...</source>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <translation>Overiť správu</translation>
     </message>
@@ -846,23 +968,37 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
+=======
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Encrypt the private keys that belong to your wallet</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Sign messages with your Namecoin addresses to prove you own them</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Verify messages to ensure they were signed with specified Namecoin addresses</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+2"/>
+        <source>&amp;Export...</source>
+        <translation type="unfinished">&amp;Export...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Export the data in the current tab to a file</source>
+        <translation type="unfinished">Exportovať tento náhľad do súboru</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&amp;Debug window</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Open debugging and diagnostic console</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+48"/>
@@ -872,8 +1008,11 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="+31"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+25"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>&amp;File</source>
-        <translation>&amp;Súbor</translation>
+        <translation type="unfinished">&amp;Súbor</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -886,7 +1025,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+8"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>&amp;Settings</source>
-        <translation>&amp;Nastavenia</translation>
+        <translation type="unfinished">&amp;Nastavenia</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -895,7 +1034,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+6"/>
 >>>>>>> Committing original src/qt
         <source>&amp;Help</source>
-        <translation>&amp;Pomoc</translation>
+        <translation type="unfinished">&amp;Pomoc</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -904,7 +1043,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+9"/>
 >>>>>>> Committing original src/qt
         <source>Tabs toolbar</source>
-        <translation>Lišta záložiek</translation>
+        <translation type="unfinished">Lišta záložiek</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -916,17 +1055,22 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="+8"/>
         <source>Actions toolbar</source>
-        <translation>Lišta aktvivít</translation>
+        <translation type="unfinished">Lišta aktvivít</translation>
     </message>
     <message>
         <location line="+13"/>
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <location line="+10"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+80"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>[testnet]</source>
-        <translation>[testovacia sieť]</translation>
+        <translation type="unfinished">[testovacia sieť]</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-401"/>
@@ -1004,12 +1148,17 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
 =======
         <location line="+63"/>
+=======
+        <location line="-5"/>
+        <location line="+5"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Namecoin client</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location line="+79"/>
+        <location line="+80"/>
         <source>%n active connection(s) to Namecoin network</source>
+<<<<<<< HEAD
         <translation><numerusform>%n aktívne spojenie v Namecoin sieti</numerusform><numerusform>%n aktívne spojenia v Namecoin sieti</numerusform><numerusform>%n aktívnych spojení v Bitconi sieti</numerusform></translation>
     </message>
     <message>
@@ -1031,6 +1180,13 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation><numerusform>%n hodina</numerusform><numerusform>%n hodiny</numerusform><numerusform>%n hodín</numerusform></translation>
 =======
         <translation type="unfinished"/>
+=======
+        <translation type="unfinished">
+            <numerusform>%n aktívne spojenie v Namecoin sieti</numerusform>
+            <numerusform>%n aktívne spojenia v Namecoin sieti</numerusform>
+            <numerusform>%n aktívnych spojení v Bitconi sieti</numerusform>
+        </translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 <<<<<<< HEAD
     <message numerus="yes">
@@ -1070,6 +1226,7 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
 =======
     <message>
+<<<<<<< HEAD
         <location line="+70"/>
         <source>Error</source>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
@@ -1080,6 +1237,16 @@ This product includes software developed by the OpenSSL Project for use in the O
         <source>Warning</source>
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+24"/>
+        <source>Synchronizing with network...</source>
+        <translation type="unfinished">Synchronizácia so sieťou...</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Importing blocks from disk...</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
 <<<<<<< HEAD
@@ -1095,6 +1262,7 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
 =======
         <location line="+3"/>
+<<<<<<< HEAD
         <source>Information</source>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
@@ -1139,23 +1307,55 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="-338"/>
         <source>%n second(s) ago</source>
         <translation><numerusform>pred %n sekundou</numerusform><numerusform>pred %n sekundami</numerusform><numerusform>pred %n sekundami</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <location line="+4"/>
-        <source>%n minute(s) ago</source>
-        <translation><numerusform>pred %n minútou</numerusform><numerusform>pred %n minútami</numerusform><numerusform>pred %n minútami</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <location line="+4"/>
-        <source>%n hour(s) ago</source>
-        <translation><numerusform>pred hodinou</numerusform><numerusform>pred %n hodinami</numerusform><numerusform>pred %n hodinami</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <location line="+4"/>
-        <source>%n day(s) ago</source>
-        <translation><numerusform>včera</numerusform><numerusform>pred %n dňami</numerusform><numerusform>pred %n dňami</numerusform></translation>
+=======
+        <source>Reindexing blocks on disk...</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+9"/>
+        <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Processed %1 blocks of transaction history.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Up to date</source>
+        <translation type="unfinished">Aktualizovaný</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+    </message>
+    <message numerus="yes">
+        <location line="+14"/>
+        <source>%n hour(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <location line="+4"/>
+        <source>%n day(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <location line="+4"/>
+        <source>%n week(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-140"/>
 >>>>>>> Committing original src/qt
@@ -1175,10 +1375,19 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="+7"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
-        <source>Catching up...</source>
-        <translation>Sťahujem...</translation>
+=======
+        <location line="+5"/>
+        <source>%1 behind</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+5"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+        <source>Catching up...</source>
+        <translation type="unfinished">Sťahujem...</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+130"/>
@@ -1192,8 +1401,41 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+97"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+9"/>
+        <source>Last received block was generated %1 ago.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Transactions after this will not yet be visible.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>Error</source>
+        <translation type="unfinished">Chyba</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning</source>
+        <translation type="unfinished">Varovanie</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+68"/>
+        <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Confirm transaction fee</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -1203,12 +1445,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+23"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Sent transaction</source>
-        <translation>Odoslané transakcie</translation>
+        <translation type="unfinished">Odoslané transakcie</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Incoming transaction</source>
-        <translation>Prijaté transakcie</translation>
+        <translation type="unfinished">Prijaté transakcie</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1217,12 +1459,13 @@ Amount: %2
 Type: %3
 Address: %4
 </source>
-        <translation>Dátum: %1
+        <translation type="unfinished">Dátum: %1
 Suma: %2
 Typ: %3
 Adresa: %4</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+69"/>
@@ -1231,27 +1474,30 @@ Adresa: %4</translation>
         <location line="+23"/>
 =======
         <location line="+99"/>
+=======
+        <location line="+102"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <location line="+28"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>URI handling</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-28"/>
         <location line="+28"/>
         <source>URI can not be parsed! This can be caused by an invalid Namecoin address or malformed URI parameters.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+17"/>
 >>>>>>> Committing original src/qt
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Peňaženka je &lt;b&gt;zašifrovaná&lt;/b&gt; a momentálne &lt;b&gt;odomknutá&lt;/b&gt;</translation>
+        <translation type="unfinished">Peňaženka je &lt;b&gt;zašifrovaná&lt;/b&gt; a momentálne &lt;b&gt;odomknutá&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Peňaženka je &lt;b&gt;zašifrovaná&lt;/b&gt; a momentálne &lt;b&gt;zamknutá&lt;/b&gt;</translation>
+        <translation type="unfinished">Peňaženka je &lt;b&gt;zašifrovaná&lt;/b&gt; a momentálne &lt;b&gt;zamknutá&lt;/b&gt;</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -1264,33 +1510,37 @@ Adresa: %4</translation>
 =======
         <location line="+23"/>
         <source>Backup Wallet</source>
-        <translation>Zálohovať peňaženku</translation>
+        <translation type="unfinished">Zálohovať peňaženku</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Wallet Data (*.dat)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Backup Failed</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+0"/>
         <source>There was an error trying to save the wallet data to the new location.</source>
-        <translation>Nastala chyba pri pokuse uložiť peňaženku na nové miesto.</translation>
+        <translation type="unfinished">Nastala chyba pri pokuse uložiť peňaženku na nové miesto.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../Namecoin.cpp" line="+109"/>
         <source>A fatal error occurred. Namecoin can no longer continue safely and will quit.</source>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
+=======
+        <location line="+4"/>
+        <source>Backup Successful</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
-</context>
-<context>
-    <name>ClientModel</name>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../clientmodel.cpp" line="+119"/>
@@ -1299,6 +1549,11 @@ Adresa: %4</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Network Alert</source>
         <translation>Výstraha siete</translation>
+=======
+        <location line="+0"/>
+        <source>The wallet data was successfully saved to the new location.</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
@@ -1330,11 +1585,15 @@ Adresa: %4</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+45"/>
         <source>Fee:</source>
         <translation>Poplatok:</translation>
 =======
         <location filename="../editaddressdialog.cpp" line="+20"/>
+=======
+        <location filename="../editaddressdialog.cpp" line="+21"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>New receiving address</source>
         <translation>Nová adresa pre prijímanie</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
@@ -1355,6 +1614,7 @@ Adresa: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+63"/>
         <source>(un)select all</source>
@@ -1381,16 +1641,19 @@ Adresa: %4</translation>
         <translation>Adresa</translation>
 =======
         <location line="+60"/>
+=======
+        <location line="+76"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
         <translation>Vložená adresa &quot;%1&quot; sa už nachádza v adresári.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid Namecoin address.</source>
         <translation>Vložená adresa &quot;%1&quot; nieje platnou adresou Namecoin.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+10"/>
         <source>Could not unlock wallet.</source>
         <translation>Nepodarilo sa odomknúť peňaženku.</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
@@ -1658,10 +1921,17 @@ Adresa: %4</translation>
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
+<<<<<<< HEAD
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
         <source>Bitcoin-Qt</source>
         <translation type="unfinished"/>
+=======
+        <location filename="../guiutil.cpp" line="+423"/>
+        <location line="+12"/>
+        <source>Namecoin-Qt</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="-12"/>
@@ -1676,7 +1946,7 @@ Adresa: %4</translation>
     <message>
         <location line="+1"/>
         <source>command-line options</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
@@ -1686,7 +1956,7 @@ Adresa: %4</translation>
     <message>
         <location line="+1"/>
         <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1696,7 +1966,456 @@ Adresa: %4</translation>
     <message>
         <location line="+1"/>
         <source>Show splash screen on startup (default: 1)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Namecoin-core</name>
+    <message>
+        <source>Namecoin version</source>
+        <translation type="obsolete">Namecoin verzia</translation>
+    </message>
+    <message>
+        <source>Usage:</source>
+        <translation type="obsolete">Použitie:</translation>
+    </message>
+    <message>
+        <source>Send command to -server or namecoind</source>
+        <translation type="obsolete">Odoslať príkaz -server alebo namecoind</translation>
+    </message>
+    <message>
+        <source>List commands</source>
+        <translation type="obsolete">Zoznam príkazov</translation>
+    </message>
+    <message>
+        <source>Get help for a command</source>
+        <translation type="obsolete">Dostať pomoc pre príkaz</translation>
+    </message>
+    <message>
+        <source>Options:</source>
+        <translation type="obsolete">Možnosti:</translation>
+    </message>
+    <message>
+        <source>Specify configuration file (default: namecoin.conf)</source>
+        <translation type="obsolete">Určiť súbor s nastaveniami (predvolené: namecoin.conf)</translation>
+    </message>
+    <message>
+        <source>Specify pid file (default: namecoind.pid)</source>
+        <translation type="obsolete">Určiť súbor pid (predvolené: namecoind.pid)</translation>
+    </message>
+    <message>
+        <source>Generate coins</source>
+        <translation type="obsolete">Počítaj Namecoins</translation>
+    </message>
+    <message>
+        <source>Don&apos;t generate coins</source>
+        <translation type="obsolete">Nepočítaj Namecoins</translation>
+    </message>
+    <message>
+        <source>Specify data directory</source>
+        <translation type="obsolete">Určiť priečinok s dátami</translation>
+    </message>
+    <message>
+        <source>Listen for connections on &lt;port&gt; (default: 8334 or testnet: 18334)</source>
+        <translation type="obsolete">Načúvať spojeniam na &lt;port&gt; (prednastavené: 8334 alebo testovacia sieť: 18334)</translation>
+    </message>
+    <message>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
+        <translation type="obsolete">Udržiavať maximálne &lt;n&gt; spojení (predvolené: 125)</translation>
+    </message>
+    <message>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8336 or testnet: 18336)</source>
+        <translation type="obsolete">Počúvať JSON-RPC spojeniam na &lt;port&gt; (predvolené: 8336 or testnet: 18336)</translation>
+    </message>
+    <message>
+        <source>Accept command line and JSON-RPC commands</source>
+        <translation type="obsolete">Prijímať príkazy z príkazového riadku a JSON-RPC</translation>
+    </message>
+    <message>
+        <source>Run in the background as a daemon and accept commands</source>
+        <translation type="obsolete">Bežať na pozadí ako démon a prijímať príkazy</translation>
+    </message>
+    <message>
+        <source>Use the test network</source>
+        <translation type="obsolete">Použiť testovaciu sieť</translation>
+    </message>
+    <message>
+        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
+        <translation type="obsolete">Varovanie: -paytxfee je nastavené veľmi vysoko. Toto sú transakčné poplatky ktoré zaplatíte ak odošlete transakciu.</translation>
+    </message>
+    <message>
+        <source>Connect only to the specified node(s)</source>
+        <translation type="obsolete">Pripojiť sa len k určenej nóde</translation>
+    </message>
+    <message>
+        <source>Invalid -tor address: &apos;%s&apos;</source>
+        <translation type="obsolete">Neplatná adresa tor: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Output extra debugging information. Implies all other -debug* options</source>
+        <translation type="obsolete">Produkovať extra ladiace informácie. Implies all other -debug* options</translation>
+    </message>
+    <message>
+        <source>Prepend debug output with timestamp</source>
+        <translation type="obsolete">Pridať na začiatok ladiaceho výstupu časový údaj</translation>
+    </message>
+    <message>
+        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation type="obsolete">SSL možnosť: (pozrite Bitcoin Wiki pre návod na nastavenie SSL)</translation>
+    </message>
+    <message>
+        <source>Send trace/debug info to console instead of debug.log file</source>
+        <translation type="obsolete">Odoslať trace/debug informácie na konzolu namiesto debug.info žurnálu</translation>
+    </message>
+    <message>
+        <source>Send trace/debug info to debugger</source>
+        <translation type="obsolete">Odoslať trace/debug informácie do ladiaceho programu</translation>
+    </message>
+    <message>
+        <source>Specify connection timeout in milliseconds (default: 5000)</source>
+        <translation type="obsolete">Určiť aut spojenia v milisekundách (predvolené: 5000)</translation>
+    </message>
+    <message>
+        <source>Use UPnP to map the listening port (default: 0)</source>
+        <translation type="obsolete">Skúsiť použiť UPnP pre mapovanie počúvajúceho portu (default: 0)</translation>
+    </message>
+    <message>
+        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
+        <translation type="obsolete">Skúsiť použiť UPnP pre mapovanie počúvajúceho portu (default: 1 when listening)</translation>
+    </message>
+    <message>
+        <source>Username for JSON-RPC connections</source>
+        <translation type="obsolete">Užívateľské meno pre JSON-RPC spojenia</translation>
+    </message>
+    <message>
+        <source>Password for JSON-RPC connections</source>
+        <translation type="obsolete">Heslo pre JSON-rPC spojenia</translation>
+    </message>
+    <message>
+        <source>Allow JSON-RPC connections from specified IP address</source>
+        <translation type="obsolete">Povoliť JSON-RPC spojenia z určenej IP adresy.</translation>
+    </message>
+    <message>
+        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
+        <translation type="obsolete">Poslať príkaz nóde bežiacej na &lt;ip&gt; (predvolené: 127.0.0.1)</translation>
+    </message>
+    <message>
+        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
+        <translation type="obsolete">Nastaviť zásobu adries na &lt;n&gt; (predvolené: 100)</translation>
+    </message>
+    <message>
+        <source>Rescan the block chain for missing wallet transactions</source>
+        <translation type="obsolete">Znovu skenovať reťaz blokov pre chýbajúce transakcie</translation>
+    </message>
+    <message>
+        <source>Use OpenSSL (https) for JSON-RPC connections</source>
+        <translation type="obsolete">Použiť OpenSSL (https) pre JSON-RPC spojenia</translation>
+    </message>
+    <message>
+        <source>Server certificate file (default: server.cert)</source>
+        <translation type="obsolete">Súbor s certifikátom servra (predvolené: server.cert)</translation>
+    </message>
+    <message>
+        <source>Server private key (default: server.pem)</source>
+        <translation type="obsolete">Súkromný kľúč servra (predvolené: server.pem)</translation>
+    </message>
+    <message>
+        <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
+        <translation type="obsolete">Prijateľné šifry (predvolené: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
+    </message>
+    <message>
+        <source>This help message</source>
+        <translation type="obsolete">Táto pomocná správa</translation>
+    </message>
+    <message>
+        <source>Connect through socks proxy</source>
+        <translation type="obsolete">Pripojenie cez socks proxy</translation>
+    </message>
+    <message>
+        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
+        <translation type="obsolete">Povoliť vyhľadávanie DNS pre pridanie nódy a spojenie</translation>
+    </message>
+    <message>
+        <source>Loading addresses...</source>
+        <translation type="obsolete">Načítavanie adries...</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet corrupted</source>
+        <translation type="obsolete">Chyba načítania wallet.dat: Peňaženka je poškodená</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet requires newer version of Namecoin</source>
+        <translation type="obsolete">Chyba načítania wallet.dat: Peňaženka vyžaduje novšiu verziu Namecoin</translation>
+    </message>
+    <message>
+        <source>Wallet needed to be rewritten: restart Namecoin to complete</source>
+        <translation type="obsolete">Bolo potrebné prepísať peňaženku: dokončite reštartovaním Namecoin</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat</source>
+        <translation type="obsolete">Chyba načítania wallet.dat</translation>
+    </message>
+    <message>
+        <source>Invalid -proxy address: &apos;%s&apos;</source>
+        <translation type="obsolete">Neplatná adresa proxy: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation type="obsolete">Neplatná suma pre -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Invalid amount</source>
+        <translation type="obsolete">Neplatná suma</translation>
+    </message>
+    <message>
+        <source>Loading block index...</source>
+        <translation type="obsolete">Načítavanie zoznamu blokov...</translation>
+    </message>
+    <message>
+        <source>Add a node to connect to and attempt to keep the connection open</source>
+        <translation type="obsolete">Pridať nódu a pripojiť sa and attempt to keep the connection open</translation>
+    </message>
+    <message>
+        <source>Fee per KB to add to transactions you send</source>
+        <translation type="obsolete">Poplatok za kB ktorý treba pridať k odoslanej transakcii</translation>
+    </message>
+    <message>
+        <source>Loading wallet...</source>
+        <translation type="obsolete">Načítavam peňaženku...</translation>
+    </message>
+    <message>
+        <source>Done loading</source>
+        <translation type="obsolete">Dokončené načítavanie</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="obsolete">Chyba</translation>
+    </message>
+</context>
+<context>
+    <name>NamecoinGUI</name>
+    <message>
+        <source>Sign &amp;message...</source>
+        <translation type="obsolete">Podpísať &amp;správu...</translation>
+    </message>
+    <message>
+        <source>Synchronizing with network...</source>
+        <translation type="obsolete">Synchronizácia so sieťou...</translation>
+    </message>
+    <message>
+        <source>&amp;Overview</source>
+        <translation type="obsolete">&amp;Prehľad</translation>
+    </message>
+    <message>
+        <source>Show general overview of wallet</source>
+        <translation type="obsolete">Zobraziť celkový prehľad o peňaženke</translation>
+    </message>
+    <message>
+        <source>&amp;Transactions</source>
+        <translation type="obsolete">&amp;Transakcie</translation>
+    </message>
+    <message>
+        <source>Browse transaction history</source>
+        <translation type="obsolete">Prechádzať históriu transakcií</translation>
+    </message>
+    <message>
+        <source>&amp;Address Book</source>
+        <translation type="obsolete">&amp;Adresár</translation>
+    </message>
+    <message>
+        <source>Edit the list of stored addresses and labels</source>
+        <translation type="obsolete">Editovať zoznam uložených adries a popisov</translation>
+    </message>
+    <message>
+        <source>&amp;Receive coins</source>
+        <translation type="obsolete">&amp;Prijať Namecoins</translation>
+    </message>
+    <message>
+        <source>Show the list of addresses for receiving payments</source>
+        <translation type="obsolete">Zobraziť zoznam adries pre prijímanie platieb.</translation>
+    </message>
+    <message>
+        <source>&amp;Send coins</source>
+        <translation type="obsolete">&amp;Poslať Namecoins</translation>
+    </message>
+    <message>
+        <source>E&amp;xit</source>
+        <translation type="obsolete">U&amp;končiť</translation>
+    </message>
+    <message>
+        <source>Quit application</source>
+        <translation type="obsolete">Ukončiť program</translation>
+    </message>
+    <message>
+        <source>Show information about Namecoin</source>
+        <translation type="obsolete">Zobraziť informácie o Namecoin</translation>
+    </message>
+    <message>
+        <source>About &amp;Qt</source>
+        <translation type="obsolete">O &amp;Qt</translation>
+    </message>
+    <message>
+        <source>Show information about Qt</source>
+        <translation type="obsolete">Zobrazit informácie o Qt</translation>
+    </message>
+    <message>
+        <source>&amp;Options...</source>
+        <translation type="obsolete">&amp;Možnosti...</translation>
+    </message>
+    <message>
+        <source>&amp;Encrypt Wallet...</source>
+        <translation type="obsolete">&amp;Zašifrovať Peňaženku...</translation>
+    </message>
+    <message>
+        <source>&amp;Backup Wallet...</source>
+        <translation type="obsolete">&amp;Backup peňaženku...</translation>
+    </message>
+    <message>
+        <source>&amp;Change Passphrase...</source>
+        <translation type="obsolete">&amp;Zmena Hesla...</translation>
+    </message>
+    <message>
+        <source>&amp;Export...</source>
+        <translation type="obsolete">&amp;Export...</translation>
+    </message>
+    <message>
+        <source>Send coins to a Namecoin address</source>
+        <translation type="obsolete">Poslať Namecoins na adresu</translation>
+    </message>
+    <message>
+        <source>Modify configuration options for Namecoin</source>
+        <translation type="obsolete">Upraviť možnosti nastavenia pre Namecoin</translation>
+    </message>
+    <message>
+        <source>Export the data in the current tab to a file</source>
+        <translation type="obsolete">Exportovať tento náhľad do súboru</translation>
+    </message>
+    <message>
+        <source>Backup wallet to another location</source>
+        <translation type="obsolete">Zálohovať peňaženku na iné miesto</translation>
+    </message>
+    <message>
+        <source>Change the passphrase used for wallet encryption</source>
+        <translation type="obsolete">Zmeniť heslo použité na šifrovanie peňaženky</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation type="obsolete">Peňaženka</translation>
+    </message>
+    <message>
+        <source>&amp;About Namecoin</source>
+        <translation type="obsolete">&amp;O Namecoin</translation>
+    </message>
+    <message>
+        <source>&amp;File</source>
+        <translation type="obsolete">&amp;Súbor</translation>
+    </message>
+    <message>
+        <source>&amp;Settings</source>
+        <translation type="obsolete">&amp;Nastavenia</translation>
+    </message>
+    <message>
+        <source>&amp;Help</source>
+        <translation type="obsolete">&amp;Pomoc</translation>
+    </message>
+    <message>
+        <source>Tabs toolbar</source>
+        <translation type="obsolete">Lišta záložiek</translation>
+    </message>
+    <message>
+        <source>Actions toolbar</source>
+        <translation type="obsolete">Lišta aktvivít</translation>
+    </message>
+    <message>
+        <source>[testnet]</source>
+        <translation type="obsolete">[testovacia sieť]</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n active connection(s) to Namecoin network</source>
+        <translation type="obsolete">
+            <numerusform>%n aktívne spojenie v Namecoin sieti</numerusform>
+            <numerusform>%n aktívne spojenia v Namecoin sieti</numerusform>
+            <numerusform>%n aktívnych spojení v Bitconi sieti</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n second(s) ago</source>
+        <translation type="obsolete">
+            <numerusform>pred %n sekundou</numerusform>
+            <numerusform>pred %n sekundami</numerusform>
+            <numerusform>pred %n sekundami</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n minute(s) ago</source>
+        <translation type="obsolete">
+            <numerusform>pred %n minútou</numerusform>
+            <numerusform>pred %n minútami</numerusform>
+            <numerusform>pred %n minútami</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n hour(s) ago</source>
+        <translation type="obsolete">
+            <numerusform>pred hodinou</numerusform>
+            <numerusform>pred %n hodinami</numerusform>
+            <numerusform>pred %n hodinami</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s) ago</source>
+        <translation type="obsolete">
+            <numerusform>včera</numerusform>
+            <numerusform>pred %n dňami</numerusform>
+            <numerusform>pred %n dňami</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Up to date</source>
+        <translation type="obsolete">Aktualizovaný</translation>
+    </message>
+    <message>
+        <source>Catching up...</source>
+        <translation type="obsolete">Sťahujem...</translation>
+    </message>
+    <message>
+        <source>Last received block was generated %1.</source>
+        <translation type="obsolete">Posledný prijatý blok bol generovaný %1.</translation>
+    </message>
+    <message>
+        <source>Sent transaction</source>
+        <translation type="obsolete">Odoslané transakcie</translation>
+    </message>
+    <message>
+        <source>Incoming transaction</source>
+        <translation type="obsolete">Prijaté transakcie</translation>
+    </message>
+    <message>
+        <source>Date: %1
+Amount: %2
+Type: %3
+Address: %4
+</source>
+        <translation type="obsolete">Dátum: %1
+Suma: %2
+Typ: %3
+Adresa: %4</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
+        <translation type="obsolete">Peňaženka je &lt;b&gt;zašifrovaná&lt;/b&gt; a momentálne &lt;b&gt;odomknutá&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
+        <translation type="obsolete">Peňaženka je &lt;b&gt;zašifrovaná&lt;/b&gt; a momentálne &lt;b&gt;zamknutá&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Backup Wallet</source>
+        <translation type="obsolete">Zálohovať peňaženku</translation>
+    </message>
+    <message>
+        <source>There was an error trying to save the wallet data to the new location.</source>
+        <translation type="obsolete">Nastala chyba pri pokuse uložiť peňaženku na nové miesto.</translation>
     </message>
 </context>
 <context>
@@ -1734,17 +2453,17 @@ Adresa: %4</translation>
     <message>
         <location line="+35"/>
         <source>Reset all client options to default.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Reset Options</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
         <source>&amp;Network</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
@@ -1769,7 +2488,7 @@ Adresa: %4</translation>
     <message>
         <location line="+9"/>
         <source>Proxy &amp;IP:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+19"/>
@@ -1779,7 +2498,7 @@ Adresa: %4</translation>
     <message>
         <location line="+7"/>
         <source>&amp;Port:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+19"/>
@@ -1789,17 +2508,17 @@ Adresa: %4</translation>
     <message>
         <location line="+7"/>
         <source>SOCKS &amp;Version:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
         <source>SOCKS version of the proxy (e.g. 5)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+36"/>
         <source>&amp;Window</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
@@ -1829,12 +2548,12 @@ Adresa: %4</translation>
     <message>
         <location line="+8"/>
         <source>User Interface &amp;language:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
         <source>The user interface language can be set here. This setting will take effect after restarting Namecoin.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1844,14 +2563,19 @@ Adresa: %4</translation>
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+9"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Whether to show Bitcoin addresses in the transaction list or not.</source>
 >>>>>>> Committing original src/qt
         <translation type="unfinished"/>
+=======
+        <source>Whether to show Namecoin addresses in the transaction list or not.</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+3"/>
@@ -1891,26 +2615,27 @@ Adresa: %4</translation>
     <message>
         <location line="+71"/>
         <source>&amp;OK</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
         <source>&amp;Cancel</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
         <source>&amp;Apply</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="+53"/>
         <source>default</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+130"/>
         <source>Confirm options reset</source>
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <translation type="unfinished"/>
     </message>
@@ -1919,6 +2644,19 @@ Adresa: %4</translation>
 <<<<<<< HEAD
         <source>(change)</source>
         <translation type="unfinished"/>
+=======
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Some settings may require a client restart to take effect.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Do you want to proceed?</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
@@ -1929,6 +2667,7 @@ Adresa: %4</translation>
         <translation>Upraviť adresu</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+11"/>
         <source>&amp;Label</source>
         <translation>&amp;Popis</translation>
@@ -1937,6 +2676,17 @@ Adresa: %4</translation>
         <location line="+10"/>
         <source>The label associated with this address list entry</source>
         <translation type="unfinished"/>
+=======
+        <location line="-9"/>
+        <location line="+9"/>
+        <source>This setting will take effect after restarting Namecoin.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>The supplied proxy address is invalid.</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+17"/>
@@ -1944,9 +2694,16 @@ Adresa: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-10"/>
         <source>&amp;Address</source>
         <translation>&amp;Adresa</translation>
+=======
+        <location line="+51"/>
+        <location line="+183"/>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Namecoin network after a connection is established, but this process has not completed yet.</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="+28"/>
@@ -1969,6 +2726,7 @@ Adresa: %4</translation>
         <translation>Upraviť odosielaciu adresu</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+76"/>
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
         <translation>Vložená adresa &quot;%1&quot; sa už nachádza v adresári.</translation>
@@ -1977,6 +2735,16 @@ Adresa: %4</translation>
         <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid Bitcoin address.</source>
         <translation>Vložená adresa &quot;%1&quot; nieje platnou adresou bitcoin.</translation>
+=======
+        <location line="+124"/>
+        <source>Immature:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Mined balance that has not yet matured</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+10"/>
@@ -2002,9 +2770,24 @@ Adresa: %4</translation>
         <translation>názov</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
         <translation type="unfinished"/>
+=======
+        <location filename="../overviewpage.cpp" line="+115"/>
+        <location line="+1"/>
+        <source>out of sync</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PaymentServer</name>
+    <message>
+        <location filename="../paymentserver.cpp" line="+108"/>
+        <source>Cannot start namecoin: click-to-pay handler</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+3"/>
@@ -2020,9 +2803,15 @@ Adresa: %4</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/helpmessagedialog.ui" line="+19"/>
         <source>Bitcoin Core - Command-line options</source>
         <translation type="unfinished"/>
+=======
+        <location filename="../forms/qrcodedialog.ui" line="+14"/>
+        <source>QR Code Dialog</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location filename="../utilitydialog.cpp" line="+38"/>
@@ -2045,6 +2834,7 @@ Adresa: %4</translation>
         <translation>voľby príkazového riadku</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
         <source>UI options</source>
         <translation>UI možnosti</translation>
@@ -2068,11 +2858,37 @@ Adresa: %4</translation>
         <location line="+1"/>
         <source>Choose data directory on startup (default: 0)</source>
         <translation type="unfinished"/>
+=======
+        <location filename="../qrcodedialog.cpp" line="+62"/>
+        <source>Error encoding URI into QR Code.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+40"/>
+        <source>The entered amount is invalid, please check.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Resulting URI too long, try to reduce the text for label / message.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Save QR Code</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>PNG Images (*.png)</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
     <name>Intro</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/intro.ui" line="+14"/>
         <source>Welcome</source>
         <translation>Vitajte</translation>
@@ -2081,9 +2897,15 @@ Adresa: %4</translation>
         <location line="+9"/>
         <source>Welcome to Bitcoin Core.</source>
         <translation type="unfinished"/>
+=======
+        <location filename="../forms/rpcconsole.ui" line="+46"/>
+        <source>Client name</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+26"/>
+<<<<<<< HEAD
         <source>As this is the first time the program is launched, you can choose where Bitcoin Core will store its data.</source>
         <translation type="unfinished"/>
     </message>
@@ -2126,11 +2948,63 @@ Adresa: %4</translation>
         <location line="+3"/>
         <source>(of %1GB needed)</source>
         <translation>(z %1GB potrebných)</translation>
+=======
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+36"/>
+        <location line="+53"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location filename="../rpcconsole.cpp" line="+345"/>
+        <source>N/A</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-217"/>
+        <source>Client version</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-45"/>
+        <source>&amp;Information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+68"/>
+        <source>Using OpenSSL version</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+49"/>
+        <source>Startup time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Network</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Number of connections</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>On testnet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Block chain</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/openuridialog.ui" line="+14"/>
         <source>Open URI</source>
         <translation>Otvoriť URI</translation>
@@ -2154,11 +3028,37 @@ Adresa: %4</translation>
         <location filename="../openuridialog.cpp" line="+47"/>
         <source>Select payment request file to open</source>
         <translation type="unfinished"/>
+=======
+        <location line="+7"/>
+        <source>Current number of blocks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Estimated total blocks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Last block time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>&amp;Open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Command-line options</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
     <name>OptionsDialog</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/optionsdialog.ui" line="+14"/>
         <source>Options</source>
         <translation>Možnosti</translation>
@@ -2217,11 +3117,84 @@ Adresa: %4</translation>
         <location line="+58"/>
         <source>Connect to the Bitcoin network through a SOCKS proxy.</source>
         <translation type="unfinished"/>
+=======
+        <location line="+7"/>
+        <source>Show the Namecoin-Qt help message to get a list with possible Namecoin command-line options.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
+        <source>&amp;Show</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>&amp;Console</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-260"/>
+        <source>Build date</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-104"/>
+        <source>Namecoin - Debug window</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Namecoin Core</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+279"/>
+        <source>Debug log file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Open the Namecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+102"/>
+        <source>Clear console</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../rpcconsole.cpp" line="-30"/>
+        <source>Welcome to the Namecoin RPC console.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+    </message>
+    <message>
+<<<<<<< HEAD
+        <location line="+3"/>
         <source>&amp;Connect through SOCKS proxy (default proxy):</source>
         <translation type="unfinished"/>
+=======
+        <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
+        <location filename="../sendcoinsdialog.cpp" line="+125"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <location line="+6"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <source>Send Coins</source>
+        <translation>Poslať Namecoins</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+34"/>
@@ -2309,9 +3282,15 @@ Adresa: %4</translation>
         <translation>M&amp;inimalizovať pri zavretí</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+21"/>
         <source>&amp;Display</source>
         <translation>&amp;Displej</translation>
+=======
+        <location line="+5"/>
+        <source>Error: Transaction creation failed!</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+8"/>
@@ -2334,6 +3313,7 @@ Adresa: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+9"/>
         <source>Whether to show Bitcoin addresses in the transaction list or not.</source>
         <translation type="unfinished"/>
@@ -2342,6 +3322,17 @@ Adresa: %4</translation>
         <location line="+3"/>
         <source>&amp;Display addresses in transaction list</source>
         <translation>&amp;Zobraziť adresy zo zoznamu transakcií</translation>
+=======
+        <location line="+34"/>
+        <source>The address to send the payment to (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+60"/>
+        <location filename="../sendcoinsentry.cpp" line="+26"/>
+        <source>Enter a label for this address to add it to your address book</source>
+        <translation>Vložte popis pre túto adresu aby sa pridala do adresára</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+7"/>
@@ -2379,10 +3370,16 @@ Adresa: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <location line="+29"/>
         <source>Client restart required to activate changes.</source>
         <translation type="unfinished"/>
+=======
+        <location filename="../forms/signverifymessagedialog.ui" line="+14"/>
+        <source>Signatures - Sign / Verify a Message</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="-29"/>
@@ -2429,6 +3426,7 @@ Adresa: %4</translation>
         <translation>Potvrdené:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+16"/>
         <source>Your current spendable balance</source>
         <translation type="unfinished"/>
@@ -2437,6 +3435,16 @@ Adresa: %4</translation>
         <location line="+32"/>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
         <translation type="unfinished"/>
+=======
+        <location line="+7"/>
+        <source>Signature</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Copy the current signature to the system clipboard</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+16"/>
@@ -2444,6 +3452,7 @@ Adresa: %4</translation>
         <translation>Nezrelé:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+13"/>
         <source>Mined balance that has not yet matured</source>
         <translation type="unfinished"/>
@@ -2452,6 +3461,16 @@ Adresa: %4</translation>
         <location line="+16"/>
         <source>Total:</source>
         <translation>Celkovo:</translation>
+=======
+        <location line="+3"/>
+        <source>Sign &amp;Message</source>
+        <translation type="unfinished">Podpísať &amp;správu</translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Reset all sign message fields</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+16"/>
@@ -2459,6 +3478,7 @@ Adresa: %4</translation>
         <translation>Váš súčasný celkový zostatok</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+71"/>
         <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
         <translation>&lt;b&gt;Nedávne transakcie&lt;/b&gt;</translation>
@@ -2468,6 +3488,16 @@ Adresa: %4</translation>
         <location line="+1"/>
         <source>out of sync</source>
         <translation>nesynchronizované</translation>
+=======
+        <location line="-87"/>
+        <source>&amp;Verify Message</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
@@ -2479,6 +3509,7 @@ Adresa: %4</translation>
         <translation>Spracovanie URI</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>URI can not be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
         <translation type="unfinished"/>
@@ -2502,6 +3533,27 @@ Adresa: %4</translation>
         <location line="-353"/>
         <source>Cannot start bitcoin: click-to-pay handler</source>
         <translation type="unfinished"/>
+=======
+        <location line="+40"/>
+        <source>Verify the message to ensure it was signed with the specified Namecoin address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Verify &amp;Message</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Reset all verify message fields</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../signverifymessagedialog.cpp" line="+28"/>
+        <location line="+3"/>
+        <source>Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation>Zadajte Namecoin adresu (napr. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+58"/>
@@ -2509,6 +3561,7 @@ Adresa: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Your active proxy doesn&apos;t support SOCKS5, which is required for payment requests via proxy.</source>
         <translation type="unfinished"/>
@@ -2562,11 +3615,65 @@ Adresa: %4</translation>
         <location line="-11"/>
         <source>Network request error</source>
         <translation type="unfinished"/>
+=======
+        <location line="+3"/>
+        <source>Enter Namecoin signature</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+82"/>
+        <location line="+82"/>
+        <source>The entered address is invalid.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-82"/>
+        <location line="+82"/>
+        <source>Please check the address and try again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-74"/>
+        <source>Wallet unlock was cancelled.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Private key for the entered address is not available.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Message signing failed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Message signed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+51"/>
+        <source>The signature could not be decoded.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <location line="+13"/>
+        <source>Please check the signature and try again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>The signature did not match the message digest.</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
+<<<<<<< HEAD
         <location filename="../bitcoin.cpp" line="+71"/>
         <location line="+11"/>
         <source>Bitcoin</source>
@@ -2581,11 +3688,22 @@ Adresa: %4</translation>
         <location line="-12"/>
         <source>Error: Invalid combination of -regtest and -testnet.</source>
         <translation type="unfinished"/>
+=======
+        <location line="+7"/>
+        <source>Message verification failed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Message verified.</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
     <name>QRImageWidget</name>
     <message>
+<<<<<<< HEAD
         <location filename="../receiverequestdialog.cpp" line="+36"/>
         <source>&amp;Save Image...</source>
         <translation>Uložiť obrázok...</translation>
@@ -2594,6 +3712,16 @@ Adresa: %4</translation>
         <location line="+3"/>
         <source>&amp;Copy Image</source>
         <translation>Kopírovať obrázok</translation>
+=======
+        <location filename="../transactiondesc.cpp" line="+21"/>
+        <source>Open until %1</source>
+        <translation>Otvorené do %1</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>%1/offline</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+28"/>
@@ -2613,6 +3741,7 @@ Adresa: %4</translation>
         <source>Client name</source>
         <translation>Meno klienta</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <location line="+10"/>
         <location line="+23"/>
@@ -2627,6 +3756,16 @@ Adresa: %4</translation>
         <location filename="../rpcconsole.cpp" line="+359"/>
         <source>N/A</source>
         <translation>nie je k dispozícii</translation>
+=======
+    <message numerus="yes">
+        <location line="+7"/>
+        <source>, broadcast through %n node(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="-223"/>
@@ -2634,6 +3773,7 @@ Adresa: %4</translation>
         <translation>Verzia klienta</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-45"/>
         <source>&amp;Information</source>
         <translation>&amp;Informácia</translation>
@@ -2647,6 +3787,16 @@ Adresa: %4</translation>
         <location line="+25"/>
         <source>General</source>
         <translation type="unfinished"/>
+=======
+        <location line="+7"/>
+        <source>Source</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Generated</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+53"/>
@@ -2654,6 +3804,7 @@ Adresa: %4</translation>
         <translation>Používa OpenSSL verziu</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+49"/>
         <source>Startup time</source>
         <translation>Čas spustenia</translation>
@@ -2667,6 +3818,19 @@ Adresa: %4</translation>
         <location line="+7"/>
         <source>Name</source>
         <translation type="unfinished"/>
+=======
+        <location line="+1"/>
+        <location line="+22"/>
+        <location line="+58"/>
+        <source>To</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-77"/>
+        <location line="+2"/>
+        <source>own address</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+23"/>
@@ -2678,10 +3842,21 @@ Adresa: %4</translation>
         <source>Block chain</source>
         <translation>Reťazec blokov</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <location line="+7"/>
         <source>Current number of blocks</source>
         <translation>Aktuálny počet blokov</translation>
+=======
+    <message numerus="yes">
+        <location line="-102"/>
+        <source>matures in %n more block(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+23"/>
@@ -2719,6 +3894,7 @@ Adresa: %4</translation>
         <translation>Celkovo</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+64"/>
         <source>In:</source>
         <translation>Dnu:</translation>
@@ -2727,6 +3903,16 @@ Adresa: %4</translation>
         <location line="+80"/>
         <source>Out:</source>
         <translation>Von:</translation>
+=======
+        <location line="+3"/>
+        <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Debug information</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="-521"/>
@@ -2734,6 +3920,7 @@ Adresa: %4</translation>
         <translation>Dátum zostavenia</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+206"/>
         <source>Debug log file</source>
         <translation>Súbor záznamu ladenia</translation>
@@ -2772,6 +3959,29 @@ Adresa: %4</translation>
         <location line="+2"/>
         <source>%1 KB</source>
         <translation>%1 KB</translation>
+=======
+        <location line="+3"/>
+        <source>Inputs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation type="obsolete">Suma</translation>
+    </message>
+    <message>
+        <location line="-185"/>
+        <source>, has not been successfully broadcast yet</source>
+        <translation>, ešte nebola úspešne odoslaná</translation>
+    </message>
+    <message numerus="yes">
+        <location line="-35"/>
+        <source>Open for %n more block(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+2"/>
@@ -2807,9 +4017,24 @@ Adresa: %4</translation>
         <translation>&amp;Suma:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-13"/>
         <source>&amp;Label:</source>
         <translation>&amp;Popis:</translation>
+=======
+        <location line="+0"/>
+        <source>Amount</source>
+        <translation>Hodnota</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+57"/>
+        <source>Open for %n more block(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="-34"/>
@@ -2827,9 +4052,24 @@ Adresa: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+27"/>
         <source>An optional label to associate with the new receiving address</source>
         <translation type="unfinished"/>
+=======
+        <location line="+3"/>
+        <source>Confirmed (%1 confirmations)</source>
+        <translation>Potvrdené (%1 potvrdení)</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+8"/>
+        <source>Mined balance will be available when it matures in %n more block(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+7"/>
@@ -2900,9 +4140,16 @@ Adresa: %4</translation>
         <translation>Kopírovať &amp;URI</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
         <source>Copy &amp;Address</source>
         <translation>Kopírovať adresu</translation>
+=======
+        <location filename="../transactionview.cpp" line="+52"/>
+        <location line="+16"/>
+        <source>All</source>
+        <translation>Všetko</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+7"/>
@@ -2998,6 +4245,7 @@ Adresa: %4</translation>
         <translation>Poslať Bitcoins</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+76"/>
         <source>Coin Control Features</source>
         <translation type="unfinished"/>
@@ -3006,6 +4254,16 @@ Adresa: %4</translation>
         <location line="+20"/>
         <source>Inputs...</source>
         <translation>Vstupy...</translation>
+=======
+        <location line="+1"/>
+        <source>Show transaction details</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+137"/>
+        <source>Export Transaction Data</source>
+        <translation>Exportovať transakčné dáta</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+7"/>
@@ -3106,6 +4364,7 @@ Adresa: %4</translation>
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>OverviewPage</name>
     <message>
         <location filename="../forms/overviewpage.ui" line="+14"/>
@@ -5804,55 +7063,454 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <location line="+2"/>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
         <translation type="unfinished"/>
+=======
+    <name>namecoin-core</name>
+    <message>
+        <location filename="../bitcoinstrings.cpp" line="+9"/>
+        <source>%s, you must set a rpcpassword in the configuration file:
+ %s
+It is recommended you use the following random password:
+rpcuser=namecoinrpc
+rpcpassword=%s
+(you do not need to remember this password)
+The username and password MUST NOT be the same.
+If the file does not exist, create it with owner-readable-only file permissions.
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
+        <translation type="unfinished">Prijateľné šifry (predvolené: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Cannot obtain a lock on data directory %s. Namecoin is probably already running.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8336 or testnet: 18336)</source>
+        <translation type="unfinished">Počúvať JSON-RPC spojeniam na &lt;port&gt; (predvolené: 8336 or testnet: 18336)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Set the number of script verification threads (1-16, 0=auto, default: 0)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Unable to bind to %s on this computer. Namecoin is probably already running.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
+        <translation type="unfinished">Varovanie: -paytxfee je nastavené veľmi vysoko. Toto sú transakčné poplatky ktoré zaplatíte ak odošlete transakciu.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Namecoin will not work properly.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
+%s
+If the file does not exist, create it with owner-readable-only file permissions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Accept command line and JSON-RPC commands</source>
+        <translation type="unfinished">Prijímať príkazy z príkazového riadku a JSON-RPC</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
-        <translation type="unfinished"/>
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+1"/>
+        <source>Add a node to connect to and attempt to keep the connection open</source>
+        <translation type="unfinished">Pridať nódu a pripojiť sa and attempt to keep the connection open</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
+        <translation type="unfinished">Povoliť vyhľadávanie DNS pre pridanie nódy a spojenie</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Allow JSON-RPC connections from specified IP address</source>
+        <translation type="unfinished">Povoliť JSON-RPC spojenia z určenej IP adresy.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Namecoin version</source>
+        <translation type="unfinished">Namecoin verzia</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Block creation options:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot downgrade wallet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot initialize keypool</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot write default address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect only to the specified node(s)</source>
+        <translation type="unfinished">Pripojiť sa len k určenej nóde</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect through socks proxy</source>
+        <translation type="unfinished">Pripojenie cez socks proxy</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Corrupted block database detected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you want to rebuild the block database now?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Don&apos;t generate coins</source>
+        <translation type="unfinished">Nepočítaj Namecoins</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Done loading</source>
+        <translation type="unfinished">Dokončené načítavanie</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error initializing block database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error loading block database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error loading wallet.dat</source>
+        <translation type="unfinished">Chyba načítania wallet.dat</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error loading wallet.dat: Wallet corrupted</source>
+        <translation type="unfinished">Chyba načítania wallet.dat: Peňaženka je poškodená</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error loading wallet.dat: Wallet requires newer version of Namecoin</source>
+        <translation type="unfinished">Chyba načítania wallet.dat: Peňaženka vyžaduje novšiu verziu Namecoin</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error opening block database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error</source>
+        <translation type="unfinished">Chyba</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Disk space is low!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Transaction creation failed!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Wallet locked, unable to create transaction!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: could not start node</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: system error: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to read block info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to read block</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to sync block index</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write block index</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write block info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write block</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write file info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write to coin database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write transaction index</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write undo data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Fee per KB to add to transactions you send</source>
+        <translation type="unfinished">Poplatok za kB ktorý treba pridať k odoslanej transakcii</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Find peers using internet relay chat (default: 0)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Generate coins</source>
+        <translation type="unfinished">Počítaj Namecoins</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Get help for a command</source>
+        <translation type="unfinished">Dostať pomoc pre príkaz</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>How thorough the block verification is (0-4, default: 3)</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Importing blocks from block database...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
 =======
         <source>Output extra debugging information. Implies all other -debug* options</source>
         <translation>Produkovať extra ladiace informácie. Implies all other -debug* options</translation>
+=======
+        <location line="+1"/>
+        <source>Imports blocks from external blk000??.dat file</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Output extra network debugging information</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Prepend debug output with timestamp</source>
-        <translation>Pridať na začiatok ladiaceho výstupu časový údaj</translation>
+        <source>Information</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Rebuild blockchain index from current blk000??.dat files</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>SSL možnosť: (pozrite Bitcoin Wiki pre návod na nastavenie SSL)</translation>
+        <source>Insufficient funds</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
-        <source>Select the version of socks proxy to use (4-5, default: 5)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation>Odoslať trace/debug informácie na konzolu namiesto debug.info žurnálu</translation>
+        <source>Invalid -proxy address: &apos;%s&apos;</source>
+        <translation type="unfinished">Neplatná adresa proxy: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send trace/debug info to debugger</source>
-        <translation>Odoslať trace/debug informácie do ladiaceho programu</translation>
+        <source>Invalid -tor address: &apos;%s&apos;</source>
+        <translation type="unfinished">Neplatná adresa tor: &apos;%s&apos;</translation>
     </message>
     <message>
+        <location line="+1"/>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation type="unfinished">Neplatná suma pre -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid amount</source>
+        <translation type="unfinished">Neplatná suma</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>List commands</source>
+        <translation type="unfinished">Zoznam príkazov</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Listen for connections on &lt;port&gt; (default: 8334 or testnet: 18334)</source>
+        <translation type="unfinished">Načúvať spojeniam na &lt;port&gt; (prednastavené: 8334 alebo testovacia sieť: 18334)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Loading addresses...</source>
+        <translation type="unfinished">Načítavanie adries...</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
         <location line="+5"/>
         <source>Set maximum block size in bytes (default: 250000)</source>
 >>>>>>> Committing original src/qt
@@ -5893,13 +7551,29 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+1"/>
+        <source>Loading block index...</source>
+        <translation type="unfinished">Načítavanie zoznamu blokov...</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation>Určiť aut spojenia v milisekundách (predvolené: 5000)</translation>
+        <location line="+1"/>
+        <source>Loading wallet...</source>
+        <translation type="unfinished">Načítavam peňaženku...</translation>
     </message>
     <message>
+        <location line="+1"/>
+        <source>Maintain a full transaction index (default: 0)</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
+        <translation type="unfinished">Udržiavať maximálne &lt;n&gt; spojení (predvolené: 125)</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+6"/>
@@ -5945,20 +7619,26 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation>Skúsiť použiť UPnP pre mapovanie počúvajúceho portu (default: 0)</translation>
+=======
+        <location line="+1"/>
+        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Skúsiť použiť UPnP pre mapovanie počúvajúceho portu (default: 1 when listening)</translation>
+        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
 <<<<<<< HEAD
 =======
         <location line="+1"/>
-        <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
-        <translation type="unfinished"/>
+        <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <location line="+2"/>
         <source>Username for JSON-RPC connections</source>
@@ -5983,14 +7663,25 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <location line="+4"/>
         <source>Warning</source>
         <translation type="unfinished"/>
+=======
+        <location line="+1"/>
+        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation type="unfinished"/>
+        <source>Options:</source>
+        <translation type="unfinished">Možnosti:</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
+        <source>Output extra debugging information. Implies all other -debug* options</source>
+        <translation type="unfinished">Produkovať extra ladiace informácie. Implies all other -debug* options</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <source>You need to rebuild the databases using -reindex to change -txindex</source>
         <translation type="unfinished"/>
@@ -6016,10 +7707,18 @@ If the file does not exist, create it with owner-readable-only file permissions.
 =======
         <location line="-43"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
-        <source>Password for JSON-RPC connections</source>
-        <translation>Heslo pre JSON-rPC spojenia</translation>
+=======
+        <source>Output extra network debugging information</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+1"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+        <source>Password for JSON-RPC connections</source>
+        <translation type="unfinished">Heslo pre JSON-rPC spojenia</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-70"/>
@@ -6123,13 +7822,59 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Server certificate file (default: server.cert)</source>
         <translation>Súbor s certifikátom servra (predvolené: server.cert)</translation>
+=======
+        <location line="+1"/>
+        <source>Prepend debug output with timestamp</source>
+        <translation type="unfinished">Pridať na začiatok ladiaceho výstupu časový údaj</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Server private key (default: server.pem)</source>
-        <translation>Súkromný kľúč servra (predvolené: server.pem)</translation>
+        <source>Rebuild blockchain index from current blk000??.dat files</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+1"/>
+        <source>Rescan the block chain for missing wallet transactions</source>
+        <translation type="unfinished">Znovu skenovať reťaz blokov pre chýbajúce transakcie</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Rescanning...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Run in the background as a daemon and accept commands</source>
+        <translation type="unfinished">Bežať na pozadí ako démon a prijímať príkazy</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation type="unfinished">SSL možnosť: (pozrite Bitcoin Wiki pre návod na nastavenie SSL)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Select the version of socks proxy to use (4-5, default: 5)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send command to -server or namecoind</source>
+        <translation type="unfinished">Odoslať príkaz -server alebo namecoind</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
+        <translation type="unfinished">Poslať príkaz nóde bežiacej na &lt;ip&gt; (predvolené: 127.0.0.1)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send trace/debug info to console instead of debug.log file</source>
+        <translation type="unfinished">Odoslať trace/debug informácie na konzolu namiesto debug.info žurnálu</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+16"/>
@@ -6211,21 +7956,56 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Error loading wallet.dat: Wallet corrupted</source>
         <translation>Chyba načítania wallet.dat: Peňaženka je poškodená</translation>
+=======
+        <location line="+1"/>
+        <source>Send trace/debug info to debugger</source>
+        <translation type="unfinished">Odoslať trace/debug informácie do ladiaceho programu</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Namecoin</source>
-        <translation>Chyba načítania wallet.dat: Peňaženka vyžaduje novšiu verziu Namecoin</translation>
-    </message>
-    <message>
-        <location line="+73"/>
-        <source>Verifying block database integrity...</source>
-        <translation type="unfinished"/>
+        <source>Server certificate file (default: server.cert)</source>
+        <translation type="unfinished">Súbor s certifikátom servra (predvolené: server.cert)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Verifying wallet integrity...</source>
-        <translation type="unfinished"/>
+        <source>Server private key (default: server.pem)</source>
+        <translation type="unfinished">Súkromný kľúč servra (predvolené: server.pem)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set database cache size in megabytes (default: 25)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
+        <translation type="unfinished">Nastaviť zásobu adries na &lt;n&gt; (predvolené: 100)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set maximum block size in bytes (default: 250000)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set minimum block size in bytes (default: 0)</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specify configuration file (default: bitcoin.conf)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specify connection timeout in milliseconds (default: 5000)</source>
+        <translation type="unfinished">Určiť aut spojenia v milisekundách (predvolené: 5000)</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -6245,10 +8025,11 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Committing original src/qt
 =======
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Namecoin to complete</source>
-        <translation>Bolo potrebné prepísať peňaženku: dokončite reštartovaním Namecoin</translation>
+        <source>Specify data directory</source>
+        <translation type="unfinished">Určiť priečinok s dátami</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-77"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Error loading wallet.dat</source>
@@ -6266,18 +8047,29 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Invalid -proxy address: &apos;%s&apos;</source>
         <translation>Neplatná adresa proxy: &apos;%s&apos;</translation>
+=======
+        <location line="+1"/>
+        <source>Specify pid file (default: namecoind.pid)</source>
+        <translation type="unfinished">Určiť súbor pid (predvolené: namecoind.pid)</translation>
     </message>
     <message>
-        <location line="+46"/>
-        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation type="unfinished"/>
+        <location line="+1"/>
+        <source>Specify your own public address</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="-1"/>
-        <source>Unknown -socks proxy version requested: %i</source>
-        <translation type="unfinished"/>
+        <location line="+1"/>
+        <source>System error: </source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+1"/>
+        <source>This help message</source>
+        <translation type="unfinished">Táto pomocná správa</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-101"/>
@@ -6289,13 +8081,19 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Cannot resolve -bind address: &apos;%s&apos;</source>
         <translation type="unfinished"/>
+=======
+        <location line="+1"/>
+        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation type="unfinished"/>
+        <source>To use the %s option</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+48"/>
@@ -6307,28 +8105,34 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>Neplatná suma pre -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
+=======
+        <location line="+1"/>
+        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="-15"/>
-        <source>Error: could not start node</source>
-        <translation type="unfinished"/>
+        <location line="+1"/>
+        <source>Unknown -socks proxy version requested: %i</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+16"/>
-        <source>Invalid amount</source>
-        <translation>Neplatná suma</translation>
+        <location line="+1"/>
+        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-4"/>
-        <source>Insufficient funds</source>
-        <translation type="unfinished"/>
+        <location line="+1"/>
+        <source>Upgrade wallet to latest format</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+8"/>
-        <source>Loading block index...</source>
-        <translation>Načítavanie zoznamu blokov...</translation>
+        <location line="+1"/>
+        <source>Usage:</source>
+        <translation type="unfinished">Použitie:</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-62"/>
@@ -6359,13 +8163,24 @@ If the file does not exist, create it with owner-readable-only file permissions.
 =======
         <source>Unable to bind to %s on this computer. Namecoin is probably already running.</source>
         <translation type="unfinished"/>
+=======
+        <location line="+1"/>
+        <source>Use OpenSSL (https) for JSON-RPC connections</source>
+        <translation type="unfinished">Použiť OpenSSL (https) pre JSON-RPC spojenia</translation>
     </message>
     <message>
-        <location line="+54"/>
-        <source>Find peers using internet relay chat (default: 0)</source>
-        <translation type="unfinished"/>
+        <location line="+1"/>
+        <source>Use UPnP to map the listening port (default: 0)</source>
+        <translation type="unfinished">Skúsiť použiť UPnP pre mapovanie počúvajúceho portu (default: 0)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
+        <location line="+1"/>
+        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
+        <translation type="unfinished">Skúsiť použiť UPnP pre mapovanie počúvajúceho portu (default: 1 when listening)</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
         <location line="-2"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Fee per KB to add to transactions you send</source>
@@ -6389,18 +8204,34 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Cannot downgrade wallet</source>
         <translation type="unfinished"/>
+=======
+        <location line="+1"/>
+        <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot initialize keypool</source>
-        <translation type="unfinished"/>
+        <source>Use the test network</source>
+        <translation type="unfinished">Použiť testovaciu sieť</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Cannot write default address</source>
-        <translation type="unfinished"/>
+        <location line="+1"/>
+        <source>Username for JSON-RPC connections</source>
+        <translation type="unfinished">Užívateľské meno pre JSON-RPC spojenia</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
+        <location line="+1"/>
+        <source>Verifying database...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Verifying wallet integrity...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+67"/>
@@ -6467,6 +8298,31 @@ If the file does not exist, create it with owner-readable-only file permissions.
 %s
 If the file does not exist, create it with owner-readable-only file permissions.</source>
         <translation type="unfinished"/>
+=======
+        <location line="+1"/>
+        <source>Wallet needed to be rewritten: restart Namecoin to complete</source>
+        <translation type="unfinished">Bolo potrebné prepísať peňaženku: dokončite reštartovaním Namecoin</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Warning</source>
+        <translation type="unfinished">Varovanie</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Warning: This version is obsolete, upgrade required!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>You need to rebuild the databases using -reindex to change -txindex</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>wallet.dat corrupt, salvage failed</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 </TS>

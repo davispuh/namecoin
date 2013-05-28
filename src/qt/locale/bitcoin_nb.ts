@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 <?xml version="1.0" ?><!DOCTYPE TS><TS language="nb" version="2.0">
 <<<<<<< HEAD
 =======
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="nb">
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
 <defaultcodec>UTF-8</defaultcodec>
 >>>>>>> Committing original src/qt
 <context>
@@ -36,12 +42,11 @@
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     </message>
     <message>
-        <location line="+41"/>
         <source>Copyright © 2009-2013 The Bitcoin and Namecoin developers</source>
-        <translation>Copyright © 2009-2013 Bitcoin, Namecoin Utviklerne</translation>
+        <translation type="obsolete">Copyright © 2009-2013 Bitcoin, Namecoin Utviklerne</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+57"/>
         <source>
 This is experimental software.
 
@@ -55,6 +60,7 @@ Distribuert under MIT/X11 programvarelisensen, se medfølgende fil COPYING eller
 
 Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i OpenSSL Toolkit (http://www.openssl.org/) og kryptografisk programvare skrevet av Eric Young (eay@cryptsoft.com) og UPnP programvare skrevet av Thomas Bernard.</translation>
     </message>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <message>
 <<<<<<< HEAD
@@ -79,6 +85,18 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
 =======
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+    <message>
+        <location filename="../aboutdialog.cpp" line="+17"/>
+        <source>Copyright</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>2009-%1 The Bitcoin and Namecoin developers</source>
+        <translation type="unfinished"></translation>
+    </message>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
 </context>
 <context>
     <name>AddressBookPage</name>
@@ -228,7 +246,7 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     <message>
         <location line="+25"/>
         <source>Delete the currently selected address from the list</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-14"/>
@@ -247,6 +265,7 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../addressbookpage.cpp" line="-5"/>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"/>
@@ -257,15 +276,19 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
 =======
         <location filename="../addressbookpage.cpp" line="+65"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location filename="../addressbookpage.cpp" line="+66"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Copy &amp;Label</source>
         <translation>Kopier &amp;Merkelapp</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>&amp;Edit</source>
         <translation>&amp;Rediger</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+194"/>
@@ -281,6 +304,14 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
 =======
         <location line="+250"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+1"/>
+        <source>Send &amp;Coins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+263"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Export Address Book Data</source>
         <translation>Eksporter adressebok</translation>
 >>>>>>> Committing original src/qt
@@ -316,6 +347,7 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     <message>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../addresstablemodel.cpp" line="+168"/>
 =======
         <location filename="../addresstablemodel.cpp" line="+144"/>
@@ -323,6 +355,9 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
 =======
         <location filename="../addresstablemodel.cpp" line="+142"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location filename="../addresstablemodel.cpp" line="+146"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Label</source>
         <translation>Merkelapp</translation>
     </message>
@@ -419,9 +454,14 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <translation>Er du sikker på at du vil kryptere lommeboken?</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+11"/>
+        <source>Namecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your namecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+100"/>
@@ -436,12 +476,11 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <translation>Lommebok kryptert</translation>
     </message>
     <message>
-        <location line="-56"/>
         <source>Namecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Namecoins from being stolen by malware infecting your computer.</source>
-        <translation>Namecoin vil nå lukkes for å fullføre krypteringsprosessen. Husk at kryptering av lommeboken ikke fullt ut kan beskytte dine Namecoins fra å bli stjålet om skadevare infiserer datamaskinen.</translation>
+        <translation type="obsolete">Namecoin vil nå lukkes for å fullføre krypteringsprosessen. Husk at kryptering av lommeboken ikke fullt ut kan beskytte dine Namecoins fra å bli stjålet om skadevare infiserer datamaskinen.</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="-43"/>
         <location line="+7"/>
         <location line="+42"/>
         <location line="+6"/>
@@ -483,8 +522,9 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
 </context>
 <context>
-    <name>NamecoinGUI</name>
+    <name>BitcoinGUI</name>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../bitcoingui.cpp" line="+295"/>
@@ -520,8 +560,27 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
 =======
         <location line="-322"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location filename="../bitcoin.cpp" line="+115"/>
+        <source>A fatal error occurred. Namecoin can no longer continue safely and will quit.</source>
+        <translation type="unfinished">En fatal feil har inntruffet. Det er ikke trygt å fortsette og Namecoin må derfor avslutte.</translation>
+    </message>
+    <message>
+        <location filename="../bitcoingui.cpp" line="+73"/>
+        <location line="+550"/>
+        <source>Namecoin</source>
+        <translation type="unfinished">Namecoin</translation>
+    </message>
+    <message>
+        <location line="-550"/>
+        <source>Wallet</source>
+        <translation type="unfinished">Lommebok</translation>
+    </message>
+    <message>
+        <location line="+139"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>&amp;Overview</source>
-        <translation>&amp;Oversikt</translation>
+        <translation type="unfinished">&amp;Oversikt</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -535,17 +594,17 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <location line="+1"/>
 >>>>>>> Committing original src/qt
         <source>Show general overview of wallet</source>
-        <translation>Vis generell oversikt over lommeboken</translation>
+        <translation type="unfinished">Vis generell oversikt over lommeboken</translation>
     </message>
     <message>
-        <location line="+20"/>
-        <source>&amp;Transactions</source>
-        <translation>&amp;Transaksjoner</translation>
+        <location line="+6"/>
+        <source>&amp;Send coins</source>
+        <translation type="unfinished">&amp;Send Namecoins</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Browse transaction history</source>
-        <translation>Vis transaksjonshistorikk</translation>
+        <source>Send coins to a Namecoin address</source>
+        <translation type="unfinished">Send til en Namecoin-adresse</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -555,26 +614,32 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <location line="+7"/>
 =======
         <location line="+6"/>
-        <source>&amp;Address Book</source>
-        <translation>&amp;Adressebok</translation>
+        <source>&amp;Receive coins</source>
+        <translation type="unfinished">&amp;Motta Namecoins</translation>
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Edit the list of stored addresses and labels</source>
         <translation>Rediger listen over adresser og deres merkelapper</translation>
+=======
+        <source>Show the list of addresses for receiving payments</source>
+        <translation type="unfinished">Vis listen over adresser for mottak av betalinger</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="-15"/>
-        <source>&amp;Receive coins</source>
-        <translation>&amp;Motta Namecoins</translation>
+        <location line="+6"/>
+        <source>&amp;Transactions</source>
+        <translation type="unfinished">&amp;Transaksjoner</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show the list of addresses for receiving payments</source>
-        <translation>Vis listen over adresser for mottak av betalinger</translation>
+        <source>Browse transaction history</source>
+        <translation type="unfinished">Vis transaksjonshistorikk</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+31"/>
 >>>>>>> Committing original src/qt
@@ -586,15 +651,29 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     <message>
         <location line="+39"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+6"/>
+        <source>&amp;Address Book</source>
+        <translation type="unfinished">&amp;Adressebok</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Edit the list of stored addresses and labels</source>
+        <translation type="unfinished">Rediger listen over adresser og deres merkelapper</translation>
+    </message>
+    <message>
+        <location line="+17"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>E&amp;xit</source>
-        <translation>&amp;Avslutt</translation>
+        <translation type="unfinished">&amp;Avslutt</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Quit application</source>
-        <translation>Avslutt applikasjonen</translation>
+        <translation type="unfinished">Avslutt applikasjonen</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+7"/>
 =======
@@ -607,6 +686,16 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <source>Show information about Namecoin</source>
         <translation>Vis informasjon om Namecoin</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+3"/>
+        <source>&amp;About Namecoin</source>
+        <translation type="unfinished">&amp;Om Namecoin</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show information about Namecoin</source>
+        <translation type="unfinished">Vis informasjon om Namecoin</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
 <<<<<<< HEAD
@@ -615,7 +704,7 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
 >>>>>>> Committing original src/qt
         <location line="+2"/>
         <source>About &amp;Qt</source>
-        <translation>Om &amp;Qt</translation>
+        <translation type="unfinished">Om &amp;Qt</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -624,11 +713,12 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <location line="+1"/>
 >>>>>>> Committing original src/qt
         <source>Show information about Qt</source>
-        <translation>Vis informasjon om Qt</translation>
+        <translation type="unfinished">Vis informasjon om Qt</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Options...</source>
+<<<<<<< HEAD
         <translation>&amp;Innstillinger...</translation>
     </message>
     <message>
@@ -643,14 +733,18 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>&amp;Encrypt Wallet...</source>
         <translation>&amp;Krypter Lommebok...</translation>
+=======
+        <translation type="unfinished">&amp;Innstillinger...</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Backup Wallet...</source>
-        <translation>Lag &amp;Sikkerhetskopi av Lommebok...</translation>
+        <location line="+1"/>
+        <source>Modify configuration options for Namecoin</source>
+        <translation type="unfinished">Endre oppsett for Namecoin</translation>
     </message>
     <message>
         <location line="+2"/>
+<<<<<<< HEAD
         <source>&amp;Change Passphrase...</source>
         <translation>&amp;Endre Adgangsfrase...</translation>
     </message>
@@ -681,23 +775,23 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Importing blocks from disk...</source>
         <translation type="unfinished"/>
+=======
+        <source>&amp;Show / Hide</source>
+        <translation type="unfinished">&amp;Gjem / vis</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="+3"/>
-        <source>Reindexing blocks on disk...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message numerus="yes">
-        <location line="+10"/>
-        <source>~%n block(s) remaining</source>
-        <translation><numerusform>~%n blokk gjenstår</numerusform><numerusform>~%n blokker gjenstår</numerusform></translation>
+        <location line="+1"/>
+        <source>Show or hide the main Window</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-265"/>
-        <source>&amp;Export...</source>
-        <translation>&amp;Eksporter...</translation>
+        <location line="+1"/>
+        <source>&amp;Encrypt Wallet...</source>
+        <translation type="unfinished">&amp;Krypter Lommebok...</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-405"/>
@@ -711,13 +805,19 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <source>Send coins to a Namecoin address</source>
         <translation>Send til en Namecoin-adresse</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+1"/>
+        <source>Encrypt the private keys that belong to your wallet</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="+49"/>
-        <source>Modify configuration options for Namecoin</source>
-        <translation>Endre oppsett for Namecoin</translation>
+        <location line="+2"/>
+        <source>&amp;Backup Wallet...</source>
+        <translation type="unfinished">Lag &amp;Sikkerhetskopi av Lommebok...</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+12"/>
@@ -734,25 +834,36 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Backup wallet to another location</source>
         <translation>Sikkerhetskopiér lommebok til annet sted</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Change the passphrase used for wallet encryption</source>
-        <translation>Endre adgangsfrasen brukt for kryptering av lommebok</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>&amp;Debug window</source>
-        <translation>&amp;Feilsøkingsvindu</translation>
+=======
+        <location line="+1"/>
+        <source>Backup wallet to another location</source>
+        <translation type="unfinished">Sikkerhetskopiér lommebok til annet sted</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Open debugging and diagnostic console</source>
-        <translation>Åpne konsoll for feilsøk og diagnostikk</translation>
+        <source>&amp;Change Passphrase...</source>
+        <translation type="unfinished">&amp;Endre Adgangsfrase...</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="-7"/>
+        <location line="+1"/>
+        <source>Change the passphrase used for wallet encryption</source>
+        <translation type="unfinished">Endre adgangsfrasen brukt for kryptering av lommebok</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Sign &amp;message...</source>
+        <translation type="unfinished">Signer &amp;melding...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Sign messages with your Namecoin addresses to prove you own them</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>&amp;Verify message...</source>
+<<<<<<< HEAD
         <translation>&amp;Verifiser melding...</translation>
     </message>
     <message>
@@ -823,28 +934,37 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
 >>>>>>> Committing original src/qt
         <source>&amp;Show / Hide</source>
         <translation>&amp;Gjem / vis</translation>
+=======
+        <translation type="unfinished">&amp;Verifiser melding...</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show or hide the main Window</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Encrypt the private keys that belong to your wallet</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Sign messages with your Namecoin addresses to prove you own them</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+2"/>
         <source>Verify messages to ensure they were signed with specified Namecoin addresses</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+2"/>
+        <source>&amp;Export...</source>
+        <translation type="unfinished">&amp;Eksporter...</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Export the data in the current tab to a file</source>
+        <translation type="unfinished">Eksporter data fra nåværende fane til fil</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&amp;Debug window</source>
+        <translation type="unfinished">&amp;Feilsøkingsvindu</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Open debugging and diagnostic console</source>
+        <translation type="unfinished">Åpne konsoll for feilsøk og diagnostikk</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+48"/>
@@ -854,8 +974,11 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
 =======
         <location line="+31"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+25"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>&amp;File</source>
-        <translation>&amp;Fil</translation>
+        <translation type="unfinished">&amp;Fil</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -868,7 +991,7 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <location line="+8"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>&amp;Settings</source>
-        <translation>&amp;Innstillinger</translation>
+        <translation type="unfinished">&amp;Innstillinger</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -877,7 +1000,7 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <location line="+6"/>
 >>>>>>> Committing original src/qt
         <source>&amp;Help</source>
-        <translation>&amp;Hjelp</translation>
+        <translation type="unfinished">&amp;Hjelp</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -886,7 +1009,7 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <location line="+9"/>
 >>>>>>> Committing original src/qt
         <source>Tabs toolbar</source>
-        <translation>Verktøylinje for faner</translation>
+        <translation type="unfinished">Verktøylinje for faner</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -898,17 +1021,22 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
 =======
         <location line="+8"/>
         <source>Actions toolbar</source>
-        <translation>Verktøylinje for handlinger</translation>
+        <translation type="unfinished">Verktøylinje for handlinger</translation>
     </message>
     <message>
         <location line="+13"/>
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <location line="+10"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="+80"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>[testnet]</source>
-        <translation>[testnett]</translation>
+        <translation type="unfinished">[testnett]</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-401"/>
@@ -986,15 +1114,23 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
 =======
 =======
         <location line="+63"/>
+=======
+        <location line="-5"/>
+        <location line="+5"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Namecoin client</source>
-        <translation>Bitcoinklient</translation>
+        <translation type="unfinished">Bitcoinklient</translation>
     </message>
     <message numerus="yes">
-        <location line="+79"/>
+        <location line="+80"/>
         <source>%n active connection(s) to Namecoin network</source>
-        <translation><numerusform>%n aktiv forbindelse til Namecoin-nettverket</numerusform><numerusform>%n aktive forbindelser til Namecoin-nettverket</numerusform></translation>
+        <translation type="unfinished">
+            <numerusform>%n aktiv forbindelse til Namecoin-nettverket</numerusform>
+            <numerusform>%n aktive forbindelser til Namecoin-nettverket</numerusform>
+        </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+45"/>
         <source>Processed %1 of %2 blocks of transaction history (%3% done).</source>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
@@ -1096,43 +1232,63 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <location line="-85"/>
 =======
         <translation type="unfinished"/>
+=======
+        <location line="+24"/>
+        <source>Synchronizing with network...</source>
+        <translation type="unfinished">Synkroniserer med nettverk...</translation>
     </message>
     <message>
-        <location line="+66"/>
-        <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
-        <translation type="unfinished"/>
+        <location line="+3"/>
+        <source>Importing blocks from disk...</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+210"/>
-        <source>Backup Successful</source>
-        <translation type="unfinished"/>
+        <location line="+3"/>
+        <source>Reindexing blocks on disk...</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="+0"/>
-        <source>The wallet data was successfully saved to the new location.</source>
-        <translation type="unfinished"/>
+        <location line="+9"/>
+        <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Processed %1 blocks of transaction history.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Up to date</source>
+        <translation type="unfinished">Ajour</translation>
     </message>
     <message numerus="yes">
-        <location line="-338"/>
-        <source>%n second(s) ago</source>
-        <translation><numerusform>for %n sekund siden</numerusform><numerusform>for %n sekunder siden</numerusform></translation>
+        <location line="+14"/>
+        <source>%n hour(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
-        <source>%n minute(s) ago</source>
-        <translation><numerusform>for %n minutt siden</numerusform><numerusform>for %n minutter siden</numerusform></translation>
+        <source>%n day(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
-        <source>%n hour(s) ago</source>
-        <translation><numerusform>for %n time siden</numerusform><numerusform>for %n timer siden</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <location line="+4"/>
-        <source>%n day(s) ago</source>
-        <translation><numerusform>for %n dag siden</numerusform><numerusform>for %n dager siden</numerusform></translation>
+        <source>%n week(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-140"/>
 >>>>>>> Committing original src/qt
@@ -1152,10 +1308,19 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
 =======
         <location line="+7"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
-        <source>Catching up...</source>
-        <translation>Kommer ajour...</translation>
+=======
+        <location line="+5"/>
+        <source>%1 behind</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+5"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+        <source>Catching up...</source>
+        <translation type="unfinished">Kommer ajour...</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+130"/>
@@ -1169,8 +1334,41 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     <message>
         <location line="+97"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+9"/>
+        <source>Last received block was generated %1 ago.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Transactions after this will not yet be visible.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>Error</source>
+        <translation type="unfinished">Feil</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning</source>
+        <translation type="unfinished">Advarsel</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+68"/>
+        <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Confirm transaction fee</source>
-        <translation>Bekreft transaksjonsgebyr</translation>
+        <translation type="unfinished">Bekreft transaksjonsgebyr</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -1180,12 +1378,12 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <location line="+23"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Sent transaction</source>
-        <translation>Sendt transaksjon</translation>
+        <translation type="unfinished">Sendt transaksjon</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Incoming transaction</source>
-        <translation>Innkommende transaksjon</translation>
+        <translation type="unfinished">Innkommende transaksjon</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1194,7 +1392,7 @@ Amount: %2
 Type: %3
 Address: %4
 </source>
-        <translation>Dato: %1
+        <translation type="unfinished">Dato: %1
 Beløp: %2
 Type: %3
 Adresse: %4
@@ -1203,33 +1401,37 @@ Adresse: %4
     <message>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+69"/>
 =======
         <location line="+33"/>
         <location line="+23"/>
 =======
         <location line="+99"/>
+=======
+        <location line="+102"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <location line="+28"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>URI handling</source>
-        <translation>URI håndtering</translation>
+        <translation type="unfinished">URI håndtering</translation>
     </message>
     <message>
         <location line="-28"/>
         <location line="+28"/>
         <source>URI can not be parsed! This can be caused by an invalid Namecoin address or malformed URI parameters.</source>
-        <translation>URI kunne ikke tolkes! Dette kan forårsakes av en ugyldig Namecoin-adresse eller feil i URI-parametere.</translation>
+        <translation type="unfinished">URI kunne ikke tolkes! Dette kan forårsakes av en ugyldig Namecoin-adresse eller feil i URI-parametere.</translation>
     </message>
     <message>
         <location line="+17"/>
 >>>>>>> Committing original src/qt
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Lommeboken er &lt;b&gt;kryptert&lt;/b&gt; og for tiden &lt;b&gt;ulåst&lt;/b&gt;</translation>
+        <translation type="unfinished">Lommeboken er &lt;b&gt;kryptert&lt;/b&gt; og for tiden &lt;b&gt;ulåst&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Lommeboken er &lt;b&gt;kryptert&lt;/b&gt; og for tiden &lt;b&gt;låst&lt;/b&gt;</translation>
+        <translation type="unfinished">Lommeboken er &lt;b&gt;kryptert&lt;/b&gt; og for tiden &lt;b&gt;låst&lt;/b&gt;</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -1243,33 +1445,45 @@ Adresse: %4
 =======
         <location line="+23"/>
         <source>Backup Wallet</source>
-        <translation>Sikkerhetskopiér Lommebok</translation>
+        <translation type="unfinished">Sikkerhetskopiér Lommebok</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Wallet Data (*.dat)</source>
-        <translation>Lommeboksdata (*.dat)</translation>
+        <translation type="unfinished">Lommeboksdata (*.dat)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Backup Failed</source>
-        <translation>Sikkerhetskopiering feilet</translation>
+        <translation type="unfinished">Sikkerhetskopiering feilet</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>There was an error trying to save the wallet data to the new location.</source>
-        <translation>En feil oppstod ved lagring av lommebok til nytt sted</translation>
+        <translation type="unfinished">En feil oppstod ved lagring av lommebok til nytt sted</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../Namecoin.cpp" line="+109"/>
         <source>A fatal error occurred. Namecoin can no longer continue safely and will quit.</source>
         <translation>En fatal feil har inntruffet. Det er ikke trygt å fortsette og Namecoin må derfor avslutte.</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+4"/>
+        <source>Backup Successful</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>The wallet data was successfully saved to the new location.</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
     <name>ClientModel</name>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../clientmodel.cpp" line="+119"/>
@@ -1279,8 +1493,10 @@ Adresse: %4
 =======
         <location filename="../clientmodel.cpp" line="+86"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>Network Alert</source>
-        <translation>Nettverksvarsel</translation>
+        <translation type="obsolete">Nettverksvarsel</translation>
     </message>
 </context>
 <context>
@@ -1313,11 +1529,15 @@ Adresse: %4
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+45"/>
         <source>Fee:</source>
         <translation>Avgift:</translation>
 =======
         <location filename="../editaddressdialog.cpp" line="+20"/>
+=======
+        <location filename="../editaddressdialog.cpp" line="+21"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>New receiving address</source>
         <translation>Ny mottaksadresse</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
@@ -1359,21 +1579,25 @@ Adresse: %4
         <translation>Beløp</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+10"/>
         <source>Address</source>
         <translation>Adresse</translation>
 =======
         <location line="+60"/>
+=======
+        <location line="+76"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
         <translation>Den oppgitte adressen &quot;%1&quot; er allerede i adresseboken.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid Namecoin address.</source>
         <translation>Den angitte adressed &quot;%1&quot; er ikke en gyldig Namecoin-adresse.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+10"/>
         <source>Could not unlock wallet.</source>
         <translation>Kunne ikke låse opp lommeboken.</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
@@ -1385,11 +1609,15 @@ Adresse: %4
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+5"/>
         <source>Confirmations</source>
         <translation>Bekreftelser</translation>
 =======
         <location filename="../guiutil.cpp" line="+419"/>
+=======
+        <location filename="../guiutil.cpp" line="+423"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         <location line="+12"/>
         <source>Namecoin-Qt</source>
         <translation>Namecoin-Qt</translation>
@@ -1436,6 +1664,7 @@ Adresse: %4
         <source>Unlock unspent</source>
         <translation type="unfinished"/>
     </message>
+<<<<<<< HEAD
     <message>
         <location line="+22"/>
         <source>Copy quantity</source>
@@ -1497,6 +1726,742 @@ Adresse: %4
         <location line="+1"/>
         <source>medium-high</source>
         <translation>medium-høy</translation>
+=======
+</context>
+<context>
+    <name>Namecoin-core</name>
+    <message>
+        <source>Namecoin version</source>
+        <translation type="obsolete">Namecoin versjon</translation>
+    </message>
+    <message>
+        <source>Usage:</source>
+        <translation type="obsolete">Bruk:</translation>
+    </message>
+    <message>
+        <source>Send command to -server or namecoind</source>
+        <translation type="obsolete">Send kommando til -server eller namecoind</translation>
+    </message>
+    <message>
+        <source>List commands</source>
+        <translation type="obsolete">List opp kommandoer</translation>
+    </message>
+    <message>
+        <source>Get help for a command</source>
+        <translation type="obsolete">Vis hjelpetekst for en kommando</translation>
+    </message>
+    <message>
+        <source>Options:</source>
+        <translation type="obsolete">Innstillinger:</translation>
+    </message>
+    <message>
+        <source>Specify configuration file (default: namecoin.conf)</source>
+        <translation type="obsolete">Angi konfigurasjonsfil (standardverdi: namecoin.conf)</translation>
+    </message>
+    <message>
+        <source>Specify pid file (default: namecoind.pid)</source>
+        <translation type="obsolete">Angi pid-fil (standardverdi: namecoind.pid)</translation>
+    </message>
+    <message>
+        <source>Generate coins</source>
+        <translation type="obsolete">Generér Namecoins</translation>
+    </message>
+    <message>
+        <source>Don&apos;t generate coins</source>
+        <translation type="obsolete">Ikke generér Namecoins</translation>
+    </message>
+    <message>
+        <source>Specify data directory</source>
+        <translation type="obsolete">Angi mappe for datafiler</translation>
+    </message>
+    <message>
+        <source>Set database cache size in megabytes (default: 25)</source>
+        <translation type="obsolete">Sett størrelse på mellomlager for database i megabytes (standardverdi: 25)</translation>
+    </message>
+    <message>
+        <source>Listen for connections on &lt;port&gt; (default: 8334 or testnet: 18334)</source>
+        <translation type="obsolete">Lytt etter tilkoblinger på &lt;port&gt; (standardverdi: 8334 eller testnet: 18334)</translation>
+    </message>
+    <message>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
+        <translation type="obsolete">Hold maks &lt;n&gt; koblinger åpne til andre noder (standardverdi: 125)</translation>
+    </message>
+    <message>
+        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
+        <translation type="obsolete">Koble til node for å hente adresser til andre noder, koble så fra igjen</translation>
+    </message>
+    <message>
+        <source>Specify your own public address</source>
+        <translation type="obsolete">Angi din egen offentlige adresse</translation>
+    </message>
+    <message>
+        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
+        <translation type="obsolete">Grenseverdi for å koble fra noder med dårlig oppførsel (standardverdi: 100)</translation>
+    </message>
+    <message>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
+        <translation type="obsolete">Antall sekunder noder med dårlig oppførsel hindres fra å koble til på nytt (standardverdi: 86400)</translation>
+    </message>
+    <message>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
+        <translation type="obsolete">En feil oppstod ved opprettelse av RPC port %u for lytting: %s</translation>
+    </message>
+    <message>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8336 or testnet: 18336)</source>
+        <translation type="obsolete">Lytt etter JSON-RPC tilkoblinger på &lt;port&gt; (standardverdi: 8336 or testnet: 18336)</translation>
+    </message>
+    <message>
+        <source>Accept command line and JSON-RPC commands</source>
+        <translation type="obsolete">Ta imot kommandolinje- og JSON-RPC-kommandoer</translation>
+    </message>
+    <message>
+        <source>Run in the background as a daemon and accept commands</source>
+        <translation type="obsolete">Kjør i bakgrunnen som daemon og ta imot kommandoer</translation>
+    </message>
+    <message>
+        <source>Use the test network</source>
+        <translation type="obsolete">Bruk testnettverket</translation>
+    </message>
+    <message>
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+        <translation type="obsolete">Ta imot tilkoblinger fra utsiden (standardverdi: 1 hvis uten -proxy eller -connect)</translation>
+    </message>
+    <message>
+        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
+        <translation type="obsolete">Sett maks størrelse for transaksjoner med høy prioritet / lavt gebyr, i bytes (standardverdi: 27000)</translation>
+    </message>
+    <message>
+        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
+        <translation type="obsolete">Advarsel: -paytxfee er satt veldig høyt! Dette er transaksjonsgebyret du betaler når du sender transaksjoner.</translation>
+    </message>
+    <message>
+        <source>Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</source>
+        <translation type="obsolete">Advarsel: Viste transaksjoner kan være feil! Du, eller andre noder, kan trenge en oppgradering.</translation>
+    </message>
+    <message>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Namecoin will not work properly.</source>
+        <translation type="obsolete">Advarsel: Vennligst undersøk at din datamaskin har riktig dato og klokkeslett! Hvis klokken er stilt feil vil ikke Namecoin fungere riktig.</translation>
+    </message>
+    <message>
+        <source>Block creation options:</source>
+        <translation type="obsolete">Valg for opprettelse av blokker:</translation>
+    </message>
+    <message>
+        <source>Connect only to the specified node(s)</source>
+        <translation type="obsolete">Koble kun til angitt(e) node(r)</translation>
+    </message>
+    <message>
+        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
+        <translation type="obsolete">Oppdag egen IP-adresse (standardverdi: 1 ved lytting og uten -externalip)</translation>
+    </message>
+    <message>
+        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
+        <translation type="obsolete">Kunne ikke lytte på noen port. Bruk -listen=0 hvis det er dette du vil.</translation>
+    </message>
+    <message>
+        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
+        <translation type="obsolete">Finn andre noder gjennom DNS-oppslag (standardverdi: 1 med mindre -connect er oppgit)</translation>
+    </message>
+    <message>
+        <source>Invalid -tor address: &apos;%s&apos;</source>
+        <translation type="obsolete">Ugyldig -tor adresse: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
+        <translation type="obsolete">Maks mottaksbuffer per forbindelse, &lt;n&gt;*1000 bytes (standardverdi: 5000)</translation>
+    </message>
+    <message>
+        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
+        <translation type="obsolete">Maks sendebuffer per forbindelse, &lt;n&gt;*1000 bytes (standardverdi: 1000)</translation>
+    </message>
+    <message>
+        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
+        <translation type="obsolete">Koble kun til noder i nettverket &lt;nett&gt; (IPv4, IPv6 eller Tor)</translation>
+    </message>
+    <message>
+        <source>Output extra debugging information. Implies all other -debug* options</source>
+        <translation type="obsolete">Skriv ekstra informasjon for feilsøk. Medfører at alle -debug* valg tas med</translation>
+    </message>
+    <message>
+        <source>Output extra network debugging information</source>
+        <translation type="obsolete">Skriv ekstra informasjon for feilsøk av nettverk</translation>
+    </message>
+    <message>
+        <source>Prepend debug output with timestamp</source>
+        <translation type="obsolete">Sett tidsstempel på debugmeldinger</translation>
+    </message>
+    <message>
+        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation type="obsolete">SSL valg: (se Bitcoin Wiki for instruksjoner for oppsett av SSL)</translation>
+    </message>
+    <message>
+        <source>Select the version of socks proxy to use (4-5, default: 5)</source>
+        <translation type="obsolete">Velg versjon av socks proxy (4-5, standardverdi 5)</translation>
+    </message>
+    <message>
+        <source>Send trace/debug info to console instead of debug.log file</source>
+        <translation type="obsolete">Send spor/debug informasjon til konsollet istedenfor debug.log filen</translation>
+    </message>
+    <message>
+        <source>Send trace/debug info to debugger</source>
+        <translation type="obsolete">Send spor/debug informasjon til debugger</translation>
+    </message>
+    <message>
+        <source>Set maximum block size in bytes (default: 250000)</source>
+        <translation type="obsolete">Sett maks blokkstørrelse i bytes (standardverdi: 250000)</translation>
+    </message>
+    <message>
+        <source>Set minimum block size in bytes (default: 0)</source>
+        <translation type="obsolete">Sett minimum blokkstørrelse i bytes (standardverdi: 0)</translation>
+    </message>
+    <message>
+        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
+        <translation type="obsolete">Krymp debug.log filen når klienten starter (standardverdi: 1 hvis uten -debug)</translation>
+    </message>
+    <message>
+        <source>Specify connection timeout in milliseconds (default: 5000)</source>
+        <translation type="obsolete">Angi tidsavbrudd for forbindelse i millisekunder (standardverdi: 5000)</translation>
+    </message>
+    <message>
+        <source>Use UPnP to map the listening port (default: 0)</source>
+        <translation type="obsolete">Bruk UPnP for lytteport (standardverdi: 0)</translation>
+    </message>
+    <message>
+        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
+        <translation type="obsolete">Bruk UPnP for lytteport (standardverdi: 1 ved lytting)</translation>
+    </message>
+    <message>
+        <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
+        <translation type="obsolete">Bruk en proxy for å nå skjulte tor tjenester (standardverdi: samme som -proxy)</translation>
+    </message>
+    <message>
+        <source>Username for JSON-RPC connections</source>
+        <translation type="obsolete">Brukernavn for JSON-RPC forbindelser</translation>
+    </message>
+    <message>
+        <source>Warning: This version is obsolete, upgrade required!</source>
+        <translation type="obsolete">Advarsel: Denne versjonen er foreldet, oppgradering kreves!</translation>
+    </message>
+    <message>
+        <source>Password for JSON-RPC connections</source>
+        <translation type="obsolete">Passord for JSON-RPC forbindelser</translation>
+    </message>
+    <message>
+        <source>Allow JSON-RPC connections from specified IP address</source>
+        <translation type="obsolete">Tillat JSON-RPC tilkoblinger fra angitt IP-adresse</translation>
+    </message>
+    <message>
+        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
+        <translation type="obsolete">Send kommandoer til node på &lt;ip&gt; (standardverdi: 127.0.0.1)</translation>
+    </message>
+    <message>
+        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
+        <translation type="obsolete">Eksekvér kommando når beste blokk endrer seg (%s i kommandoen erstattes med blokkens hash)</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet to latest format</source>
+        <translation type="obsolete">Oppgradér lommebok til nyeste format</translation>
+    </message>
+    <message>
+        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
+        <translation type="obsolete">Angi størrelse på nøkkel-lager til &lt;n&gt; (standardverdi: 100)</translation>
+    </message>
+    <message>
+        <source>Rescan the block chain for missing wallet transactions</source>
+        <translation type="obsolete">Se gjennom blokk-kjeden etter manglende lommeboktransaksjoner</translation>
+    </message>
+    <message>
+        <source>How many blocks to check at startup (default: 2500, 0 = all)</source>
+        <translation type="obsolete">Hvor mange blokker som skal sjekkes ved oppstart (standardverdi: 2500, 0 = alle)</translation>
+    </message>
+    <message>
+        <source>Use OpenSSL (https) for JSON-RPC connections</source>
+        <translation type="obsolete">Bruk OpenSSL (https) for JSON-RPC forbindelser</translation>
+    </message>
+    <message>
+        <source>Server certificate file (default: server.cert)</source>
+        <translation type="obsolete">Servers sertifikat (standardverdi: server.cert)</translation>
+    </message>
+    <message>
+        <source>Server private key (default: server.pem)</source>
+        <translation type="obsolete">Servers private nøkkel (standardverdi: server.pem)</translation>
+    </message>
+    <message>
+        <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
+        <translation type="obsolete">Akseptable krypteringsmetoder (standardverdi: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
+    </message>
+    <message>
+        <source>This help message</source>
+        <translation type="obsolete">Denne hjelpemeldingen</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
+        <translation type="obsolete">Kan ikke binde til %s på denne datamaskinen (bind returnerte feil %d, %s)</translation>
+    </message>
+    <message>
+        <source>Connect through socks proxy</source>
+        <translation type="obsolete">Koble til gjennom socks proxy</translation>
+    </message>
+    <message>
+        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
+        <translation type="obsolete">Tillat DNS oppslag for -addnode, -seednode og -connect</translation>
+    </message>
+    <message>
+        <source>Loading addresses...</source>
+        <translation type="obsolete">Laster adresser...</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet corrupted</source>
+        <translation type="obsolete">Feil ved lasting av wallet.dat: Lommeboken er skadet</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet requires newer version of Namecoin</source>
+        <translation type="obsolete">Feil ved lasting av wallet.dat: Lommeboken krever en nyere versjon av Namecoin</translation>
+    </message>
+    <message>
+        <source>Wallet needed to be rewritten: restart Namecoin to complete</source>
+        <translation type="obsolete">Lommeboken måtte skrives om: start Namecoin på nytt for å fullføre</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat</source>
+        <translation type="obsolete">Feil ved lasting av wallet.dat</translation>
+    </message>
+    <message>
+        <source>Invalid -proxy address: &apos;%s&apos;</source>
+        <translation type="obsolete">Ugyldig -proxy adresse: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
+        <translation type="obsolete">Ukjent nettverk angitt i -onlynet &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Unknown -socks proxy version requested: %i</source>
+        <translation type="obsolete">Ukjent -socks proxy versjon angitt: %i</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
+        <translation type="obsolete">Kunne ikke slå opp -bind adresse: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
+        <translation type="obsolete">Kunne ikke slå opp -externalip adresse: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation type="obsolete">Ugyldig beløp for -paytxfee=&lt;beløp&gt;: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <source>Error: could not start node</source>
+        <translation type="obsolete">Feil: kunne ikke starte node</translation>
+    </message>
+    <message>
+        <source>Invalid amount</source>
+        <translation type="obsolete">Ugyldig beløp</translation>
+    </message>
+    <message>
+        <source>Insufficient funds</source>
+        <translation type="obsolete">Utilstrekkelige midler</translation>
+    </message>
+    <message>
+        <source>Loading block index...</source>
+        <translation type="obsolete">Laster blokkindeks...</translation>
+    </message>
+    <message>
+        <source>Add a node to connect to and attempt to keep the connection open</source>
+        <translation type="obsolete">Legg til node for tilkobling og hold forbindelsen åpen</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer. Namecoin is probably already running.</source>
+        <translation type="obsolete">Kan ikke binde til %s på denne datamaskinen. Sannsynligvis kjører Namecoin allerede.</translation>
+    </message>
+    <message>
+        <source>Find peers using internet relay chat (default: 0)</source>
+        <translation type="obsolete">Finn andre noder via internet relay chat (standardverdi: 0)</translation>
+    </message>
+    <message>
+        <source>Fee per KB to add to transactions you send</source>
+        <translation type="obsolete">Gebyr per KB for transaksjoner du sender</translation>
+    </message>
+    <message>
+        <source>Loading wallet...</source>
+        <translation type="obsolete">Laster lommebok...</translation>
+    </message>
+    <message>
+        <source>Cannot downgrade wallet</source>
+        <translation type="obsolete">Kan ikke nedgradere lommebok</translation>
+    </message>
+    <message>
+        <source>Cannot initialize keypool</source>
+        <translation type="obsolete">Kan ikke initialisere nøkkellager</translation>
+    </message>
+    <message>
+        <source>Cannot write default address</source>
+        <translation type="obsolete">Kan ikke skrive standardadresse</translation>
+    </message>
+    <message>
+        <source>Rescanning...</source>
+        <translation type="obsolete">Leser gjennom...</translation>
+    </message>
+    <message>
+        <source>Done loading</source>
+        <translation type="obsolete">Ferdig med lasting</translation>
+    </message>
+    <message>
+        <source>To use the %s option</source>
+        <translation type="obsolete">For å bruke %s opsjonen</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="obsolete">Feil</translation>
+    </message>
+    <message>
+        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
+%s
+If the file does not exist, create it with owner-readable-only file permissions.</source>
+        <translation type="obsolete">Du må sette rpcpassword=&lt;passord&gt; i konfigurasjonsfilen:
+%s
+Hvis filen ikke finnes, opprett den med leserettighet kun for eier av filen.</translation>
+    </message>
+</context>
+<context>
+    <name>NamecoinGUI</name>
+    <message>
+        <source>Sign &amp;message...</source>
+        <translation type="obsolete">Signer &amp;melding...</translation>
+    </message>
+    <message>
+        <source>Synchronizing with network...</source>
+        <translation type="obsolete">Synkroniserer med nettverk...</translation>
+    </message>
+    <message>
+        <source>&amp;Overview</source>
+        <translation type="obsolete">&amp;Oversikt</translation>
+    </message>
+    <message>
+        <source>Show general overview of wallet</source>
+        <translation type="obsolete">Vis generell oversikt over lommeboken</translation>
+    </message>
+    <message>
+        <source>&amp;Transactions</source>
+        <translation type="obsolete">&amp;Transaksjoner</translation>
+    </message>
+    <message>
+        <source>Browse transaction history</source>
+        <translation type="obsolete">Vis transaksjonshistorikk</translation>
+    </message>
+    <message>
+        <source>&amp;Address Book</source>
+        <translation type="obsolete">&amp;Adressebok</translation>
+    </message>
+    <message>
+        <source>Edit the list of stored addresses and labels</source>
+        <translation type="obsolete">Rediger listen over adresser og deres merkelapper</translation>
+    </message>
+    <message>
+        <source>&amp;Receive coins</source>
+        <translation type="obsolete">&amp;Motta Namecoins</translation>
+    </message>
+    <message>
+        <source>Show the list of addresses for receiving payments</source>
+        <translation type="obsolete">Vis listen over adresser for mottak av betalinger</translation>
+    </message>
+    <message>
+        <source>&amp;Send coins</source>
+        <translation type="obsolete">&amp;Send Namecoins</translation>
+    </message>
+    <message>
+        <source>E&amp;xit</source>
+        <translation type="obsolete">&amp;Avslutt</translation>
+    </message>
+    <message>
+        <source>Quit application</source>
+        <translation type="obsolete">Avslutt applikasjonen</translation>
+    </message>
+    <message>
+        <source>Show information about Namecoin</source>
+        <translation type="obsolete">Vis informasjon om Namecoin</translation>
+    </message>
+    <message>
+        <source>About &amp;Qt</source>
+        <translation type="obsolete">Om &amp;Qt</translation>
+    </message>
+    <message>
+        <source>Show information about Qt</source>
+        <translation type="obsolete">Vis informasjon om Qt</translation>
+    </message>
+    <message>
+        <source>&amp;Options...</source>
+        <translation type="obsolete">&amp;Innstillinger...</translation>
+    </message>
+    <message>
+        <source>&amp;Encrypt Wallet...</source>
+        <translation type="obsolete">&amp;Krypter Lommebok...</translation>
+    </message>
+    <message>
+        <source>&amp;Backup Wallet...</source>
+        <translation type="obsolete">Lag &amp;Sikkerhetskopi av Lommebok...</translation>
+    </message>
+    <message>
+        <source>&amp;Change Passphrase...</source>
+        <translation type="obsolete">&amp;Endre Adgangsfrase...</translation>
+    </message>
+    <message numerus="yes">
+        <source>~%n block(s) remaining</source>
+        <translation type="obsolete">
+            <numerusform>~%n blokk gjenstår</numerusform>
+            <numerusform>~%n blokker gjenstår</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>&amp;Export...</source>
+        <translation type="obsolete">&amp;Eksporter...</translation>
+    </message>
+    <message>
+        <source>Send coins to a Namecoin address</source>
+        <translation type="obsolete">Send til en Namecoin-adresse</translation>
+    </message>
+    <message>
+        <source>Modify configuration options for Namecoin</source>
+        <translation type="obsolete">Endre oppsett for Namecoin</translation>
+    </message>
+    <message>
+        <source>Export the data in the current tab to a file</source>
+        <translation type="obsolete">Eksporter data fra nåværende fane til fil</translation>
+    </message>
+    <message>
+        <source>Backup wallet to another location</source>
+        <translation type="obsolete">Sikkerhetskopiér lommebok til annet sted</translation>
+    </message>
+    <message>
+        <source>Change the passphrase used for wallet encryption</source>
+        <translation type="obsolete">Endre adgangsfrasen brukt for kryptering av lommebok</translation>
+    </message>
+    <message>
+        <source>&amp;Debug window</source>
+        <translation type="obsolete">&amp;Feilsøkingsvindu</translation>
+    </message>
+    <message>
+        <source>Open debugging and diagnostic console</source>
+        <translation type="obsolete">Åpne konsoll for feilsøk og diagnostikk</translation>
+    </message>
+    <message>
+        <source>&amp;Verify message...</source>
+        <translation type="obsolete">&amp;Verifiser melding...</translation>
+    </message>
+    <message>
+        <source>Namecoin</source>
+        <translation type="obsolete">Namecoin</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation type="obsolete">Lommebok</translation>
+    </message>
+    <message>
+        <source>&amp;About Namecoin</source>
+        <translation type="obsolete">&amp;Om Namecoin</translation>
+    </message>
+    <message>
+        <source>&amp;Show / Hide</source>
+        <translation type="obsolete">&amp;Gjem / vis</translation>
+    </message>
+    <message>
+        <source>&amp;File</source>
+        <translation type="obsolete">&amp;Fil</translation>
+    </message>
+    <message>
+        <source>&amp;Settings</source>
+        <translation type="obsolete">&amp;Innstillinger</translation>
+    </message>
+    <message>
+        <source>&amp;Help</source>
+        <translation type="obsolete">&amp;Hjelp</translation>
+    </message>
+    <message>
+        <source>Tabs toolbar</source>
+        <translation type="obsolete">Verktøylinje for faner</translation>
+    </message>
+    <message>
+        <source>Actions toolbar</source>
+        <translation type="obsolete">Verktøylinje for handlinger</translation>
+    </message>
+    <message>
+        <source>[testnet]</source>
+        <translation type="obsolete">[testnett]</translation>
+    </message>
+    <message>
+        <source>Namecoin client</source>
+        <translation type="obsolete">Bitcoinklient</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n active connection(s) to Namecoin network</source>
+        <translation type="obsolete">
+            <numerusform>%n aktiv forbindelse til Namecoin-nettverket</numerusform>
+            <numerusform>%n aktive forbindelser til Namecoin-nettverket</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n second(s) ago</source>
+        <translation type="obsolete">
+            <numerusform>for %n sekund siden</numerusform>
+            <numerusform>for %n sekunder siden</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n minute(s) ago</source>
+        <translation type="obsolete">
+            <numerusform>for %n minutt siden</numerusform>
+            <numerusform>for %n minutter siden</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n hour(s) ago</source>
+        <translation type="obsolete">
+            <numerusform>for %n time siden</numerusform>
+            <numerusform>for %n timer siden</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s) ago</source>
+        <translation type="obsolete">
+            <numerusform>for %n dag siden</numerusform>
+            <numerusform>for %n dager siden</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Up to date</source>
+        <translation type="obsolete">Ajour</translation>
+    </message>
+    <message>
+        <source>Catching up...</source>
+        <translation type="obsolete">Kommer ajour...</translation>
+    </message>
+    <message>
+        <source>Last received block was generated %1.</source>
+        <translation type="obsolete">Siste mottatte blokk ble generert %1.</translation>
+    </message>
+    <message>
+        <source>Confirm transaction fee</source>
+        <translation type="obsolete">Bekreft transaksjonsgebyr</translation>
+    </message>
+    <message>
+        <source>Sent transaction</source>
+        <translation type="obsolete">Sendt transaksjon</translation>
+    </message>
+    <message>
+        <source>Incoming transaction</source>
+        <translation type="obsolete">Innkommende transaksjon</translation>
+    </message>
+    <message>
+        <source>Date: %1
+Amount: %2
+Type: %3
+Address: %4
+</source>
+        <translation type="obsolete">Dato: %1
+Beløp: %2
+Type: %3
+Adresse: %4
+</translation>
+    </message>
+    <message>
+        <source>URI handling</source>
+        <translation type="obsolete">URI håndtering</translation>
+    </message>
+    <message>
+        <source>URI can not be parsed! This can be caused by an invalid Namecoin address or malformed URI parameters.</source>
+        <translation type="obsolete">URI kunne ikke tolkes! Dette kan forårsakes av en ugyldig Namecoin-adresse eller feil i URI-parametere.</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
+        <translation type="obsolete">Lommeboken er &lt;b&gt;kryptert&lt;/b&gt; og for tiden &lt;b&gt;ulåst&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
+        <translation type="obsolete">Lommeboken er &lt;b&gt;kryptert&lt;/b&gt; og for tiden &lt;b&gt;låst&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Backup Wallet</source>
+        <translation type="obsolete">Sikkerhetskopiér Lommebok</translation>
+    </message>
+    <message>
+        <source>Wallet Data (*.dat)</source>
+        <translation type="obsolete">Lommeboksdata (*.dat)</translation>
+    </message>
+    <message>
+        <source>Backup Failed</source>
+        <translation type="obsolete">Sikkerhetskopiering feilet</translation>
+    </message>
+    <message>
+        <source>There was an error trying to save the wallet data to the new location.</source>
+        <translation type="obsolete">En feil oppstod ved lagring av lommebok til nytt sted</translation>
+    </message>
+    <message>
+        <source>A fatal error occurred. Namecoin can no longer continue safely and will quit.</source>
+        <translation type="obsolete">En fatal feil har inntruffet. Det er ikke trygt å fortsette og Namecoin må derfor avslutte.</translation>
+    </message>
+</context>
+<context>
+    <name>OptionsDialog</name>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="+14"/>
+        <source>Options</source>
+        <translation>Innstillinger</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>&amp;Main</source>
+        <translation>&amp;Hoved</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.</source>
+        <translation>Valgfritt transaksjonsgebyr per kB som sikrer at dine transaksjoner blir raskt prosessert. De fleste transaksjoner er 1 kB. Et gebyr på 0.01 er anbefalt.</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Pay transaction &amp;fee</source>
+        <translation>Betal transaksjons&amp;gebyr</translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Automatically start Namecoin after logging in to the system.</source>
+        <translation>Start Namecoin automatisk etter innlogging.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Start Namecoin on system login</source>
+        <translation>&amp;Start Namecoin ved systeminnlogging</translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Reset all client options to default.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Reset Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>&amp;Network</source>
+        <translation>&amp;Nettverk</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Automatically open the Namecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Åpne automatisk Namecoin klientporten på ruteren. Dette virker kun om din ruter støtter UPnP og dette er påslått.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Map port using &amp;UPnP</source>
+        <translation>Sett opp port vha. &amp;UPnP</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Connect to the Namecoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Koble til Namecoin-nettverket gjennom en SOCKS proxy (f.eks. ved tilkobling gjennom Tor).</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
@@ -1615,6 +2580,7 @@ Adresse: %4
 <context>
     <name>EditAddressDialog</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/editaddressdialog.ui" line="+14"/>
         <source>Edit Address</source>
         <translation>Rediger adresse</translation>
@@ -1633,6 +2599,26 @@ Adresse: %4
         <location line="+17"/>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
         <translation>Adressen til denne oppføringen i adresseboken. Denne kan kun endres for utsendingsadresser.</translation>
+=======
+        <location filename="../optionsdialog.cpp" line="+53"/>
+        <source>default</source>
+        <translation>standardverdi</translation>
+    </message>
+    <message>
+        <location line="+130"/>
+        <source>Confirm options reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Some settings may require a client restart to take effect.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Do you want to proceed?</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="-10"/>
@@ -1720,6 +2706,20 @@ Adresse: %4
         <source>Bitcoin Core</source>
         <translation>Bitcoin Kjerne</translation>
     </message>
+<<<<<<< HEAD
+=======
+</context>
+<context>
+    <name>PaymentServer</name>
+    <message>
+        <location filename="../paymentserver.cpp" line="+108"/>
+        <source>Cannot start namecoin: click-to-pay handler</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>QRCodeDialog</name>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     <message>
         <location line="+0"/>
         <source>version</source>
@@ -1786,8 +2786,22 @@ Adresse: %4
     </message>
     <message>
         <location line="+10"/>
+<<<<<<< HEAD
         <source>Use the default data directory</source>
         <translation>Bruk standard data mappe</translation>
+=======
+        <location line="+23"/>
+        <location line="+26"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+36"/>
+        <location line="+53"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location filename="../rpcconsole.cpp" line="+345"/>
+        <source>N/A</source>
+        <translation>-</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+7"/>
@@ -1921,9 +2935,22 @@ Adresse: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+224"/>
         <source>Active command-line options that override above options:</source>
         <translation type="unfinished"/>
+=======
+        <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
+        <location filename="../sendcoinsdialog.cpp" line="+125"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <location line="+6"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <source>Send Coins</source>
+        <translation>Send Namecoins</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+43"/>
@@ -1966,9 +2993,15 @@ Adresse: %4
         <translation>Proxyens port (f.eks. 9050)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
         <source>SOCKS &amp;Version:</source>
         <translation>SOCKS &amp;Versjon:</translation>
+=======
+        <location line="+3"/>
+        <source>S&amp;end</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+13"/>
@@ -2016,9 +3049,15 @@ Adresse: %4
         <translation>Språket for brukergrensesnittet kan settes her. Innstillingen trer i kraft ved omstart av Bitcoin.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+11"/>
         <source>&amp;Unit to show amounts in:</source>
         <translation>&amp;Enhet for visning av beløper:</translation>
+=======
+        <location line="+5"/>
+        <source>Error: Transaction creation failed!</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+13"/>
@@ -2041,6 +3080,7 @@ Adresse: %4
         <translation>Skal mynt kontroll funksjoner vises eller ikke.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Display coin &amp;control features (experts only)</source>
         <translation>Vis mynt &amp;kontroll funksjoner (kun for eksperter)</translation>
@@ -2049,6 +3089,17 @@ Adresse: %4
         <location line="+136"/>
         <source>&amp;OK</source>
         <translation>&amp;OK</translation>
+=======
+        <location line="+34"/>
+        <source>The address to send the payment to (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+60"/>
+        <location filename="../sendcoinsentry.cpp" line="+26"/>
+        <source>Enter a label for this address to add it to your address book</source>
+        <translation>Skriv inn en merkelapp for denne adressen for å legge den til i din adressebok</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+7"/>
@@ -2141,9 +3192,15 @@ Adresse: %4
         <translation>Minet saldo har ikke modnet enda</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+16"/>
         <source>Total:</source>
         <translation>Totalt:</translation>
+=======
+        <location line="+7"/>
+        <source>Signature</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+16"/>
@@ -2156,10 +3213,16 @@ Adresse: %4
         <translation>&lt;b&gt;Siste transaksjoner&lt;/b&gt;</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../overviewpage.cpp" line="+120"/>
         <location line="+1"/>
         <source>out of sync</source>
         <translation>ute av synk</translation>
+=======
+        <location line="+3"/>
+        <source>Sign &amp;Message</source>
+        <translation type="unfinished">Signér &amp;Melding</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
@@ -2201,9 +3264,15 @@ Adresse: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Your active proxy doesn&apos;t support SOCKS5, which is required for payment requests via proxy.</source>
         <translation type="unfinished"/>
+=======
+        <location line="+3"/>
+        <source>Verify &amp;Message</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+52"/>
@@ -2211,9 +3280,16 @@ Adresse: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+27"/>
         <source>Payment request file handling</source>
         <translation type="unfinished"/>
+=======
+        <location filename="../signverifymessagedialog.cpp" line="+28"/>
+        <location line="+3"/>
+        <source>Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation>Skriv inn en Namecoin adresse (f.eks. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
@@ -2226,6 +3302,7 @@ Adresse: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+59"/>
         <source>Refund from %1</source>
         <translation>Refundering fra %1</translation>
@@ -2254,6 +3331,37 @@ Adresse: %4
         <location line="-11"/>
         <source>Network request error</source>
         <translation>Nettverksforespørsel feil</translation>
+=======
+        <location line="+82"/>
+        <location line="+82"/>
+        <source>The entered address is invalid.</source>
+        <translation>Angitt adresse er ugyldig.</translation>
+    </message>
+    <message>
+        <location line="-82"/>
+        <location line="+82"/>
+        <source>Please check the address and try again.</source>
+        <translation>Vennligst sjekk adressen og prøv igjen.</translation>
+    </message>
+    <message>
+        <source>The entered address does not refer to a key.</source>
+        <translation type="obsolete">Angitt adresse refererer ikke til en nøkkel.</translation>
+    </message>
+    <message>
+        <location line="-74"/>
+        <source>Wallet unlock was cancelled.</source>
+        <translation>Opplåsing av lommebok ble avbrutt.</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Private key for the entered address is not available.</source>
+        <translation>Privat nøkkel for den angitte adressen er ikke tilgjengelig.</translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Message signing failed.</source>
+        <translation>Signering av melding feilet.</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 <context>
@@ -2265,9 +3373,15 @@ Adresse: %4
         <translation>Bitcoin</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
         <translation>Feil: Spesifisert data mappe &quot;%1&quot; finnes ikke.</translation>
+=======
+        <location line="+51"/>
+        <source>The signature could not be decoded.</source>
+        <translation>Signaturen kunne ikke dekodes.</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="-12"/>
@@ -2292,9 +3406,15 @@ Adresse: %4
 =======
     <name>EditAddressDialog</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/editaddressdialog.ui" line="+14"/>
         <source>Edit Address</source>
         <translation>Rediger adresse</translation>
+=======
+        <location filename="../transactiondesc.cpp" line="+21"/>
+        <source>Open until %1</source>
+        <translation>Åpen til %1</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+11"/>
@@ -2316,10 +3436,20 @@ Adresse: %4
         <source>The address associated with this address book entry. This can only be modified for sending addresses.</source>
         <translation>Adressen til denne oppføringen i adresseboken. Denne kan kun endres for utsendingsadresser.</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <location filename="../editaddressdialog.cpp" line="+21"/>
         <source>New receiving address</source>
         <translation>Ny mottaksadresse</translation>
+=======
+    <message numerus="yes">
+        <location line="+7"/>
+        <source>, broadcast through %n node(s)</source>
+        <translation>
+            <numerusform>, kringkast gjennom %n node</numerusform>
+            <numerusform>, kringkast gjennom %n noder</numerusform>
+        </translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+4"/>
@@ -2365,10 +3495,20 @@ Adresse: %4
         <source>Bitcoin-Qt</source>
         <translation>Bitcoin-Qt</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <location line="-12"/>
         <source>version</source>
         <translation>versjon</translation>
+=======
+    <message numerus="yes">
+        <location line="-102"/>
+        <source>matures in %n more block(s)</source>
+        <translation>
+            <numerusform>blir moden om %n blokk</numerusform>
+            <numerusform>blir moden om %n blokker</numerusform>
+        </translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+2"/>
@@ -4300,11 +5440,11 @@ Adresse: %4
         <translation>Inndata</translation>
     </message>
     <message>
-        <location line="+23"/>
         <source>Amount</source>
-        <translation>Beløp</translation>
+        <translation type="obsolete">Beløp</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>true</source>
         <translation>sann</translation>
@@ -4801,6 +5941,27 @@ Adresse: %4
 <<<<<<< HEAD
         <source>There was an error trying to save the wallet data to %1.</source>
         <translation>En feil oppstod ved lagring av lommebok til %1.</translation>
+=======
+        <source>true</source>
+        <translation type="obsolete">sann</translation>
+    </message>
+    <message>
+        <source>false</source>
+        <translation type="obsolete">usann</translation>
+    </message>
+    <message>
+        <location line="-185"/>
+        <source>, has not been successfully broadcast yet</source>
+        <translation>, har ikke blitt kringkastet uten problemer enda.</translation>
+    </message>
+    <message numerus="yes">
+        <location line="-35"/>
+        <source>Open for %n more block(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+4"/>
@@ -4862,6 +6023,7 @@ Adresse: %4
         <source>Send command to -server or bitcoind</source>
         <translation>Send kommando til -server eller bitcoind</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <location line="-23"/>
 >>>>>>> Committing original src/qt
@@ -4869,6 +6031,15 @@ Adresse: %4
         <location line="-23"/>
         <source>Send command to -server or namecoind</source>
         <translation>Send kommando til -server eller namecoind</translation>
+=======
+    <message numerus="yes">
+        <location line="+57"/>
+        <source>Open for %n more block(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="-21"/>
@@ -4922,10 +6093,20 @@ Adresse: %4
         <source>Specify pid file (default: namecoind.pid)</source>
         <translation>Angi pid-fil (standardverdi: namecoind.pid)</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <location line="-47"/>
         <source>Generate coins</source>
         <translation>Generér Namecoins</translation>
+=======
+    <message numerus="yes">
+        <location line="+8"/>
+        <source>Mined balance will be available when it matures in %n more block(s)</source>
+        <translation>
+            <numerusform>Minet saldo blir tilgjengelig når den modner om %n blokk</numerusform>
+            <numerusform>Minet saldo blir tilgjengelig når den modner om %n blokker</numerusform>
+        </translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="-15"/>
@@ -5178,11 +6359,18 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Feil: Transaksjonen ble avvist! Dette kan skje hvis noen av myntene i lommeboken alerede er blit brukt, som om du brukte en kopi av wallet.dat og myntene ble brukt i kopien, men ikke markert som brukt her.</translation>
+=======
+        <location filename="../transactionview.cpp" line="+52"/>
+        <location line="+16"/>
+        <source>All</source>
+        <translation>Alle</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+4"/>
@@ -5300,9 +6488,15 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Bitcoin RPC client version</source>
         <translation>Bitcoin RPC klientversjon</translation>
+=======
+        <location line="+137"/>
+        <source>Export Transaction Data</source>
+        <translation>Eksporter transaksjonsdata</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
@@ -5363,6 +6557,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <source>Do you want to rebuild the block database now?</source>
         <translation>Ønsker du å gjenopprette blokkdatabasen nå?</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <location line="+2"/>
         <source>Error initializing block database</source>
@@ -5724,6 +6919,367 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <location line="+89"/>
         <source>Information</source>
         <translation>Informasjon</translation>
+=======
+</context>
+<context>
+    <name>namecoin-core</name>
+    <message>
+        <location filename="../bitcoinstrings.cpp" line="+9"/>
+        <source>%s, you must set a rpcpassword in the configuration file:
+ %s
+It is recommended you use the following random password:
+rpcuser=namecoinrpc
+rpcpassword=%s
+(you do not need to remember this password)
+The username and password MUST NOT be the same.
+If the file does not exist, create it with owner-readable-only file permissions.
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
+        <translation type="unfinished">Akseptable krypteringsmetoder (standardverdi: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
+        <translation type="unfinished">En feil oppstod ved opprettelse av RPC port %u for lytting: %s</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Cannot obtain a lock on data directory %s. Namecoin is probably already running.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
+        <translation type="unfinished">Eksekvér kommando når beste blokk endrer seg (%s i kommandoen erstattes med blokkens hash)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8336 or testnet: 18336)</source>
+        <translation type="unfinished">Lytt etter JSON-RPC tilkoblinger på &lt;port&gt; (standardverdi: 8336 or testnet: 18336)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
+        <translation type="unfinished">Antall sekunder noder med dårlig oppførsel hindres fra å koble til på nytt (standardverdi: 86400)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
+        <translation type="unfinished">Sett maks størrelse for transaksjoner med høy prioritet / lavt gebyr, i bytes (standardverdi: 27000)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Set the number of script verification threads (1-16, 0=auto, default: 0)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Unable to bind to %s on this computer. Namecoin is probably already running.</source>
+        <translation type="unfinished">Kan ikke binde til %s på denne datamaskinen. Sannsynligvis kjører Namecoin allerede.</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
+        <translation type="unfinished">Advarsel: -paytxfee er satt veldig høyt! Dette er transaksjonsgebyret du betaler når du sender transaksjoner.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</source>
+        <translation type="unfinished">Advarsel: Viste transaksjoner kan være feil! Du, eller andre noder, kan trenge en oppgradering.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Namecoin will not work properly.</source>
+        <translation type="unfinished">Advarsel: Vennligst undersøk at din datamaskin har riktig dato og klokkeslett! Hvis klokken er stilt feil vil ikke Namecoin fungere riktig.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
+%s
+If the file does not exist, create it with owner-readable-only file permissions.</source>
+        <translation type="unfinished">Du må sette rpcpassword=&lt;passord&gt; i konfigurasjonsfilen:
+%s
+Hvis filen ikke finnes, opprett den med leserettighet kun for eier av filen.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Accept command line and JSON-RPC commands</source>
+        <translation type="unfinished">Ta imot kommandolinje- og JSON-RPC-kommandoer</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+        <translation type="unfinished">Ta imot tilkoblinger fra utsiden (standardverdi: 1 hvis uten -proxy eller -connect)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Add a node to connect to and attempt to keep the connection open</source>
+        <translation type="unfinished">Legg til node for tilkobling og hold forbindelsen åpen</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
+        <translation type="unfinished">Tillat DNS oppslag for -addnode, -seednode og -connect</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Allow JSON-RPC connections from specified IP address</source>
+        <translation type="unfinished">Tillat JSON-RPC tilkoblinger fra angitt IP-adresse</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Namecoin version</source>
+        <translation type="unfinished">Namecoin versjon</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Block creation options:</source>
+        <translation type="unfinished">Valg for opprettelse av blokker:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot downgrade wallet</source>
+        <translation type="unfinished">Kan ikke nedgradere lommebok</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot initialize keypool</source>
+        <translation type="unfinished">Kan ikke initialisere nøkkellager</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
+        <translation type="unfinished">Kunne ikke slå opp -bind adresse: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
+        <translation type="unfinished">Kunne ikke slå opp -externalip adresse: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot write default address</source>
+        <translation type="unfinished">Kan ikke skrive standardadresse</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect only to the specified node(s)</source>
+        <translation type="unfinished">Koble kun til angitt(e) node(r)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect through socks proxy</source>
+        <translation type="unfinished">Koble til gjennom socks proxy</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
+        <translation type="unfinished">Koble til node for å hente adresser til andre noder, koble så fra igjen</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Corrupted block database detected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
+        <translation type="unfinished">Oppdag egen IP-adresse (standardverdi: 1 ved lytting og uten -externalip)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you want to rebuild the block database now?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Don&apos;t generate coins</source>
+        <translation type="unfinished">Ikke generér Namecoins</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Done loading</source>
+        <translation type="unfinished">Ferdig med lasting</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error initializing block database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error loading block database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error loading wallet.dat</source>
+        <translation type="unfinished">Feil ved lasting av wallet.dat</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error loading wallet.dat: Wallet corrupted</source>
+        <translation type="unfinished">Feil ved lasting av wallet.dat: Lommeboken er skadet</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error loading wallet.dat: Wallet requires newer version of Namecoin</source>
+        <translation type="unfinished">Feil ved lasting av wallet.dat: Lommeboken krever en nyere versjon av Namecoin</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error opening block database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error</source>
+        <translation type="unfinished">Feil</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Disk space is low!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Transaction creation failed!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Wallet locked, unable to create transaction!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: could not start node</source>
+        <translation type="unfinished">Feil: kunne ikke starte node</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: system error: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
+        <translation type="unfinished">Kunne ikke lytte på noen port. Bruk -listen=0 hvis det er dette du vil.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to read block info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to read block</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to sync block index</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write block index</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write block info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write block</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write file info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write to coin database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write transaction index</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write undo data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Fee per KB to add to transactions you send</source>
+        <translation type="unfinished">Gebyr per KB for transaksjoner du sender</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
+        <translation type="unfinished">Finn andre noder gjennom DNS-oppslag (standardverdi: 1 med mindre -connect er oppgit)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+4"/>
@@ -5733,26 +7289,32 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <location line="-69"/>
 =======
         <location line="+1"/>
-        <source>Importing blocks from block database...</source>
-        <translation type="unfinished"/>
+        <source>Find peers using internet relay chat (default: 0)</source>
+        <translation type="unfinished">Finn andre noder via internet relay chat (standardverdi: 0)</translation>
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Imports blocks from external blk000??.dat file</source>
         <translation type="unfinished"/>
+=======
+        <source>Generate coins</source>
+        <translation type="unfinished">Generér Namecoins</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
-        <source>Information</source>
-        <translation type="unfinished"/>
+        <source>Get help for a command</source>
+        <translation type="unfinished">Vis hjelpetekst for en kommando</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Invalid -tor address: &apos;%s&apos;</source>
-        <translation>Ugyldig -tor adresse: &apos;%s&apos;</translation>
+        <location line="+1"/>
+        <source>How many blocks to check at startup (default: 288, 0 = all)</source>
+        <translation type="unfinished">Hvor mange blokker som skal sjekkes ved oppstart (standardverdi: 2500, 0 = alle) {288, 0 ?}</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+1"/>
         <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
@@ -5784,39 +7346,50 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
         <translation>Maks mottaksbuffer per forbindelse, &lt;n&gt;*1000 bytes (standardverdi: 5000)</translation>
+=======
+        <location line="+1"/>
+        <source>How thorough the block verification is (0-4, default: 3)</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
-        <translation>Maks sendebuffer per forbindelse, &lt;n&gt;*1000 bytes (standardverdi: 1000)</translation>
+        <source>Importing blocks from block database...</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
-        <translation type="unfinished"/>
+        <source>Imports blocks from external blk000??.dat file</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
-        <translation>Koble kun til noder i nettverket &lt;nett&gt; (IPv4, IPv6 eller Tor)</translation>
+        <source>Information</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+9"/>
 =======
         <location line="+2"/>
         <source>Output extra debugging information. Implies all other -debug* options</source>
         <translation>Skriv ekstra informasjon for feilsøk. Medfører at alle -debug* valg tas med</translation>
+=======
+        <location line="+1"/>
+        <source>Insufficient funds</source>
+        <translation type="unfinished">Utilstrekkelige midler</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
-        <source>Output extra network debugging information</source>
-        <translation>Skriv ekstra informasjon for feilsøk av nettverk</translation>
+        <source>Invalid -proxy address: &apos;%s&apos;</source>
+        <translation type="unfinished">Ugyldig -proxy adresse: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Prepend debug output with timestamp</source>
-        <translation>Sett tidsstempel på debugmeldinger</translation>
+        <location line="+1"/>
+        <source>Invalid -tor address: &apos;%s&apos;</source>
+        <translation type="unfinished">Ugyldig -tor adresse: &apos;%s&apos;</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -5824,54 +7397,72 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Committing original src/qt
 =======
         <location line="+1"/>
-        <source>Rebuild blockchain index from current blk000??.dat files</source>
-        <translation type="unfinished"/>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation type="unfinished">Ugyldig beløp for -paytxfee=&lt;beløp&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
         <translation>SSL valg: (se Bitcoin Wiki for instruksjoner for oppsett av SSL)</translation>
+=======
+        <location line="+1"/>
+        <source>Invalid amount</source>
+        <translation type="unfinished">Ugyldig beløp</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
 <<<<<<< HEAD
         <location line="+4"/>
 =======
         <location line="+1"/>
-        <source>Select the version of socks proxy to use (4-5, default: 5)</source>
-        <translation>Velg versjon av socks proxy (4-5, standardverdi 5)</translation>
+        <source>List commands</source>
+        <translation type="unfinished">List opp kommandoer</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
 >>>>>>> Committing original src/qt
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Send spor/debug informasjon til konsollet istedenfor debug.log filen</translation>
+=======
+        <location line="+1"/>
+        <source>Listen for connections on &lt;port&gt; (default: 8334 or testnet: 18334)</source>
+        <translation type="unfinished">Lytt etter tilkoblinger på &lt;port&gt; (standardverdi: 8334 eller testnet: 18334)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
 <<<<<<< HEAD
         <location line="+6"/>
 =======
         <location line="+1"/>
-        <source>Send trace/debug info to debugger</source>
-        <translation>Send spor/debug informasjon til debugger</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Set maximum block size in bytes (default: 250000)</source>
-        <translation>Sett maks blokkstørrelse i bytes (standardverdi: 250000)</translation>
+        <source>Loading addresses...</source>
+        <translation type="unfinished">Laster adresser...</translation>
     </message>
     <message>
         <location line="+1"/>
+        <source>Loading block index...</source>
+        <translation type="unfinished">Laster blokkindeks...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <source>Set minimum block size in bytes (default: 0)</source>
         <translation>Sett minimum blokkstørrelse i bytes (standardverdi: 0)</translation>
+=======
+        <source>Loading wallet...</source>
+        <translation type="unfinished">Laster lommebok...</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
-        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Krymp debug.log filen når klienten starter (standardverdi: 1 hvis uten -debug)</translation>
+        <source>Maintain a full transaction index (default: 0)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+1"/>
         <source>Signing transaction failed</source>
@@ -5938,20 +7529,31 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation>Bruk UPnP for lytteport (standardverdi: 0)</translation>
+=======
+        <location line="+1"/>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
+        <translation type="unfinished">Hold maks &lt;n&gt; koblinger åpne til andre noder (standardverdi: 125)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Bruk UPnP for lytteport (standardverdi: 1 ved lytting)</translation>
+        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
+        <translation type="unfinished">Maks mottaksbuffer per forbindelse, &lt;n&gt;*1000 bytes (standardverdi: 5000)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
+        <translation type="unfinished">Maks sendebuffer per forbindelse, &lt;n&gt;*1000 bytes (standardverdi: 1000)</translation>
     </message>
     <message>
 <<<<<<< HEAD
 =======
         <location line="+1"/>
-        <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
-        <translation>Bruk en proxy for å nå skjulte tor tjenester (standardverdi: samme som -proxy)</translation>
+        <source>Only accept block chain matching built-in checkpoints (default: 1)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <location line="+2"/>
         <source>Username for JSON-RPC connections</source>
@@ -5975,6 +7577,21 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Committing original src/qt
         <source>Warning: This version is obsolete, upgrade required!</source>
         <translation>Advarsel: Denne versjonen er foreldet, oppgradering kreves!</translation>
+=======
+        <location line="+1"/>
+        <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
+        <translation type="unfinished">Koble kun til noder i nettverket &lt;nett&gt; (IPv4, IPv6 eller Tor)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Options:</source>
+        <translation type="unfinished">Innstillinger:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Output extra debugging information. Implies all other -debug* options</source>
+        <translation type="unfinished">Skriv ekstra informasjon for feilsøk. Medfører at alle -debug* valg tas med</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
 <<<<<<< HEAD
@@ -5990,6 +7607,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
 =======
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>wallet.dat corrupt, salvage failed</source>
@@ -6008,10 +7626,18 @@ If the file does not exist, create it with owner-readable-only file permissions.
 =======
         <location line="-43"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
-        <source>Password for JSON-RPC connections</source>
-        <translation>Passord for JSON-RPC forbindelser</translation>
+=======
+        <source>Output extra network debugging information</source>
+        <translation type="unfinished">Skriv ekstra informasjon for feilsøk av nettverk</translation>
     </message>
     <message>
+        <location line="+1"/>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+        <source>Password for JSON-RPC connections</source>
+        <translation type="unfinished">Passord for JSON-RPC forbindelser</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-70"/>
@@ -6115,13 +7741,59 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Server certificate file (default: server.cert)</source>
         <translation>Servers sertifikat (standardverdi: server.cert)</translation>
+=======
+        <location line="+1"/>
+        <source>Prepend debug output with timestamp</source>
+        <translation type="unfinished">Sett tidsstempel på debugmeldinger</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Server private key (default: server.pem)</source>
-        <translation>Servers private nøkkel (standardverdi: server.pem)</translation>
+        <source>Rebuild blockchain index from current blk000??.dat files</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+1"/>
+        <source>Rescan the block chain for missing wallet transactions</source>
+        <translation type="unfinished">Se gjennom blokk-kjeden etter manglende lommeboktransaksjoner</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Rescanning...</source>
+        <translation type="unfinished">Leser gjennom...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Run in the background as a daemon and accept commands</source>
+        <translation type="unfinished">Kjør i bakgrunnen som daemon og ta imot kommandoer</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation type="unfinished">SSL valg: (se Bitcoin Wiki for instruksjoner for oppsett av SSL)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Select the version of socks proxy to use (4-5, default: 5)</source>
+        <translation type="unfinished">Velg versjon av socks proxy (4-5, standardverdi 5)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send command to -server or namecoind</source>
+        <translation type="unfinished">Send kommando til -server eller namecoind</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
+        <translation type="unfinished">Send kommandoer til node på &lt;ip&gt; (standardverdi: 127.0.0.1)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send trace/debug info to console instead of debug.log file</source>
+        <translation type="unfinished">Send spor/debug informasjon til konsollet istedenfor debug.log filen</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+16"/>
@@ -6203,21 +7875,56 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Error loading wallet.dat: Wallet corrupted</source>
         <translation>Feil ved lasting av wallet.dat: Lommeboken er skadet</translation>
+=======
+        <location line="+1"/>
+        <source>Send trace/debug info to debugger</source>
+        <translation type="unfinished">Send spor/debug informasjon til debugger</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Namecoin</source>
-        <translation>Feil ved lasting av wallet.dat: Lommeboken krever en nyere versjon av Namecoin</translation>
-    </message>
-    <message>
-        <location line="+73"/>
-        <source>Verifying block database integrity...</source>
-        <translation type="unfinished"/>
+        <source>Server certificate file (default: server.cert)</source>
+        <translation type="unfinished">Servers sertifikat (standardverdi: server.cert)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Verifying wallet integrity...</source>
-        <translation type="unfinished"/>
+        <source>Server private key (default: server.pem)</source>
+        <translation type="unfinished">Servers private nøkkel (standardverdi: server.pem)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set database cache size in megabytes (default: 25)</source>
+        <translation type="unfinished">Sett størrelse på mellomlager for database i megabytes (standardverdi: 25)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set key pool size to &lt;n&gt; (default: 100)</source>
+        <translation type="unfinished">Angi størrelse på nøkkel-lager til &lt;n&gt; (standardverdi: 100)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set maximum block size in bytes (default: 250000)</source>
+        <translation type="unfinished">Sett maks blokkstørrelse i bytes (standardverdi: 250000)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set minimum block size in bytes (default: 0)</source>
+        <translation type="unfinished">Sett minimum blokkstørrelse i bytes (standardverdi: 0)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
+        <translation type="unfinished">Krymp debug.log filen når klienten starter (standardverdi: 1 hvis uten -debug)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specify configuration file (default: bitcoin.conf)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specify connection timeout in milliseconds (default: 5000)</source>
+        <translation type="unfinished">Angi tidsavbrudd for forbindelse i millisekunder (standardverdi: 5000)</translation>
     </message>
     <message>
 <<<<<<< HEAD
@@ -6237,10 +7944,11 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Committing original src/qt
 =======
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Namecoin to complete</source>
-        <translation>Lommeboken måtte skrives om: start Namecoin på nytt for å fullføre</translation>
+        <source>Specify data directory</source>
+        <translation type="unfinished">Angi mappe for datafiler</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-77"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Error loading wallet.dat</source>
@@ -6258,18 +7966,29 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Invalid -proxy address: &apos;%s&apos;</source>
         <translation>Ugyldig -proxy adresse: &apos;%s&apos;</translation>
+=======
+        <location line="+1"/>
+        <source>Specify pid file (default: namecoind.pid)</source>
+        <translation type="unfinished">Angi pid-fil (standardverdi: namecoind.pid)</translation>
     </message>
     <message>
-        <location line="+46"/>
-        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation>Ukjent nettverk angitt i -onlynet &apos;%s&apos;</translation>
+        <location line="+1"/>
+        <source>Specify your own public address</source>
+        <translation type="unfinished">Angi din egen offentlige adresse</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="-1"/>
-        <source>Unknown -socks proxy version requested: %i</source>
-        <translation>Ukjent -socks proxy versjon angitt: %i</translation>
+        <location line="+1"/>
+        <source>System error: </source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+1"/>
+        <source>This help message</source>
+        <translation type="unfinished">Denne hjelpemeldingen</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-101"/>
@@ -6281,13 +8000,19 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Cannot resolve -bind address: &apos;%s&apos;</source>
         <translation>Kunne ikke slå opp -bind adresse: &apos;%s&apos;</translation>
+=======
+        <location line="+1"/>
+        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
+        <translation type="unfinished">Grenseverdi for å koble fra noder med dårlig oppførsel (standardverdi: 100)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation>Kunne ikke slå opp -externalip adresse: &apos;%s&apos;</translation>
+        <source>To use the %s option</source>
+        <translation type="unfinished">For å bruke %s opsjonen</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+48"/>
@@ -6299,28 +8024,34 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>Ugyldig beløp for -paytxfee=&lt;beløp&gt;: &apos;%s&apos;</translation>
+=======
+        <location line="+1"/>
+        <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
+        <translation type="unfinished">Kan ikke binde til %s på denne datamaskinen (bind returnerte feil %d, %s)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
-        <location line="-15"/>
-        <source>Error: could not start node</source>
-        <translation>Feil: kunne ikke starte node</translation>
+        <location line="+1"/>
+        <source>Unknown -socks proxy version requested: %i</source>
+        <translation type="unfinished">Ukjent -socks proxy versjon angitt: %i</translation>
     </message>
     <message>
-        <location line="+16"/>
-        <source>Invalid amount</source>
-        <translation>Ugyldig beløp</translation>
+        <location line="+1"/>
+        <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
+        <translation type="unfinished">Ukjent nettverk angitt i -onlynet &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="-4"/>
-        <source>Insufficient funds</source>
-        <translation>Utilstrekkelige midler</translation>
+        <location line="+1"/>
+        <source>Upgrade wallet to latest format</source>
+        <translation type="unfinished">Oppgradér lommebok til nyeste format</translation>
     </message>
     <message>
-        <location line="+8"/>
-        <source>Loading block index...</source>
-        <translation>Laster blokkindeks...</translation>
+        <location line="+1"/>
+        <source>Usage:</source>
+        <translation type="unfinished">Bruk:</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="-62"/>
@@ -6351,13 +8082,24 @@ If the file does not exist, create it with owner-readable-only file permissions.
 =======
         <source>Unable to bind to %s on this computer. Namecoin is probably already running.</source>
         <translation>Kan ikke binde til %s på denne datamaskinen. Sannsynligvis kjører Namecoin allerede.</translation>
+=======
+        <location line="+1"/>
+        <source>Use OpenSSL (https) for JSON-RPC connections</source>
+        <translation type="unfinished">Bruk OpenSSL (https) for JSON-RPC forbindelser</translation>
     </message>
     <message>
-        <location line="+54"/>
-        <source>Find peers using internet relay chat (default: 0)</source>
-        <translation>Finn andre noder via internet relay chat (standardverdi: 0)</translation>
+        <location line="+1"/>
+        <source>Use UPnP to map the listening port (default: 0)</source>
+        <translation type="unfinished">Bruk UPnP for lytteport (standardverdi: 0)</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
+        <location line="+1"/>
+        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
+        <translation type="unfinished">Bruk UPnP for lytteport (standardverdi: 1 ved lytting)</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
         <location line="-2"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Fee per KB to add to transactions you send</source>
@@ -6381,18 +8123,34 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Cannot downgrade wallet</source>
         <translation>Kan ikke nedgradere lommebok</translation>
+=======
+        <location line="+1"/>
+        <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
+        <translation type="unfinished">Bruk en proxy for å nå skjulte tor tjenester (standardverdi: samme som -proxy)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot initialize keypool</source>
-        <translation>Kan ikke initialisere nøkkellager</translation>
+        <source>Use the test network</source>
+        <translation type="unfinished">Bruk testnettverket</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Cannot write default address</source>
-        <translation>Kan ikke skrive standardadresse</translation>
+        <location line="+1"/>
+        <source>Username for JSON-RPC connections</source>
+        <translation type="unfinished">Brukernavn for JSON-RPC forbindelser</translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
+        <location line="+1"/>
+        <source>Verifying database...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Verifying wallet integrity...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <location line="+67"/>
@@ -6460,6 +8218,31 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <translation>Du må sette rpcpassword=&lt;passord&gt; i konfigurasjonsfilen:
 %s
 Hvis filen ikke finnes, opprett den med leserettighet kun for eier av filen.</translation>
+=======
+        <location line="+1"/>
+        <source>Wallet needed to be rewritten: restart Namecoin to complete</source>
+        <translation type="unfinished">Lommeboken måtte skrives om: start Namecoin på nytt for å fullføre</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Warning</source>
+        <translation type="unfinished">Advarsel</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Warning: This version is obsolete, upgrade required!</source>
+        <translation type="unfinished">Advarsel: Denne versjonen er foreldet, oppgradering kreves!</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>You need to rebuild the databases using -reindex to change -txindex</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>wallet.dat corrupt, salvage failed</source>
+        <translation type="unfinished"></translation>
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
 </context>
 </TS>

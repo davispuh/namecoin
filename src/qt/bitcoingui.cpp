@@ -207,11 +207,22 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     resize(850, 550);
     setWindowTitle(tr("Namecoin") + " - " + tr("Wallet"));
 #ifndef Q_OS_MAC
-    qApp->setWindowIcon(QIcon(":icons/bitcoin"));
-    setWindowIcon(QIcon(":icons/bitcoin"));
+    if (!GetBoolArg("-testnet"))
+    {
+        qApp->setWindowIcon(QIcon(":icons/bitcoin"));
+        setWindowIcon(QIcon(":icons/bitcoin"));
+    }
+    else
+    {
+        qApp->setWindowIcon(QIcon(":icons/bitcoin_testnet"));
+        setWindowIcon(QIcon(":icons/bitcoin_testnet"));
+    }
 #else
     setUnifiedTitleAndToolBarOnMac(true);
     QApplication::setAttribute(Qt::AA_DontShowIconsInMenus);
+    
+    if (GetBoolArg("-testnet"))
+        MacDockIconHandler::instance()->setIcon(QIcon(":icons/bitcoin_testnet"));
 #endif
 <<<<<<< HEAD
     // Create wallet frame and make it the central widget
@@ -675,7 +686,7 @@ void BitcoinGUI::setClientModel(ClientModel *clientModel)
             if(trayIcon)
             {
                 // Just attach " [testnet]" to the existing tooltip
-                trayIcon->setToolTip(trayIcon->toolTip() + QString(" ") + tr("[testnet]"));
+                //trayIcon->setToolTip(trayIcon->toolTip() + QString(" ") + tr("[testnet]"));
                 trayIcon->setIcon(QIcon(":/icons/toolbar_testnet"));
             }
 
@@ -811,13 +822,20 @@ void BitcoinGUI::createTrayIcon()
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     if (!fIsTestnet)
     {
         trayIcon->setToolTip(tr("Bitcoin client"));
+=======
+    if (!GetBoolArg("-testnet"))
+    {
+        trayIcon->setToolTip(tr("Namecoin client"));
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
         trayIcon->setIcon(QIcon(":/icons/toolbar"));
     }
     else
     {
+<<<<<<< HEAD
         trayIcon->setToolTip(tr("Bitcoin client") + " " + tr("[testnet]"));
         trayIcon->setIcon(QIcon(":/icons/toolbar_testnet"));
     }
@@ -832,6 +850,11 @@ void BitcoinGUI::createTrayIcon()
     trayIcon->setToolTip(tr("Namecoin client"));
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     trayIcon->setIcon(QIcon(":/icons/toolbar"));
+=======
+        trayIcon->setToolTip(tr("Namecoin client") + QString(" ") + tr("[testnet]"));
+        trayIcon->setIcon(QIcon(":/icons/toolbar_testnet"));
+    }
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     trayIcon->show();
 #endif
 

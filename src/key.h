@@ -14,6 +14,26 @@
 #include <stdexcept>
 #include <vector>
 
+<<<<<<< HEAD
+=======
+#include "base58.h" // For CSecret32
+
+// secp160k1
+// const unsigned int PRIVATE_KEY_SIZE = 192;
+// const unsigned int PUBLIC_KEY_SIZE  = 41;
+// const unsigned int SIGNATURE_SIZE   = 48;
+//
+// secp192k1
+// const unsigned int PRIVATE_KEY_SIZE = 222;
+// const unsigned int PUBLIC_KEY_SIZE  = 49;
+// const unsigned int SIGNATURE_SIZE   = 57;
+//
+// secp224k1
+// const unsigned int PRIVATE_KEY_SIZE = 250;
+// const unsigned int PUBLIC_KEY_SIZE  = 57;
+// const unsigned int SIGNATURE_SIZE   = 66;
+//
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
 // secp256k1:
 // const unsigned int PRIVATE_KEY_SIZE = 279;
 // const unsigned int PUBLIC_KEY_SIZE  = 65;
@@ -176,7 +196,10 @@ public:
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 // CPrivKey is a serialized private key, with all parameters included (279 bytes)
 typedef std::vector<unsigned char, secure_allocator<unsigned char> > CPrivKey;
-// Currently CSecret is encrypted privkey. In Bitcoin it is just 32-byte secret (not the whole key)
+
+// Currently CSecret is encrypted privkey. In Bitcoin it is just 32-byte secret (not the whole key).
+// In current Namecoin implementation the whole privkey is encrypted, rather than the secret,
+// when encrypting the wallet.
 typedef std::vector<unsigned char, secure_allocator<unsigned char> > CSecret;
 
 enum { CSECRET_SIZE = 279 };
@@ -188,6 +211,7 @@ private:
     // data, so fValid should always correspond to the actual state.
     bool fValid;
 
+<<<<<<< HEAD
     // Whether the public key corresponding to this private key is (to be) compressed.
     bool fCompressed;
 
@@ -195,6 +219,8 @@ private:
     // The actual byte data
     unsigned char vch[32];
 =======
+=======
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
 class CKey
 {
 protected:
@@ -374,6 +400,9 @@ struct CExtKey {
         fSet = true;
         return true;
     }
+
+    bool SetSecret(const CSecret& vchSecret, bool fCompressed = false);
+    CSecret32 GetSecret(bool &fCompressed) const;
 
     CPrivKey GetPrivKey() const
     {

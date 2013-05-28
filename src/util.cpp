@@ -1305,7 +1305,9 @@ string GetConfigFile()
     string confFile = GetConfigFile("namecoin.conf");
     if (!boost::filesystem::exists(confFile))
     {
-        confFile = GetConfigFile("bitcoin.conf");
+        string altConfFile = GetConfigFile("bitcoin.conf");
+        if (boost::filesystem::exists(altConfFile))
+            confFile = altConfFile;
     }
     return confFile;
 }
@@ -1529,7 +1531,16 @@ void SetMockTime(int64_t nMockTimeIn)
 static CCriticalSection cs_nTimeOffset;
 static int64_t nTimeOffset = 0;
 
+<<<<<<< HEAD
 int64_t GetTimeOffset()
+=======
+int64 GetTimeOffset()
+{
+    return nTimeOffset;
+}
+
+int64 GetAdjustedTime()
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
 {
     LOCK(cs_nTimeOffset);
     return nTimeOffset;
@@ -1579,7 +1590,11 @@ void AddTimeData(const CNetAddr& ip, int64_t nTime)
                 if (!fMatch)
                 {
                     fDone = true;
+<<<<<<< HEAD
                     string strMessage = _("Warning: Please check that your computer's date and time are correct! If your clock is wrong Bitcoin will not work properly.");
+=======
+                    string strMessage = _("Warning: Please check that your computer's date and time are correct.  If your clock is wrong Namecoin will not work properly.");
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
                     strMiscWarning = strMessage;
 <<<<<<< HEAD
                     LogPrintf("*** %s\n", strMessage);

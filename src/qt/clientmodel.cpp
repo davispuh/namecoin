@@ -107,11 +107,21 @@ QDateTime ClientModel::getLastBlockDate() const
         return QDateTime::fromTime_t(pindexBest->GetBlockTime());
     else
 <<<<<<< HEAD
+<<<<<<< HEAD
         return QDateTime::fromTime_t(1296688602); // Genesis block's time (testnet)
 >>>>>>> Committing original src/qt
 =======
         return QDateTime::fromTime_t(1231006505); // Genesis block's time
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+    {
+        // Genesis block's time
+        if (fTestNet)
+            return QDateTime::fromTime_t(1296688602);
+        else
+            return QDateTime::fromTime_t(1303000001);
+    }
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
 }
 
 double ClientModel::getVerificationProgress() const
@@ -124,8 +134,15 @@ double ClientModel::getVerificationProgress() const
 >>>>>>> Committing original src/qt
 =======
     //return Checkpoints::GuessVerificationProgress(pindexBest);
+<<<<<<< HEAD
     return 0.0;
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+
+    // Rough estimate using number of blocks
+    // (Bitcoin uses a better estimate based on check points and number of transactions)
+    return double(pindexBest->nHeight) / double(getNumBlocksOfPeers());
+>>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
 }
 
 void ClientModel::updateTimer()
@@ -202,8 +219,7 @@ enum BlockSource ClientModel::getBlockSource() const
 
 int ClientModel::getNumBlocksOfPeers() const
 {
-    return getNumBlocks();
-    //return GetNumBlocksOfPeers();
+    return GetNumBlocksOfPeers();
 }
 
 QString ClientModel::getStatusBarWarnings() const
