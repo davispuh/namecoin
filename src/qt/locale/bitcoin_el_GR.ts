@@ -3002,6 +3002,10 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <location filename="../signverifymessagedialog.cpp" line="+26"/>
+>>>>>>> Some cosmetic changes to the GUI (splash screen, icons)
         <location line="+3"/>
         <source>Custom change address</source>
         <translation type="unfinished"/>

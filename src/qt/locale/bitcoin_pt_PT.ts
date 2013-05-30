@@ -3437,6 +3437,10 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
         <translation>&amp;Salvar Imagem...</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <location filename="../signverifymessagedialog.cpp" line="+26"/>
+>>>>>>> Some cosmetic changes to the GUI (splash screen, icons)
         <location line="+3"/>
         <source>&amp;Copy Image</source>
         <translation>&amp;Copiar Imagem</translation>

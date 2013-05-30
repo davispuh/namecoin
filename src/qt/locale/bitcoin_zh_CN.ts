@@ -3463,8 +3463,15 @@ rpcpassword=%s
         <translation type="obsolete">仅接受符合客户端检查点设置的数据块文件</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
         <translation type="obsolete">仅连接至指定网络的节点&lt;net&gt;(IPv4, IPv6 或者 Tor)</translation>
+=======
+        <location filename="../signverifymessagedialog.cpp" line="+26"/>
+        <location line="+3"/>
+        <source>Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation>请输入比特币地址 (例如: N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</translation>
+>>>>>>> Some cosmetic changes to the GUI (splash screen, icons)
     </message>
     <message>
         <source>Output extra debugging information. Implies all other -debug* options</source>

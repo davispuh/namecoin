@@ -5177,12 +5177,16 @@ Address: %4
     <message>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../signverifymessagedialog.cpp" line="+30"/>
 =======
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
 =======
         <location filename="../signverifymessagedialog.cpp" line="+28"/>
 >>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+=======
+        <location filename="../signverifymessagedialog.cpp" line="+26"/>
+>>>>>>> Some cosmetic changes to the GUI (splash screen, icons)
         <location line="+3"/>
 <<<<<<< HEAD
 >>>>>>> Committing original src/qt

@@ -2860,10 +2860,17 @@ Adresse: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+70"/>
         <source>Error</source>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <translation type="unfinished"/>
+=======
+        <location filename="../signverifymessagedialog.cpp" line="+26"/>
+        <location line="+3"/>
+        <source>Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation>Indtast en Bitcoinadresse (f.eks. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</translation>
+>>>>>>> Some cosmetic changes to the GUI (splash screen, icons)
     </message>
 </context>
 <context>

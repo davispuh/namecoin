@@ -3378,8 +3378,12 @@ Adresa:%4
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../signverifymessagedialog.cpp" line="+28"/>
 >>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+=======
+        <location filename="../signverifymessagedialog.cpp" line="+26"/>
+>>>>>>> Some cosmetic changes to the GUI (splash screen, icons)
         <location line="+3"/>
         <source>&amp;Minimize to the tray instead of the taskbar</source>
         <translation>&amp;Minimiziraj u sistemsku traku umjesto u traku programa</translation>

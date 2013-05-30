@@ -3550,11 +3550,15 @@ Address: %4
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-353"/>
         <source>Cannot start bitcoin: click-to-pay handler</source>
         <translation>沒辦法啟動 bitcoin 協議的按就付處理器</translation>
 =======
         <location filename="../signverifymessagedialog.cpp" line="+28"/>
+=======
+        <location filename="../signverifymessagedialog.cpp" line="+26"/>
+>>>>>>> Some cosmetic changes to the GUI (splash screen, icons)
         <location line="+3"/>
         <source>Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
         <translation>輸入位元幣位址 (比如說 N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</translation>

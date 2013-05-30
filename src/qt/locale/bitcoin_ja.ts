@@ -7505,8 +7505,14 @@ rpcpassword=%s
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Type</source>
+=======
+        <location filename="../signverifymessagedialog.cpp" line="+26"/>
+        <location line="+3"/>
+        <source>Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+>>>>>>> Some cosmetic changes to the GUI (splash screen, icons)
         <translation type="unfinished"></translation>
     </message>
     <message>

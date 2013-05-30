@@ -3321,8 +3321,15 @@ Dosya mevcut değilse, sadece sahibi için okumayla sınırlı izin ile oluştur
         <translation type="obsolete">Blok oluşturma seçenekleri:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Connect only to the specified node(s)</source>
         <translation type="obsolete">Sadece belirtilen düğüme veya düğümlere bağlan</translation>
+=======
+        <location filename="../signverifymessagedialog.cpp" line="+26"/>
+        <location line="+3"/>
+        <source>Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation>Namecoin adresi giriniz (mesela N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</translation>
+>>>>>>> Some cosmetic changes to the GUI (splash screen, icons)
     </message>
     <message>
         <source>Discover own IP address (default: 1 when listening and no -externalip)</source>

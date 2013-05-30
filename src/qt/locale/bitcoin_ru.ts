@@ -3406,8 +3406,15 @@ rpcpassword=%s
         <translation type="obsolete">Информация</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Invalid -tor address: &apos;%s&apos;</source>
         <translation type="obsolete">Неверный адрес -tor: &apos;%s&apos;</translation>
+=======
+        <location filename="../signverifymessagedialog.cpp" line="+26"/>
+        <location line="+3"/>
+        <source>Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation>Введите адрес Namecoin (напр. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</translation>
+>>>>>>> Some cosmetic changes to the GUI (splash screen, icons)
     </message>
     <message>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>

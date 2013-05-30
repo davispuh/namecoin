@@ -3410,8 +3410,15 @@ Om filen inte existerar, skapa den med enbart ägarläsbara filrättigheter.</tr
         <translation type="obsolete">Sätt minsta blockstorlek i byte (förvalt: 0)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
         <translation type="obsolete">Krymp debug.log filen vid klient start (förvalt: 1 vid ingen -debug)</translation>
+=======
+        <location filename="../signverifymessagedialog.cpp" line="+26"/>
+        <location line="+3"/>
+        <source>Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation>Ange en Namecoin-adress (t.ex. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</translation>
+>>>>>>> Some cosmetic changes to the GUI (splash screen, icons)
     </message>
     <message>
         <source>Specify connection timeout in milliseconds (default: 5000)</source>

@@ -3486,11 +3486,15 @@ Adresse : %4
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-353"/>
         <source>Cannot start bitcoin: click-to-pay handler</source>
         <translation>Impossible de démarrer le gestionnaire de cliquer-pour-payer bitcoin :</translation>
 =======
         <location filename="../signverifymessagedialog.cpp" line="+28"/>
+=======
+        <location filename="../signverifymessagedialog.cpp" line="+26"/>
+>>>>>>> Some cosmetic changes to the GUI (splash screen, icons)
         <location line="+3"/>
         <source>Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
         <translation>Entrez une adresse Namecoin (par ex. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</translation>

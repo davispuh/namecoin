@@ -3234,11 +3234,15 @@ Osoite: %4</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+33"/>
         <source>Payment acknowledged</source>
         <translation type="unfinished"/>
 =======
         <location filename="../signverifymessagedialog.cpp" line="+28"/>
+=======
+        <location filename="../signverifymessagedialog.cpp" line="+26"/>
+>>>>>>> Some cosmetic changes to the GUI (splash screen, icons)
         <location line="+3"/>
         <source>Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
         <translation>Anna Namecoin-osoite (esim. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</translation>

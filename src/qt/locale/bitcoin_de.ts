@@ -3493,8 +3493,15 @@ Falls die Konfigurationsdatei nicht existiert, erzeugen Sie diese bitte mit Lese
         <translation type="obsolete">Sende Befehle an Knoten &lt;ip&gt; (Standard: 127.0.0.1)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation type="obsolete">Kommando ausführen wenn der beste Block wechselt (%s im Kommando wird durch den Hash des Blocks ersetzt)</translation>
+=======
+        <location filename="../signverifymessagedialog.cpp" line="+26"/>
+        <location line="+3"/>
+        <source>Enter a Namecoin address (e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</source>
+        <translation>Namecoin-Adresse eingeben (z.B. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9)</translation>
+>>>>>>> Some cosmetic changes to the GUI (splash screen, icons)
     </message>
     <message>
         <source>Upgrade wallet to latest format</source>
