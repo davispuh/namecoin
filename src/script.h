@@ -532,6 +532,7 @@ public:
                 ++nFound;
         return nFound;
     }
+<<<<<<< HEAD
 
     // Pre-version-0.6, Bitcoin always counted CHECKMULTISIGs
     // as 20 sigops. With pay-to-script-hash, that changed:
@@ -543,6 +544,24 @@ public:
     // Accurately count sigOps, including sigOps in
     // pay-to-script-hash transactions:
     unsigned int GetSigOpCount(const CScript& scriptSig) const;
+=======
+    
+    bool IsPushOnly() const
+    {
+        if (size() > 200)
+            return false;
+        const_iterator pc = begin();
+        while (pc < end())
+        {
+            opcodetype opcode;
+            if (!GetOp(pc, opcode))
+                return false;
+            if (opcode > OP_16)
+                return false;
+        }
+        return true;
+    }
+>>>>>>> Added RPC commands: signmessage, verifymessage, listunspent, listaddressgroupings.
 
     bool IsPayToScriptHash() const;
 

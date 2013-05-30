@@ -41,6 +41,7 @@ class COutput;
 class CWalletTx;
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 class CReserveKey;
+<<<<<<< HEAD
 class CScript;
 class CWalletTx;
 
@@ -55,6 +56,10 @@ enum WalletFeature
     FEATURE_LATEST = 60000
 };
 
+=======
+class CWalletDB;
+class COutput;
+>>>>>>> Added RPC commands: signmessage, verifymessage, listunspent, listaddressgroupings.
 
 /** A key pool entry */
 class CKeyPool
@@ -124,6 +129,7 @@ public:
     bool SelectCoins(int64 nTargetValue, std::set<std::pair<const CWalletTx*,unsigned int> >& setCoinsRet, int64& nValueRet) const;
 >>>>>>> namecoin using CWallet
 
+<<<<<<< HEAD
     int64_t nNextResend;
     int64_t nLastResend;
 
@@ -132,6 +138,9 @@ public:
     TxConflicts mapTxConflicts;
     void AddToConflicts(const uint256& wtxhash);
     void SyncMetaData(std::pair<TxConflicts::iterator, TxConflicts::iterator>);
+=======
+    void AvailableCoins(std::vector<COutput>& vCoins, bool fOnlyConfirmed=true) const;
+>>>>>>> Added RPC commands: signmessage, verifymessage, listunspent, listaddressgroupings.
 
 public:
     /// Main wallet lock.
@@ -351,6 +360,9 @@ public:
     std::vector<unsigned char> GetKeyFromKeyPool();
     int64 GetOldestKeyPoolTime();
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+
+    std::set< std::set<std::string> > GetAddressGroupings();
+    std::map<std::string, int64> GetAddressBalances();
 
     bool IsMine(const CTxIn& txin) const;
     int64_t GetDebit(const CTxIn& txin) const;
@@ -903,8 +915,11 @@ public:
 };
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> Added RPC commands: signmessage, verifymessage, listunspent, listaddressgroupings.
 class COutput
 {
 public:
@@ -919,19 +934,33 @@ public:
 
     std::string ToString() const
     {
+<<<<<<< HEAD
         return strprintf("COutput(%s, %d, %d) [%s]", tx->GetHash().ToString().c_str(), i, nDepth, FormatMoney(tx->vout[i].nValue).c_str());
+=======
+        return strprintf("COutput(%s, %d, %d) [%s]", tx->GetHash().ToString().substr(0,10).c_str(), i, nDepth, FormatMoney(tx->vout[i].nValue).c_str());
+>>>>>>> Added RPC commands: signmessage, verifymessage, listunspent, listaddressgroupings.
     }
 
     void print() const
     {
+<<<<<<< HEAD
         LogPrintf("%s\n", ToString().c_str());
+=======
+        printf("%s\n", ToString().c_str());
+>>>>>>> Added RPC commands: signmessage, verifymessage, listunspent, listaddressgroupings.
     }
 };
 
 
 
 
+<<<<<<< HEAD
 /** Private key that includes an expiration date in case it never gets used. */
+=======
+//
+// Private key that includes an expiration date in case it never gets used.
+//
+>>>>>>> Added RPC commands: signmessage, verifymessage, listunspent, listaddressgroupings.
 class CWalletKey
 {
 public:

@@ -1198,7 +1198,39 @@ int64 CWallet::GetUnconfirmedBalance() const
     return nTotal;
 }
 
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+// populate vCoins with vector of spendable COutputs
+void CWallet::AvailableCoins(vector<COutput>& vCoins, bool fOnlyConfirmed) const
+{
+    vCoins.clear();
+
+    CRITICAL_BLOCK(cs_wallet)
+    {
+        for (map<uint256, CWalletTx>::const_iterator it = mapWallet.begin(); it != mapWallet.end(); ++it)
+        {
+            const CWalletTx* pcoin = &(*it).second;
+
+            if (!pcoin->IsFinal())
+                continue;
+
+            if (fOnlyConfirmed && !pcoin->IsConfirmed())
+                continue;
+
+            if (pcoin->IsCoinBase() && pcoin->GetBlocksToMaturity() > 0)
+                continue;
+
+            for (unsigned int i = 0; i < pcoin->vout.size(); i++) {
+                if (!(pcoin->IsSpent(i)) && IsMine(pcoin->vout[i]) &&
+                    /* !IsLockedCoin((*it).first, i) && */
+                    pcoin->vout[i].nValue > 0)
+                    vCoins.push_back(COutput(pcoin, i, pcoin->GetDepthInMainChain()));
+            }
+        }
+    }
+}
+>>>>>>> Added RPC commands: signmessage, verifymessage, listunspent, listaddressgroupings.
 
 int64_t CWallet::GetImmatureBalance() const
 {
@@ -2099,17 +2131,32 @@ int64_t CWallet::GetOldestKeyPoolTime()
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 std::map<CTxDestination, int64_t> CWallet::GetAddressBalances()
 {
     map<CTxDestination, int64_t> balances;
 
     {
         LOCK(cs_wallet);
+=======
+std::map<std::string, int64> CWallet::GetAddressBalances()
+{
+    typedef std::string CTxDestination;
+
+    map<CTxDestination, int64> balances;
+
+    CRITICAL_BLOCK(cs_wallet)
+    {
+>>>>>>> Added RPC commands: signmessage, verifymessage, listunspent, listaddressgroupings.
         BOOST_FOREACH(PAIRTYPE(uint256, CWalletTx) walletEntry, mapWallet)
         {
             CWalletTx *pcoin = &walletEntry.second;
 
+<<<<<<< HEAD
             if (!IsFinalTx(*pcoin) || !pcoin->IsTrusted())
+=======
+            if (!pcoin->IsFinal() || !pcoin->IsConfirmed())
+>>>>>>> Added RPC commands: signmessage, verifymessage, listunspent, listaddressgroupings.
                 continue;
 
             if (pcoin->IsCoinBase() && pcoin->GetBlocksToMaturity() > 0)
@@ -2127,12 +2174,120 @@ std::map<CTxDestination, int64_t> CWallet::GetAddressBalances()
                 if(!ExtractDestination(pcoin->vout[i].scriptPubKey, addr))
                     continue;
 
+<<<<<<< HEAD
                 int64_t n = pcoin->IsSpent(i) ? 0 : pcoin->vout[i].nValue;
+=======
+                int64 n = pcoin->IsSpent(i) ? 0 : pcoin->vout[i].nValue;
+>>>>>>> Added RPC commands: signmessage, verifymessage, listunspent, listaddressgroupings.
 
                 if (!balances.count(addr))
                     balances[addr] = 0;
                 balances[addr] += n;
+<<<<<<< HEAD
 =======
+=======
+            }
+        }
+    }
+
+    return balances;
+}
+
+set< set<std::string> > CWallet::GetAddressGroupings()
+{
+    typedef std::string CTxDestination;
+
+    set< set<CTxDestination> > groupings;
+    set<CTxDestination> grouping;
+
+    BOOST_FOREACH(PAIRTYPE(uint256, CWalletTx) walletEntry, mapWallet)
+    {
+        CWalletTx *pcoin = &walletEntry.second;
+
+        if (pcoin->vin.size() > 0)
+        {
+            bool any_mine = false;
+            // group all input addresses with each other
+            BOOST_FOREACH(CTxIn txin, pcoin->vin)
+            {
+                CTxDestination address;
+                if(!IsMine(txin)) /* If this input isn't mine, ignore it */
+                    continue;
+                if(!ExtractDestination(mapWallet[txin.prevout.hash].vout[txin.prevout.n].scriptPubKey, address))
+                    continue;
+                grouping.insert(address);
+                any_mine = true;
+            }
+
+            // group change with input addresses
+            if (any_mine)
+            {
+               BOOST_FOREACH(CTxOut txout, pcoin->vout)
+                   if (IsChange(txout))
+                   {
+                       CTxDestination txoutAddr;
+                       if(!ExtractDestination(txout.scriptPubKey, txoutAddr))
+                           continue;
+                       grouping.insert(txoutAddr);
+                   }
+            }
+            if (grouping.size() > 0)
+            {
+                groupings.insert(grouping);
+                grouping.clear();
+            }
+        }
+
+        // group lone addrs by themselves
+        for (unsigned int i = 0; i < pcoin->vout.size(); i++)
+            if (IsMine(pcoin->vout[i]))
+            {
+                CTxDestination address;
+                if(!ExtractDestination(pcoin->vout[i].scriptPubKey, address))
+                    continue;
+                grouping.insert(address);
+                groupings.insert(grouping);
+                grouping.clear();
+            }
+    }
+
+    set< set<CTxDestination>* > uniqueGroupings; // a set of pointers to groups of addresses
+    map< CTxDestination, set<CTxDestination>* > setmap;  // map addresses to the unique group containing it
+    BOOST_FOREACH(set<CTxDestination> grouping, groupings)
+    {
+        // make a set of all the groups hit by this new group
+        set< set<CTxDestination>* > hits;
+        map< CTxDestination, set<CTxDestination>* >::iterator it;
+        BOOST_FOREACH(CTxDestination address, grouping)
+            if ((it = setmap.find(address)) != setmap.end())
+                hits.insert((*it).second);
+
+        // merge all hit groups into a new single group and delete old groups
+        set<CTxDestination>* merged = new set<CTxDestination>(grouping);
+        BOOST_FOREACH(set<CTxDestination>* hit, hits)
+        {
+            merged->insert(hit->begin(), hit->end());
+            uniqueGroupings.erase(hit);
+            delete hit;
+        }
+        uniqueGroupings.insert(merged);
+
+        // update setmap
+        BOOST_FOREACH(CTxDestination element, *merged)
+            setmap[element] = merged;
+    }
+
+    set< set<CTxDestination> > ret;
+    BOOST_FOREACH(set<CTxDestination>* uniqueGrouping, uniqueGroupings)
+    {
+        ret.insert(*uniqueGrouping);
+        delete uniqueGrouping;
+    }
+
+    return ret;
+}
+
+>>>>>>> Added RPC commands: signmessage, verifymessage, listunspent, listaddressgroupings.
 bool CWallet::Unlock(const SecureString& strWalletPassphrase)
 {
     if (!IsLocked())

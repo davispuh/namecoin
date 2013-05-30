@@ -40,11 +40,14 @@
 #include <vector>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
 =======
 const static std::string strMessageMagic = "Bitcoin Signed Message:\n";
 
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+>>>>>>> Added RPC commands: signmessage, verifymessage, listunspent, listaddressgroupings.
 SignVerifyMessageDialog::SignVerifyMessageDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::SignVerifyMessageDialog),
