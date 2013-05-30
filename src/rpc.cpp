@@ -3260,8 +3260,60 @@ int CommandLineRPC(int argc, char *argv[])
         string strMethod = argv[1];
 
         // Parameters default to strings
+<<<<<<< HEAD
         std::vector<std::string> strParams(&argv[2], &argv[argc]);
         Array params = RPCConvertValues(strMethod, strParams);
+=======
+        Array params;
+        for (int i = 2; i < argc; i++)
+            params.push_back(argv[i]);
+        int n = params.size();
+
+        //
+        // Special case non-string parameter types
+        //
+        if (strMethod == "name_filter"            && n > 1) ConvertTo<boost::int64_t>(params[1]);
+        if (strMethod == "name_filter"            && n > 2) ConvertTo<boost::int64_t>(params[2]);
+        if (strMethod == "name_filter"            && n > 3) ConvertTo<boost::int64_t>(params[3]);
+        if (strMethod == "sendtoname"             && n > 1) ConvertTo<double>(params[1]);
+
+        if (strMethod == "setgenerate"            && n > 0) ConvertTo<bool>(params[0]);
+        if (strMethod == "setgenerate"            && n > 1) ConvertTo<boost::int64_t>(params[1]);
+        if (strMethod == "sendtoaddress"          && n > 1) ConvertTo<double>(params[1]);
+        if (strMethod == "settxfee"               && n > 0) ConvertTo<double>(params[0]);
+        if (strMethod == "getamountreceived"      && n > 1) ConvertTo<boost::int64_t>(params[1]); // deprecated
+        if (strMethod == "setmininput"            && n > 0) ConvertTo<double>(params[0]);
+        if (strMethod == "getreceivedbyaddress"   && n > 1) ConvertTo<boost::int64_t>(params[1]);
+        if (strMethod == "getreceivedbyaccount"   && n > 1) ConvertTo<boost::int64_t>(params[1]);
+        if (strMethod == "getreceivedbylabel"     && n > 1) ConvertTo<boost::int64_t>(params[1]); // deprecated
+        if (strMethod == "getallreceived"         && n > 0) ConvertTo<boost::int64_t>(params[0]); // deprecated
+        if (strMethod == "getallreceived"         && n > 1) ConvertTo<bool>(params[1]);
+        if (strMethod == "listreceivedbyaddress"  && n > 0) ConvertTo<boost::int64_t>(params[0]);
+        if (strMethod == "listreceivedbyaddress"  && n > 1) ConvertTo<bool>(params[1]);
+        if (strMethod == "listreceivedbyaccount"  && n > 0) ConvertTo<boost::int64_t>(params[0]);
+        if (strMethod == "listreceivedbyaccount"  && n > 1) ConvertTo<bool>(params[1]);
+        if (strMethod == "listreceivedbylabel"    && n > 0) ConvertTo<boost::int64_t>(params[0]); // deprecated
+        if (strMethod == "listreceivedbylabel"    && n > 1) ConvertTo<bool>(params[1]); // deprecated
+        if (strMethod == "getbalance"             && n > 1) ConvertTo<boost::int64_t>(params[1]);
+        if (strMethod == "move"                   && n > 2) ConvertTo<double>(params[2]);
+        if (strMethod == "move"                   && n > 3) ConvertTo<boost::int64_t>(params[3]);
+        if (strMethod == "sendfrom"               && n > 2) ConvertTo<double>(params[2]);
+        if (strMethod == "sendfrom"               && n > 3) ConvertTo<boost::int64_t>(params[3]);
+        if (strMethod == "listtransactions"       && n > 1) ConvertTo<boost::int64_t>(params[1]);
+        if (strMethod == "listtransactions"       && n > 2) ConvertTo<boost::int64_t>(params[2]);
+        if (strMethod == "getworkaux"             && n > 2) ConvertTo<boost::int64_t>(params[2]);
+        if (strMethod == "listaccounts"           && n > 0) ConvertTo<boost::int64_t>(params[0]);
+	if (strMethod == "getblockbycount"        && n > 0) ConvertTo<boost::int64_t>(params[0]);
+        if (strMethod == "sendmany"               && n > 1)
+        {
+            string s = params[1].get_str();
+            Value v;
+            if (!read_string(s, v) || v.type() != obj_type)
+                throw runtime_error("type mismatch");
+            params[1] = v.get_obj();
+        }
+        if (strMethod == "sendmany"                && n > 2) ConvertTo<boost::int64_t>(params[2]);
+>>>>>>> Revert "Add the sendtoalias rpc command (BETA phase, may change in the future)"
 
         // Execute
         Object reply = CallRPC(strMethod, params);
