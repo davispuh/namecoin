@@ -721,6 +721,8 @@ bool VerifyScript(const CScript& scriptSig, const CScript& scriptPubKey, const C
 CScript CombineSignatures(CScript scriptPubKey, const CTransaction& txTo, unsigned int nIn, const CScript& scriptSig1, const CScript& scriptSig2);
 =======
 bool IsMine(const CKeyStore& keystore, const std::string& address);
+bool IsSpendable(const CKeyStore& keystore, const CScript& scriptPubKey);
+bool IsSpendable(const CKeyStore& keystore, const std::string& address);
 bool ExtractPubKey(const CScript& scriptPubKey, const CKeyStore* pkeystore, std::vector<unsigned char>& vchPubKeyRet);
 bool ExtractHash160(const CScript& scriptPubKey, uint160& hash160Ret);
 bool SignSignature(const CKeyStore& keystore, const CTransaction& txFrom, CTransaction& txTo, unsigned int nIn, int nHashType=SIGHASH_ALL, CScript scriptPrereq=CScript());
