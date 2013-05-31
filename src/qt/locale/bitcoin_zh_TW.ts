@@ -519,12 +519,7 @@ This product includes software developed by the OpenSSL Project for use in the O
 >>>>>>> Committing original src/qt
     </message>
     <message>
-        <location line="+11"/>
-        <source>Namecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your namecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+4"/>
+        <location line="+15"/>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
 <<<<<<< HEAD
         <translation>重要: 請改用新產生有加密的錢包檔，來取代舊錢包檔的備份。為了安全性的理由，當你開始使用新的有加密的錢包後，舊錢包檔的備份就不能再使用了。</translation>
@@ -550,6 +545,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-56"/>
 <<<<<<< HEAD
         <source>Bitcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
@@ -565,9 +561,14 @@ This product includes software developed by the OpenSSL Project for use in the O
         <source>Namecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Namecoins from being stolen by malware infecting your computer.</source>
         <translation type="obsolete">位元幣現在要關閉以完成加密程序. 請記住, 加密錢包無法完全防止入侵電腦的惡意程式偷取你的位元幣.</translation>
 >>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+=======
+        <location line="-56"/>
+        <source>Namecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Namecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">位元幣現在要關閉以完成加密程序. 請記住, 加密錢包無法完全防止入侵電腦的惡意程式偷取你的位元幣.</translation>
+>>>>>>> Ran lupdate on translations.
     </message>
     <message>
-        <location line="-43"/>
+        <location line="+13"/>
         <location line="+7"/>
         <location line="+42"/>
         <location line="+6"/>
@@ -634,6 +635,7 @@ This product includes software developed by the OpenSSL Project for use in the O
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../bitcoingui.cpp" line="+295"/>
         <source>Sign &amp;message...</source>
         <translation>簽署訊息...</translation>
@@ -654,6 +656,9 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>訊息簽署...</translation>
 =======
         <location filename="../bitcoin.cpp" line="+115"/>
+=======
+        <location filename="../bitcoin.cpp" line="+118"/>
+>>>>>>> Ran lupdate on translations.
         <source>A fatal error occurred. Namecoin can no longer continue safely and will quit.</source>
         <translation type="unfinished">發生了致命的錯誤. 位元幣程式無法再繼續安全執行, 只好結束.</translation>
 >>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
