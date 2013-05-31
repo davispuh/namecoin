@@ -97,6 +97,7 @@ Q_IMPORT_PLUGIN(QWindowsIntegrationPlugin);
 #endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Declare meta types used for QMetaObject::invokeMethod
 Q_DECLARE_METATYPE(bool*)
 
@@ -478,6 +479,11 @@ void BitcoinApplication::handleRunawayException(const QString &message)
 =======
 =======
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+// Declare meta types used for QMetaObject::invokeMethod
+Q_DECLARE_METATYPE(bool*)
+
+>>>>>>> Merging Bitcoin pull request #2525:
 // Need a global reference for the notifications to find the GUI
 static BitcoinGUI *guiref;
 static QSplashScreen *splashref;
@@ -624,6 +630,8 @@ int main(int argc, char *argv[])
             return 0;
         }
     }
+    // Register meta types used for QMetaObject::invokeMethod
+    qRegisterMetaType< bool* >();
 
 <<<<<<< HEAD
     /// 3. Application identification
