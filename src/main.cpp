@@ -223,6 +223,7 @@ void SyncWithWallets(const uint256 &hash, const CTransaction &tx, const CBlock *
     g_signals.SyncTransaction(hash, tx, pblock);
 }
 
+<<<<<<< HEAD
 //////////////////////////////////////////////////////////////////////////////
 //
 // Registration of network node signals.
@@ -265,6 +266,12 @@ CNodeState *State(NodeId pnode) {
     if (it == mapNodeState.end())
         return NULL;
     return &it->second;
+=======
+void SyncWithWallets(const CTransaction& tx, const CBlock* pblock, bool fUpdate)
+{
+    BOOST_FOREACH(CWallet* pwallet, setpwalletRegistered)
+        pwallet->AddToWalletIfInvolvingMe(tx, pblock, fUpdate);
+>>>>>>> Added rawtransaction RPC commands. Plus some fixes in the GUI code.
 }
 
 int GetHeight()
@@ -751,6 +758,7 @@ bool CheckTransaction(const CTransaction& tx, CValidationState &state)
     return hooks->CheckTransaction(*this);
 }
 
+<<<<<<< HEAD
 int64_t GetMinFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree, enum GetMinFee_mode mode)
 {
     // Base fee is either nMinTxFee or nMinRelayTxFee
@@ -788,6 +796,9 @@ int64_t GetMinFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree, 
 
 bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState &state, const CTransaction &tx, bool fLimitFree,
                         bool* pfMissingInputs, bool fRejectInsaneFee)
+=======
+bool CTransaction::AcceptToMemoryPool(CTxDB& txdb, bool fCheckInputs, bool fLimitFree, bool* pfMissingInputs)
+>>>>>>> Added rawtransaction RPC commands. Plus some fixes in the GUI code.
 {
     if (pfMissingInputs)
         *pfMissingInputs = false;
@@ -879,6 +890,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState &state, const CTransa
         unsigned int nSize = entry.GetTxSize();
 
         // Don't accept it if it can't get into a block
+<<<<<<< HEAD
         int64_t txMinFee = GetMinFee(tx, nSize, true, GMF_RELAY);
         if (fLimitFree && nFees < txMinFee)
             return state.DoS(0, error("AcceptToMemoryPool : not enough fees %s, %"PRId64" < %"PRId64,
@@ -889,6 +901,15 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState &state, const CTransa
         // This mitigates 'penny-flooding' -- sending thousands of free transactions just to
         // be annoying or make others' transactions take longer to confirm.
         if (fLimitFree && nFees < CTransaction::nMinRelayTxFee)
+=======
+        if (fLimitFree && nFees < GetMinFee(1000, true, true))
+            return error("AcceptToMemoryPool() : not enough fees");
+
+        // Continuously rate-limit free transactions
+        // This mitigates 'penny-flooding' -- sending thousands of free transactions just to
+        // be annoying or make other's transactions take longer to confirm.
+        if (fLimitFree && nFees < MIN_RELAY_TX_FEE)
+>>>>>>> Added rawtransaction RPC commands. Plus some fixes in the GUI code.
         {
             static CCriticalSection csFreeLimiter;
             static double dFreeCount;
@@ -938,10 +959,10 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState &state, const CTransa
     return true;
 }
 
-bool CTransaction::AcceptToMemoryPool(bool fCheckInputs, bool* pfMissingInputs)
+bool CTransaction::AcceptToMemoryPool(bool fCheckInputs, bool fLimitFree, bool* pfMissingInputs)
 {
     CTxDB txdb("r");
-    return AcceptToMemoryPool(txdb, fCheckInputs, pfMissingInputs);
+    return AcceptToMemoryPool(txdb, fCheckInputs, fLimitFree, pfMissingInputs);
 }
 
 bool CTransaction::AddToMemoryPoolUnchecked()
@@ -1045,6 +1066,7 @@ bool GetTransaction(const uint256 &hash, CTransaction &txOut, uint256 &hashBlock
             }
         }
 
+<<<<<<< HEAD
         if (fAllowSlow) { // use coin database to locate block that contains transaction, and scan it
             int nHeight = -1;
             {
@@ -1061,6 +1083,72 @@ bool GetTransaction(const uint256 &hash, CTransaction &txOut, uint256 &hashBlock
     if (pindexSlow) {
         CBlock block;
         if (ReadBlockFromDisk(block, pindexSlow)) {
+=======
+// Return transaction in tx, and if it was found inside a block, its hash is placed in hashBlock
+bool GetTransaction(const uint256 &hash, CTransaction &txOut, uint256 &hashBlock /*, bool fAllowSlow*/)
+{
+    //CBlockIndex *pindexSlow = NULL;
+    CRITICAL_BLOCK(cs_main)
+    {
+        CRITICAL_BLOCK(cs_mapTransactions)
+        {
+            std::map<uint256, CTransaction>::iterator mi = mapTransactions.find(hash);
+            if (mi != mapTransactions.end())
+            {
+                txOut = mi->second;
+                return true;
+            }
+        }
+
+        /*if (fTxIndex) {
+            CDiskTxPos postx;
+            if (pblocktree->ReadTxIndex(hash, postx)) {
+                CAutoFile file(OpenBlockFile(postx, true), SER_DISK, CLIENT_VERSION);
+                CBlockHeader header;
+                try {
+                    file >> header;
+                    fseek(file, postx.nTxOffset, SEEK_CUR);
+                    file >> txOut;
+                } catch (std::exception &e) {
+                    return error("%s() : deserialize or I/O error", __PRETTY_FUNCTION__);
+                }
+                hashBlock = header.GetHash();
+                if (txOut.GetHash() != hash)
+                    return error("%s() : txid mismatch", __PRETTY_FUNCTION__);
+                return true;
+            }
+        }*/
+
+        CTxDB txdb("r");
+        CTxIndex txindex;
+        if (txOut.ReadFromDisk(txdb, COutPoint(hash, 0), txindex))
+        {
+            if (txOut.GetHash() != hash)
+                return error("%s() : txid mismatch", __PRETTY_FUNCTION__);
+
+            CBlock block;
+            if (block.ReadFromDisk(txindex.pos.nFile, txindex.pos.nBlockPos, false))
+                hashBlock = block.GetHash();
+            return true;
+        }
+
+        /*if (fAllowSlow) { // use coin database to locate block that contains transaction, and scan it
+            int nHeight = -1;
+            {
+                CCoinsViewCache &view = *pcoinsTip;
+                CCoins coins;
+                if (view.GetCoins(hash, coins))
+                    nHeight = coins.nHeight;
+            }
+            if (nHeight > 0)
+                pindexSlow = FindBlockByHeight(nHeight);
+        }*/
+    }
+
+    /*if (pindexSlow) {
+        CBlock block;
+        if (block.ReadFromDisk(pindexSlow)) {
+>>>>>>> Added rawtransaction RPC commands. Plus some fixes in the GUI code.
             BOOST_FOREACH(const CTransaction &tx, block.vtx) {
                 if (tx.GetHash() == hash) {
                     txOut = tx;
@@ -1069,7 +1157,14 @@ bool GetTransaction(const uint256 &hash, CTransaction &txOut, uint256 &hashBlock
                 }
             }
         }
+<<<<<<< HEAD
     }
+=======
+    }*/
+
+    return false;
+}
+>>>>>>> Added rawtransaction RPC commands. Plus some fixes in the GUI code.
 
     return false;
 }
@@ -1559,9 +1654,85 @@ bool CScriptCheck::operator()() const {
     return true;
 }
 
+<<<<<<< HEAD
 bool VerifySignature(const CCoins& txFrom, const CTransaction& txTo, unsigned int nIn, unsigned int flags, int nHashType)
 {
     return CScriptCheck(txFrom, txTo, nIn, flags, nHashType)();
+=======
+bool CTransaction::FetchInputs(CTxDB& txdb, const map<uint256, CTxIndex>& mapTestPool,
+                               bool fBlock, bool fMiner, MapPrevTx& inputsRet, bool& fInvalid)
+{
+    // FetchInputs can return false either because we just haven't seen some inputs
+    // (in which case the transaction should be stored as an orphan)
+    // or because the transaction is malformed (in which case the transaction should
+    // be dropped).  If tx is definitely invalid, fInvalid will be set to true.
+    fInvalid = false;
+
+    if (IsCoinBase())
+        return true; // Coinbase transactions have no inputs to fetch.
+
+    for (unsigned int i = 0; i < vin.size(); i++)
+    {
+        COutPoint prevout = vin[i].prevout;
+        if (inputsRet.count(prevout.hash))
+            continue; // Got it already
+
+        // Read txindex
+        CTxIndex& txindex = inputsRet[prevout.hash].first;
+        bool fFound = true;
+        if ((fBlock || fMiner) && mapTestPool.count(prevout.hash))
+        {
+            // Get txindex from current proposed changes
+            txindex = mapTestPool.find(prevout.hash)->second;
+        }
+        else
+        {
+            // Read txindex from txdb
+            fFound = txdb.ReadTxIndex(prevout.hash, txindex);
+        }
+        if (!fFound && (fBlock || fMiner))
+            return fMiner ? false : error("FetchInputs() : %s prev tx %s index entry not found", GetHash().ToString().substr(0,10).c_str(),  prevout.hash.ToString().substr(0,10).c_str());
+
+        // Read txPrev
+        CTransaction& txPrev = inputsRet[prevout.hash].second;
+        if (!fFound /*|| txindex.pos.IsMemPool()*/)
+        {
+            // Get prev tx from single transactions in memory
+            CRITICAL_BLOCK(cs_mapTransactions)
+            {
+                std::map<uint256, CTransaction>::iterator mi = mapTransactions.find(prevout.hash);
+                if (mi != mapTransactions.end())
+                    txPrev = mi->second;
+            }
+            if (!fFound)
+                txindex.vSpent.resize(txPrev.vout.size());
+        }
+        else
+        {
+            // Get prev tx from disk
+            if (!txPrev.ReadFromDisk(txindex.pos))
+                return error("FetchInputs() : %s ReadFromDisk prev tx %s failed", GetHash().ToString().substr(0,10).c_str(),  prevout.hash.ToString().substr(0,10).c_str());
+        }
+    }
+
+    // Make sure all prevout.n indexes are valid:
+    for (unsigned int i = 0; i < vin.size(); i++)
+    {
+        const COutPoint prevout = vin[i].prevout;
+        assert(inputsRet.count(prevout.hash) != 0);
+        const CTxIndex& txindex = inputsRet[prevout.hash].first;
+        const CTransaction& txPrev = inputsRet[prevout.hash].second;
+        if (prevout.n >= txPrev.vout.size() || prevout.n >= txindex.vSpent.size())
+        {
+            // Revisit this if/when transaction replacement is implemented and allows
+            // adding inputs:
+            fInvalid = true;
+            return /*DoS(100,*/ error("FetchInputs() : %s prevout.n out of range %d %"PRIszu" %"PRIszu" prev tx %s\n%s", GetHash().ToString().substr(0,10).c_str(), prevout.n, txPrev.vout.size(), txindex.vSpent.size(), prevout.hash.ToString().substr(0,10).c_str(), txPrev.ToString().c_str()) /* ) */ ;
+        }
+    }
+
+    return true;
+>>>>>>> Added rawtransaction RPC commands. Plus some fixes in the GUI code.
 }
 
 bool CheckInputs(const CTransaction& tx, CValidationState &state, CCoinsViewCache &inputs, bool fScriptChecks, unsigned int flags, std::vector<CScriptCheck> *pvChecks)
@@ -4062,8 +4233,12 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
         LOCK(cs_main);
 
         bool fMissingInputs = false;
+<<<<<<< HEAD
         CValidationState state;
         if (AcceptToMemoryPool(mempool, state, tx, true, &fMissingInputs))
+=======
+        if (tx.AcceptToMemoryPool(true, true, &fMissingInputs))
+>>>>>>> Added rawtransaction RPC commands. Plus some fixes in the GUI code.
         {
             mempool.check(pcoinsTip);
             RelayTransaction(tx, inv.hash);

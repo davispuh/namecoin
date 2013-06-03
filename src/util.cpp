@@ -575,6 +575,7 @@ bool ParseMoney(const char* pszIn, int64_t& nRet)
     return true;
 }
 
+<<<<<<< HEAD
 // safeChars chosen to allow simple messages/URLs/email addresses, but avoid anything
 // even possibly remotely dangerous like & or >
 static string safeChars("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890 .,;_/:?@");
@@ -587,6 +588,34 @@ string SanitizeString(const string& str)
             strResult.push_back(str[i]);
     }
     return strResult;
+=======
+static const signed char phexdigit[256] =
+{ -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+  0,1,2,3,4,5,6,7,8,9,-1,-1,-1,-1,-1,-1,
+  -1,0xa,0xb,0xc,0xd,0xe,0xf,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+  -1,0xa,0xb,0xc,0xd,0xe,0xf,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1, };
+
+bool IsHex(const string& str)
+{
+    BOOST_FOREACH(unsigned char c, str)
+    {
+        if (phexdigit[c] < 0)
+            return false;
+    }
+    return (str.size() > 0) && (str.size()%2 == 0);
+>>>>>>> Added rawtransaction RPC commands. Plus some fixes in the GUI code.
 }
 
 const signed char p_util_hexdigit[256] =
@@ -609,6 +638,7 @@ const signed char p_util_hexdigit[256] =
 
 bool IsHex(const string& str)
 {
+<<<<<<< HEAD
     BOOST_FOREACH(char c, str)
     {
         if (HexDigit(c) < 0)
@@ -619,17 +649,27 @@ bool IsHex(const string& str)
 
 vector<unsigned char> ParseHex(const char* psz)
 {
+=======
+>>>>>>> Added rawtransaction RPC commands. Plus some fixes in the GUI code.
     // convert hex dump to vector
     vector<unsigned char> vch;
     while (true)
     {
         while (isspace(*psz))
             psz++;
+<<<<<<< HEAD
         signed char c = HexDigit(*psz++);
         if (c == (signed char)-1)
             break;
         unsigned char n = (c << 4);
         c = HexDigit(*psz++);
+=======
+        signed char c = phexdigit[(unsigned char)*psz++];
+        if (c == (signed char)-1)
+            break;
+        unsigned char n = (c << 4);
+        c = phexdigit[(unsigned char)*psz++];
+>>>>>>> Added rawtransaction RPC commands. Plus some fixes in the GUI code.
         if (c == (signed char)-1)
             break;
         n |= c;
@@ -643,6 +683,7 @@ vector<unsigned char> ParseHex(const string& str)
     return ParseHex(str.c_str());
 }
 
+<<<<<<< HEAD
 static void InterpretNegativeSetting(string name, map<string, string>& mapSettingsRet)
 {
     // interpret -nofoo as -foo=0 (and -nofoo=0 as -foo=1) as long as -foo not set
@@ -659,6 +700,9 @@ static void InterpretNegativeSetting(string name, map<string, string>& mapSettin
 }
 
 void ParseParameters(int argc, const char* const argv[])
+=======
+void ParseParameters(int argc, char* argv[])
+>>>>>>> Added rawtransaction RPC commands. Plus some fixes in the GUI code.
 {
     mapArgs.clear();
     mapMultiArgs.clear();
