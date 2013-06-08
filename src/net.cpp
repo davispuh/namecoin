@@ -1131,12 +1131,18 @@ void ThreadMapPort()
 
         string strDesc = "Bitcoin " + FormatFullVersion();
 
+<<<<<<< HEAD
         try {
             while (true) {
 #ifndef UPNPDISCOVER_SUCCESS
                 /* miniupnpc 1.5 */
                 r = UPNP_AddPortMapping(urls.controlURL, data.first.servicetype,
                                     port.c_str(), port.c_str(), lanaddr, strDesc.c_str(), "TCP", 0);
+=======
+#if !defined(__WXMSW__) && !defined(MAC_OSX)
+        r = UPNP_AddPortMapping(urls.controlURL, data.first.servicetype,
+	                        port, port, lanaddr, 0, "TCP", 0);
+>>>>>>> Changes to get code compiling under Mountain Lion
 #else
                 /* miniupnpc 1.6 */
                 r = UPNP_AddPortMapping(urls.controlURL, data.first.servicetype,
