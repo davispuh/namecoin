@@ -485,7 +485,11 @@ void CWallet::WalletUpdateSpent(const CTransaction &tx)
                     LogPrintf("WalletUpdateSpent: bad wtx %s\n", wtx.GetHash().ToString());
                 else if (!wtx.IsSpent(txin.prevout.n) && IsMine(wtx.vout[txin.prevout.n]))
                 {
+<<<<<<< HEAD
                     LogPrintf("WalletUpdateSpent found spent coin %sbc %s\n", FormatMoney(wtx.GetCredit()), wtx.GetHash().ToString());
+=======
+                    printf("WalletUpdateSpent found spent coin %s nmc %s\n", FormatMoney(wtx.GetCredit()).c_str(), wtx.GetHash().ToString().c_str());
+>>>>>>> Fixed "getbalance *". Includes patch from Bitcoin pull request #2272, plus special handling of OP_NAME_NEW.
                     wtx.MarkSpent(txin.prevout.n);
                     wtx.WriteToDisk();
 <<<<<<< HEAD
@@ -741,7 +745,30 @@ int64_t CWallet::GetDebit(const CTxIn &txin) const
     return 0;
 }
 
+<<<<<<< HEAD
 bool CWallet::IsChange(const CTxOut& txout) const
+=======
+int64 CWallet::GetDebitInclName(const CTxIn &txin) const
+{
+    CRITICAL_BLOCK(cs_mapWallet)
+    {
+        map<uint256, CWalletTx>::const_iterator mi = mapWallet.find(txin.prevout.hash);
+        if (mi != mapWallet.end())
+        {
+            const CWalletTx& prev = (*mi).second;
+            if (txin.prevout.n < prev.vout.size())
+            {
+                const CTxOut &txout = prev.vout[txin.prevout.n];
+                if (IsMine(txout) || hooks->IsMine(prev, txout))
+                    return txout.nValue;
+            }
+        }
+    }
+    return 0;
+}
+
+int64 CWalletTx::GetTxTime() const
+>>>>>>> Fixed "getbalance *". Includes patch from Bitcoin pull request #2272, plus special handling of OP_NAME_NEW.
 {
     CTxDestination address;
 
@@ -815,7 +842,11 @@ void CWalletTx::GetAmounts(list<pair<CTxDestination, int64_t> >& listReceived,
     strSentAccount = strFromAccount;
 
     // Compute fee:
+<<<<<<< HEAD
     int64_t nDebit = GetDebit();
+=======
+    int64 nDebit = GetDebitInclName();
+>>>>>>> Fixed "getbalance *". Includes patch from Bitcoin pull request #2272, plus special handling of OP_NAME_NEW.
     if (nDebit > 0) // debit>0 means we signed/sent this transaction
     {
         int64_t nValueOut = GetValueOut();
@@ -866,14 +897,17 @@ void CWalletTx::GetAmounts(list<pair<CTxDestination, int64_t> >& listReceived,
             listSent.push_back(make_pair(address, txout.nValue));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         // If we are receiving the output, add it as a "received" entry
         if (fIsMine)
 =======
         if (pwallet->IsMine(txout) || hooks->IsMine(*this, txout))
 >>>>>>> IsMine hook for display and wallet acceptance
+=======
+        if (pwallet->IsMine(txout) || hooks->IsMine(*this, txout, true))
+>>>>>>> Fixed "getbalance *". Includes patch from Bitcoin pull request #2272, plus special handling of OP_NAME_NEW.
             listReceived.push_back(make_pair(address, txout.nValue));
     }
-
 }
 
 void CWalletTx::GetAccountAmounts(const string& strAccount, int64_t& nReceived,
@@ -1054,7 +1088,11 @@ void CWallet::ReacceptWalletTransactions()
                 }
                 if (fUpdated)
                 {
+<<<<<<< HEAD
                     LogPrintf("ReacceptWalletTransactions found spent coin %sbc %s\n", FormatMoney(wtx.GetCredit()), wtx.GetHash().ToString());
+=======
+                    printf("ReacceptWalletTransactions found spent coin %s nmc %s\n", FormatMoney(wtx.GetCredit()).c_str(), wtx.GetHash().ToString().c_str());
+>>>>>>> Fixed "getbalance *". Includes patch from Bitcoin pull request #2272, plus special handling of OP_NAME_NEW.
                     wtx.MarkDirty();
                     wtx.WriteToDisk();
                 }
@@ -1165,8 +1203,14 @@ int64_t CWallet::GetBalance() const
         for (map<uint256, CWalletTx>::const_iterator it = mapWallet.begin(); it != mapWallet.end(); ++it)
         {
             const CWalletTx* pcoin = &(*it).second;
+<<<<<<< HEAD
             if (pcoin->IsTrusted())
                 nTotal += pcoin->GetAvailableCredit();
+=======
+            if (!pcoin->IsConfirmed())
+                continue;
+            nTotal += pcoin->GetAvailableCredit();
+>>>>>>> Fixed "getbalance *". Includes patch from Bitcoin pull request #2272, plus special handling of OP_NAME_NEW.
         }
     }
 
@@ -1199,7 +1243,7 @@ int64 CWallet::GetUnconfirmedBalance() const
         for (map<uint256, CWalletTx>::const_iterator it = mapWallet.begin(); it != mapWallet.end(); ++it)
         {
             const CWalletTx* pcoin = &(*it).second;
-            if (!pcoin->IsFinal() || !pcoin->IsConfirmed())
+            if (!pcoin->IsConfirmed())
                 nTotal += pcoin->GetAvailableCredit();
         }
     }
@@ -1267,10 +1311,16 @@ void CWallet::AvailableCoins(vector<COutput>& vCoins, bool fOnlyConfirmed, const
         {
             const CWalletTx* pcoin = &(*it).second;
 
+<<<<<<< HEAD
             if (!IsFinalTx(*pcoin))
                 continue;
 
             if (fOnlyConfirmed && !pcoin->IsTrusted())
+=======
+       BOOST_FOREACH(const CWalletTx* pcoin, vCoins)
+       {
+            if (!pcoin->IsConfirmed())
+>>>>>>> Fixed "getbalance *". Includes patch from Bitcoin pull request #2272, plus special handling of OP_NAME_NEW.
                 continue;
 
             if (pcoin->IsCoinBase() && pcoin->GetBlocksToMaturity() > 0)
@@ -2163,10 +2213,14 @@ std::map<std::string, int64> CWallet::GetAddressBalances()
             CWalletTx *pcoin = &walletEntry.second;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (!IsFinalTx(*pcoin) || !pcoin->IsTrusted())
 =======
             if (!pcoin->IsFinal() || !pcoin->IsConfirmed())
 >>>>>>> Added RPC commands: signmessage, verifymessage, listunspent, listaddressgroupings.
+=======
+            if (!pcoin->IsConfirmed())
+>>>>>>> Fixed "getbalance *". Includes patch from Bitcoin pull request #2272, plus special handling of OP_NAME_NEW.
                 continue;
 
             if (pcoin->IsCoinBase() && pcoin->GetBlocksToMaturity() > 0)

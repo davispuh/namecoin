@@ -369,7 +369,12 @@ public:
     std::map<std::string, int64> GetAddressBalances();
 
     bool IsMine(const CTxIn& txin) const;
+<<<<<<< HEAD
     int64_t GetDebit(const CTxIn& txin) const;
+=======
+    int64 GetDebit(const CTxIn& txin) const;
+    int64 GetDebitInclName(const CTxIn& txin) const;
+>>>>>>> Fixed "getbalance *". Includes patch from Bitcoin pull request #2272, plus special handling of OP_NAME_NEW.
     bool IsMine(const CTxOut& txout) const
     {
         return ::IsMine(*this, txout.scriptPubKey);
@@ -424,7 +429,22 @@ public:
         }
         return nDebit;
     }
+<<<<<<< HEAD
     int64_t GetCredit(const CTransaction& tx) const
+=======
+    int64 GetDebitInclName(const CTransaction& tx) const
+    {
+        int64 nDebit = 0;
+        BOOST_FOREACH(const CTxIn& txin, tx.vin)
+        {
+            nDebit += GetDebitInclName(txin);
+            if (!MoneyRange(nDebit))
+                throw std::runtime_error("CWallet::GetDebitInclName() : value out of range");
+        }
+        return nDebit;
+    }
+    int64 GetCredit(const CTransaction& tx) const
+>>>>>>> Fixed "getbalance *". Includes patch from Bitcoin pull request #2272, plus special handling of OP_NAME_NEW.
     {
         int64_t nCredit = 0;
         BOOST_FOREACH(const CTxOut& txout, tx.vout)
@@ -613,6 +633,7 @@ public:
     int64_t nOrderPos;  // position in ordered transaction list
 
     // memory only
+<<<<<<< HEAD
     mutable bool fDebitCached;
     mutable bool fCreditCached;
     mutable bool fImmatureCreditCached;
@@ -623,6 +644,21 @@ public:
     mutable int64_t nImmatureCreditCached;
     mutable int64_t nAvailableCreditCached;
     mutable int64_t nChangeCached;
+=======
+    mutable char fDebitCached, fDebitInclNameCached;
+    mutable char fCreditCached;
+    mutable char fAvailableCreditCached;
+    mutable char fChangeCached;
+    mutable int64 nDebitCached, nDebitInclNameCached;
+    mutable int64 nCreditCached;
+    mutable int64 nAvailableCreditCached;
+    mutable int64 nChangeCached;
+
+    // memory only UI hints
+    mutable unsigned int nTimeDisplayed;
+    mutable int nLinesDisplayed;
+    mutable char fConfirmedDisplayed;
+>>>>>>> Fixed "getbalance *". Includes patch from Bitcoin pull request #2272, plus special handling of OP_NAME_NEW.
 
     CWalletTx()
     {
@@ -657,11 +693,13 @@ public:
         strFromAccount.clear();
         vfSpent.clear();
         fDebitCached = false;
+        fDebitInclNameCached = false;
         fCreditCached = false;
         fImmatureCreditCached = false;
         fAvailableCreditCached = false;
         fChangeCached = false;
         nDebitCached = 0;
+        nDebitInclNameCached = 0;
         nCreditCached = 0;
         nImmatureCreditCached = 0;
         nAvailableCreditCached = 0;
@@ -752,6 +790,7 @@ public:
         fCreditCached = false;
         fAvailableCreditCached = false;
         fDebitCached = false;
+        fDebitInclNameCached = false;
         fChangeCached = false;
     }
 
@@ -793,7 +832,22 @@ public:
         return nDebitCached;
     }
 
+<<<<<<< HEAD
     int64_t GetCredit(bool fUseCache=true) const
+=======
+    int64 GetDebitInclName() const
+    {
+        if (vin.empty())
+            return 0;
+        if (fDebitInclNameCached)
+            return nDebitInclNameCached;
+        nDebitInclNameCached = pwallet->GetDebitInclName(*this);
+        fDebitInclNameCached = true;
+        return nDebitInclNameCached;
+    }
+
+    int64 GetCredit(bool fUseCache=true) const
+>>>>>>> Fixed "getbalance *". Includes patch from Bitcoin pull request #2272, plus special handling of OP_NAME_NEW.
     {
         // Must wait until coinbase is safely deep enough in the chain before valuing it
         if (IsCoinBase() && GetBlocksToMaturity() > 0)
