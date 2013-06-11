@@ -139,6 +139,7 @@ public:
         }
     }
 
+<<<<<<< HEAD
     virtual bool GetPrivKey(const std::vector<unsigned char> &vchPubKey, CPrivKey& keyOut) const
     {
         CRITICAL_BLOCK(cs_mapKeys)
@@ -174,6 +175,9 @@ public:
     virtual bool HaveCScript(const CScriptID &hash) const;
     virtual bool GetCScript(const CScriptID &hash, CScript& redeemScriptOut) const;
 =======
+=======
+    virtual bool GetPrivKey(const std::vector<unsigned char> &vchPubKey, CPrivKey& keyOut) const;
+>>>>>>> Removed key size check (for encrypted wallet).
 
     std::vector<unsigned char> GenerateNewKey();
     

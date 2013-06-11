@@ -202,6 +202,7 @@ typedef std::vector<unsigned char, secure_allocator<unsigned char> > CPrivKey;
 // when encrypting the wallet.
 typedef std::vector<unsigned char, secure_allocator<unsigned char> > CSecret;
 
+<<<<<<< HEAD
 enum { CSECRET_SIZE = 279 };
 
 /** An encapsulated private key. */
@@ -210,6 +211,8 @@ private:
     // Whether this private key is valid. We check for correctness when modifying the key
     // data, so fValid should always correspond to the actual state.
     bool fValid;
+=======
+>>>>>>> Removed key size check (for encrypted wallet).
 
 <<<<<<< HEAD
     // Whether the public key corresponding to this private key is (to be) compressed.
