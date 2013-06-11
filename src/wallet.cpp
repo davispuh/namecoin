@@ -1732,6 +1732,7 @@ bool CWallet::CreateTransaction(CScript scriptPubKey, int64_t nValue,
 // Call after CreateTransaction unless you want to abort
 bool CWallet::CommitTransaction(CWalletTx& wtxNew, CReserveKey& reservekey)
 {
+<<<<<<< HEAD
     {
         LOCK2(cs_main, cs_wallet);
         LogPrintf("CommitTransaction:\n%s", wtxNew.ToString());
@@ -1740,14 +1741,25 @@ bool CWallet::CommitTransaction(CWalletTx& wtxNew, CReserveKey& reservekey)
             // duration of this scope.  This is the only place where this optimization
             // maybe makes sense; please don't do it anywhere else.
             CWalletDB* pwalletdb = fFileBacked ? new CWalletDB(strWalletFile,"r") : NULL;
+=======
+    CRITICAL_BLOCK(cs_main)
+    CRITICAL_BLOCK(cs_mapWallet)
+    {
+        printf("CommitTransaction:\n%s", wtxNew.ToString().c_str());
+        // This is only to keep the database open to defeat the auto-flush for the
+        // duration of this scope.  This is the only place where this optimization
+        // maybe makes sense; please don't do it anywhere else.
+        CWalletDB* pwalletdb = fFileBacked ? new CWalletDB(strWalletFile,"r") : NULL;
+>>>>>>> Fixed deadlock when calling name_firstupdate from GUI RPC console. Updated version to 3.57
 
-            // Take key pair from key pool so it won't be used again
-            reservekey.KeepKey();
+        // Take key pair from key pool so it won't be used again
+        reservekey.KeepKey();
 
-            // Add tx to wallet, because if it has change it's also ours,
-            // otherwise just for transaction history.
-            AddToWallet(wtxNew);
+        // Add tx to wallet, because if it has change it's also ours,
+        // otherwise just for transaction history.
+        AddToWallet(wtxNew);
 
+<<<<<<< HEAD
             // Mark old coins as spent
             set<CWalletTx*> setCoins;
             BOOST_FOREACH(const CTxIn& txin, wtxNew.vin)
@@ -1760,15 +1772,32 @@ bool CWallet::CommitTransaction(CWalletTx& wtxNew, CReserveKey& reservekey)
                 NotifyTransactionChanged(this, coin.GetHash(), CT_UPDATED);
 =======
                 //vWalletUpdated.push_back(coin.GetHash());
+=======
+        // Mark old coins as spent
+        set<CWalletTx*> setCoins;
+        BOOST_FOREACH(const CTxIn& txin, wtxNew.vin)
+        {
+            CWalletTx &coin = mapWallet[txin.prevout.hash];
+            coin.pwallet = this;
+            coin.MarkSpent(txin.prevout.n);
+            coin.WriteToDisk();
+            //vWalletUpdated.push_back(coin.GetHash());
+>>>>>>> Fixed deadlock when calling name_firstupdate from GUI RPC console. Updated version to 3.57
 #ifdef GUI
-                NotifyTransactionChanged(this, coin.GetHash(), CT_UPDATED);
+            NotifyTransactionChanged(this, coin.GetHash(), CT_UPDATED);
 #endif
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
             }
 
             if (fFileBacked)
                 delete pwalletdb;
+=======
+>>>>>>> Fixed deadlock when calling name_firstupdate from GUI RPC console. Updated version to 3.57
         }
+
+        if (fFileBacked)
+            delete pwalletdb;
 
         // Track how many getdata requests our transaction gets
         mapRequestCount[wtxNew.GetHash()] = 0;
