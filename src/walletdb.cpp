@@ -33,6 +33,12 @@ extern std::map<std::vector<unsigned char>, PreparedNameFirstUpdate> mapMyNameFi
 extern std::map<uint160, std::vector<unsigned char> > mapMyNameHashes;   // Name for name_new hash (to show name in transaction list)
 #endif
 
+#ifdef GUI
+#include "namecoin.h"
+extern std::map<std::vector<unsigned char>, PreparedNameFirstUpdate> mapMyNameFirstUpdate;
+extern std::map<uint160, std::vector<unsigned char> > mapMyNameHashes;   // Name for name_new hash (to show name in transaction list)
+#endif
+
 using namespace std;
 using namespace boost;
 
@@ -61,6 +67,7 @@ bool CWalletDB::EraseName(const string& strAddress)
     return Erase(make_pair(string("name"), strAddress));
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 bool CWalletDB::WritePurpose(const string& strAddress, const string& strPurpose)
@@ -185,6 +192,8 @@ bool CWalletDB::WriteMinVersion(int nVersion)
 =======
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 =======
+=======
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 #ifdef GUI
 bool CWalletDB::WriteNameFirstUpdate(const std::vector<unsigned char>& vchName,
                                      const uint256& hex,
@@ -206,6 +215,9 @@ bool CWalletDB::EraseNameFirstUpdate(const std::vector<unsigned char>& vchName)
 }
 #endif
 
+<<<<<<< HEAD
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
+=======
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 bool CWalletDB::ReadAccount(const string& strAccount, CAccount& account)
 {

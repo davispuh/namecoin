@@ -56,6 +56,7 @@ namespace GUIUtil
     // Set up widgets for address and amounts
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent);
     void setupAmountWidget(QLineEdit *widget, QWidget *parent);
 
@@ -68,6 +69,9 @@ namespace GUIUtil
     bool isDust(const QString& address, qint64 amount);
 =======
     void setupAddressWidget(QLineEdit *widget, QWidget *parent);
+=======
+    void setupAddressWidget(QLineEdit *widget, QWidget *parent, bool fAllowEmpty = false);
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 =======
     void setupAddressWidget(QLineEdit *widget, QWidget *parent, bool fAllowEmpty = false);
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.

@@ -153,9 +153,13 @@ private:
     QAction *sendCoinsAction;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     QAction *usedSendingAddressesAction;
     QAction *usedReceivingAddressesAction;
 =======
+=======
+	QAction *manageNamesAction;
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 =======
 	QAction *manageNamesAction;
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.

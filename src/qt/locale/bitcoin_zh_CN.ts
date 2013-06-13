@@ -618,8 +618,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+139"/>
 >>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+=======
+        <location line="+142"/>
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 =======
         <location line="+142"/>
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
@@ -1122,6 +1126,7 @@ This product includes software developed by the OpenSSL Project for use in the O
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-284"/>
         <location line="+376"/>
         <source>[testnet]</source>
@@ -1178,6 +1183,9 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="+9"/>
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
+=======
+        <location line="+9"/>
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
         <source>Actions toolbar</source>
         <translation type="unfinished">动作工具栏</translation>
     </message>
@@ -1185,11 +1193,15 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+13"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <location line="+10"/>
 =======
         <location line="+80"/>
 >>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+=======
+        <location line="+81"/>
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 =======
         <location line="+81"/>
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
@@ -1471,6 +1483,7 @@ Address: %4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+69"/>
 =======
         <location line="+33"/>
@@ -1480,6 +1493,9 @@ Address: %4
 =======
         <location line="+102"/>
 >>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+=======
+        <location line="+112"/>
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 =======
         <location line="+112"/>
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
@@ -1573,13 +1589,18 @@ Address: %4
 <context>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <name>CoinControlDialog</name>
 =======
+=======
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
     <name>ConfigureNameDialog</name>
     <message>
         <location filename="../forms/configurenamedialog.ui" line="+20"/>
         <source>Configure Name</source>
         <translation type="unfinished"></translation>
+<<<<<<< HEAD
+=======
     </message>
     <message>
         <location line="+14"/>
@@ -1676,6 +1697,270 @@ Leave empty, if not needed.</source>
 </context>
 <context>
     <name>EditAddressDialog</name>
+    <message>
+        <location filename="../forms/editaddressdialog.ui" line="+14"/>
+        <source>Edit Address</source>
+        <translation>编辑地址</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>&amp;Label</source>
+        <translation>&amp;标签</translation>
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>&amp;Data:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Enter JSON string that will be associated with the name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;JSON string, e.g. {&amp;quot;ns&amp;quot;: [&amp;quot;1.2.3.4&amp;quot;, &amp;quot;1.2.3.5&amp;quot;]}&lt;/p&gt;
+&lt;p style=&quot; margin:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;See &lt;a href=&quot;http://dot-bit.org/HowToRegisterAndConfigureBitDomains&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;How to Register and Configure Bit Domains&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>&amp;Transfer to:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>The Namecoin address to transfer domain to
+(e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9).
+Leave empty, if not needed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Choose address from address book</source>
+        <translation type="unfinished">从地址簿选择地址</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Alt+A</source>
+        <translation type="unfinished">Alt+A</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Paste address from clipboard</source>
+        <translation type="unfinished">从剪贴板粘贴地址</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Alt+P</source>
+        <translation type="unfinished">Alt+P</translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Domain name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>(can be left empty)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../configurenamedialog.cpp" line="+37"/>
+        <source>(not a domain name)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Name_firstupdate transaction will be queued and broadcasted when corresponding name_new is %1 blocks old</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Name_update transaction will be issued immediately</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Update Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+55"/>
+        <source>Name update error</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+<<<<<<< HEAD
+    <name>EditAddressDialog</name>
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
+=======
+    <name>ManageNamesPage</name>
+    <message>
+        <location filename="../forms/managenamespage.ui" line="+20"/>
+        <source>Manage Names</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>&amp;New name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Enter a name or domain name (prefixed with d/) to be registered via Namecoin.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>d/</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Use &lt;span style=&quot; font-weight:600;&quot;&gt;d/&lt;/span&gt; prefix for domain names. E.g. &lt;span style=&quot; font-weight:600;&quot;&gt;d/mysite&lt;/span&gt; will register &lt;span style=&quot; font-weight:600;&quot;&gt;mysite.bit&lt;/span&gt;&lt;/p&gt;&lt;p&gt;See &lt;a href=&quot;http://dot-bit.org/Namespace:Domain_names&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Domain names&lt;/span&gt;&lt;/a&gt; in Namecoin wiki for reference. Other prfixes can be used for miscellaneous purposes (not domain names).&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>Confirm the new name action. Sends name_new transaction
+to the network and creates a pending name_firstupdate transaction.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>&amp;Submit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>Your registered names:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Double-click name to configure</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+37"/>
+        <source>Configure name and submit update operation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <location filename="../managenamespage.cpp" line="+34"/>
+        <source>&amp;Configure Name...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../managenamespage.cpp" line="-2"/>
+        <source>Copy &amp;Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy &amp;Value</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+64"/>
+        <source>Name registration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Name not available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Are you sure you want to register domain name %1, which corresponds to domain %2?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Are you sure you want to register non-domain name %1?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Confirm name registration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+57"/>
+        <source>Name registration failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+87"/>
+        <source>Export Registered Names Data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Comma separated file (*.csv)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Error exporting</source>
+        <translation type="unfinished">导出错误</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Could not write to file %1.</source>
+        <translation type="unfinished">无法写入文件 %1。</translation>
+    </message>
+</context>
+<context>
+    <name>NameTableModel</name>
+    <message>
+        <location filename="../nametablemodel.cpp" line="+338"/>
+        <source>Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Value</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Expires in</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+124"/>
+        <source>Name registered using Namecoin.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Data associated with the name.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Number of blocks, after which the name will expire. Update name to renew it.
+Empty cell means pending (awaiting automatic name_firstupdate or awaiting network confirmation).</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Namecoin-core</name>
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
     <message>
         <location filename="../forms/coincontroldialog.ui" line="+14"/>
@@ -6583,6 +6868,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
 >>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation type="unfinished">接受来自外部的连接 (缺省: 如果不带 -proxy or -connect 参数设置为1)</translation>
@@ -6593,6 +6879,21 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>Usage:</source>
         <translation>使用：</translation>
+=======
+        <location line="+2"/>
+        <source>Name operation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+41"/>
+        <source>(n/a)</source>
+        <translation>(n/a)</translation>
+    </message>
+    <message>
+        <location line="+200"/>
+        <source>Transaction status. Hover over this field to show number of confirmations.</source>
+        <translation>交易状态。 鼠标移到此区域上可显示确认消息项的数目。</translation>
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
     </message>
     <message>
 <<<<<<< HEAD
@@ -6722,8 +7023,18 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
         <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
         <translation type="unfinished">无法解析 -externalip 地址: &apos;%s&apos;</translation>
+=======
+        <source>Name operation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Other</source>
+        <translation>其他</translation>
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
     </message>
     <message>
         <location line="+1"/>
@@ -6889,6 +7200,39 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
 <<<<<<< HEAD
 =======
+</context>
+<context>
+    <name>WalletModel</name>
+    <message>
+        <location filename="../walletmodel.cpp" line="+514"/>
+        <source>Cannot find stored tx hash for name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Cannot find stored rand value for name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>Invalid Namecoin address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>There are pending operations on that name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Could not find a coin with this name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>This coin is not in your wallet</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>WalletModel</name>

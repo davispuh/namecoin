@@ -454,8 +454,11 @@ void BitcoinGUI::createActions()
     tabGroup->addAction(addressBookAction);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
 =======
+=======
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
     manageNamesAction = new QAction(QIcon(":/icons/bitcoin"), tr("&Manage Names"), this);
     manageNamesAction->setStatusTip(tr("Manage names registered via Namecoin"));
     manageNamesAction->setToolTip(manageNamesAction->statusTip());
@@ -463,6 +466,9 @@ void BitcoinGUI::createActions()
     manageNamesAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_6));
     tabGroup->addAction(manageNamesAction);
 
+<<<<<<< HEAD
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
+=======
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
     connect(overviewAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(overviewAction, SIGNAL(triggered()), this, SLOT(gotoOverviewPage()));
@@ -477,7 +483,12 @@ void BitcoinGUI::createActions()
     connect(addressBookAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(addressBookAction, SIGNAL(triggered()), this, SLOT(gotoAddressBookPage()));
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
+=======
+    connect(manageNamesAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
+    connect(manageNamesAction, SIGNAL(triggered()), this, SLOT(gotoManageNamesPage()));
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 =======
     connect(manageNamesAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(manageNamesAction, SIGNAL(triggered()), this, SLOT(gotoManageNamesPage()));
@@ -677,8 +688,12 @@ void BitcoinGUI::createToolBars()
     toolbar->addAction(addressBookAction);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
 =======
+=======
+    toolbar->addAction(manageNamesAction);
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 =======
     toolbar->addAction(manageNamesAction);
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.

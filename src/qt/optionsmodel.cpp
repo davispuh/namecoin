@@ -612,6 +612,7 @@ bool OptionsModel::getProxySettings(QNetworkProxy& proxy) const
 
     return true;
 }
+<<<<<<< HEAD
 
 void OptionsModel::setRestartRequired(bool fRequired)
 {
@@ -629,3 +630,5 @@ qint64 OptionsModel::getTransactionFee()
     return nTransactionFee;
 >>>>>>> Committing original src/qt
 }
+=======
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.

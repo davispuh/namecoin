@@ -46,11 +46,15 @@ std::map<uint160, std::vector<unsigned char> > mapMyNameHashes;
 WalletModel::WalletModel(CWallet *wallet, OptionsModel *optionsModel, QObject *parent) :
     QObject(parent), wallet(wallet), optionsModel(optionsModel), addressTableModel(0),
 <<<<<<< HEAD
+<<<<<<< HEAD
     transactionTableModel(0),
 <<<<<<< HEAD
     recentRequestsTableModel(0),
 =======
 >>>>>>> Committing original src/qt
+=======
+    nameTableModel(0), transactionTableModel(0),
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 =======
     nameTableModel(0), transactionTableModel(0),
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
@@ -641,6 +645,185 @@ WalletModel::SendCoinsReturn WalletModel::sendCoins(WalletModelTransaction &tran
 
     return SendCoinsReturn(OK, 0, hex);
 >>>>>>> Committing original src/qt
+}
+
+bool WalletModel::nameAvailable(const QString &name)
+{
+    std::string strName = name.toStdString();
+    std::vector<unsigned char> vchName(strName.begin(), strName.end());
+
+    std::vector<CNameIndex> vtxPos;
+    CNameDB dbName("r");
+    if (!dbName.ReadName(vchName, vtxPos))
+        return true;
+   
+    if (vtxPos.size() < 1)
+        return true;
+
+    CDiskTxPos txPos = vtxPos[vtxPos.size() - 1].txPos;
+    CTransaction tx;
+    if (!tx.ReadFromDisk(txPos))
+        return true;     // This may indicate error, rather than name availability
+
+    std::vector<unsigned char> vchValue;
+    int nHeight;
+    uint256 hash;
+    if (txPos.IsNull() || !GetValueOfTxPos(txPos, vchValue, hash, nHeight))
+        return true;
+
+    // TODO: should we subtract MIN_FIRSTUPDATE_DEPTH blocks? I think name_new may be possible when the previous registration is just about to expire
+    if(nHeight + GetDisplayExpirationDepth(nHeight) - pindexBest->nHeight <= 0)
+        return true;    // Expired
+
+    return false;
+}
+
+WalletModel::NameNewReturn WalletModel::nameNew(const QString &name)
+{
+    NameNewReturn ret;
+
+    std::string strName = name.toStdString();
+    ret.vchName = std::vector<unsigned char>(strName.begin(), strName.end());
+
+    CWalletTx wtx;
+    wtx.nVersion = NAMECOIN_TX_VERSION;
+
+    uint64 rand = GetRand((uint64)-1);
+    std::vector<unsigned char> vchRand = CBigNum(rand).getvch();
+    std::vector<unsigned char> vchToHash(vchRand);
+    vchToHash.insert(vchToHash.end(), ret.vchName.begin(), ret.vchName.end());
+    uint160 hash = Hash160(vchToHash);
+
+    std::vector<unsigned char> strPubKey = wallet->GetKeyFromKeyPool();
+    CScript scriptPubKeyOrig;
+    scriptPubKeyOrig.SetBitcoinAddress(strPubKey);
+    CScript scriptPubKey;
+    scriptPubKey << OP_NAME_NEW << hash << OP_2DROP;
+    scriptPubKey += scriptPubKeyOrig;
+
+    CRITICAL_BLOCK(cs_main)
+    {
+        std::string strError = wallet->SendMoney(scriptPubKey, MIN_AMOUNT, wtx, true);
+        if (strError != "")
+        {
+            ret.ok = false;
+            ret.err_msg = QString::fromStdString(strError);
+            return ret;
+        }
+        ret.ok = true;
+        ret.hex = wtx.GetHash();
+        ret.rand = rand;
+        ret.hash = hash;
+
+        mapMyNames[ret.vchName] = ret.hex;
+        mapMyNameHashes[ret.hash] = ret.vchName;
+        mapMyNameFirstUpdate[ret.vchName].rand = ret.rand;
+
+        strError = nameFirstUpdatePrepare(name, "").toStdString();
+        if (strError != "")
+        {
+            printf("nameFirstUpdatePrepare for %s returned error: %s\n", strName.c_str(), strError.c_str());
+            // We do not return this error, because we stored data to mapMyNameFirstUpdate and configure dialog should show up
+        }
+    }
+    return ret;
+}
+
+QString WalletModel::nameFirstUpdatePrepare(const QString &name, const QString &data)
+{
+    std::string strName = name.toStdString();
+    std::vector<unsigned char> vchName(strName.begin(), strName.end());
+    
+    std::string strData = data.toStdString();
+    std::vector<unsigned char> vchValue(strData.begin(), strData.end());
+
+    CRITICAL_BLOCK(cs_main)
+    {
+        std::map<std::vector<unsigned char>, uint256>::const_iterator it1 = mapMyNames.find(vchName);
+        if (it1 == mapMyNames.end())
+            return tr("Cannot find stored tx hash for name");
+
+        std::map<std::vector<unsigned char>, PreparedNameFirstUpdate>::iterator it2 = mapMyNameFirstUpdate.find(vchName);
+        if (it2 == mapMyNameFirstUpdate.end())
+            return tr("Cannot find stored rand value for name");
+
+        uint256 wtxInHash = it1->second;
+        uint64 rand = it2->second.rand;
+
+        CWalletTx wtx;
+        std::string err_msg = nameFirstUpdateCreateTx(wtx, vchName, wtxInHash, rand, vchValue);
+        if (err_msg != "")
+            return QString::fromStdString(err_msg);
+        it2->second.vchData = vchValue;
+        it2->second.wtx = wtx;
+
+        CRITICAL_BLOCK(wallet->cs_wallet)
+            wallet->WriteNameFirstUpdate(vchName, wtxInHash, rand, vchValue, wtx);
+        printf("Automatic name_firstupdate created for name %s, created tx: %s\n", qPrintable(name), wtx.GetHash().GetHex().c_str());
+    }
+
+    return "";
+}
+
+QString WalletModel::nameUpdate(const QString &name, const QString &data, const QString &transferToAddress)
+{
+    std::string strName = name.toStdString();
+    std::vector<unsigned char> vchName(strName.begin(), strName.end());
+    
+    std::string strData = data.toStdString();
+    std::vector<unsigned char> vchValue(strData.begin(), strData.end());
+
+    CWalletTx wtx;
+    wtx.nVersion = NAMECOIN_TX_VERSION;
+    CScript scriptPubKeyOrig;
+    
+    if (transferToAddress != "")
+    {
+        std::string strAddress = transferToAddress.toStdString();
+        uint160 hash160;
+        bool isValid = AddressToHash160(strAddress, hash160);
+        if (!isValid)
+            return tr("Invalid Namecoin address");
+        scriptPubKeyOrig.SetBitcoinAddress(strAddress);
+    }
+    else
+    {
+        std::vector<unsigned char> strPubKey = wallet->GetKeyFromKeyPool();
+        scriptPubKeyOrig.SetBitcoinAddress(strPubKey);
+    }
+
+    CScript scriptPubKey;
+    scriptPubKey << OP_NAME_UPDATE << vchName << vchValue << OP_2DROP << OP_DROP;
+    scriptPubKey += scriptPubKeyOrig;
+
+    CRITICAL_BLOCK(cs_main)
+    CRITICAL_BLOCK(wallet->cs_mapWallet)
+    {
+        if (mapNamePending.count(vchName) && mapNamePending[vchName].size())
+        {
+            error("name_update() : there are %d pending operations on that name, including %s",
+                    mapNamePending[vchName].size(),
+                    mapNamePending[vchName].begin()->GetHex().c_str());
+            return tr("There are pending operations on that name");
+        }
+
+        CNameDB dbName("r");
+        CTransaction tx;
+        if (!GetTxOfName(dbName, vchName, tx))
+            return tr("Could not find a coin with this name");
+
+        uint256 wtxInHash = tx.GetHash();
+
+        if (!wallet->mapWallet.count(wtxInHash))
+        {
+            error("name_update() : this coin is not in your wallet %s",
+                    wtxInHash.GetHex().c_str());
+            return tr("This coin is not in your wallet");
+        }
+
+        CWalletTx& wtxIn = wallet->mapWallet[wtxInHash];
+        return QString::fromStdString(SendMoneyWithInputTx(scriptPubKey, MIN_AMOUNT, 0, wtxIn, wtx, true));
+    }
 }
 
 bool WalletModel::nameAvailable(const QString &name)

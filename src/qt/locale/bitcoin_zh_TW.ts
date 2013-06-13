@@ -673,6 +673,7 @@ This product includes software developed by the OpenSSL Project for use in the O
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-349"/>
 >>>>>>> Committing original src/qt
 =======
@@ -683,13 +684,20 @@ This product includes software developed by the OpenSSL Project for use in the O
 =======
         <location line="-565"/>
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
+=======
+        <location line="-565"/>
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
         <source>Wallet</source>
         <translation type="unfinished">錢包</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+139"/>
 >>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+=======
+        <location line="+142"/>
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 =======
         <location line="+142"/>
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
@@ -777,9 +785,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+17"/>
 >>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
 =======
+=======
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
         <location line="+6"/>
         <source>&amp;Manage Names</source>
         <translation type="unfinished"></translation>
@@ -791,6 +802,9 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+19"/>
+<<<<<<< HEAD
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
+=======
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
         <source>E&amp;xit</source>
         <translation type="unfinished">結束</translation>
@@ -1230,12 +1244,16 @@ This product includes software developed by the OpenSSL Project for use in the O
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-284"/>
         <location line="+376"/>
 =======
         <location line="+17"/>
 =======
         <location line="+8"/>
+=======
+        <location line="+9"/>
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 =======
         <location line="+9"/>
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
@@ -1246,12 +1264,16 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+13"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <location line="+10"/>
 >>>>>>> Committing original src/qt
 =======
         <location line="+80"/>
 >>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+=======
+        <location line="+81"/>
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 =======
         <location line="+81"/>
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
@@ -1715,14 +1737,115 @@ Address: %4
 <context>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <name>CoinControlDialog</name>
 =======
+=======
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
     <name>ConfigureNameDialog</name>
     <message>
         <location filename="../forms/configurenamedialog.ui" line="+20"/>
         <source>Configure Name</source>
         <translation type="unfinished"></translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <location line="+14"/>
+        <source>Name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>&amp;Data:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Enter JSON string that will be associated with the name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;JSON string, e.g. {&amp;quot;ns&amp;quot;: [&amp;quot;1.2.3.4&amp;quot;, &amp;quot;1.2.3.5&amp;quot;]}&lt;/p&gt;
+&lt;p style=&quot; margin:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;See &lt;a href=&quot;http://dot-bit.org/HowToRegisterAndConfigureBitDomains&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;How to Register and Configure Bit Domains&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>&amp;Transfer to:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>The Namecoin address to transfer domain to
+(e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9).
+Leave empty, if not needed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Choose address from address book</source>
+        <translation type="unfinished">從位址簿中選一個位址</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Alt+A</source>
+        <translation type="unfinished">Alt+A</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Paste address from clipboard</source>
+        <translation type="unfinished">從剪貼簿貼上位址</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Alt+P</source>
+        <translation type="unfinished">Alt+P</translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Domain name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>(can be left empty)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../configurenamedialog.cpp" line="+37"/>
+        <source>(not a domain name)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Name_firstupdate transaction will be queued and broadcasted when corresponding name_new is %1 blocks old</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Name_update transaction will be issued immediately</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Update Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+55"/>
+        <source>Name update error</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>EditAddressDialog</name>
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
     <message>
         <location line="+14"/>
         <source>Name:</source>
@@ -7611,6 +7734,7 @@ rpcpassword=%s
         <translation>在除錯輸出內容前附加時間(預設值: 1)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>RPC client options:</source>
         <translation>RPC 客戶端選項:</translation>
@@ -7619,6 +7743,21 @@ rpcpassword=%s
         <location line="+1"/>
         <source>Rebuild block chain index from current blk000??.dat files</source>
         <translation>從目前的區塊檔 blk000??.dat 重建區塊鏈的索引</translation>
+=======
+        <location line="+2"/>
+        <source>Name operation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+41"/>
+        <source>(n/a)</source>
+        <translation>(不適用)</translation>
+    </message>
+    <message>
+        <location line="+200"/>
+        <source>Transaction status. Hover over this field to show number of confirmations.</source>
+        <translation>交易狀態. 移動游標至欄位上方來顯示確認次數.</translation>
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
     </message>
     <message>
         <location line="+5"/>
@@ -7697,8 +7836,18 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
         <source>Wait for RPC server to start</source>
         <translation>等待 RPC 伺服器啟動</translation>
+=======
+        <source>Name operation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Other</source>
+        <translation>其他</translation>
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
     </message>
     <message>
         <location line="+1"/>

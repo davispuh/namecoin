@@ -487,6 +487,9 @@ public:
                               const CWalletTx &wtx);
     bool EraseNameFirstUpdate(const std::vector<unsigned char>& vchName);
 #endif
+<<<<<<< HEAD
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
+=======
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 
 <<<<<<< HEAD
@@ -846,10 +849,14 @@ public:
         return nDebitCached;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
     int64_t GetCredit(bool fUseCache=true) const
 =======
+=======
+    
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 =======
     
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
@@ -1185,6 +1192,16 @@ public:
 private:
     std::vector<char> _ssExtra;
 };
+
+#ifdef GUI
+// Editable transaction, which is not broadcasted immediately (only after 12 blocks)
+struct PreparedNameFirstUpdate
+{
+    uint64 rand;
+    std::vector<unsigned char> vchData;
+    CWalletTx wtx;
+};
+#endif
 
 #ifdef GUI
 // Editable transaction, which is not broadcasted immediately (only after 12 blocks)

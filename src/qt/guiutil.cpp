@@ -109,6 +109,7 @@ QFont bitcoinAddressFont()
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
 {
     parent->setFocusProxy(widget);
@@ -121,6 +122,9 @@ void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
     widget->setCheckValidator(new BitcoinAddressCheckValidator(parent));
 =======
 void setupAddressWidget(QLineEdit *widget, QWidget *parent)
+=======
+void setupAddressWidget(QLineEdit *widget, QWidget *parent, bool fAllowEmpty /*= false*/)
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 =======
 void setupAddressWidget(QLineEdit *widget, QWidget *parent, bool fAllowEmpty /*= false*/)
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.

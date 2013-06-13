@@ -16,6 +16,7 @@
 
 EditAddressDialog::EditAddressDialog(Mode mode, QWidget *parent) :
 <<<<<<< HEAD
+<<<<<<< HEAD
     QDialog(parent),
 <<<<<<< HEAD
     ui(new Ui::EditAddressDialog),
@@ -23,6 +24,9 @@ EditAddressDialog::EditAddressDialog(Mode mode, QWidget *parent) :
     mode(mode),
     model(0)
 =======
+=======
+    QDialog(parent, Qt::WindowSystemMenuHint | Qt::WindowTitleHint),
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 =======
     QDialog(parent, Qt::WindowSystemMenuHint | Qt::WindowTitleHint),
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.

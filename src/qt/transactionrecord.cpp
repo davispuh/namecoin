@@ -149,10 +149,14 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
             //
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             int64_t nTxFee = nDebit - wtx.GetValueOut();
 =======
             int64 nTxFee = nDebit - wtx.GetValueOut();
 >>>>>>> Committing original src/qt
+=======
+            int64 nTxFee = nDebit - (wtx.GetValueOut() - nCarriedOverCoin);
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 =======
             int64 nTxFee = nDebit - (wtx.GetValueOut() - nCarriedOverCoin);
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
@@ -211,10 +215,13 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 int64_t nValue = txout.nValue;
 =======
                 int64 nValue = txout.nValue;
 >>>>>>> Committing original src/qt
+=======
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 =======
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
                 /* Add fee to first output */
