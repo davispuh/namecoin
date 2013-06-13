@@ -41,7 +41,7 @@
 >>>>>>> Committing original src/qt
 
 SendCoinsDialog::SendCoinsDialog(QWidget *parent) :
-    QDialog(parent),
+    QDialog(parent, Qt::WindowSystemMenuHint | Qt::WindowTitleHint),
     ui(new Ui::SendCoinsDialog),
     model(0)
 {

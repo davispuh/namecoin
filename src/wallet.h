@@ -473,7 +473,21 @@ public:
 
     bool SetAddressBook(const CTxDestination& address, const std::string& strName, const std::string& purpose);
 
+<<<<<<< HEAD
     bool DelAddressBook(const CTxDestination& address);
+=======
+    // requires cs_mapAddressBook lock
+    bool DelAddressBookName(const std::string& strAddress);
+    
+#ifdef GUI
+    bool WriteNameFirstUpdate(const std::vector<unsigned char>& vchName,
+                              const uint256& hex,
+                              const uint64& rand,
+                              const std::vector<unsigned char>& vchData,
+                              const CWalletTx &wtx);
+    bool EraseNameFirstUpdate(const std::vector<unsigned char>& vchName);
+#endif
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 
 <<<<<<< HEAD
     void UpdatedTransaction(const uint256 &hashTx);
@@ -831,10 +845,14 @@ public:
         fDebitCached = true;
         return nDebitCached;
     }
+<<<<<<< HEAD
 
 <<<<<<< HEAD
     int64_t GetCredit(bool fUseCache=true) const
 =======
+=======
+    
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
     int64 GetDebitInclName() const
     {
         if (vin.empty())
@@ -1167,5 +1185,15 @@ public:
 private:
     std::vector<char> _ssExtra;
 };
+
+#ifdef GUI
+// Editable transaction, which is not broadcasted immediately (only after 12 blocks)
+struct PreparedNameFirstUpdate
+{
+    uint64 rand;
+    std::vector<unsigned char> vchData;
+    CWalletTx wtx;
+};
+#endif
 
 #endif

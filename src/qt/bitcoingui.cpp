@@ -34,6 +34,7 @@
 #include "transactiontablemodel.h"
 #include "addressbookpage.h"
 #include "sendcoinsdialog.h"
+#include "managenamespage.h"
 #include "signverifymessagedialog.h"
 #include "optionsdialog.h"
 #include "aboutdialog.h"
@@ -274,6 +275,8 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 
     sendCoinsPage = new SendCoinsDialog(this);
 
+	manageNamesPage = new ManageNamesPage(this);
+
     signVerifyMessageDialog = new SignVerifyMessageDialog(this);
 
     centralWidget = new QStackedWidget(this);
@@ -282,6 +285,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     centralWidget->addWidget(addressBookPage);
     centralWidget->addWidget(receiveCoinsPage);
     centralWidget->addWidget(sendCoinsPage);
+    centralWidget->addWidget(manageNamesPage);
     setCentralWidget(centralWidget);
 
     // Create status bar
@@ -449,7 +453,17 @@ void BitcoinGUI::createActions()
     addressBookAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_5));
     tabGroup->addAction(addressBookAction);
 
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
+=======
+    manageNamesAction = new QAction(QIcon(":/icons/bitcoin"), tr("&Manage Names"), this);
+    manageNamesAction->setStatusTip(tr("Manage names registered via Namecoin"));
+    manageNamesAction->setToolTip(manageNamesAction->statusTip());
+    manageNamesAction->setCheckable(true);
+    manageNamesAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_6));
+    tabGroup->addAction(manageNamesAction);
+
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
     connect(overviewAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(overviewAction, SIGNAL(triggered()), this, SLOT(gotoOverviewPage()));
     connect(sendCoinsAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
@@ -462,7 +476,12 @@ void BitcoinGUI::createActions()
 =======
     connect(addressBookAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(addressBookAction, SIGNAL(triggered()), this, SLOT(gotoAddressBookPage()));
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
+=======
+    connect(manageNamesAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
+    connect(manageNamesAction, SIGNAL(triggered()), this, SLOT(gotoManageNamesPage()));
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 
     quitAction = new QAction(QIcon(":/icons/quit"), tr("E&xit"), this);
     quitAction->setStatusTip(tr("Quit application"));
@@ -657,8 +676,12 @@ void BitcoinGUI::createToolBars()
     toolbar->addAction(historyAction);
     toolbar->addAction(addressBookAction);
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
 =======
+=======
+    toolbar->addAction(manageNamesAction);
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 
     QToolBar *toolbar2 = addToolBar(tr("Actions toolbar"));
     toolbar2->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
@@ -799,6 +822,7 @@ void BitcoinGUI::setWalletModel(WalletModel *walletModel)
         addressBookPage->setModel(walletModel->getAddressTableModel());
         receiveCoinsPage->setModel(walletModel->getAddressTableModel());
         sendCoinsPage->setModel(walletModel);
+		manageNamesPage->setModel(walletModel);
         signVerifyMessageDialog->setModel(walletModel);
 
         setEncryptionStatus(walletModel->getEncryptionStatus());
@@ -886,6 +910,7 @@ void BitcoinGUI::createTrayIconMenu()
     trayIconMenu->addSeparator();
     trayIconMenu->addAction(sendCoinsAction);
     trayIconMenu->addAction(receiveCoinsAction);
+    trayIconMenu->addAction(manageNamesAction);
     trayIconMenu->addSeparator();
     trayIconMenu->addAction(signMessageAction);
     trayIconMenu->addAction(verifyMessageAction);
@@ -1417,6 +1442,16 @@ void BitcoinGUI::gotoSendCoinsPage(QString addr)
 
     if(!addr.isEmpty())
         sendCoinsPage->setAddress(addr);
+}
+
+void BitcoinGUI::gotoManageNamesPage()
+{
+    manageNamesAction->setChecked(true);
+    centralWidget->setCurrentWidget(manageNamesPage);
+
+    exportAction->setEnabled(true);
+    disconnect(exportAction, SIGNAL(triggered()), 0, 0);
+    connect(exportAction, SIGNAL(triggered()), manageNamesPage, SLOT(exportClicked()));
 }
 
 void BitcoinGUI::gotoSignMessageTab(QString addr)

@@ -34,6 +34,7 @@ class TransactionView;
 class OverviewPage;
 class AddressBookPage;
 class SendCoinsDialog;
+class ManageNamesPage;
 class SignVerifyMessageDialog;
 class Notificator;
 class RPCConsole;
@@ -136,6 +137,7 @@ private:
     AddressBookPage *addressBookPage;
     AddressBookPage *receiveCoinsPage;
     SendCoinsDialog *sendCoinsPage;
+	ManageNamesPage *manageNamesPage;
     SignVerifyMessageDialog *signVerifyMessageDialog;
 
     QLabel *labelEncryptionIcon;
@@ -150,9 +152,13 @@ private:
     QAction *quitAction;
     QAction *sendCoinsAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
     QAction *usedSendingAddressesAction;
     QAction *usedReceivingAddressesAction;
 =======
+=======
+	QAction *manageNamesAction;
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
     QAction *addressBookAction;
 >>>>>>> Committing original src/qt
     QAction *signMessageAction;
@@ -295,6 +301,8 @@ private slots:
     void gotoReceiveCoinsPage();
     /** Switch to send coins page */
     void gotoSendCoinsPage(QString addr = "");
+    /** Switch to manage names page */
+    void gotoManageNamesPage();
 
     /** Show Sign/Verify Message dialog and switch to sign message tab */
     void gotoSignMessageTab(QString addr = "");

@@ -29,9 +29,14 @@ BitcoinAddressEntryValidator::BitcoinAddressEntryValidator(QObject *parent) :
   - '0' and 'O' to 'o'
 */
 
+<<<<<<< HEAD
 BitcoinAddressValidator::BitcoinAddressValidator(QObject *parent) :
 >>>>>>> Committing original src/qt
     QValidator(parent)
+=======
+BitcoinAddressValidator::BitcoinAddressValidator(QObject *parent, bool fAllowEmpty) :
+    QValidator(parent), allowEmpty(fAllowEmpty)
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 {
 }
 
@@ -119,6 +124,7 @@ QValidator::State BitcoinAddressValidator::validate(QString &input, int &pos) co
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     return state;
 }
 
@@ -139,7 +145,11 @@ QValidator::State BitcoinAddressCheckValidator::validate(QString &input, int &po
 =======
     // Empty address is "intermediate" input
     if(input.isEmpty())
+=======
+    if (input.isEmpty() && !allowEmpty)
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
     {
+        // Empty address is "intermediate" input
         state = QValidator::Intermediate;
     }
 

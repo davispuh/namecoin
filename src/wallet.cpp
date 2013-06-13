@@ -1806,7 +1806,11 @@ bool CWallet::CommitTransaction(CWalletTx& wtxNew, CReserveKey& reservekey)
         if (!wtxNew.AcceptToMemoryPool(false))
         {
             // This must not fail. The transaction has already been signed and recorded.
+<<<<<<< HEAD
             LogPrintf("CommitTransaction() : Error: Transaction not valid");
+=======
+            printf("CommitTransaction() : Error: Transaction not valid\n");
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
             return false;
         }
         wtxNew.RelayWalletTransaction();
@@ -1971,7 +1975,32 @@ bool CWallet::SetAddressBook(const CTxDestination& address, const string& strNam
     return CWalletDB(strWalletFile).WriteName(CBitcoinAddress(address).ToString(), strName);
 }
 
+<<<<<<< HEAD
 bool CWallet::DelAddressBook(const CTxDestination& address)
+=======
+#ifdef GUI
+bool CWallet::WriteNameFirstUpdate(const std::vector<unsigned char>& vchName,
+                                   const uint256& hex,
+                                   const uint64& rand,
+                                   const std::vector<unsigned char>& vchData,
+                                   const CWalletTx &wtx)
+{
+    if (!fFileBacked)
+        return false;
+    return CWalletDB(strWalletFile).WriteNameFirstUpdate(vchName, hex, rand, vchData, wtx);
+}
+
+bool CWallet::EraseNameFirstUpdate(const std::vector<unsigned char>& vchName)
+{
+    if (!fFileBacked)
+        return false;
+    return CWalletDB(strWalletFile).EraseNameFirstUpdate(vchName);
+}
+#endif
+
+
+void CWallet::PrintWallet(const CBlock& block)
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 {
 
     AssertLockHeld(cs_wallet); // mapAddressBook

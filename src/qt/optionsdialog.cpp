@@ -37,7 +37,7 @@
 >>>>>>> Committing original src/qt
 
 OptionsDialog::OptionsDialog(QWidget *parent) :
-    QDialog(parent),
+    QDialog(parent, Qt::WindowSystemMenuHint | Qt::WindowTitleHint),
     ui(new Ui::OptionsDialog),
     model(0),
     mapper(0),

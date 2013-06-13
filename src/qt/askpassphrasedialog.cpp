@@ -24,7 +24,7 @@
 >>>>>>> Committing original src/qt
 
 AskPassphraseDialog::AskPassphraseDialog(Mode mode, QWidget *parent) :
-    QDialog(parent),
+    QDialog(parent, Qt::WindowSystemMenuHint | Qt::WindowTitleHint),
     ui(new Ui::AskPassphraseDialog),
     mode(mode),
     model(0),

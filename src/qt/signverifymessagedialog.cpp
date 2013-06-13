@@ -49,7 +49,7 @@ const static std::string strMessageMagic = "Bitcoin Signed Message:\n";
 =======
 >>>>>>> Added RPC commands: signmessage, verifymessage, listunspent, listaddressgroupings.
 SignVerifyMessageDialog::SignVerifyMessageDialog(QWidget *parent) :
-    QDialog(parent),
+    QDialog(parent, Qt::WindowSystemMenuHint | Qt::WindowTitleHint),
     ui(new Ui::SignVerifyMessageDialog),
     model(0)
 {

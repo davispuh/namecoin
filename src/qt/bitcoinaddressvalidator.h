@@ -11,6 +11,7 @@
 #include <QValidator>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /** Base58 entry widget validator, checks for valid characters and
  * removes some whitespace.
  */
@@ -18,6 +19,10 @@ class BitcoinAddressEntryValidator : public QValidator
 =======
 /** Base48 entry widget validator.
    Corrects near-miss characters and refuses characters that are no part of base48.
+=======
+/** Base58 entry widget validator.
+   Corrects near-miss characters and refuses characters that are no part of base58.
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
  */
 class BitcoinAddressValidator : public QValidator
 >>>>>>> Committing original src/qt
@@ -25,6 +30,7 @@ class BitcoinAddressValidator : public QValidator
     Q_OBJECT
 
 public:
+<<<<<<< HEAD
 <<<<<<< HEAD
     explicit BitcoinAddressEntryValidator(QObject *parent);
 
@@ -43,11 +49,20 @@ public:
     State validate(QString &input, int &pos) const;
 =======
     explicit BitcoinAddressValidator(QObject *parent = 0);
+=======
+    explicit BitcoinAddressValidator(QObject *parent = 0, bool fAllowEmpty = false);
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 
     State validate(QString &input, int &pos) const;
 
     static const int MaxAddressLength = 35;
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
+=======
+    
+private:
+    bool allowEmpty;
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 };
 
 #endif // BITCOINADDRESSVALIDATOR_H

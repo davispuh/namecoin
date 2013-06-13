@@ -91,7 +91,8 @@ public:
         SendToOther,
         RecvWithAddress,
         RecvFromOther,
-        SendToSelf
+        SendToSelf,
+        NameOp,
     };
 
     /** Number of confirmation needed for transaction */

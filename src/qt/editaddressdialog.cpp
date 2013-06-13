@@ -15,6 +15,7 @@
 #include <QMessageBox>
 
 EditAddressDialog::EditAddressDialog(Mode mode, QWidget *parent) :
+<<<<<<< HEAD
     QDialog(parent),
 <<<<<<< HEAD
     ui(new Ui::EditAddressDialog),
@@ -22,6 +23,9 @@ EditAddressDialog::EditAddressDialog(Mode mode, QWidget *parent) :
     mode(mode),
     model(0)
 =======
+=======
+    QDialog(parent, Qt::WindowSystemMenuHint | Qt::WindowTitleHint),
+>>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
     ui(new Ui::EditAddressDialog), mapper(0), mode(mode), model(0)
 >>>>>>> Committing original src/qt
 {
