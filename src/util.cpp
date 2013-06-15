@@ -1261,9 +1261,16 @@ boost::filesystem::path GetDefaultDataDir()
     fs::path pathRet;
     char* pszHome = getenv("HOME");
     if (pszHome == NULL || strlen(pszHome) == 0)
+<<<<<<< HEAD
         pathRet = fs::path("/");
     else
         pathRet = fs::path(pszHome);
+=======
+        pszHome = (char*)"/";
+    string strHome = pszHome;
+    if (strHome[strHome.size()-1] != '/')
+        strHome += '/';
+>>>>>>> Change #ifdefs to put Mac data dir in the right place
 #ifdef MAC_OSX
     // Mac
 <<<<<<< HEAD
