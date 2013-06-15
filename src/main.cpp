@@ -1498,6 +1498,7 @@ void CheckForkWarningConditions()
 #ifdef GUI
         uiInterface.NotifyBlocksChanged();
 #endif
+<<<<<<< HEAD
         //MainFrameRepaint();
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     }
@@ -1530,6 +1531,8 @@ void CheckForkWarningConditionsOnNewFork(CBlockIndex* pindexNewForkTip)
     {
         pindexBestForkTip = pindexNewForkTip;
         pindexBestForkBase = pfork;
+=======
+>>>>>>> Improved automatic name_firstupdate.
     }
 
     CheckForkWarningConditions();
@@ -2564,8 +2567,11 @@ bool FindUndoPos(CValidationState &state, int nFile, CDiskBlockPos &pos, unsigne
 #ifdef GUI
     uiInterface.NotifyBlocksChanged();
 #endif
+<<<<<<< HEAD
     //MainFrameRepaint();
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+>>>>>>> Improved automatic name_firstupdate.
     return true;
 }
 
@@ -3711,7 +3717,6 @@ bool CAlert::ProcessAlert()
     }
 
     printf("accepted alert %d, AppliesToMe()=%d\n", nID, AppliesToMe());
-    MainFrameRepaint();
     return true;
 }
 
@@ -5378,7 +5383,6 @@ void GenerateBitcoins(bool fGenerate, CWallet* pwallet)
     {
         fGenerateBitcoins = fGenerate;
         WriteSetting("fGenerateBitcoins", fGenerateBitcoins);
-        MainFrameRepaint();
     }
     if (fGenerateBitcoins)
     {

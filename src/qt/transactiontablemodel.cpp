@@ -120,8 +120,9 @@ public:
         OutputDebugStringF("refreshWallet\n");
 >>>>>>> Committing original src/qt
         cachedWallet.clear();
+        CRITICAL_BLOCK(cs_main)    // For OP_NAME_NEW decomposeTransaction relies on a map of names that has to be globally locked
+        CRITICAL_BLOCK(wallet->cs_wallet)
         {
-            LOCK(wallet->cs_wallet);
             for(std::map<uint256, CWalletTx>::iterator it = wallet->mapWallet.begin(); it != wallet->mapWallet.end(); ++it)
             {
                 if(TransactionRecord::showTransaction(it->second))
@@ -141,10 +142,13 @@ public:
         qDebug() << "TransactionTablePriv::updateWallet : " + QString::fromStdString(hash.ToString()) + " " + QString::number(status);
 =======
         OutputDebugStringF("updateWallet %s %i\n", hash.ToString().c_str(), status);
+<<<<<<< HEAD
 >>>>>>> Committing original src/qt
+=======
+        CRITICAL_BLOCK(cs_main)
+        CRITICAL_BLOCK(wallet->cs_wallet)
+>>>>>>> Improved automatic name_firstupdate.
         {
-            LOCK(wallet->cs_wallet);
-
             // Find transaction in wallet
             std::map<uint256, CWalletTx>::iterator mi = wallet->mapWallet.find(hash);
             bool inWallet = mi != wallet->mapWallet.end();

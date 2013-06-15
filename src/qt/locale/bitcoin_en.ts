@@ -1503,7 +1503,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+18"/>
         <source>&amp;Transfer to:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1545,7 +1545,7 @@ Leave empty, if not needed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../configurenamedialog.cpp" line="+37"/>
+        <location filename="../configurenamedialog.cpp" line="+39"/>
         <source>(not a domain name)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1740,7 +1740,7 @@ to the network and creates a pending name_firstupdate transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+64"/>
+        <location line="+67"/>
         <source>Name registration</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6226,6 +6226,7 @@ Address: %4
     <message>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../transactiontablemodel.cpp" line="+234"/>
 =======
         <location filename="../transactiontablemodel.cpp" line="+225"/>
@@ -6233,6 +6234,9 @@ Address: %4
 =======
         <location filename="../transactiontablemodel.cpp" line="+226"/>
 >>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
+=======
+        <location filename="../transactiontablemodel.cpp" line="+227"/>
+>>>>>>> Improved automatic name_firstupdate.
         <source>Date</source>
         <translation>Date</translation>
     </message>
@@ -6603,8 +6607,18 @@ Address: %4
 <<<<<<< HEAD
     <name>WalletFrame</name>
     <message>
+<<<<<<< HEAD
         <location filename="../walletframe.cpp" line="+26"/>
         <source>No wallet has been loaded.</source>
+=======
+        <location filename="../walletmodel.cpp" line="+542"/>
+        <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>Cannot find stored tx hash for name</source>
+>>>>>>> Improved automatic name_firstupdate.
         <translation type="unfinished"></translation>
     </message>
 </context>

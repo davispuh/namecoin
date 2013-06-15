@@ -337,8 +337,15 @@ public:
     bool CreateTransaction(CScript scriptPubKey, int64 nValue, CWalletTx& wtxNew, CReserveKey& reservekey, int64& nFeeRet);
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     bool CommitTransaction(CWalletTx& wtxNew, CReserveKey& reservekey);
+<<<<<<< HEAD
     std::string SendMoney(CScript scriptPubKey, int64_t nValue, CWalletTx& wtxNew);
     std::string SendMoneyToDestination(const CTxDestination &address, int64_t nValue, CWalletTx& wtxNew);
+=======
+    bool BroadcastTransaction(CWalletTx& wtxNew);
+    std::string SendMoney(CScript scriptPubKey, int64 nValue, CWalletTx& wtxNew, bool fAskFee=false);
+    std::string SendMoneyToBitcoinAddress(std::string strAddress, int64 nValue, CWalletTx& wtxNew, bool fAskFee=false);
+    std::string SendMoneyPrepare(CScript scriptPubKey, int64 nValue, CWalletTx& wtxNew, CReserveKey& reservekey, bool fAskFee=false);
+>>>>>>> Improved automatic name_firstupdate.
 
     bool NewKeyPool();
     bool TopUpKeyPool(unsigned int kpSize = 0);

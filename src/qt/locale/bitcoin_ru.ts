@@ -1563,7 +1563,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+18"/>
         <source>&amp;Transfer to:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1605,7 +1605,7 @@ Leave empty, if not needed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../configurenamedialog.cpp" line="+37"/>
+        <location filename="../configurenamedialog.cpp" line="+39"/>
         <source>(not a domain name)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1815,7 +1815,7 @@ to the network and creates a pending name_firstupdate transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+64"/>
+        <location line="+67"/>
         <source>Name registration</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6717,9 +6717,15 @@ rpcpassword=%s
         <translation type="unfinished">Ошибка: транзакция была отклонена! Это могло произойти в случае, если некоторые монеты в вашем бумажнике уже были потрачены, например, если вы используете копию wallet.dat, и монеты были использованы в копии, но не отмечены как потраченные здесь.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
         <translation type="unfinished">Ошибка: эта транзакция требует комиссию как минимум %s из-за суммы, сложности или использования недавно полученных средств!</translation>
+=======
+        <location filename="../transactiontablemodel.cpp" line="+227"/>
+        <source>Date</source>
+        <translation>Дата</translation>
+>>>>>>> Improved automatic name_firstupdate.
     </message>
     <message>
         <location line="+3"/>
@@ -7284,7 +7290,12 @@ rpcpassword=%s
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+514"/>
+        <location filename="../walletmodel.cpp" line="+542"/>
+        <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+36"/>
         <source>Cannot find stored tx hash for name</source>
         <translation type="unfinished"></translation>
     </message>

@@ -1742,7 +1742,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+18"/>
         <source>&amp;Transfer to:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1784,7 +1784,7 @@ Leave empty, if not needed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../configurenamedialog.cpp" line="+37"/>
+        <location filename="../configurenamedialog.cpp" line="+39"/>
         <source>(not a domain name)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1989,7 +1989,7 @@ to the network and creates a pending name_firstupdate transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+64"/>
+        <location line="+67"/>
         <source>Name registration</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4497,9 +4497,15 @@ Adresse : %4
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/receivecoinsdialog.ui" line="+83"/>
         <source>&amp;Amount:</source>
         <translation>&amp;Montant :</translation>
+=======
+        <location filename="../transactiontablemodel.cpp" line="+227"/>
+        <source>Date</source>
+        <translation>Date</translation>
+>>>>>>> Improved automatic name_firstupdate.
     </message>
     <message>
         <location line="-13"/>
@@ -7938,9 +7944,20 @@ Si le fichier n&apos;existe pas, créez-le avec les droits de lecture accordés 
         <translation>Choisir la version SOCKS pour -proxy (4 ou 5, par défaut : 5)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Send command to Bitcoin server</source>
         <translation>Envoyer une commande au serveur Bitcoin</translation>
+=======
+        <location filename="../walletmodel.cpp" line="+542"/>
+        <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>Cannot find stored tx hash for name</source>
+        <translation type="unfinished"></translation>
+>>>>>>> Improved automatic name_firstupdate.
     </message>
     <message>
         <location line="+7"/>

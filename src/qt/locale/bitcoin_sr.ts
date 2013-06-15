@@ -1555,7 +1555,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+18"/>
         <source>&amp;Transfer to:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1597,7 +1597,7 @@ Leave empty, if not needed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../configurenamedialog.cpp" line="+37"/>
+        <location filename="../configurenamedialog.cpp" line="+39"/>
         <source>(not a domain name)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2062,7 +2062,7 @@ to the network and creates a pending name_firstupdate transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+64"/>
+        <location line="+67"/>
         <source>Name registration</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4504,9 +4504,15 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+72"/>
         <source>&amp;Network Traffic</source>
         <translation type="unfinished"/>
+=======
+        <location filename="../transactiontablemodel.cpp" line="+227"/>
+        <source>Date</source>
+        <translation type="unfinished"></translation>
+>>>>>>> Improved automatic name_firstupdate.
     </message>
     <message>
         <location line="+52"/>
@@ -7672,7 +7678,12 @@ If the file does not exist, create it with owner-readable-only file permissions.
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+514"/>
+        <location filename="../walletmodel.cpp" line="+542"/>
+        <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+36"/>
         <source>Cannot find stored tx hash for name</source>
         <translation type="unfinished"></translation>
     </message>

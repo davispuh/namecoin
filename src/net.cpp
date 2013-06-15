@@ -829,8 +829,11 @@ void ThreadSocketHandler()
 #ifdef GUI
             uiInterface.NotifyNumConnectionsChanged(vNodes.size());
 #endif
+<<<<<<< HEAD
             //MainFrameRepaint();
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+>>>>>>> Improved automatic name_firstupdate.
         }
 
 

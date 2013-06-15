@@ -664,9 +664,8 @@ bool CWallet::AddToWallet(const CWalletTx& wtxIn)
         WalletUpdateSpent(wtx);
     }
 
-    // Refresh UI
-    //MainFrameRepaint();
 #ifdef GUI
+    // Refresh UI
     NotifyTransactionChanged(this, hash, fInsertedNew ? CT_NEW : CT_UPDATED);
 #endif
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
@@ -1828,6 +1827,7 @@ bool CWallet::CommitTransaction(CWalletTx& wtxNew, CReserveKey& reservekey)
 string CWallet::SendMoney(CScript scriptPubKey, int64_t nValue, CWalletTx& wtxNew)
 {
     CReserveKey reservekey(this);
+<<<<<<< HEAD
     int64_t nFeeRequired;
 
     if (IsLocked())
@@ -1838,6 +1838,22 @@ string CWallet::SendMoney(CScript scriptPubKey, int64_t nValue, CWalletTx& wtxNe
     }
     string strError;
     if (!CreateTransaction(scriptPubKey, nValue, wtxNew, reservekey, nFeeRequired, strError))
+=======
+    string err = SendMoneyPrepare(scriptPubKey, nValue, wtxNew, reservekey, fAskFee);
+    if (!err.empty())
+        return err;
+
+    if (!CommitTransaction(wtxNew, reservekey))
+        return _("Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.");
+
+    return "";
+}
+
+string CWallet::SendMoneyPrepare(CScript scriptPubKey, int64 nValue, CWalletTx& wtxNew, CReserveKey& reservekey, bool fAskFee)
+{
+    int64 nFeeRequired;
+    if (!CreateTransaction(scriptPubKey, nValue, wtxNew, reservekey, nFeeRequired))
+>>>>>>> Improved automatic name_firstupdate.
     {
         if (nValue + nFeeRequired > GetBalance())
             strError = strprintf(_("Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!"), FormatMoney(nFeeRequired));
@@ -1855,16 +1871,25 @@ string CWallet::SendMoney(CScript scriptPubKey, int64_t nValue, CWalletTx& wtxNe
         return "ABORTED";
 #endif
 
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     if (!CommitTransaction(wtxNew, reservekey))
         return _("Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.");
 
+=======
+>>>>>>> Improved automatic name_firstupdate.
     return "";
 }
 
 
 
+<<<<<<< HEAD
 string CWallet::SendMoneyToDestination(const CTxDestination& address, int64_t nValue, CWalletTx& wtxNew)
+=======
+
+// requires cs_main lock
+string CWallet::SendMoneyToBitcoinAddress(string strAddress, int64 nValue, CWalletTx& wtxNew, bool fAskFee)
+>>>>>>> Improved automatic name_firstupdate.
 {
     // Check amount
     if (nValue <= 0)
