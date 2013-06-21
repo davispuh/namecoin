@@ -922,6 +922,9 @@ void CDBEnv::Flush(bool fShutdown)
                     printf("error copying wallet.dat to %s - %s\n", pathDest.string().c_str(), e.what());
                     return false;
                 }
+<<<<<<< HEAD
+>>>>>>> Additional error handling for copy_file (wallet backup), copied from Bitcoin source
+=======
 >>>>>>> Additional error handling for copy_file (wallet backup), copied from Bitcoin source
             }
         }
