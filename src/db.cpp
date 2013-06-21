@@ -877,6 +877,7 @@ void CDBEnv::Flush(bool fShutdown)
                 CloseDb(strFile);
                 LogPrint("db", "%s checkpoint\n", strFile);
                 dbenv.txn_checkpoint(0, 0, 0);
+<<<<<<< HEAD
                 LogPrint("db", "%s detach\n", strFile);
                 if (!fMockDb)
                     dbenv.lsn_reset(strFile.c_str(), 0);
@@ -896,6 +897,30 @@ void CDBEnv::Flush(bool fShutdown)
                 Close();
                 if (!fMockDb)
                     boost::filesystem::remove_all(path / "database");
+=======
+                dbenv.lsn_reset(wallet.strWalletFile.c_str(), 0);
+                mapFileUseCount.erase(wallet.strWalletFile);
+
+                // Copy wallet.dat
+                filesystem::path pathSrc(GetDataDir() + "/" + wallet.strWalletFile);
+                filesystem::path pathDest(strDest);
+                if (filesystem::is_directory(pathDest))
+                    pathDest = pathDest / wallet.strWalletFile;
+                    
+                try {
+#if BOOST_VERSION >= 104000
+                    filesystem::copy_file(pathSrc, pathDest, filesystem::copy_option::overwrite_if_exists);
+#else
+                    filesystem::copy_file(pathSrc, pathDest);
+#endif
+                    printf("copied wallet.dat to %s\n", pathDest.string().c_str());
+
+                    return true;
+                } catch(const filesystem::filesystem_error &e) {
+                    printf("error copying wallet.dat to %s - %s\n", pathDest.string().c_str(), e.what());
+                    return false;
+                }
+>>>>>>> Additional error handling for copy_file (wallet backup), copied from Bitcoin source
             }
         }
     }
