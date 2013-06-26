@@ -987,7 +987,23 @@ bool AppInit2(boost::thread_group& threadGroup)
 
     // ********************************************************* Step 7: load block chain
 
+<<<<<<< HEAD
     fReindex = GetBoolArg("-reindex", false);
+=======
+    RegisterWallet(pwalletMain);
+    
+    // Read -mininput before -rescan, otherwise rescan will skip transactions
+    // lower than the default mininput
+    if (mapArgs.count("-mininput"))
+    {
+        if (!ParseMoney(mapArgs["-mininput"], nMinimumInputValue))
+        {
+            wxMessageBox(_("Invalid amount for -mininput=<amount>"), "Namecoin");
+            return false;
+        }
+    }
+
+>>>>>>> GUI improvements and fixes (version 0.3.64)
 
     // Upgrading to 0.8; hard-link the old blknnnn.dat files into /blocks/
     filesystem::path blocksDir = GetDataDir() / "blocks";
@@ -1307,6 +1323,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     nStart = GetTimeMillis();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     if (mapArgs.count("-mininput"))
     {
@@ -1317,6 +1334,8 @@ bool AppInit2(boost::thread_group& threadGroup)
         }
     }
 
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     if (fHaveUPnP)
 >>>>>>> Add mininput to deal with dust spam.
     {

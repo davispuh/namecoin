@@ -216,6 +216,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 int64_t nValue = txout.nValue;
 =======
                 int64 nValue = txout.nValue;
@@ -224,6 +225,24 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 =======
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
+=======
+                // Carried over coin can be used to pay fee, if it the required
+                // amount was reserved in OP_NAME_NEW
+                if (nCarriedOverCoin > 0)
+                {
+                    if (nTxFee >= nCarriedOverCoin)
+                    {
+                        nTxFee -= nCarriedOverCoin;
+                        nCarriedOverCoin = 0;
+                    }
+                    else
+                    {
+                        nCarriedOverCoin -= nTxFee;
+                        nTxFee = 0;
+                    }
+                }
+
+>>>>>>> GUI improvements and fixes (version 0.3.64)
                 /* Add fee to first output */
                 if (nTxFee > 0)
                 {

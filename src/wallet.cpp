@@ -12,11 +12,17 @@
 #include "crypter.h"
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 
+<<<<<<< HEAD
 #include "base58.h"
 #include "coincontrol.h"
 #include "net.h"
 
 #include <inttypes.h>
+=======
+#include "namecoin.h"    // For DecodeNameScript in GetAmounts to correctly compute credit/debit
+
+using namespace std;
+>>>>>>> GUI improvements and fixes (version 0.3.64)
 
 #include <boost/algorithm/string/replace.hpp>
 #include <openssl/rand.h>
@@ -852,7 +858,16 @@ void CWalletTx::GetAmounts(list<pair<CTxDestination, int64_t> >& listReceived,
         nFee = nDebit - nValueOut;
     }
 
+<<<<<<< HEAD
     // Sent/received.
+=======
+    // Compute the coin carried with the name operation
+    // as difference of GetDebitInclName() and GetDebit()
+    int64 nCarriedOverCoin = nDebit - GetDebit();
+    
+    // Sent/received.  Standard client will never generate a send-to-multiple-recipients,
+    // but non-standard clients might (so return a list of address/amount pairs)
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     BOOST_FOREACH(const CTxOut& txout, vout)
     {
 <<<<<<< HEAD
@@ -865,12 +880,22 @@ void CWalletTx::GetAmounts(list<pair<CTxDestination, int64_t> >& listReceived,
         string address;
         uint160 hash160;
         vector<unsigned char> vchPubKey;
+        bool fAddressOperation = false;
         if (ExtractHash160(txout.scriptPubKey, hash160))
             address = Hash160ToAddress(hash160);
         else if (ExtractPubKey(txout.scriptPubKey, NULL, vchPubKey))
             address = PubKeyToAddress(vchPubKey);
         else if (hooks->ExtractAddress(txout.scriptPubKey, address))
-            ;
+        {
+            vector<vector<unsigned char> > vvch;
+            int op;
+            if (DecodeNameScript(txout.scriptPubKey, op, vvch))
+            {
+                nCarriedOverCoin -= txout.nValue;
+                if (op != OP_NAME_NEW)
+                    continue; // Ignore locked coin
+            }
+        }
         else
 >>>>>>> hooks
         {
@@ -906,6 +931,21 @@ void CWalletTx::GetAmounts(list<pair<CTxDestination, int64_t> >& listReceived,
         if (pwallet->IsMine(txout) || hooks->IsMine(*this, txout, true))
 >>>>>>> Fixed "getbalance *". Includes patch from Bitcoin pull request #2272, plus special handling of OP_NAME_NEW.
             listReceived.push_back(make_pair(address, txout.nValue));
+    }
+    
+    // Carried over coin may be used to pay fee, if it was reserved during OP_NAME_NEW
+    if (nCarriedOverCoin > 0)
+    {
+        if (nCarriedOverCoin >= nFee)
+        {
+            nCarriedOverCoin -= nFee;
+            nFee = 0;
+        }
+        else
+        {
+            nFee -= nCarriedOverCoin;
+            nCarriedOverCoin = 0;
+        }
     }
 }
 

@@ -326,6 +326,7 @@ private:
     int cachedNumBlocks;
 
     QTimer *pollTimer;
+    bool fSyncedAtLeastOnce;    // For sending automatic name_firstupdate
 
     void subscribeToCoreSignals();
     void unsubscribeFromCoreSignals();
