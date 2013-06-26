@@ -39,7 +39,10 @@
         <location line="+39"/>
         <source>&lt;b&gt;Namecoin&lt;/b&gt; version</source>
         <translation>&lt;b&gt;Namecoin&lt;/b&gt; версия</translation>
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     </message>
     <message>
         <location line="+57"/>
@@ -1519,6 +1522,7 @@ Address: %4
         <translation>Сумма:</translation>
     </message>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <message>
         <location line="+29"/>
         <source>Priority:</source>
@@ -1526,6 +1530,8 @@ Address: %4
     </message>
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
 =======
 >>>>>>> GUI improvements and fixes (version 0.3.64)
 </context>
@@ -2011,6 +2017,7 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
     </message>
 </context>
 <context>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <name>Namecoin-core</name>
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
@@ -2998,6 +3005,168 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <location line="+136"/>
         <source>&amp;OK</source>
         <translation>&amp;OK</translation>
+=======
+    <name>OptionsDialog</name>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="+14"/>
+        <source>Options</source>
+        <translation>Опции</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>&amp;Main</source>
+        <translation>&amp;Главная</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.</source>
+        <translation>Опциональная комиссия за каждый КБ транзакции, которая позволяет быть уверенным, что Ваша транзакция будет обработана быстро.  Большинство транзакций занимают 1КБ.  Рекомендуется комиссия 0.01.</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Pay transaction &amp;fee</source>
+        <translation>Заплатить ко&amp;миссию</translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Automatically start Namecoin after logging in to the system.</source>
+        <translation>Автоматически запускать Namecoin после входа в систему</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Start Namecoin on system login</source>
+        <translation>&amp;Запускать Namecoin при входе в систему</translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Reset all client options to default.</source>
+        <translation>Сбросить все опции клиента на значения по умолчанию.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Reset Options</source>
+        <translation>&amp;Сбросить опции</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>&amp;Network</source>
+        <translation>&amp;Сеть</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Automatically open the Namecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открыть порт для Namecoin-клиента на роутере. Работает только если Ваш роутер поддерживает UPnP, и данная функция включена.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Map port using &amp;UPnP</source>
+        <translation>Пробросить порт через &amp;UPnP</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Connect to the Namecoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Подключаться к сети Namecoin через прокси SOCKS (например, при подключении через Tor).</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Connect through SOCKS proxy:</source>
+        <translation>&amp;Подключаться через SOCKS прокси:</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Proxy &amp;IP:</source>
+        <translation>&amp;IP Прокси: </translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>IP address of the proxy (e.g. 127.0.0.1)</source>
+        <translation>IP-адрес прокси (например 127.0.0.1)</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Port:</source>
+        <translation>По&amp;рт: </translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>Порт прокси-сервера (например, 9050)</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>SOCKS &amp;Version:</source>
+        <translation>&amp;Версия SOCKS:</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>SOCKS version of the proxy (e.g. 5)</source>
+        <translation>Версия SOCKS-прокси (например, 5)</translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>&amp;Window</source>
+        <translation>&amp;Окно</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Show only a tray icon after minimizing the window.</source>
+        <translation>Показывать только иконку в системном лотке после сворачивания окна.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Minimize to the tray instead of the taskbar</source>
+        <translation>&amp;Cворачивать в системный лоток вместо панели задач</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
+        <translation>Сворачивать вместо закрытия. Если данная опция будет выбрана — приложение закроется только после выбора соответствующего пункта в меню.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>M&amp;inimize on close</source>
+        <translation>С&amp;ворачивать при закрытии</translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>&amp;Display</source>
+        <translation>О&amp;тображение</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>User Interface &amp;language:</source>
+        <translation>&amp;Язык интерфейса:</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>The user interface language can be set here. This setting will take effect after restarting Namecoin.</source>
+        <translation>Здесь можно выбрать язык интерфейса. Настройки вступят в силу после перезапуска Namecoin.</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>&amp;Отображать суммы в единицах: </translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
+        <translation>Выберите единицу измерения монет при отображении и отправке.</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Whether to show Namecoin addresses in the transaction list or not.</source>
+        <translation>Показывать ли адреса Namecoin в списке транзакций.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Display addresses in transaction list</source>
+        <translation>&amp;Показывать адреса в списке транзакций</translation>
+    </message>
+    <message>
+        <location line="+71"/>
+        <source>&amp;OK</source>
+        <translation>О&amp;К</translation>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     </message>
     <message>
         <location line="+7"/>
@@ -3790,6 +3959,7 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <translation><numerusform>%n день назад</numerusform><numerusform>%n дня назад</numerusform><numerusform>%n дней назад</numerusform></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+6"/>
         <source>Up to date</source>
         <translation>Синхронизированно</translation>
@@ -3798,6 +3968,11 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <location line="+7"/>
         <source>Catching up...</source>
         <translation>Синхронизируется...</translation>
+=======
+        <location line="-74"/>
+        <source>Wallet unlock was cancelled.</source>
+        <translation>Разблокировка бумажника была отменена.</translation>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     </message>
     <message>
         <location line="+10"/>
@@ -6915,6 +7090,7 @@ rpcpassword=%s
         <translation>Отправить команду на -server или namecoind</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-21"/>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
         <source>List commands</source>
@@ -6972,6 +7148,8 @@ rpcpassword=%s
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
         <translation type="unfinished">Произошла ошибка при открытии RPC-порта %u для прослушивания на IPv4: %s</translation>
 =======
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
         <location line="-185"/>
         <source>, has not been successfully broadcast yet</source>
         <translation>, ещё не было успешно разослано</translation>

@@ -1904,6 +1904,22 @@ Leave empty, if not needed.</source>
         <source>Name update error</source>
         <translation type="unfinished"></translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <location line="+81"/>
+        <source>Valid JSON string</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Invalid JSON string (can still be used, if not intended as JSON string)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>EditAddressDialog</name>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     <message>
         <location line="+81"/>
         <source>Valid JSON string</source>
@@ -2245,6 +2261,7 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
 </context>
 <context>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <name>Namecoin-core</name>
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
     <message>
@@ -2258,6 +2275,8 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <translation type="unfinished"/>
     </message>
 =======
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     <name>OptionsDialog</name>
 >>>>>>> GUI improvements and fixes (version 0.3.64)
     <message>

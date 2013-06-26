@@ -1507,6 +1507,7 @@ Indirizzo: %4
 </context>
 <context>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <name>ClientModel</name>
     <message>
 <<<<<<< HEAD
@@ -1535,6 +1536,8 @@ Indirizzo: %4
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 =======
 >>>>>>> GUI improvements and fixes (version 0.3.64)
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     <name>ConfigureNameDialog</name>
     <message>
         <location filename="../forms/configurenamedialog.ui" line="+20"/>
@@ -1556,6 +1559,7 @@ Indirizzo: %4
     <message>
         <location line="+17"/>
         <source>D&amp;NS Configuration</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1647,70 +1651,72 @@ p, li { white-space: pre-wrap; }
     <message>
         <location line="+12"/>
         <source>&amp;Transfer to:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+18"/>
-        <source>The Namecoin address to transfer domain to
-(e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9).
-Leave empty, if not needed.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+12"/>
-        <source>Choose address from address book</source>
-        <translation type="unfinished">Scegli l&apos;indirizzo dalla rubrica</translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>Alt+A</source>
-        <translation type="unfinished">Alt+A</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Paste address from clipboard</source>
-        <translation type="unfinished">Incollare l&apos;indirizzo dagli appunti</translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>Alt+P</source>
-        <translation type="unfinished">Alt+P</translation>
-    </message>
-    <message>
-        <location line="+22"/>
-        <source>Domain name:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+27"/>
-        <source>(can be left empty)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../configurenamedialog.cpp" line="+37"/>
-        <source>(not a domain name)</source>
+=======
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Name_firstupdate transaction will be queued and broadcasted when corresponding name_new is %1 blocks old</source>
+        <source>&amp;Name servers:
+(one per line,
+host or IP)</source>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+4"/>
-        <source>Name_update transaction will be issued immediately</source>
+        <location line="+44"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter substitution name that will be used in DNS queries.&lt;/p&gt;&lt;p&gt;For example: bitcoin.org&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Update Name</source>
+        <location line="-29"/>
+        <source>Enter name servers as host names (preferable), or IP addresses. E.g.
+ns0.web-sweet-web.net
+ns1.web-sweet-web.net
+ns0.xname.org
+1.2.3.4
+1.2.3.5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+55"/>
-        <source>Name update error</source>
+        <location line="+15"/>
+        <source>T&amp;ranslate name:
+(optional)</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+<<<<<<< HEAD
+        <location filename="../configurenamedialog.cpp" line="+37"/>
+        <source>(not a domain name)</source>
+=======
+        <location line="+21"/>
+        <location line="+94"/>
+        <source>&amp;SSL fingerprint:
+(optional)</source>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-80"/>
+        <location line="+73"/>
+        <source>Enter SSL certificate fingerprint if you want to use HTTPS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-33"/>
+        <source>&amp;IP Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>I&amp;P Address:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>IP address, e.g. 1.2.3.4</source>
+        <translation type="unfinished"></translation>
+    </message>
+<<<<<<< HEAD
 </context>
 <context>
 <<<<<<< HEAD
@@ -1823,6 +1829,26 @@ Leave empty, if not needed.</source>
     <message>
         <location line="+5"/>
         <source>Invalid JSON string (can still be used, if not intended as JSON string)</source>
+=======
+    <message>
+        <location line="+7"/>
+        <source>Subdomains will be mapped to the same IP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>&amp;Custom Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Enter JSON string, e.g. {&amp;quot;ns&amp;quot;: [&amp;quot;1.2.3.4&amp;quot;, &amp;quot;1.2.3.5&amp;quot;]}&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;See &lt;a href=&quot;http://dot-bit.org/HowToRegisterAndConfigureBitDomains&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;How to Register and Configure Bit Domains&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1831,6 +1857,7 @@ Leave empty, if not needed.</source>
     <name>Namecoin-core</name>
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
     <message>
+<<<<<<< HEAD
         <location filename="../forms/coincontroldialog.ui" line="+14"/>
         <source>Coin Control Address Selection</source>
         <translation>Selezione Indirizzo Coin Control</translation>
@@ -2127,74 +2154,92 @@ to the network and creates a pending name_firstupdate transaction.</source>
     <message>
         <location line="+2"/>
         <source>Are you sure you want to register non-domain name %1?</source>
+=======
+        <location line="+15"/>
+        <source>Enter JSON string that will be associated with the name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Confirm name registration</source>
+        <location line="+44"/>
+        <source>&amp;Transfer to:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+57"/>
-        <source>Name registration failed</source>
+        <location line="+18"/>
+        <source>The Namecoin address to transfer domain to
+(e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9).
+Leave empty, if not needed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+87"/>
-        <source>Export Registered Names Data</source>
+        <location line="+12"/>
+        <source>Choose address from address book</source>
+        <translation type="unfinished">Scegli l&apos;indirizzo dalla rubrica</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Alt+A</source>
+        <translation type="unfinished">Alt+A</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Paste address from clipboard</source>
+        <translation type="unfinished">Incollare l&apos;indirizzo dagli appunti</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Alt+P</source>
+        <translation type="unfinished">Alt+P</translation>
+    </message>
+    <message>
+        <location line="-351"/>
+        <source>Domain name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+360"/>
+        <source>(can be left empty)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../configurenamedialog.cpp" line="+47"/>
+        <source>(not a domain name)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+120"/>
+        <source>Name_firstupdate transaction will be queued and broadcasted when corresponding name_new is %1 blocks old</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Name_update transaction will be issued immediately</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Comma separated file (*.csv)</source>
-        <translation type="unfinished">Testo CSV (*.csv)</translation>
-    </message>
-    <message>
-        <location line="+15"/>
-        <source>Error exporting</source>
-        <translation type="unfinished">Errore nell&apos;esportazione</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Could not write to file %1.</source>
-        <translation type="unfinished">Impossibile scrivere sul file %1.</translation>
-    </message>
-</context>
-<context>
-    <name>NameTableModel</name>
-    <message>
-        <location filename="../nametablemodel.cpp" line="+338"/>
-        <source>Name</source>
+        <source>Update Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+0"/>
-        <source>Value</source>
+        <location line="+58"/>
+        <source>Name update error</source>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+0"/>
-        <source>Expires in</source>
+        <location line="+81"/>
+        <source>Valid JSON string</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+124"/>
-        <source>Name registered using Namecoin.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Data associated with the name.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Number of blocks, after which the name will expire. Update name to renew it.
-Empty cell means pending (awaiting automatic name_firstupdate or awaiting network confirmation).</source>
+        <location line="+5"/>
+        <source>Invalid JSON string (can still be used, if not intended as JSON string)</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>Namecoin-core</name>
     <message>
         <source>Namecoin version</source>
@@ -2886,272 +2931,303 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <source>Sign &amp;message...</source>
         <translation type="obsolete">Firma il &amp;messaggio...</translation>
     </message>
+=======
+    <name>EditAddressDialog</name>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     <message>
-        <source>Synchronizing with network...</source>
-        <translation type="obsolete">Sto sincronizzando con la rete...</translation>
-    </message>
-    <message>
-        <source>&amp;Overview</source>
-        <translation type="obsolete">&amp;Sintesi</translation>
-    </message>
-    <message>
-        <source>Show general overview of wallet</source>
-        <translation type="obsolete">Mostra lo stato generale del portamonete</translation>
+        <location filename="../forms/editaddressdialog.ui" line="+14"/>
+        <source>Edit Address</source>
+        <translation>Modifica l&apos;indirizzo</translation>
     </message>
     <message>
-        <source>&amp;Transactions</source>
-        <translation type="obsolete">&amp;Transazioni</translation>
+        <location line="+11"/>
+        <source>&amp;Label</source>
+        <translation>&amp;Etichetta</translation>
     </message>
     <message>
-        <source>Browse transaction history</source>
-        <translation type="obsolete">Cerca nelle transazioni</translation>
+        <location line="+10"/>
+        <source>The label associated with this address book entry</source>
+        <translation>L&apos;etichetta associata a questo indirizzo nella rubrica</translation>
     </message>
     <message>
-        <source>&amp;Address Book</source>
-        <translation type="obsolete">&amp;Rubrica</translation>
+        <location line="+7"/>
+        <source>&amp;Address</source>
+        <translation>&amp;Indirizzo</translation>
     </message>
     <message>
-        <source>Edit the list of stored addresses and labels</source>
-        <translation type="obsolete">Modifica la lista degli indirizzi salvati e delle etichette</translation>
+        <location line="+10"/>
+        <source>The address associated with this address book entry. This can only be modified for sending addresses.</source>
+        <translation>L&apos;indirizzo associato a questa voce della rubrica. Si può modificare solo negli indirizzi di spedizione.</translation>
     </message>
     <message>
-        <source>&amp;Receive coins</source>
-        <translation type="obsolete">&amp;Ricevi monete</translation>
+        <location filename="../editaddressdialog.cpp" line="+21"/>
+        <source>New receiving address</source>
+        <translation>Nuovo indirizzo di ricezione</translation>
     </message>
     <message>
-        <source>Show the list of addresses for receiving payments</source>
-        <translation type="obsolete">Mostra la lista di indirizzi su cui ricevere pagamenti</translation>
+        <location line="+4"/>
+        <source>New sending address</source>
+        <translation>Nuovo indirizzo d&apos;invio</translation>
     </message>
     <message>
-        <source>&amp;Send coins</source>
-        <translation type="obsolete">&amp;Invia monete</translation>
+        <location line="+3"/>
+        <source>Edit receiving address</source>
+        <translation>Modifica indirizzo di ricezione</translation>
     </message>
     <message>
-        <source>E&amp;xit</source>
-        <translation type="obsolete">&amp;Esci</translation>
+        <location line="+4"/>
+        <source>Edit sending address</source>
+        <translation>Modifica indirizzo d&apos;invio</translation>
     </message>
     <message>
-        <source>Quit application</source>
-        <translation type="obsolete">Chiudi applicazione</translation>
+        <location line="+76"/>
+        <source>The entered address &quot;%1&quot; is already in the address book.</source>
+        <translation>L&apos;indirizzo inserito &quot;%1&quot; è già in rubrica.</translation>
     </message>
     <message>
-        <source>Show information about Namecoin</source>
-        <translation type="obsolete">Mostra informazioni su Namecoin</translation>
+        <location line="-5"/>
+        <source>The entered address &quot;%1&quot; is not a valid Namecoin address.</source>
+        <translation>L&apos;indirizzo inserito &quot;%1&quot; non è un indirizzo Namecoin valido.</translation>
     </message>
     <message>
-        <source>About &amp;Qt</source>
-        <translation type="obsolete">Informazioni su &amp;Qt</translation>
+        <location line="+10"/>
+        <source>Could not unlock wallet.</source>
+        <translation>Impossibile sbloccare il portamonete.</translation>
     </message>
     <message>
-        <source>Show information about Qt</source>
-        <translation type="obsolete">Mostra informazioni su Qt</translation>
+        <location line="+5"/>
+        <source>New key generation failed.</source>
+        <translation>Generazione della nuova chiave non riuscita.</translation>
+    </message>
+</context>
+<context>
+    <name>GUIUtil::HelpMessageBox</name>
+    <message>
+        <location filename="../guiutil.cpp" line="+423"/>
+        <location line="+12"/>
+        <source>Namecoin-Qt</source>
+        <translation>Namecoin-Qt</translation>
     </message>
     <message>
-        <source>&amp;Options...</source>
-        <translation type="obsolete">&amp;Opzioni...</translation>
+        <location line="-12"/>
+        <source>version</source>
+        <translation>versione</translation>
     </message>
     <message>
-        <source>&amp;Encrypt Wallet...</source>
-        <translation type="obsolete">&amp;Cifra il portamonete...</translation>
+        <location line="+2"/>
+        <source>Usage:</source>
+        <translation>Utilizzo:</translation>
     </message>
     <message>
-        <source>&amp;Backup Wallet...</source>
-        <translation type="obsolete">&amp;Backup Portamonete...</translation>
+        <location line="+1"/>
+        <source>command-line options</source>
+        <translation>opzioni riga di comando</translation>
     </message>
     <message>
-        <source>&amp;Change Passphrase...</source>
-        <translation type="obsolete">&amp;Cambia la passphrase...</translation>
+        <location line="+4"/>
+        <source>UI options</source>
+        <translation>UI opzioni</translation>
     </message>
     <message>
-        <source>Importing blocks from disk...</source>
-        <translation type="obsolete">Importa blocchi dal disco...</translation>
-    </message>
-    <message numerus="yes">
-        <source>~%n block(s) remaining</source>
-        <translation type="obsolete">
-            <numerusform>~%n blocco rimanente</numerusform>
-            <numerusform>~%n blocchi rimanenti</numerusform>
-        </translation>
+        <location line="+1"/>
+        <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
+        <translation>Imposta lingua, ad esempio &quot;it_IT&quot; (predefinita: lingua di sistema)</translation>
     </message>
     <message>
-        <source>&amp;Export...</source>
-        <translation type="obsolete">&amp;Esporta...</translation>
-    </message>
-    <message>
-        <source>Send coins to a Namecoin address</source>
-        <translation type="obsolete">Invia monete ad un indirizzo Namecoin</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for Namecoin</source>
-        <translation type="obsolete">Modifica configurazione opzioni per Namecoin</translation>
-    </message>
-    <message>
-        <source>Export the data in the current tab to a file</source>
-        <translation type="obsolete">Esporta i dati nella tabella corrente su un file</translation>
-    </message>
-    <message>
-        <source>Backup wallet to another location</source>
-        <translation type="obsolete">Backup portamonete in un&apos;altra locazione</translation>
-    </message>
-    <message>
-        <source>Change the passphrase used for wallet encryption</source>
-        <translation type="obsolete">Cambia la passphrase per la cifratura del portamonete</translation>
-    </message>
-    <message>
-        <source>&amp;Debug window</source>
-        <translation type="obsolete">Finestra &amp;Debug</translation>
-    </message>
-    <message>
-        <source>Open debugging and diagnostic console</source>
-        <translation type="obsolete">Apri la console di degugging e diagnostica</translation>
-    </message>
-    <message>
-        <source>&amp;Verify message...</source>
-        <translation type="obsolete">&amp;Verifica messaggio...</translation>
-    </message>
-    <message>
-        <source>Namecoin</source>
-        <translation type="obsolete">Namecoin</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation type="obsolete">Portamonete</translation>
-    </message>
-    <message>
-        <source>&amp;About Namecoin</source>
-        <translation type="obsolete">&amp;Info su Namecoin</translation>
-    </message>
-    <message>
-        <source>&amp;Show / Hide</source>
-        <translation type="obsolete">&amp;Mostra/Nascondi</translation>
-    </message>
-    <message>
-        <source>Show or hide the main Window</source>
-        <translation type="obsolete">Mostra o nascondi la Finestra principale</translation>
-    </message>
-    <message>
-        <source>&amp;File</source>
-        <translation type="obsolete">&amp;File</translation>
-    </message>
-    <message>
-        <source>&amp;Settings</source>
-        <translation type="obsolete">&amp;Impostazioni</translation>
-    </message>
-    <message>
-        <source>&amp;Help</source>
-        <translation type="obsolete">&amp;Aiuto</translation>
-    </message>
-    <message>
-        <source>Tabs toolbar</source>
-        <translation type="obsolete">Barra degli strumenti &quot;Tabs&quot;</translation>
-    </message>
-    <message>
-        <source>Actions toolbar</source>
-        <translation type="obsolete">Barra degli strumenti &quot;Azioni&quot;</translation>
-    </message>
-    <message>
-        <source>[testnet]</source>
-        <translation type="obsolete">[testnet]</translation>
-    </message>
-    <message>
-        <source>Namecoin client</source>
-        <translation type="obsolete">Namecoin client</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Namecoin network</source>
-        <translation type="obsolete">
-            <numerusform>%n connessione attiva alla rete Namecoin</numerusform>
-            <numerusform>%n connessioni attive alla rete Namecoin</numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <source>%n second(s) ago</source>
-        <translation type="obsolete">
-            <numerusform>%n secondo fa</numerusform>
-            <numerusform>%n secondi fa</numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <source>%n minute(s) ago</source>
-        <translation type="obsolete">
-            <numerusform>%n minuto fa</numerusform>
-            <numerusform>%n minuti fa</numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s) ago</source>
-        <translation type="obsolete">
-            <numerusform>%n ora fa</numerusform>
-            <numerusform>%n ore fa</numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s) ago</source>
-        <translation type="obsolete">
-            <numerusform>%n giorno fa</numerusform>
-            <numerusform>%n giorni fa</numerusform>
-        </translation>
-    </message>
-    <message>
-        <source>Up to date</source>
-        <translation type="obsolete">Aggiornato</translation>
-    </message>
-    <message>
-        <source>Catching up...</source>
-        <translation type="obsolete">In aggiornamento...</translation>
-    </message>
-    <message>
-        <source>Last received block was generated %1.</source>
-        <translation type="obsolete">L&apos;ultimo blocco ricevuto è stato generato %1</translation>
-    </message>
-    <message>
-        <source>Confirm transaction fee</source>
-        <translation type="obsolete">Conferma compenso transazione</translation>
-    </message>
-    <message>
-        <source>Sent transaction</source>
-        <translation type="obsolete">Transazione inviata</translation>
-    </message>
-    <message>
-        <source>Incoming transaction</source>
-        <translation type="obsolete">Transazione ricevuta</translation>
-    </message>
-    <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation type="obsolete">Data: %1
-Quantità: %2
-Tipo: %3
-Indirizzo: %4
-
+        <location line="+1"/>
+        <source>Start minimized</source>
+        <translation>Parti in icona
 </translation>
     </message>
     <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation type="obsolete">Il portamonete è &lt;b&gt;cifrato&lt;/b&gt; e attualmente &lt;b&gt;sbloccato&lt;/b&gt;</translation>
+        <location line="+1"/>
+        <source>Show splash screen on startup (default: 1)</source>
+        <translation>Mostra finestra di presentazione all&apos;avvio (default: 1)</translation>
+    </message>
+</context>
+<context>
+    <name>ManageNamesPage</name>
+    <message>
+        <location filename="../forms/managenamespage.ui" line="+20"/>
+        <source>Manage Names</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation type="obsolete">Il portamonete è &lt;b&gt;cifrato&lt;/b&gt; e attualmente &lt;b&gt;bloccato&lt;/b&gt;</translation>
+        <location line="+14"/>
+        <source>&amp;New name:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Backup Wallet</source>
-        <translation type="obsolete">Backup Portamonete</translation>
+        <location line="+13"/>
+        <source>Enter a name or domain name (prefixed with d/) to be registered via Namecoin.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Wallet Data (*.dat)</source>
-        <translation type="obsolete">Dati Portamonete (*.dat)</translation>
+        <location line="+16"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Use &lt;span style=&quot; font-weight:600;&quot;&gt;d/&lt;/span&gt; prefix for domain names. E.g. &lt;span style=&quot; font-weight:600;&quot;&gt;d/mysite&lt;/span&gt; will register &lt;span style=&quot; font-weight:600;&quot;&gt;mysite.bit&lt;/span&gt; (note: domains can be lower-case only, valid characters are alphanumeric and hyphen; hyphen can&apos;t be first/last character).&lt;/p&gt;&lt;p&gt;See &lt;a href=&quot;http://dot-bit.org/Namespace:Domain_names&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Domain names&lt;/span&gt;&lt;/a&gt; in Namecoin wiki for reference. Other prefixes can be used for miscellaneous purposes (not domain names).&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Backup Failed</source>
-        <translation type="obsolete">Backup fallito</translation>
+        <location line="+28"/>
+        <source>Confirm the new name action. Sends name_new transaction
+to the network and creates a pending name_firstupdate transaction.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>There was an error trying to save the wallet data to the new location.</source>
-        <translation type="obsolete">C&apos;è stato un errore tentanto di salvare i dati del portamonete in un&apos;altra locazione</translation>
+        <location line="+4"/>
+        <source>&amp;Submit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>Your registered names:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Enter part of name to search for</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Enter part of value to search for</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Double-click name to configure</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>Configure name and submit update operation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <location filename="../managenamespage.cpp" line="+74"/>
+        <source>&amp;Configure Name...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../managenamespage.cpp" line="-2"/>
+        <source>Copy &amp;Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy &amp;Value</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+33"/>
+        <source>Name filter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Value filter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+79"/>
+        <source>Name registration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Name not available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <location line="+10"/>
+        <source>Name registration warning</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-9"/>
+        <source>The name you entered contains whitespace characters. It is probably invalid. Are you sure you want to use this name?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>The name you entered does not start with prefix (such as &quot;d/&quot;). It may be invalid for certain tasks. Are you sure you want to use this name?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Are you sure you want to register domain name %1, which corresponds to domain %2?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Are you sure you want to register non-domain name %1?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Confirm name registration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+57"/>
+        <source>Name registration failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+87"/>
+        <source>Export Registered Names Data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Comma separated file (*.csv)</source>
+        <translation type="unfinished">Testo CSV (*.csv)</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Error exporting</source>
+        <translation type="unfinished">Errore nell&apos;esportazione</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Could not write to file %1.</source>
+        <translation type="unfinished">Impossibile scrivere sul file %1.</translation>
+    </message>
+</context>
+<context>
+    <name>NameTableModel</name>
+    <message>
+        <location filename="../nametablemodel.cpp" line="+347"/>
+        <source>Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Value</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Expires in</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+126"/>
+        <source>Name registered using Namecoin.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Data associated with the name.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Number of blocks, after which the name will expire. Update name to renew it.
+Empty cell means pending (awaiting automatic name_firstupdate or awaiting network confirmation).</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -7582,6 +7658,7 @@ per esempio: alertnotify=echo %%s | mail -s &quot;Allarme Bitcoin&quot; admin@fo
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Error: system error: </source>
         <translation>Errore: errore di sistema:</translation>
@@ -7601,6 +7678,8 @@ per esempio: alertnotify=echo %%s | mail -s &quot;Allarme Bitcoin&quot; admin@fo
         <source>Failed to read block</source>
         <translation>Lettura blocco fallita</translation>
 =======
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
         <location line="-185"/>
         <source>, has not been successfully broadcast yet</source>
         <translation>, non è stato ancora trasmesso con successo</translation>

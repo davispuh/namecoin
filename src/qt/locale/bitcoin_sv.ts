@@ -39,7 +39,10 @@
         <location line="+39"/>
         <source>&lt;b&gt;Namecoin&lt;/b&gt; version</source>
         <translation>&lt;b&gt;Namecoin&lt;/b&gt;-version</translation>
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     </message>
     <message>
         <location line="+57"/>
@@ -1499,6 +1502,7 @@ Adress: %4
 </context>
 <context>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <name>ClientModel</name>
     <message>
 <<<<<<< HEAD
@@ -1527,6 +1531,8 @@ Adress: %4
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 =======
 >>>>>>> GUI improvements and fixes (version 0.3.64)
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     <name>ConfigureNameDialog</name>
     <message>
         <location filename="../forms/configurenamedialog.ui" line="+20"/>
@@ -1548,6 +1554,7 @@ Adress: %4
     <message>
         <location line="+17"/>
         <source>D&amp;NS Configuration</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1560,6 +1567,94 @@ host or IP)</source>
     <message>
         <location line="+44"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter substitution name that will be used in DNS queries.&lt;/p&gt;&lt;p&gt;For example: bitcoin.org&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+=======
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>&amp;Name servers:
+(one per line,
+host or IP)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+44"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter substitution name that will be used in DNS queries.&lt;/p&gt;&lt;p&gt;For example: bitcoin.org&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-29"/>
+        <source>Enter name servers as host names (preferable), or IP addresses. E.g.
+ns0.web-sweet-web.net
+ns1.web-sweet-web.net
+ns0.xname.org
+1.2.3.4
+1.2.3.5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>T&amp;ranslate name:
+(optional)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <location line="+94"/>
+        <source>&amp;SSL fingerprint:
+(optional)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-80"/>
+        <location line="+73"/>
+        <source>Enter SSL certificate fingerprint if you want to use HTTPS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-33"/>
+        <source>&amp;IP Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>I&amp;P Address:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>IP address, e.g. 1.2.3.4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Subdomains will be mapped to the same IP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>&amp;Custom Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Enter JSON string, e.g. {&amp;quot;ns&amp;quot;: [&amp;quot;1.2.3.4&amp;quot;, &amp;quot;1.2.3.5&amp;quot;]}&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;See &lt;a href=&quot;http://dot-bit.org/HowToRegisterAndConfigureBitDomains&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;How to Register and Configure Bit Domains&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Enter JSON string that will be associated with the name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+44"/>
+        <source>&amp;Transfer to:</source>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2000,6 +2095,7 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
     </message>
 </context>
 <context>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <name>Namecoin-core</name>
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
@@ -3086,6 +3182,166 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
     </message>
     <message>
         <location line="+136"/>
+=======
+    <name>OptionsDialog</name>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="+14"/>
+        <source>Options</source>
+        <translation>Alternativ</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>&amp;Main</source>
+        <translation>&amp;Allmänt</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.</source>
+        <translation>Valfri transaktionsavgift per kB som ser till att dina transaktioner behandlas snabbt. De flesta transaktioner är 1 kB. Avgift 0.01 rekommenderas.</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Pay transaction &amp;fee</source>
+        <translation>Betala överförings&amp;avgift</translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Automatically start Namecoin after logging in to the system.</source>
+        <translation>Starta Namecoin automatiskt efter inloggning.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Start Namecoin on system login</source>
+        <translation>&amp;Starta Namecoin vid systemstart</translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Reset all client options to default.</source>
+        <translation>Återställ alla klient inställningar till förvalen.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Reset Options</source>
+        <translation>&amp;Återställ Alternativ</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>&amp;Network</source>
+        <translation>&amp;Nätverk</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Automatically open the Namecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Öppna automatiskt Namecoin-klientens port på routern. Detta fungerar endast om din router har UPnP aktiverat.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Map port using &amp;UPnP</source>
+        <translation>Tilldela port med hjälp av &amp;UPnP</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Connect to the Namecoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Anslut till Namecoin-nätverket genom en SOCKS-proxy (t.ex. när du ansluter genom Tor).</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Connect through SOCKS proxy:</source>
+        <translation>&amp;Anslut genom SOCKS-proxy:</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Proxy &amp;IP:</source>
+        <translation>Proxy-&amp;IP: </translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>IP address of the proxy (e.g. 127.0.0.1)</source>
+        <translation>Proxyns IP-adress (t.ex. 127.0.0.1)</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Port:</source>
+        <translation>&amp;Port: </translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>Proxyns port (t.ex. 9050)</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>SOCKS &amp;Version:</source>
+        <translation>SOCKS &amp;Version:</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>SOCKS version of the proxy (e.g. 5)</source>
+        <translation>SOCKS version av proxyn (t.ex. 5)</translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>&amp;Window</source>
+        <translation>&amp;Fönster</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Show only a tray icon after minimizing the window.</source>
+        <translation>Visa endast en systemfältsikon vid minimering.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Minimize to the tray instead of the taskbar</source>
+        <translation>&amp;Minimera till systemfältet istället för aktivitetsfältet</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
+        <translation>Minimera applikationen istället för att stänga ner den när fönstret stängs. Detta innebär att programmet fotrsätter att köras tills du väljer Avsluta i menyn.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>M&amp;inimize on close</source>
+        <translation>M&amp;inimera vid stängning</translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>&amp;Display</source>
+        <translation>&amp;Visa</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>User Interface &amp;language:</source>
+        <translation>Användargränssnittets &amp;språk: </translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>The user interface language can be set here. This setting will take effect after restarting Namecoin.</source>
+        <translation>Användargränssnittets språk kan ställas in här. Denna inställning träder i kraft efter en omstart av Namecoin.</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>&amp;Måttenhet att visa belopp i: </translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
+        <translation>Välj en måttenhet att visa när du skickar mynt.</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Whether to show Namecoin addresses in the transaction list or not.</source>
+        <translation>Anger om Namecoin-adresser skall visas i transaktionslistan.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Display addresses in transaction list</source>
+        <translation>&amp;Visa adresser i transaktionslistan</translation>
+    </message>
+    <message>
+        <location line="+71"/>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
         <source>&amp;OK</source>
         <translation>&amp;OK</translation>
     </message>
@@ -3829,6 +4085,7 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Custom change address</source>
         <translation type="unfinished"/>
@@ -3841,6 +4098,11 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <location filename="../forms/editaddressdialog.ui" line="+14"/>
         <source>Edit Address</source>
         <translation>Redigera Adress</translation>
+=======
+        <location line="-74"/>
+        <source>Wallet unlock was cancelled.</source>
+        <translation>Upplåsningen av plånboken avbröts.</translation>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     </message>
     <message>
         <location line="+11"/>
@@ -4022,6 +4284,7 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <translation type="obsolete">Ange katalog för data</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Set database cache size in megabytes (default: 25)</source>
         <translation type="obsolete">Sätt databas cache storleken i megabyte (förvalt: 25)</translation>
     </message>
@@ -4036,6 +4299,19 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
     <message>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
         <translation type="obsolete">Anslut till en nod för att hämta klientadresser, och koppla från</translation>
+=======
+        <location line="-185"/>
+        <source>, has not been successfully broadcast yet</source>
+        <translation>, har inte lyckats skickas ännu</translation>
+    </message>
+    <message numerus="yes">
+        <location line="-35"/>
+        <source>Open for %n more block(s)</source>
+        <translation>
+            <numerusform>Öppet för %n mer block</numerusform>
+            <numerusform>Öppet för %n mer block</numerusform>
+        </translation>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     </message>
     <message>
         <source>Specify your own public address</source>

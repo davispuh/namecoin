@@ -2007,6 +2007,7 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
 </context>
 <context>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <name>Namecoin-core</name>
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
     <message>
@@ -2591,6 +2592,8 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <translation type="obsolete">Učitavanje adresa...</translation>
     </message>
 =======
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     <name>OptionsDialog</name>
 >>>>>>> GUI improvements and fixes (version 0.3.64)
     <message>
@@ -7207,6 +7210,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+2"/>
         <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
@@ -7220,6 +7224,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation type="unfinished"/>
 =======
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
         <location line="-185"/>
         <source>, has not been successfully broadcast yet</source>
         <translation>, još nije bio uspješno emitiran</translation>

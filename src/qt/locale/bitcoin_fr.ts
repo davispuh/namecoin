@@ -39,7 +39,10 @@
         <location line="+39"/>
         <source>&lt;b&gt;Namecoin&lt;/b&gt; version</source>
         <translation>&lt;b&gt;Namecoin&lt;/b&gt; version</translation>
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     </message>
     <message>
         <location line="+57"/>
@@ -1683,6 +1686,7 @@ Adresse : %4
 </context>
 <context>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <name>ClientModel</name>
     <message>
 <<<<<<< HEAD
@@ -1705,6 +1709,8 @@ Adresse : %4
 =======
 =======
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
 =======
 >>>>>>> GUI improvements and fixes (version 0.3.64)
     <name>ConfigureNameDialog</name>
@@ -2185,6 +2191,7 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
     </message>
 </context>
 <context>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <name>Namecoin-core</name>
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
@@ -3335,6 +3342,168 @@ Si le fichier n&apos;existe pas, créez-le avec les droits de lecture seule acco
         <source>&amp;File</source>
         <translation type="obsolete">&amp;Fichier</translation>
 =======
+        <location line="+3"/>
+        <source>M&amp;inimize on close</source>
+        <translation>M&amp;inimiser lors de la fermeture</translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>&amp;Display</source>
+        <translation>&amp;Affichage</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>User Interface &amp;language:</source>
+        <translation>&amp;Langue de l&apos;interface utilisateur :</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>The user interface language can be set here. This setting will take effect after restarting Namecoin.</source>
+        <translation>La langue de l&apos;interface utilisateur peut être définie ici. Ce réglage sera pris en compte après redémarrage de Namecoin.</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>&amp;Unité d&apos;affichage des montants :</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
+        <translation>Choisissez la sous-unité par défaut pour l&apos;affichage dans l&apos;interface et lors de l&apos;envoi de pièces.</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Whether to show Namecoin addresses in the transaction list or not.</source>
+        <translation>Détermine si les adresses Namecoin seront affichées sur la liste des transactions.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Display addresses in transaction list</source>
+        <translation>&amp;Afficher les adresses sur la liste des transactions</translation>
+    </message>
+    <message>
+        <location line="+71"/>
+        <source>&amp;OK</source>
+        <translation>&amp;Valider</translation>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
+=======
+    <name>OptionsDialog</name>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="+14"/>
+        <source>Options</source>
+        <translation>Options</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>&amp;Main</source>
+        <translation>Réglages &amp;principaux</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.</source>
+        <translation>Frais de transaction optionnels par ko qui aident à garantir un traitement rapide des transactions. La plupart des transactions occupent 1 ko. Des frais de 0.01 sont recommandés.</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Pay transaction &amp;fee</source>
+        <translation>Payer des &amp;frais de transaction</translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Automatically start Namecoin after logging in to the system.</source>
+        <translation>Démarrer Namecoin automatiquement lors de l&apos;ouverture une session sur l&apos;ordinateur.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Start Namecoin on system login</source>
+        <translation>&amp;Démarrer Namecoin lors de l&apos;ouverture d&apos;une session</translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Reset all client options to default.</source>
+        <translation>Remettre toutes les options du client aux valeurs par défaut.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Reset Options</source>
+        <translation>&amp;Remise à zéro des options</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>&amp;Network</source>
+        <translation>&amp;Réseau</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Automatically open the Namecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir le port du client Namecoin automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l&apos;UPnP et si la fonctionnalité est activée.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Map port using &amp;UPnP</source>
+        <translation>Ouvrir le port avec l&apos;&amp;UPnP</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Connect to the Namecoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Connexion au réseau Namecoin à travers un proxy SOCKS (par ex. lors d&apos;une connexion via Tor).</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Connect through SOCKS proxy:</source>
+        <translation>&amp;Connexion à travers un proxy SOCKS :</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Proxy &amp;IP:</source>
+        <translation>&amp;IP du proxy :</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>IP address of the proxy (e.g. 127.0.0.1)</source>
+        <translation>Adresse IP du proxy (par ex. 127.0.0.1)</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Port:</source>
+        <translation>&amp;Port :</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>Port du proxy (par ex. 9050)</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>SOCKS &amp;Version:</source>
+        <translation>&amp;Version SOCKS :</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>SOCKS version of the proxy (e.g. 5)</source>
+        <translation>Version SOCKS du serveur mandataire (par ex. 5)</translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>&amp;Window</source>
+        <translation>&amp;Fenêtre</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Show only a tray icon after minimizing the window.</source>
+        <translation>Afficher uniquement une icône système après minimisation.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Minimize to the tray instead of the taskbar</source>
+        <translation>&amp;Minimiser dans la barre système au lieu de la barre des tâches</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
+        <translation>Minimiser au lieu quitter l&apos;application lorsque la fenêtre est fermée. Lorsque cette option est activée, l&apos;application ne pourra être fermée qu&apos;en sélectionnant Quitter dans le menu déroulant.</translation>
+    </message>
+    <message>
         <location line="+3"/>
         <source>M&amp;inimize on close</source>
         <translation>M&amp;inimiser lors de la fermeture</translation>
@@ -7547,6 +7716,7 @@ Adresse : %4
     <message>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+27"/>
 >>>>>>> Committing original src/qt
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8332 or testnet: 18332)</source>
@@ -7563,6 +7733,8 @@ Adresse : %4
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8336 or testnet: 18336)</source>
         <translation>Écouter les connexions JSON-RPC sur le &lt;port&gt; (par défaut : 8336 ou tesnet : 18336)</translation>
 =======
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
         <location line="-74"/>
         <source>Wallet unlock was cancelled.</source>
         <translation>Le déverrouillage du porte-monnaie a été annulé.</translation>
@@ -7818,6 +7990,7 @@ Si le fichier n&apos;existe pas, créez-le avec les droits de lecture accordés 
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+9"/>
         <source>&lt;category&gt; can be:</source>
         <translation>&lt;category&gt; peut être :</translation>
@@ -7839,6 +8012,8 @@ Si le fichier n&apos;existe pas, créez-le avec les droits de lecture accordés 
         <source>Bitcoin Core Daemon</source>
         <translation>Démon Bitcoin Core</translation>
 =======
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
         <location line="-185"/>
         <source>, has not been successfully broadcast yet</source>
         <translation>, n’a pas encore été diffusée avec succès</translation>
@@ -8241,11 +8416,15 @@ Si le fichier n&apos;existe pas, créez-le avec les droits de lecture accordés 
     <message>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Send command to Bitcoin server</source>
         <translation>Envoyer une commande au serveur Bitcoin</translation>
 =======
         <location filename="../walletmodel.cpp" line="+542"/>
+=======
+        <location filename="../walletmodel.cpp" line="+564"/>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
 =======
         <location filename="../walletmodel.cpp" line="+564"/>
 >>>>>>> GUI improvements and fixes (version 0.3.64)

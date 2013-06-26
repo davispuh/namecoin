@@ -995,6 +995,22 @@ bool AppInit2(boost::thread_group& threadGroup)
     // Read -mininput before -rescan, otherwise rescan will skip transactions
     // lower than the default mininput
     if (mapArgs.count("-mininput"))
+<<<<<<< HEAD
+=======
+    {
+        if (!ParseMoney(mapArgs["-mininput"], nMinimumInputValue))
+        {
+            wxMessageBox(_("Invalid amount for -mininput=<amount>"), "Namecoin");
+            return false;
+        }
+    }
+
+
+    CBlockIndex *pindexRescan = pindexBest;
+    if (GetBoolArg("-rescan"))
+        pindexRescan = pindexGenesisBlock;
+    else
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     {
         if (!ParseMoney(mapArgs["-mininput"], nMinimumInputValue))
         {
@@ -1320,6 +1336,7 @@ bool AppInit2(boost::thread_group& threadGroup)
 
     uiInterface.InitMessage(_("Loading addresses..."));
 
+<<<<<<< HEAD
     nStart = GetTimeMillis();
 
 <<<<<<< HEAD
@@ -1334,6 +1351,8 @@ bool AppInit2(boost::thread_group& threadGroup)
         }
     }
 
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
 =======
 >>>>>>> GUI improvements and fixes (version 0.3.64)
     if (fHaveUPnP)

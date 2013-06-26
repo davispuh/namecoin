@@ -40,7 +40,10 @@
         <location line="+39"/>
         <source>&lt;b&gt;Namecoin&lt;/b&gt; version</source>
         <translation>&lt;b&gt;Namecoin&lt;/b&gt; versie</translation>
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     </message>
     <message>
         <location line="+57"/>
@@ -1494,6 +1497,7 @@ Adres: %4
 </context>
 <context>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <name>ClientModel</name>
     <message>
 <<<<<<< HEAD
@@ -1522,6 +1526,8 @@ Adres: %4
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 =======
 >>>>>>> GUI improvements and fixes (version 0.3.64)
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     <name>ConfigureNameDialog</name>
     <message>
         <location filename="../forms/configurenamedialog.ui" line="+20"/>
@@ -1543,6 +1549,7 @@ Adres: %4
     <message>
         <location line="+17"/>
         <source>D&amp;NS Configuration</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1555,6 +1562,94 @@ host or IP)</source>
     <message>
         <location line="+44"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter substitution name that will be used in DNS queries.&lt;/p&gt;&lt;p&gt;For example: bitcoin.org&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+=======
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>&amp;Name servers:
+(one per line,
+host or IP)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+44"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter substitution name that will be used in DNS queries.&lt;/p&gt;&lt;p&gt;For example: bitcoin.org&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-29"/>
+        <source>Enter name servers as host names (preferable), or IP addresses. E.g.
+ns0.web-sweet-web.net
+ns1.web-sweet-web.net
+ns0.xname.org
+1.2.3.4
+1.2.3.5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>T&amp;ranslate name:
+(optional)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <location line="+94"/>
+        <source>&amp;SSL fingerprint:
+(optional)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-80"/>
+        <location line="+73"/>
+        <source>Enter SSL certificate fingerprint if you want to use HTTPS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-33"/>
+        <source>&amp;IP Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>I&amp;P Address:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>IP address, e.g. 1.2.3.4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Subdomains will be mapped to the same IP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>&amp;Custom Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Enter JSON string, e.g. {&amp;quot;ns&amp;quot;: [&amp;quot;1.2.3.4&amp;quot;, &amp;quot;1.2.3.5&amp;quot;]}&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;See &lt;a href=&quot;http://dot-bit.org/HowToRegisterAndConfigureBitDomains&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;How to Register and Configure Bit Domains&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Enter JSON string that will be associated with the name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+44"/>
+        <source>&amp;Transfer to:</source>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1765,22 +1860,26 @@ Leave empty, if not needed.</source>
         <translation type="unfinished">Alt+P</translation>
     </message>
     <message>
-        <location line="+22"/>
+        <location line="-351"/>
         <source>Domain name:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+27"/>
+        <location line="+360"/>
         <source>(can be left empty)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../configurenamedialog.cpp" line="+37"/>
+=======
+        <location filename="../configurenamedialog.cpp" line="+47"/>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
         <source>(not a domain name)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+120"/>
         <source>Name_firstupdate transaction will be queued and broadcasted when corresponding name_new is %1 blocks old</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1795,8 +1894,18 @@ Leave empty, if not needed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+55"/>
+        <location line="+58"/>
         <source>Name update error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+81"/>
+        <source>Valid JSON string</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Invalid JSON string (can still be used, if not intended as JSON string)</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2017,6 +2126,7 @@ to the network and creates a pending name_firstupdate transaction.</source>
     <message>
         <location line="+29"/>
         <source>Enter part of name to search for</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2035,6 +2145,26 @@ to the network and creates a pending name_firstupdate transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+=======
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Enter part of value to search for</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Double-click name to configure</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>Configure name and submit update operation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
         <location line="+3"/>
         <location filename="../managenamespage.cpp" line="+74"/>
         <source>&amp;Configure Name...</source>
@@ -2162,6 +2292,7 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
     </message>
 </context>
 <context>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <name>Namecoin-core</name>
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
@@ -3080,18 +3211,167 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <translation>&amp;Eenheid om bedrag in te tonen:</translation>
     </message>
     <message>
+=======
+    <name>OptionsDialog</name>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="+14"/>
+        <source>Options</source>
+        <translation>Opties</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>&amp;Main</source>
+        <translation>&amp;Algemeen</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.</source>
+        <translation>Optionele transactiekosten per kB die helpen om uw transacties snel te verwerken. De meeste transacties zijn 1 kB. Transactiekosten van 0,01 wordt aangeraden</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Pay transaction &amp;fee</source>
+        <translation>Betaal &amp;transactiekosten</translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Automatically start Namecoin after logging in to the system.</source>
+        <translation>Start Namecoin automatisch na inloggen in het systeem</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Start Namecoin on system login</source>
+        <translation>&amp;Start Namecoin bij het inloggen in het systeem</translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Reset all client options to default.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Reset Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>&amp;Network</source>
+        <translation>&amp;Netwerk</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Automatically open the Namecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Open de Namecoin-poort automatisch op de router. Dit werkt alleen als de router UPnP ondersteunt en het aanstaat.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Map port using &amp;UPnP</source>
+        <translation>Portmapping via &amp;UPnP</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Connect to the Namecoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Verbind met het Namecoin-netwerk via een SOCKS-proxy (bijv. wanneer u via Tor wilt verbinden)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Connect through SOCKS proxy:</source>
+        <translation>&amp;Verbind via een SOCKS-proxy</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Proxy &amp;IP:</source>
+        <translation>Proxy &amp;IP:</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>IP address of the proxy (e.g. 127.0.0.1)</source>
+        <translation>IP-adres van de proxy (bijv. 127.0.0.1)</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Port:</source>
+        <translation>&amp;Poort:</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>Poort van de proxy (bijv. 9050)</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>SOCKS &amp;Version:</source>
+        <translation>SOCKS-&amp;Versie:</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>SOCKS version of the proxy (e.g. 5)</source>
+        <translation>SOCKS-versie van de proxy (bijv. 5)</translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>&amp;Window</source>
+        <translation>&amp;Scherm</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Show only a tray icon after minimizing the window.</source>
+        <translation>Laat alleen een systeemvak-icoon zien wanneer het venster geminimaliseerd is</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Minimize to the tray instead of the taskbar</source>
+        <translation>&amp;Minimaliseer naar het systeemvak in plaats van de taakbalk</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
+        <translation>Minimaliseer het venster in de plaats van de applicatie af te sluiten als het venster gesloten wordt. Wanneer deze optie aan staan, kan de applicatie alleen worden afgesloten door Afsluiten te kiezen in het menu.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>M&amp;inimize on close</source>
+        <translation>Minimaliseer bij &amp;sluiten van het venster</translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>&amp;Display</source>
+        <translation>&amp;Interface</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>User Interface &amp;language:</source>
+        <translation>&amp;Taal Gebruikersinterface:</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>The user interface language can be set here. This setting will take effect after restarting Namecoin.</source>
+        <translation>De taal van de gebruikersinterface kan hier ingesteld worden. Deze instelling zal pas van kracht worden nadat Namecoin herstart wordt.</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>&amp;Eenheid om bedrag in te tonen:</translation>
+    </message>
+    <message>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
         <translation>Kies de standaard onderverdelingseenheid om weer te geven in uw programma, en voor het versturen van munten</translation>
     </message>
     <message>
         <location line="+9"/>
+<<<<<<< HEAD
         <source>Whether to show Bitcoin addresses in the transaction list or not.</source>
+=======
+        <source>Whether to show Namecoin addresses in the transaction list or not.</source>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
         <translation>Of Bitcoinadressen getoond worden in de transactielijst</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Display addresses in transaction list</source>
+<<<<<<< HEAD
         <translation>Toon a&amp;dressen in de transactielijst</translation>
     </message>
     <message>
@@ -3106,12 +3386,19 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
     </message>
     <message>
         <location line="+136"/>
+=======
+        <translation>Toon &amp;adressen in de transactielijst</translation>
+    </message>
+    <message>
+        <location line="+71"/>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
         <source>&amp;OK</source>
         <translation>&amp;OK</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>&amp;Cancel</source>
+<<<<<<< HEAD
         <translation>Ann&amp;uleren</translation>
     </message>
     <message>
@@ -3313,6 +3600,51 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <location line="-11"/>
         <source>Network request error</source>
         <translation>Netwerkfout bij verzoek</translation>
+=======
+        <translation>&amp;Annuleren</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>&amp;Apply</source>
+        <translation>&amp;Toepassen</translation>
+    </message>
+    <message>
+        <location filename="../optionsdialog.cpp" line="+53"/>
+        <source>default</source>
+        <translation>standaard</translation>
+    </message>
+    <message>
+        <location line="+130"/>
+        <source>Confirm options reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Some settings may require a client restart to take effect.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Do you want to proceed?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <location line="+9"/>
+        <source>Warning</source>
+        <translation>Waarschuwing</translation>
+    </message>
+    <message>
+        <location line="-9"/>
+        <location line="+9"/>
+        <source>This setting will take effect after restarting Namecoin.</source>
+        <translation>Deze instelling zal pas van kracht worden na het herstarten van Namecoin.</translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>The supplied proxy address is invalid.</source>
+        <translation>Het opgegeven proxyadres is ongeldig.</translation>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     </message>
 </context>
 <context>
@@ -3843,6 +4175,7 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <translation>Het label dat geassocieerd is met dit adres</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
         <source>&amp;Address</source>
         <translation>&amp;Adres</translation>
@@ -3851,6 +4184,11 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <location line="+10"/>
         <source>The address associated with this address book entry. This can only be modified for sending addresses.</source>
         <translation>Het adres dat geassocieerd is met deze inschrijving in het adresboek. Dit kan alleen worden veranderd voor zend-adressen.</translation>
+=======
+        <location line="-74"/>
+        <source>Wallet unlock was cancelled.</source>
+        <translation>Portemonnee-ontsleuteling is geannuleerd</translation>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="+21"/>
@@ -6717,6 +7055,7 @@ Als het bestand niet bestaat, maak het aan met een alleen-lezen-permissie.</tran
 >>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation type="unfinished">Voer commando uit zodra het beste blok verandert (%s in cmd wordt vervangen door blockhash)</translation>
@@ -6736,6 +7075,11 @@ Als het bestand niet bestaat, maak het aan met een alleen-lezen-permissie.</tran
         <location line="+3"/>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
         <translation type="unfinished">Stel maximumgrootte in in bytes voor hoge-prioriteits-/lage-transactiekosten-transacties (standaard: 27000)</translation>
+=======
+        <location line="-185"/>
+        <source>, has not been successfully broadcast yet</source>
+        <translation>, is nog niet met succes uitgezonden</translation>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     </message>
     <message>
         <location line="+3"/>

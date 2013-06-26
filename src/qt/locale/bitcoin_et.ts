@@ -2001,6 +2001,7 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
 </context>
 <context>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <name>NamecoinGUI</name>
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
     <message>
@@ -2049,6 +2050,8 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <translation>Kogus</translation>
     </message>
 =======
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     <name>OptionsDialog</name>
 >>>>>>> GUI improvements and fixes (version 0.3.64)
     <message>
@@ -6037,6 +6040,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+4"/>
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
         <translation type="unfinished"></translation>
@@ -6045,6 +6049,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <location line="+3"/>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
 =======
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
         <location line="-185"/>
         <source>, has not been successfully broadcast yet</source>
 >>>>>>> GUI improvements and fixes (version 0.3.64)

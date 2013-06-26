@@ -38,7 +38,10 @@
 =======
         <source>&lt;b&gt;Namecoin&lt;/b&gt; version</source>
         <translation>&lt;b&gt;Namecoin&lt;/b&gt; verzió</translation>
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     </message>
     <message>
         <location line="+57"/>
@@ -2083,6 +2086,7 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
     </message>
 </context>
 <context>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <name>Namecoin-core</name>
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
@@ -6025,6 +6029,9 @@ Cím: %4
 <context>
 <<<<<<< HEAD
     <name>TrafficGraphWidget</name>
+=======
+    <name>OptionsDialog</name>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     <message>
         <location filename="../trafficgraphwidget.cpp" line="+79"/>
         <source>KB/s</source>
@@ -7448,6 +7455,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
 >>>>>>> Committing original src/qt
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Failed to write block info</source>
 <<<<<<< HEAD
@@ -7475,6 +7483,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <translation type="unfinished"/>
 >>>>>>> Committing original src/qt
 =======
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
         <location line="-185"/>
         <source>, has not been successfully broadcast yet</source>
         <translation>, még nem sikerült elküldeni.</translation>

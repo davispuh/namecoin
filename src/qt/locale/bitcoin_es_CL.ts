@@ -1746,6 +1746,22 @@ Leave empty, if not needed.</source>
         <source>Name update error</source>
         <translation type="unfinished"></translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <location line="+81"/>
+        <source>Valid JSON string</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Invalid JSON string (can still be used, if not intended as JSON string)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>EditAddressDialog</name>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     <message>
         <location line="+81"/>
         <source>Valid JSON string</source>
@@ -2048,6 +2064,7 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
     </message>
 </context>
 <context>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <name>Namecoin-core</name>
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
@@ -2670,6 +2687,8 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <translation type="obsolete">Fondos insuficientes</translation>
     </message>
 =======
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     <name>OptionsDialog</name>
 >>>>>>> GUI improvements and fixes (version 0.3.64)
     <message>
@@ -7321,6 +7340,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
     <message>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
 =======
@@ -7347,6 +7367,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <source>Show transaction details</source>
         <translation type="unfinished"></translation>
 =======
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
         <location line="-185"/>
         <source>, has not been successfully broadcast yet</source>
         <translation>, no ha sido emitido satisfactoriamente todavía</translation>

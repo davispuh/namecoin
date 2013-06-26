@@ -1986,6 +1986,7 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
 </context>
 <context>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <name>Namecoin-core</name>
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
     <message>
@@ -2662,6 +2663,8 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
     </message>
 </context>
 <context>
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     <name>OptionsDialog</name>
     <message>
         <location filename="../forms/optionsdialog.ui" line="+14"/>
@@ -6339,6 +6342,7 @@ Adresse: %4
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
         <source>The wallet data was successfully saved to %1.</source>
         <translation type="unfinished"/>
@@ -6350,6 +6354,11 @@ Adresse: %4
 =======
         <source>There was an error trying to save the wallet data to the new location.</source>
         <translation>Der opstod en fejl i forbindelse med at gemme tegnebogsdata til det nye sted</translation>
+=======
+        <location line="-185"/>
+        <source>, has not been successfully broadcast yet</source>
+        <translation>, er ikke blevet transmitteret endnu</translation>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     </message>
     <message>
         <location line="+4"/>

@@ -2103,6 +2103,7 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
 </context>
 <context>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <name>Namecoin-core</name>
     <message>
         <source>Namecoin version</source>
@@ -2687,6 +2688,8 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
 <context>
     <name>Namecoin-core</name>
 =======
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     <name>OptionsDialog</name>
 >>>>>>> GUI improvements and fixes (version 0.3.64)
     <message>
@@ -7466,6 +7469,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+1"/>
 <<<<<<< HEAD
         <source>Error: system error: </source>
@@ -7483,6 +7487,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation type="unfinished"/>
 =======
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
         <location line="-185"/>
         <source>, has not been successfully broadcast yet</source>
         <translation>, ešte nebola úspešne odoslaná</translation>

@@ -21,6 +21,8 @@
 =======
 #include "namecoin.h"    // For DecodeNameScript in GetAmounts to correctly compute credit/debit
 
+#include "namecoin.h"    // For DecodeNameScript in GetAmounts to correctly compute credit/debit
+
 using namespace std;
 >>>>>>> GUI improvements and fixes (version 0.3.64)
 
@@ -859,8 +861,11 @@ void CWalletTx::GetAmounts(list<pair<CTxDestination, int64_t> >& listReceived,
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     // Sent/received.
 =======
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     // Compute the coin carried with the name operation
     // as difference of GetDebitInclName() and GetDebit()
     int64 nCarriedOverCoin = nDebit - GetDebit();

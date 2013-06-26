@@ -1981,6 +1981,7 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
 </context>
 <context>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <name>NamecoinGUI</name>
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
     <message>
@@ -2069,6 +2070,8 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <translation>Copiar etiqueta</translation>
     </message>
 =======
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     <name>OptionsDialog</name>
 >>>>>>> GUI improvements and fixes (version 0.3.64)
     <message>

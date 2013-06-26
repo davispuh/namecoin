@@ -1521,6 +1521,22 @@ Leave empty, if not needed.</source>
         <source>Name update error</source>
         <translation type="unfinished"></translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <location line="+81"/>
+        <source>Valid JSON string</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Invalid JSON string (can still be used, if not intended as JSON string)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>EditAddressDialog</name>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     <message>
         <location line="+81"/>
         <source>Valid JSON string</source>
@@ -2063,6 +2079,7 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
 </context>
 <context>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <name>NamecoinGUI</name>
     <message>
         <source>Synchronizing with network...</source>
@@ -2156,6 +2173,8 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <translation type="unfinished"/>
     </message>
 =======
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     <name>OptionsDialog</name>
 >>>>>>> GUI improvements and fixes (version 0.3.64)
     <message>
@@ -4648,6 +4667,7 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+18"/>
 =======
         <location line="+34"/>
@@ -4664,6 +4684,8 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
 =======
         <location line="+60"/>
 =======
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
 =======
 >>>>>>> GUI improvements and fixes (version 0.3.64)
         <location line="+94"/>
@@ -5271,6 +5293,7 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Amount</source>
         <translation type="obsolete">Bedrag</translation>
     </message>
@@ -5290,6 +5313,8 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <location line="-209"/>
 >>>>>>> Committing original src/qt
 =======
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
 =======
 >>>>>>> GUI improvements and fixes (version 0.3.64)
         <location line="-185"/>

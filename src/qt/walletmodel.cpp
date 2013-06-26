@@ -74,6 +74,8 @@ WalletModel::WalletModel(CWallet *wallet, OptionsModel *optionsModel, QObject *p
 
     fSyncedAtLeastOnce = false;    // For sending automatic name_firstupdate
 
+    fSyncedAtLeastOnce = false;    // For sending automatic name_firstupdate
+
     // This timer will be fired repeatedly to update the balance
     pollTimer = new QTimer(this);
     connect(pollTimer, SIGNAL(timeout()), this, SLOT(pollBalanceChanged()));

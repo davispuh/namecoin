@@ -39,7 +39,10 @@
         <location line="+39"/>
         <source>&lt;b&gt;Namecoin&lt;/b&gt; version</source>
         <translation>&lt;b&gt;Namecoin&lt;/b&gt; versija</translation>
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     </message>
     <message>
         <location line="+57"/>
@@ -1551,6 +1554,7 @@ Adresas: %4</translation>
 </context>
 <context>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <name>ClientModel</name>
     <message>
 <<<<<<< HEAD
@@ -1577,6 +1581,8 @@ Adresas: %4</translation>
 =======
     <name>ConfigureNameDialog</name>
 =======
+=======
+>>>>>>> GUI improvements and fixes (version 0.3.64)
 =======
 >>>>>>> GUI improvements and fixes (version 0.3.64)
     <name>ConfigureNameDialog</name>
@@ -2055,6 +2061,7 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
     </message>
 </context>
 <context>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <name>Namecoin-core</name>
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
@@ -2633,6 +2640,9 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <source>Wallet needed to be rewritten: restart Namecoin to complete</source>
         <translation type="obsolete">Piniginė turi būti prrašyta: įvykdymui perkraukite Namecoin</translation>
     </message>
+=======
+    <name>OptionsDialog</name>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     <message>
         <source>Error loading wallet.dat</source>
         <translation type="obsolete"> wallet.dat pakrovimo klaida</translation>
@@ -7156,6 +7166,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         <location line="+2"/>
         <source>Name operation</source>
@@ -7177,6 +7188,20 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <location line="+2"/>
         <source>Error initializing block database</source>
         <translation type="unfinished"/>
+=======
+        <location line="-185"/>
+        <source>, has not been successfully broadcast yet</source>
+        <translation>, transliavimas dar nebuvo sėkmingas</translation>
+    </message>
+    <message numerus="yes">
+        <location line="-35"/>
+        <source>Open for %n more block(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     </message>
     <message>
         <location line="+1"/>

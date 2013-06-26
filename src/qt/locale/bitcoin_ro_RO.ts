@@ -2275,6 +2275,7 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
 </context>
 <context>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <name>Namecoin-core</name>
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
     <message>
@@ -2577,6 +2578,9 @@ to the network and creates a pending name_firstupdate transaction.</source>
         <source>Copy &amp;Value</source>
         <translation type="unfinished"></translation>
     </message>
+=======
+    <name>OptionsDialog</name>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     <message>
         <location line="+64"/>
         <source>Name registration</source>
@@ -7428,6 +7432,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+137"/>
         <source>Export Transaction Data</source>
         <translation>Exportă tranzacţiile</translation>
@@ -7437,6 +7442,11 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <location line="+3"/>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>Atentie: Reteaua nu pare sa fie deacord in totalitate! Aparent niste mineri au probleme. </translation>
+=======
+        <location line="-185"/>
+        <source>, has not been successfully broadcast yet</source>
+        <translation>, nu s-a propagat încă</translation>
+>>>>>>> GUI improvements and fixes (version 0.3.64)
     </message>
     <message>
         <location line="+3"/>
