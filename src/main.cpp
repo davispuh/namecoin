@@ -4232,7 +4232,19 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
         CInv inv(MSG_TX, tx.GetHash());
         pfrom->AddInventoryKnown(inv);
 
+<<<<<<< HEAD
         LOCK(cs_main);
+=======
+        // Truncate messages to the size of the tx in them
+        unsigned int nSize = ::GetSerializeSize(tx, SER_NETWORK/*, PROTOCOL_VERSION*/);
+        unsigned int oldSize = vMsg.size();
+        if (nSize < oldSize) {
+            vMsg.resize(nSize);
+            printf("truncating oversized TX %s (%u -> %u)\n",
+                   tx.GetHash().ToString().c_str(),
+                   oldSize, nSize);
+        }
+>>>>>>> Merged Bitcoin commit c40a5aaaf484855a4350fd702e8e72fd21a68155
 
         bool fMissingInputs = false;
 <<<<<<< HEAD
