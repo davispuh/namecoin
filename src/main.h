@@ -232,7 +232,11 @@ FILE* AppendBlockFile(unsigned int& nFileRet);
 bool LoadBlockIndex(bool fAllowNew=true);
 >>>>>>> hooks
 void PrintBlockTree();
+<<<<<<< HEAD
 /** Process protocol messages received from a given node */
+=======
+CBlockIndex* FindBlockByHeight(int nHeight);
+>>>>>>> Adding getblockhash rpc command
 bool ProcessMessages(CNode* pfrom);
 /** Send queued protocol messages to be sent to a give node */
 bool SendMessages(CNode* pto, bool fSendTrickle);
