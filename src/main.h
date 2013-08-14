@@ -1597,8 +1597,6 @@ protected:
 };
 =======
 extern std::map<uint256, CTransaction> mapTransactions;
-extern std::map<uint160, std::vector<unsigned char> > mapPubKeys;
-extern CCriticalSection cs_mapPubKeys;
 extern CHooks* hooks;
 
 >>>>>>> hooks

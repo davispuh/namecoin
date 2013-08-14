@@ -42,7 +42,14 @@ using namespace boost;
 
 CCriticalSection cs_main;
 
+<<<<<<< HEAD
 CTxMemPool mempool;
+=======
+map<uint256, CTransaction> mapTransactions;
+CCriticalSection cs_mapTransactions;
+unsigned int nTransactionsUpdated = 0;
+map<COutPoint, CInPoint> mapNextTx;
+>>>>>>> Fixed a bug when using importaddress and signrawtransaction together
 
 map<uint256, CBlockIndex*> mapBlockIndex;
 <<<<<<< HEAD

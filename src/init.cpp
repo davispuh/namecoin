@@ -1146,7 +1146,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     printf("nBestHeight = %d\n",            nBestHeight);
     pwalletMain->DebugPrint();
     printf("setKeyPool.size() = %d\n",      pwalletMain->setKeyPool.size());
-    printf("mapPubKeys.size() = %d\n",      mapPubKeys.size());
+    printf("mapPubKeys.size() = %d\n",      pwalletMain->mapPubKeys.size());
     printf("mapWallet.size() = %d\n",       pwalletMain->mapWallet.size());
     printf("mapAddressBook.size() = %d\n",  pwalletMain->mapAddressBook.size());
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.

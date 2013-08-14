@@ -1146,6 +1146,7 @@ Value ListReceived(const Array& params, bool fByAccounts)
     // Tally
     map<uint160, tallyitem> mapTally;
     CRITICAL_BLOCK(pwalletMain->cs_mapWallet)
+    CRITICAL_BLOCK(pwalletMain->cs_mapKeys)
     {
         for (map<uint256, CWalletTx>::iterator it = pwalletMain->mapWallet.begin(); it != pwalletMain->mapWallet.end(); ++it)
         {
@@ -1161,7 +1162,7 @@ Value ListReceived(const Array& params, bool fByAccounts)
             {
                 // Only counting our own bitcoin addresses and not ip addresses
                 uint160 hash160 = txout.scriptPubKey.GetBitcoinAddressHash160();
-                if (hash160 == 0 || !mapPubKeys.count(hash160)) // IsMine
+                if (hash160 == 0 || !pwalletMain->mapPubKeys.count(hash160)) // IsMine
                     continue;
 
                 tallyitem& item = mapTally[hash160];
@@ -1433,10 +1434,11 @@ Value listaccounts(const Array& params, bool fHelp)
     map<string, int64> mapAccountBalances;
     CRITICAL_BLOCK(pwalletMain->cs_mapWallet)
     CRITICAL_BLOCK(pwalletMain->cs_mapAddressBook)
+    CRITICAL_BLOCK(pwalletMain->cs_mapKeys)
     {
         BOOST_FOREACH(const PAIRTYPE(string, string)& entry, pwalletMain->mapAddressBook) {
             uint160 hash160;
-            if(AddressToHash160(entry.first, hash160) && mapPubKeys.count(hash160)) // This address belongs to me
+            if(AddressToHash160(entry.first, hash160) && pwalletMain->mapPubKeys.count(hash160)) // This address belongs to me
                 mapAccountBalances[entry.second] = 0;
         }
 
@@ -1712,7 +1714,8 @@ Value validateaddress(const Array& params, bool fHelp)
         // version of the address:
         string currentAddress = Hash160ToAddress(hash160);
         ret.push_back(Pair("address", currentAddress));
-        ret.push_back(Pair("ismine", (mapPubKeys.count(hash160) > 0)));
+        CRITICAL_BLOCK(pwalletMain->cs_mapKeys)
+            ret.push_back(Pair("ismine", (pwalletMain->mapPubKeys.count(hash160) > 0)));
         CRITICAL_BLOCK(pwalletMain->cs_mapAddressBook)
         {
             if (pwalletMain->mapAddressBook.count(currentAddress))
@@ -2333,8 +2336,8 @@ Value dumpprivkey(const Array& params, bool fHelp)
     {
         EnsureWalletIsUnlocked();
 
-        std::map<uint160, std::vector<unsigned char> >::iterator mi = mapPubKeys.find(hash160);
-        if (mi != mapPubKeys.end() && pwalletMain->GetPrivKey(mi->second, privKey))
+        std::map<uint160, std::vector<unsigned char> >::const_iterator mi = pwalletMain->mapPubKeys.find(hash160);
+        if (mi != pwalletMain->mapPubKeys.end() && pwalletMain->GetPrivKey(mi->second, privKey))
             found = true;
     }
 
@@ -2368,8 +2371,8 @@ Value signmessage(const Array& params, bool fHelp)
     CPrivKey privKey;
     CRITICAL_BLOCK(pwalletMain->cs_mapKeys)
     {
-        std::map<uint160, std::vector<unsigned char> >::iterator mi = mapPubKeys.find(hash160);
-        if (mi == mapPubKeys.end())
+        std::map<uint160, std::vector<unsigned char> >::const_iterator mi = pwalletMain->mapPubKeys.find(hash160);
+        if (mi == pwalletMain->mapPubKeys.end())
             throw JSONRPCError(RPC_TYPE_ERROR, "Address does not refer to key");
 
         if (!pwalletMain->GetPrivKey(mi->second, privKey))
