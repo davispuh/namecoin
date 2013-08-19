@@ -1585,6 +1585,7 @@ bool IsMine(const CKeyStore &keystore, const CScript& scriptPubKey)
         return false;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     CKeyID keyID;
     switch (whichType)
     {
@@ -1616,24 +1617,45 @@ bool IsMine(const CKeyStore &keystore, const CScript& scriptPubKey)
     }
 =======
     CRITICAL_BLOCK(keystore->cs_mapKeys)
+=======
+    if (keystore)
+>>>>>>> Fixed crashing of previous commit on some RPC commands.
     {
+        // Use keystore to convert hash160 to pubkey; only return keys that belong to us
+        CRITICAL_BLOCK(keystore->cs_mapKeys)
+        {
+            BOOST_FOREACH(PAIRTYPE(opcodetype, valtype)& item, vSolution)
+            {
+                valtype vchPubKey;
+                if (item.first == OP_PUBKEY)
+                {
+                    vchPubKey = item.second;
+                }
+                else if (item.first == OP_PUBKEYHASH)
+                {
+                    map<uint160, valtype>::const_iterator mi = keystore->mapPubKeys.find(uint160(item.second));
+                    if (mi == keystore->mapPubKeys.end())
+                        continue;
+                    vchPubKey = (*mi).second;
+                }
+                else
+                    continue;
+                if (keystore->HaveKey(vchPubKey))
+                {
+                    vchPubKeyRet = vchPubKey;
+                    return true;
+                }
+            }
+        }
+    }
+    else
+    {
+        // No keystore - return pubkey only
         BOOST_FOREACH(PAIRTYPE(opcodetype, valtype)& item, vSolution)
         {
-            valtype vchPubKey;
             if (item.first == OP_PUBKEY)
             {
-                vchPubKey = item.second;
-            }
-            else if (item.first == OP_PUBKEYHASH)
-            {
-                map<uint160, valtype>::const_iterator mi = keystore->mapPubKeys.find(uint160(item.second));
-                if (mi == keystore->mapPubKeys.end())
-                    continue;
-                vchPubKey = (*mi).second;
-            }
-            if (keystore == NULL || keystore->HaveKey(vchPubKey))
-            {
-                vchPubKeyRet = vchPubKey;
+                vchPubKeyRet = item.second;
                 return true;
             }
         }
@@ -1701,6 +1723,7 @@ bool ExtractDestinations(const CScript& scriptPubKey, txnouttype& typeRet, vecto
     return true;
 }
 
+<<<<<<< HEAD
 class CAffectedKeysVisitor : public boost::static_visitor<void> {
 private:
     const CKeyStore &keystore;
@@ -1732,6 +1755,18 @@ public:
 
     void operator()(const CNoDestination &none) {}
 };
+=======
+uint160 CScript::GetBitcoinAddressHash160() const
+{
+    uint160 hash160;
+    if (ExtractHash160(*this, hash160))
+        return hash160;
+    vector<unsigned char> vch;
+    if (ExtractPubKey(*this, NULL, vch))
+        return Hash160(vch);
+    return 0;
+}
+>>>>>>> Fixed crashing of previous commit on some RPC commands.
 
 void ExtractAffectedKeys(const CKeyStore &keystore, const CScript& scriptPubKey, std::vector<CKeyID> &vKeys) {
     CAffectedKeysVisitor(keystore, vKeys).Process(scriptPubKey);

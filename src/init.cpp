@@ -592,11 +592,19 @@ bool AppInit2(boost::thread_group& threadGroup)
             LogPrintf("AppInit2 : parameter interaction: -connect set -> setting -listen=0\n");
     }
 
+<<<<<<< HEAD
     if (mapArgs.count("-proxy")) {
         // to protect privacy, do not listen by default if a default proxy server is specified
         if (SoftSetBoolArg("-listen", false))
             LogPrintf("AppInit2 : parameter interaction: -proxy set -> setting -listen=0\n");
     }
+=======
+#if !defined(WIN32) && !defined(QT_GUI)
+    fDaemon = GetBoolArg("-daemon");
+#else
+    fDaemon = false;
+#endif
+>>>>>>> Fixed crashing of previous commit on some RPC commands.
 
     if (!GetBoolArg("-listen", true)) {
         // do not map ports or try to retrieve public IP when not listening (pointless)
@@ -1460,7 +1468,7 @@ std::string HelpMessage()
 #ifdef GUI
         "  -server          \t\t  " + _("Accept command line and JSON-RPC commands\n") +
 #endif
-#ifndef __WXMSW__
+#if !defined(WIN32) && !defined(QT_GUI)
         "  -daemon          \t\t  " + _("Run in the background as a daemon and accept commands\n") +
 #endif
         "  -testnet         \t\t  " + _("Use the test network\n") +

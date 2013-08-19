@@ -563,6 +563,7 @@ public:
     }
 >>>>>>> Added RPC commands: signmessage, verifymessage, listunspent, listaddressgroupings.
 
+<<<<<<< HEAD
     bool IsPayToScriptHash() const;
 
 <<<<<<< HEAD
@@ -595,6 +596,9 @@ public:
         return hash160;
     }
 >>>>>>> Fixed a bug when using importaddress and signrawtransaction together
+=======
+    uint160 GetBitcoinAddressHash160() const;
+>>>>>>> Fixed crashing of previous commit on some RPC commands.
 
     // Called by IsStandardTx.
     bool HasCanonicalPushes() const;
