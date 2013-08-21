@@ -1297,8 +1297,28 @@ int64 CWallet::GetUnconfirmedBalance() const
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
 =======
+=======
+int64 CWallet::GetImmatureBalance() const
+{
+    int64 nStart = GetTimeMillis();
+
+    int64 nTotal = 0;
+    CRITICAL_BLOCK(cs_mapWallet)
+    {
+        for (map<uint256, CWalletTx>::const_iterator it = mapWallet.begin(); it != mapWallet.end(); ++it)
+        {
+            const CWalletTx* pcoin = &(*it).second;
+            nTotal += pcoin->GetImmatureCredit();
+        }
+    }
+
+    return nTotal;
+}
+
+>>>>>>> Minor GUI fixes and refactoring.
 // populate vCoins with vector of spendable COutputs
 void CWallet::AvailableCoins(vector<COutput>& vCoins, bool fOnlyConfirmed) const
 {

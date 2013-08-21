@@ -332,7 +332,7 @@ public:
 =======
     int64 GetBalance() const;
     int64 GetUnconfirmedBalance() const;
-    int64 GetImmatureBalance() const { return 0; }
+    int64 GetImmatureBalance() const;
     bool CreateTransaction(const std::vector<std::pair<CScript, int64> >& vecSend, CWalletTx& wtxNew, CReserveKey& reservekey, int64& nFeeRet);
     bool CreateTransaction(CScript scriptPubKey, int64 nValue, CWalletTx& wtxNew, CReserveKey& reservekey, int64& nFeeRet);
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
@@ -658,6 +658,7 @@ public:
 
     // memory only
 <<<<<<< HEAD
+<<<<<<< HEAD
     mutable bool fDebitCached;
     mutable bool fCreditCached;
     mutable bool fImmatureCreditCached;
@@ -673,16 +674,28 @@ public:
     mutable char fCreditCached;
     mutable char fAvailableCreditCached;
     mutable char fChangeCached;
+=======
+    mutable bool fDebitCached, fDebitInclNameCached;
+    mutable bool fCreditCached;
+    mutable bool fAvailableCreditCached;
+    mutable bool fChangeCached;
+>>>>>>> Minor GUI fixes and refactoring.
     mutable int64 nDebitCached, nDebitInclNameCached;
     mutable int64 nCreditCached;
     mutable int64 nAvailableCreditCached;
     mutable int64 nChangeCached;
+    mutable bool fImmatureCreditCached;
+    mutable int64 nImmatureCreditCached;
 
     // memory only UI hints
     mutable unsigned int nTimeDisplayed;
     mutable int nLinesDisplayed;
+<<<<<<< HEAD
     mutable char fConfirmedDisplayed;
 >>>>>>> Fixed "getbalance *". Includes patch from Bitcoin pull request #2272, plus special handling of OP_NAME_NEW.
+=======
+    mutable bool fConfirmedDisplayed;
+>>>>>>> Minor GUI fixes and refactoring.
 
     CWalletTx()
     {
@@ -722,11 +735,13 @@ public:
         fImmatureCreditCached = false;
         fAvailableCreditCached = false;
         fChangeCached = false;
+        fImmatureCreditCached = false;
         nDebitCached = 0;
         nDebitInclNameCached = 0;
         nCreditCached = 0;
         nImmatureCreditCached = 0;
         nAvailableCreditCached = 0;
+        nImmatureCreditCached = 0;
         nChangeCached = 0;
         nOrderPos = -1;
     }
@@ -815,6 +830,7 @@ public:
         fAvailableCreditCached = false;
         fDebitCached = false;
         fDebitInclNameCached = false;
+        fImmatureCreditCached = false;
         fChangeCached = false;
     }
 
@@ -893,7 +909,11 @@ public:
         return nCreditCached;
     }
 
+<<<<<<< HEAD
     int64_t GetImmatureCredit(bool fUseCache=true) const
+=======
+    int64 GetImmatureCredit(bool fUseCache=true) const
+>>>>>>> Minor GUI fixes and refactoring.
     {
         if (IsCoinBase() && GetBlocksToMaturity() > 0 && IsInMainChain())
         {
@@ -907,7 +927,11 @@ public:
         return 0;
     }
 
+<<<<<<< HEAD
     int64_t GetAvailableCredit(bool fUseCache=true) const
+=======
+    int64 GetAvailableCredit(bool fUseCache=true) const
+>>>>>>> Minor GUI fixes and refactoring.
     {
         // Must wait until coinbase is safely deep enough in the chain before valuing it
         if (IsCoinBase() && GetBlocksToMaturity() > 0)
