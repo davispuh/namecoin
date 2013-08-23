@@ -840,13 +840,19 @@ int CWalletTx::GetRequestCount() const
     return nRequests;
 }
 
+<<<<<<< HEAD
 void CWalletTx::GetAmounts(list<pair<CTxDestination, int64_t> >& listReceived,
                            list<pair<CTxDestination, int64_t> >& listSent, int64_t& nFee, string& strSentAccount) const
+=======
+void CWalletTx::GetAmounts(int64& nGeneratedImmature, int64& nGeneratedMature, list<pair<string, int64> >& listReceived,
+                           list<pair<string, int64> >& listSent, int64& nFee, string& strSentAccount, bool &fNameTx) const
+>>>>>>> listtransactions fix, various GUI fixes.
 {
     nFee = 0;
     listReceived.clear();
     listSent.clear();
     strSentAccount = strFromAccount;
+    fNameTx = false;
 
     // Compute fee:
 <<<<<<< HEAD
@@ -869,7 +875,9 @@ void CWalletTx::GetAmounts(list<pair<CTxDestination, int64_t> >& listReceived,
     // Compute the coin carried with the name operation
     // as difference of GetDebitInclName() and GetDebit()
     int64 nCarriedOverCoin = nDebit - GetDebit();
-    
+    if (nCarriedOverCoin != 0)
+        fNameTx = true;
+
     // Sent/received.  Standard client will never generate a send-to-multiple-recipients,
     // but non-standard clients might (so return a list of address/amount pairs)
 >>>>>>> GUI improvements and fixes (version 0.3.64)
@@ -961,9 +969,16 @@ void CWalletTx::GetAccountAmounts(const string& strAccount, int64_t& nReceived,
 
     int64_t allFee;
     string strSentAccount;
+<<<<<<< HEAD
     list<pair<CTxDestination, int64_t> > listReceived;
     list<pair<CTxDestination, int64_t> > listSent;
     GetAmounts(listReceived, listSent, allFee, strSentAccount);
+=======
+    list<pair<string, int64> > listReceived;
+    list<pair<string, int64> > listSent;
+    bool fNameTx;
+    GetAmounts(allGeneratedImmature, allGeneratedMature, listReceived, listSent, allFee, strSentAccount, fNameTx);
+>>>>>>> listtransactions fix, various GUI fixes.
 
     if (strAccount == strSentAccount)
     {
@@ -1248,10 +1263,14 @@ int64_t CWallet::GetBalance() const
         {
             const CWalletTx* pcoin = &(*it).second;
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (pcoin->IsTrusted())
                 nTotal += pcoin->GetAvailableCredit();
 =======
             if (!pcoin->IsConfirmed())
+=======
+            if (!pcoin->IsFinal() || !pcoin->IsConfirmed())
+>>>>>>> listtransactions fix, various GUI fixes.
                 continue;
             nTotal += pcoin->GetAvailableCredit();
 >>>>>>> Fixed "getbalance *". Includes patch from Bitcoin pull request #2272, plus special handling of OP_NAME_NEW.
@@ -1383,8 +1402,12 @@ void CWallet::AvailableCoins(vector<COutput>& vCoins, bool fOnlyConfirmed, const
 =======
        BOOST_FOREACH(const CWalletTx* pcoin, vCoins)
        {
+<<<<<<< HEAD
             if (!pcoin->IsConfirmed())
 >>>>>>> Fixed "getbalance *". Includes patch from Bitcoin pull request #2272, plus special handling of OP_NAME_NEW.
+=======
+            if (!pcoin->IsFinal() || !pcoin->IsConfirmed())
+>>>>>>> listtransactions fix, various GUI fixes.
                 continue;
 
             if (pcoin->IsCoinBase() && pcoin->GetBlocksToMaturity() > 0)

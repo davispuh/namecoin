@@ -161,9 +161,8 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
             int64 nTxFee = nDebit - (wtx.GetValueOut() - nCarriedOverCoin);
 >>>>>>> Added GUI tab for name_* commands. Version 0.3.60.
 
-            for (unsigned int nOut = 0; nOut < wtx.vout.size(); nOut++)
+            BOOST_FOREACH(const CTxOut& txout, wtx.vout)
             {
-                const CTxOut& txout = wtx.vout[nOut];
                 TransactionRecord sub(hash, nTime);
                 sub.idx = parts.size();
 

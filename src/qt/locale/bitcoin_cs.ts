@@ -1646,6 +1646,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+9"/>
         <source>&amp;Name servers:
 (one per line,
@@ -1742,6 +1743,19 @@ Leave empty, if not needed.</source>
     </message>
     <message>
         <location line="+12"/>
+=======
+        <location line="+44"/>
+        <source>&amp;Address:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>&amp;Transfer to:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+35"/>
+>>>>>>> listtransactions fix, various GUI fixes.
         <source>Choose address from address book</source>
         <translation type="unfinished">Vyber adresu z adresáře</translation>
     </message>
@@ -1757,31 +1771,56 @@ Leave empty, if not needed.</source>
     </message>
     <message>
         <location line="+10"/>
+        <location line="+56"/>
         <source>Alt+P</source>
         <translation type="unfinished">Alt+P</translation>
     </message>
     <message>
-        <location line="-351"/>
+        <location line="-26"/>
+        <source>Namecoin address to which the name is assigned</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Copy address to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-412"/>
         <source>Domain name:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+360"/>
+        <location line="+322"/>
+        <source>The Namecoin address to transfer
+the domain to, e.g.
+N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9
+
+Leave empty, if not needed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+53"/>
         <source>(can be left empty)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../configurenamedialog.cpp" line="+47"/>
+        <location filename="../configurenamedialog.cpp" line="+51"/>
         <source>(not a domain name)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+120"/>
+        <location line="+121"/>
         <source>Name_firstupdate transaction will be queued and broadcasted when corresponding name_new is %1 blocks old</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+1"/>
+        <source>Do not close your client while the name is pending!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
         <source>Name_update transaction will be issued immediately</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1796,7 +1835,7 @@ Leave empty, if not needed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+81"/>
+        <location line="+86"/>
         <source>Valid JSON string</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2160,6 +2199,11 @@ to the network and creates a pending name_firstupdate transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+16"/>
+        <source>Enter Namecoin address (or prefix of it)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+31"/>
         <source>Double-click name to configure</source>
         <translation type="unfinished"></translation>
@@ -2171,7 +2215,7 @@ to the network and creates a pending name_firstupdate transaction.</source>
     </message>
     <message>
         <location line="+3"/>
-        <location filename="../managenamespage.cpp" line="+74"/>
+        <location filename="../managenamespage.cpp" line="+86"/>
         <source>&amp;Configure Name...</source>
 >>>>>>> GUI improvements and fixes (version 0.3.64)
         <translation type="unfinished"></translation>
@@ -2188,7 +2232,7 @@ to the network and creates a pending name_firstupdate transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../managenamespage.cpp" line="-2"/>
+        <location filename="../managenamespage.cpp" line="-3"/>
         <source>Copy &amp;Name</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2198,7 +2242,12 @@ to the network and creates a pending name_firstupdate transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+33"/>
+        <location line="+1"/>
+        <source>Copy &amp;Address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+37"/>
         <source>Name filter</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2208,7 +2257,12 @@ to the network and creates a pending name_firstupdate transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+79"/>
+        <location line="+1"/>
+        <source>Address filter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+90"/>
         <source>Name registration</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2244,6 +2298,11 @@ to the network and creates a pending name_firstupdate transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+1"/>
+        <source>This will issue both a name_new and a postponed name_firstupdate. Let the program run for three hours to make sure the process can finish.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+2"/>
         <source>Confirm name registration</source>
         <translation type="unfinished"></translation>
@@ -2254,7 +2313,7 @@ to the network and creates a pending name_firstupdate transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+87"/>
+        <location line="+93"/>
         <source>Export Registered Names Data</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2264,7 +2323,7 @@ to the network and creates a pending name_firstupdate transaction.</source>
         <translation type="unfinished">CSV formát (*.csv)</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+16"/>
         <source>Error exporting</source>
         <translation type="unfinished">Chyba při exportu</translation>
     </message>
@@ -2277,7 +2336,7 @@ to the network and creates a pending name_firstupdate transaction.</source>
 <context>
     <name>NameTableModel</name>
     <message>
-        <location filename="../nametablemodel.cpp" line="+347"/>
+        <location filename="../nametablemodel.cpp" line="+365"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2292,13 +2351,23 @@ to the network and creates a pending name_firstupdate transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+126"/>
+        <location line="+0"/>
+        <source>Address</source>
+        <translation type="unfinished">Adresa</translation>
+    </message>
+    <message>
+        <location line="+140"/>
         <source>Name registered using Namecoin.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Data associated with the name.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Namecoin address to which the name is registered.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3365,17 +3434,31 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
     <message>
         <location filename="../overviewpage.cpp" line="+120"/>
         <location line="+1"/>
+<<<<<<< HEAD
         <source>out of sync</source>
         <translation>nesynchronizováno</translation>
+=======
+        <location line="+22"/>
+        <location line="+88"/>
+        <source>To</source>
+        <translation>Pro</translation>
+>>>>>>> listtransactions fix, various GUI fixes.
     </message>
 </context>
 <context>
     <name>PaymentServer</name>
     <message>
+<<<<<<< HEAD
         <location filename="../paymentserver.cpp" line="+403"/>
         <location line="+13"/>
         <source>URI handling</source>
         <translation>Zpracování URI</translation>
+=======
+        <location line="-107"/>
+        <location line="+2"/>
+        <source>own address</source>
+        <translation>vlastní adresa</translation>
+>>>>>>> listtransactions fix, various GUI fixes.
     </message>
     <message>
         <location line="+1"/>
@@ -3383,6 +3466,7 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <translation>Nepodařilo se analyzovat URI! Důvodem může být neplatná Bitcoinová adresa nebo poškozené parametry URI.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+96"/>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
         <translation>Požadovaná platební částka ve výši %1 je příliš malá (požadovaná za prach).</translation>
@@ -6440,6 +6524,12 @@ Adresa: %4
 <<<<<<< HEAD
         <location line="+53"/>
 =======
+=======
+        <location line="+37"/>
+        <location line="+12"/>
+        <location line="+115"/>
+        <location line="+16"/>
+>>>>>>> listtransactions fix, various GUI fixes.
         <location line="+30"/>
 >>>>>>> Committing original src/qt
         <source>Credit</source>
@@ -6447,16 +6537,21 @@ Adresa: %4
     </message>
     <message numerus="yes">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="-125"/>
 =======
         <location line="-102"/>
 >>>>>>> Committing original src/qt
+=======
+        <location line="-171"/>
+>>>>>>> listtransactions fix, various GUI fixes.
         <source>matures in %n more block(s)</source>
         <translation>
             <numerusform>dozraje po jednom bloku</numerusform>
             <numerusform>dozraje po %n blocích</numerusform>
             <numerusform>dozraje po %n blocích</numerusform>
         </translation>
+<<<<<<< HEAD
     </message>
     <message>
         <location line="+2"/>
@@ -7206,6 +7301,8 @@ Pokud konfigurační soubor ještě neexistuje, vytvoř ho tak, aby ho mohl čí
         <location line="+3"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
         <translation type="unfinished">Při nastavování naslouchacího RPC portu %i pro IPv4 nastala chyba: %s</translation>
+=======
+>>>>>>> listtransactions fix, various GUI fixes.
     </message>
     <message>
         <location line="+2"/>
@@ -7213,9 +7310,23 @@ Pokud konfigurační soubor ještě neexistuje, vytvoř ho tak, aby ho mohl čí
         <translation type="unfinished">Při nastavování naslouchacího RPC portu %u pro IPv6 nastala chyba, vracím se k IPv4: %s</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation type="unfinished">Poslouchat na zadané adrese. Pro zápis IPv6 adresy použij notaci [adresa]:port</translation>
+=======
+        <location line="+74"/>
+        <source>Name operation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+40"/>
+        <location line="+8"/>
+        <location line="+14"/>
+        <location line="+30"/>
+        <source>Debit</source>
+        <translation>Výdaj</translation>
+>>>>>>> listtransactions fix, various GUI fixes.
     </message>
     <message>
         <location line="+3"/>
@@ -7434,9 +7545,15 @@ Pokud konfigurační soubor ještě neexistuje, vytvoř ho tak, aby ho mohl čí
         <translation type="unfinished">Upozornění: Zobrazené transakce nemusí být správné! Možná potřebuješ aktualizovat nebo ostatní uzly potřebují aktualizovat.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Namecoin will not work properly.</source>
         <translation type="unfinished">Upozornění: Zkontroluj, že máš v počítači správně nastavený datum a čas! Pokud jsou nastaveny špatně, Namecoin nebude fungovat správně.</translation>
+=======
+        <location line="-254"/>
+        <source>, has not been successfully broadcast yet</source>
+        <translation>, ještě nebylo rozesláno</translation>
+>>>>>>> listtransactions fix, various GUI fixes.
     </message>
     <message>
         <location line="+3"/>
@@ -7876,7 +7993,7 @@ Pokud konfigurační soubor ještě neexistuje, vytvoř ho tak, aby ho mohl čí
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+564"/>
+        <location filename="../walletmodel.cpp" line="+565"/>
         <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation type="unfinished"></translation>
     </message>

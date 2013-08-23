@@ -36,6 +36,7 @@ static const int TOOLTIP_WRAP_THRESHOLD = 80;
 static const int MAX_URI_LENGTH = 255;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* Maximum somewhat-sane size of a payment request file */
 static const int MAX_PAYMENT_REQUEST_SIZE = 50000; // bytes
 
@@ -46,6 +47,12 @@ static const int MAX_PAYMENT_REQUEST_SIZE = 50000; // bytes
 #define SPINNER_FRAMES 35
 
 =======
+=======
+// Should be set to MAX_VALUE_LENGTH (from namecoin.h) when it's supported by the network
+// (currently due to limitations of CScript the limit is 519 bytes)
+static const int GUI_MAX_VALUE_LENGTH = 519;
+
+>>>>>>> listtransactions fix, various GUI fixes.
 /* QRCodeDialog -- size of exported QR Code image */
 #define EXPORT_IMAGE_SIZE 256
 

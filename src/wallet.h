@@ -967,8 +967,13 @@ public:
         return nChangeCached;
     }
 
+<<<<<<< HEAD
     void GetAmounts(std::list<std::pair<CTxDestination, int64_t> >& listReceived,
                     std::list<std::pair<CTxDestination, int64_t> >& listSent, int64_t& nFee, std::string& strSentAccount) const;
+=======
+    void GetAmounts(int64& nGeneratedImmature, int64& nGeneratedMature, std::list<std::pair<std::string /* address */, int64> >& listReceived,
+                    std::list<std::pair<std::string /* address */, int64> >& listSent, int64& nFee, std::string& strSentAccount, bool &fNameTx) const;
+>>>>>>> listtransactions fix, various GUI fixes.
 
     void GetAccountAmounts(const std::string& strAccount, int64_t& nReceived,
                            int64_t& nSent, int64_t& nFee) const;

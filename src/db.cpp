@@ -23,8 +23,13 @@
 #include "auxpow.h"
 >>>>>>> Merged mining
 #include <boost/filesystem.hpp>
+<<<<<<< HEAD
 #include <boost/version.hpp>
 #include <openssl/rand.h>
+=======
+#include <boost/filesystem/fstream.hpp>
+#include <boost/algorithm/string/predicate.hpp> // for starts_with(), ends_with()
+>>>>>>> listtransactions fix, various GUI fixes.
 
 using namespace std;
 using namespace boost;
@@ -168,16 +173,20 @@ void CDBEnv::EnvShutdown()
     unsigned int nMinutes = 0;
     if (fReadOnly)
         nMinutes = 1;
+
     if (strFile == "addr.dat")
         nMinutes = 2;
-    if (strFile == "blkindex.dat")
-        nMinutes = 2;         
-    if (strFile == "blk0001.dat" || strFile == "blk0002.dat" || strFile == "blk0003.dat")  // todo: make this proper :)
+    else if (strFile == "nameindex.dat" || strFile == "nameindexfull.dat")
         nMinutes = 2;
-    if (strFile == "nameindex.dat" || strFile == "nameindexfull.dat")
+    else if (strFile == "blkindex.dat")
+    {
         nMinutes = 2;
-    if (strFile == "blkindex.dat" && IsInitialBlockDownload() && nBestHeight % 5000 != 0)
-        nMinutes = 5;
+        if (IsInitialBlockDownload() && nBestHeight % 5000 != 0)
+            nMinutes = 5;
+    }
+    else if (boost::algorithm::starts_with(strFile, "blk") && boost::algorithm::ends_with(strFile, ".dat"))
+        nMinutes = 2;
+
     dbenv.txn_checkpoint(0, nMinutes, 0);
 
     CRITICAL_BLOCK(cs_db)

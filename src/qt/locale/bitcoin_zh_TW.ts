@@ -1853,7 +1853,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+44"/>
-        <source>&amp;Transfer to:</source>
+        <source>&amp;Address:</source>
         <translation type="unfinished"></translation>
     </message>
 <<<<<<< HEAD
@@ -1907,15 +1907,17 @@ ns0.xname.org
 <<<<<<< HEAD
 =======
     <message>
-        <location line="+18"/>
-        <source>The Namecoin address to transfer domain to
-(e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9).
-Leave empty, if not needed.</source>
+        <location line="+10"/>
+        <source>&amp;Transfer to:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
 >>>>>>> GUI improvements and fixes (version 0.3.64)
         <location line="+12"/>
+=======
+        <location line="+35"/>
+>>>>>>> listtransactions fix, various GUI fixes.
         <source>Choose address from address book</source>
         <translation type="unfinished">從位址簿中選一個位址</translation>
 =======
@@ -1938,14 +1940,38 @@ Leave empty, if not needed.</source>
         <source>Paste address from clipboard</source>
         <translation type="unfinished">從剪貼簿貼上位址</translation>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         <location line="-80"/>
         <location line="+73"/>
         <source>Enter SSL certificate fingerprint if you want to use HTTPS</source>
+=======
+    </message>
+    <message>
+        <location line="+10"/>
+        <location line="+56"/>
+        <source>Alt+P</source>
+        <translation type="unfinished">Alt+P</translation>
+    </message>
+    <message>
+        <location line="-26"/>
+        <source>Namecoin address to which the name is assigned</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Copy address to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-412"/>
+        <source>Domain name:</source>
+>>>>>>> listtransactions fix, various GUI fixes.
         <translation type="unfinished"></translation>
 >>>>>>> GUI improvements and fixes (version 0.3.64)
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-33"/>
         <source>&amp;IP Configuration</source>
         <translation type="unfinished"></translation>
@@ -1968,6 +1994,39 @@ Leave empty, if not needed.</source>
         <location line="+7"/>
         <source>Subdomains will be mapped to the same IP</source>
 >>>>>>> GUI improvements and fixes (version 0.3.64)
+=======
+        <location line="+322"/>
+        <source>The Namecoin address to transfer
+the domain to, e.g.
+N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9
+
+Leave empty, if not needed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+53"/>
+        <source>(can be left empty)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../configurenamedialog.cpp" line="+51"/>
+        <source>(not a domain name)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+121"/>
+        <source>Name_firstupdate transaction will be queued and broadcasted when corresponding name_new is %1 blocks old</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do not close your client while the name is pending!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Name_update transaction will be issued immediately</source>
+>>>>>>> listtransactions fix, various GUI fixes.
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1986,8 +2045,13 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+15"/>
         <source>Enter JSON string that will be associated with the name</source>
+=======
+        <location line="+86"/>
+        <source>Valid JSON string</source>
+>>>>>>> listtransactions fix, various GUI fixes.
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2463,6 +2527,11 @@ Leave empty, if not needed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+16"/>
+        <source>Enter Namecoin address (or prefix of it)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+31"/>
         <source>Double-click name to configure</source>
         <translation type="unfinished"></translation>
@@ -2474,12 +2543,12 @@ Leave empty, if not needed.</source>
     </message>
     <message>
         <location line="+3"/>
-        <location filename="../managenamespage.cpp" line="+74"/>
+        <location filename="../managenamespage.cpp" line="+86"/>
         <source>&amp;Configure Name...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../managenamespage.cpp" line="-2"/>
+        <location filename="../managenamespage.cpp" line="-3"/>
         <source>Copy &amp;Name</source>
 =======
         <source>Name_update transaction will be issued immediately</source>
@@ -2493,7 +2562,12 @@ Leave empty, if not needed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+33"/>
+        <location line="+1"/>
+        <source>Copy &amp;Address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+37"/>
         <source>Name filter</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2503,7 +2577,12 @@ Leave empty, if not needed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+79"/>
+        <location line="+1"/>
+        <source>Address filter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+90"/>
         <source>Name registration</source>
 =======
         <source>Update Name</source>
@@ -2551,6 +2630,14 @@ Leave empty, if not needed.</source>
     <name>EditAddressDialog</name>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        <location line="+1"/>
+        <source>This will issue both a name_new and a postponed name_firstupdate. Let the program run for three hours to make sure the process can finish.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+>>>>>>> listtransactions fix, various GUI fixes.
         <location line="+2"/>
         <source>Confirm name registration</source>
         <translation type="unfinished"></translation>
@@ -2561,7 +2648,7 @@ Leave empty, if not needed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+87"/>
+        <location line="+93"/>
         <source>Export Registered Names Data</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2571,7 +2658,7 @@ Leave empty, if not needed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+16"/>
         <source>Error exporting</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2584,7 +2671,7 @@ Leave empty, if not needed.</source>
 <context>
     <name>NameTableModel</name>
     <message>
-        <location filename="../nametablemodel.cpp" line="+347"/>
+        <location filename="../nametablemodel.cpp" line="+365"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2599,13 +2686,23 @@ Leave empty, if not needed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+126"/>
+        <location line="+0"/>
+        <source>Address</source>
+        <translation type="unfinished">位址</translation>
+    </message>
+    <message>
+        <location line="+140"/>
         <source>Name registered using Namecoin.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Data associated with the name.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Namecoin address to which the name is registered.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7207,6 +7304,7 @@ rpcpassword=%s
     <message>
 <<<<<<< HEAD
         <location line="+1"/>
+<<<<<<< HEAD
         <source>Bitcoin Core Daemon</source>
         <translation>位元幣核心護靈</translation>
     </message>
@@ -7220,6 +7318,15 @@ rpcpassword=%s
         <source>Block creation options:</source>
         <translation>區塊製造選項:</translation>
 =======
+=======
+        <location line="+22"/>
+        <location line="+88"/>
+        <source>To</source>
+        <translation>目的</translation>
+    </message>
+    <message>
+        <location line="-107"/>
+>>>>>>> listtransactions fix, various GUI fixes.
         <location line="+2"/>
         <source>Block creation options:</source>
         <translation>區塊產生選項:</translation>
@@ -7232,6 +7339,7 @@ rpcpassword=%s
         <translation>只連線到指定節點(可多個)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Connect through SOCKS proxy</source>
         <translation>透過 SOCKS 代理伺服器來連線</translation>
@@ -7240,6 +7348,22 @@ rpcpassword=%s
         <location line="+1"/>
         <source>Connect to JSON-RPC on &lt;port&gt; (default: 8332 or testnet: 18332)</source>
         <translation>連線到埠號 &lt;port&gt; 上的 JSON-RPC 伺服器(預設值: 8332，或若是測試網路: 18332)</translation>
+=======
+        <location line="+37"/>
+        <location line="+12"/>
+        <location line="+115"/>
+        <location line="+16"/>
+        <location line="+30"/>
+        <source>Credit</source>
+        <translation>入帳</translation>
+    </message>
+    <message numerus="yes">
+        <location line="-171"/>
+        <source>matures in %n more block(s)</source>
+        <translation>
+            <numerusform>將在 %n 個區塊產出後熟成</numerusform>
+        </translation>
+>>>>>>> listtransactions fix, various GUI fixes.
     </message>
     <message>
         <location line="+2"/>
@@ -7247,11 +7371,25 @@ rpcpassword=%s
         <translation>只連線至指定節點(可多個)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
 <<<<<<< HEAD
 >>>>>>> Committing original src/qt
         <source>Corrupted block database detected</source>
         <translation>發現區塊資料庫壞掉了</translation>
+=======
+        <location line="+74"/>
+        <source>Name operation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+40"/>
+        <location line="+8"/>
+        <location line="+14"/>
+        <location line="+30"/>
+        <source>Debit</source>
+        <translation>出帳</translation>
+>>>>>>> listtransactions fix, various GUI fixes.
     </message>
     <message>
         <location line="+1"/>
@@ -7362,11 +7500,15 @@ rpcpassword=%s
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Failed to read block info</source>
         <translation>讀取區塊資訊失敗</translation>
 =======
         <location line="-185"/>
+=======
+        <location line="-254"/>
+>>>>>>> listtransactions fix, various GUI fixes.
         <source>, has not been successfully broadcast yet</source>
         <translation>, 尚未成功公告出去</translation>
     </message>
@@ -7745,7 +7887,7 @@ rpcpassword=%s
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+564"/>
+        <location filename="../walletmodel.cpp" line="+565"/>
         <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation type="unfinished"></translation>
     </message>

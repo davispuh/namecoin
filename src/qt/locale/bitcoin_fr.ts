@@ -1819,18 +1819,16 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+44"/>
+        <source>&amp;Address:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
         <source>&amp;Transfer to:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+18"/>
-        <source>The Namecoin address to transfer domain to
-(e.g. N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9).
-Leave empty, if not needed.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+12"/>
+        <location line="+35"/>
         <source>Choose address from address book</source>
         <translation type="unfinished">Choisir une adresse dans le carnet d&apos;adresses</translation>
     </message>
@@ -1846,31 +1844,56 @@ Leave empty, if not needed.</source>
     </message>
     <message>
         <location line="+10"/>
+        <location line="+56"/>
         <source>Alt+P</source>
         <translation type="unfinished">Alt+P</translation>
     </message>
     <message>
-        <location line="-351"/>
+        <location line="-26"/>
+        <source>Namecoin address to which the name is assigned</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Copy address to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-412"/>
         <source>Domain name:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+360"/>
+        <location line="+322"/>
+        <source>The Namecoin address to transfer
+the domain to, e.g.
+N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9
+
+Leave empty, if not needed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+53"/>
         <source>(can be left empty)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../configurenamedialog.cpp" line="+47"/>
+        <location filename="../configurenamedialog.cpp" line="+51"/>
         <source>(not a domain name)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+120"/>
+        <location line="+121"/>
         <source>Name_firstupdate transaction will be queued and broadcasted when corresponding name_new is %1 blocks old</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+1"/>
+        <source>Do not close your client while the name is pending!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
         <source>Name_update transaction will be issued immediately</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1885,7 +1908,7 @@ Leave empty, if not needed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+81"/>
+        <location line="+86"/>
         <source>Valid JSON string</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2054,6 +2077,11 @@ to the network and creates a pending name_firstupdate transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+16"/>
+        <source>Enter Namecoin address (or prefix of it)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+31"/>
         <source>Double-click name to configure</source>
         <translation type="unfinished"></translation>
@@ -2065,12 +2093,12 @@ to the network and creates a pending name_firstupdate transaction.</source>
     </message>
     <message>
         <location line="+3"/>
-        <location filename="../managenamespage.cpp" line="+74"/>
+        <location filename="../managenamespage.cpp" line="+86"/>
         <source>&amp;Configure Name...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../managenamespage.cpp" line="-2"/>
+        <location filename="../managenamespage.cpp" line="-3"/>
         <source>Copy &amp;Name</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2080,7 +2108,12 @@ to the network and creates a pending name_firstupdate transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+33"/>
+        <location line="+1"/>
+        <source>Copy &amp;Address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+37"/>
         <source>Name filter</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2090,7 +2123,12 @@ to the network and creates a pending name_firstupdate transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+79"/>
+        <location line="+1"/>
+        <source>Address filter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+90"/>
         <source>Name registration</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2126,6 +2164,11 @@ to the network and creates a pending name_firstupdate transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+1"/>
+        <source>This will issue both a name_new and a postponed name_firstupdate. Let the program run for three hours to make sure the process can finish.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+2"/>
         <source>Confirm name registration</source>
         <translation type="unfinished"></translation>
@@ -2136,7 +2179,7 @@ to the network and creates a pending name_firstupdate transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+87"/>
+        <location line="+93"/>
         <source>Export Registered Names Data</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2146,7 +2189,7 @@ to the network and creates a pending name_firstupdate transaction.</source>
         <translation type="unfinished">Valeurs séparées par des virgules (*.csv)</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+16"/>
         <source>Error exporting</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2159,7 +2202,7 @@ to the network and creates a pending name_firstupdate transaction.</source>
 <context>
     <name>NameTableModel</name>
     <message>
-        <location filename="../nametablemodel.cpp" line="+347"/>
+        <location filename="../nametablemodel.cpp" line="+365"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2174,13 +2217,23 @@ to the network and creates a pending name_firstupdate transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+126"/>
+        <location line="+0"/>
+        <source>Address</source>
+        <translation type="unfinished">Adresse</translation>
+    </message>
+    <message>
+        <location line="+140"/>
         <source>Name registered using Namecoin.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Data associated with the name.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Namecoin address to which the name is registered.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7895,6 +7948,7 @@ Si le fichier n&apos;existe pas, créez-le avec les droits de lecture accordés 
         <translation>Utiliser un serveur mandataire SOCKS5 séparé pour atteindre les pairs par les services cachés de Tor (par défaut : -proxy)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation>Attention : -paytxfee est réglée sur un montant très élevé ! Il s&apos;agit des frais de transaction que vous payerez si vous envoyez une transaction.</translation>
@@ -7903,6 +7957,19 @@ Si le fichier n&apos;existe pas, créez-le avec les droits de lecture accordés 
         <location line="+3"/>
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Bitcoin will not work properly.</source>
         <translation>Attention : Veuillez vérifier que la date et l&apos;heure de votre ordinateur sont justes ! Si votre horloge n&apos;est pas à l&apos;heure, Bitcoin ne fonctionnera pas correctement.</translation>
+=======
+        <location line="+1"/>
+        <location line="+22"/>
+        <location line="+88"/>
+        <source>To</source>
+        <translation>À</translation>
+    </message>
+    <message>
+        <location line="-107"/>
+        <location line="+2"/>
+        <source>own address</source>
+        <translation>votre propre adresse</translation>
+>>>>>>> listtransactions fix, various GUI fixes.
     </message>
     <message>
         <location line="+3"/>
@@ -7910,6 +7977,7 @@ Si le fichier n&apos;existe pas, créez-le avec les droits de lecture accordés 
         <translation>Attention : Le réseau ne semble pas totalement d&apos;accord ! Quelques mineurs semblent éprouver des difficultés.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
         <translation>Attention : Nous ne semblons pas être en accord complet avec nos pairs ! Vous pourriez avoir besoin d&apos;effectuer une mise à niveau, ou d&apos;autres nœuds du réseau pourraient avoir besoin d&apos;effectuer une mise à niveau.</translation>
@@ -7920,6 +7988,23 @@ Si le fichier n&apos;existe pas, créez-le avec les droits de lecture accordés 
         <source>Corrupted block database detected. Please restart the client with -reindex.</source>
         <translation>Base de données de blocs corrompue détectée. Veuillez redémarrer le client avec -reindex.</translation>
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+        <location line="+37"/>
+        <location line="+12"/>
+        <location line="+115"/>
+        <location line="+16"/>
+        <location line="+30"/>
+        <source>Credit</source>
+        <translation>Crédit</translation>
+    </message>
+    <message numerus="yes">
+        <location line="-171"/>
+        <source>matures in %n more block(s)</source>
+        <translation>
+            <numerusform>arrive à maturité dans %n bloc</numerusform>
+            <numerusform>arrive à maturité dans %n blocs de plus</numerusform>
+        </translation>
+>>>>>>> listtransactions fix, various GUI fixes.
     </message>
     <message>
         <location line="+2"/>
@@ -7927,9 +8012,23 @@ Si le fichier n&apos;existe pas, créez-le avec les droits de lecture accordés 
         <translation>Une erreur est survenue lors de l&apos;initialisation de l&apos;environnement de base de données %s ! Pour récupérer, SAUVEGARDEZ CE RÉPERTOIRE, puis effacez-y tous les fichiers à l&apos;exception de wallet.dat.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Erreur : la transaction a été rejetée ! Cela peut arriver si certaines pièces de votre porte-monnaie étaient déjà dépensées, par exemple si vous avez utilisé une copie de wallet.dat et les pièces ont été dépensées avec cette copie sans être marquées comme telles ici.</translation>
+=======
+        <location line="+74"/>
+        <source>Name operation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+40"/>
+        <location line="+8"/>
+        <location line="+14"/>
+        <location line="+30"/>
+        <source>Debit</source>
+        <translation>Débit</translation>
+>>>>>>> listtransactions fix, various GUI fixes.
     </message>
     <message>
         <location line="+4"/>
@@ -8008,6 +8107,7 @@ Si le fichier n&apos;existe pas, créez-le avec les droits de lecture accordés 
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Bitcoin Core Daemon</source>
         <translation>Démon Bitcoin Core</translation>
@@ -8015,6 +8115,9 @@ Si le fichier n&apos;existe pas, créez-le avec les droits de lecture accordés 
 =======
 >>>>>>> GUI improvements and fixes (version 0.3.64)
         <location line="-185"/>
+=======
+        <location line="-254"/>
+>>>>>>> listtransactions fix, various GUI fixes.
         <source>, has not been successfully broadcast yet</source>
         <translation>, n’a pas encore été diffusée avec succès</translation>
     </message>
@@ -8417,6 +8520,7 @@ Si le fichier n&apos;existe pas, créez-le avec les droits de lecture accordés 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Send command to Bitcoin server</source>
         <translation>Envoyer une commande au serveur Bitcoin</translation>
@@ -8428,6 +8532,9 @@ Si le fichier n&apos;existe pas, créez-le avec les droits de lecture accordés 
 =======
         <location filename="../walletmodel.cpp" line="+564"/>
 >>>>>>> GUI improvements and fixes (version 0.3.64)
+=======
+        <location filename="../walletmodel.cpp" line="+565"/>
+>>>>>>> listtransactions fix, various GUI fixes.
         <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation type="unfinished"></translation>
     </message>

@@ -1643,6 +1643,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+44"/>
+<<<<<<< HEAD
         <source>&amp;Transfer to:</source>
 >>>>>>> GUI improvements and fixes (version 0.3.64)
         <translation type="unfinished"></translation>
@@ -1728,8 +1729,18 @@ p, li { white-space: pre-wrap; }
 Leave empty, if not needed.</source>
         <translation type="unfinished"></translation>
     </message>
+=======
+        <source>&amp;Address:</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
-        <location line="+12"/>
+        <location line="+10"/>
+        <source>&amp;Transfer to:</source>
+        <translation type="unfinished"></translation>
+    </message>
+>>>>>>> listtransactions fix, various GUI fixes.
+    <message>
+        <location line="+35"/>
         <source>Choose address from address book</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1745,31 +1756,56 @@ Leave empty, if not needed.</source>
     </message>
     <message>
         <location line="+10"/>
+        <location line="+56"/>
         <source>Alt+P</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-351"/>
+        <location line="-26"/>
+        <source>Namecoin address to which the name is assigned</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Copy address to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-412"/>
         <source>Domain name:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+360"/>
+        <location line="+322"/>
+        <source>The Namecoin address to transfer
+the domain to, e.g.
+N1KHAL5C1CRzy58NdJwp1tbLze3XrkFxx9
+
+Leave empty, if not needed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+53"/>
         <source>(can be left empty)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../configurenamedialog.cpp" line="+47"/>
+        <location filename="../configurenamedialog.cpp" line="+51"/>
         <source>(not a domain name)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+120"/>
+        <location line="+121"/>
         <source>Name_firstupdate transaction will be queued and broadcasted when corresponding name_new is %1 blocks old</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+1"/>
+        <source>Do not close your client while the name is pending!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
         <source>Name_update transaction will be issued immediately</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1784,7 +1820,7 @@ Leave empty, if not needed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+81"/>
+        <location line="+86"/>
         <source>Valid JSON string</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1959,9 +1995,20 @@ Leave empty, if not needed.</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+63"/>
         <source>(un)select all</source>
         <translation type="unfinished"/>
+=======
+        <location line="+16"/>
+        <source>Enter Namecoin address (or prefix of it)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Double-click name to configure</source>
+        <translation type="unfinished"></translation>
+>>>>>>> listtransactions fix, various GUI fixes.
     </message>
     <message>
         <location line="+13"/>
@@ -1969,6 +2016,7 @@ Leave empty, if not needed.</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+16"/>
         <source>List mode</source>
         <translation type="unfinished"/>
@@ -1980,6 +2028,16 @@ Leave empty, if not needed.</source>
 =======
         <location filename="../forms/editaddressdialog.ui" line="+14"/>
         <source>Edit Address</source>
+=======
+        <location line="+3"/>
+        <location filename="../managenamespage.cpp" line="+86"/>
+        <source>&amp;Configure Name...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../managenamespage.cpp" line="-3"/>
+        <source>Copy &amp;Name</source>
+>>>>>>> listtransactions fix, various GUI fixes.
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1988,8 +2046,18 @@ Leave empty, if not needed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+10"/>
         <source>The label associated with this address book entry</source>
+=======
+        <location line="+1"/>
+        <source>Copy &amp;Address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+37"/>
+        <source>Name filter</source>
+>>>>>>> listtransactions fix, various GUI fixes.
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1998,8 +2066,18 @@ Leave empty, if not needed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+10"/>
         <source>The address associated with this address book entry. This can only be modified for sending addresses.</source>
+=======
+        <location line="+1"/>
+        <source>Address filter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+90"/>
+        <source>Name registration</source>
+>>>>>>> listtransactions fix, various GUI fixes.
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2033,8 +2111,18 @@ Leave empty, if not needed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+10"/>
         <source>Could not unlock wallet.</source>
+=======
+        <location line="+1"/>
+        <source>This will issue both a name_new and a postponed name_firstupdate. Let the program run for three hours to make sure the process can finish.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Confirm name registration</source>
+>>>>>>> listtransactions fix, various GUI fixes.
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2045,9 +2133,15 @@ Leave empty, if not needed.</source>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location line="+10"/>
         <source>Address</source>
         <translation type="unfinished"/>
+=======
+        <location line="+93"/>
+        <source>Export Registered Names Data</source>
+        <translation type="unfinished"></translation>
+>>>>>>> listtransactions fix, various GUI fixes.
     </message>
     <message>
         <location line="+5"/>
@@ -2055,9 +2149,15 @@ Leave empty, if not needed.</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
         <source>Confirmations</source>
         <translation type="unfinished"/>
+=======
+        <location line="+16"/>
+        <source>Error exporting</source>
+        <translation type="unfinished"></translation>
+>>>>>>> listtransactions fix, various GUI fixes.
     </message>
     <message>
         <location line="+3"/>
@@ -2065,9 +2165,15 @@ Leave empty, if not needed.</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
         <source>Priority</source>
         <translation type="unfinished"/>
+=======
+        <location filename="../nametablemodel.cpp" line="+365"/>
+        <source>Name</source>
+        <translation type="unfinished"></translation>
+>>>>>>> listtransactions fix, various GUI fixes.
     </message>
     <message>
         <location filename="../coincontroldialog.cpp" line="+42"/>
@@ -2080,9 +2186,20 @@ Leave empty, if not needed.</source>
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+11"/>
         <source>&amp;Label</source>
         <translation type="unfinished"/>
+=======
+        <location line="+0"/>
+        <source>Address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+140"/>
+        <source>Name registered using Namecoin.</source>
+        <translation type="unfinished"></translation>
+>>>>>>> listtransactions fix, various GUI fixes.
     </message>
     <message>
         <location line="+10"/>
@@ -2095,8 +2212,19 @@ Leave empty, if not needed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-12"/>
         <source>version</source>
+=======
+        <location line="+2"/>
+        <source>Namecoin address to which the name is registered.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Number of blocks, after which the name will expire. Update name to renew it.
+Empty cell means pending (awaiting automatic name_firstupdate or awaiting network confirmation).</source>
+>>>>>>> listtransactions fix, various GUI fixes.
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3083,18 +3211,31 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+20"/>
         <source>Total number of transactions in wallet</source>
+=======
+        <location line="+1"/>
+        <location line="+22"/>
+        <location line="+88"/>
+        <source>To</source>
+>>>>>>> listtransactions fix, various GUI fixes.
         <translation type="unfinished"></translation>
 >>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
 <<<<<<< HEAD
         <source>(change)</source>
         <translation type="unfinished"/>
 =======
         <source>out of sync</source>
+=======
+        <location line="-107"/>
+        <location line="+2"/>
+        <source>own address</source>
+>>>>>>> listtransactions fix, various GUI fixes.
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -3126,6 +3267,7 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <translation type="unfinished"/>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+17"/>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
         <translation type="unfinished"/>
@@ -3168,6 +3310,23 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <location line="+59"/>
         <source>Request Payment</source>
         <translation type="unfinished"></translation>
+=======
+        <location line="+37"/>
+        <location line="+12"/>
+        <location line="+115"/>
+        <location line="+16"/>
+        <location line="+30"/>
+        <source>Credit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location line="-171"/>
+        <source>matures in %n more block(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+>>>>>>> listtransactions fix, various GUI fixes.
     </message>
     <message>
         <location line="+56"/>
@@ -3175,8 +3334,21 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-44"/>
         <source>Label:</source>
+=======
+        <location line="+74"/>
+        <source>Name operation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+40"/>
+        <location line="+8"/>
+        <location line="+14"/>
+        <location line="+30"/>
+        <source>Debit</source>
+>>>>>>> listtransactions fix, various GUI fixes.
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3250,8 +3422,13 @@ Empty cell means pending (awaiting automatic name_firstupdate or awaiting networ
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-217"/>
         <source>Client version</source>
+=======
+        <location line="-254"/>
+        <source>, has not been successfully broadcast yet</source>
+>>>>>>> listtransactions fix, various GUI fixes.
         <translation type="unfinished"></translation>
 >>>>>>> walletpassphrase, dump/importprivkey, some GUI fixes
     </message>
@@ -8016,7 +8193,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+564"/>
+        <location filename="../walletmodel.cpp" line="+565"/>
         <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation type="unfinished"></translation>
     </message>
