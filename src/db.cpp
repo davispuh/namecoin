@@ -28,8 +28,11 @@
 #include <openssl/rand.h>
 =======
 #include <boost/filesystem/fstream.hpp>
+<<<<<<< HEAD
 #include <boost/algorithm/string/predicate.hpp> // for starts_with(), ends_with()
 >>>>>>> listtransactions fix, various GUI fixes.
+=======
+>>>>>>> Latest version of modified db flushing.
 
 using namespace std;
 using namespace boost;
@@ -170,23 +173,15 @@ void CDBEnv::EnvShutdown()
     pdb = NULL;
 
     // Flush database activity from memory pool to disk log
-    unsigned int nMinutes = 0;
+    // wallet.dat is always flushed, the other files only every couple of minutes
+	// note Namecoin has more .dat files than Bitcoin
+    unsigned int nMinutes = 2;
     if (fReadOnly)
         nMinutes = 1;
-
-    if (strFile == "addr.dat")
-        nMinutes = 2;
-    else if (strFile == "nameindex.dat" || strFile == "nameindexfull.dat")
-        nMinutes = 2;
-    else if (strFile == "blkindex.dat")
-    {
-        nMinutes = 2;
-        if (IsInitialBlockDownload() && nBestHeight % 5000 != 0)
+    if (strFile == "wallet.dat")
+        nMinutes = 0;
+    if (strFile == "blkindex.dat" && IsInitialBlockDownload() && nBestHeight % 5000 != 0)
             nMinutes = 5;
-    }
-    else if (boost::algorithm::starts_with(strFile, "blk") && boost::algorithm::ends_with(strFile, ".dat"))
-        nMinutes = 2;
-
     dbenv.txn_checkpoint(0, nMinutes, 0);
 
     CRITICAL_BLOCK(cs_db)
