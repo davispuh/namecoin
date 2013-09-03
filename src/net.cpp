@@ -1320,7 +1320,34 @@ void ThreadOpenConnections()
     int64_t nStart = GetTime();
     while (true)
     {
+<<<<<<< HEAD
         ProcessOneShot();
+=======
+        vnThreadsRunning[1]--;
+        Sleep(500);
+        vnThreadsRunning[1]++;
+        if (fShutdown)
+            return;
+
+        // Limit outbound connections	    
+        loop
+        {
+            int nOutbound = 0;
+            CRITICAL_BLOCK(cs_vNodes)
+                BOOST_FOREACH(CNode* pnode, vNodes)
+                    if (!pnode->fInbound)
+                        nOutbound++;
+            int nMaxOutboundConnections = MAX_OUTBOUND_CONNECTIONS;
+            nMaxOutboundConnections = min(nMaxOutboundConnections, (int)GetArg("-maxconnections", 125));
+            if (nOutbound < nMaxOutboundConnections)
+                break;
+	        vnThreadsRunning[1]--;	    
+            Sleep(2000);
+            vnThreadsRunning[1]++;	    
+            if (fShutdown)
+                return;
+        }
+>>>>>>> Porting from Bitcoin: "Several shutdown-related fixes"
 
 <<<<<<< HEAD
         MilliSleep(500);
