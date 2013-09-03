@@ -312,6 +312,55 @@ void DBFlush(bool fShutdown)
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
     if (!fDbEnvInit)
         return;
+<<<<<<< HEAD
+=======
+    CRITICAL_BLOCK(cs_db)
+    {
+        map<string, int>::iterator mi = mapFileUseCount.begin();
+        while (mi != mapFileUseCount.end())
+        {
+            string strFile = (*mi).first;
+            int nRefCount = (*mi).second;
+            printf("%s refcount=%d\n", strFile.c_str(), nRefCount);
+            if (nRefCount == 0)
+            {
+                // Move log data to the dat file
+                CloseDb(strFile);
+                dbenv.txn_checkpoint(0, 0, 0);
+                printf("%s flush\n", strFile.c_str());
+                dbenv.lsn_reset(strFile.c_str(), 0);
+                mapFileUseCount.erase(mi++);
+            }
+            else
+                mi++;
+        }
+        if (fShutdown)
+        {
+            char** listp;
+            if (mapFileUseCount.empty())
+                dbenv.log_archive(&listp, DB_ARCH_REMOVE);
+            try
+            {
+                dbenv.close(0);
+            }
+            catch (const DbException& e)
+            {
+                printf("EnvShutdown exception: %s (%d)\n", e.what(), e.get_errno());
+            }
+            fDbEnvInit = false;
+        }
+    }
+}
+
+
+
+
+
+
+//
+// CTxDB
+//
+>>>>>>> Catch db environment crashes on shutdown (port from Bitcoin) https://github.com/bitcoin/bitcoin/pull/636
 
     fDbEnvInit = false;
     int ret = dbenv.close(0);
