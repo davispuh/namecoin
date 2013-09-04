@@ -17,6 +17,7 @@
 #include "clientmodel.h"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "guiutil.h"
 
 #include "rpcserver.h"
@@ -37,6 +38,9 @@
 =======
 #include "../rpc.h"
 >>>>>>> Commiting my updates that turn namecoind into namecoin-qt.
+=======
+#include "../bitcoinrpc.h"
+>>>>>>> rpc.(cpp|h) renamed to bitcoinrpc.(cpp|h) to work around conflicting file names on Windows
 #include "guiutil.h"
 
 #include <QTime>

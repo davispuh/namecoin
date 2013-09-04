@@ -9,7 +9,7 @@
 #include "init.h"
 #include "namecoin.h"
 
-#include "rpc.h"
+#include "bitcoinrpc.h"
 
 #include "json/json_spirit_reader_template.h"
 #include "json/json_spirit_writer_template.h"

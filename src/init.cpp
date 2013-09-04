@@ -1,12 +1,20 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
+<<<<<<< HEAD
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
 #include "bitcoin-config.h"
 #endif
 
+=======
+// file license.txt or http://www.opensource.org/licenses/mit-license.php.
+#include "headers.h"
+#include "db.h"
+#include "bitcoinrpc.h"
+#include "net.h"
+>>>>>>> rpc.(cpp|h) renamed to bitcoinrpc.(cpp|h) to work around conflicting file names on Windows
 #include "init.h"
 
 #include "addrman.h"
