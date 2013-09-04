@@ -5554,8 +5554,7 @@ Address: %4
     </message>
     <message>
         <location line="+2"/>
-        <source>Number of blocks, after which the name will expire. Update name to renew it.
-Empty cell means pending (awaiting automatic name_firstupdate or awaiting network confirmation).</source>
+        <source>Number of blocks, after which the name will expire. Update name to renew it.</source>
         <translation type="unfinished"></translation>
 >>>>>>> listtransactions fix, various GUI fixes.
     </message>

@@ -2292,9 +2292,13 @@ Leave empty, if not needed.</source>
     </message>
     <message>
         <location line="+2"/>
+<<<<<<< HEAD
         <source>Number of blocks, after which the name will expire. Update name to renew it.
 Empty cell means pending (awaiting automatic name_firstupdate or awaiting network confirmation).</source>
 >>>>>>> listtransactions fix, various GUI fixes.
+=======
+        <source>Number of blocks, after which the name will expire. Update name to renew it.</source>
+>>>>>>> Minor refactoring/cleanup.
         <translation type="unfinished"></translation>
     </message>
 </context>
