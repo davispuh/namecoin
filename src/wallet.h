@@ -423,7 +423,7 @@ public:
     }
     bool IsFromMe(const CTransaction& tx) const
     {
-        return (GetDebit(tx) > 0);
+        return (GetDebitInclName(tx) > 0);
     }
     int64_t GetDebit(const CTransaction& tx) const
     {
@@ -980,7 +980,7 @@ public:
 
     bool IsFromMe() const
     {
-        return (GetDebit() > 0);
+        return (GetDebitInclName() > 0);
     }
 
     bool IsTrusted() const

@@ -1039,6 +1039,12 @@ void CWalletTx::AddSupportingTransactions()
                 }
                 else
                 {
+<<<<<<< HEAD
+=======
+                    // FIXME: for automatic name_firstupdate this is normal (when created but not broadcasted).
+                    // Need to avoid calling AddSupportingTransactions for such transactions.
+                    printf("Warning: AddSupportingTransactions() : unsupported transaction\n");
+>>>>>>> Minor fixes & refactoring.
                     continue;
                 }
 
