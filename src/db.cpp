@@ -325,7 +325,7 @@ void DBFlush(bool fShutdown)
             if (nRefCount == 0)
             {
                 // Move log data to the dat file
-                CloseDb(strFile);
+                CDB::CloseDb(strFile);
                 dbenv.txn_checkpoint(0, 0, 0);
                 printf("%s flush\n", strFile.c_str());
                 dbenv.lsn_reset(strFile.c_str(), 0);
@@ -909,6 +909,13 @@ void PrintSettingsToLog()
         WriteVersion(VERSION);
     }
 
+<<<<<<< HEAD
+=======
+                        // Flush wallet.dat so it's self contained
+                        CDB::CloseDb(strFile);
+                        dbenv.txn_checkpoint(0, 0, 0);
+                        dbenv.lsn_reset(strFile.c_str(), 0);
+>>>>>>> Small amendment to the code, otherwise won't compile.
 
     return true;
 >>>>>>> hooks
@@ -935,9 +942,14 @@ void CDBEnv::Flush(bool fShutdown)
             LogPrint("db", "%s refcount=%d\n", strFile, nRefCount);
             if (nRefCount == 0)
             {
+<<<<<<< HEAD
                 // Move log data to the dat file
                 CloseDb(strFile);
                 LogPrint("db", "%s checkpoint\n", strFile);
+=======
+                // Flush log data to the dat file
+                CDB::CloseDb(wallet.strWalletFile);
+>>>>>>> Small amendment to the code, otherwise won't compile.
                 dbenv.txn_checkpoint(0, 0, 0);
 <<<<<<< HEAD
                 LogPrint("db", "%s detach\n", strFile);
