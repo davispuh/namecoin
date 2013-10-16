@@ -188,7 +188,7 @@ void CDBEnv::EnvShutdown()
         --mapFileUseCount[strFile];
 }
 
-void CDB::CloseDb(const string& strFile)
+static void CloseDb(const string& strFile)
 {
     CRITICAL_BLOCK(cs_db)
     {
@@ -325,7 +325,7 @@ void DBFlush(bool fShutdown)
             if (nRefCount == 0)
             {
                 // Move log data to the dat file
-                CDB::CloseDb(strFile);
+                CloseDb(strFile);
                 dbenv.txn_checkpoint(0, 0, 0);
                 printf("%s flush\n", strFile.c_str());
                 dbenv.lsn_reset(strFile.c_str(), 0);
@@ -912,7 +912,7 @@ void PrintSettingsToLog()
 <<<<<<< HEAD
 =======
                         // Flush wallet.dat so it's self contained
-                        CDB::CloseDb(strFile);
+                        CloseDb(strFile);
                         dbenv.txn_checkpoint(0, 0, 0);
                         dbenv.lsn_reset(strFile.c_str(), 0);
 >>>>>>> Small amendment to the code, otherwise won't compile.
@@ -948,8 +948,12 @@ void CDBEnv::Flush(bool fShutdown)
                 LogPrint("db", "%s checkpoint\n", strFile);
 =======
                 // Flush log data to the dat file
+<<<<<<< HEAD
                 CDB::CloseDb(wallet.strWalletFile);
 >>>>>>> Small amendment to the code, otherwise won't compile.
+=======
+                CloseDb(wallet.strWalletFile);
+>>>>>>> An improved patch.
                 dbenv.txn_checkpoint(0, 0, 0);
 <<<<<<< HEAD
                 LogPrint("db", "%s detach\n", strFile);

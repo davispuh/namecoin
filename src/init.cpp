@@ -1394,6 +1394,7 @@ bool AppInit2(boost::thread_group& threadGroup)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     //// debug print
     LogPrintf("mapBlockIndex.size() = %"PRIszu"\n",   mapBlockIndex.size());
     LogPrintf("nBestHeight = %d\n",                   chainActive.Height());
@@ -1415,18 +1416,22 @@ bool AppInit2(boost::thread_group& threadGroup)
         //PrintConsole("\n");
     }
     else   // Name bug workaround
+=======
+    filesystem::path nameindexfile_old = filesystem::path(GetDataDir()) / "nameindexfull.dat";
+    filesystem::path nameindexfile = filesystem::path(GetDataDir()) / "nameindex.dat";
+
+    if (filesystem::exists(nameindexfile_old))
+>>>>>>> An improved patch.
     {
-        CDB dbName(name_db_file, "r");
-        int nVersion;
-        if (!dbName.ReadVersion(nVersion) || nVersion < 37200)
-        {
-            dbName.Close();
-            CDB::CloseDb(name_db_file);
+        // If old file exists - delete it and recan
+        filesystem::remove(nameindexfile_old);
+        // Also delete new file if it exists together with the old one, as it could be the one from a much older version
+        if (filesystem::exists(nameindexfile))
             filesystem::remove(nameindexfile);
-            printf("Name DB is of old version containing a bug. Forcing rescan.\n");
-            rescanfornames();
-        }
+        rescanfornames();
     }
+    else if (!filesystem::exists(nameindexfile))
+        rescanfornames();
 
     if (!CreateThread(StartNode, NULL))
 <<<<<<< HEAD
